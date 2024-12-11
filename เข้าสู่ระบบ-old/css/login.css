@@ -1,0 +1,160 @@
+/* screen - login */
+
+.login {
+  align-items: center;
+  background-color: var(--white);
+  display: flex;
+  flex-direction: column;
+  height: 1024px;
+  width: 1440px;
+}
+
+.login .header {
+  align-items: center;
+  background-color: var(--main);
+  display: flex;
+  flex-direction: row;
+  flex-shrink: 1;
+  gap: 1070px;
+  height: 80px;
+  justify-content: flex-end;
+  min-width: 1440px;
+  padding: 6px 87.8px;
+  width: auto;
+}
+
+.login .frame-38253 {
+  align-items: center;
+  display: inline-flex;
+  gap: 56px;
+  justify-content: flex-end;
+  margin-bottom: 5.0px;
+  position: relative;
+}
+
+.login .flex-row {
+  align-items: center;
+  display: flex;
+  gap: 46px;
+  margin-right: 43.0px;
+  margin-top: 216px;
+  min-width: 1187px;
+}
+
+.login .logo-1-1 {
+  height: 431px;
+  object-fit: cover;
+  width: 489px;
+}
+
+.login .card-login {
+  align-items: center;
+  background-color: var(--white);
+  border: 1px solid;
+  border-color: #dce0e5;
+  border-radius: 20px;
+  box-shadow: 0px 1px 2px #7f7f7f1f;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 21.0px;
+  overflow: hidden;
+  position: relative;
+  width: 652px;
+}
+
+.login .text-24 {
+  color: var(--vulcan);
+  font-family: var(--font-family-noto_sans_thai);
+  font-size: var(--font-size-l);
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 48.0px;
+  margin-top: -1.00px;
+  position: relative;
+  text-align: center;
+  width: fit-content;
+}
+
+.login .button {
+  align-items: center;
+  align-self: stretch;
+  background-color: var(--white);
+  border: 1px solid;
+  border-color: var(--main);
+  border-radius: 10px;
+  display: flex;
+  gap: 8px;
+  height: 60px;
+  justify-content: center;
+  overflow: hidden;
+  padding: 8px 24px;
+  position: relative;
+  width: 100%;
+}
+
+.login .text_label {
+  letter-spacing: 0;
+  line-height: normal;
+  position: relative;
+  text-align: center;
+  width: fit-content;
+}
+
+.login .footer {
+  align-items: flex-start;
+  background-color: var(--main);
+  display: flex;
+  flex-direction: row;
+  flex-shrink: 1;
+  height: 76px;
+  justify-content: flex-start;
+  margin-top: 221px;
+  padding: 22px 552px;
+  width: 1440px;
+}
+
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh; /* ให้ความสูงของ body เท่ากับหน้าจอ */
+  display: flex;
+  flex-direction: column;
+}
+
+.container-center-horizontal {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* จัดตำแหน่งเนื้อหาให้อยู่บนสุดและล่างสุด */
+  height: 100%; /* ใช้พื้นที่เต็ม */
+}
+
+.login.screen {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* จัดให้อยู่ตรงกลางแนวตั้ง */
+  align-items: center; /* จัดให้อยู่ตรงกลางแนวนอน */
+  flex-grow: 1;
+}
+
+footer {
+  text-align: center;
+  margin-top: auto;
+  padding: 10px 0;
+  background-color: #f8f9fa; /* เพิ่มสีพื้นหลังให้ footer (ถ้าต้องการ) */
+}
+
+
+.header {
+  display: flex;
+  justify-content: space-between; /* จัดให้อยู่ด้านข้าง */
+  align-items: center;
+  padding: 10px 20px; /* เพิ่ม Padding ให้ดูดีขึ้น */
+}
+
+footer {
+  height: auto;
+  padding: 10px;
+  background-color: #f8f9fa; /* เพิ่มสีพื้นหลังให้ Footer */
+}
