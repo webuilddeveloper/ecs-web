@@ -1,72 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>เข้าสู่ระบบ</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai&display=swap" rel="stylesheet">
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-    <style>
-        .logo {
-            width: 150px;
-            height: auto;
-        }
-        .nav-bar {
-            background-color: #002855;
-        }
-        .footer {
-            background-color: #002855;
-            color: white;
-            text-align: center;
-            padding: 10px;
-        }
-        .btn-thaid {
-            background-color: #ffffff;
-            border: 1px solid #002855;
-            color: #002855;
-        }
-        .btn-thaid:hover {
-            background-color: #002855;
-            color: #ffffff;
-        }
-        .btn-register {
-            background-color: #f8f9fa;
-            border: 1px solid #d3d3d3;
-        }
-    </style>
+
 </head>
+
 <body class="bg-light">
     <!-- Navigation Bar -->
     <nav class="nav-bar py-2">
-        <div class="container d-flex justify-content-between align-items-center">
-            <img src="logo.png" alt="Logo" class="logo">
-            <div>
-                <i class="bi bi-bell me-3" style="font-size: 1.5rem; color: white;"></i>
-                <i class="bi bi-person-circle" style="font-size: 1.5rem; color: white;"></i>
-            </div>
+        <!-- <div class="container d-flex justify-content-between align-items-center"> -->
+        <img class="logo-1" src="img/logo------1.png" alt="Logo" class="logo">
+        <div class="frame-38253">
+            <img class="group" src="img/group@2x.png" alt="Group" />
+            <img class="vector" src="img/vector.svg" alt="Vector" />
         </div>
+        <!-- </div> -->
     </nav>
 
     <!-- Content -->
-    <div class="container d-flex justify-content-center align-items-center vh-100">
-        <div class="text-center">
-            <img src="logo.png" alt="Logo" class="logo mb-4">
+    <div class="content text-center">
+        <img class="logo-1-1" src="img/logo------1.png" alt="Logo" class="logo mb-4" style="margin: auto;">
+        <div class="card shadow-sm p-4" style="width: 650px; margin: auto;font-size: 32px;">
+            <h5 class="mb-4 font-family">เข้าสู่ระบบ<br>เว็บไซต์ ปพ.ออนไลน์</h5>
 
-            <div class="card shadow-sm p-4" style="max-width: 400px; margin: auto;">
-                <h5 class="mb-4">เข้าสู่ระบบ<br>เว็บไซต์ ปพ.ออนไลน์</h5>
-                
-                <button class="btn btn-thaid w-100 py-2 mb-3">
-                    <img src="thaid-logo.png" alt="ThaiID" style="width: 24px; height: auto; margin-right: 10px;">
-                    เข้าสู่ระบบด้วย ThaiID
-                </button>
+            <button class="button-login">
+                <img src="img/rectangle-1155@2x.png" alt="ThaiID" style="width: 24px;">
+                เข้าสู่ระบบด้วย ThaiID
+            </button>
 
-                <hr>
-                
-                <div class="text-muted mb-3">ยังไม่มีบัญชีใช่ไหม?</div>
-                <button class="btn btn-register w-100 py-2">
-                    <i class="bi bi-pencil-square me-2"></i>
-                    องค์การค้า ของ สกสค. ลงทะเบียน
-                </button>
-            </div>
         </div>
     </div>
 
@@ -78,4 +48,5 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.js"></script>
 </body>
+
 </html>
