@@ -1,0 +1,126 @@
+:root { 
+  --bggrey: #707070;
+  --bkack: #000000;
+  --black-haze: #f6f7f9;
+  --blue: #3347ff;
+  --clementine: #db6e00;
+  --geyser: #dce0e5;
+  --gray: #d9d9d9;
+  --greysblue-grey800: #444a6d;
+  --madang: #befec7;
+  --main: #012a6c;
+  --pattens-blue: #e0e9ff;
+  --pattens-blue-2: #e0edff;
+  --pink: #fca0a6;
+  --slate-gray: #6f7c8e;
+  --slimy-green: #00a81c;
+  --vis-vis: #ffed9e;
+  --vulcan: #14181f;
+  --white: #ffffff;
+  --white-2: #ffffff1a;
+ 
+  --font-size-l: 16px;
+  --font-size-m: 15px;
+  --font-size-s: 13px;
+  --font-size-xl: 18px;
+  --font-size-xxl: 20px;
+  --font-size-xxxl: 22px;
+  --font-size-xxxxl: 40px;
+ 
+  --font-family-noto_sans_thai: "Noto Sans Thai", Helvetica;
+}
+.notosansthai-normal-vulcan-15px {
+  color: var(--vulcan);
+  font-family: var(--font-family-noto_sans_thai);
+  font-size: var(--font-size-m);
+  font-style: normal;
+  font-weight: 400;
+}
+
+.notosansthai-medium-vulcan-15px {
+  color: var(--vulcan);
+  font-family: var(--font-family-noto_sans_thai);
+  font-size: var(--font-size-m);
+  font-style: normal;
+  font-weight: 500;
+}
+
+.notosansthai-normal-clementine-13px {
+  color: var(--clementine);
+  font-family: var(--font-family-noto_sans_thai);
+  font-size: var(--font-size-s);
+  font-style: normal;
+  font-weight: 400;
+}
+
+.notosansthai-normal-slimy-green-13px {
+  color: var(--slimy-green);
+  font-family: var(--font-family-noto_sans_thai);
+  font-size: var(--font-size-s);
+  font-style: normal;
+  font-weight: 400;
+}
+
+.notosansthai-semi-bold-vulcan-15px {
+  color: var(--vulcan);
+  font-family: var(--font-family-noto_sans_thai);
+  font-size: var(--font-size-m);
+  font-style: normal;
+  font-weight: 600;
+}
+
+.notosansthai-medium-blue-15px {
+  color: var(--blue);
+  font-family: var(--font-family-noto_sans_thai);
+  font-size: var(--font-size-m);
+  font-style: normal;
+  font-weight: 500;
+}
+
+.notosansthai-semi-bold-white-20px {
+  color: var(--white);
+  font-family: var(--font-family-noto_sans_thai);
+  font-size: var(--font-size-xxl);
+  font-style: normal;
+  font-weight: 600;
+}
+
+.notosansthai-semi-bold-black-22px {
+  color: var(--bkack);
+  font-family: var(--font-family-noto_sans_thai);
+  font-size: var(--font-size-xxxl);
+  font-style: normal;
+  font-weight: 600;
+}
+
+.notosansthai-medium-black-32px {
+  color: var(--bkack);
+  font-family: var(--font-family-noto_sans_thai);
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 500;
+}
+
+.notosansthai-normal-slate-gray-15px {
+  color: var(--slate-gray);
+  font-family: var(--font-family-noto_sans_thai);
+  font-size: var(--font-size-m);
+  font-style: normal;
+  font-weight: 400;
+}
+
+.notosansthai-normal-fiord-16px {
+  color: var(--greysblue-grey800);
+  font-family: var(--font-family-noto_sans_thai);
+  font-size: var(--font-size-l);
+  font-style: normal;
+  font-weight: 400;
+}
+
+.notosansthai-semi-bold-midnight-blue-18px {
+  color: var(--main);
+  font-family: var(--font-family-noto_sans_thai);
+  font-size: var(--font-size-xl);
+  font-style: normal;
+  font-weight: 600;
+}
