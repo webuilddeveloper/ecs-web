@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <!--<meta name=description content="This site was generated with Anima. www.animaapp.com"/>-->
+    <!-- <link rel="shortcut icon" type=image/png href="https://animaproject.s3.amazonaws.com/home/favicon.png" /> -->
+    <meta name="viewport" content="width=1440, maximum-scale=1.0" />
+    <link rel="shortcut icon" type="image/png" href="https://animaproject.s3.amazonaws.com/home/favicon.png" />
+    <meta name="og:type" content="website" />
+    <meta name="twitter:card" content="photo" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="css/u3627u3609u3657u3634u3626u3633u3656u3591u3595u3639u3657u3629u95u3594u3635u3619u3632u3648u3591u3636u3609.css"
+    />
+    <link rel="stylesheet" type="text/css" href="css/styleguide.css" />
+    <link rel="stylesheet" type="text/css" href="css/globals.css" />
+  </head>
+  <body style="margin: 0; background: #ffffff">
+    <input
+      type="hidden"
+      id="anPageName"
+      name="page"
+      value="u3627u3609u3657u3634u3626u3633u3656u3591u3595u3639u3657u3629u95u3594u3635u3619u3632u3648u3591u3636u3609"
+    />
+    <div class="container-center-horizontal">
+      <form
+        class="u3627u3609u3657u3634u3626u3633u3656u3591u3595u3639u3657u3629u95u3594u3635u3619u3632u3648u3591u3636u3609 screen"
+        name="form1"
+        action="form1"
+        method="post"
+      >
+        <div class="overlap-group">
+          <header class="header">
+            <img class="logo-1" src="img/logo------1.png" alt="logo  1" />
+            <div class="navbar notosansthai-semi-bold-white-20px">
+              <div class="navbar-link-text">ออกใบขอสั่งซื้อ</div>
+              <div class="navbar-link-text">เอกสารใบขอสั่งซื้อ</div>
+              <div class="navbar-link-text">รายการคำสั่งซื้อ</div>
+              <div class="navbar-link-text">ยกเลิกเลข ปพ.</div>
+              <div class="navbar-link-text">ประวัติการสั่งซื้อ</div>
+            </div>
+            <div class="frame-38253">
+              <img class="group" src="img/group-14@2x.png" alt="Group" />
+              <img class="vector" src="img/vector.svg" alt="Vector" />
+            </div>
+          </header>
+          <div class="view"></div>
+          <div class="frame-38257">
+            <div class="group-11533"><img class="group-11531" src="img/group-11531-1@2x.png" alt="Group 11531" /></div>
+            <div class="frame-38259">
+              <h1 class="qr-code">ชำระผ่าน QR Code</h1>
+              <div class="xxx">บัญชีธนาคาร xxx<br />ชื่อบัญชี องค์การค้าของ สกสค.</div>
+            </div>
+          </div>
+          <a href="javascript:SubmitForm('form1')">
+            <div class="button">
+              <img class="icon-back" src="img/icon-back-57.svg" alt="icon back" />
+              <div class="text_label valign-text-middle">ย้อนกลับ</div>
+            </div></a
+          >
+        </div>
+      </form>
+    </div>
+    <script>
+      /* Copyright (c) 2016 Tobias Buschor https://goo.gl/gl0mbf | MIT License https://goo.gl/HgajeK */
+
+      if (!HTMLFormElement.prototype.reportValidity) {
+        HTMLFormElement.prototype.reportValidity = function () {
+          if (this.checkValidity()) return true;
+          var btn = document.createElement("button");
+          this.appendChild(btn);
+          btn.click();
+          this.removeChild(btn);
+          return false;
+        };
+      }
+
+      function SubmitForm(form_name) {
+        var form = document.getElementsByName(form_name)[0];
+        if (form.reportValidity()) {
+          form.submit();
+          if (window.submitted) window.submitted();
+        }
+      }
+    </script>
+  </body>
+</html>

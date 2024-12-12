@@ -1,0 +1,49 @@
+:root { 
+  --bggrey: #707070;
+  --bkack: #000000;
+  --gray: #d9d9d9;
+  --licorice: #121212;
+  --main: #012a6c;
+  --pink: #fca0a6;
+  --white: #ffffff;
+ 
+  --font-size-l: 17px;
+  --font-size-m: 16px;
+  --font-size-xl: 20px;
+  --font-size-xxl: 22px;
+  --font-size-xxxl: 32px;
+ 
+  --font-family-kanit: "Kanit", Helvetica;
+  --font-family-noto_sans_thai: "Noto Sans Thai", Helvetica;
+}
+.notosansthai-semi-bold-white-20px {
+  color: var(--white);
+  font-family: var(--font-family-noto_sans_thai);
+  font-size: var(--font-size-xl);
+  font-style: normal;
+  font-weight: 600;
+}
+
+.notosansthai-bold-black-22px {
+  color: var(--bkack);
+  font-family: var(--font-family-noto_sans_thai);
+  font-size: var(--font-size-xxl);
+  font-style: normal;
+  font-weight: 700;
+}
+
+.notosansthai-normal-black-16px {
+  color: var(--bkack);
+  font-family: var(--font-family-noto_sans_thai);
+  font-size: var(--font-size-m);
+  font-style: normal;
+  font-weight: 400;
+}
+
+.kanit-normal-licorice-17px {
+  color: var(--licorice);
+  font-family: var(--font-family-kanit);
+  font-size: var(--font-size-l);
+  font-style: normal;
+  font-weight: 400;
+}
