@@ -1,164 +1,255 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <!--<meta name=description content="This site was generated with Anima. www.animaapp.com"/>-->
-    <!-- <link rel="shortcut icon" type=image/png href="https://animaproject.s3.amazonaws.com/home/favicon.png" /> -->
-    <meta name="viewport" content="width=1440, maximum-scale=1.0" />
-    <link rel="shortcut icon" type="image/png" href="https://animaproject.s3.amazonaws.com/home/favicon.png" />
-    <meta name="og:type" content="website" />
-    <meta name="twitter:card" content="photo" />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="css/u3627u3609u3657u3634u3626u3633u3656u3591u3595u3639u3657u3629u95u3649u3609u3610u3648u3629u3585u3626u3634u3619u3585u3634u3619u3626u3633u3656u3591u3595u3639u3657u3629.css"
-    />
-    <link rel="stylesheet" type="text/css" href="css/styleguide.css" />
-    <link rel="stylesheet" type="text/css" href="css/globals.css" />
-  </head>
-  <body style="margin: 0; background: #ffffff">
-    <input
-      type="hidden"
-      id="anPageName"
-      name="page"
-      value="u3627u3609u3657u3634u3626u3633u3656u3591u3595u3639u3657u3629u95u3649u3609u3610u3648u3629u3585u3626u3634u3619u3585u3634u3619u3626u3633u3656u3591u3595u3639u3657u3629"
-    />
-    <div class="container-center-horizontal">
-      <form
-        class="u3627u3609u3657u3634u3626u3633u3656u3591u3595u3639u3657u3629u95u3649u3609u3610u3648u3629u3585u3626u3634u3619u3585u3634u3619u3626u3633u3656u3591u3595u3639u3657u3629 screen"
-        name="form6"
-        action="form6"
-        method="post"
-      >
-        <header class="header">
-          <img class="logo-1" src="img/logo------1.png" alt="logo  1" />
-          <div class="navbar notosansthai-semi-bold-white-20px">
-            <div class="navbar-link-text">ออกใบขอสั่งซื้อ</div>
-            <div class="navbar-link-text">เอกสารใบขอสั่งซื้อ</div>
-            <div class="navbar-link-text">รายการคำสั่งซื้อ</div>
-            <div class="navbar-link-text">ยกเลิกเลข ปพ.</div>
-            <div class="navbar-link-text">ประวัติการสั่งซื้อ</div>
-          </div>
-          <div class="frame-38253">
-            <img class="group" src="img/group-14@2x.png" alt="Group" />
-            <img class="vector" src="img/vector.svg" alt="Vector" />
-          </div>
-        </header>
-        <a href="javascript:SubmitForm('form6')" class="align-self-flex-start">
-          <div class="button button-2">
-            <img class="icon" src="img/icon-back-57.svg" alt="icon back" />
-            <div class="text_label valign-text-middle text_label-4">ย้อนกลับ</div>
-          </div></a
-        >
-        <h1 class="text-1">ข้อมูลหลักฐานการชำระเงิน</h1>
-        <div class="frame-38505">
-          <div class="frame-38395">
-            <div class="text-7">รายการสินค้า</div>
-            <div class="frame-27">
-              <div class="frame-38434">
-                <div class="frame-9">
-                  <div class="frame-94">
-                    <div class="frame-93">
-                      <div class="text valign-text-middle">
-                        <span
-                          ><span class="notosansthai-bold-black-22px">หนังสืออนุมัติการสั่งซื้อจากเขตฯ</span
-                          ><span class="span1">*</span>
-                        </span>
-                      </div>
-                      <p class="text_label-1 text_label-4 notosansthai-normal-black-16px">
-                        กรุณาอัพโหลดหนังสืออนุมัติการสั่งซื้อจากเขตฯ จำนวน 1 ไฟล์ โดยขนาดไฟล์ที่ อัพโหลดต้องไม่เกิน 1MB
-                      </p>
-                    </div>
-                  </div>
-                  <a href="javascript:SubmitForm('form6')">
-                    <div class="button-new-1">
-                      <div class="text_label-2 valign-text-middle text_label-4 kanit-normal-licorice-17px">
-                        เอกสาร.PDF
-                      </div>
-                    </div></a
-                  >
-                </div>
-                <div class="text-field">
-                  <div class="frame-20"><div class="text_label-3 text_label-4">12345671840</div></div>
-                </div>
-              </div>
-              <img class="line" src="img/line-6-125.svg" alt="Line 6" />
+
+<head>
+  <meta charset="utf-8" />
+  <!--<meta name=description content="This site was generated with Anima. www.animaapp.com"/>-->
+  <!-- <link rel="shortcut icon" type=image/png href="https://animaproject.s3.amazonaws.com/home/favicon.png" /> -->
+  <meta name="viewport" content="width=1440, maximum-scale=1.0" />
+  <link rel="shortcut icon" type="image/png" href="https://animaproject.s3.amazonaws.com/home/favicon.png" />
+  <meta name="og:type" content="website" />
+  <meta name="twitter:card" content="photo" />
+  <link rel="stylesheet" type="text/css"
+    href="css/u3627u3609u3657u3634u3626u3633u3656u3591u3595u3639u3657u3629u95u3649u3609u3610u3648u3629u3585u3626u3634u3619u3585u3634u3619u3626u3633u3656u3591u3595u3639u3657u3629.css" />
+  <link rel="stylesheet" type="text/css" href="css/styleguide.css" />
+  <link rel="stylesheet" type="text/css" href="css/globals.css" />
+</head>
+
+<body style="margin: 0; background: #ffffff">
+  <input type="hidden" id="anPageName" name="page"
+    value="u3627u3609u3657u3634u3626u3633u3656u3591u3595u3639u3657u3629u95u3649u3609u3610u3648u3629u3585u3626u3634u3619u3585u3634u3619u3626u3633u3656u3591u3595u3639u3657u3629" />
+  <div class="container-center-horizontal">
+    <form
+      class="u3627u3609u3657u3634u3626u3633u3656u3591u3595u3639u3657u3629u95u3649u3609u3610u3648u3629u3585u3626u3634u3619u3585u3634u3619u3626u3633u3656u3591u3595u3639u3657u3629 screen"
+      name="form6" action="form6" method="post">
+      <header class="header">
+        <img class="logo-1" src="img/logo------1.png" alt="logo  1" />
+        <div class="navbar notosansthai-semi-bold-white-20px">
+          <div class="navbar-link-text">ออกใบขอสั่งซื้อ</div>
+          <div class="navbar-link-text">เอกสารใบขอสั่งซื้อ</div>
+          <div class="navbar-link-text">รายการคำสั่งซื้อ</div>
+          <div class="navbar-link-text">ยกเลิกเลข ปพ.</div>
+          <div class="navbar-link-text">ประวัติการสั่งซื้อ</div>
+        </div>
+        <div class="frame-38253">
+          <img class="group" src="img/group-14@2x.png" alt="Group" />
+          <img class="vector" src="img/vector.svg" alt="Vector" />
+        </div>
+      </header>
+      <a href="javascript:SubmitForm('form6')" class="align-self-flex-start">
+        <div class="button button-2">
+          <img class="icon" src="img/icon-back-57.svg" alt="icon back" />
+          <div class="text_label valign-text-middle text_label-4">ย้อนกลับ</div>
+        </div>
+      </a>
+      <h1 class="text-1">ข้อมูลหลักฐานการชำระเงิน</h1>
+      <div class="frame-38505">
+        <div class="frame-38395">
+          <div class="text-7">รายการสินค้า</div>
+          <div class="frame-27">
+            <div class="frame-38434">
               <div class="frame-9">
                 <div class="frame-94">
                   <div class="frame-93">
                     <div class="text valign-text-middle">
-                      <span
-                        ><span class="notosansthai-bold-black-22px">หลักฐานการชำระเงิน</span
-                        ><span class="span1">*</span>
+                      <span><span class="notosansthai-bold-black-22px">หนังสืออนุมัติการสั่งซื้อจากเขตฯ</span><span
+                          class="span1">*</span>
                       </span>
                     </div>
                     <p class="text_label-1 text_label-4 notosansthai-normal-black-16px">
-                      กรุณาอัพโหลดหลักฐานการชำระเงิน จำนวน 1 รูป โดยขนาดไฟล์ที่ อัพโหลดต้องไม่เกิน 1MB
+                      กรุณาอัพโหลดหนังสืออนุมัติการสั่งซื้อจากเขตฯ จำนวน 1 ไฟล์ โดยขนาดไฟล์ที่ อัพโหลดต้องไม่เกิน 1MB
                     </p>
                   </div>
                 </div>
                 <a href="javascript:SubmitForm('form6')">
-                  <div class="button-new button-2">
-                    <img class="icon" src="img/icon-upload-file-4.svg" alt="icon Upload File" />
-                    <div class="text_label-2 valign-text-middle text_label-4 kanit-normal-licorice-17px">เลือกไฟล์</div>
-                  </div></a
-                >
+                  <div class="button-new-1">
+                    <div class="text_label-2 valign-text-middle text_label-4 kanit-normal-licorice-17px">
+                      เอกสาร.PDF
+                    </div>
+                  </div>
+                </a>
               </div>
-              <img class="line" src="img/line-7-109.svg" alt="Line 7" />
-              <div class="frame-9">
-                <div class="frame-94">
-                  <div class="frame-93">
-                    <div class="text-10 valign-text-middle notosansthai-bold-black-22px">หลักฐานเอกสารเพิ่มเติม</div>
-                    <p class="text_label-1 text_label-4 notosansthai-normal-black-16px">
-                      กรุณาอัพโหลดหลักฐานการชำระเงิน จำนวน 1 รูป โดยขนาดไฟล์ที่ อัพโหลดต้องไม่เกิน 1MB
-                    </p>
-                  </div>
+              <div class="text-field">
+                <div class="frame-20">
+                  <div class="text_label-3 text_label-4">12345671840</div>
                 </div>
-                <a href="javascript:SubmitForm('form6')">
-                  <div class="button-new button-2">
-                    <img class="icon" src="img/icon-upload-file-5.svg" alt="icon Upload File" />
-                    <div class="text_label-2 valign-text-middle text_label-4 kanit-normal-licorice-17px">เลือกไฟล์</div>
-                  </div></a
-                >
+              </div>
+            </div>
+            <img class="line" src="img/line-6-125.svg" alt="Line 6" />
+            <div class="frame-9">
+              <div class="frame-94">
+                <div class="frame-93">
+                  <div class="text valign-text-middle">
+                    <span><span class="notosansthai-bold-black-22px">หลักฐานการชำระเงิน</span><span
+                        class="span1">*</span>
+                    </span>
+                  </div>
+                  <p class="text_label-1 text_label-4 notosansthai-normal-black-16px">
+                    กรุณาอัพโหลดหลักฐานการชำระเงิน จำนวน 1 รูป โดยขนาดไฟล์ที่ อัพโหลดต้องไม่เกิน 1MB
+                  </p>
+                </div>
               </div>
               <a href="javascript:SubmitForm('form6')">
-                <div class="button-1 button-2">
-                  <img class="icon" src="img/icon-plus-2.svg" alt="icon plus" />
-                  <div class="text_label valign-text-middle text_label-4">เพิ่มไฟล์</div>
-                </div></a
-              >
+                <div class="button-new button-2">
+                  <img class="icon" src="img/icon-upload-file-4.svg" alt="icon Upload File" />
+                  <div class="text_label-2 valign-text-middle text_label-4 kanit-normal-licorice-17px">เลือกไฟล์</div>
+                </div>
+              </a>
             </div>
+            <img class="line" src="img/line-7-109.svg" alt="Line 7" />
+            <div class="frame-9">
+              <div class="frame-94">
+                <div class="frame-93">
+                  <div class="text-10 valign-text-middle notosansthai-bold-black-22px">หลักฐานเอกสารเพิ่มเติม</div>
+                  <p class="text_label-1 text_label-4 notosansthai-normal-black-16px">
+                    กรุณาอัพโหลดหลักฐานการชำระเงิน จำนวน 1 รูป โดยขนาดไฟล์ที่ อัพโหลดต้องไม่เกิน 1MB
+                  </p>
+                </div>
+              </div>
+              <a href="javascript:SubmitForm('form6')">
+                <div class="button-new button-2">
+                  <img class="icon" src="img/icon-upload-file-5.svg" alt="icon Upload File" />
+                  <div class="text_label-2 valign-text-middle text_label-4 kanit-normal-licorice-17px">เลือกไฟล์</div>
+                </div>
+              </a>
+            </div>
+            <a href="javascript:SubmitForm('form6')">
+              <div class="button-1 button-2">
+                <img class="icon" src="img/icon-plus-2.svg" alt="icon plus" />
+                <div class="text_label valign-text-middle text_label-4">เพิ่มไฟล์</div>
+              </div>
+            </a>
           </div>
         </div>
-        <a href="javascript:SubmitForm('form6')">
-          <div class="frame-14">
-            <div class="text-11 notosansthai-semi-bold-white-20px">ยืนยันการส่งหลักฐาน</div>
-          </div></a
-        >
-        <footer class="footer"><p class="copyright-2024">Copyright 2024&nbsp;&nbsp; องค์การค้าของ สกสค.</p></footer>
-      </form>
-    </div>
-    <script>
-      /* Copyright (c) 2016 Tobias Buschor https://goo.gl/gl0mbf | MIT License https://goo.gl/HgajeK */
+      </div>
+      <a onclick="showPopup()">
+        <div class="frame-14">
+          <div class="text-11 notosansthai-semi-bold-white-20px">ยืนยันการส่งหลักฐาน</div>
+        </div>
+      </a>
 
-      if (!HTMLFormElement.prototype.reportValidity) {
-        HTMLFormElement.prototype.reportValidity = function () {
-          if (this.checkValidity()) return true;
-          var btn = document.createElement("button");
-          this.appendChild(btn);
-          btn.click();
-          this.removeChild(btn);
-          return false;
-        };
+      <div id="content" class="view" style="display: none;">
+        <div class="popup">
+          <div class="frame-container">
+            <div class="frame-38264">
+              <div class="frame-38266">
+                <div class="frame-38265">
+                  <h1 class="text_label-2 valign-text-middle text_label-5">ยืนยันการส่งหลักฐานการชำระเงิน</h1>
+                  <div class="text_label-3 valign-text-middle text_label-5">
+                    คุณต้องการที่จะยืนยันการส่งหลักฐานนี้หรือไม่<br />หากยืนยันจะเป็นอันเสร็จสิ้นการยื่นหลักฐานการชำระเงิน
+                  </div>
+                </div>
+                <div class="frame-38262">
+                  <a onclick="showPopup()">
+                    <article class="button-2 button-4">
+                      <div class="text_label valign-text-middle text_label-5">ยกเลิก</div>
+                    </article>
+                  </a>
+                  <a onclick="showPopup2()">
+                    <article class="button-3 button-4">
+                      <div class="text_label-4-2 valign-text-middle text_label-5 notosansthai-semi-bold-white-20px">
+                        ยืนยัน
+                      </div>
+                    </article>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <a onclick="showPopup()"><img class="frame-1041" src="img/frame-1041.svg" alt="Frame 1041" />
+            </a>
+          </div>
+        </div>
+      </div>
+      <div id="content2" class="view" style="display: none;">
+        <div class="popup">
+          <div class="frame-container">
+            <div class="frame-38264">
+              <div class="frame-38266">
+                <div class="frame-38265">
+                  <img class="check-one" src="img/check-one.svg" alt="check-one" />
+                  <h1 class="text_label-2 valign-text-middle text_label-4-2">ส่งหลักฐานการชำระเงินสำเร็จ</h1>
+                </div>
+                <div class="frame-38262">
+                  <a href="../../ปพ ออนไลน์ - front หน้าหลักสถานศึกษา/หน้าหลักสถานศึกษา.html">
+                    <article class="button-2 button-4">
+                      <div class="text_label valign-text-middle text_label-4-2">กลับหน้าหลัก</div>
+                    </article>
+                  </a><a
+                    href="../../ปพ ออนไลน์ - font รายการคำสั่งซื้อ 2/ที่ต้องจัดส่ง(รายการเอกสารมีเลขคุม)/u3619u3634u3618u3585u3634u3619u3588u3635u3626u3633u3656u3591u3595u3639u3657u3629u95u3648u3629u3585u3626u3634u3619u3617u3637u3648u3621u3586u3588u3640u3617.html">
+                    <article class="button-3 button-4">
+                      <div class="text_label-4-2 valign-text-middle text_label-4-2 notosansthai-semi-bold-white-20px">
+                        รายการคำสั่งซื้อ
+                      </div>
+                    </article>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <a onclick="showPopup2()"><img class="frame-1041" src="img/frame-1041.svg" alt="Frame 1041" />
+            </a>
+          </div>
+        </div>
+      </div>
+      <footer class="footer">
+        <p class="copyright-2024">Copyright 2024&nbsp;&nbsp; องค์การค้าของ สกสค.</p>
+      </footer>
+    </form>
+  </div>
+  <script>
+    /* Copyright (c) 2016 Tobias Buschor https://goo.gl/gl0mbf | MIT License https://goo.gl/HgajeK */
+
+
+    let isShow = false;
+    let isShow2 = false;
+
+    if (!HTMLFormElement.prototype.reportValidity) {
+      HTMLFormElement.prototype.reportValidity = function () {
+        if (this.checkValidity()) return true;
+        var btn = document.createElement("button");
+        this.appendChild(btn);
+        btn.click();
+        this.removeChild(btn);
+        return false;
+      };
+    }
+
+    function SubmitForm(form_name) {
+      var form = document.getElementsByName(form_name)[0];
+      if (form.reportValidity()) {
+        form.submit();
+        if (window.submitted) window.submitted();
+      }
+    }
+
+    function showPopup() {
+      isShow = !isShow;
+      const content = document.getElementById("content");
+
+      if (isShow) {
+        content.style.display = "block";
+      } else {
+        content.style.display = "none";
+      }
+    }
+
+    function showPopup2() {
+
+      if (isShow) {
+        isShow = false;
+        content.style.display = "none";
       }
 
-      function SubmitForm(form_name) {
-        var form = document.getElementsByName(form_name)[0];
-        if (form.reportValidity()) {
-          form.submit();
-          if (window.submitted) window.submitted();
-        }
+
+      isShow2 = !isShow2;
+      const content2 = document.getElementById("content2");
+
+      if (isShow2) {
+        content2.style.display = "block";
+      } else {
+        content2.style.display = "none";
       }
-    </script>
-  </body>
+    }
+  </script>
+</body>
+
 </html>

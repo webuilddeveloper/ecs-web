@@ -46,6 +46,12 @@
   width: fit-content;
 }
 
+.mainu95homeu95u3611u3614u46u3629u3629u3609u3652u3621u3609u3660u95u3650u3619u3591u3648u3619u3637u3618u3609 .navbar-link-text a {
+  color: white;
+  text-decoration: none;
+}
+
+
 .mainu95homeu95u3611u3614u46u3629u3629u3609u3652u3621u3609u3660u95u3650u3619u3591u3648u3619u3637u3618u3609 .frame-38253 {
   align-items: center;
   display: inline-flex;
@@ -321,7 +327,7 @@
   border: 1px solid;
   border-color: var(--geyser);
   border-radius: 8px;
-  box-shadow: inset 0px -2px 2px #3030301a , inset 0px 7px 12px #ffffff14;
+  box-shadow: inset 0px -2px 2px #3030301a, inset 0px 7px 12px #ffffff14;
   display: flex;
   gap: 8px;
   height: 40px;
@@ -469,7 +475,7 @@
   border: 1px solid;
   border-color: var(--geyser);
   border-radius: 8px;
-  box-shadow: inset 0px -2px 2px #3030301a , inset 0px 7px 12px #ffffff14;
+  box-shadow: inset 0px -2px 2px #3030301a, inset 0px 7px 12px #ffffff14;
   display: inline-flex;
   flex: 0 0 auto;
   gap: 6px;
@@ -507,7 +513,7 @@
   border: 1px solid;
   border-color: var(--geyser);
   border-radius: 8px;
-  box-shadow: inset 0px -2px 2px #3030301a , inset 0px 7px 12px #ffffff14;
+  box-shadow: inset 0px -2px 2px #3030301a, inset 0px 7px 12px #ffffff14;
   cursor: pointer;
   display: inline-flex;
   flex: 0 0 auto;
@@ -648,7 +654,7 @@
   border: 1px solid;
   border-color: var(--geyser);
   border-radius: 8px;
-  box-shadow: inset 0px -2px 2px #3030301a , inset 0px 7px 12px #ffffff14;
+  box-shadow: inset 0px -2px 2px #3030301a, inset 0px 7px 12px #ffffff14;
   cursor: pointer;
   display: flex;
   gap: 6px;
@@ -660,7 +666,7 @@
 .mainu95homeu95u3611u3614u46u3629u3629u3609u3652u3621u3609u3660u95u3650u3619u3591u3648u3619u3637u3618u3609 .button-5 {
   background-color: var(--blue);
   border-radius: 8px;
-  box-shadow: inset 0px -2px 2px #3030301a , inset 0px 7px 12px #ffffff14;
+  box-shadow: inset 0px -2px 2px #3030301a, inset 0px 7px 12px #ffffff14;
   cursor: pointer;
   display: flex;
   gap: 6px;
