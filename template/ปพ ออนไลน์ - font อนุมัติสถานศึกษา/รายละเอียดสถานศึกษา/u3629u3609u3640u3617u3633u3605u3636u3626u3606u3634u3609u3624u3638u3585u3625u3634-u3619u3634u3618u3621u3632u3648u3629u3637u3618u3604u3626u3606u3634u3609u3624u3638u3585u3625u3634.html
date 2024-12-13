@@ -47,7 +47,8 @@
         </div>
       </header>
       <div class="flex-row">
-        <a href="../../ปพ ออนไลน์ - font อนุมัติสถานศึกษา/รายการอนุมัติสถานศึกษา/u3629u3609u3640u3617u3633u3605u3636u3626u3606u3634u3609u3624u3638u3585u3625u3634.html">
+        <a
+          href="../../ปพ ออนไลน์ - font อนุมัติสถานศึกษา/รายการอนุมัติสถานศึกษา/u3629u3609u3640u3617u3633u3605u3636u3626u3606u3634u3609u3624u3638u3585u3625u3634.html">
           <div class="button">
             <img class="icon-back" src="img/icon-back-1.svg" alt="icon back" />
             <div class="text_label valign-text-middle">ย้อนกลับ</div>
@@ -183,15 +184,105 @@
         </div>
       </div>
       <div class="frame-38379">
-        <a href="javascript:SubmitForm('form4')">
+        <a onclick="showPopupF()">
           <article class="button-1 button-3">
             <div class="text_label valign-text-middle">ไม่อนุมัติ</div>
           </article>
-        </a><a href="javascript:SubmitForm('form4')">
+        </a><a onclick="showPopup()">
           <article class="button-2 button-3">
             <div class="text_label-3 valign-text-middle text_label-4 notosansthai-semi-bold-white-20px">อนุมัติ</div>
           </article>
         </a>
+      </div>
+      <div id="popup" class="popup-container" style="display: none;">
+        <div class="view-1"></div>
+        <div class="popup">
+          <div class="frame-container">
+            <div class="frame-38264-2">
+              <div class="frame-38266">
+                <div class="frame-38265">
+                  <h1 class="text-7 valign-text-middle text-2" style="font-size: 39px;">ยืนยันการอนุมัติสถานศึกษา</h1>
+                  <div class="text-8 valign-text-middle text-2 notosansthai-normal-black-20px">
+                    ท่านได้ตรวจสอบข้อมูลและยืนยัน<br />ที่จะอนุมัติสถานศึกษานี้ใช่หรือไม่
+                  </div>
+                </div>
+                <div class="frame-38262">
+                  <article class="button-3 button-5" onclick="hidePopup()">
+                    <div class="text_label valign-text-middle notosansthai-semi-bold-midnight-blue-20px">ยกเลิก</div>
+                  </article>
+                  <article class="button-4 button-5" onclick="hidePopup(),showPopupS('อนุมัติสถานศึกษาสำเร็จ')">
+                    <div class="text_label-3 text_label-4 valign-text-middle notosansthai-semi-bold-white-20px">ยืนยัน
+                    </div>
+                  </article>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="popupF" class="popup-container" style="display: none;">
+        <div class="view-3">
+          <div class="popup-3">
+            <div class="frame-container-3">
+              <div class="frame-38264-3">
+                <div class="frame-38266-3">
+                  <div class="frame-38265">
+                    <h1 class="text-7 valign-text-middle text-2">ไม่อนุมัติ</h1>
+                    <div class="text_label-3 valign-text-middle text_label-4 notosansthai-normal-black-20px">
+                      <span><span class="notosansthai-normal-black-20px">กรุณาใส่เหตุผลการไม่อนุมัติ
+                          หากยืนยันจะเป็นอันเสร็จสิ้นการไม่อนุมัติสถานศึกษา</span>
+                      </span>
+                    </div>
+                  </div>
+                  <div class="input-select">
+                    <div class="select-field">
+                      <select id="agency3" class="custom-dropdown">
+                        <option value="1" disabled selected>กรุณาเลือกเหตุผลที่ไม่อนุมัติ</option>
+                        <option value="2">ไม่ผ่านมาตรฐาน</option>
+                        <option value="3">เอกสารไม่ครบ</option>
+                      </select>
+                      <img class="dropdown-icon" src="img/dropdown-6.svg" alt="dropdown" />
+                      <!-- <div class="select">แสดง 9</div>
+                    <img class="icon" src="img/dropdown-icon-44.svg" alt="dropdown-icon" /> -->
+                    </div>
+                  </div>
+                  <div class="frame-38262">
+                    <a onclick="hidePopupF()">
+                      <article class="button-3 button-5">
+                        <div class="text_label valign-text-middle notosansthai-semi-bold-midnight-blue-20px">
+                          ยกเลิก
+                        </div>
+                      </article>
+                    </a><a  onclick="hidePopupF(),showPopupS('ยืนยันการไม่อนุมัติ')">
+                      <article class="button-4 button-5">
+                        <div class="text_label-3 text_label-4 valign-text-middle notosansthai-semi-bold-white-20px">ยืนยัน</div>
+                      </article>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <a onclick="hidePopupF()"><img class="frame-1041-3" src="img/frame-1041.svg" alt="Frame 1041" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="popupS" class="popup-container" style="display: none;">
+        <div class="view-1"></div>
+        <div class="popup">
+          <div class="frame-container">
+            <div class="frame-38264-2">
+              <div class="frame-38266">
+                <div class="frame-38265">
+                  <img class="check-one" src="img/check-one-4.svg" alt="check-one" />
+                  <h1 id="textstatus" class="text_label-4-2 valign-text-middle text_label-5">อนุมัติสถานศึกษาสำเร็จ!</h1>
+                </div>
+              </div>
+            </div>
+            <a onclick="hidePopupS()"><img class="frame-1041" src="img/frame-1041.svg" alt="Frame 1041" />
+            </a>
+          </div>
+        </div>
       </div>
       <footer class="footer">
         <p class="copyright-2024">Copyright 2024&nbsp;&nbsp; องค์การค้าของ สกสค.</p>
@@ -210,6 +301,37 @@
         this.removeChild(btn);
         return false;
       };
+    }
+
+    function showPopup() {
+      const popup = document.getElementById("popup");
+      popup.style.display = "flex"; // แสดง popup
+    }
+
+    function hidePopup() {
+      const popup = document.getElementById("popup");
+      popup.style.display = "none"; // ซ่อน popup
+    }
+
+    function showPopupF() {
+      const popup = document.getElementById("popupF");
+      popup.style.display = "flex"; // แสดง popup
+    }
+
+    function hidePopupF() {
+      const popup = document.getElementById("popupF");
+      popup.style.display = "none"; // ซ่อน popup
+    }
+
+    function showPopupS(param) {
+      document.getElementById("textstatus").innerText = param; 
+      const popup = document.getElementById("popupS");
+      popup.style.display = "flex"; // แสดง popup
+    }
+
+    function hidePopupS() {
+      const popup = document.getElementById("popupS");
+      popup.style.display = "none"; // ซ่อน popup
     }
 
     function SubmitForm(form_name) {
