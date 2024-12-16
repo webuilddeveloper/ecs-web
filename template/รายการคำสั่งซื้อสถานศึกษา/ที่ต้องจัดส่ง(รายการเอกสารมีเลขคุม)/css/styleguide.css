@@ -67,3 +67,14 @@
   font-style: normal;
   font-weight: 600;
 }
+
+/* ลบสีม่วงของลิงก์ที่คลิกแล้ว */
+a:link, a:visited {
+  color: white; /* สีที่คุณต้องการ */
+  text-decoration: none; /* เอาเส้นใต้ลิงก์ออกถ้าต้องการ */
+}
+
+/* เปลี่ยนสีเมื่อโฮเวอร์ */
+a:hover, a:active {
+  color: #f0f0f0; /* สีเมื่อโฮเวอร์ */
+}
