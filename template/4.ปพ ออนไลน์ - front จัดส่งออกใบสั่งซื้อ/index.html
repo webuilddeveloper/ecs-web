@@ -234,21 +234,185 @@
           </div>
         </div>
         <div class="frame-38492">
-          <a href="javascript:SubmitForm('form3')">
+          <a onclick="showPopupCancel()">
             <div class="frame-38396">
               <div class="text-22 notosansthai-bold-black-20px">ยกเลิกใบขอสั่งซื้อ</div>
             </div>
-          </a><a href="javascript:SubmitForm('form3')">
+          </a> <a onclick="showPopup()">
             <div class="frame-14">
               <div class="text-23">ชำระเงิน</div>
             </div>
           </a>
         </div>
       </div>
+      <div id="content" class="view" style="display: none;">
+        <div class="popup">
+          <div class="frame-container">
+            <div class="frame-38264">
+              <div class="frame-38266">
+                <div class="frame-38265">
+                  <h1 class="text_label-2 valign-text-middle text_label-5">ยืนยันการชำระเงิน</h1>
+                  <div class="text_label-3 valign-text-middle text_label-5">
+                    คุณต้องการที่จะยืนยันคำสั่งการชำระเงินนี้หรือไม่<br />หากยืนยันจะเข้าสู่ขั้นตอนการชำระเงิน
+                  </div>
+                </div>
+                <div class="frame-38262">
+                  <a onclick="showPopup()">
+                    <article class="button-2 button-4">
+                      <div class="text_label valign-text-middle text_label-5">ยกเลิก</div>
+                    </article>
+                  </a> <a>
+                    <article class="button-3 button-4">
+                      <div class="text_label-4-2 valign-text-middle  notosansthai-semi-bold-white-20px">
+                        ยืนยัน
+                      </div>
+                    </article>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <a onclick="showPopup()"><img class="frame-1041" src="img/frame-1041.svg" alt="Frame 1041" />
+            </a>
+          </div>
+        </div>
+      </div>
+      <div id="contentCancel" class="view" style="display: none;">
+        <div class="popup">
+          <div class="frame-container">
+            <div class="frame-38264">
+              <div class="frame-38266">
+                <div class="frame-38265">
+                  <h1 class="text_label-2 valign-text-middle text_label-5">ยกเลิกออกใบขอสั่งซื้อ</h1>
+                  <div class="text_label-3 valign-text-middle text_label-5">
+                    คุณต้องการที่จะยกเลิกคำสั่งซื้อใบปพ.
+                    นี้หรือไม<br />หากยืนยันจะเป็นอันเสร็จสิ้นการยกเลิกยื่นคำสั่งซื้อ
+                  </div>
+                </div>
+                <div class="frame-38262">
+                  <a onclick="showPopupDraft()">
+                    <article class="button-2 button-4">
+                      <div class="text_label valign-text-middle notosansthai-semi-bold-white-20px">บันทึกร่าง</div>
+                    </article>
+                  </a>
+                  <a onclick="showPopupCancel2()">
+                    <article class="button-3 button-4">
+                      <div class="text_label-4-2 valign-text-middle  notosansthai-semi-bold-white-20px">
+                        ยืนยัน
+                      </div>
+                    </article>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <a onclick="showPopupCancel()"><img class="frame-1041" src="img/frame-1041.svg" alt="Frame 1041" />
+            </a>
+          </div>
+        </div>
+      </div>
+      <div id="contentCancel2" class="view" style="display: none;">
+        <div class="popup">
+          <div class="frame-container">
+            <div class="frame-38264">
+              <div class="frame-38266">
+                <div class="frame-38265">
+                  <img class="check-one" src="img/check-one.svg" alt="check-one" />
+                  <h1 class="text_label-2 valign-text-middle text_label-4">ยืนยันการยกเลิก<br />
+                    ออกใบขอสั่งซื้อ</h1>
+                </div>
+                <div class="frame-38262">
+                  <a href="../ปพ ออนไลน์ - front หน้าหลักสถานศึกษา/หน้าหลักสถานศึกษา.html">
+                    <article class="button-2 button-4">
+                      <div class="text_label valign-text-middle text_label-4">กลับหน้าหลัก</div>
+                    </article>
+                  </a>
+                  <a href="javascript:SubmitForm('form3')">
+                    <article class="button-3 button-4">
+                      <div class="text_label-4-2 valign-text-middle text_label-4 notosansthai-semi-bold-white-20px">
+                        ใบขอสั่งซื้อของฉัน
+                      </div>
+                    </article>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <a onclick="showPopupCancel2()"><img class="frame-1041" src="img/frame-1041-2.svg" alt="Frame 1041" />
+            </a>
+          </div>
+        </div>
+      </div>
+      <div id="contentDraft" class="view" style="display: none;">
+        <div class="popup">
+          <div class="frame-container">
+            <div class="frame-38264">
+              <div class="frame-38266">
+                <div class="frame-38265">
+                  <h1 class="text_label-2 valign-text-middle text_label-5">ร่างใบขอสั่งซื้อ</h1>
+                  <div class="text_label-3 valign-text-middle text_label-5">
+                    คุณต้องการที่จะร่างคำสั่งซื้อใบปพ. นี้หรือไม่<br />หากยืนยันจะเป็นอันเสร็จสิ้นการร่างคำสั่งซื้อ
+                  </div>
+                </div>
+                <div class="frame-38262">
+                  <a onclick="showPopupDraft()">
+                    <article class="button-2 button-4">
+                      <div class="text_label valign-text-middle notosansthai-semi-bold-white-20px">ยกเลิก</div>
+                    </article>
+                  </a>
+                  <a onclick="showPopupDraft2()">
+                    <article class="button-3 button-4">
+                      <div class="text_label-4-2 valign-text-middle  notosansthai-semi-bold-white-20px">
+                        ยืนยัน
+                      </div>
+                    </article>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <a onclick="showPopupDraft()"><img class="frame-1041" src="img/frame-1041.svg" alt="Frame 1041" />
+            </a>
+          </div>
+        </div>
+      </div>
+      <div id="contentDraft2" class="view" style="display: none;">
+        <div class="popup">
+          <div class="frame-container">
+            <div class="frame-38264">
+              <div class="frame-38266">
+                <div class="frame-38265">
+                  <img class="check-one" src="img/check-one.svg" alt="check-one" />
+                  <h1 class="text_label-2 valign-text-middle text_label-4">ร่างใบขอสั่งซื้อสำเร็จ</h1>
+                </div>
+                <div class="frame-38262">
+                  <a href="../ปพ ออนไลน์ - front หน้าหลักสถานศึกษา/หน้าหลักสถานศึกษา.html">
+                    <article class="button-2 button-4">
+                      <div class="text_label valign-text-middle text_label-4">กลับหน้าหลัก</div>
+                    </article>
+                  </a>
+                  <a href="javascript:SubmitForm('form3')">
+                    <article class="button-3 button-4">
+                      <div class="text_label-4-2 valign-text-middle text_label-4 notosansthai-semi-bold-white-20px">
+                        เอกสารใบขอสั่งซื้อ
+                      </div>
+                    </article>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <a onclick="showPopupDraft2()"><img class="frame-1041" src="img/frame-1041-2.svg" alt="Frame 1041" />
+            </a>
+          </div>
+        </div>
+      </div>
     </form>
   </div>
   <script>
     /* Copyright (c) 2016 Tobias Buschor https://goo.gl/gl0mbf | MIT License https://goo.gl/HgajeK */
+
+    let isShow = false;
+    let isShowCancel = false;
+    let isShowCancel2 = false;
+    let isShowDraft = false;
+    let isShowDraft2 = false;
+
 
     if (!HTMLFormElement.prototype.reportValidity) {
       HTMLFormElement.prototype.reportValidity = function () {
@@ -268,6 +432,82 @@
       //   if (window.submitted) window.submitted();
       // }
     }
+
+
+    function showPopup() {
+      isShow = !isShow;
+      const content = document.getElementById("content");
+
+      if (isShow) {
+        content.style.display = "block";
+      } else {
+        content.style.display = "none";
+      }
+    }
+
+    function showPopupCancel() {
+      isShowCancel = !isShowCancel;
+      const contentCancel = document.getElementById("contentCancel");
+
+      if (isShowCancel) {
+        contentCancel.style.display = "block";
+      } else {
+        contentCancel.style.display = "none";
+      }
+    }
+
+    function showPopupCancel2() {
+
+      if (isShowCancel) {
+        isShowCancel = false;
+        contentCancel.style.display = "none";
+      }
+
+
+      isShowCancel2 = !isShowCancel2;
+      const contentCancel2 = document.getElementById("contentCancel2");
+
+      if (isShowCancel2) {
+        contentCancel2.style.display = "block";
+      } else {
+        contentCancel2.style.display = "none";
+      }
+    }
+
+    function showPopupDraft() {
+      if (isShowCancel) {
+        isShowCancel = false;
+        contentCancel.style.display = "none";
+      }
+
+      isShowDraft = !isShowDraft;
+      const contentDraft = document.getElementById("contentDraft");
+
+      if (isShowDraft) {
+        contentDraft.style.display = "block";
+      } else {
+        contentDraft.style.display = "none";
+      }
+    }
+
+    function showPopupDraft2() {
+
+      if (isShowDraft) {
+        isShowDraft = false;
+        contentDraft.style.display = "none";
+      }
+
+
+      isShowDraft2 = !isShowDraft2;
+      const contentDraft2 = document.getElementById("contentDraft2");
+
+      if (isShowDraft2) {
+        contentDraft2.style.display = "block";
+      } else {
+        contentDraft2.style.display = "none";
+      }
+    }
+
   </script>
 </body>
 

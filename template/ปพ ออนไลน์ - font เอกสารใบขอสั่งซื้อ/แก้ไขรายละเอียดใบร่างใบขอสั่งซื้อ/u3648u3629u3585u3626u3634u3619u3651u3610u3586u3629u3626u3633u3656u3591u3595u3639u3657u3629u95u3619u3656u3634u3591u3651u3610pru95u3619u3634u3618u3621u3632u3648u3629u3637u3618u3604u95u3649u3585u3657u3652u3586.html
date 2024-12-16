@@ -45,7 +45,7 @@
           </div>
         </header>
         <div class="flex-row">
-          <a href="javascript:SubmitForm('form10')">
+          <a onclick="goBack()">
             <div class="button button-4">
               <img class="icon-back" src="img/icon-back-1.svg" alt="icon back" />
               <div class="text_label valign-text-middle text_label-5">ย้อนกลับ</div>
@@ -228,11 +228,11 @@
             </div>
           </div>
           <div class="frame-383">
-            <a href="javascript:SubmitForm('form10')">
+            <a >
               <article class="button-2 button-4">
                 <div class="text_label valign-text-middle text_label-5">ยกเลิกใบขอสั่งซื้อ</div>
               </article></a
-            ><a href="javascript:SubmitForm('form10')">
+            ><a onclick="goBack()">
               <article class="button-3 button-4">
                 <div class="text_label-4 valign-text-middle text_label-5 notosansthai-semi-bold-white-20px">
                   บันทึกการแก้ไข
@@ -265,6 +265,10 @@
           if (window.submitted) window.submitted();
         }
       }
+
+      function goBack() {
+      history.back();
+    }
     </script>
   </body>
 </html>
