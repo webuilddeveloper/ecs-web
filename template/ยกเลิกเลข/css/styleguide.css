@@ -1,0 +1,50 @@
+:root { 
+  --bg-colorbg1: #f7f7f7;
+  --bggrey: #707070;
+  --bkack: #000000;
+  --main: #012a6c;
+  --main-colormain2: #0b24fb;
+  --main-colorthird2: #e3e6fe;
+  --pink: #fca0a6;
+  --white: #ffffff;
+ 
+  --font-size-l: 17px;
+  --font-size-m: 16px;
+  --font-size-xl: 18px;
+  --font-size-xxl: 20px;
+  --font-size-xxxl: 24px;
+  --font-size-xxxxl: 32px;
+ 
+  --font-family-noto_sans_thai: "Noto Sans Thai", Helvetica;
+}
+.notosansthai-semi-bold-white-20px {
+  color: var(--white);
+  font-family: var(--font-family-noto_sans_thai);
+  font-size: var(--font-size-xxl);
+  font-style: normal;
+  font-weight: 600;
+}
+
+.notosansthai-normal-black-18px {
+  color: var(--bkack);
+  font-family: var(--font-family-noto_sans_thai);
+  font-size: var(--font-size-xl);
+  font-style: normal;
+  font-weight: 400;
+}
+
+.notosansthai-normal-dove-gray-17px {
+  color: var(--bggrey);
+  font-family: var(--font-family-noto_sans_thai);
+  font-size: var(--font-size-l);
+  font-style: normal;
+  font-weight: 400;
+}
+
+.notosansthai-normal-black-16px {
+  color: var(--bkack);
+  font-family: var(--font-family-noto_sans_thai);
+  font-size: var(--font-size-m);
+  font-style: normal;
+  font-weight: 400;
+}
