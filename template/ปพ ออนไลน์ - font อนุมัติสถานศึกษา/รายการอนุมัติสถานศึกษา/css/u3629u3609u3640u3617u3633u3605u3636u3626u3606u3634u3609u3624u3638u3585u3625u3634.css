@@ -722,3 +722,12 @@
   white-space: nowrap;
   width: fit-content;
 }
+
+.navbar-link-text-3 {
+  letter-spacing: 0;
+  line-height: normal;
+  margin-top: -1.00px;
+  position: relative;
+  text-decoration: underline;
+  width: fit-content;
+}
