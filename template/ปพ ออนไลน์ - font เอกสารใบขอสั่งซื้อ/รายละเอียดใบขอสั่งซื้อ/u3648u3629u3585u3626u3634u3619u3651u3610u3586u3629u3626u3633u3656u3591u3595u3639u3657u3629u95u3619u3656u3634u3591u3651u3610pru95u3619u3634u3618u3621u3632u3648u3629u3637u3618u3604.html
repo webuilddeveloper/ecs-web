@@ -45,7 +45,7 @@
           </div>
         </header>
         <div class="flex-row">
-          <a href="javascript:SubmitForm('form6')">
+          <a onclick="goBack()">
             <div class="button button-6">
               <img class="icon-back" src="img/icon-back-2.svg" alt="icon back" />
               <div class="text_label valign-text-middle text_label-3 notosansthai-semi-bold-midnight-blue-20px">
@@ -227,13 +227,13 @@
               </div></a
             >
             <div class="frame-38379">
-              <a href="javascript:SubmitForm('form6')">
+              <a onclick="goBack()">
                 <article class="button-4 button-6">
                   <div class="text_label valign-text-middle text_label-3 notosansthai-semi-bold-midnight-blue-20px">
                     ยกเลิก
                   </div>
                 </article></a
-              ><a href="javascript:SubmitForm('form6')">
+              ><a href="../../ปพ ออนไลน์ - font สั่งซื้อ/สรุปยอดชำระเงิน/สรุปยอดชำระเงิน.html">
                 <article class="button-5 button-6">
                   <div class="text_label valign-text-middle text_label-3 notosansthai-semi-bold-white-20px">
                     ชำระเงิน
@@ -267,6 +267,10 @@
           if (window.submitted) window.submitted();
         }
       }
+
+      function goBack() {
+      history.back(); 
+    }
     </script>
   </body>
 </html>

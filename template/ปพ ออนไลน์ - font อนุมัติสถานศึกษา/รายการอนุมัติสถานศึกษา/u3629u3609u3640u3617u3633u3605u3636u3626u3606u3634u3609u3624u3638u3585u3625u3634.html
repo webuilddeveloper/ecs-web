@@ -109,38 +109,60 @@
             </div>
             <div class="frame-3346">
               <div class="column-table-default">
-                <div class="base-table-header base-table">
-                  <img class="base-checkbox" src="img/-base-checkbox-13.svg" alt="base-checkbox" />
+                <div class="base-table-header base-table" onclick="checkBoxAll()">
+                  <!-- <img class="base-checkbox" src="img/-base-checkbox-13.svg" alt="base-checkbox" /> -->
+                  <input id="checkbox-all" type="checkbox" class="base-checkbox" id="checkbox1" />
+                  <label for="checkbox1" class="base-checkbox-label"></label>
                 </div>
                 <div class="base-table">
-                  <img class="base-checkbox" src="img/-base-checkbox-13.svg" alt="base-checkbox" />
+                  <!-- <img class="base-checkbox" src="img/-base-checkbox-13.svg" alt="base-checkbox" /> -->
+                  <input id="checkbox1" type="checkbox" class="base-checkbox" id="checkbox1" />
+                  <label for="checkbox1" class="base-checkbox-label"></label>
                 </div>
                 <div class="base-table">
-                  <img class="base-checkbox" src="img/-base-checkbox-13.svg" alt="base-checkbox" />
+                  <!-- <img class="base-checkbox" src="img/-base-checkbox-13.svg" alt="base-checkbox" /> -->
+                  <input id="checkbox2" type="checkbox" class="base-checkbox" id="checkbox1" />
+                  <label for="checkbox1" class="base-checkbox-label"></label>
                 </div>
                 <div class="base-table">
-                  <img class="base-checkbox" src="img/-base-checkbox-13.svg" alt="base-checkbox" />
+                  <!-- <img class="base-checkbox" src="img/-base-checkbox-13.svg" alt="base-checkbox" /> -->
+                  <input id="checkbox3" type="checkbox" class="base-checkbox" id="checkbox1" />
+                  <label for="checkbox1" class="base-checkbox-label"></label>
                 </div>
                 <div class="base-table">
-                  <img class="base-checkbox" src="img/-base-checkbox-13.svg" alt="base-checkbox" />
+                  <!-- <img class="base-checkbox" src="img/-base-checkbox-13.svg" alt="base-checkbox" /> -->
+                  <input id="checkbox4" type="checkbox" class="base-checkbox" id="checkbox1" />
+                  <label for="checkbox1" class="base-checkbox-label"></label>
                 </div>
                 <div class="base-table">
-                  <img class="base-checkbox" src="img/-base-checkbox-13.svg" alt="base-checkbox" />
+                  <!-- <img class="base-checkbox" src="img/-base-checkbox-13.svg" alt="base-checkbox" /> -->
+                  <input id="checkbox5" type="checkbox" class="base-checkbox" id="checkbox1" />
+                  <label for="checkbox1" class="base-checkbox-label"></label>
                 </div>
                 <div class="base-table">
-                  <img class="base-checkbox" src="img/-base-checkbox-13.svg" alt="base-checkbox" />
+                  <!-- <img class="base-checkbox" src="img/-base-checkbox-13.svg" alt="base-checkbox" /> -->
+                  <input id="checkbox6" type="checkbox" class="base-checkbox" id="checkbox1" />
+                  <label for="checkbox1" class="base-checkbox-label"></label>
                 </div>
                 <div class="base-table">
-                  <img class="base-checkbox" src="img/-base-checkbox-13.svg" alt="base-checkbox" />
+                  <!-- <img class="base-checkbox" src="img/-base-checkbox-13.svg" alt="base-checkbox" /> -->
+                  <input id="checkbox7" type="checkbox" class="base-checkbox" id="checkbox1" />
+                  <label for="checkbox1" class="base-checkbox-label"></label>
                 </div>
                 <div class="base-table">
-                  <img class="base-checkbox" src="img/-base-checkbox-13.svg" alt="base-checkbox" />
+                  <!-- <img class="base-checkbox" src="img/-base-checkbox-13.svg" alt="base-checkbox" /> -->
+                  <input id="checkbox8" type="checkbox" class="base-checkbox" id="checkbox1" />
+                  <label for="checkbox1" class="base-checkbox-label"></label>
                 </div>
                 <div class="base-table">
-                  <img class="base-checkbox" src="img/-base-checkbox-13.svg" alt="base-checkbox" />
+                  <!-- <img class="base-checkbox" src="img/-base-checkbox-13.svg" alt="base-checkbox" /> -->
+                  <input id="checkbox9" type="checkbox" class="base-checkbox" id="checkbox1" />
+                  <label for="checkbox1" class="base-checkbox-label"></label>
                 </div>
                 <div class="base-table">
-                  <img class="base-checkbox" src="img/-base-checkbox-13.svg" alt="base-checkbox" />
+                  <!-- <img class="base-checkbox" src="img/-base-checkbox-13.svg" alt="base-checkbox" /> -->
+                  <input id="checkbox10" type="checkbox" class="base-checkbox" id="checkbox1" />
+                  <label for="checkbox1" class="base-checkbox-label"></label>
                 </div>
               </div>
               <div class="column-table-default-1 column-table-default-6">
@@ -495,6 +517,21 @@
         this.removeChild(btn);
         return false;
       };
+    }
+
+    function checkBoxAll() {
+      var isChecked = document.getElementById('checkbox-all').checked;
+
+      document.getElementById('checkbox1').checked = isChecked;
+      document.getElementById('checkbox2').checked = isChecked;
+      document.getElementById('checkbox3').checked = isChecked;
+      document.getElementById('checkbox4').checked = isChecked;
+      document.getElementById('checkbox5').checked = isChecked;
+      document.getElementById('checkbox6').checked = isChecked;
+      document.getElementById('checkbox7').checked = isChecked;
+      document.getElementById('checkbox8').checked = isChecked;
+      document.getElementById('checkbox9').checked = isChecked;
+      document.getElementById('checkbox10').checked = isChecked;
     }
 
     function SubmitForm(form_name) {
