@@ -575,6 +575,7 @@
   align-items: center;
   justify-content: center;
   overflow: hidden;
+  cursor: pointer;
 }
 
 .popupu95u3618u3639u3609u3618u3633u3609u3585u3634u3619u3594u3635u3619u3632u3648u3591u3636u3609 .navbar-link-text {
@@ -597,5 +598,10 @@
   position: relative;
   text-align: right;
   width: fit-content;
+}
+
+.popupu95u3618u3639u3609u3618u3633u3609u3585u3634u3619u3594u3635u3619u3632u3648u3591u3636u3609 .navbar-link-text a {
+  color: white;
+  text-decoration: none;
 }
 

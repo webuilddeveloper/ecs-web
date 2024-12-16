@@ -5,7 +5,7 @@
   background-color: var(--white);
   display: flex;
   flex-direction: column;
-  height: 2625px;
+  height: 2200px;
   width: 1440px;
 }
 
@@ -92,8 +92,10 @@
   font-family: var(--font-family-noto_sans_thai);
   font-size: var(--font-size-m);
   font-weight: 600;
-  margin-top: -1.00px;
   position: relative;
+  text-align: center;
+  line-height: normal;
+  margin-top: -1.00px;
   text-align: center;
   width: fit-content;
 }
@@ -895,24 +897,33 @@
 
 .radio-button {
   display: flex;
-  align-items: center; /* จัดให้อยู่ในแนวเดียวกัน */
-  gap: 10px; /* ระยะห่างระหว่าง Radio Button กับข้อความ */
+  align-items: center;
+  /* จัดให้อยู่ในแนวเดียวกัน */
+  gap: 10px;
+  /* ระยะห่างระหว่าง Radio Button กับข้อความ */
   cursor: pointer;
-  width: 100%; /* ให้ label ครอบคลุมพื้นที่ */
+  width: 100%;
+  /* ให้ label ครอบคลุมพื้นที่ */
 }
 
 
 .radio-label {
   display: flex;
-  flex-direction: column; /* จัดให้ข้อความและ dropdown อยู่คนละบรรทัด */
-  flex: 1; /* ขยายเพื่อเติมพื้นที่ที่เหลือ */
+  flex-direction: column;
+  /* จัดให้ข้อความและ dropdown อยู่คนละบรรทัด */
+  flex: 1;
+  /* ขยายเพื่อเติมพื้นที่ที่เหลือ */
 }
 
 .radio-button .radio-label {
-  padding-left: 30px; /* เพิ่มระยะห่างด้านซ้าย */
-  white-space: nowrap; /* ป้องกันการตัดคำ */
-  color: #000; /* สีดำ */
-  line-height: 1.5; /* เพิ่มความสูงบรรทัดให้สวยงาม */
+  padding-left: 30px;
+  /* เพิ่มระยะห่างด้านซ้าย */
+  white-space: nowrap;
+  /* ป้องกันการตัดคำ */
+  color: #000;
+  /* สีดำ */
+  line-height: 1.5;
+  /* เพิ่มความสูงบรรทัดให้สวยงาม */
 }
 
 .radio-button .radio-label::before {
@@ -928,7 +939,7 @@
   background: white;
 }
 
-.radio-button input[type="radio"]:checked + .radio-label::before {
+.radio-button input[type="radio"]:checked+.radio-label::before {
   background: var(--main);
 }
 
@@ -967,9 +978,12 @@
 
 /* Container สำหรับแถวของตัวเลือกและ dropdown */
 .radio-row {
-  display: flex; /* จัดตำแหน่งข้อความและ dropdown ในแถวเดียวกัน */
-  align-items: center; /* จัดให้อยู่กึ่งกลางในแนวตั้ง */
-  justify-content: space-between; /* กระจายข้อความและ dropdown */
+  display: flex;
+  /* จัดตำแหน่งข้อความและ dropdown ในแถวเดียวกัน */
+  align-items: center;
+  /* จัดให้อยู่กึ่งกลางในแนวตั้ง */
+  justify-content: space-between;
+  /* กระจายข้อความและ dropdown */
   width: 100%;
 }
 
@@ -979,7 +993,8 @@
 }
 
 .listbox-component {
-  margin-left: 20px; /* ระยะห่างระหว่างตัวเลือกและ dropdown */
+  margin-left: 20px;
+  /* ระยะห่างระหว่างตัวเลือกและ dropdown */
 }
 
 
@@ -1003,4 +1018,167 @@
 .chevron {
   width: 10px;
   height: 10px;
+}
+
+
+.u3629u3629u3585u3651u3610u3586u3629u3626u3633u3656u3591u3595u3639u3657u3629u95u3619u3634u3618u3621u3632u3648u3629u3637u3618u3604u3585u3634u3619u3592u3633u3604u3626u3656u3591 .view {
+  align-items: flex-start;
+  background-color: #14181f80;
+  display: flex;
+  height: 2200px;
+  /* left: 0; */
+  padding: 527px 444px;
+  position: absolute;
+  width: 1440px;
+}
+
+.u3629u3629u3585u3651u3610u3586u3629u3626u3633u3656u3591u3595u3639u3657u3629u95u3619u3634u3618u3621u3632u3648u3629u3637u3618u3604u3585u3634u3619u3592u3633u3604u3626u3656u3591 .popup {
+  align-items: flex-end;
+  display: flex;
+  height: 287px;
+  min-width: 552px;
+}
+
+.u3629u3629u3585u3651u3610u3586u3629u3626u3633u3656u3591u3595u3639u3657u3629u95u3619u3634u3618u3621u3632u3648u3629u3637u3618u3604u3585u3634u3619u3592u3633u3604u3626u3656u3591 .frame-container {
+  border-radius: 10px;
+  height: 288px;
+  margin-bottom: 50px;
+  position: relative;
+  width: 552px;
+}
+
+.u3629u3629u3585u3651u3610u3586u3629u3626u3633u3656u3591u3595u3639u3657u3629u95u3619u3634u3618u3621u3632u3648u3629u3637u3618u3604u3585u3634u3619u3592u3633u3604u3626u3656u3591 .frame-38264 {
+  align-items: center;
+  background-color: var(--white);
+  border-radius: 10px;
+  display: inline-flex;
+  gap: 10px;
+  left: 0;
+  overflow: hidden;
+  padding: 40px;
+  position: absolute;
+  top: 0;
+}
+
+.u3629u3629u3585u3651u3610u3586u3629u3626u3633u3656u3591u3595u3639u3657u3629u95u3619u3634u3618u3621u3632u3648u3629u3637u3618u3604u3585u3634u3619u3592u3633u3604u3626u3656u3591 .frame-38266 {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  position: relative;
+  width: 472px;
+}
+
+.u3629u3629u3585u3651u3610u3586u3629u3626u3633u3656u3591u3595u3639u3657u3629u95u3619u3634u3618u3621u3632u3648u3629u3637u3618u3604u3585u3634u3619u3592u3633u3604u3626u3656u3591 .frame-38265 {
+  align-items: center;
+  display: inline-flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+  position: relative;
+}
+
+.u3629u3629u3585u3651u3610u3586u3629u3626u3633u3656u3591u3595u3639u3657u3629u95u3619u3634u3618u3621u3632u3648u3629u3637u3618u3604u3585u3634u3619u3592u3633u3604u3626u3656u3591 .text_label-2 {
+  color: var(--pink);
+  font-family: var(--font-family-noto_sans_thai);
+  font-size: var(--font-size-xxl);
+  font-weight: 600;
+  line-height: 60.0px;
+  margin-top: -1.00px;
+  text-align: center;
+  width: 468px;
+}
+
+.u3629u3629u3585u3651u3610u3586u3629u3626u3633u3656u3591u3595u3639u3657u3629u95u3619u3634u3618u3621u3632u3648u3629u3637u3618u3604u3585u3634u3619u3592u3633u3604u3626u3656u3591 .text_label-3 {
+  color: var(--bkack);
+  font-family: var(--font-family-noto_sans_thai);
+  font-size: var(--font-size-m);
+  font-weight: 400;
+  line-height: normal;
+  text-align: center;
+  width: 468px;
+}
+
+.u3629u3629u3585u3651u3610u3586u3629u3626u3633u3656u3591u3595u3639u3657u3629u95u3619u3634u3618u3621u3632u3648u3629u3637u3618u3604u3585u3634u3619u3592u3633u3604u3626u3656u3591 .frame-38262 {
+  align-items: center;
+  display: inline-flex;
+  flex: 0 0 auto;
+  gap: 40px;
+  position: relative;
+}
+
+.u3629u3629u3585u3651u3610u3586u3629u3626u3633u3656u3591u3595u3639u3657u3629u95u3619u3634u3618u3621u3632u3648u3629u3637u3618u3604u3585u3634u3619u3592u3633u3604u3626u3656u3591 .button-2 {
+  background-color: var(--white);
+  border: 1px solid;
+  border-color: var(--main);
+  border-radius: 10px;
+  cursor: pointer;
+  display: flex;
+  gap: 8px;
+  padding: 8px 24px;
+  position: relative;
+  width: 216px;
+}
+
+.u3629u3629u3585u3651u3610u3586u3629u3626u3633u3656u3591u3595u3639u3657u3629u95u3619u3634u3618u3621u3632u3648u3629u3637u3618u3604u3585u3634u3619u3592u3633u3604u3626u3656u3591 .button-3 {
+  background-color: var(--main);
+  border-radius: 10px;
+  cursor: pointer;
+  display: flex;
+  gap: 8px;
+  padding: 8px 24px;
+  position: relative;
+  width: 216px;
+}
+
+.u3629u3629u3585u3651u3610u3586u3629u3626u3633u3656u3591u3595u3639u3657u3629u95u3619u3634u3618u3621u3632u3648u3629u3637u3618u3604u3585u3634u3619u3592u3633u3604u3626u3656u3591 .text_label-4-2 {
+  line-height: normal;
+  margin-top: -1.00px;
+  text-align: center;
+  width: fit-content;
+  color: #ffffff;
+}
+
+.u3629u3629u3585u3651u3610u3586u3629u3626u3633u3656u3591u3595u3639u3657u3629u95u3619u3634u3618u3621u3632u3648u3629u3637u3618u3604u3585u3634u3619u3592u3633u3604u3626u3656u3591 .frame-1041 {
+  cursor: pointer;
+  height: 31px;
+  left: 505px;
+  position: absolute;
+  top: 10px;
+  width: 31px;
+}
+
+.u3629u3629u3585u3651u3610u3586u3629u3626u3633u3656u3591u3595u3639u3657u3629u95u3619u3634u3618u3621u3632u3648u3629u3637u3618u3604u3585u3634u3619u3592u3633u3604u3626u3656u3591 .button-4 {
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.u3629u3629u3585u3651u3610u3586u3629u3626u3633u3656u3591u3595u3639u3657u3629u95u3619u3634u3618u3621u3632u3648u3629u3637u3618u3604u3585u3634u3619u3592u3633u3604u3626u3656u3591 .navbar-link-text {
+  letter-spacing: 0;
+  line-height: normal;
+  margin-top: -1.00px;
+  position: relative;
+  width: fit-content;
+}
+
+.u3629u3629u3585u3651u3610u3586u3629u3626u3633u3656u3591u3595u3639u3657u3629u95u3619u3634u3618u3621u3632u3648u3629u3637u3618u3604u3585u3634u3619u3592u3633u3604u3626u3656u3591 .text_label-5 {
+  letter-spacing: 0;
+  position: relative;
+}
+
+.u3629u3629u3585u3651u3610u3586u3629u3626u3633u3656u3591u3595u3639u3657u3629u95u3619u3634u3618u3621u3632u3648u3629u3637u3618u3604u3585u3634u3619u3592u3633u3604u3626u3656u3591 .xxxx-2 {
+  letter-spacing: 0;
+  line-height: normal;
+  margin-top: -1.00px;
+  position: relative;
+  text-align: right;
+  width: fit-content;
+}
+
+.u3629u3629u3585u3651u3610u3586u3629u3626u3633u3656u3591u3595u3639u3657u3629u95u3619u3634u3618u3621u3632u3648u3629u3637u3618u3604u3585u3634u3619u3592u3633u3604u3626u3656u3591 .navbar-link-text a {
+  color: white;
+  text-decoration: none;
 }
