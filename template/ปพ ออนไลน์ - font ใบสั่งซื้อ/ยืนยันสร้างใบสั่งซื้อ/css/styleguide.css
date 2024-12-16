@@ -4,12 +4,15 @@
   --midnight-blue: #012a6c;
   --pink: #fca0a6;
   --white: #ffffff;
+  --main: #012a6c;
+  --green: #039754;
  
   --font-size-l: 32px;
   --font-size-m: 22px;
   --font-size-s: 20px;
   --font-size-xs: 16px;
   --font-size-xxs: 14px;
+  --font-size-xl: 40px;
  
   --font-family-noto_sans_thai: "Noto Sans Thai", Helvetica;
 }
