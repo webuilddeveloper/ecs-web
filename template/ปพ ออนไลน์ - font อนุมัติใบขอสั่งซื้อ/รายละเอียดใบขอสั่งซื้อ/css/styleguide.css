@@ -6,6 +6,8 @@
   --main: #012a6c;
   --pink: #fca0a6;
   --white: #ffffff;
+  --green: #039754;
+  
  
   --font-size-l: 22px;
   --font-size-m: 20px;
@@ -14,6 +16,7 @@
   --font-size-xs: 16px;
   --font-size-xxl: 32px;
   --font-size-xxs: 14px;
+  --font-size-xl-2: 40px;
  
   --font-family-kanit: "Kanit", Helvetica;
   --font-family-noto_sans_thai: "Noto Sans Thai", Helvetica;
