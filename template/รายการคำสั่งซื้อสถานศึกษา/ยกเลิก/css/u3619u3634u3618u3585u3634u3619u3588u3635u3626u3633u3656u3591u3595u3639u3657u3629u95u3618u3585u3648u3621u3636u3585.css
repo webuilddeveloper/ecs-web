@@ -841,3 +841,8 @@ a:link, a:visited {
 a:hover, a:active {
   color: #f0f0f0; /* สีเมื่อโฮเวอร์ */
 }
+
+.u3619u3634u3618u3585u3634u3619u3588u3635u3626u3633u3656u3591u3595u3639u3657u3629u95u3618u3585u3648u3621u3636u3585 .navbar-link-text a {
+  color: white;
+  text-decoration: none;
+}
