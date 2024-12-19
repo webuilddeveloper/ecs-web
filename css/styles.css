@@ -43,7 +43,7 @@
     flex-shrink: 1;
     height: 80px;
     justify-content: flex-end;
-    min-width: 1440px;
+    /* min-width: 1440px; */
     padding: 6px 87.8px;
     width: auto;
     display: flex;
@@ -109,16 +109,17 @@
 }
 
 .footer {
-    align-items: flex-start;
+    align-items: center;
     background-color: var(--main);
     display: flex;
     flex-direction: row;
     flex-shrink: 1;
     height: 76px;
-    justify-content: flex-start;
+    justify-content: center;
     margin-top: 218px;
     /* padding: 22px 552px; */
     width: 1440px;
+
 }
 
 .copyright-2024 {
