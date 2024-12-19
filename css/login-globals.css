@@ -345,3 +345,7 @@
   position: relative;
   width: 533px;
 }
+
+input:focus {
+  outline: none;
+}
