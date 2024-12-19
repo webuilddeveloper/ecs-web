@@ -118,8 +118,7 @@
     justify-content: center;
     margin-top: 218px;
     /* padding: 22px 552px; */
-    width: 1440px;
-
+    /* width: 1440px; */
 }
 
 .copyright-2024 {
@@ -981,4 +980,35 @@
     margin-top: -1.00px;
     position: relative;
     width: 334px;
+  }
+
+  .content-ecs .button-back {
+    align-items: center;
+    background-color: var(--pink);
+    border-radius: 10px;
+    display: inline-flex;
+    gap: 8px;
+    justify-content: center;
+    overflow: hidden;
+    padding: 8px 24px;
+    position: relative;
+  }
+
+  .content-ecs .icon-back {
+    height: 24px;
+    position: relative;
+    width: 24px;
+  }
+
+  .content-ecs .button-back-text-label {
+    color: var(--main);
+    font-family: var(--font-family-noto_sans_thai);
+    font-size: var(--font-size-xxl);
+    font-weight: 600;
+    letter-spacing: 0;
+    line-height: normal;
+    margin-top: -1.00px;
+    position: relative;
+    text-align: center;
+    width: fit-content;
   }
