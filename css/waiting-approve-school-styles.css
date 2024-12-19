@@ -1,6 +1,6 @@
-/* screen - approve-school */
+/* screen - waiting-approve-school */
 
-.approve-school {
+.waiting-approve-school {
   align-items: flex-end;
   background-color: var(--white);
   display: flex;
@@ -10,14 +10,14 @@
   width: 1440px;
 }
 
-.approve-school .logo-1 {
+.waiting-approve-school .logo-1 {
   align-self: flex-end;
   height: 60px;
   object-fit: cover;
   width: 68px;
 }
 
-.approve-school .navbar {
+.waiting-approve-school .navbar {
   align-items: center;
   display: inline-flex;
   gap: 50px;
@@ -26,7 +26,7 @@
   position: relative;
 }
 
-.approve-school .frame-38253 {
+.waiting-approve-school .frame-38253 {
   align-items: center;
   display: inline-flex;
   gap: 56px;
@@ -36,18 +36,18 @@
   position: relative;
 }
 
-.approve-school .group {
+.waiting-approve-school .group {
   height: 35px;
   position: relative;
   width: 31.17px;
 }
 
-.approve-school .vector {
+.waiting-approve-school .vector {
   height: 35px;
   position: relative;
   width: 35px;
 }
-.approve-school .vector-1 {
+.waiting-approve-school .vector-1 {
   height: 35px;
   margin-left: -241.83px;
   margin-top: -17644.00px;
@@ -55,17 +55,17 @@
   width: 35px;
 }
 
-.approve-school .navbar-link-text-39 {
+.waiting-approve-school .navbar-link-text-39 {
   text-decoration: underline;
 }
 
-.approve-school .vector-2 {
+.waiting-approve-school .vector-2 {
   height: 35px;
   position: relative;
   width: 35px;
 }
 
-.approve-school .overlap-group {
+.waiting-approve-school .overlap-group {
   align-self: center;
   height: 1210px;
   margin-top: 70px;
@@ -73,7 +73,7 @@
   width: 1240px;
 }
 
-.approve-school .frame-38357 {
+.waiting-approve-school .frame-38357 {
   align-items: flex-start;
   display: inline-flex;
   gap: 32px;
@@ -82,7 +82,7 @@
   top: 0;
 }
 
-.approve-school .frame-38358 {
+.waiting-approve-school .frame-38358 {
   align-items: flex-start;
   display: flex;
   flex-direction: column;
@@ -91,7 +91,7 @@
   width: 316px;
 }
 
-.approve-school .frame-38354 {
+.waiting-approve-school .frame-38354 {
   align-items: flex-start;
   align-self: stretch;
   display: flex;
@@ -102,7 +102,7 @@
   width: 100%;
 }
 
-.approve-school .frame-38352 {
+.waiting-approve-school .frame-38352 {
   align-items: flex-start;
   align-self: stretch;
   display: flex;
@@ -113,7 +113,7 @@
   width: 100%;
 }
 
-.approve-school .frame-38350 {
+.waiting-approve-school .frame-38350 {
   align-items: center;
   align-self: stretch;
   display: flex;
@@ -123,7 +123,7 @@
   width: 100%;
 }
 
-.approve-school .frame-38 {
+.waiting-approve-school .frame-38 {
   align-items: center;
   display: inline-flex;
   flex: 0 0 auto;
@@ -131,20 +131,20 @@
   position: relative;
 }
 
-.approve-school .icon {
+.waiting-approve-school .icon {
   height: 34px;
   position: relative;
   width: 34px;
 }
 
-.approve-school .text {
+.waiting-approve-school .text {
   line-height: normal;
   margin-top: -0.50px;
   text-align: center;
   width: fit-content;
 }
 
-.approve-school .frame-38348 {
+.waiting-approve-school .frame-38348 {
   align-items: center;
   display: inline-flex;
   flex: 0 0 auto;
@@ -152,13 +152,13 @@
   position: relative;
 }
 
-.approve-school .arrow-down-01 {
+.waiting-approve-school .arrow-down-01 {
   height: 24px;
   position: relative;
   width: 24px;
 }
 
-.approve-school .frame-3835 {
+.waiting-approve-school .frame-3835 {
   align-items: center;
   display: flex;
   flex: 0 0 auto;
@@ -169,18 +169,18 @@
   width: 251px;
 }
 
-.approve-school .text-1 {
+.waiting-approve-school .text-1 {
   align-self: stretch;
   line-height: normal;
   margin-top: -1.00px;
 }
 
-.approve-school .text-2 {
+.waiting-approve-school .text-2 {
   align-self: stretch;
   line-height: normal;
 }
 
-.approve-school .text-4 {
+.waiting-approve-school .text-4 {
   color: var(--pink);
   font-family: var(--font-family-noto_sans_thai);
   font-size: var(--font-size-l);
@@ -191,7 +191,7 @@
   width: fit-content;
 }
 
-.approve-school .frame-3852 {
+.waiting-approve-school .frame-3852 {
   align-items: flex-start;
   display: inline-flex;
   flex: 0 0 auto;
@@ -200,7 +200,7 @@
   position: relative;
 }
 
-.approve-school .frame-38351 {
+.waiting-approve-school .frame-38351 {
   align-items: flex-start;
   display: flex;
   flex: 0 0 auto;
@@ -213,13 +213,13 @@
   width: 251px;
 }
 
-.approve-school .text-8 {
+.waiting-approve-school .text-8 {
   line-height: normal;
   margin-right: -80.00px;
   width: 231px;
 }
 
-.approve-school .frame-38528 {
+.waiting-approve-school .frame-38528 {
   align-items: center;
   display: inline-flex;
   flex: 0 0 auto;
@@ -227,14 +227,14 @@
   position: relative;
 }
 
-.approve-school .text-10 {
+.waiting-approve-school .text-10 {
   line-height: normal;
   margin-right: -50.00px;
   margin-top: -1.00px;
   width: 201px;
 }
 
-.approve-school .frame-38356 {
+.waiting-approve-school .frame-38356 {
   align-items: flex-start;
   display: flex;
   flex-direction: column;
@@ -243,7 +243,7 @@
   width: 892px;
 }
 
-.approve-school .frame-38357-1 {
+.waiting-approve-school .frame-38357-1 {
   align-items: flex-start;
   align-self: stretch;
   display: flex;
@@ -254,7 +254,7 @@
   width: 100%;
 }
 
-.approve-school .frame-38344 {
+.waiting-approve-school .frame-38344 {
   align-items: center;
   align-self: stretch;
   display: flex;
@@ -264,7 +264,7 @@
   width: 100%;
 }
 
-.approve-school .text-1-1 {
+.waiting-approve-school .text-1-1 {
   cursor: pointer;
   letter-spacing: 0;
   line-height: normal;
@@ -273,7 +273,7 @@
   width: fit-content;
 }
 
-.approve-school .frame-38343 {
+.waiting-approve-school .frame-38343 {
   align-self: stretch;
   flex: 0 0 auto;
   margin-bottom: -1.50px;
@@ -282,7 +282,7 @@
   width: 100%;
 }
 
-.approve-school .frame-20 {
+.waiting-approve-school .frame-20 {
   align-items: center;
   align-self: stretch;
   background-color: #f2f2f2;
@@ -298,13 +298,13 @@
   width: 100%;
 }
 
-.approve-school .icon-magnifying-glass-searching-glass {
+.waiting-approve-school .icon-magnifying-glass-searching-glass {
   height: 30px;
   position: relative;
   width: 30px;
 }
 
-.approve-school .text_input {
+.waiting-approve-school .text_input {
   background-color: transparent;
   border: 0;
   color: var(--bggrey);
@@ -319,11 +319,11 @@
   position: relative;
 }
 
-.approve-school .text_input::placeholder {
+.waiting-approve-school .text_input::placeholder {
   color: #70707099;
 }
 
-.approve-school .frame {
+.waiting-approve-school .frame {
   align-items: flex-start;
   align-self: stretch;
   border: 1px solid;
@@ -339,7 +339,7 @@
   width: 100%;
 }
 
-.approve-school .frame-38339 {
+.waiting-approve-school .frame-38339 {
   align-items: center;
   align-self: stretch;
   display: flex;
@@ -349,14 +349,14 @@
   width: 100%;
 }
 
-.approve-school .xxxxxxxx {
+.waiting-approve-school .xxxxxxxx {
   letter-spacing: 0;
   line-height: normal;
   position: relative;
   width: 314px;
 }
 
-.approve-school .frame-38341 {
+.waiting-approve-school .frame-38341 {
   align-items: center;
   display: flex;
   gap: 16px;
@@ -365,7 +365,7 @@
   width: 466px;
 }
 
-.approve-school .text-18 {
+.waiting-approve-school .text-18 {
   cursor: pointer;
   line-height: normal;
   text-align: right;
@@ -373,7 +373,7 @@
   width: fit-content;
 }
 
-.approve-school .button {
+.waiting-approve-school .button {
   background-color: var(--yellow);
   border-radius: 10px;
   gap: 8px;
@@ -381,7 +381,7 @@
   width: 153px;
 }
 
-.approve-school .text_label {
+.waiting-approve-school .text_label {
   letter-spacing: 0;
   line-height: normal;
   margin-top: -1.00px;
@@ -390,7 +390,7 @@
   width: fit-content;
 }
 
-.approve-school .line {
+.waiting-approve-school .line {
   align-self: stretch;
   height: 1px;
   object-fit: cover;
@@ -398,7 +398,7 @@
   width: 100%;
 }
 
-.approve-school .frame-38-1 {
+.waiting-approve-school .frame-38-1 {
   align-items: center;
   align-self: stretch;
   display: flex;
@@ -408,7 +408,7 @@
   width: 100%;
 }
 
-.approve-school .frame-95 {
+.waiting-approve-school .frame-95 {
   background-color: var(--gallery);
   border: 1px solid;
   border-color: var(--delta);
@@ -421,7 +421,7 @@
   width: 110px;
 }
 
-.approve-school .image-8 {
+.waiting-approve-school .image-8 {
   height: 110px;
   left: 0;
   position: absolute;
@@ -429,7 +429,7 @@
   width: 110px;
 }
 
-.approve-school .frame-94 {
+.waiting-approve-school .frame-94 {
   align-items: center;
   display: flex;
   flex: 1;
@@ -440,7 +440,7 @@
   position: relative;
 }
 
-.approve-school .frame-94-1 {
+.waiting-approve-school .frame-94-1 {
   align-items: center;
   display: flex;
   flex: 1;
@@ -451,7 +451,7 @@
   position: relative;
 }
 
-.approve-school .frame-93 {
+.waiting-approve-school .frame-93 {
   align-items: flex-start;
   display: flex;
   flex-direction: column;
@@ -461,14 +461,14 @@
   width: 281px;
 }
 
-.approve-school .text-3 {
+.waiting-approve-school .text-3 {
   line-height: normal;
   margin-right: -155.00px;
   margin-top: -1.00px;
   width: fit-content;
 }
 
-.approve-school .frame-9 {
+.waiting-approve-school .frame-9 {
   align-items: flex-start;
   display: inline-flex;
   flex: 0 0 auto;
@@ -477,20 +477,20 @@
   position: relative;
 }
 
-.approve-school .text-20 {
+.waiting-approve-school .text-20 {
   line-height: normal;
   margin-top: -1.00px;
   width: fit-content;
 }
 
-.approve-school .frame-93-1 {
+.waiting-approve-school .frame-93-1 {
   height: 110px;
   margin-right: -121.00px;
   position: relative;
   width: 361px;
 }
 
-.approve-school .frame-18 {
+.waiting-approve-school .frame-18 {
   align-items: center;
   background-color: var(--gallery-2);
   border-radius: 62px;
@@ -503,13 +503,13 @@
   width: 129px;
 }
 
-.approve-school .text-21 {
+.waiting-approve-school .text-21 {
   line-height: normal;
   margin-top: -1.00px;
   width: fit-content;
 }
 
-.approve-school .text-2-1 {
+.waiting-approve-school .text-2-1 {
   letter-spacing: 0;
   line-height: normal;
   margin-right: -100.00px;
@@ -518,7 +518,7 @@
   width: fit-content;
 }
 
-.approve-school .frame-38433 {
+.waiting-approve-school .frame-38433 {
   align-items: flex-start;
   display: inline-flex;
   flex: 0 0 auto;
@@ -526,19 +526,19 @@
   position: relative;
 }
 
-.approve-school .text-23 {
+.waiting-approve-school .text-23 {
   line-height: normal;
   margin-top: -1.00px;
   width: fit-content;
 }
 
-.approve-school .text-24 {
+.waiting-approve-school .text-24 {
   line-height: normal;
   margin-top: -1.00px;
   width: fit-content;
 }
 
-.approve-school .frame-38341-1 {
+.waiting-approve-school .frame-38341-1 {
   align-items: flex-end;
   align-self: stretch;
   display: flex;
@@ -549,45 +549,45 @@
   width: 100%;
 }
 
-.approve-school .grand-total {
+.waiting-approve-school .grand-total {
   letter-spacing: 0;
   line-height: normal;
   position: relative;
   width: 163px;
 }
 
-.approve-school .text-25 {
+.waiting-approve-school .text-25 {
   line-height: normal;
   text-align: right;
   text-decoration: underline;
   width: fit-content;
 }
 
-.approve-school .text-27 {
+.waiting-approve-school .text-27 {
   line-height: normal;
   margin-top: -1.00px;
   width: fit-content;
 }
 
-.approve-school .text-28 {
+.waiting-approve-school .text-28 {
   line-height: normal;
   margin-top: -1.00px;
   width: fit-content;
 }
 
-.approve-school .text-30 {
+.waiting-approve-school .text-30 {
   line-height: normal;
   margin-top: -1.00px;
   width: fit-content;
 }
 
-.approve-school .text-31 {
+.waiting-approve-school .text-31 {
   line-height: normal;
   margin-top: -1.00px;
   width: fit-content;
 }
 
-.approve-school .frame-38520 {
+.waiting-approve-school .frame-38520 {
   align-items: center;
   display: inline-flex;
   flex: 0 0 auto;
@@ -596,7 +596,7 @@
   position: relative;
 }
 
-.approve-school .frame-38263 {
+.waiting-approve-school .frame-38263 {
   align-items: center;
   display: flex;
   gap: 20px;
@@ -604,7 +604,7 @@
   width: 658.5px;
 }
 
-.approve-school .input-select {
+.waiting-approve-school .input-select {
   align-items: flex-start;
   display: flex;
   flex-direction: column;
@@ -612,7 +612,7 @@
   width: 120px;
 }
 
-.approve-school .select-field {
+.waiting-approve-school .select-field {
   align-items: center;
   align-self: stretch;
   background-color: var(--white);
@@ -629,7 +629,7 @@
   width: 100%;
 }
 
-.approve-school .select {
+.waiting-approve-school .select {
   color: #6f7c8e;
   flex: 1;
   font-family: var(--font-family-noto_sans_thai);
@@ -640,13 +640,13 @@
   position: relative;
 }
 
-.approve-school .dropdown-icon {
+.waiting-approve-school .dropdown-icon {
   height: 20px;
   position: relative;
   width: 20px;
 }
 
-.approve-school .text-32 {
+.waiting-approve-school .text-32 {
   color: var(--bggrey);
   font-family: var(--font-family-noto_sans_thai);
   font-size: var(--font-size-xxs);
@@ -655,7 +655,7 @@
   width: fit-content;
 }
 
-.approve-school .pagination {
+.waiting-approve-school .pagination {
   align-items: center;
   display: inline-flex;
   flex: 0 0 auto;
@@ -664,7 +664,7 @@
   position: relative;
 }
 
-.approve-school .button-1 {
+.waiting-approve-school .button-1 {
   background-color: var(--white);
   border: 1px solid;
   border-color: var(--geyser);
@@ -677,7 +677,7 @@
   width: 32px;
 }
 
-.approve-school .icon-1 {
+.waiting-approve-school .icon-1 {
   height: 20px;
   margin-bottom: -2.00px;
   margin-top: -2.00px;
@@ -685,7 +685,7 @@
   width: 20px;
 }
 
-.approve-school .button-3 {
+.waiting-approve-school .button-3 {
   background-color: var(--blue);
   border-radius: 8px;
   box-shadow: inset 0px -2px 2px #3030301a , inset 0px 7px 12px #ffffff14;
@@ -696,7 +696,7 @@
   width: 32px;
 }
 
-.approve-school .text-sm-1 {
+.waiting-approve-school .text-sm-1 {
   color: var(--white);
   font-family: var(--font-family-noto_sans_thai);
   font-size: var(--font-size-xxs);
@@ -710,7 +710,7 @@
   width: fit-content;
 }
 
-.approve-school .button-2 {
+.waiting-approve-school .button-2 {
   background-color: #e0edff;
   border-radius: 8px;
   cursor: pointer;
@@ -720,7 +720,7 @@
   width: 32px;
 }
 
-.approve-school .text-sm {
+.waiting-approve-school .text-sm {
   color: var(--blue);
   font-family: var(--font-family-noto_sans_thai);
   font-size: var(--font-size-xxs);
@@ -732,7 +732,7 @@
   width: fit-content;
 }
 
-.approve-school .vector-19 {
+.waiting-approve-school .vector-19 {
   height: 6px;
   left: 499px;
   position: absolute;
@@ -740,7 +740,7 @@
   width: 113px;
 }
 
-.approve-school .footer {
+.waiting-approve-school .footer {
   align-items: flex-start;
   background-color: var(--main);
   display: flex;
@@ -753,7 +753,7 @@
   width: 1440px;
 }
 
-.approve-school .copyright-2024 {
+.waiting-approve-school .copyright-2024 {
   color: var(--white);
   font-family: var(--font-family-noto_sans_thai);
   font-size: var(--font-size-m);
@@ -764,7 +764,7 @@
   min-height: 30px;
 }
 
-.approve-school .button-4 {
+.waiting-approve-school .button-4 {
   align-items: center;
   display: flex;
   justify-content: center;
@@ -772,13 +772,13 @@
   position: relative;
 }
 
-.approve-school .group-2 {
+.waiting-approve-school .group-2 {
   height: 35px;
   position: relative;
   width: 31.17px;
 }
 
-.approve-school .header {
+.waiting-approve-school .header {
   align-items: center;
   background-color: var(--main);
   display: flex;
@@ -792,12 +792,12 @@
 }
 
 
-.approve-school .header-1 {
+.waiting-approve-school .header-1 {
   margin-top: 2136px;
 }
 
 
-.approve-school .header-2 {
+.waiting-approve-school .header-2 {
   align-items: center;
   background-color: var(--main);
   display: flex;
@@ -806,7 +806,7 @@
   min-width: 1440px;
   padding: 6px 87.8px;
 }
-.approve-school .navbar-link-text {
+.waiting-approve-school .navbar-link-text {
   letter-spacing: 0;
   line-height: normal;
   margin-top: -1.00px;
@@ -814,7 +814,7 @@
   width: fit-content;
 }
 
-.approve-school .number-4 {
+.waiting-approve-school .number-4 {
   letter-spacing: 0;
   line-height: normal;
   margin-top: -1.00px;
@@ -822,12 +822,12 @@
   width: fit-content;
 }
 
-.approve-school .text-5 {
+.waiting-approve-school .text-5 {
   letter-spacing: 0;
   position: relative;
 }
 
-.approve-school .xxx-2 {
+.waiting-approve-school .xxx-2 {
   color: var(--pink);
   font-family: var(--font-family-noto_sans_thai);
   font-size: var(--font-size-m);
@@ -839,7 +839,7 @@
   width: fit-content;
 }
 
-.approve-school .navbar-link-text a {
+.waiting-approve-school .navbar-link-text a {
   color: white;
   text-decoration: none;
 }
