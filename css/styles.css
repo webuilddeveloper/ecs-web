@@ -309,11 +309,11 @@
     cursor: pointer;
     display: flex;
     gap: 10px;
-    height: 98px;
+    /* height: 98px; */
     justify-content: center;
     padding: 21px;
     position: relative;
-    width: 98px;
+    /* width: 98px; */
 }
 
 .content-ecs .button-icon {

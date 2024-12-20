@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=1440, maximum-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="css/login.css" />
+    <link rel="stylesheet" type="text/css" href="css/login-styleguide.css" />
+    <link rel="stylesheet" type="text/css" href="css/login-globals.css" />
+    <link rel="stylesheet" type="text/css" href="css/login-popup.css" />
+    
+    <script>
+      function showPopup() {
+        const popup = document.getElementById("popup");
+        popup.style.display = "flex"; // แสดง popup
+      }
+    
+      function hidePopup() {
+        const popup = document.getElementById("popup");
+        popup.style.display = "none"; // ซ่อน popup
+        window.location.href = "home-school.html"; // เปิดหน้าใหม่
+      }
+    </script>
+  </head>
+  <body style="margin: 0; background: #ffffff">
+    <input type="hidden" id="anPageName" name="page" value="login" />
+    <div class="container-center-horizontal">
+      <div class="login screen">
+        <header class="header">
+          <img class="logo-1" src="img/logo------1.png" alt="logo  1" />
+          <div class="frame-38253">
+            <img class="group" src="img/group@2x.png" alt="Group" />
+            <img class="vector" src="img/vector.svg" alt="Vector" />
+          </div>
+        </header>
+        <div class="flex-row">
+          <img class="logo-1-1" src="img/logo------1.png" alt="logo  1" />
+          <div class="card-login">
+            <div class="frame-3355">
+              <h1 class="text-24">เข้าสู่ระบบ <br />เว็บไซต์ ปพ.ออนไลน์</h1>
+            </div>
+            <div class="frame-3355-1">
+              <div class="button" onclick="showPopup()">
+                <div class="icon-thai-d"></div>
+                <div class="text_label valign-text-middle notosansthai-semi-bold-midnight-blue-20px">
+                  เข้าสู่ระบบด้วย ThaID
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <footer class="footer">
+          <p class="copyright-2024 notosansthai-normal-white-20px">Copyright 2024&nbsp;&nbsp; องค์การค้าของ สกสค.</p>
+        </footer>
+      </div>
+    </div>
+
+    <!-- ส่วน popup -->
+    <div id="popup" class="popup-container" style="display: none;">
+      <div class="popup">
+        <div class="frame-container">
+          <div class="frame-38264">
+            <div class="frame-38266">
+              <div class="frame-38265">
+                <img class="alert-02" src="img/alert-02.svg" alt="alert-02" />
+                <h1 class="text_label-2 valign-text-middle text_label-5">พบการลงทะเบียนซ้ำซ้อน</h1>
+                <div class="text_label-3 valign-text-middle text_label-5">
+                  เลขบัตรประชาชนนี้เป็นสมาชิกในระบบแล้ว
+                </div>
+              </div>
+              <div class="frame-38262">
+                <div class="button-2 button-3" onclick="hidePopup()">
+                  <div class="text_label-4 valign-text-middle text_label-5 notosansthai-semi-bold-white-20px">
+                    ปิดหน้าต่างนี้
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <img class="frame-1041" src="img/frame-1041.svg" alt="Frame 1041" onclick="hidePopup()" />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
