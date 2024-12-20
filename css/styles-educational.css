@@ -1,4 +1,3 @@
-
 /* #region globals */
 
 @import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
@@ -65,11 +64,13 @@ input:focus {
     --green: #039754;
     --black: #00000033;
     --midnight-blue: #012a6c;
+    --black-3: #000000;
 
     --font-size-13: 13px;
     --font-size-14: 14px;
     --font-size-15: 15px;
     --font-size-16: 16px;
+    --font-size-17: 17px;
     --font-size-18: 18px;
     --font-size-20: 20px;
     --font-size-22: 22px;
@@ -160,47 +161,48 @@ input:focus {
     font-style: normal;
     font-weight: 400;
 }
+
 .notosansthai-normal-black-16px {
     color: var(--bkack);
     font-family: var(--font-family-noto_sans_thai);
     font-size: var(--font-size-16);
     font-style: normal;
     font-weight: 400;
-  }
+}
 
-  .notosansthai-medium-black-14px {
+.notosansthai-medium-black-14px {
     color: var(--bkack);
     font-family: var(--font-family-noto_sans_thai);
     font-size: var(--font-size-14);
     font-style: normal;
     font-weight: 500;
-  }
+}
 
-  .notosansthai-bold-black-20px {
+.notosansthai-bold-black-20px {
     color: var(--bkack);
     font-family: var(--font-family-noto_sans_thai);
     font-size: var(--font-size-20);
     font-style: normal;
     font-weight: 700;
-  }
+}
 
-  .notosansthai-semi-bold-black-18px {
+.notosansthai-semi-bold-black-18px {
     color: var(--bkack);
     font-family: var(--font-family-noto_sans_thai);
     font-size: var(--font-size-18);
     font-style: normal;
     font-weight: 600;
-  }
+}
 
-  .order-approval-detail-notosansthai-normal-black-20px {
+.order-approval-detail-notosansthai-normal-black-20px {
     color: var(--black-2);
     font-family: var(--font-family-noto_sans_thai);
     font-size: var(--font-size-20);
     font-style: normal;
     font-weight: 400;
-  }
+}
 
-  /* #endregion */
+/* #endregion */
 
 /* #region home-educational */
 
@@ -1976,9 +1978,9 @@ input:focus {
     flex-direction: column;
     height: 1673px;
     width: 1440px;
-  }
-  
-  .order-approval-detail-header {
+}
+
+.order-approval-detail-header {
     align-items: center;
     background-color: var(--main);
     display: flex;
@@ -1989,29 +1991,29 @@ input:focus {
     min-width: 1440px;
     padding: 6px 87.8px;
     width: auto;
-  }
-  
-  .order-approval-detail-logo-1 {
+}
+
+.order-approval-detail-logo-1 {
     align-self: flex-end;
     height: 60px;
     object-fit: cover;
     width: 68px;
-  }
-  
-  .order-approval-detail-navbar {
+}
+
+.order-approval-detail-navbar {
     align-items: center;
     display: inline-flex;
     gap: 40px;
     margin-bottom: 4.0px;
     margin-left: 41px;
     position: relative;
-  }
-  
-  .order-approval-detail-navbar-link-text-18 {
+}
+
+.order-approval-detail-navbar-link-text-18 {
     text-decoration: underline;
-  }
-  
-  .order-approval-detail-frame-38253 {
+}
+
+.order-approval-detail-frame-38253 {
     align-items: center;
     display: inline-flex;
     gap: 56px;
@@ -2019,21 +2021,21 @@ input:focus {
     margin-bottom: 5.0px;
     margin-left: 220px;
     position: relative;
-  }
-  
-  .order-approval-detail-group {
+}
+
+.order-approval-detail-group {
     height: 35px;
     position: relative;
     width: 31.17px;
-  }
-  
-  .order-approval-detail-vector {
+}
+
+.order-approval-detail-vector {
     height: 35px;
     position: relative;
     width: 35px;
-  }
-  
-  .order-approval-detail-flex-row {
+}
+
+.order-approval-detail-flex-row {
     align-items: flex-start;
     display: flex;
     gap: 324px;
@@ -2041,9 +2043,9 @@ input:focus {
     margin-left: 100px;
     margin-top: 62px;
     min-width: 762px;
-  }
-  
-  .order-approval-detail-button {
+}
+
+.order-approval-detail-button {
     align-items: center;
     background-color: var(--pink);
     border-radius: 10px;
@@ -2054,15 +2056,15 @@ input:focus {
     overflow: hidden;
     padding: 8px 24px;
     position: relative;
-  }
-  
-  .order-approval-detail-icon-back {
+}
+
+.order-approval-detail-icon-back {
     height: 24px;
     position: relative;
     width: 24px;
-  }
-  
-  .order-approval-detail-text_label {
+}
+
+.order-approval-detail-text_label {
     color: var(--main);
     font-family: var(--font-family-noto_sans_thai);
     font-size: var(--font-size-20);
@@ -2073,9 +2075,9 @@ input:focus {
     position: relative;
     text-align: center;
     width: fit-content;
-  }
-  
-  .order-approval-detail-text-1-1 {
+}
+
+.order-approval-detail-text-1-1 {
     align-self: flex-end;
     color: var(--bkack);
     font-family: var(--font-family-noto_sans_thai);
@@ -2086,9 +2088,9 @@ input:focus {
     min-width: 284px;
     text-align: center;
     white-space: nowrap;
-  }
-  
-  .order-approval-detail-frame-38444 {
+}
+
+.order-approval-detail-frame-38444 {
     align-items: flex-end;
     align-self: center;
     display: flex;
@@ -2097,9 +2099,9 @@ input:focus {
     margin-top: 85px;
     position: relative;
     width: 1252px;
-  }
-  
-  .order-approval-detail-frame-38 {
+}
+
+.order-approval-detail-frame-38 {
     align-items: flex-start;
     align-self: stretch;
     display: flex;
@@ -2108,9 +2110,9 @@ input:focus {
     gap: 16px;
     position: relative;
     width: 100%;
-  }
-  
-  .order-approval-detail-frame {
+}
+
+.order-approval-detail-frame {
     align-items: flex-start;
     align-self: stretch;
     border: 1px solid;
@@ -2124,9 +2126,9 @@ input:focus {
     padding: 25px 24px;
     position: relative;
     width: 100%;
-  }
-  
-  .order-approval-detail-frame-38339 {
+}
+
+.order-approval-detail-frame-38339 {
     align-items: center;
     align-self: stretch;
     display: flex;
@@ -2134,22 +2136,22 @@ input:focus {
     gap: 650px;
     position: relative;
     width: 100%;
-  }
-  
-  .order-approval-detail-text-2 {
+}
+
+.order-approval-detail-text-2 {
     width: 282px;
-  }
-  
-  .order-approval-detail-frame-38426 {
+}
+
+.order-approval-detail-frame-38426 {
     align-items: center;
     display: flex;
     gap: 15px;
     justify-content: flex-end;
     position: relative;
     width: 271px;
-  }
-  
-  .order-approval-detail-xxxxxxxx {
+}
+
+.order-approval-detail-xxxxxxxx {
     color: var(--bkack);
     font-family: var(--font-family-noto_sans_thai);
     font-size: 28px;
@@ -2161,26 +2163,26 @@ input:focus {
     position: relative;
     text-align: right;
     width: 251px;
-  }
-  
-  .order-approval-detail-button-1 {
+}
+
+.order-approval-detail-button-1 {
     background-color: var(--gray);
     border-color: var(--main);
     border-radius: 10px;
     display: inline-flex;
     flex: 0 0 auto;
     padding: 8px 24px;
-  }
-  
-  .order-approval-detail-text_label-1 {
+}
+
+.order-approval-detail-text_label-1 {
     color: var(--main);
     font-family: var(--font-family-noto_sans_thai);
     font-size: var(--font-size-16);
     font-weight: 600;
     text-align: center;
-  }
-  
-  .order-approval-detail-frame-38429 {
+}
+
+.order-approval-detail-frame-38429 {
     align-items: flex-start;
     align-self: stretch;
     display: flex;
@@ -2188,31 +2190,31 @@ input:focus {
     gap: 24px;
     position: relative;
     width: 100%;
-  }
-  
-  .order-approval-detail-text {
+}
+
+.order-approval-detail-text {
     letter-spacing: 0;
     line-height: normal;
     margin-top: -1.00px;
     position: relative;
     width: 314px;
-  }
-  
-  .order-approval-detail-text-4 {
+}
+
+.order-approval-detail-text-4 {
     margin-top: -1.00px;
     text-align: right;
     width: 866px;
-  }
-  
-  .order-approval-detail-line {
+}
+
+.order-approval-detail-line {
     align-self: stretch;
     height: 1px;
     object-fit: cover;
     position: relative;
     width: 100%;
-  }
-  
-  .order-approval-detail-frame-38268 {
+}
+
+.order-approval-detail-frame-38268 {
     align-items: flex-start;
     align-self: stretch;
     background-color: var(--white);
@@ -2226,51 +2228,51 @@ input:focus {
     padding: 16px;
     position: relative;
     width: 100%;
-  }
-  
-  .order-approval-detail-frame-38408 {
+}
+
+.order-approval-detail-frame-38408 {
     height: 66px;
     margin-right: -62.00px;
     position: relative;
     width: 1234px;
-  }
-  
-  .order-approval-detail-frame-38407 {
+}
+
+.order-approval-detail-frame-38407 {
     align-items: flex-start;
     display: flex;
     flex-direction: column;
     gap: 15px;
     position: relative;
     width: 1153px;
-  }
-  
-  .order-approval-detail-frame-38269 {
+}
+
+.order-approval-detail-frame-38269 {
     align-items: flex-start;
     display: flex;
     flex: 0 0 auto;
     gap: 15px;
     position: relative;
     width: 1094px;
-  }
-  
-  .order-approval-detail-text-6 {
+}
+
+.order-approval-detail-text-6 {
     margin-top: -1.00px;
     width: fit-content;
-  }
-  
-  .order-approval-detail-text-7 {
+}
+
+.order-approval-detail-text-7 {
     margin-top: -1.00px;
     width: fit-content;
-  }
-  
-  .order-approval-detail-address {
+}
+
+.order-approval-detail-address {
     letter-spacing: 0;
     line-height: normal;
     position: relative;
     width: 1094px;
-  }
-  
-  .order-approval-detail-frame-38420 {
+}
+
+.order-approval-detail-frame-38420 {
     align-items: flex-start;
     align-self: stretch;
     display: flex;
@@ -2279,9 +2281,9 @@ input:focus {
     height: 94px;
     position: relative;
     width: 100%;
-  }
-  
-  .order-approval-detail-frame-38268-1 {
+}
+
+.order-approval-detail-frame-38268-1 {
     align-items: flex-start;
     align-self: stretch;
     background-color: var(--white);
@@ -2295,9 +2297,9 @@ input:focus {
     padding: 16px;
     position: relative;
     width: 100%;
-  }
-  
-  .order-approval-detail-frame-38424 {
+}
+
+.order-approval-detail-frame-38424 {
     align-items: flex-start;
     display: flex;
     flex: 0 0 auto;
@@ -2306,18 +2308,18 @@ input:focus {
     margin-right: -16.00px;
     position: relative;
     width: 1188px;
-  }
-  
-  .order-approval-detail-frame-38408-1 {
+}
+
+.order-approval-detail-frame-38408-1 {
     align-items: flex-start;
     display: inline-flex;
     flex: 0 0 auto;
     flex-direction: column;
     gap: 10px;
     position: relative;
-  }
-  
-  .order-approval-detail-frame-38407-1 {
+}
+
+.order-approval-detail-frame-38407-1 {
     align-items: flex-start;
     display: flex;
     flex: 0 0 auto;
@@ -2325,26 +2327,26 @@ input:focus {
     gap: 15px;
     position: relative;
     width: 1121px;
-  }
-  
-  .order-approval-detail-ems {
+}
+
+.order-approval-detail-ems {
     letter-spacing: 0;
     line-height: normal;
     margin-top: -1.00px;
     position: relative;
     width: fit-content;
-  }
-  
-  .order-approval-detail-text-9 {
+}
+
+.order-approval-detail-text-9 {
     color: var(--bkack);
     font-family: var(--font-family-noto_sans_thai);
     font-size: var(--font-size-16);
     font-weight: 700;
     margin-top: -1.00px;
     width: 314px;
-  }
-  
-  .order-approval-detail-frame-38-1 {
+}
+
+.order-approval-detail-frame-38-1 {
     align-items: center;
     align-self: stretch;
     display: flex;
@@ -2352,9 +2354,9 @@ input:focus {
     height: 108px;
     position: relative;
     width: 100%;
-  }
-  
-  .order-approval-detail-frame-95 {
+}
+
+.order-approval-detail-frame-95 {
     background-color: #f0eeed;
     border: 1px solid;
     border-color: #a2a2a2;
@@ -2365,17 +2367,17 @@ input:focus {
     overflow: hidden;
     position: relative;
     width: 110px;
-  }
-  
-  .order-approval-detail-image-8 {
+}
+
+.order-approval-detail-image-8 {
     height: 110px;
     left: 0;
     position: absolute;
     top: 0;
     width: 110px;
-  }
-  
-  .order-approval-detail-frame-94 {
+}
+
+.order-approval-detail-frame-94 {
     align-items: center;
     display: flex;
     flex: 1;
@@ -2384,9 +2386,9 @@ input:focus {
     height: 108px;
     justify-content: space-around;
     position: relative;
-  }
-  
-  .order-approval-detail-frame-94-1 {
+}
+
+.order-approval-detail-frame-94-1 {
     align-items: center;
     display: flex;
     flex: 1;
@@ -2395,9 +2397,9 @@ input:focus {
     margin-bottom: -1.00px;
     margin-top: -1.00px;
     position: relative;
-  }
-  
-  .order-approval-detail-frame-93 {
+}
+
+.order-approval-detail-frame-93 {
     align-items: flex-start;
     display: flex;
     flex-direction: column;
@@ -2405,9 +2407,9 @@ input:focus {
     height: 110px;
     position: relative;
     width: 281px;
-  }
-  
-  .order-approval-detail-text-10 {
+}
+
+.order-approval-detail-text-10 {
     color: var(--bkack);
     font-family: var(--font-family-noto_sans_thai);
     font-size: var(--font-size-22);
@@ -2415,39 +2417,39 @@ input:focus {
     margin-right: -155.00px;
     margin-top: -1.00px;
     width: fit-content;
-  }
-  
-  .order-approval-detail-frame-9 {
+}
+
+.order-approval-detail-frame-9 {
     align-items: flex-start;
     display: inline-flex;
     flex: 0 0 auto;
     flex-direction: column;
     gap: 4px;
     position: relative;
-  }
-  
-  .order-approval-detail-text-1 {
+}
+
+.order-approval-detail-text-1 {
     color: transparent;
     font-family: var(--font-family-noto_sans_thai);
     font-size: var(--font-size-16);
     font-weight: 400;
     margin-top: -1.00px;
     width: fit-content;
-  }
-  
-  .order-approval-detail-span1 {
+}
+
+.order-approval-detail-span1 {
     color: #a1a1a1;
-  }
-  
-  .order-approval-detail-frame-93-1 {
+}
+
+.order-approval-detail-frame-93-1 {
     height: 110px;
     left: 333px;
     position: absolute;
     top: 0;
     width: 361px;
-  }
-  
-  .order-approval-detail-frame-18 {
+}
+
+.order-approval-detail-frame-18 {
     align-items: center;
     background-color: #efefef;
     border-radius: 62px;
@@ -2458,54 +2460,54 @@ input:focus {
     padding: 12px 20px;
     position: relative;
     width: 129px;
-  }
-  
-  .order-approval-detail-number {
+}
+
+.order-approval-detail-number {
     letter-spacing: 0;
     line-height: normal;
     margin-top: -1.00px;
     position: relative;
     width: fit-content;
-  }
-  
-  .order-approval-detail-text-12 {
+}
+
+.order-approval-detail-text-12 {
     margin-top: -1.00px;
     width: fit-content;
-  }
-  
-  .order-approval-detail-text-13 {
+}
+
+.order-approval-detail-text-13 {
     margin-right: -99.00px;
     margin-top: -1.00px;
     width: fit-content;
-  }
-  
-  .order-approval-detail-frame-38433 {
+}
+
+.order-approval-detail-frame-38433 {
     align-items: flex-start;
     display: inline-flex;
     flex: 0 0 auto;
     gap: 16px;
     position: relative;
-  }
-  
-  .order-approval-detail-number-1 {
+}
+
+.order-approval-detail-number-1 {
     letter-spacing: 0;
     line-height: normal;
     margin-top: -1.00px;
     position: relative;
     width: fit-content;
-  }
-  
-  .order-approval-detail-text-15 {
+}
+
+.order-approval-detail-text-15 {
     margin-top: -1.00px;
     width: fit-content;
-  }
-  
-  .order-approval-detail-text-16 {
+}
+
+.order-approval-detail-text-16 {
     align-self: stretch;
     margin-top: -1.00px;
-  }
-  
-  .order-approval-detail-frame-38262 {
+}
+
+.order-approval-detail-frame-38262 {
     align-items: center;
     align-self: stretch;
     display: flex;
@@ -2513,35 +2515,35 @@ input:focus {
     height: 42px;
     position: relative;
     width: 100%;
-  }
-  
-  .order-approval-detail-frame-38399 {
+}
+
+.order-approval-detail-frame-38399 {
     align-items: center;
     cursor: pointer;
     display: inline-flex;
     flex: 0 0 auto;
     gap: 24px;
     position: relative;
-  }
-  
-  .order-approval-detail-button-new {
+}
+
+.order-approval-detail-button-new {
     background-color: var(--pink);
     border-color: #121212;
     border-radius: 50px;
     display: flex;
     padding: 8px 16px;
     width: 225px;
-  }
-  
-  .order-approval-detail-text_label-2 {
+}
+
+.order-approval-detail-text_label-2 {
     color: #121212;
     font-family: var(--font-family-kanit);
     font-size: 17px;
     font-weight: 400;
     text-align: center;
-  }
-  
-  .order-approval-detail-frame-38381 {
+}
+
+.order-approval-detail-frame-38381 {
     align-items: flex-start;
     align-self: stretch;
     border: 1px solid;
@@ -2555,9 +2557,9 @@ input:focus {
     padding: 20px 24px;
     position: relative;
     width: 100%;
-  }
-  
-  .order-approval-detail-frame-102 {
+}
+
+.order-approval-detail-frame-102 {
     align-items: flex-start;
     align-self: stretch;
     display: flex;
@@ -2567,9 +2569,9 @@ input:focus {
     margin-bottom: -1.00px;
     position: relative;
     width: 100%;
-  }
-  
-  .order-approval-detail-frame-1 {
+}
+
+.order-approval-detail-frame-1 {
     align-items: center;
     align-self: stretch;
     display: flex;
@@ -2577,41 +2579,41 @@ input:focus {
     justify-content: space-between;
     position: relative;
     width: 100%;
-  }
-  
-  .order-approval-detail-transport-fee {
+}
+
+.order-approval-detail-transport-fee {
     letter-spacing: 0;
     line-height: normal;
     margin-top: -1.00px;
     position: relative;
     width: fit-content;
-  }
-  
-  .order-approval-detail-xxxx {
+}
+
+.order-approval-detail-xxxx {
     letter-spacing: 0;
     line-height: normal;
     margin-top: -1.00px;
     position: relative;
     text-align: right;
     width: fit-content;
-  }
-  
-  .order-approval-detail-total-vat {
+}
+
+.order-approval-detail-total-vat {
     letter-spacing: 0;
     line-height: normal;
     margin-top: -1.00px;
     position: relative;
     width: fit-content;
-  }
-  
-  .order-approval-detail-grand-total {
+}
+
+.order-approval-detail-grand-total {
     letter-spacing: 0;
     line-height: normal;
     position: relative;
     width: fit-content;
-  }
-  
-  .order-approval-detail-xxxx-1 {
+}
+
+.order-approval-detail-xxxx-1 {
     color: var(--bkack);
     font-family: var(--font-family-noto_sans_thai);
     font-size: var(--font-size-24);
@@ -2622,9 +2624,9 @@ input:focus {
     position: relative;
     text-align: right;
     width: fit-content;
-  }
-  
-  .order-approval-detail-footer {
+}
+
+.order-approval-detail-footer {
     align-items: flex-start;
     background-color: var(--main);
     display: flex;
@@ -2635,9 +2637,9 @@ input:focus {
     margin-top: 93px;
     padding: 22px 552px;
     width: 1440px;
-  }
-  
-  .order-approval-detail-copyright-2024 {
+}
+
+.order-approval-detail-copyright-2024 {
     color: var(--white);
     font-family: var(--font-family-noto_sans_thai);
     font-size: var(--font-size-20);
@@ -2646,9 +2648,9 @@ input:focus {
     line-height: normal;
     margin-left: 1px;
     min-height: 30px;
-  }
-  
-  .order-approval-detail-button-2 {
+}
+
+.order-approval-detail-button-2 {
     align-items: center;
     border: 1px solid;
     cursor: pointer;
@@ -2657,31 +2659,31 @@ input:focus {
     overflow: hidden;
     position: relative;
     border-color: black;
-  }
-  
-  .order-approval-detail-navbar-link-text {
+}
+
+.order-approval-detail-navbar-link-text {
     letter-spacing: 0;
     line-height: normal;
     margin-top: -1.00px;
     position: relative;
     width: fit-content;
-  }
-  
-  .order-approval-detail-text-3 {
+}
+
+.order-approval-detail-text-3 {
     letter-spacing: 0;
     line-height: normal;
     position: relative;
-  }
-  
-  .order-approval-detail-text_label-4 {
+}
+
+.order-approval-detail-text_label-4 {
     letter-spacing: 0;
     line-height: normal;
     margin-top: -1.00px;
     position: relative;
     width: fit-content;
-  }
-  
-  .order-approval-detail-text-sm {
+}
+
+.order-approval-detail-text-sm {
     color: #14181f;
     font-family: var(--font-family-noto_sans_thai);
     font-size: var(--font-size-18);
@@ -2691,26 +2693,26 @@ input:focus {
     position: relative;
     white-space: nowrap;
     width: fit-content;
-  }
-  
-  .order-approval-detail-icon-btn-left {
+}
+
+.order-approval-detail-icon-btn-left {
     height: 20px;
     position: relative;
     width: 20px;
-  }
-  
-  .order-approval-detail-button-4 {
+}
+
+.order-approval-detail-button-4 {
     align-items: center;
     justify-content: center;
     overflow: hidden;
-  }
-  
-  .order-approval-detail-button-1-2 {
+}
+
+.order-approval-detail-button-1-2 {
     background-color: #ffffff1a;
     border: 1px solid;
     border-color: #dce0e5;
     border-radius: 8px;
-    box-shadow: inset 0px -2px 2px #3030301a , inset 0px 7px 12px #ffffff14;
+    box-shadow: inset 0px -2px 2px #3030301a, inset 0px 7px 12px #ffffff14;
     display: flex;
     gap: 6px;
     height: 60px;
@@ -2718,28 +2720,28 @@ input:focus {
     padding: 8px 16px;
     position: relative;
     width: 237px;
-  }
-  
-  .order-approval-detail-frame-38379 {
+}
+
+.order-approval-detail-frame-38379 {
     align-items: center;
     align-self: flex-end;
     display: inline-flex;
     gap: 24px;
     margin-top: 32px;
     position: relative;
-  }
-  
-  .order-approval-detail-button-1-3 {
+}
+
+.order-approval-detail-button-1-3 {
     background-color: var(--gray);
     width: 223px;
-  }
-  
-  .order-approval-detail-button-2-3 {
+}
+
+.order-approval-detail-button-2-3 {
     background-color: var(--main);
     width: 245px;
-  }
-  
-  .order-approval-detail-button-3-3 {
+}
+
+.order-approval-detail-button-3-3 {
     align-items: center;
     border-radius: 10px;
     cursor: pointer;
@@ -2749,26 +2751,26 @@ input:focus {
     overflow: hidden;
     padding: 8px 24px;
     position: relative;
-  }
-  
-  
-  .order-approval-detail-input-select {
+}
+
+
+.order-approval-detail-input-select {
     align-items: flex-start;
     display: flex;
     flex: 0 0 auto;
     flex-direction: column;
     position: relative;
     width: 621px;
-  }
-  
-  .order-approval-detail-select-field {
+}
+
+.order-approval-detail-select-field {
     align-items: center;
     align-self: stretch;
     background-color: var(--white);
     border: 1px solid;
     border-color: #dce0e5;
     border-radius: 8px;
-    box-shadow: inset 0px -2px 2px #3030301a , inset 0px 7px 12px #ffffff14;
+    box-shadow: inset 0px -2px 2px #3030301a, inset 0px 7px 12px #ffffff14;
     display: flex;
     gap: 8px;
     height: 40px;
@@ -2776,9 +2778,9 @@ input:focus {
     padding: 8px 10px;
     position: relative;
     width: 100%;
-  }
-  
-  .order-approval-detail-popup-container {
+}
+
+.order-approval-detail-popup-container {
     display: none;
     position: fixed;
     top: 0;
@@ -2789,9 +2791,9 @@ input:focus {
     justify-content: center;
     align-items: center;
     z-index: 9999;
-  }
-  
-  .order-approval-detail-frame-38265 {
+}
+
+.order-approval-detail-frame-38265 {
     align-items: center;
     display: inline-flex;
     flex: 0 0 auto;
@@ -2799,10 +2801,10 @@ input:focus {
     gap: 10px;
     justify-content: center;
     position: relative;
-  }
-  
-  
-  .order-approval-detail-frame-38264-3 {
+}
+
+
+.order-approval-detail-frame-38264-3 {
     align-items: center;
     background-color: var(--white);
     border-radius: 10px;
@@ -2814,34 +2816,34 @@ input:focus {
     position: absolute;
     top: 0;
     width: 801px;
-  }
-  
-  .order-approval-detail-frame-38266-3 {
+}
+
+.order-approval-detail-frame-38266-3 {
     align-items: center;
     display: flex;
     flex-direction: column;
     gap: 32px;
     position: relative;
     width: 721px;
-  }
-  
-  .order-approval-detail-frame-container-3 {
+}
+
+.order-approval-detail-frame-container-3 {
     border-radius: 10px;
     height: 330px;
     margin-left: -1px;
     position: relative;
     width: 801px;
-  }
-  
-  .order-approval-detail-popup-3 {
+}
+
+.order-approval-detail-popup-3 {
     align-items: flex-start;
     display: flex;
     height: 428px;
     margin-left: 1px;
     min-width: 801px;
-  }
-  
-  .order-approval-detail-view-3 {
+}
+
+.order-approval-detail-view-3 {
     align-items: center;
     background-color: #14181f80;
     display: flex;
@@ -2851,18 +2853,18 @@ input:focus {
     position: absolute;
     top: 4px;
     width: 1440px;
-  }
-  
-  .order-approval-detail-frame-1041-3 {
+}
+
+.order-approval-detail-frame-1041-3 {
     cursor: pointer;
     height: 31px;
     left: 747px;
     position: absolute;
     top: 24px;
     width: 31px;
-  }
-  
-  .order-approval-detail-custom-dropdown {
+}
+
+.order-approval-detail-custom-dropdown {
     width: 100%;
     height: 40px;
     /* กำหนดความสูง */
@@ -2879,30 +2881,30 @@ input:focus {
     z-index: 2;
     line-height: normal;
     /* ปรับให้ข้อความอยู่ตรงกลาง */
-  }
-  
-  .order-approval-detail-dropdown-icon {
+}
+
+.order-approval-detail-dropdown-icon {
     position: absolute;
     top: 50%;
     right: 10px;
     /* ระยะห่างจากขอบขวา */
     transform: translateY(-50%);
     pointer-events: none;
-  }
-  
-  .order-approval-detail-button-3-4 {
+}
+
+.order-approval-detail-button-3-4 {
     background-color: var(--white);
     border: 1px solid;
     border-color: var(--main);
     width: 216px;
-  }
-  
-  .order-approval-detail-button-4-3 {
+}
+
+.order-approval-detail-button-4-3 {
     background-color: var(--main);
     width: 216px;
-  }
-  
-  .order-approval-detail-button-5-3 {
+}
+
+.order-approval-detail-button-5-3 {
     align-items: center;
     border-radius: 10px;
     display: flex;
@@ -2911,9 +2913,9 @@ input:focus {
     overflow: hidden;
     padding: 8px 24px;
     position: relative;
-  }
-  
-  .order-approval-detail-text-7-3 {
+}
+
+.order-approval-detail-text-7-3 {
     color: var(--pink);
     font-family: var(--font-family-noto_sans_thai);
     font-size: var(--font-size-24);
@@ -2922,29 +2924,29 @@ input:focus {
     margin-top: -1.00px;
     position: relative;
     width: 468px;
-  }
-  
-  .order-approval-detail-text-8-3 {
+}
+
+.order-approval-detail-text-8-3 {
     line-height: normal;
     position: relative;
     width: 468px;
-  }
-  
-  .order-approval-detail-text-2-3 {
+}
+
+.order-approval-detail-text-2-3 {
     letter-spacing: 0;
     text-align: center;
-  }
-  
-  .order-approval-detail-view-1 {
+}
+
+.order-approval-detail-view-1 {
     background-color: #14181f80;
     height: 1020px;
     left: 0;
     position: absolute;
     top: 4px;
     width: 1440px;
-  }
-  
-  .order-approval-detail-popup {
+}
+
+.order-approval-detail-popup {
     align-items: flex-start;
     display: flex;
     height: 288px;
@@ -2952,17 +2954,17 @@ input:focus {
     min-width: 552px;
     position: absolute;
     top: 323px;
-  }
-  
-  .order-approval-detail-frame-container {
+}
+
+.order-approval-detail-frame-container {
     border-radius: 10px;
     height: 236px;
     position: relative;
     width: 552px;
-  }
-  
-  
-  .order-approval-detail-frame-38264-2 {
+}
+
+
+.order-approval-detail-frame-38264-2 {
     align-items: center;
     background-color: var(--white);
     border-radius: 10px;
@@ -2973,18 +2975,18 @@ input:focus {
     padding: 40px;
     /* position: absolute;
     top: 369px; */
-  }
-  
-  .order-approval-detail-frame-38266 {
+}
+
+.order-approval-detail-frame-38266 {
     align-items: center;
     display: flex;
     flex-direction: column;
     gap: 32px;
     position: relative;
     width: 472px;
-  }
-  
-  .order-approval-detail-text_label-4-2 {
+}
+
+.order-approval-detail-text_label-4-2 {
     color: var(--green);
     font-family: var(--font-family-noto_sans_thai);
     font-size: var(--font-size-40);
@@ -2992,18 +2994,18 @@ input:focus {
     line-height: 60.0px;
     text-align: center;
     width: 468px;
-  }
-  
-  .order-approval-detail-frame-1041 {
+}
+
+.order-approval-detail-frame-1041 {
     cursor: pointer;
     height: 31px;
     left: 505px;
     position: absolute;
     top: 10px;
     width: 31px;
-  }
-  
-  .order-approval-detail-frame-38262-3 {
+}
+
+.order-approval-detail-frame-38262-3 {
     align-items: center;
     align-self: stretch;
     display: flex;
@@ -3012,10 +3014,647 @@ input:focus {
     position: relative;
     width: 100%;
     justify-content: center;
-  }
+}
+
 /* #endregion */
 
-/* #region General Styles */
+/* #region order-approval-attach-book */
+
+.order-approval-attach-book {
+    align-items: flex-start;
+    background-color: var(--white);
+    display: flex;
+    flex-direction: column;
+    height: 1024px;
+    width: 1440px;
+}
+
+.order-approval-attach-book-header {
+    align-items: center;
+    background-color: var(--midnight-blue);
+    display: flex;
+    flex-direction: row;
+    flex-shrink: 1;
+    height: 80px;
+    justify-content: flex-end;
+    min-width: 1440px;
+    padding: 6px 87.8px;
+    width: auto;
+}
+
+.order-approval-attach-book-logo-1 {
+    align-self: flex-end;
+    height: 60px;
+    object-fit: cover;
+    width: 68px;
+}
+
+.order-approval-attach-book-navbar {
+    align-items: center;
+    display: inline-flex;
+    gap: 40px;
+    margin-bottom: 4.0px;
+    margin-left: 41px;
+    position: relative;
+}
+
+.order-approval-attach-book-navbar-link-text {
+    letter-spacing: 0;
+    line-height: normal;
+    margin-top: -1.00px;
+    position: relative;
+    width: fit-content;
+}
+
+.order-approval-attach-book-navbar-link-text-3 {
+    letter-spacing: 0;
+    line-height: normal;
+    margin-top: -1.00px;
+    position: relative;
+    text-decoration: underline;
+    width: fit-content;
+}
+
+.order-approval-attach-book-frame-38253 {
+    align-items: center;
+    display: inline-flex;
+    gap: 56px;
+    justify-content: flex-end;
+    margin-bottom: 5.0px;
+    margin-left: 220px;
+    position: relative;
+}
+
+.order-approval-attach-book-group {
+    height: 35px;
+    position: relative;
+    width: 31.17px;
+}
+
+.order-approval-attach-book-vector {
+    height: 35px;
+    position: relative;
+    width: 35px;
+}
+
+.order-approval-attach-book-flex-row {
+    align-items: flex-start;
+    display: flex;
+    gap: 290px;
+    height: 90px;
+    margin-left: 100px;
+    margin-top: 62px;
+    min-width: 797px;
+}
+
+.order-approval-attach-book-button {
+    align-items: center;
+    background-color: var(--pink);
+    border-radius: 10px;
+    cursor: pointer;
+    display: inline-flex;
+    gap: 8px;
+    justify-content: center;
+    overflow: hidden;
+    padding: 8px 24px;
+    position: relative;
+}
+
+.order-approval-attach-book-icon {
+    height: 24px;
+    position: relative;
+    width: 24px;
+}
+
+.order-approval-attach-book-text_label {
+    color: var(--midnight-blue);
+    font-family: var(--font-family-noto_sans_thai);
+    font-size: var(--font-size-20);
+    font-weight: 600;
+    letter-spacing: 0;
+    line-height: normal;
+    margin-top: -1.00px;
+    position: relative;
+    text-align: center;
+    width: fit-content;
+}
+
+.order-approval-attach-book-text-1 {
+    align-self: flex-end;
+    color: var(--black-3);
+    font-family: var(--font-family-noto_sans_thai);
+    font-size: var(--font-size-32);
+    font-weight: 500;
+    letter-spacing: 0;
+    line-height: 48.0px;
+    min-width: 353px;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.order-approval-attach-book-frame-38395 {
+    align-items: center;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-left: 24.0px;
+    margin-top: 63px;
+    position: relative;
+    width: 1240px;
+}
+
+.order-approval-attach-book-text-7 {
+    align-self: stretch;
+    color: var(--black-3);
+    font-family: var(--font-family-noto_sans_thai);
+    font-size: var(--font-size-20);
+    font-weight: 600;
+    letter-spacing: 0;
+    line-height: normal;
+    margin-top: -1.00px;
+    position: relative;
+}
+
+.order-approval-attach-book-frame-27 {
+    align-items: flex-start;
+    align-self: stretch;
+    border: 1px solid;
+    border-color: #00000033;
+    border-radius: 20px;
+    display: flex;
+    flex: 0 0 auto;
+    flex-direction: column;
+    gap: 8px;
+    overflow: hidden;
+    padding: 25px 24px;
+    position: relative;
+    width: 100%;
+}
+
+.order-approval-attach-book-frame-96 {
+    align-items: center;
+    align-self: stretch;
+    display: flex;
+    gap: 220px;
+    height: 108px;
+    position: relative;
+    width: 100%;
+}
+
+.order-approval-attach-book-frame-94 {
+    align-items: center;
+    display: flex;
+    gap: 16px;
+    height: 108px;
+    justify-content: space-around;
+    position: relative;
+    width: 747px;
+}
+
+.order-approval-attach-book-frame-93 {
+    align-items: flex-start;
+    display: inline-flex;
+    flex: 0 0 auto;
+    flex-direction: column;
+    gap: 6px;
+    position: relative;
+}
+
+.order-approval-attach-book-text-8 {
+    color: transparent;
+    font-family: var(--font-family-noto_sans_thai);
+    font-size: var(--font-size-22);
+    font-weight: 700;
+    letter-spacing: 0;
+    line-height: normal;
+    margin-top: -1.00px;
+    position: relative;
+    width: 747px;
+}
+
+.order-approval-attach-book-span0 {
+    color: var(--black-3);
+}
+
+.order-approval-attach-book-span1 {
+    color: #d92c20;
+}
+
+.order-approval-attach-book-text_label-1 {
+    color: var(--black-3);
+    font-family: var(--font-family-noto_sans_thai);
+    font-size: var(--font-size-16);
+}
+
+.order-approval-attach-book-button-new {
+    align-items: center;
+    background-color: var(--pink);
+    border: 1px solid;
+    border-color: #121212;
+    border-radius: 50px;
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+    overflow: hidden;
+    padding: 8px 16px;
+    position: relative;
+    width: 225px;
+}
+
+.order-approval-attach-book-text_label-2 {
+    color: #121212;
+    font-family: var(--font-family-kanit);
+    font-size: var(--font-size-17);
+    margin-top: -1.00px;
+    text-align: center;
+}
+
+.order-approval-attach-book-text-field {
+    align-items: flex-start;
+    display: flex;
+    flex: 0 0 auto;
+    flex-direction: column;
+    gap: 8px;
+    padding: 0px 0px 8px;
+    position: relative;
+    width: 351px;
+}
+
+.order-approval-attach-book-frame-20 {
+    align-items: center;
+    align-self: stretch;
+    background-color: var(--white);
+    border: 1px solid;
+    border-color: var(--bggrey);
+    border-radius: 8px;
+    display: flex;
+    flex: 0 0 auto;
+    gap: 8px;
+    overflow: hidden;
+    padding: 8px 16px;
+    position: relative;
+    width: 100%;
+}
+
+.order-approval-attach-book-text_input {
+    background-color: transparent;
+    border: 0;
+    color: var(--bggrey);
+    flex: 1;
+    flex-grow: 1;
+    font-family: var(--font-family-noto_sans_thai);
+    font-size: var(--font-size-17);
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: normal;
+    margin-top: -1.00px;
+    padding: 0;
+    position: relative;
+}
+
+.order-approval-attach-book-text_input::placeholder {
+    color: #70707099;
+}
+
+.order-approval-attach-book-frame-38396 {
+    align-items: center;
+    background-color: var(--midnight-blue);
+    border-radius: 62px;
+    cursor: pointer;
+    display: flex;
+    gap: 12px;
+    height: 60px;
+    justify-content: center;
+    overflow: hidden;
+    padding: 16px 54px;
+    position: relative;
+    width: 457px;
+}
+
+.order-approval-attach-book-text-9 {
+    color: var(--white);
+    font-family: var(--font-family-noto_sans_thai);
+    font-size: var(--font-size-20);
+    font-weight: 700;
+    letter-spacing: 0;
+    line-height: normal;
+    margin-top: -2.00px;
+    position: relative;
+    width: fit-content;
+}
+
+.order-approval-attach-book-footer {
+    align-items: flex-start;
+    background-color: var(--midnight-blue);
+    display: flex;
+    flex-direction: row;
+    flex-shrink: 1;
+    height: 76px;
+    justify-content: flex-start;
+    margin-top: 315px;
+    padding: 22px 552px;
+    width: 1440px;
+}
+
+.order-approval-attach-book-copyright-2024 {
+    color: var(--white);
+    font-family: var(--font-family-noto_sans_thai);
+    font-size: var(--font-size-20);
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: normal;
+    margin-left: 1px;
+    min-height: 30px;
+}
+
+.order-approval-attach-book-text_label-3 {
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: normal;
+    position: relative;
+    width: fit-content;
+}
+
+.order-approval-attach-book-popup-container {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.order-approval-attach-book-5);
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.order-approval-attach-book-text_label-5 {
+    letter-spacing: 0;
+    position: relative;
+}
+
+
+.order-approval-attach-book-text_label-3-2 {
+    text-align: center;
+    width: fit-content;
+}
+
+.order-approval-attach-book-text_label-4 {
+    letter-spacing: 0;
+    line-height: normal;
+    margin-top: -1.order-approval-attach-book-00px;
+    position: relative;
+}
+
+.order-approval-attach-book-text-2-3 {
+    letter-spacing: 0;
+    text-align: center;
+}
+
+.order-approval-attach-book-text-7-3 {
+    color: var(--pink);
+    font-family: var(--font-family-noto_sans_thai);
+    font-size: var(--font-size-40);
+    font-weight: 600;
+    line-height: 58.5px;
+    margin-top: -1.00px;
+    position: relative;
+    width: 468px;
+}
+
+.order-approval-attach-book-view-1 {
+    background-color: #14181f80;
+    height: 1024px;
+    left: 0;
+    position: absolute;
+    top: 4px;
+    width: 1440px;
+}
+
+.order-approval-attach-book-popup {
+    align-items: flex-start;
+    display: flex;
+    height: 288px;
+    left: 444px;
+    min-width: 552px;
+    position: absolute;
+    top: 323px;
+}
+
+.order-approval-attach-book-frame-container {
+    border-radius: 10px;
+    height: 236px;
+    position: relative;
+    width: 552px;
+}
+
+.order-approval-attach-book-frame-1041 {
+    cursor: pointer;
+    height: 31px;
+    left: 505px;
+    position: absolute;
+    top: 10px;
+    width: 31px;
+}
+
+.order-approval-attach-book-frame-38266 {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    position: relative;
+    width: 472px;
+}
+
+.order-approval-attach-book-frame-38265 {
+    align-items: center;
+    display: inline-flex;
+    flex: 0 0 auto;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    position: relative;
+}
+
+.order-approval-attach-book-frame-38262 {
+    align-items: center;
+    display: inline-flex;
+    flex: 0 0 auto;
+    gap: 40px;
+    position: relative;
+}
+
+.order-approval-attach-book-frame-38264-2 {
+    align-items: center;
+    background-color: var(--white);
+    border-radius: 10px;
+    display: inline-flex;
+    gap: 10px;
+    left: 444px;
+    overflow: hidden;
+    padding: 40px;
+    /* position: absolute;
+    top: 369px; */
+}
+
+.order-approval-attach-book-text_label-4-2 {
+    color: var(--green);
+    font-family: var(--font-family-noto_sans_thai);
+    font-size: var(--font-size-40);
+    font-weight: 600;
+    line-height: 60.0px;
+    text-align: center;
+    width: 468px;
+}
+
+.order-approval-attach-book-button-3-3 {
+    background-color: var(--white);
+    border: 1px solid;
+    border-color: var(--main);
+    width: 216px;
+}
+
+.order-approval-attach-book-button-4-3 {
+    background-color: var(--main);
+    width: 216px;
+}
+
+.order-approval-attach-book-button-5-3 {
+    align-items: center;
+    border-radius: 10px;
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+    overflow: hidden;
+    padding: 8px 24px;
+    position: relative;
+}
+
+.order-approval-attach-book-frame-38264-3 {
+    align-items: center;
+    background-color: var(--white);
+    border-radius: 10px;
+    display: flex;
+    gap: 10px;
+    left: 0;
+    overflow: hidden;
+    padding: 40px;
+    position: absolute;
+    top: 0;
+    width: 801px;
+}
+
+.order-approval-attach-book-frame-38266-3 {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    position: relative;
+    width: 721px;
+}
+
+.order-approval-attach-book-frame-container-3 {
+    border-radius: 10px;
+    height: 330px;
+    margin-left: -1px;
+    position: relative;
+    width: 801px;
+}
+
+.order-approval-attach-book-popup-3 {
+    align-items: flex-start;
+    display: flex;
+    height: 428px;
+    margin-left: 1px;
+    min-width: 801px;
+}
+
+.order-approval-attach-book-view-3 {
+    align-items: center;
+    background-color: #14181f80;
+    display: flex;
+    height: 1024px;
+    left: 0;
+    padding: 0 319px;
+    position: absolute;
+    top: 4px;
+    width: 1440px;
+}
+
+.order-approval-attach-book-frame-1041-3 {
+    cursor: pointer;
+    height: 31px;
+    left: 747px;
+    position: absolute;
+    top: 24px;
+    width: 31px;
+}
+
+.order-approval-attach-book-input-select {
+    align-items: flex-start;
+    display: flex;
+    flex: 0 0 auto;
+    flex-direction: column;
+    position: relative;
+    width: 621px;
+}
+
+.order-approval-attach-book-select-field {
+    align-items: center;
+    align-self: stretch;
+    background-color: var(--white);
+    border: 1px solid;
+    border-color: #dce0e5;
+    border-radius: 8px;
+    box-shadow: inset 0px -2px 2px #3030301a, inset 0px 7px 12px #ffffff14;
+    display: flex;
+    gap: 8px;
+    height: 40px;
+    overflow: hidden;
+    padding: 8px 10px;
+    position: relative;
+    width: 100%;
+}
+
+.order-approval-attach-book-custom-dropdown {
+    width: 100%;
+    height: 40px;
+    /* กำหนดความสูง */
+    padding: 5px 10px;
+    /* ลด padding เพื่อให้ช่องไม่สูงเกินไป */
+    font-size: 16px;
+    /* ขนาดตัวอักษร */
+    font-family: 'Noto Sans Thai', sans-serif;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    appearance: none;
+    position: relative;
+    z-index: 2;
+    line-height: normal;
+    /* ปรับให้ข้อความอยู่ตรงกลาง */
+}
+
+.order-approval-attach-book-dropdown-icon {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    /* ระยะห่างจากขอบขวา */
+    transform: translateY(-50%);
+    pointer-events: none;
+}
+
+.order-approval-attach-book-text-8-2 {
+    color: var(--bkack);
+    font-family: var(--font-family-noto_sans_thai);
+    font-size: var(--font-size-20);
+    letter-spacing: 0;
+    line-height: normal;
+    margin-top: -1.00px;
+    position: relative;
+    width: fit-content;
+}
 
 /* #endregion */
 /* #region General Styles */
