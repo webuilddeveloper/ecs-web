@@ -68,6 +68,9 @@ input:focus {
     --slimy-green: #00a81c;
     --madang: #befec7;
     --bg-colorbg1: #f7f7f7;
+    --delta: #a2a2a2;
+    --gallery: #f0eeed;
+    --red: #d92c20;
 
     --font-size-13: 13px;
     --font-size-14: 14px;
@@ -78,12 +81,13 @@ input:focus {
     --font-size-20: 20px;
     --font-size-22: 22px;
     --font-size-24: 24px;
+    --font-size-28: 28px;
     --font-size-32: 32px;
     --font-size-40: 40px;
 
     --font-family-kanit: "Kanit", Helvetica;
-  --font-family-noto_sans_thai: "Noto Sans Thai", Helvetica;
-  --font-family-poppins: "Poppins", Helvetica;
+    --font-family-noto_sans_thai: "Noto Sans Thai", Helvetica;
+    --font-family-poppins: "Poppins", Helvetica;
 }
 
 .notosansthai-normal-vulcan-15px {
@@ -212,39 +216,39 @@ input:focus {
     font-size: var(--font-size-20);
     font-style: normal;
     font-weight: 600;
-  }
+}
 
-  .notosansthai-normal-vulcan-18px {
+.notosansthai-normal-vulcan-18px {
     color: var(--vulcan);
     font-family: var(--font-family-noto_sans_thai);
     font-size: var(--font-size-18);
     font-style: normal;
     font-weight: 400;
-  }
+}
 
-  .notosansthai-normal-black-17px {
+.notosansthai-normal-black-17px {
     color: var(--bkack);
     font-family: var(--font-family-noto_sans_thai);
     font-size: var(--font-size-17);
     font-style: normal;
     font-weight: 400;
-  }
+}
 
-  .notosansthai-normal-black-18px {
+.notosansthai-normal-black-18px {
     color: var(--bkack);
     font-family: var(--font-family-noto_sans_thai);
     font-size: var(--font-size-18);
     font-style: normal;
     font-weight: 400;
-  }
+}
 
-  .notosansthai-normal-slimy-green-13px {
+.notosansthai-normal-slimy-green-13px {
     color: var(--slimy-green);
     font-family: var(--font-family-noto_sans_thai);
     font-size: var(--font-size-13);
     font-style: normal;
     font-weight: 400;
-  }
+}
 
 /* #endregion */
 
@@ -3711,9 +3715,9 @@ input:focus {
     flex-direction: column;
     height: 1591px;
     width: 1440px;
-  }
-  
-  .profile-educational-header {
+}
+
+.profile-educational-header {
     align-items: center;
     background-color: var(--main);
     display: flex;
@@ -3724,33 +3728,33 @@ input:focus {
     min-width: 1440px;
     padding: 6px 87.8px;
     width: auto;
-  }
-  
-  .profile-educational-logo-1 {
+}
+
+.profile-educational-logo-1 {
     align-self: flex-end;
     height: 60px;
     object-fit: cover;
     width: 68px;
-  }
-  
-  .profile-educational-navbar {
+}
+
+.profile-educational-navbar {
     align-items: center;
     display: inline-flex;
     gap: 40px;
     margin-bottom: 4.0px;
     margin-left: 41px;
     position: relative;
-  }
-  
-  .profile-educational-text {
+}
+
+.profile-educational-text {
     letter-spacing: 0;
     line-height: normal;
     margin-top: -1.00px;
     position: relative;
     width: fit-content;
-  }
-  
-  .profile-educational-frame-38253 {
+}
+
+.profile-educational-frame-38253 {
     align-items: center;
     display: inline-flex;
     gap: 56px;
@@ -3758,38 +3762,38 @@ input:focus {
     margin-bottom: 5.0px;
     margin-left: 220px;
     position: relative;
-  }
-  
-  .profile-educational-group {
+}
+
+.profile-educational-group {
     height: 35px;
     position: relative;
     width: 31.17px;
-  }
-  
-  .profile-educational-vector-1 {
+}
+
+.profile-educational-vector-1 {
     height: 35px;
     position: relative;
     width: 35px;
-  }
-  
-  .profile-educational-frame-38357 {
+}
+
+.profile-educational-frame-38357 {
     align-items: flex-start;
     display: inline-flex;
     gap: 32px;
     margin-top: 70px;
     position: relative;
-  }
-  
-  .profile-educational-frame-38358 {
+}
+
+.profile-educational-frame-38358 {
     align-items: flex-start;
     display: flex;
     flex-direction: column;
     gap: 24px;
     position: relative;
     width: 316px;
-  }
-  
-  .profile-educational-frame-38354 {
+}
+
+.profile-educational-frame-38354 {
     align-items: flex-start;
     align-self: stretch;
     display: flex;
@@ -3798,9 +3802,9 @@ input:focus {
     gap: 10px;
     position: relative;
     width: 100%;
-  }
-  
-  .profile-educational-frame-38 {
+}
+
+.profile-educational-frame-38 {
     align-items: flex-start;
     align-self: stretch;
     display: flex;
@@ -3809,9 +3813,9 @@ input:focus {
     gap: 16px;
     position: relative;
     width: 100%;
-  }
-  
-  .profile-educational-frame-38350 {
+}
+
+.profile-educational-frame-38350 {
     align-items: center;
     align-self: stretch;
     display: flex;
@@ -3819,40 +3823,40 @@ input:focus {
     gap: 32px;
     position: relative;
     width: 100%;
-  }
-  
-  .profile-educational-frame-383 {
+}
+
+.profile-educational-frame-383 {
     align-items: center;
     display: inline-flex;
     flex: 0 0 auto;
     gap: 16px;
     position: relative;
-  }
-  
-  .profile-educational-text-1-2 {
+}
+
+.profile-educational-text-1-2 {
     color: var(--pink);
     font-family: var(--font-family-noto_sans_thai);
     font-size: var(--font-size-22);
     font-weight: 600;
     margin-top: -0.50px;
     text-align: center;
-  }
-  
-  .profile-educational-frame-383-1 {
+}
+
+.profile-educational-frame-383-1 {
     align-items: center;
     display: inline-flex;
     flex: 0 0 auto;
     gap: 24px;
     position: relative;
-  }
-  
-  .profile-educational-arrow-down-01 {
+}
+
+.profile-educational-arrow-down-01 {
     height: 24px;
     position: relative;
     width: 24px;
-  }
-  
-  .profile-educational-frame-38351 {
+}
+
+.profile-educational-frame-38351 {
     align-items: center;
     display: flex;
     flex: 0 0 auto;
@@ -3861,9 +3865,9 @@ input:focus {
     padding: 0px 50px;
     position: relative;
     width: 251px;
-  }
-  
-  .profile-educational-text-2-1 {
+}
+
+.profile-educational-text-2-1 {
     align-self: stretch;
     color: var(--pink);
     font-family: var(--font-family-noto_sans_thai);
@@ -3873,9 +3877,9 @@ input:focus {
     line-height: normal;
     margin-top: -1.00px;
     position: relative;
-  }
-  
-  .profile-educational-text-3 {
+}
+
+.profile-educational-text-3 {
     align-self: stretch;
     color: var(--bkack);
     font-family: var(--font-family-noto_sans_thai);
@@ -3884,40 +3888,40 @@ input:focus {
     letter-spacing: 0;
     line-height: normal;
     position: relative;
-  }
-  
-  .profile-educational-vector {
+}
+
+.profile-educational-vector {
     height: 1px;
     object-fit: cover;
     position: relative;
     width: 316px;
-  }
-  
-  .profile-educational-checkmark-square-04 {
+}
+
+.profile-educational-checkmark-square-04 {
     height: 34px;
     position: relative;
     width: 34px;
-  }
-  
-  .profile-educational-text-1 {
+}
+
+.profile-educational-text-1 {
     letter-spacing: 0;
     line-height: normal;
     margin-top: -0.50px;
     position: relative;
     text-align: center;
     width: fit-content;
-  }
-  
-  .profile-educational-frame-38356 {
+}
+
+.profile-educational-frame-38356 {
     align-items: flex-start;
     display: flex;
     flex-direction: column;
     gap: 36px;
     position: relative;
     width: 892px;
-  }
-  
-  .profile-educational-text-7 {
+}
+
+.profile-educational-text-7 {
     color: var(--bkack);
     font-family: var(--font-family-noto_sans_thai);
     font-size: var(--font-size-32);
@@ -3929,9 +3933,9 @@ input:focus {
     text-align: center;
     white-space: nowrap;
     width: fit-content;
-  }
-  
-  .profile-educational-frame-38398 {
+}
+
+.profile-educational-frame-38398 {
     align-items: flex-start;
     align-self: stretch;
     border: 1px solid;
@@ -3945,39 +3949,39 @@ input:focus {
     padding: 25px 24px;
     position: relative;
     width: 100%;
-  }
-  
-  .profile-educational-frame-38483 {
+}
+
+.profile-educational-frame-38483 {
     align-items: flex-start;
     align-self: stretch;
     display: flex;
     flex: 0 0 auto;
     position: relative;
     width: 100%;
-  }
-  
-  .profile-educational-frame-38482 {
+}
+
+.profile-educational-frame-38482 {
     align-items: center;
     display: flex;
     flex: 1;
     flex-grow: 1;
     gap: 24px;
     position: relative;
-  }
-  
-  .profile-educational-ellipse-11 {
+}
+
+.profile-educational-ellipse-11 {
     height: 100px;
     position: relative;
     width: 100px;
-  }
-  
-  .profile-educational-group-239179 {
+}
+
+.profile-educational-group-239179 {
     height: 60px;
     position: relative;
     width: 166px;
-  }
-  
-  .profile-educational-text-8 {
+}
+
+.profile-educational-text-8 {
     color: var(--bkack);
     font-family: var(--font-family-poppins);
     font-size: var(--font-size-20);
@@ -3987,9 +3991,9 @@ input:focus {
     line-height: normal;
     position: absolute;
     top: 0;
-  }
-  
-  .profile-educational-yolladagmailcom {
+}
+
+.profile-educational-yolladagmailcom {
     color: var(--bkack);
     font-family: var(--font-family-poppins);
     font-size: var(--font-size-16);
@@ -4000,9 +4004,9 @@ input:focus {
     opacity: 0.5;
     position: absolute;
     top: 36px;
-  }
-  
-  .profile-educational-button {
+}
+
+.profile-educational-button {
     align-items: center;
     background-color: var(--pink);
     border-radius: 10px;
@@ -4014,9 +4018,9 @@ input:focus {
     overflow: hidden;
     padding: 8px 24px;
     position: relative;
-  }
-  
-  .profile-educational-text_label {
+}
+
+.profile-educational-text_label {
     color: var(--main);
     font-family: var(--font-family-noto_sans_thai);
     font-size: var(--font-size-20);
@@ -4027,9 +4031,9 @@ input:focus {
     position: relative;
     text-align: center;
     width: fit-content;
-  }
-  
-  .profile-educational-frame-38397 {
+}
+
+.profile-educational-frame-38397 {
     align-items: flex-start;
     align-self: stretch;
     display: flex;
@@ -4037,9 +4041,9 @@ input:focus {
     gap: 20px;
     position: relative;
     width: 100%;
-  }
-  
-  .profile-educational-frame-29 {
+}
+
+.profile-educational-frame-29 {
     align-items: flex-start;
     border: 1px solid;
     border-color: var(--black);
@@ -4053,17 +4057,17 @@ input:focus {
     overflow: hidden;
     padding: 25px 24px;
     position: relative;
-  }
-  
-  .profile-educational-text-2 {
+}
+
+.profile-educational-text-2 {
     align-self: stretch;
     letter-spacing: 0;
     line-height: normal;
     margin-top: -1.00px;
     position: relative;
-  }
-  
-  .profile-educational-text-field {
+}
+
+.profile-educational-text-field {
     align-items: flex-start;
     align-self: stretch;
     display: flex;
@@ -4073,9 +4077,9 @@ input:focus {
     padding: 0px 0px 8px;
     position: relative;
     width: 100%;
-  }
-  
-  .profile-educational-frame-20 {
+}
+
+.profile-educational-frame-20 {
     align-items: center;
     align-self: stretch;
     background-color: var(--gray);
@@ -4089,9 +4093,9 @@ input:focus {
     padding: 8px 16px;
     position: relative;
     width: 100%;
-  }
-  
-  .profile-educational-text_input {
+}
+
+.profile-educational-text_input {
     background-color: transparent;
     border: 0;
     cursor: pointer;
@@ -4102,13 +4106,13 @@ input:focus {
     margin-top: -1.00px;
     padding: 0;
     position: relative;
-  }
-  
-  .profile-educational-text_input::placeholder {
+}
+
+.profile-educational-text_input::placeholder {
     color: #00000099;
-  }
-  
-  .profile-educational-frame-28 {
+}
+
+.profile-educational-frame-28 {
     align-items: center;
     align-self: stretch;
     border: 1px solid;
@@ -4122,9 +4126,9 @@ input:focus {
     overflow: hidden;
     padding: 25px 24px;
     position: relative;
-  }
-  
-  .profile-educational-frame-38-1 {
+}
+
+.profile-educational-frame-38-1 {
     align-items: flex-start;
     align-self: stretch;
     display: flex;
@@ -4133,9 +4137,9 @@ input:focus {
     gap: 24px;
     position: relative;
     width: 100%;
-  }
-  
-  .profile-educational-frame-38296 {
+}
+
+.profile-educational-frame-38296 {
     align-items: flex-start;
     align-self: stretch;
     display: flex;
@@ -4143,9 +4147,9 @@ input:focus {
     gap: 24px;
     position: relative;
     width: 100%;
-  }
-  
-  .profile-educational-text-field-1 {
+}
+
+.profile-educational-text-field-1 {
     align-items: flex-start;
     display: flex;
     flex: 1;
@@ -4154,9 +4158,9 @@ input:focus {
     gap: 8px;
     padding: 0px 0px 8px;
     position: relative;
-  }
-  
-  .profile-educational-frame-38308 {
+}
+
+.profile-educational-frame-38308 {
     align-items: flex-start;
     align-self: stretch;
     display: flex;
@@ -4165,34 +4169,34 @@ input:focus {
     gap: 8px;
     position: relative;
     width: 100%;
-  }
-  
-  .profile-educational-text-16 {
+}
+
+.profile-educational-text-16 {
     align-self: stretch;
     letter-spacing: 0;
     line-height: normal;
     position: relative;
-  }
-  
-  .profile-educational-frame-38485 {
+}
+
+.profile-educational-frame-38485 {
     align-items: flex-start;
     display: inline-flex;
     flex: 0 0 auto;
     flex-direction: column;
     gap: 16px;
     position: relative;
-  }
-  
-  .profile-educational-button-new {
+}
+
+.profile-educational-button-new {
     background-color: var(--pink);
     border-color: #121212;
     border-radius: 50px;
     display: flex;
     gap: 8px;
     width: 225px;
-  }
-  
-  .profile-educational-text_label-1 {
+}
+
+.profile-educational-text_label-1 {
     color: #121212;
     cursor: pointer;
     font-family: var(--font-family-kanit);
@@ -4204,25 +4208,25 @@ input:focus {
     position: relative;
     text-align: center;
     width: fit-content;
-  }
-  
-  .profile-educational-button-1 {
+}
+
+.profile-educational-button-1 {
     background-color: #ffffff1a;
     border-color: #dce0e5;
     border-radius: 8px;
-    box-shadow: inset 0px -2px 2px #3030301a , inset 0px 7px 12px #ffffff14;
+    box-shadow: inset 0px -2px 2px #3030301a, inset 0px 7px 12px #ffffff14;
     display: inline-flex;
     gap: 6px;
     height: 48px;
-  }
-  
-  .profile-educational-icon-btn-left {
+}
+
+.profile-educational-icon-btn-left {
     height: 20px;
     position: relative;
     width: 20px;
-  }
-  
-  .profile-educational-text-sm {
+}
+
+.profile-educational-text-sm {
     color: var(--vulcan);
     font-family: var(--font-family-noto_sans_thai);
     font-size: var(--font-size-18);
@@ -4232,9 +4236,9 @@ input:focus {
     position: relative;
     white-space: nowrap;
     width: fit-content;
-  }
-  
-  .profile-educational-footer {
+}
+
+.profile-educational-footer {
     align-items: flex-start;
     background-color: var(--main);
     display: flex;
@@ -4245,9 +4249,9 @@ input:focus {
     margin-top: 74px;
     padding: 22px 552px;
     width: 1440px;
-  }
-  
-  .profile-educational-copyright-2024 {
+}
+
+.profile-educational-copyright-2024 {
     color: var(--white);
     font-family: var(--font-family-noto_sans_thai);
     font-size: var(--font-size-20);
@@ -4256,9 +4260,9 @@ input:focus {
     line-height: normal;
     margin-left: 1px;
     min-height: 30px;
-  }
-  
-  .profile-educational-button-2 {
+}
+
+.profile-educational-button-2 {
     align-items: center;
     border: 1px solid;
     cursor: pointer;
@@ -4266,21 +4270,21 @@ input:focus {
     overflow: hidden;
     padding: 8px 16px;
     position: relative;
-  }
-  
-  .profile-educational-icon {
+}
+
+.profile-educational-icon {
     height: 34px;
     position: relative;
     width: 34px;
-  }
-  
-  .profile-educational-text-1-3 {
+}
+
+.profile-educational-text-1-3 {
     letter-spacing: 0;
     line-height: normal;
     position: relative;
     width: fit-content;
-  }
-  
+}
+
 
 /* #endregion */
 
@@ -4293,9 +4297,9 @@ input:focus {
     flex-direction: column;
     height: 1161px;
     width: 1440px;
-  }
-  
-  .purchase-order-educational-header-2 {
+}
+
+.purchase-order-educational-header-2 {
     align-items: center;
     background-color: var(--main);
     display: flex;
@@ -4306,42 +4310,42 @@ input:focus {
     min-width: 1440px;
     padding: 6px 87.8px;
     width: auto;
-  }
-  
-  .purchase-order-educational-logo-1 {
+}
+
+.purchase-order-educational-logo-1 {
     align-self: flex-end;
     height: 60px;
     object-fit: cover;
     width: 68px;
-  }
-  
-  .purchase-order-educational-navbar {
+}
+
+.purchase-order-educational-navbar {
     align-items: center;
     display: inline-flex;
     gap: 40px;
     margin-bottom: 4.0px;
     margin-left: 41px;
     position: relative;
-  }
-  
-  .purchase-order-educational-navbar-link-text {
+}
+
+.purchase-order-educational-navbar-link-text {
     letter-spacing: 0;
     line-height: normal;
     margin-top: -1.00px;
     position: relative;
     width: fit-content;
-  }
-  
-  .purchase-order-educational-navbar-link-text-6 {
+}
+
+.purchase-order-educational-navbar-link-text-6 {
     letter-spacing: 0;
     line-height: normal;
     margin-top: -1.00px;
     position: relative;
     text-decoration: underline;
     width: fit-content;
-  }
-  
-  .purchase-order-educational-frame-38253 {
+}
+
+.purchase-order-educational-frame-38253 {
     align-items: center;
     display: inline-flex;
     gap: 56px;
@@ -4349,21 +4353,21 @@ input:focus {
     margin-bottom: 5.0px;
     margin-left: 220px;
     position: relative;
-  }
-  
-  .purchase-order-educational-group {
+}
+
+.purchase-order-educational-group {
     height: 35px;
     position: relative;
     width: 31.17px;
-  }
-  
-  .purchase-order-educational-vector {
+}
+
+.purchase-order-educational-vector {
     height: 35px;
     position: relative;
     width: 35px;
-  }
-  
-  .purchase-order-educational-flex-row {
+}
+
+.purchase-order-educational-flex-row {
     align-items: flex-start;
     display: flex;
     gap: 382px;
@@ -4371,24 +4375,24 @@ input:focus {
     margin-left: 100px;
     margin-top: 62px;
     min-width: 704px;
-  }
-  
-  .purchase-order-educational-button-3 {
+}
+
+.purchase-order-educational-button-3 {
     background-color: var(--pink);
     border-radius: 10px;
     cursor: pointer;
     display: inline-flex;
     gap: 8px;
     padding: 8px 24px;
-  }
-  
-  .purchase-order-educational-icon-back {
+}
+
+.purchase-order-educational-icon-back {
     height: 24px;
     position: relative;
     width: 24px;
-  }
-  
-  .purchase-order-educational-text_label {
+}
+
+.purchase-order-educational-text_label {
     color: var(--main);
     font-family: var(--font-family-noto_sans_thai);
     font-size: var(--font-size-20);
@@ -4399,9 +4403,9 @@ input:focus {
     position: relative;
     text-align: center;
     width: fit-content;
-  }
-  
-  .purchase-order-educational-text-3 {
+}
+
+.purchase-order-educational-text-3 {
     align-self: flex-end;
     color: var(--bkack);
     font-family: var(--font-family-noto_sans_thai);
@@ -4412,9 +4416,9 @@ input:focus {
     min-width: 168px;
     text-align: center;
     white-space: nowrap;
-  }
-  
-  .purchase-order-educational-frame-38327 {
+}
+
+.purchase-order-educational-frame-38327 {
     align-items: center;
     align-self: center;
     display: flex;
@@ -4424,9 +4428,9 @@ input:focus {
     margin-top: 41px;
     position: relative;
     width: 1241px;
-  }
-  
-  .purchase-order-educational-frame-38494 {
+}
+
+.purchase-order-educational-frame-38494 {
     align-items: center;
     align-self: stretch;
     display: flex;
@@ -4434,29 +4438,29 @@ input:focus {
     justify-content: space-between;
     position: relative;
     width: 100%;
-  }
-  
-  .purchase-order-educational-frame-38496 {
+}
+
+.purchase-order-educational-frame-38496 {
     align-items: flex-start;
     display: flex;
     gap: 16px;
     position: relative;
     width: 290px;
-  }
-  
-  .purchase-order-educational-frame-38497 {
+}
+
+.purchase-order-educational-frame-38497 {
     height: 46px;
     position: relative;
     width: 290px;
-  }
-  
-  .purchase-order-educational-input-search {
+}
+
+.purchase-order-educational-input-search {
     align-items: flex-start;
     height: 46px;
     width: 290px;
-  }
-  
-  .purchase-order-educational-input-element {
+}
+
+.purchase-order-educational-input-element {
     align-items: center;
     align-self: stretch;
     background-color: var(--white);
@@ -4469,15 +4473,15 @@ input:focus {
     gap: 8px;
     overflow: hidden;
     padding: 8px 10px;
-  }
-  
-  .purchase-order-educational-icon-addon {
+}
+
+.purchase-order-educational-icon-addon {
     height: 20px;
     position: relative;
     width: 20px;
-  }
-  
-  .purchase-order-educational-text_input {
+}
+
+.purchase-order-educational-text_input {
     background-color: transparent;
     border: 0;
     color: #6f7c8e;
@@ -4490,13 +4494,13 @@ input:focus {
     line-height: 21.0px;
     padding: 0;
     position: relative;
-  }
-  
-  .purchase-order-educational-text_input::placeholder {
+}
+
+.purchase-order-educational-text_input::placeholder {
     color: #6f7c8e99;
-  }
-  
-  .purchase-order-educational-button-4 {
+}
+
+.purchase-order-educational-button-4 {
     background-color: var(--main);
     border-radius: 10px;
     cursor: pointer;
@@ -4505,9 +4509,9 @@ input:focus {
     margin-right: -139.00px;
     padding: 8px 24px;
     width: 123px;
-  }
-  
-  .purchase-order-educational-button-5 {
+}
+
+.purchase-order-educational-button-5 {
     background-color: var(--main);
     border-radius: 10px;
     cursor: pointer;
@@ -4515,14 +4519,14 @@ input:focus {
     gap: 8px;
     padding: 8px 24px;
     width: 123px;
-  }
-  
-  .purchase-order-educational-text_label-2 {
+}
+
+.purchase-order-educational-text_label-2 {
     margin-left: -3.00px;
     margin-right: -3.00px;
-  }
-  
-  .purchase-order-educational-text-1 {
+}
+
+.purchase-order-educational-text-1 {
     align-self: stretch;
     color: var(--bkack);
     font-family: var(--font-family-noto_sans_thai);
@@ -4531,9 +4535,9 @@ input:focus {
     letter-spacing: 0;
     line-height: normal;
     position: relative;
-  }
-  
-  .purchase-order-educational-frame-38271 {
+}
+
+.purchase-order-educational-frame-38271 {
     align-items: flex-start;
     align-self: stretch;
     display: flex;
@@ -4541,9 +4545,9 @@ input:focus {
     flex-direction: column;
     position: relative;
     width: 100%;
-  }
-  
-  .purchase-order-educational-frame-38270 {
+}
+
+.purchase-order-educational-frame-38270 {
     align-items: flex-start;
     align-self: stretch;
     display: flex;
@@ -4552,22 +4556,22 @@ input:focus {
     gap: 16px;
     position: relative;
     width: 100%;
-  }
-  
-  .purchase-order-educational-frame-3346 {
+}
+
+.purchase-order-educational-frame-3346 {
     align-items: flex-start;
     align-self: stretch;
     display: flex;
     flex: 0 0 auto;
     position: relative;
     width: 100%;
-  }
-  
-  .purchase-order-educational-column-table-default-2 {
+}
+
+.purchase-order-educational-column-table-default-2 {
     width: 50px;
-  }
-  
-  .purchase-order-educational-table-header {
+}
+
+.purchase-order-educational-table-header {
     align-items: center;
     align-self: stretch;
     background-color: var(--black-haze);
@@ -4580,16 +4584,16 @@ input:focus {
     padding: 8px;
     position: relative;
     width: 100%;
-  }
-  
-  .purchase-order-educational-header {
+}
+
+.purchase-order-educational-header {
     flex: 1;
     letter-spacing: 0;
     line-height: 21.0px;
     position: relative;
-  }
-  
-  .purchase-order-educational-base-table-cell {
+}
+
+.purchase-order-educational-base-table-cell {
     align-items: center;
     align-self: stretch;
     border-bottom-style: solid;
@@ -4601,9 +4605,9 @@ input:focus {
     padding: 8px;
     position: relative;
     width: 100%;
-  }
-  
-  .purchase-order-educational-text-cell {
+}
+
+.purchase-order-educational-text-cell {
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 1;
     display: -webkit-box;
@@ -4613,13 +4617,13 @@ input:focus {
     overflow: hidden;
     position: relative;
     text-overflow: ellipsis;
-  }
-  
-  .purchase-order-educational-column-table-default-3 {
+}
+
+.purchase-order-educational-column-table-default-3 {
     width: 150px;
-  }
-  
-  .purchase-order-educational-table-header-1 {
+}
+
+.purchase-order-educational-table-header-1 {
     align-items: center;
     background-color: var(--black-haze);
     border-bottom-style: solid;
@@ -4632,78 +4636,78 @@ input:focus {
     padding: 8px;
     position: relative;
     width: 200px;
-  }
-  
-  .purchase-order-educational-base-table-cell-1 {
+}
+
+.purchase-order-educational-base-table-cell-1 {
     display: flex;
     margin-right: -50.00px;
     padding: 8px;
     width: 200px;
-  }
-  
-  .purchase-order-educational-column-table-default-4 {
+}
+
+.purchase-order-educational-column-table-default-4 {
     width: 186px;
-  }
-  
-  .purchase-order-educational-column-table-default-5 {
+}
+
+.purchase-order-educational-column-table-default-5 {
     width: 200px;
-  }
-  
-  .purchase-order-educational-column-table-default {
+}
+
+.purchase-order-educational-column-table-default {
     align-items: flex-start;
     display: flex;
     flex: 1;
     flex-direction: column;
     flex-grow: 1;
     position: relative;
-  }
-  
-  .purchase-order-educational-header-1 {
+}
+
+.purchase-order-educational-header-1 {
     flex: 1;
     letter-spacing: 0;
     line-height: 21.0px;
     position: relative;
     text-align: center;
-  }
-  
-  .purchase-order-educational-base-table-cell-4 {
+}
+
+.purchase-order-educational-base-table-cell-4 {
     display: inline-flex;
     flex-direction: column;
     padding: 6px 8px;
-  }
-  
-  .purchase-order-educational-actions-btn {
+}
+
+.purchase-order-educational-actions-btn {
     align-items: center;
     display: inline-flex;
     flex: 0 0 auto;
     gap: 4px;
     justify-content: flex-end;
     position: relative;
-  }
-  
-  .purchase-order-educational-button-6 {
+}
+
+.purchase-order-educational-button-6 {
     background-color: var(--white-2);
     border: 1px solid;
     border-color: var(--geyser);
     border-radius: 8px;
-    box-shadow: inset 0px -2px 2px #3030301a , inset 0px 7px 12px #ffffff14;
+    box-shadow: inset 0px -2px 2px #3030301a, inset 0px 7px 12px #ffffff14;
     cursor: pointer;
     display: inline-flex;
     flex: 0 0 auto;
     gap: 6px;
     height: 32px;
     padding: 8px;
-  }
-  
-  .purchase-order-educational-icon {
+}
+
+.purchase-order-educational-icon {
     height: 20px;
     margin-bottom: -2.00px;
     margin-top: -2.00px;
     position: relative;
     width: 20px;
-  }
-  
-  .purchase-order-educational-text-sm {
+}
+
+.purchase-order-educational-text-sm {
     letter-spacing: 0;
     line-height: 21.0px;
     margin-bottom: -1.50px;
@@ -4711,23 +4715,23 @@ input:focus {
     position: relative;
     white-space: nowrap;
     width: fit-content;
-  }
-  
-  .purchase-order-educational-base-table-cell-2 {
+}
+
+.purchase-order-educational-base-table-cell-2 {
     align-self: stretch;
     display: flex;
     flex-direction: column;
     padding: 6px 8px;
     width: 100%;
-  }
-  
-  .purchase-order-educational-button {
+}
+
+.purchase-order-educational-button {
     align-items: center;
     background-color: var(--white-2);
     border: 1px solid;
     border-color: var(--geyser);
     border-radius: 8px;
-    box-shadow: inset 0px -2px 2px #3030301a , inset 0px 7px 12px #ffffff14;
+    box-shadow: inset 0px -2px 2px #3030301a, inset 0px 7px 12px #ffffff14;
     display: inline-flex;
     flex: 0 0 auto;
     gap: 6px;
@@ -4736,44 +4740,44 @@ input:focus {
     overflow: hidden;
     padding: 8px;
     position: relative;
-  }
-  
-  .purchase-order-educational-column-table-default-1 {
+}
+
+.purchase-order-educational-column-table-default-1 {
     width: 110px;
-  }
-  
-  .purchase-order-educational-base-table-cell-3 {
+}
+
+.purchase-order-educational-base-table-cell-3 {
     display: flex;
     flex-direction: column;
     margin-right: -7.00px;
     padding: 6px 8px;
     width: 117px;
-  }
-  
-  .purchase-order-educational-button-1 {
+}
+
+.purchase-order-educational-button-1 {
     background-color: var(--main);
     border-radius: 8px;
-    box-shadow: inset 0px -2px 2px #3030301a , inset 0px 7px 12px #ffffff14;
+    box-shadow: inset 0px -2px 2px #3030301a, inset 0px 7px 12px #ffffff14;
     cursor: pointer;
     display: flex;
     gap: 6px;
     height: 32px;
     padding: 8px 6px;
     width: 32px;
-  }
-  
-  .purchase-order-educational-button-2 {
+}
+
+.purchase-order-educational-button-2 {
     background-color: var(--main);
     border-radius: 8px;
-    box-shadow: inset 0px -2px 2px #3030301a , inset 0px 7px 12px #ffffff14;
+    box-shadow: inset 0px -2px 2px #3030301a, inset 0px 7px 12px #ffffff14;
     display: flex;
     gap: 6px;
     height: 32px;
     padding: 8px 6px;
     width: 32px;
-  }
-  
-  .purchase-order-educational-status {
+}
+
+.purchase-order-educational-status {
     align-items: center;
     background-color: var(--madang);
     border-radius: 29px;
@@ -4784,15 +4788,15 @@ input:focus {
     justify-content: center;
     padding: 4px 10px 4px 6px;
     position: relative;
-  }
-  
-  .purchase-order-educational-icon-1 {
+}
+
+.purchase-order-educational-icon-1 {
     height: 16px;
     position: relative;
     width: 16px;
-  }
-  
-  .purchase-order-educational-text {
+}
+
+.purchase-order-educational-text {
     letter-spacing: 0;
     line-height: normal;
     margin-bottom: -1.00px;
@@ -4800,9 +4804,9 @@ input:focus {
     position: relative;
     text-align: center;
     width: fit-content;
-  }
-  
-  .purchase-order-educational-frame-14 {
+}
+
+.purchase-order-educational-frame-14 {
     align-items: center;
     background-color: var(--main);
     border-radius: 62px;
@@ -4815,9 +4819,9 @@ input:focus {
     padding: 16px 54px;
     position: relative;
     width: 457px;
-  }
-  
-  .purchase-order-educational-text-2 {
+}
+
+.purchase-order-educational-text-2 {
     color: var(--white);
     font-family: var(--font-family-noto_sans_thai);
     font-size: var(--font-size-20);
@@ -4827,15 +4831,15 @@ input:focus {
     margin-top: -2.00px;
     position: relative;
     width: fit-content;
-  }
-  
-  .purchase-order-educational-arrow-down-bold-1 {
+}
+
+.purchase-order-educational-arrow-down-bold-1 {
     height: 24px;
     position: relative;
     width: 24px;
-  }
-  
-  .purchase-order-educational-footer {
+}
+
+.purchase-order-educational-footer {
     align-items: flex-start;
     background-color: var(--main);
     display: flex;
@@ -4846,9 +4850,9 @@ input:focus {
     margin-top: 72px;
     padding: 22px 552px;
     width: 1440px;
-  }
-  
-  .purchase-order-educational-copyright-2024 {
+}
+
+.purchase-order-educational-copyright-2024 {
     color: var(--white);
     font-family: var(--font-family-noto_sans_thai);
     font-size: var(--font-size-20);
@@ -4857,9 +4861,9 @@ input:focus {
     line-height: normal;
     margin-left: 1px;
     min-height: 30px;
-  }
-  
-  .purchase-order-educational-base-table-cell-5 {
+}
+
+.purchase-order-educational-base-table-cell-5 {
     align-items: center;
     border-bottom-style: solid;
     border-bottom-width: 1px;
@@ -4867,36 +4871,36 @@ input:focus {
     gap: 8px;
     height: 44px;
     position: relative;
-  }
-  
-  .purchase-order-educational-button-7 {
+}
+
+.purchase-order-educational-button-7 {
     align-items: center;
     justify-content: center;
     overflow: hidden;
     position: relative;
-  }
-  
-  .purchase-order-educational-column-table-default-6 {
+}
+
+.purchase-order-educational-column-table-default-6 {
     align-items: flex-start;
     display: flex;
     flex-direction: column;
     position: relative;
-  }
-  
-  .purchase-order-educational-input {
+}
+
+.purchase-order-educational-input {
     display: flex;
     position: relative;
-  }
-  
-  .purchase-order-educational-text_label-3 {
+}
+
+.purchase-order-educational-text_label-3 {
     letter-spacing: 0;
     line-height: normal;
     margin-top: -1.00px;
     position: relative;
     text-align: center;
     width: fit-content;
-  }
-  
+}
+
 /* #endregion */
 
 /* #region purchase-order-educationa-detail */
@@ -4908,9 +4912,9 @@ input:focus {
     flex-direction: column;
     height: 1673px;
     width: 1440px;
-  }
-  
-  .purchase-order-educationa-detail-header {
+}
+
+.purchase-order-educationa-detail-header {
     align-items: center;
     background-color: var(--main);
     display: flex;
@@ -4921,29 +4925,29 @@ input:focus {
     min-width: 1440px;
     padding: 6px 87.8px;
     width: auto;
-  }
-  
-  .purchase-order-educationa-detail-logo-1 {
+}
+
+.purchase-order-educationa-detail-logo-1 {
     align-self: flex-end;
     height: 60px;
     object-fit: cover;
     width: 68px;
-  }
-  
-  .purchase-order-educationa-detail-navbar {
+}
+
+.purchase-order-educationa-detail-navbar {
     align-items: center;
     display: inline-flex;
     gap: 40px;
     margin-bottom: 4.0px;
     margin-left: 41px;
     position: relative;
-  }
-  
-  .purchase-order-educationa-detail-navbar-link-text-18 {
+}
+
+.purchase-order-educationa-detail-navbar-link-text-18 {
     text-decoration: underline;
-  }
-  
-  .purchase-order-educationa-detail-frame-38253 {
+}
+
+.purchase-order-educationa-detail-frame-38253 {
     align-items: center;
     display: inline-flex;
     gap: 56px;
@@ -4951,21 +4955,21 @@ input:focus {
     margin-bottom: 5.0px;
     margin-left: 220px;
     position: relative;
-  }
-  
-  .purchase-order-educationa-detail-group {
+}
+
+.purchase-order-educationa-detail-group {
     height: 35px;
     position: relative;
     width: 31.17px;
-  }
-  
-  .purchase-order-educationa-detail-vector {
+}
+
+.purchase-order-educationa-detail-vector {
     height: 35px;
     position: relative;
     width: 35px;
-  }
-  
-  .purchase-order-educationa-detail-flex-row {
+}
+
+.purchase-order-educationa-detail-flex-row {
     align-items: flex-start;
     display: flex;
     gap: 324px;
@@ -4973,9 +4977,9 @@ input:focus {
     margin-left: 100px;
     margin-top: 62px;
     min-width: 762px;
-  }
-  
-  .purchase-order-educationa-detail-button {
+}
+
+.purchase-order-educationa-detail-button {
     align-items: center;
     background-color: var(--pink);
     border-radius: 10px;
@@ -4986,15 +4990,15 @@ input:focus {
     overflow: hidden;
     padding: 8px 24px;
     position: relative;
-  }
-  
-  .purchase-order-educationa-detail-icon-back {
+}
+
+.purchase-order-educationa-detail-icon-back {
     height: 24px;
     position: relative;
     width: 24px;
-  }
-  
-  .purchase-order-educationa-detail-text_label {
+}
+
+.purchase-order-educationa-detail-text_label {
     color: var(--main);
     font-family: var(--font-family-noto_sans_thai);
     font-size: var(--font-size-20);
@@ -5005,9 +5009,9 @@ input:focus {
     position: relative;
     text-align: center;
     width: fit-content;
-  }
-  
-  .purchase-order-educationa-detail-text-1-1 {
+}
+
+.purchase-order-educationa-detail-text-1-1 {
     align-self: flex-end;
     color: var(--bkack);
     font-family: var(--font-family-noto_sans_thai);
@@ -5018,9 +5022,9 @@ input:focus {
     min-width: 284px;
     text-align: center;
     white-space: nowrap;
-  }
-  
-  .purchase-order-educationa-detail-frame-38444 {
+}
+
+.purchase-order-educationa-detail-frame-38444 {
     align-items: flex-end;
     align-self: center;
     display: flex;
@@ -5029,9 +5033,9 @@ input:focus {
     margin-top: 85px;
     position: relative;
     width: 1252px;
-  }
-  
-  .purchase-order-educationa-detail-frame-38 {
+}
+
+.purchase-order-educationa-detail-frame-38 {
     align-items: flex-start;
     align-self: stretch;
     display: flex;
@@ -5040,9 +5044,9 @@ input:focus {
     gap: 16px;
     position: relative;
     width: 100%;
-  }
-  
-  .purchase-order-educationa-detail-frame {
+}
+
+.purchase-order-educationa-detail-frame {
     align-items: flex-start;
     align-self: stretch;
     border: 1px solid;
@@ -5056,9 +5060,9 @@ input:focus {
     padding: 25px 24px;
     position: relative;
     width: 100%;
-  }
-  
-  .purchase-order-educationa-detail-frame-38339 {
+}
+
+.purchase-order-educationa-detail-frame-38339 {
     align-items: center;
     align-self: stretch;
     display: flex;
@@ -5066,22 +5070,22 @@ input:focus {
     gap: 650px;
     position: relative;
     width: 100%;
-  }
-  
-  .purchase-order-educationa-detail-text-2 {
+}
+
+.purchase-order-educationa-detail-text-2 {
     width: 282px;
-  }
-  
-  .purchase-order-educationa-detail-frame-38426 {
+}
+
+.purchase-order-educationa-detail-frame-38426 {
     align-items: center;
     display: flex;
     gap: 15px;
     justify-content: flex-end;
     position: relative;
     width: 271px;
-  }
-  
-  .purchase-order-educationa-detail-xxxxxxxx {
+}
+
+.purchase-order-educationa-detail-xxxxxxxx {
     color: var(--bkack);
     font-family: var(--font-family-noto_sans_thai);
     font-size: 28px;
@@ -5093,26 +5097,26 @@ input:focus {
     position: relative;
     text-align: right;
     width: 251px;
-  }
-  
-  .purchase-order-educationa-detail-button-1 {
+}
+
+.purchase-order-educationa-detail-button-1 {
     background-color: var(--gray);
     border-color: var(--main);
     border-radius: 10px;
     display: inline-flex;
     flex: 0 0 auto;
     padding: 8px 24px;
-  }
-  
-  .purchase-order-educationa-detail-text_label-1 {
+}
+
+.purchase-order-educationa-detail-text_label-1 {
     color: var(--main);
     font-family: var(--font-family-noto_sans_thai);
     font-size: var(--font-size-16);
     font-weight: 600;
     text-align: center;
-  }
-  
-  .purchase-order-educationa-detail-frame-38429 {
+}
+
+.purchase-order-educationa-detail-frame-38429 {
     align-items: flex-start;
     align-self: stretch;
     display: flex;
@@ -5120,31 +5124,31 @@ input:focus {
     gap: 24px;
     position: relative;
     width: 100%;
-  }
-  
-  .purchase-order-educationa-detail-text {
+}
+
+.purchase-order-educationa-detail-text {
     letter-spacing: 0;
     line-height: normal;
     margin-top: -1.00px;
     position: relative;
     width: 314px;
-  }
-  
-  .purchase-order-educationa-detail-text-4 {
+}
+
+.purchase-order-educationa-detail-text-4 {
     margin-top: -1.00px;
     text-align: right;
     width: 866px;
-  }
-  
-  .purchase-order-educationa-detail-line-6 {
+}
+
+.purchase-order-educationa-detail-line-6 {
     align-self: stretch;
     height: 1px;
     object-fit: cover;
     position: relative;
     width: 100%;
-  }
-  
-  .purchase-order-educationa-detail-frame-38268 {
+}
+
+.purchase-order-educationa-detail-frame-38268 {
     align-items: flex-start;
     align-self: stretch;
     background-color: var(--white);
@@ -5158,51 +5162,51 @@ input:focus {
     padding: 16px;
     position: relative;
     width: 100%;
-  }
-  
-  .purchase-order-educationa-detail-frame-38408 {
+}
+
+.purchase-order-educationa-detail-frame-38408 {
     height: 66px;
     margin-right: -62.00px;
     position: relative;
     width: 1234px;
-  }
-  
-  .purchase-order-educationa-detail-frame-38407 {
+}
+
+.purchase-order-educationa-detail-frame-38407 {
     align-items: flex-start;
     display: flex;
     flex-direction: column;
     gap: 15px;
     position: relative;
     width: 1153px;
-  }
-  
-  .purchase-order-educationa-detail-frame-38269 {
+}
+
+.purchase-order-educationa-detail-frame-38269 {
     align-items: flex-start;
     display: flex;
     flex: 0 0 auto;
     gap: 15px;
     position: relative;
     width: 1094px;
-  }
-  
-  .purchase-order-educationa-detail-text-6 {
+}
+
+.purchase-order-educationa-detail-text-6 {
     margin-top: -1.00px;
     width: fit-content;
-  }
-  
-  .purchase-order-educationa-detail-text-7 {
+}
+
+.purchase-order-educationa-detail-text-7 {
     margin-top: -1.00px;
     width: fit-content;
-  }
-  
-  .purchase-order-educationa-detail-address {
+}
+
+.purchase-order-educationa-detail-address {
     letter-spacing: 0;
     line-height: normal;
     position: relative;
     width: 1094px;
-  }
-  
-  .purchase-order-educationa-detail-frame-38420 {
+}
+
+.purchase-order-educationa-detail-frame-38420 {
     align-items: flex-start;
     align-self: stretch;
     display: flex;
@@ -5211,9 +5215,9 @@ input:focus {
     height: 94px;
     position: relative;
     width: 100%;
-  }
-  
-  .purchase-order-educationa-detail-frame-38268-1 {
+}
+
+.purchase-order-educationa-detail-frame-38268-1 {
     align-items: flex-start;
     align-self: stretch;
     background-color: var(--white);
@@ -5227,9 +5231,9 @@ input:focus {
     padding: 16px;
     position: relative;
     width: 100%;
-  }
-  
-  .purchase-order-educationa-detail-frame-38424 {
+}
+
+.purchase-order-educationa-detail-frame-38424 {
     align-items: flex-start;
     display: flex;
     flex: 0 0 auto;
@@ -5238,18 +5242,18 @@ input:focus {
     margin-right: -16.00px;
     position: relative;
     width: 1188px;
-  }
-  
-  .purchase-order-educationa-detail-frame-38408-1 {
+}
+
+.purchase-order-educationa-detail-frame-38408-1 {
     align-items: flex-start;
     display: inline-flex;
     flex: 0 0 auto;
     flex-direction: column;
     gap: 10px;
     position: relative;
-  }
-  
-  .purchase-order-educationa-detail-frame-38407-1 {
+}
+
+.purchase-order-educationa-detail-frame-38407-1 {
     align-items: flex-start;
     display: flex;
     flex: 0 0 auto;
@@ -5257,26 +5261,26 @@ input:focus {
     gap: 15px;
     position: relative;
     width: 1121px;
-  }
-  
-  .purchase-order-educationa-detail-ems {
+}
+
+.purchase-order-educationa-detail-ems {
     letter-spacing: 0;
     line-height: normal;
     margin-top: -1.00px;
     position: relative;
     width: fit-content;
-  }
-  
-  .purchase-order-educationa-detail-text-9 {
+}
+
+.purchase-order-educationa-detail-text-9 {
     color: var(--bkack);
     font-family: var(--font-family-noto_sans_thai);
     font-size: var(--font-size-16);
     font-weight: 700;
     margin-top: -1.00px;
     width: 314px;
-  }
-  
-  .purchase-order-educationa-detail-frame-38-1 {
+}
+
+.purchase-order-educationa-detail-frame-38-1 {
     align-items: center;
     align-self: stretch;
     display: flex;
@@ -5284,9 +5288,9 @@ input:focus {
     height: 108px;
     position: relative;
     width: 100%;
-  }
-  
-  .purchase-order-educationa-detail-frame-95 {
+}
+
+.purchase-order-educationa-detail-frame-95 {
     background-color: #f0eeed;
     border: 1px solid;
     border-color: #a2a2a2;
@@ -5297,17 +5301,17 @@ input:focus {
     overflow: hidden;
     position: relative;
     width: 110px;
-  }
-  
-  .purchase-order-educationa-detail-image-8 {
+}
+
+.purchase-order-educationa-detail-image-8 {
     height: 110px;
     left: 0;
     position: absolute;
     top: 0;
     width: 110px;
-  }
-  
-  .purchase-order-educationa-detail-frame-94 {
+}
+
+.purchase-order-educationa-detail-frame-94 {
     align-items: center;
     display: flex;
     flex: 1;
@@ -5316,9 +5320,9 @@ input:focus {
     height: 108px;
     justify-content: space-around;
     position: relative;
-  }
-  
-  .purchase-order-educationa-detail-frame-94-1 {
+}
+
+.purchase-order-educationa-detail-frame-94-1 {
     align-items: center;
     display: flex;
     flex: 1;
@@ -5327,9 +5331,9 @@ input:focus {
     margin-bottom: -1.00px;
     margin-top: -1.00px;
     position: relative;
-  }
-  
-  .purchase-order-educationa-detail-frame-93 {
+}
+
+.purchase-order-educationa-detail-frame-93 {
     align-items: flex-start;
     display: flex;
     flex-direction: column;
@@ -5337,9 +5341,9 @@ input:focus {
     height: 110px;
     position: relative;
     width: 281px;
-  }
-  
-  .purchase-order-educationa-detail-text-10 {
+}
+
+.purchase-order-educationa-detail-text-10 {
     color: var(--bkack);
     font-family: var(--font-family-noto_sans_thai);
     font-size: var(--font-size-22);
@@ -5347,39 +5351,39 @@ input:focus {
     margin-right: -155.00px;
     margin-top: -1.00px;
     width: fit-content;
-  }
-  
-  .purchase-order-educationa-detail-frame-9 {
+}
+
+.purchase-order-educationa-detail-frame-9 {
     align-items: flex-start;
     display: inline-flex;
     flex: 0 0 auto;
     flex-direction: column;
     gap: 4px;
     position: relative;
-  }
-  
-  .purchase-order-educationa-detail-text-1 {
+}
+
+.purchase-order-educationa-detail-text-1 {
     color: transparent;
     font-family: var(--font-family-noto_sans_thai);
     font-size: var(--font-size-16);
     font-weight: 400;
     margin-top: -1.00px;
     width: fit-content;
-  }
-  
-  .purchase-order-educationa-detail-span1 {
+}
+
+.purchase-order-educationa-detail-span1 {
     color: #a1a1a1;
-  }
-  
-  .purchase-order-educationa-detail-frame-93-1 {
+}
+
+.purchase-order-educationa-detail-frame-93-1 {
     height: 110px;
     left: 333px;
     position: absolute;
     top: 0;
     width: 361px;
-  }
-  
-  .purchase-order-educationa-detail-frame-18 {
+}
+
+.purchase-order-educationa-detail-frame-18 {
     align-items: center;
     background-color: #efefef;
     border-radius: 62px;
@@ -5390,62 +5394,62 @@ input:focus {
     padding: 12px 20px;
     position: relative;
     width: 129px;
-  }
-  
-  .purchase-order-educationa-detail-number {
+}
+
+.purchase-order-educationa-detail-number {
     letter-spacing: 0;
     line-height: normal;
     margin-top: -1.00px;
     position: relative;
     width: fit-content;
-  }
-  
-  .purchase-order-educationa-detail-text-12 {
+}
+
+.purchase-order-educationa-detail-text-12 {
     margin-top: -1.00px;
     width: fit-content;
-  }
-  
-  .purchase-order-educationa-detail-line {
+}
+
+.purchase-order-educationa-detail-line {
     align-self: stretch;
     height: 1px;
     object-fit: cover;
     position: relative;
     width: 100%;
-  }
-  
-  .purchase-order-educationa-detail-text-13 {
+}
+
+.purchase-order-educationa-detail-text-13 {
     margin-right: -99.00px;
     margin-top: -1.00px;
     width: fit-content;
-  }
-  
-  .purchase-order-educationa-detail-frame-38433 {
+}
+
+.purchase-order-educationa-detail-frame-38433 {
     align-items: flex-start;
     display: inline-flex;
     flex: 0 0 auto;
     gap: 16px;
     position: relative;
-  }
-  
-  .purchase-order-educationa-detail-number-1 {
+}
+
+.purchase-order-educationa-detail-number-1 {
     letter-spacing: 0;
     line-height: normal;
     margin-top: -1.00px;
     position: relative;
     width: fit-content;
-  }
-  
-  .purchase-order-educationa-detail-text-15 {
+}
+
+.purchase-order-educationa-detail-text-15 {
     margin-top: -1.00px;
     width: fit-content;
-  }
-  
-  .purchase-order-educationa-detail-text-16 {
+}
+
+.purchase-order-educationa-detail-text-16 {
     align-self: stretch;
     margin-top: -1.00px;
-  }
-  
-  .purchase-order-educationa-detail-frame-38262 {
+}
+
+.purchase-order-educationa-detail-frame-38262 {
     align-items: center;
     align-self: stretch;
     display: flex;
@@ -5453,34 +5457,34 @@ input:focus {
     height: 42px;
     position: relative;
     width: 100%;
-  }
-  
-  .purchase-order-educationa-detail-frame-38399 {
+}
+
+.purchase-order-educationa-detail-frame-38399 {
     align-items: center;
     display: inline-flex;
     flex: 0 0 auto;
     gap: 24px;
     position: relative;
-  }
-  
-  .purchase-order-educationa-detail-button-new {
+}
+
+.purchase-order-educationa-detail-button-new {
     background-color: var(--pink);
     border-color: #121212;
     border-radius: 50px;
     display: flex;
     padding: 8px 16px;
     width: 225px;
-  }
-  
-  .purchase-order-educationa-detail-text_label-2 {
+}
+
+.purchase-order-educationa-detail-text_label-2 {
     color: #121212;
     font-family: var(--font-family-kanit);
     font-size: 17px;
     font-weight: 400;
     text-align: center;
-  }
-  
-  .purchase-order-educationa-detail-frame-38381 {
+}
+
+.purchase-order-educationa-detail-frame-38381 {
     align-items: flex-start;
     align-self: stretch;
     border: 1px solid;
@@ -5494,9 +5498,9 @@ input:focus {
     padding: 20px 24px;
     position: relative;
     width: 100%;
-  }
-  
-  .purchase-order-educationa-detail-frame-102 {
+}
+
+.purchase-order-educationa-detail-frame-102 {
     align-items: flex-start;
     align-self: stretch;
     display: flex;
@@ -5506,9 +5510,9 @@ input:focus {
     margin-bottom: -1.00px;
     position: relative;
     width: 100%;
-  }
-  
-  .purchase-order-educationa-detail-frame-1 {
+}
+
+.purchase-order-educationa-detail-frame-1 {
     align-items: center;
     align-self: stretch;
     display: flex;
@@ -5516,49 +5520,49 @@ input:focus {
     justify-content: space-between;
     position: relative;
     width: 100%;
-  }
-  
-  .purchase-order-educationa-detail-transport-fee {
+}
+
+.purchase-order-educationa-detail-transport-fee {
     letter-spacing: 0;
     line-height: normal;
     margin-top: -1.00px;
     position: relative;
     width: fit-content;
-  }
-  
-  .purchase-order-educationa-detail-xxxx {
+}
+
+.purchase-order-educationa-detail-xxxx {
     letter-spacing: 0;
     line-height: normal;
     margin-top: -1.00px;
     position: relative;
     text-align: right;
     width: fit-content;
-  }
-  
-  .purchase-order-educationa-detail-total-vat {
+}
+
+.purchase-order-educationa-detail-total-vat {
     letter-spacing: 0;
     line-height: normal;
     margin-top: -1.00px;
     position: relative;
     width: fit-content;
-  }
-  
-  .purchase-order-educationa-detail-line-6-1 {
+}
+
+.purchase-order-educationa-detail-line-6-1 {
     align-self: stretch;
     height: 1px;
     object-fit: cover;
     position: relative;
     width: 100%;
-  }
-  
-  .purchase-order-educationa-detail-grand-total {
+}
+
+.purchase-order-educationa-detail-grand-total {
     letter-spacing: 0;
     line-height: normal;
     position: relative;
     width: fit-content;
-  }
-  
-  .purchase-order-educationa-detail-xxxx-1 {
+}
+
+.purchase-order-educationa-detail-xxxx-1 {
     color: var(--bkack);
     font-family: var(--font-family-noto_sans_thai);
     font-size: var(--font-size-24);
@@ -5569,9 +5573,9 @@ input:focus {
     position: relative;
     text-align: right;
     width: fit-content;
-  }
-  
-  .purchase-order-educationa-detail-footer {
+}
+
+.purchase-order-educationa-detail-footer {
     align-items: flex-start;
     background-color: var(--main);
     display: flex;
@@ -5582,9 +5586,9 @@ input:focus {
     margin-top: 93px;
     padding: 22px 552px;
     width: 1440px;
-  }
-  
-  .purchase-order-educationa-detail-copyright-2024 {
+}
+
+.purchase-order-educationa-detail-copyright-2024 {
     color: var(--white);
     font-family: var(--font-family-noto_sans_thai);
     font-size: var(--font-size-20);
@@ -5593,9 +5597,9 @@ input:focus {
     line-height: normal;
     margin-left: 1px;
     min-height: 30px;
-  }
-  
-  .purchase-order-educationa-detail-button-2 {
+}
+
+.purchase-order-educationa-detail-button-2 {
     align-items: center;
     border: 1px solid;
     cursor: pointer;
@@ -5603,31 +5607,31 @@ input:focus {
     justify-content: center;
     overflow: hidden;
     position: relative;
-  }
-  
-  .purchase-order-educationa-detail-navbar-link-text {
+}
+
+.purchase-order-educationa-detail-navbar-link-text {
     letter-spacing: 0;
     line-height: normal;
     margin-top: -1.00px;
     position: relative;
     width: fit-content;
-  }
-  
-  .purchase-order-educationa-detail-text-3 {
+}
+
+.purchase-order-educationa-detail-text-3 {
     letter-spacing: 0;
     line-height: normal;
     position: relative;
-  }
-  
-  .purchase-order-educationa-detail-text_label-4 {
+}
+
+.purchase-order-educationa-detail-text_label-4 {
     letter-spacing: 0;
     line-height: normal;
     margin-top: -1.00px;
     position: relative;
     width: fit-content;
-  }
-  
-  
+}
+
+
 /* #endregion */
 
 /* #region purchase-order-confirm-educational */
@@ -5639,9 +5643,9 @@ input:focus {
     flex-direction: column;
     height: 1024px;
     width: 1440px;
-  }
-  
-  .purchase-order-confirm-educational-header {
+}
+
+.purchase-order-confirm-educational-header {
     align-items: center;
     background-color: var(--midnight-blue);
     display: flex;
@@ -5652,42 +5656,42 @@ input:focus {
     min-width: 1440px;
     padding: 6px 87.8px;
     width: auto;
-  }
-  
-  .purchase-order-confirm-educational-logo-1 {
+}
+
+.purchase-order-confirm-educational-logo-1 {
     align-self: flex-end;
     height: 60px;
     object-fit: cover;
     width: 68px;
-  }
-  
-  .purchase-order-confirm-educational-navbar {
+}
+
+.purchase-order-confirm-educational-navbar {
     align-items: center;
     display: inline-flex;
     gap: 40px;
     margin-bottom: 4.0px;
     margin-left: 41px;
     position: relative;
-  }
-  
-  .purchase-order-confirm-educational-navbar-link-text {
+}
+
+.purchase-order-confirm-educational-navbar-link-text {
     letter-spacing: 0;
     line-height: normal;
     margin-top: -1.00px;
     position: relative;
     width: fit-content;
-  }
-  
-  .purchase-order-confirm-educational-navbar-link-text-3 {
+}
+
+.purchase-order-confirm-educational-navbar-link-text-3 {
     letter-spacing: 0;
     line-height: normal;
     margin-top: -1.00px;
     position: relative;
     text-decoration: underline;
     width: fit-content;
-  }
-  
-  .purchase-order-confirm-educational-frame-38253 {
+}
+
+.purchase-order-confirm-educational-frame-38253 {
     align-items: center;
     display: inline-flex;
     gap: 56px;
@@ -5695,21 +5699,21 @@ input:focus {
     margin-bottom: 5.0px;
     margin-left: 220px;
     position: relative;
-  }
-  
-  .purchase-order-confirm-educational-group {
+}
+
+.purchase-order-confirm-educational-group {
     height: 35px;
     position: relative;
     width: 31.17px;
-  }
-  
-  .purchase-order-confirm-educational-vector {
+}
+
+.purchase-order-confirm-educational-vector {
     height: 35px;
     position: relative;
     width: 35px;
-  }
-  
-  .purchase-order-confirm-educational-flex-row {
+}
+
+.purchase-order-confirm-educational-flex-row {
     align-items: flex-start;
     display: flex;
     gap: 382px;
@@ -5717,9 +5721,9 @@ input:focus {
     margin-left: 100px;
     margin-top: 62px;
     min-width: 704px;
-  }
-  
-  .purchase-order-confirm-educational-button {
+}
+
+.purchase-order-confirm-educational-button {
     align-items: center;
     background-color: var(--pink);
     border-radius: 10px;
@@ -5730,15 +5734,15 @@ input:focus {
     overflow: hidden;
     padding: 8px 24px;
     position: relative;
-  }
-  
-  .purchase-order-confirm-educational-icon-back {
+}
+
+.purchase-order-confirm-educational-icon-back {
     height: 24px;
     position: relative;
     width: 24px;
-  }
-  
-  .purchase-order-confirm-educational-text_label {
+}
+
+.purchase-order-confirm-educational-text_label {
     color: var(--midnight-blue);
     font-family: var(--font-family-noto_sans_thai);
     font-size: var(--font-size-20);
@@ -5749,16 +5753,16 @@ input:focus {
     position: relative;
     text-align: center;
     width: fit-content;
-  }
-  
-  .purchase-order-confirm-educational-text-container {
+}
+
+.purchase-order-confirm-educational-text-container {
     align-self: flex-end;
     height: 48px;
     position: relative;
     width: 168px;
-  }
-  
-  .purchase-order-confirm-educational-text {
+}
+
+.purchase-order-confirm-educational-text {
     color: var(--bkack);
     font-family: var(--font-family-noto_sans_thai);
     font-size: var(--font-size-32);
@@ -5770,9 +5774,9 @@ input:focus {
     text-align: center;
     top: 0;
     white-space: nowrap;
-  }
-  
-  .purchase-order-confirm-educational-text-6 {
+}
+
+.purchase-order-confirm-educational-text-6 {
     color: var(--bkack);
     font-family: var(--font-family-noto_sans_thai);
     font-size: var(--font-size-32);
@@ -5784,9 +5788,9 @@ input:focus {
     text-align: center;
     top: 0;
     white-space: nowrap;
-  }
-  
-  .purchase-order-confirm-educational-frame-38395 {
+}
+
+.purchase-order-confirm-educational-frame-38395 {
     align-items: center;
     align-self: center;
     display: inline-flex;
@@ -5794,9 +5798,9 @@ input:focus {
     gap: 32px;
     margin-top: 54px;
     position: relative;
-  }
-  
-  .purchase-order-confirm-educational-frame-38394 {
+}
+
+.purchase-order-confirm-educational-frame-38394 {
     align-items: flex-start;
     display: flex;
     flex: 0 0 auto;
@@ -5804,9 +5808,9 @@ input:focus {
     gap: 16px;
     position: relative;
     width: 1240px;
-  }
-  
-  .purchase-order-confirm-educational-text-7 {
+}
+
+.purchase-order-confirm-educational-text-7 {
     align-self: stretch;
     color: var(--bkack);
     font-family: var(--font-family-noto_sans_thai);
@@ -5816,9 +5820,9 @@ input:focus {
     line-height: normal;
     margin-top: -1.00px;
     position: relative;
-  }
-  
-  .purchase-order-confirm-educational-frame-27 {
+}
+
+.purchase-order-confirm-educational-frame-27 {
     align-items: flex-start;
     align-self: stretch;
     border: 1px solid;
@@ -5832,9 +5836,9 @@ input:focus {
     padding: 25px 24px;
     position: relative;
     width: 100%;
-  }
-  
-  .purchase-order-confirm-educational-frame-9 {
+}
+
+.purchase-order-confirm-educational-frame-9 {
     align-items: center;
     align-self: stretch;
     display: flex;
@@ -5842,9 +5846,9 @@ input:focus {
     height: 108px;
     position: relative;
     width: 100%;
-  }
-  
-  .purchase-order-confirm-educational-frame-95 {
+}
+
+.purchase-order-confirm-educational-frame-95 {
     background-color: #f0eeed;
     border: 1px solid;
     border-color: #a2a2a2;
@@ -5855,17 +5859,17 @@ input:focus {
     overflow: hidden;
     position: relative;
     width: 110px;
-  }
-  
-  .purchase-order-confirm-educational-image-8 {
+}
+
+.purchase-order-confirm-educational-image-8 {
     height: 110px;
     left: 0;
     position: absolute;
     top: 0;
     width: 110px;
-  }
-  
-  .purchase-order-confirm-educational-frame-94 {
+}
+
+.purchase-order-confirm-educational-frame-94 {
     align-items: center;
     display: flex;
     flex: 1;
@@ -5873,18 +5877,18 @@ input:focus {
     height: 108px;
     justify-content: space-between;
     position: relative;
-  }
-  
-  .purchase-order-confirm-educational-frame-93 {
+}
+
+.purchase-order-confirm-educational-frame-93 {
     align-items: flex-start;
     display: inline-flex;
     flex: 0 0 auto;
     flex-direction: column;
     gap: 6px;
     position: relative;
-  }
-  
-  .purchase-order-confirm-educational-text-8 {
+}
+
+.purchase-order-confirm-educational-text-8 {
     color: var(--bkack);
     font-family: var(--font-family-noto_sans_thai);
     font-size: var(--font-size-22);
@@ -5894,18 +5898,18 @@ input:focus {
     margin-top: -1.00px;
     position: relative;
     width: fit-content;
-  }
-  
-  .purchase-order-confirm-educational-frame-92 {
+}
+
+.purchase-order-confirm-educational-frame-92 {
     align-items: flex-start;
     display: inline-flex;
     flex: 0 0 auto;
     flex-direction: column;
     gap: 4px;
     position: relative;
-  }
-  
-  .purchase-order-confirm-educational-text-9 {
+}
+
+.purchase-order-confirm-educational-text-9 {
     color: transparent;
     font-family: var(--font-family-noto_sans_thai);
     font-size: var(--font-size-16);
@@ -5915,17 +5919,17 @@ input:focus {
     margin-top: -1.00px;
     position: relative;
     width: fit-content;
-  }
-  
-  .purchase-order-confirm-educational-span0 {
+}
+
+.purchase-order-confirm-educational-span0 {
     color: var(--bkack);
-  }
-  
-  .purchase-order-confirm-educational-span1 {
+}
+
+.purchase-order-confirm-educational-span1 {
     color: #a1a1a1;
-  }
-  
-  .purchase-order-confirm-educational-frame-95-1 {
+}
+
+.purchase-order-confirm-educational-frame-95-1 {
     align-items: flex-end;
     display: flex;
     flex-direction: column;
@@ -5936,9 +5940,9 @@ input:focus {
     margin-top: -8.00px;
     position: relative;
     width: 225px;
-  }
-  
-  .purchase-order-confirm-educational-frame-18 {
+}
+
+.purchase-order-confirm-educational-frame-18 {
     align-items: center;
     background-color: var(--bg-colorbg1);
     border-radius: 62px;
@@ -5950,9 +5954,9 @@ input:focus {
     padding: 12px 20px;
     position: relative;
     width: 129px;
-  }
-  
-  .purchase-order-confirm-educational-address {
+}
+
+.purchase-order-confirm-educational-address {
     color: var(--bkack);
     font-family: var(--font-family-noto_sans_thai);
     font-size: var(--font-size-14);
@@ -5962,17 +5966,17 @@ input:focus {
     margin-top: -1.00px;
     position: relative;
     width: fit-content;
-  }
-  
-  .purchase-order-confirm-educational-line-5 {
+}
+
+.purchase-order-confirm-educational-line-5 {
     align-self: stretch;
     height: 1px;
     object-fit: cover;
     position: relative;
     width: 100%;
-  }
-  
-  .purchase-order-confirm-educational-text-10 {
+}
+
+.purchase-order-confirm-educational-text-10 {
     color: var(--bkack);
     font-family: var(--font-family-noto_sans_thai);
     font-size: var(--font-size-22);
@@ -5982,9 +5986,9 @@ input:focus {
     margin-top: -1.00px;
     position: relative;
     width: 747px;
-  }
-  
-  .purchase-order-confirm-educational-text-11 {
+}
+
+.purchase-order-confirm-educational-text-11 {
     color: transparent;
     font-family: var(--font-family-noto_sans_thai);
     font-size: var(--font-size-16);
@@ -5993,9 +5997,9 @@ input:focus {
     line-height: normal;
     position: relative;
     width: fit-content;
-  }
-  
-  .purchase-order-confirm-educational-frame-38396 {
+}
+
+.purchase-order-confirm-educational-frame-38396 {
     align-items: center;
     background-color: var(--midnight-blue);
     border-radius: 62px;
@@ -6008,9 +6012,9 @@ input:focus {
     padding: 16px 54px;
     position: relative;
     width: 457px;
-  }
-  
-  .purchase-order-confirm-educational-text-12 {
+}
+
+.purchase-order-confirm-educational-text-12 {
     color: var(--white);
     font-family: var(--font-family-noto_sans_thai);
     font-size: var(--font-size-20);
@@ -6020,9 +6024,9 @@ input:focus {
     margin-top: -2.00px;
     position: relative;
     width: fit-content;
-  }
-  
-  .purchase-order-confirm-educational-footer {
+}
+
+.purchase-order-confirm-educational-footer {
     align-items: flex-start;
     background-color: var(--midnight-blue);
     display: flex;
@@ -6033,9 +6037,9 @@ input:focus {
     margin-top: 210px;
     padding: 22px 552px;
     width: 1440px;
-  }
-  
-  .purchase-order-confirm-educational-copyright-2024 {
+}
+
+.purchase-order-confirm-educational-copyright-2024 {
     color: var(--white);
     font-family: var(--font-family-noto_sans_thai);
     font-size: var(--font-size-20);
@@ -6044,32 +6048,32 @@ input:focus {
     line-height: normal;
     margin-left: 1px;
     min-height: 30px;
-  }
-  
-  .purchase-order-confirm-educational-text_label-5 {
+}
+
+.purchase-order-confirm-educational-text_label-5 {
     letter-spacing: 0;
     position: relative;
-  }
-  
-  
-  .purchase-order-confirm-educational-text_label-3 {
+}
+
+
+.purchase-order-confirm-educational-text_label-3 {
     text-align: center;
     width: fit-content;
-  }
-  
-  .purchase-order-confirm-educational-text_label-4 {
+}
+
+.purchase-order-confirm-educational-text_label-4 {
     letter-spacing: 0;
     line-height: normal;
     margin-top: -1.00px;
     position: relative;
-  }
-  
-  .purchase-order-confirm-educational-text-2-3 {
+}
+
+.purchase-order-confirm-educational-text-2-3 {
     letter-spacing: 0;
     text-align: center;
-  }
-  
-  .purchase-order-confirm-educational-text-7-3 {
+}
+
+.purchase-order-confirm-educational-text-7-3 {
     color: var(--pink);
     font-family: var(--font-family-noto_sans_thai);
     font-size: var(--font-size-40);
@@ -6078,18 +6082,18 @@ input:focus {
     margin-top: -1.00px;
     position: relative;
     width: 468px;
-  }
-  
-  .purchase-order-confirm-educational-view-1 {
+}
+
+.purchase-order-confirm-educational-view-1 {
     background-color: #14181f80;
     height: 1024px;
     left: 0;
     position: absolute;
     top: 4px;
     width: 1440px;
-  }
-  
-  .purchase-order-confirm-educational-popup {
+}
+
+.purchase-order-confirm-educational-popup {
     align-items: flex-start;
     display: flex;
     height: 288px;
@@ -6097,34 +6101,34 @@ input:focus {
     min-width: 552px;
     position: absolute;
     top: 323px;
-  }
-  
-  .purchase-order-confirm-educational-frame-container {
+}
+
+.purchase-order-confirm-educational-frame-container {
     border-radius: 10px;
     height: 236px;
     position: relative;
     width: 552px;
-  }
-  
-  .purchase-order-confirm-educational-frame-1041 {
+}
+
+.purchase-order-confirm-educational-frame-1041 {
     cursor: pointer;
     height: 31px;
     left: 505px;
     position: absolute;
     top: 10px;
     width: 31px;
-  }
-  
-  .purchase-order-confirm-educational-frame-38266 {
+}
+
+.purchase-order-confirm-educational-frame-38266 {
     align-items: center;
     display: flex;
     flex-direction: column;
     gap: 32px;
     position: relative;
     width: 472px;
-  }
-  
-  .purchase-order-confirm-educational-frame-38265 {
+}
+
+.purchase-order-confirm-educational-frame-38265 {
     align-items: center;
     display: inline-flex;
     flex: 0 0 auto;
@@ -6132,17 +6136,17 @@ input:focus {
     gap: 10px;
     justify-content: center;
     position: relative;
-  }
-  
-  .purchase-order-confirm-educational-frame-38262 {
+}
+
+.purchase-order-confirm-educational-frame-38262 {
     align-items: center;
     display: inline-flex;
     flex: 0 0 auto;
     gap: 40px;
     position: relative;
-  }
-  
-  .purchase-order-confirm-educational-frame-38264-2 {
+}
+
+.purchase-order-confirm-educational-frame-38264-2 {
     align-items: center;
     background-color: var(--white);
     border-radius: 10px;
@@ -6153,9 +6157,9 @@ input:focus {
     padding: 40px;
     /* position: absolute;
     top: 369px; */
-  }
-  
-  .purchase-order-confirm-educational-text_label-4-2 {
+}
+
+.purchase-order-confirm-educational-text_label-4-2 {
     color: var(--green);
     font-family: var(--font-family-noto_sans_thai);
     font-size: var(--font-size-40);
@@ -6163,21 +6167,21 @@ input:focus {
     line-height: 60.0px;
     text-align: center;
     width: 468px;
-  }
-  
-  .purchase-order-confirm-educational-button-3-3 {
+}
+
+.purchase-order-confirm-educational-button-3-3 {
     background-color: var(--white);
     border: 1px solid;
     border-color: var(--main);
     width: 216px;
-  }
-  
-  .purchase-order-confirm-educational-button-4-3 {
+}
+
+.purchase-order-confirm-educational-button-4-3 {
     background-color: var(--main);
     width: 216px;
-  }
-  
-  .purchase-order-confirm-educational-button-5-3 {
+}
+
+.purchase-order-confirm-educational-button-5-3 {
     align-items: center;
     border-radius: 10px;
     display: flex;
@@ -6186,9 +6190,9 @@ input:focus {
     overflow: hidden;
     padding: 8px 24px;
     position: relative;
-  }
-  
-  .purchase-order-confirm-educational-frame-38264-3 {
+}
+
+.purchase-order-confirm-educational-frame-38264-3 {
     align-items: center;
     background-color: var(--white);
     border-radius: 10px;
@@ -6200,34 +6204,34 @@ input:focus {
     position: absolute;
     top: 0;
     width: 801px;
-  }
-  
-  .purchase-order-confirm-educational-frame-38266-3 {
+}
+
+.purchase-order-confirm-educational-frame-38266-3 {
     align-items: center;
     display: flex;
     flex-direction: column;
     gap: 32px;
     position: relative;
     width: 721px;
-  }
-  
-  .purchase-order-confirm-educational-frame-container-3 {
+}
+
+.purchase-order-confirm-educational-frame-container-3 {
     border-radius: 10px;
     height: 330px;
     margin-left: -1px;
     position: relative;
     width: 801px;
-  }
-  
-  .purchase-order-confirm-educational-popup-3 {
+}
+
+.purchase-order-confirm-educational-popup-3 {
     align-items: flex-start;
     display: flex;
     height: 428px;
     margin-left: 1px;
     min-width: 801px;
-  }
-  
-  .purchase-order-confirm-educational-view-3 {
+}
+
+.purchase-order-confirm-educational-view-3 {
     align-items: center;
     background-color: #14181f80;
     display: flex;
@@ -6237,27 +6241,27 @@ input:focus {
     position: absolute;
     top: 4px;
     width: 1440px;
-  }
-  
-  .purchase-order-confirm-educational-frame-1041-3 {
+}
+
+.purchase-order-confirm-educational-frame-1041-3 {
     cursor: pointer;
     height: 31px;
     left: 747px;
     position: absolute;
     top: 24px;
     width: 31px;
-  }
-  
-  .purchase-order-confirm-educational-input-select {
+}
+
+.purchase-order-confirm-educational-input-select {
     align-items: flex-start;
     display: flex;
     flex: 0 0 auto;
     flex-direction: column;
     position: relative;
     width: 621px;
-  }
-  
-  .purchase-order-confirm-educational-select-field {
+}
+
+.purchase-order-confirm-educational-select-field {
     align-items: center;
     align-self: stretch;
     background-color: var(--white);
@@ -6272,9 +6276,9 @@ input:focus {
     padding: 8px 10px;
     position: relative;
     width: 100%;
-  }
-  
-  .purchase-order-confirm-educational-custom-dropdown {
+}
+
+.purchase-order-confirm-educational-custom-dropdown {
     width: 100%;
     height: 40px;
     /* กำหนดความสูง */
@@ -6291,17 +6295,17 @@ input:focus {
     z-index: 2;
     line-height: normal;
     /* ปรับให้ข้อความอยู่ตรงกลาง */
-  }
-  
-  .purchase-order-confirm-educational-dropdown-icon {
+}
+
+.purchase-order-confirm-educational-dropdown-icon {
     position: absolute;
     top: 50%;
     right: 10px;
     /* ระยะห่างจากขอบขวา */
     transform: translateY(-50%);
     pointer-events: none;
-  }
-  
+}
+
 /* #endregion */
 
 /* #region approval-educational */
@@ -6313,9 +6317,9 @@ input:focus {
     flex-direction: column;
     height: 1055px;
     width: 1440px;
-  }
-  
-  .approval-educational-header {
+}
+
+.approval-educational-header {
     align-items: center;
     background-color: #012a6c;
     display: flex;
@@ -6326,33 +6330,33 @@ input:focus {
     min-width: 1440px;
     padding: 6px 87.8px;
     width: auto;
-  }
-  
-  .approval-educational-logo-1 {
+}
+
+.approval-educational-logo-1 {
     align-self: flex-end;
     height: 60px;
     object-fit: cover;
     width: 68px;
-  }
-  
-  .approval-educational-navbar {
+}
+
+.approval-educational-navbar {
     align-items: center;
     display: inline-flex;
     gap: 40px;
     margin-bottom: 4.0px;
     margin-left: 41px;
     position: relative;
-  }
-  
-  .approval-educational-navbar-link-text {
+}
+
+.approval-educational-navbar-link-text {
     letter-spacing: 0;
     line-height: normal;
     margin-top: -1.00px;
     position: relative;
     width: fit-content;
-  }
-  
-  .approval-educational-frame-38253 {
+}
+
+.approval-educational-frame-38253 {
     align-items: center;
     display: inline-flex;
     gap: 56px;
@@ -6360,38 +6364,38 @@ input:focus {
     margin-bottom: 5.0px;
     margin-left: 220px;
     position: relative;
-  }
-  
-  .approval-educational-group {
+}
+
+.approval-educational-group {
     height: 35px;
     position: relative;
     width: 31.17px;
-  }
-  
-  .approval-educational-vector-1 {
+}
+
+.approval-educational-vector-1 {
     height: 35px;
     position: relative;
     width: 35px;
-  }
-  
-  .approval-educational-frame-38357 {
+}
+
+.approval-educational-frame-38357 {
     align-items: flex-start;
     display: inline-flex;
     gap: 32px;
     margin-top: 70px;
     position: relative;
-  }
-  
-  .approval-educational-frame-38358 {
+}
+
+.approval-educational-frame-38358 {
     align-items: flex-start;
     display: flex;
     flex-direction: column;
     gap: 24px;
     position: relative;
     width: 316px;
-  }
-  
-  .approval-educational-frame-38354 {
+}
+
+.approval-educational-frame-38354 {
     align-items: flex-start;
     align-self: stretch;
     display: flex;
@@ -6400,9 +6404,9 @@ input:focus {
     gap: 10px;
     position: relative;
     width: 100%;
-  }
-  
-  .approval-educational-frame-38352 {
+}
+
+.approval-educational-frame-38352 {
     align-items: flex-start;
     align-self: stretch;
     display: flex;
@@ -6411,9 +6415,9 @@ input:focus {
     gap: 16px;
     position: relative;
     width: 100%;
-  }
-  
-  .approval-educational-frame-38350 {
+}
+
+.approval-educational-frame-38350 {
     align-items: center;
     align-self: stretch;
     display: flex;
@@ -6421,44 +6425,44 @@ input:focus {
     gap: 32px;
     position: relative;
     width: 100%;
-  }
-  
-  .approval-educational-frame-383 {
+}
+
+.approval-educational-frame-383 {
     align-items: center;
     display: inline-flex;
     flex: 0 0 auto;
     gap: 16px;
     position: relative;
-  }
-  
-  .approval-educational-icon-person2 {
+}
+
+.approval-educational-icon-person2 {
     height: 34px;
     position: relative;
     width: 34px;
-  }
-  
-  .approval-educational-text {
+}
+
+.approval-educational-text {
     line-height: normal;
     margin-top: -0.50px;
     text-align: center;
     width: fit-content;
-  }
-  
-  .approval-educational-frame-38348 {
+}
+
+.approval-educational-frame-38348 {
     align-items: center;
     display: inline-flex;
     flex: 0 0 auto;
     gap: 24px;
     position: relative;
-  }
-  
-  .approval-educational-arrow-down-01 {
+}
+
+.approval-educational-arrow-down-01 {
     height: 24px;
     position: relative;
     width: 24px;
-  }
-  
-  .approval-educational-frame-38351 {
+}
+
+.approval-educational-frame-38351 {
     align-items: center;
     display: flex;
     flex: 0 0 auto;
@@ -6467,9 +6471,9 @@ input:focus {
     padding: 0px 50px;
     position: relative;
     width: 251px;
-  }
-  
-  .approval-educational-text-2-1 {
+}
+
+.approval-educational-text-2-1 {
     align-self: stretch;
     color: var(--bkack);
     font-family: var(--font-family-noto_sans_thai);
@@ -6479,31 +6483,31 @@ input:focus {
     line-height: normal;
     margin-top: -1.00px;
     position: relative;
-  }
-  
-  .approval-educational-text-3 {
+}
+
+.approval-educational-text-3 {
     align-self: stretch;
     color: var(--bkack);
     font-family: var(--font-family-noto_sans_thai);
     font-size: var(--font-size-20);
     font-weight: 400;
     line-height: normal;
-  }
-  
-  .approval-educational-vector {
+}
+
+.approval-educational-vector {
     height: 1px;
     object-fit: cover;
     position: relative;
     width: 316px;
-  }
-  
-  .approval-educational-checkmark-square-04 {
+}
+
+.approval-educational-checkmark-square-04 {
     height: 34px;
     position: relative;
     width: 34px;
-  }
-  
-  .approval-educational-text-4 {
+}
+
+.approval-educational-text-4 {
     color: var(--pink);
     font-family: var(--font-family-noto_sans_thai);
     font-size: var(--font-size-22);
@@ -6512,30 +6516,30 @@ input:focus {
     margin-top: -0.50px;
     text-align: center;
     width: fit-content;
-  }
-  
-  .approval-educational-icon-report {
+}
+
+.approval-educational-icon-report {
     height: 34px;
     position: relative;
     width: 34px;
-  }
-  
-  .approval-educational-icon-logout {
+}
+
+.approval-educational-icon-logout {
     height: 34px;
     position: relative;
     width: 34px;
-  }
-  
-  .approval-educational-frame-38356 {
+}
+
+.approval-educational-frame-38356 {
     align-items: flex-start;
     display: flex;
     flex-direction: column;
     gap: 36px;
     position: relative;
     width: 892px;
-  }
-  
-  .approval-educational-text-7 {
+}
+
+.approval-educational-text-7 {
     color: var(--bkack);
     font-family: var(--font-family-noto_sans_thai);
     font-size: var(--font-size-32);
@@ -6545,9 +6549,9 @@ input:focus {
     text-align: center;
     white-space: nowrap;
     width: fit-content;
-  }
-  
-  .approval-educational-frame-38270 {
+}
+
+.approval-educational-frame-38270 {
     align-items: flex-start;
     align-self: stretch;
     display: flex;
@@ -6557,22 +6561,22 @@ input:focus {
     padding: 0px 20px;
     position: relative;
     width: 100%;
-  }
-  
-  .approval-educational-filter-bar {
+}
+
+.approval-educational-filter-bar {
     align-items: flex-start;
     display: inline-flex;
     flex: 0 0 auto;
     gap: 8px;
     position: relative;
-  }
-  
-  .approval-educational-input-search {
+}
+
+.approval-educational-input-search {
     align-items: flex-start;
     width: 315px;
-  }
-  
-  .approval-educational-input-element {
+}
+
+.approval-educational-input-element {
     align-items: center;
     background-color: var(--white);
     border: 1px solid;
@@ -6585,15 +6589,15 @@ input:focus {
     height: 40px;
     overflow: hidden;
     padding: 8px 10px;
-  }
-  
-  .approval-educational-icon {
+}
+
+.approval-educational-icon {
     height: 20px;
     position: relative;
     width: 20px;
-  }
-  
-  .approval-educational-text_input {
+}
+
+.approval-educational-text_input {
     background-color: transparent;
     border: 0;
     flex: 1;
@@ -6602,26 +6606,26 @@ input:focus {
     line-height: 21.0px;
     padding: 0;
     position: relative;
-  }
-  
-  .approval-educational-text_input::placeholder {
+}
+
+.approval-educational-text_input::placeholder {
     color: #6f7c8e99;
-  }
-  
-  .approval-educational-input-select {
+}
+
+.approval-educational-input-select {
     align-items: flex-start;
     flex-direction: column;
     width: 180px;
-  }
-  
-  .approval-educational-select-field {
+}
+
+.approval-educational-select-field {
     align-items: center;
     align-self: stretch;
     background-color: var(--white);
     border: 1px solid;
     border-color: var(--geyser);
     border-radius: 8px;
-    box-shadow: inset 0px -2px 2px #3030301a , inset 0px 7px 12px #ffffff14;
+    box-shadow: inset 0px -2px 2px #3030301a, inset 0px 7px 12px #ffffff14;
     display: flex;
     gap: 8px;
     height: 40px;
@@ -6629,49 +6633,49 @@ input:focus {
     padding: 8px 10px;
     position: relative;
     width: 100%;
-  }
-  
-  .approval-educational-select {
+}
+
+.approval-educational-select {
     flex: 1;
     letter-spacing: 0;
     line-height: 21.0px;
     position: relative;
-  }
-  
-  .approval-educational-frame-3346 {
+}
+
+.approval-educational-frame-3346 {
     align-items: flex-start;
     align-self: stretch;
     display: flex;
     flex: 0 0 auto;
     position: relative;
     width: 100%;
-  }
-  
-  .approval-educational-column-table-default {
+}
+
+.approval-educational-column-table-default {
     align-items: flex-start;
     display: flex;
     flex-direction: column;
     position: relative;
     width: 44px;
-  }
-  
-  .approval-educational-base-table-header {
+}
+
+.approval-educational-base-table-header {
     background-color: var(--black-haze);
-  }
-  
-  .approval-educational-base-checkbox {
+}
+
+.approval-educational-base-checkbox {
     height: 20px;
     left: 10px;
     position: absolute;
     top: 10px;
     width: 20px;
-  }
-  
-  .approval-educational-column-table-default-1 {
+}
+
+.approval-educational-column-table-default-1 {
     width: 80px;
-  }
-  
-  .approval-educational-table-header {
+}
+
+.approval-educational-table-header {
     align-items: center;
     align-self: stretch;
     background-color: var(--black-haze);
@@ -6684,20 +6688,20 @@ input:focus {
     padding: 8px;
     position: relative;
     width: 100%;
-  }
-  
-  .approval-educational-header-1 {
+}
+
+.approval-educational-header-1 {
     flex: 1;
     letter-spacing: 0;
     line-height: 21.0px;
     position: relative;
-  }
-  
-  .approval-educational-base-table-cell-1 {
+}
+
+.approval-educational-base-table-cell-1 {
     padding: 8px;
-  }
-  
-  .approval-educational-text-cell {
+}
+
+.approval-educational-text-cell {
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 1;
     display: -webkit-box;
@@ -6705,64 +6709,64 @@ input:focus {
     line-height: 21.0px;
     overflow: hidden;
     text-overflow: ellipsis;
-  }
-  
-  .approval-educational-column-table-default-2 {
+}
+
+.approval-educational-column-table-default-2 {
     width: 200px;
-  }
-  
-  .approval-educational-header-2 {
+}
+
+.approval-educational-header-2 {
     flex: 1;
     letter-spacing: 0;
     line-height: 21.0px;
     position: relative;
-  }
-  
-  .approval-educational-column-table-default-3 {
+}
+
+.approval-educational-column-table-default-3 {
     width: 220px;
-  }
-  
-  .approval-educational-header-3 {
+}
+
+.approval-educational-header-3 {
     flex: 1;
     letter-spacing: 0;
     line-height: 21.0px;
     position: relative;
-  }
-  
-  .approval-educational-column-table-default-4 {
+}
+
+.approval-educational-column-table-default-4 {
     width: 130px;
-  }
-  
-  .approval-educational-header-4 {
+}
+
+.approval-educational-header-4 {
     flex: 1;
     letter-spacing: 0;
     line-height: 21.0px;
     position: relative;
-  }
-  
-  .approval-educational-status {
+}
+
+.approval-educational-status {
     background-color: var(--vis-vis);
-  }
-  
-  .approval-educational-icon-1 {
+}
+
+.approval-educational-icon-1 {
     height: 16px;
     position: relative;
     width: 16px;
-  }
-  
-  .approval-educational-text-1 {
+}
+
+.approval-educational-text-1 {
     line-height: normal;
     margin-bottom: -1.00px;
     margin-top: -3.00px;
     text-align: center;
     width: fit-content;
-  }
-  
-  .approval-educational-status-1 {
+}
+
+.approval-educational-status-1 {
     background-color: #ffdee0;
-  }
-  
-  .approval-educational-text-2 {
+}
+
+.approval-educational-text-2 {
     color: #df0c3d;
     font-family: var(--font-family-noto_sans_thai);
     font-size: var(--font-size-13);
@@ -6772,77 +6776,77 @@ input:focus {
     margin-top: -3.00px;
     text-align: center;
     width: fit-content;
-  }
-  
-  .approval-educational-status-2 {
+}
+
+.approval-educational-status-2 {
     background-color: var(--madang);
-  }
-  
-  .approval-educational-column-table-default-5 {
+}
+
+.approval-educational-column-table-default-5 {
     flex: 1;
     flex-grow: 1;
-  }
-  
-  .approval-educational-header-5 {
+}
+
+.approval-educational-header-5 {
     flex: 1;
     letter-spacing: 0;
     line-height: 21.0px;
     position: relative;
     text-align: center;
-  }
-  
-  .approval-educational-base-table-cell-2 {
+}
+
+.approval-educational-base-table-cell-2 {
     flex-direction: column;
     padding: 6px 8px;
-  }
-  
-  .approval-educational-actions-btn {
+}
+
+.approval-educational-actions-btn {
     align-items: center;
     display: inline-flex;
     flex: 0 0 auto;
     gap: 4px;
     justify-content: flex-end;
     position: relative;
-  }
-  
-  .approval-educational-button-3 {
+}
+
+.approval-educational-button-3 {
     background-color: var(--white-2);
     border: 1px solid;
     border-color: var(--geyser);
-    box-shadow: inset 0px -2px 2px #3030301a , inset 0px 7px 12px #ffffff14;
+    box-shadow: inset 0px -2px 2px #3030301a, inset 0px 7px 12px #ffffff14;
     cursor: pointer;
     display: inline-flex;
     flex: 0 0 auto;
     padding: 8px;
-  }
-  
-  .approval-educational-icon-2 {
+}
+
+.approval-educational-icon-2 {
     height: 20px;
     margin-bottom: -2.00px;
     margin-top: -2.00px;
     position: relative;
     width: 20px;
-  }
-  
-  .approval-educational-text-sm {
+}
+
+.approval-educational-text-sm {
     line-height: 21.0px;
     margin-bottom: -1.50px;
     margin-top: -3.50px;
     white-space: nowrap;
     width: fit-content;
-  }
-  
-  .approval-educational-button {
+}
+
+.approval-educational-button {
     background-color: var(--white-2);
     border: 1px solid;
     border-color: var(--geyser);
-    box-shadow: inset 0px -2px 2px #3030301a , inset 0px 7px 12px #ffffff14;
+    box-shadow: inset 0px -2px 2px #3030301a, inset 0px 7px 12px #ffffff14;
     display: inline-flex;
     flex: 0 0 auto;
     padding: 8px;
-  }
-  
-  .approval-educational-input-select-button-footer-default {
+}
+
+.approval-educational-input-select-button-footer-default {
     align-items: center;
     align-self: stretch;
     display: flex;
@@ -6850,90 +6854,90 @@ input:focus {
     justify-content: space-between;
     position: relative;
     width: 100%;
-  }
-  
-  .approval-educational-frame-38263 {
+}
+
+.approval-educational-frame-38263 {
     align-items: center;
     display: flex;
     gap: 20px;
     position: relative;
     width: 658.5px;
-  }
-  
-  .approval-educational-input-select-1 {
+}
+
+.approval-educational-input-select-1 {
     align-items: flex-start;
     display: flex;
     flex-direction: column;
     position: relative;
     width: 120px;
-  }
-  
-  .approval-educational-select-1 {
+}
+
+.approval-educational-select-1 {
     flex: 1;
     letter-spacing: 0;
     line-height: 21.0px;
     position: relative;
-  }
-  
-  .approval-educational-text-8 {
+}
+
+.approval-educational-text-8 {
     color: var(--bggrey);
     font-family: var(--font-family-noto_sans_thai);
     font-size: var(--font-size-15);
     font-weight: 400;
     line-height: normal;
     width: fit-content;
-  }
-  
-  .approval-educational-pagination {
+}
+
+.approval-educational-pagination {
     align-items: center;
     display: inline-flex;
     flex: 0 0 auto;
     gap: 10px;
     margin-left: -174.5px;
     position: relative;
-  }
-  
-  .approval-educational-button-1 {
+}
+
+.approval-educational-button-1 {
     background-color: var(--white);
     border: 1px solid;
     border-color: var(--geyser);
-    box-shadow: inset 0px -2px 2px #3030301a , inset 0px 7px 12px #ffffff14;
+    box-shadow: inset 0px -2px 2px #3030301a, inset 0px 7px 12px #ffffff14;
     cursor: pointer;
     display: flex;
     padding: 8px 6px;
     width: 32px;
-  }
-  
-  .approval-educational-button-4 {
+}
+
+.approval-educational-button-4 {
     background-color: var(--blue);
-    box-shadow: inset 0px -2px 2px #3030301a , inset 0px 7px 12px #ffffff14;
+    box-shadow: inset 0px -2px 2px #3030301a, inset 0px 7px 12px #ffffff14;
     cursor: pointer;
     display: flex;
     padding: 8px;
     width: 32px;
-  }
-  
-  .approval-educational-text-sm-1 {
+}
+
+.approval-educational-text-sm-1 {
     color: var(--white);
     font-family: var(--font-family-noto_sans_thai);
     font-size: var(--font-size-15);
     font-weight: 500;
-  }
-  
-  .approval-educational-button-2 {
+}
+
+.approval-educational-button-2 {
     background-color: var(--pattens-blue);
     cursor: pointer;
     display: flex;
     padding: 8px;
     width: 32px;
-  }
-  
-  .approval-educational-text-sm-2 {
+}
+
+.approval-educational-text-sm-2 {
     margin-left: -1.00px;
     margin-right: -1.00px;
-  }
-  
-  .approval-educational-footer {
+}
+
+.approval-educational-footer {
     align-items: flex-start;
     background-color: #012a6c;
     display: flex;
@@ -6944,9 +6948,9 @@ input:focus {
     margin-top: 129px;
     padding: 22px 552px;
     width: 1440px;
-  }
-  
-  .approval-educational-copyright-2024 {
+}
+
+.approval-educational-copyright-2024 {
     color: var(--white);
     font-family: var(--font-family-noto_sans_thai);
     font-size: var(--font-size-20);
@@ -6955,9 +6959,9 @@ input:focus {
     line-height: normal;
     margin-left: 1px;
     min-height: 30px;
-  }
-  
-  .approval-educational-base-table {
+}
+
+.approval-educational-base-table {
     align-self: stretch;
     border-bottom-style: solid;
     border-bottom-width: 1px;
@@ -6965,9 +6969,9 @@ input:focus {
     height: 44px;
     position: relative;
     width: 100%;
-  }
-  
-  .approval-educational-base-table-cell-3 {
+}
+
+.approval-educational-base-table-cell-3 {
     align-items: center;
     align-self: stretch;
     border-bottom-style: solid;
@@ -6978,9 +6982,9 @@ input:focus {
     height: 44px;
     position: relative;
     width: 100%;
-  }
-  
-  .approval-educational-button-5 {
+}
+
+.approval-educational-button-5 {
     align-items: center;
     border-radius: 8px;
     gap: 6px;
@@ -6988,21 +6992,21 @@ input:focus {
     justify-content: center;
     overflow: hidden;
     position: relative;
-  }
-  
-  .approval-educational-column-table-default-6 {
+}
+
+.approval-educational-column-table-default-6 {
     align-items: flex-start;
     display: flex;
     flex-direction: column;
     position: relative;
-  }
-  
-  .approval-educational-input {
+}
+
+.approval-educational-input {
     display: flex;
     position: relative;
-  }
-  
-  .approval-educational-status-3 {
+}
+
+.approval-educational-status-3 {
     align-items: center;
     border-radius: 29px;
     display: inline-flex;
@@ -7012,14 +7016,14 @@ input:focus {
     justify-content: center;
     padding: 4px 10px 4px 6px;
     position: relative;
-  }
-  
-  .approval-educational-text-5 {
+}
+
+.approval-educational-text-5 {
     letter-spacing: 0;
     position: relative;
-  }
-  
-  .approval-educational-text-sm-3 {
+}
+
+.approval-educational-text-sm-3 {
     letter-spacing: 0;
     line-height: 21.0px;
     margin-bottom: -1.50px;
@@ -7027,16 +7031,16 @@ input:focus {
     position: relative;
     white-space: nowrap;
     width: fit-content;
-  }
-  
-  .approval-educational-navbar-link-text-3 {
+}
+
+.approval-educational-navbar-link-text-3 {
     letter-spacing: 0;
     line-height: normal;
     margin-top: -1.00px;
     position: relative;
     text-decoration: underline;
     width: fit-content;
-  }
+}
 
 /* #endregion */
 
@@ -7049,9 +7053,9 @@ input:focus {
     flex-direction: column;
     height: 1055px;
     width: 1440px;
-  }
-  
-  .approval-educational-detail-header {
+}
+
+.approval-educational-detail-header {
     align-items: center;
     background-color: var(--main);
     display: flex;
@@ -7062,33 +7066,33 @@ input:focus {
     min-width: 1440px;
     padding: 6px 87.8px;
     width: auto;
-  }
-  
-  .approval-educational-detail-logo-1 {
+}
+
+.approval-educational-detail-logo-1 {
     align-self: flex-end;
     height: 60px;
     object-fit: cover;
     width: 68px;
-  }
-  
-  .approval-educational-detail-navbar {
+}
+
+.approval-educational-detail-navbar {
     align-items: center;
     display: inline-flex;
     gap: 40px;
     margin-bottom: 4.0px;
     margin-left: 41px;
     position: relative;
-  }
-  
-  .approval-educational-detail-text {
+}
+
+.approval-educational-detail-text {
     letter-spacing: 0;
     line-height: normal;
     margin-top: -1.00px;
     position: relative;
     width: fit-content;
-  }
-  
-  .approval-educational-detail-frame-38253 {
+}
+
+.approval-educational-detail-frame-38253 {
     align-items: center;
     display: inline-flex;
     gap: 56px;
@@ -7096,21 +7100,21 @@ input:focus {
     margin-bottom: 5.0px;
     margin-left: 220px;
     position: relative;
-  }
-  
-  .approval-educational-detail-group {
+}
+
+.approval-educational-detail-group {
     height: 35px;
     position: relative;
     width: 31.17px;
-  }
-  
-  .approval-educational-detail-vector {
+}
+
+.approval-educational-detail-vector {
     height: 35px;
     position: relative;
     width: 35px;
-  }
-  
-  .approval-educational-detail-flex-row {
+}
+
+.approval-educational-detail-flex-row {
     align-items: flex-start;
     display: flex;
     gap: 321px;
@@ -7118,9 +7122,9 @@ input:focus {
     margin-left: 100px;
     margin-top: 62px;
     min-width: 766px;
-  }
-  
-  .approval-educational-detail-button {
+}
+
+.approval-educational-detail-button {
     align-items: center;
     background-color: var(--pink);
     border-radius: 10px;
@@ -7131,15 +7135,15 @@ input:focus {
     overflow: hidden;
     padding: 8px 24px;
     position: relative;
-  }
-  
-  .approval-educational-detail-icon-back {
+}
+
+.approval-educational-detail-icon-back {
     height: 24px;
     position: relative;
     width: 24px;
-  }
-  
-  .approval-educational-detail-text_label {
+}
+
+.approval-educational-detail-text_label {
     color: var(--main);
     font-family: var(--font-family-noto_sans_thai);
     font-size: var(--font-size-20);
@@ -7150,9 +7154,9 @@ input:focus {
     position: relative;
     text-align: center;
     width: fit-content;
-  }
-  
-  .approval-educational-detail-text-6 {
+}
+
+.approval-educational-detail-text-6 {
     align-self: flex-end;
     color: var(--bkack);
     font-family: var(--font-family-noto_sans_thai);
@@ -7163,9 +7167,9 @@ input:focus {
     min-width: 291px;
     text-align: center;
     white-space: nowrap;
-  }
-  
-  .approval-educational-detail-frame-27 {
+}
+
+.approval-educational-detail-frame-27 {
     align-items: flex-start;
     align-self: center;
     border: 1px solid;
@@ -7179,9 +7183,9 @@ input:focus {
     padding: 25px 24px;
     position: relative;
     width: 1240px;
-  }
-  
-  .approval-educational-detail-frame-38438 {
+}
+
+.approval-educational-detail-frame-38438 {
     align-items: flex-start;
     align-self: stretch;
     display: flex;
@@ -7190,9 +7194,9 @@ input:focus {
     gap: 32px;
     position: relative;
     width: 100%;
-  }
-  
-  .approval-educational-detail-frame-38486 {
+}
+
+.approval-educational-detail-frame-38486 {
     align-items: flex-start;
     align-self: stretch;
     display: flex;
@@ -7200,9 +7204,9 @@ input:focus {
     gap: 32px;
     position: relative;
     width: 100%;
-  }
-  
-  .approval-educational-detail-view {
+}
+
+.approval-educational-detail-view {
     align-items: flex-start;
     display: flex;
     flex: 1;
@@ -7210,44 +7214,44 @@ input:focus {
     flex-grow: 1;
     gap: 8px;
     position: relative;
-  }
-  
-  .approval-educational-detail-list {
+}
+
+.approval-educational-detail-list {
     align-items: flex-start;
     display: inline-flex;
     flex: 0 0 auto;
     gap: 8px;
     position: relative;
-  }
-  
-  .approval-educational-detail-frame-11437 {
+}
+
+.approval-educational-detail-frame-11437 {
     align-items: flex-start;
     display: flex;
     gap: 80px;
     position: relative;
     width: 200px;
-  }
-  
-  .approval-educational-detail-frame-11439 {
+}
+
+.approval-educational-detail-frame-11439 {
     align-items: flex-start;
     display: flex;
     gap: 80px;
     position: relative;
     width: 300px;
-  }
-  
-  .approval-educational-detail-line-47 {
+}
+
+.approval-educational-detail-line-47 {
     align-self: stretch;
     object-fit: cover;
     position: relative;
     width: 1px;
-  }
-  
-  .approval-educational-detail-text_label-1 {
+}
+
+.approval-educational-detail-text_label-1 {
     flex: 1;
-  }
-  
-  .approval-educational-detail-text_label-2 {
+}
+
+.approval-educational-detail-text_label-2 {
     color: #3347ff;
     cursor: pointer;
     font-family: var(--font-family-noto_sans_thai);
@@ -7255,9 +7259,9 @@ input:focus {
     font-weight: 400;
     text-decoration: underline;
     width: fit-content;
-  }
-  
-  .approval-educational-detail-frame-38379 {
+}
+
+.approval-educational-detail-frame-38379 {
     align-items: center;
     align-self: flex-end;
     display: inline-flex;
@@ -7265,24 +7269,24 @@ input:focus {
     margin-right: 96px;
     margin-top: 32px;
     position: relative;
-  }
-  
-  .approval-educational-detail-button-1 {
+}
+
+.approval-educational-detail-button-1 {
     background-color: var(--gray);
     width: 223px;
-  }
-  
-  .approval-educational-detail-button-2 {
+}
+
+.approval-educational-detail-button-2 {
     background-color: var(--main);
     width: 245px;
-  }
-  
-  .approval-educational-detail-text_label-3 {
+}
+
+.approval-educational-detail-text_label-3 {
     text-align: center;
     width: fit-content;
-  }
-  
-  .approval-educational-detail-footer {
+}
+
+.approval-educational-detail-footer {
     align-items: flex-start;
     background-color: var(--main);
     display: flex;
@@ -7293,9 +7297,9 @@ input:focus {
     margin-top: 290px;
     padding: 22px 552px;
     width: 1440px;
-  }
-  
-  .approval-educational-detail-copyright-2024 {
+}
+
+.approval-educational-detail-copyright-2024 {
     color: var(--white);
     font-family: var(--font-family-noto_sans_thai);
     font-size: var(--font-size-20);
@@ -7304,9 +7308,9 @@ input:focus {
     line-height: normal;
     margin-left: 1px;
     min-height: 30px;
-  }
-  
-  .approval-educational-detail-button-3 {
+}
+
+.approval-educational-detail-button-3 {
     align-items: center;
     border-radius: 10px;
     cursor: pointer;
@@ -7318,25 +7322,25 @@ input:focus {
     position: relative;
     border: 1px solid;
     border-color: var(--main);
-  }
-  
-  .approval-educational-detail-text_label-4 {
+}
+
+.approval-educational-detail-text_label-4 {
     letter-spacing: 0;
     line-height: normal;
     margin-top: -1.00px;
     position: relative;
-  }
-  
-  .approval-educational-detail-view-1 {
+}
+
+.approval-educational-detail-view-1 {
     background-color: #14181f80;
     height: 1020px;
     left: 0;
     position: absolute;
     top: 4px;
     width: 1440px;
-  }
-  
-  .approval-educational-detail-frame-38264 {
+}
+
+.approval-educational-detail-frame-38264 {
     align-items: center;
     background-color: var(--white);
     border-radius: 10px;
@@ -7347,18 +7351,18 @@ input:focus {
     padding: 40px;
     position: absolute;
     top: 369px;
-  }
-  
-  .approval-educational-detail-frame-38266 {
+}
+
+.approval-educational-detail-frame-38266 {
     align-items: center;
     display: flex;
     flex-direction: column;
     gap: 32px;
     position: relative;
     width: 472px;
-  }
-  
-  .approval-educational-detail-frame-38265 {
+}
+
+.approval-educational-detail-frame-38265 {
     align-items: center;
     display: inline-flex;
     flex: 0 0 auto;
@@ -7366,29 +7370,29 @@ input:focus {
     gap: 10px;
     justify-content: center;
     position: relative;
-  }
-  
-  .approval-educational-detail-frame-38262 {
+}
+
+.approval-educational-detail-frame-38262 {
     align-items: center;
     display: inline-flex;
     flex: 0 0 auto;
     gap: 40px;
     position: relative;
-  }
-  
-  .approval-educational-detail-button-3-2 {
+}
+
+.approval-educational-detail-button-3-2 {
     /* background-color: var(--white); */
     border: 1px solid;
     border-color: var(--main);
     width: 216px;
-  }
-  
-  .approval-educational-detail-button-4 {
+}
+
+.approval-educational-detail-button-4 {
     background-color: var(--main);
     width: 216px;
-  }
-  
-  .approval-educational-detail-button-5 {
+}
+
+.approval-educational-detail-button-5 {
     align-items: center;
     border-radius: 10px;
     display: flex;
@@ -7397,9 +7401,9 @@ input:focus {
     overflow: hidden;
     padding: 8px 24px;
     position: relative;
-  }
-  
-  .approval-educational-detail-text-7 {
+}
+
+.approval-educational-detail-text-7 {
     color: var(--pink);
     font-family: var(--font-family-noto_sans_thai);
     font-size: var(--font-size-40);
@@ -7408,41 +7412,41 @@ input:focus {
     margin-top: -1.00px;
     position: relative;
     width: 468px;
-  }
-  
-  .approval-educational-detail-text-8 {
+}
+
+.approval-educational-detail-text-8 {
     line-height: normal;
     position: relative;
     width: 468px;
-  }
-  
-  .approval-educational-detail-text-2 {
+}
+
+.approval-educational-detail-text-2 {
     letter-spacing: 0;
     text-align: center;
-  }
-  
-  .approval-educational-detail-frame-container {
+}
+
+.approval-educational-detail-frame-container {
     border-radius: 10px;
     height: 236px;
     position: relative;
     width: 552px;
-  }
-  
-  .approval-educational-detail-frame-1041 {
+}
+
+.approval-educational-detail-frame-1041 {
     cursor: pointer;
     height: 31px;
     left: 505px;
     position: absolute;
     top: 10px;
     width: 31px;
-  }
-  
-  .approval-educational-detail-text_label-5 {
+}
+
+.approval-educational-detail-text_label-5 {
     letter-spacing: 0;
     position: relative;
-  }
-  
-  .approval-educational-detail-popup {
+}
+
+.approval-educational-detail-popup {
     align-items: flex-start;
     display: flex;
     height: 288px;
@@ -7450,9 +7454,9 @@ input:focus {
     min-width: 552px;
     position: absolute;
     top: 323px;
-  }
-  
-  .approval-educational-detail-frame-38264-2 {
+}
+
+.approval-educational-detail-frame-38264-2 {
     align-items: center;
     background-color: var(--white);
     border-radius: 10px;
@@ -7463,9 +7467,9 @@ input:focus {
     padding: 40px;
     /* position: absolute;
     top: 369px; */
-  }
-  
-  .approval-educational-detail-text_label-4-2 {
+}
+
+.approval-educational-detail-text_label-4-2 {
     color: var(--green);
     font-family: var(--font-family-noto_sans_thai);
     font-size: var(--font-size-40);
@@ -7473,9 +7477,9 @@ input:focus {
     line-height: 60.0px;
     text-align: center;
     width: 468px;
-  }
-  
-  .approval-educational-detail-frame-38264-3 {
+}
+
+.approval-educational-detail-frame-38264-3 {
     align-items: center;
     background-color: var(--white);
     border-radius: 10px;
@@ -7487,34 +7491,34 @@ input:focus {
     position: absolute;
     top: 0;
     width: 801px;
-  }
-  
-  .approval-educational-detail-frame-38266-3 {
+}
+
+.approval-educational-detail-frame-38266-3 {
     align-items: center;
     display: flex;
     flex-direction: column;
     gap: 32px;
     position: relative;
     width: 721px;
-  }
-  
-  .approval-educational-detail-frame-container-3 {
+}
+
+.approval-educational-detail-frame-container-3 {
     border-radius: 10px;
     height: 330px;
     margin-left: -1px;
     position: relative;
     width: 801px;
-  }
-  
-  .approval-educational-detail-popup-3 {
+}
+
+.approval-educational-detail-popup-3 {
     align-items: flex-start;
     display: flex;
     height: 428px;
     margin-left: 1px;
     min-width: 801px;
-  }
-  
-  .approval-educational-detail-view-3 {
+}
+
+.approval-educational-detail-view-3 {
     align-items: center;
     background-color: #14181f80;
     display: flex;
@@ -7524,34 +7528,34 @@ input:focus {
     position: absolute;
     top: 4px;
     width: 1440px;
-  }
-  
-  .approval-educational-detail-frame-1041-3 {
+}
+
+.approval-educational-detail-frame-1041-3 {
     cursor: pointer;
     height: 31px;
     left: 747px;
     position: absolute;
     top: 24px;
     width: 31px;
-  }
-  
-  .approval-educational-detail-input-select {
+}
+
+.approval-educational-detail-input-select {
     align-items: flex-start;
     display: flex;
     flex: 0 0 auto;
     flex-direction: column;
     position: relative;
     width: 621px;
-  }
-  
-  .approval-educational-detail-select-field {
+}
+
+.approval-educational-detail-select-field {
     align-items: center;
     align-self: stretch;
     background-color: var(--white);
     border: 1px solid;
     border-color: #dce0e5;
     border-radius: 8px;
-    box-shadow: inset 0px -2px 2px #3030301a , inset 0px 7px 12px #ffffff14;
+    box-shadow: inset 0px -2px 2px #3030301a, inset 0px 7px 12px #ffffff14;
     display: flex;
     gap: 8px;
     height: 40px;
@@ -7559,9 +7563,9 @@ input:focus {
     padding: 8px 10px;
     position: relative;
     width: 100%;
-  }
-  
-  .approval-educational-detail-custom-dropdown {
+}
+
+.approval-educational-detail-custom-dropdown {
     width: 100%;
     height: 40px;
     /* กำหนดความสูง */
@@ -7578,27 +7582,3464 @@ input:focus {
     z-index: 2;
     line-height: normal;
     /* ปรับให้ข้อความอยู่ตรงกลาง */
-  }
-  
-  .approval-educational-detail-dropdown-icon {
+}
+
+.approval-educational-detail-dropdown-icon {
     position: absolute;
     top: 50%;
     right: 10px;
     /* ระยะห่างจากขอบขวา */
     transform: translateY(-50%);
     pointer-events: none;
+}
+
+/* #endregion */
+
+/* #region order-list-received-educational */
+
+.order-list-received-educational {
+    align-items: center;
+    background-color: var(--white);
+    display: flex;
+    flex-direction: column;
+    height: 1471px;
+    width: 1440px;
+}
+
+.order-list-received-educational-header {
+    align-items: center;
+    background-color: var(--main);
+    display: flex;
+    flex-direction: row;
+    flex-shrink: 1;
+    height: 80px;
+    justify-content: flex-end;
+    min-width: 1440px;
+    padding: 6px 87.8px;
+    width: auto;
+}
+
+.order-list-received-educational-logo-1 {
+    align-self: flex-end;
+    height: 60px;
+    object-fit: cover;
+    width: 68px;
+}
+
+.order-list-received-educational-navbar {
+    align-items: center;
+    display: inline-flex;
+    gap: 40px;
+    margin-bottom: 4.0px;
+    margin-left: 41px;
+    position: relative;
+}
+
+.order-list-received-educational-navbar-link-text-33 {
+    text-decoration: underline;
+}
+
+.order-list-received-educational-frame-38253 {
+    align-items: center;
+    display: inline-flex;
+    gap: 56px;
+    justify-content: flex-end;
+    margin-bottom: 5.0px;
+    margin-left: 220px;
+    position: relative;
+}
+
+.order-list-received-educational-group {
+    height: 35px;
+    position: relative;
+    width: 31.17px;
+}
+
+.order-list-received-educational-vector-1 {
+    height: 35px;
+    position: relative;
+    width: 35px;
+}
+
+.order-list-received-educational-frame-container {
+    align-items: flex-start;
+    display: flex;
+    gap: 32px;
+    height: 1134px;
+    margin-top: 70px;
+    min-width: 1240px;
+}
+
+.order-list-received-educational-frame-38358 {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    position: relative;
+    width: 316px;
+}
+
+.order-list-received-educational-frame-38354 {
+    align-items: flex-start;
+    align-self: stretch;
+    display: flex;
+    flex: 0 0 auto;
+    flex-direction: column;
+    gap: 10px;
+    position: relative;
+    width: 100%;
+}
+
+.order-list-received-educational-frame-38352 {
+    align-items: flex-start;
+    align-self: stretch;
+    display: flex;
+    flex: 0 0 auto;
+    flex-direction: column;
+    gap: 16px;
+    position: relative;
+    width: 100%;
+}
+
+.order-list-received-educational-frame-38350 {
+    align-items: center;
+    align-self: stretch;
+    display: flex;
+    flex: 0 0 auto;
+    gap: 32px;
+    position: relative;
+    width: 100%;
+}
+
+.order-list-received-educational-frame-383 {
+    align-items: center;
+    display: inline-flex;
+    flex: 0 0 auto;
+    gap: 16px;
+    position: relative;
+}
+
+.order-list-received-educational-text {
+    letter-spacing: 0;
+    line-height: normal;
+    margin-top: -0.50px;
+    position: relative;
+    text-align: center;
+    width: fit-content;
+}
+
+.order-list-received-educational-frame-38348 {
+    align-items: center;
+    display: inline-flex;
+    flex: 0 0 auto;
+    gap: 24px;
+    position: relative;
+}
+
+.order-list-received-educational-arrow-down-01 {
+    height: 24px;
+    position: relative;
+    width: 24px;
+}
+
+.order-list-received-educational-frame-38351 {
+    align-items: center;
+    display: flex;
+    flex: 0 0 auto;
+    flex-direction: column;
+    gap: 8px;
+    padding: 0px 50px;
+    position: relative;
+    width: 251px;
+}
+
+.order-list-received-educational-text-2-1 {
+    align-self: stretch;
+    color: var(--bkack);
+    font-family: var(--font-family-noto_sans_thai);
+    font-size: var(--font-size-20);
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: normal;
+    margin-top: -1.00px;
+    position: relative;
+}
+
+.order-list-received-educational-text-3 {
+    align-self: stretch;
+    color: var(--bkack);
+    font-family: var(--font-family-noto_sans_thai);
+    font-size: var(--font-size-20);
+    font-weight: 400;
+}
+
+.order-list-received-educational-vector {
+    height: 1px;
+    object-fit: cover;
+    position: relative;
+    width: 316px;
+}
+
+.order-list-received-educational-checkmark-square-04 {
+    height: 34px;
+    position: relative;
+    width: 34px;
+}
+
+.order-list-received-educational-text-5 {
+    color: var(--pink);
+    font-family: var(--font-family-noto_sans_thai);
+    font-size: var(--font-size-22);
+    font-weight: 600;
+    margin-top: -0.50px;
+    text-align: center;
+    width: fit-content;
+}
+
+.order-list-received-educational-frame-38356 {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+    position: relative;
+    width: 892px;
+}
+
+.order-list-received-educational-frame-38355 {
+    align-items: flex-start;
+    align-self: stretch;
+    display: flex;
+    flex: 0 0 auto;
+    flex-direction: column;
+    gap: 11px;
+    position: relative;
+    width: 100%;
+}
+
+.order-list-received-educational-navbar-1 {
+    align-items: center;
+    align-self: stretch;
+    display: flex;
+    flex: 0 0 auto;
+    gap: 48px;
+    position: relative;
+    width: 100%;
+}
+
+.order-list-received-educational-navbar-link-text {
+    cursor: pointer;
+    letter-spacing: 0;
+    line-height: normal;
+    margin-top: -1.00px;
+    position: relative;
+    width: fit-content;
+}
+
+.order-list-received-educational-frame-38343 {
+    align-self: stretch;
+    height: 6px;
+    margin-bottom: -3.00px;
+    margin-right: -1.00px;
+    position: relative;
+    width: 100%;
+}
+
+.order-list-received-educational-frame-20 {
+    align-items: center;
+    align-self: stretch;
+    background-color: #f2f2f2;
+    border: 1px solid;
+    border-color: var(--black);
+    border-radius: 8px;
+    display: flex;
+    gap: 24px;
+    height: 55px;
+    overflow: hidden;
+    padding: 8px 16px;
+    position: relative;
+    width: 100%;
+}
+
+.order-list-received-educational-icon-magnifying-glass-searching-glass {
+    height: 30px;
+    position: relative;
+    width: 30px;
+}
+
+.order-list-received-educational-text_input {
+    background-color: transparent;
+    border: 0;
+    color: var(--bggrey);
+    flex: 1;
+    flex-grow: 1;
+    font-family: var(--font-family-noto_sans_thai);
+    font-size: var(--font-size-18);
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: normal;
+    padding: 0;
+    position: relative;
+}
+
+.order-list-received-educational-text_input::placeholder {
+    color: #70707099;
+}
+
+.order-list-received-educational-frame {
+    align-items: flex-start;
+    align-self: stretch;
+    border: 1px solid;
+    border-color: var(--black);
+    border-radius: 20px;
+    display: flex;
+    flex: 0 0 auto;
+    flex-direction: column;
+    gap: 24px;
+    overflow: hidden;
+    padding: 25px 24px;
+    position: relative;
+    width: 100%;
+}
+
+.order-list-received-educational-frame-38339 {
+    align-items: center;
+    align-self: stretch;
+    display: flex;
+    flex: 0 0 auto;
+    gap: 64px;
+    position: relative;
+    width: 100%;
+}
+
+.order-list-received-educational-xxxxxxxx {
+    letter-spacing: 0;
+    line-height: normal;
+    position: relative;
+    width: 314px;
+}
+
+.order-list-received-educational-frame-38341 {
+    align-items: center;
+    display: flex;
+    gap: 16px;
+    justify-content: flex-end;
+    position: relative;
+    width: 466px;
+}
+
+.order-list-received-educational-text-12 {
+    cursor: pointer;
+    text-align: right;
+    text-decoration: underline;
+    width: fit-content;
+}
+
+.order-list-received-educational-button {
+    align-items: center;
+    background-color: #3347ff;
+    border-radius: 10px;
+    cursor: pointer;
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+    overflow: hidden;
+    padding: 8px 24px;
+    position: relative;
+    width: 153px;
+}
+
+.order-list-received-educational-text_label {
+    letter-spacing: 0;
+    line-height: normal;
+    margin-top: -1.00px;
+    position: relative;
+    text-align: center;
+    width: fit-content;
+}
+
+.order-list-received-educational-line-6 {
+    align-self: stretch;
+    height: 1px;
+    object-fit: cover;
+    position: relative;
+    width: 100%;
+}
+
+.order-list-received-educational-frame-38 {
+    align-items: center;
+    align-self: stretch;
+    display: flex;
+    gap: 16px;
+    height: 108px;
+    position: relative;
+    width: 100%;
+}
+
+.order-list-received-educational-frame-95 {
+    background-color: var(--gallery);
+    border: 1px solid;
+    border-color: var(--delta);
+    border-radius: 8.66px;
+    height: 110px;
+    margin-bottom: -1.00px;
+    margin-top: -1.00px;
+    overflow: hidden;
+    position: relative;
+    width: 110px;
+}
+
+.order-list-received-educational-image-8 {
+    height: 110px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 110px;
+}
+
+.order-list-received-educational-frame-94 {
+    align-items: center;
+    display: flex;
+    flex: 1;
+    flex-grow: 1;
+    gap: 16px;
+    height: 108px;
+    justify-content: space-around;
+    position: relative;
+}
+
+.order-list-received-educational-frame-94-1 {
+    align-items: center;
+    display: flex;
+    flex: 1;
+    flex-grow: 1;
+    gap: 52px;
+    margin-bottom: -1.00px;
+    margin-top: -1.00px;
+    position: relative;
+}
+
+.order-list-received-educational-frame-93 {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    height: 110px;
+    position: relative;
+    width: 281px;
+}
+
+.order-list-received-educational-text-1 {
+    margin-right: -155.00px;
+    margin-top: -1.00px;
+    width: fit-content;
+}
+
+.order-list-received-educational-frame-93-1 {
+    align-items: flex-start;
+    display: inline-flex;
+    flex: 0 0 auto;
+    gap: 4px;
+    margin-right: -85.00px;
+}
+
+.order-list-received-educational-frame-38433 {
+    align-items: flex-start;
+    display: inline-flex;
+    flex: 0 0 auto;
+    gap: 16px;
+    position: relative;
+}
+
+.order-list-received-educational-frame-9 {
+    align-items: flex-start;
+    display: inline-flex;
+    flex: 0 0 auto;
+    flex-direction: column;
+    gap: 4px;
+    position: relative;
+}
+
+.order-list-received-educational-text-14 {
+    margin-top: -1.00px;
+    width: fit-content;
+}
+
+.order-list-received-educational-text-15 {
+    margin-top: -1.00px;
+    width: fit-content;
+}
+
+.order-list-received-educational-text-16 {
+    margin-top: -1.00px;
+    width: fit-content;
+}
+
+.order-list-received-educational-frame-93-2 {
+    align-items: flex-end;
+    display: flex;
+    gap: 6px;
+    height: 110px;
+    width: 361px;
+}
+
+.order-list-received-educational-xxx {
+    letter-spacing: 0;
+    line-height: normal;
+    margin-top: -1.00px;
+    position: relative;
+    width: fit-content;
+}
+
+.order-list-received-educational-text-2 {
+    margin-right: -99.00px;
+    margin-top: -1.00px;
+    width: fit-content;
+}
+
+.order-list-received-educational-frame-38433-1 {
+    align-items: flex-start;
+    display: inline-flex;
+    flex: 0 0 auto;
+    gap: 16px;
+    margin-right: -85.00px;
+    position: relative;
+}
+
+.order-list-received-educational-text-18 {
+    margin-top: -1.00px;
+    width: fit-content;
+}
+
+.order-list-received-educational-text-19 {
+    margin-top: -1.00px;
+    width: fit-content;
+}
+
+.order-list-received-educational-text-20 {
+    margin-top: -1.00px;
+    width: fit-content;
+}
+
+.order-list-received-educational-frame-38341-1 {
+    align-items: flex-end;
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    height: 33px;
+    position: relative;
+    width: 100%;
+}
+
+.order-list-received-educational-grand-total {
+    letter-spacing: 0;
+    line-height: normal;
+    position: relative;
+    width: fit-content;
+}
+
+.order-list-received-educational-xxx-2 {
+    color: var(--pink);
+    font-family: var(--font-family-noto_sans_thai);
+    font-size: var(--font-size-20);
+    font-weight: 600;
+}
+
+.order-list-received-educational-text-21 {
+    text-align: right;
+    text-decoration: underline;
+    width: 142px;
+}
+
+.order-list-received-educational-button-1 {
+    align-items: center;
+    background-color: #3347ff;
+    border-radius: 10px;
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+    overflow: hidden;
+    padding: 8px 24px;
+    position: relative;
+    width: 153px;
+}
+
+.order-list-received-educational-line-6-1 {
+    align-self: stretch;
+    height: 1px;
+    object-fit: cover;
+    position: relative;
+    width: 100%;
+}
+
+.order-list-received-educational-text-23 {
+    margin-top: -1.00px;
+    width: fit-content;
+}
+
+.order-list-received-educational-text-24 {
+    margin-top: -1.00px;
+    width: fit-content;
+}
+
+.order-list-received-educational-text-25 {
+    margin-top: -1.00px;
+    width: fit-content;
+}
+
+.order-list-received-educational-text-27 {
+    margin-top: -1.00px;
+    width: fit-content;
+}
+
+.order-list-received-educational-text-28 {
+    margin-top: -1.00px;
+    width: fit-content;
+}
+
+.order-list-received-educational-text-29 {
+    margin-top: -1.00px;
+    width: fit-content;
+}
+
+.order-list-received-educational-xxx-5 {
+    color: var(--pink);
+    font-family: var(--font-family-noto_sans_thai);
+    font-size: var(--font-size-20);
+    font-weight: 600;
+}
+
+.order-list-received-educational-footer {
+    align-items: flex-start;
+    background-color: var(--main);
+    display: flex;
+    flex-direction: row;
+    flex-shrink: 1;
+    height: 76px;
+    justify-content: flex-start;
+    margin-top: 111px;
+    padding: 22px 552px;
+    width: 1440px;
+}
+
+.order-list-received-educational-copyright-2024 {
+    color: var(--white);
+    font-family: var(--font-family-noto_sans_thai);
+    font-size: var(--font-size-20);
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: normal;
+    margin-left: 1px;
+    min-height: 30px;
+}
+
+.order-list-received-educational-frame-93-3 {
+    flex-direction: column;
+    position: relative;
+}
+
+.order-list-received-educational-icon {
+    height: 34px;
+    position: relative;
+    width: 34px;
+}
+
+.order-list-received-educational-navbar-link-text-1 {
+    letter-spacing: 0;
+    line-height: normal;
+    margin-top: -1.00px;
+    position: relative;
+    width: fit-content;
+}
+
+.order-list-received-educational-text-4 {
+    letter-spacing: 0;
+    line-height: normal;
+    position: relative;
+}
+
+.order-list-received-educational-xxx-6 {
+    letter-spacing: 0;
+    line-height: normal;
+    margin-top: -1.00px;
+    position: relative;
+    width: fit-content;
+}
+
+/* #endregion */
+
+/* #region order-list-succeed-educational */
+
+.order-list-succeed-educational {
+    align-items: center;
+    background-color: var(--white);
+    display: flex;
+    flex-direction: column;
+    height: 1471px;
+    width: 1440px;
+  }
+  
+  .order-list-succeed-educational-header {
+    align-items: center;
+    background-color: var(--main);
+    display: flex;
+    flex-direction: row;
+    flex-shrink: 1;
+    height: 80px;
+    justify-content: flex-end;
+    min-width: 1440px;
+    padding: 6px 87.8px;
+    width: auto;
+  }
+  
+  .order-list-succeed-educational-logo-1 {
+    align-self: flex-end;
+    height: 60px;
+    object-fit: cover;
+    width: 68px;
+  }
+  
+  .order-list-succeed-educational-navbar {
+    align-items: center;
+    display: inline-flex;
+    gap: 40px;
+    margin-bottom: 4.0px;
+    margin-left: 41px;
+    position: relative;
+  }
+  
+  .order-list-succeed-educational-navbar-link-text-4 {
+    text-decoration: underline;
+  }
+  
+  .order-list-succeed-educational-frame-38253 {
+    align-items: center;
+    display: inline-flex;
+    gap: 56px;
+    justify-content: flex-end;
+    margin-bottom: 5.0px;
+    margin-left: 220px;
+    position: relative;
+  }
+  
+  .order-list-succeed-educational-group {
+    height: 35px;
+    position: relative;
+    width: 31.17px;
+  }
+  
+  .order-list-succeed-educational-vector-1 {
+    height: 35px;
+    position: relative;
+    width: 35px;
+  }
+  
+  .order-list-succeed-educational-frame-38357 {
+    align-items: flex-start;
+    display: inline-flex;
+    gap: 32px;
+    margin-top: 70px;
+    position: relative;
+  }
+  
+  .order-list-succeed-educational-frame-38357-1 {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    position: relative;
+    width: 316px;
+  }
+  
+  .order-list-succeed-educational-frame-38354 {
+    align-items: flex-start;
+    align-self: stretch;
+    display: flex;
+    flex: 0 0 auto;
+    flex-direction: column;
+    gap: 10px;
+    position: relative;
+    width: 100%;
+  }
+  
+  .order-list-succeed-educational-frame-38352 {
+    align-items: flex-start;
+    align-self: stretch;
+    display: flex;
+    flex: 0 0 auto;
+    flex-direction: column;
+    gap: 16px;
+    position: relative;
+    width: 100%;
+  }
+  
+  .order-list-succeed-educational-frame-38350 {
+    align-items: center;
+    align-self: stretch;
+    display: flex;
+    flex: 0 0 auto;
+    gap: 32px;
+    position: relative;
+    width: 100%;
+  }
+  
+  .order-list-succeed-educational-frame-383 {
+    align-items: center;
+    display: inline-flex;
+    flex: 0 0 auto;
+    gap: 16px;
+    position: relative;
+  }
+  
+  .order-list-succeed-educational-text {
+    letter-spacing: 0;
+    line-height: normal;
+    margin-top: -0.50px;
+    position: relative;
+    text-align: center;
+    width: fit-content;
+  }
+  
+  .order-list-succeed-educational-frame-38348 {
+    align-items: center;
+    display: inline-flex;
+    flex: 0 0 auto;
+    gap: 24px;
+    position: relative;
+  }
+  
+  .order-list-succeed-educational-arrow-down-01 {
+    height: 24px;
+    position: relative;
+    width: 24px;
+  }
+  
+  .order-list-succeed-educational-frame-38351 {
+    align-items: center;
+    display: flex;
+    flex: 0 0 auto;
+    flex-direction: column;
+    gap: 8px;
+    padding: 0px 50px;
+    position: relative;
+    width: 251px;
+  }
+  
+  .order-list-succeed-educational-text-7 {
+    align-self: stretch;
+    color: var(--bkack);
+    font-family: var(--font-family-noto_sans_thai);
+    font-size: var(--font-size-20);
+    font-weight: 400;
+    margin-top: -1.00px;
+  }
+  
+  .order-list-succeed-educational-text-8 {
+    align-self: stretch;
+    color: var(--bkack);
+    font-family: var(--font-family-noto_sans_thai);
+    font-size: var(--font-size-20);
+    font-weight: 400;
+  }
+  
+  .order-list-succeed-educational-vector {
+    height: 1px;
+    object-fit: cover;
+    position: relative;
+    width: 316px;
+  }
+  
+  .order-list-succeed-educational-checkmark-square-04 {
+    height: 34px;
+    position: relative;
+    width: 34px;
+  }
+  
+  .order-list-succeed-educational-text-10 {
+    color: var(--pink);
+    font-family: var(--font-family-noto_sans_thai);
+    font-size: var(--font-size-22);
+    font-weight: 600;
+    margin-top: -0.50px;
+    text-align: center;
+    width: fit-content;
+  }
+  
+  .order-list-succeed-educational-vector-22 {
+    height: 1px;
+    object-fit: cover;
+    position: relative;
+    width: 316px;
+  }
+  
+  .order-list-succeed-educational-frame-38356 {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+    position: relative;
+    width: 892px;
+  }
+  
+  .order-list-succeed-educational-frame-38359 {
+    align-items: flex-start;
+    align-self: stretch;
+    display: flex;
+    flex: 0 0 auto;
+    flex-direction: column;
+    gap: 11px;
+    position: relative;
+    width: 100%;
+  }
+  
+  .order-list-succeed-educational-frame-38344 {
+    align-items: center;
+    align-self: stretch;
+    display: flex;
+    flex: 0 0 auto;
+    gap: 48px;
+    position: relative;
+    width: 100%;
+  }
+  
+  .order-list-succeed-educational-text-1 {
+    cursor: pointer;
+    margin-top: -1.00px;
+    width: fit-content;
+  }
+  
+  .order-list-succeed-educational-frame-38343 {
+    align-self: stretch;
+    height: 6px;
+    margin-bottom: -3.00px;
+    margin-right: -1.00px;
+    position: relative;
+    width: 100%;
+  }
+  
+  .order-list-succeed-educational-frame-20 {
+    align-items: center;
+    align-self: stretch;
+    background-color: #f2f2f2;
+    border: 1px solid;
+    border-color: var(--black);
+    border-radius: 8px;
+    display: flex;
+    gap: 24px;
+    height: 55px;
+    overflow: hidden;
+    padding: 8px 16px;
+    position: relative;
+    width: 100%;
+  }
+  
+  .order-list-succeed-educational-icon-magnifying-glass-searching-glass {
+    height: 30px;
+    position: relative;
+    width: 30px;
+  }
+  
+  .order-list-succeed-educational-text_input {
+    background-color: transparent;
+    border: 0;
+    color: #707070;
+    flex: 1;
+    flex-grow: 1;
+    font-family: var(--font-family-noto_sans_thai);
+    font-size: var(--font-size-18);
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: normal;
+    padding: 0;
+    position: relative;
+  }
+  
+  .order-list-succeed-educational-text_input::placeholder {
+    color: #70707099;
+  }
+  
+  .order-list-succeed-educational-frame-3835 {
+    align-items: flex-start;
+    align-self: stretch;
+    border: 1px solid;
+    border-color: var(--black);
+    border-radius: 20px;
+    display: flex;
+    flex: 0 0 auto;
+    flex-direction: column;
+    gap: 24px;
+    overflow: hidden;
+    padding: 25px 24px;
+    position: relative;
+    width: 100%;
+  }
+  
+  .order-list-succeed-educational-frame-38339 {
+    align-items: center;
+    align-self: stretch;
+    display: flex;
+    flex: 0 0 auto;
+    gap: 64px;
+    position: relative;
+    width: 100%;
+  }
+  
+  .order-list-succeed-educational-xxxxxxxx {
+    letter-spacing: 0;
+    line-height: normal;
+    position: relative;
+    width: 314px;
+  }
+  
+  .order-list-succeed-educational-frame-38342 {
+    align-items: center;
+    display: flex;
+    gap: 16px;
+    justify-content: flex-end;
+    position: relative;
+    width: 466px;
+  }
+  
+  .order-list-succeed-educational-text-17 {
+    cursor: pointer;
+    text-align: right;
+    text-decoration: underline;
+    width: fit-content;
+  }
+  
+  .order-list-succeed-educational-button {
+    align-items: center;
+    background-color: var(--green);
+    border-radius: 10px;
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+    overflow: hidden;
+    padding: 8px 24px;
+    position: relative;
+    width: 153px;
+  }
+  
+  .order-list-succeed-educational-text_label {
+    letter-spacing: 0;
+    line-height: normal;
+    margin-top: -1.00px;
+    position: relative;
+    text-align: center;
+    width: fit-content;
+  }
+  
+  .order-list-succeed-educational-line-6 {
+    align-self: stretch;
+    height: 1px;
+    object-fit: cover;
+    position: relative;
+    width: 100%;
+  }
+  
+  .order-list-succeed-educational-frame-38 {
+    align-items: center;
+    align-self: stretch;
+    display: flex;
+    gap: 16px;
+    height: 108px;
+    position: relative;
+    width: 100%;
+  }
+  
+  .order-list-succeed-educational-frame-95 {
+    background-color: var(--gallery);
+    border: 1px solid;
+    border-color: var(--delta);
+    border-radius: 8.66px;
+    height: 110px;
+    margin-bottom: -1.00px;
+    margin-top: -1.00px;
+    overflow: hidden;
+    position: relative;
+    width: 110px;
+  }
+  
+  .order-list-succeed-educational-image-8 {
+    height: 110px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 110px;
+  }
+  
+  .order-list-succeed-educational-frame-94 {
+    align-items: center;
+    display: flex;
+    flex: 1;
+    flex-grow: 1;
+    gap: 16px;
+    height: 108px;
+    justify-content: space-around;
+    position: relative;
+  }
+  
+  .order-list-succeed-educational-frame-94-1 {
+    align-items: center;
+    display: flex;
+    flex: 1;
+    flex-grow: 1;
+    gap: 52px;
+    margin-bottom: -1.00px;
+    margin-top: -1.00px;
+    position: relative;
+  }
+  
+  .order-list-succeed-educational-frame-93 {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    height: 110px;
+    position: relative;
+    width: 281px;
+  }
+  
+  .order-list-succeed-educational-text-2 {
+    margin-right: -155.00px;
+    margin-top: -1.00px;
+    width: fit-content;
+  }
+  
+  .order-list-succeed-educational-frame-93-1 {
+    align-items: flex-start;
+    display: inline-flex;
+    flex: 0 0 auto;
+    gap: 4px;
+    margin-right: -85.00px;
+  }
+  
+  .order-list-succeed-educational-frame-38433 {
+    align-items: flex-start;
+    display: inline-flex;
+    flex: 0 0 auto;
+    gap: 16px;
+    position: relative;
+  }
+  
+  .order-list-succeed-educational-frame-9 {
+    align-items: flex-start;
+    display: inline-flex;
+    flex: 0 0 auto;
+    flex-direction: column;
+    gap: 4px;
+    position: relative;
+  }
+  
+  .order-list-succeed-educational-text-19 {
+    margin-top: -1.00px;
+    width: fit-content;
+  }
+  
+  .order-list-succeed-educational-text-20 {
+    margin-top: -1.00px;
+    width: fit-content;
+  }
+  
+  .order-list-succeed-educational-text-21 {
+    margin-top: -1.00px;
+    width: fit-content;
+  }
+  
+  .order-list-succeed-educational-frame-93-2 {
+    align-items: flex-end;
+    display: flex;
+    gap: 6px;
+    height: 110px;
+    width: 361px;
+  }
+  
+  .order-list-succeed-educational-xxx {
+    letter-spacing: 0;
+    line-height: normal;
+    margin-top: -1.00px;
+    position: relative;
+    width: fit-content;
+  }
+  
+  .order-list-succeed-educational-text-3 {
+    margin-right: -99.00px;
+    margin-top: -1.00px;
+    width: fit-content;
+  }
+  
+  .order-list-succeed-educational-frame-38433-1 {
+    align-items: flex-start;
+    display: inline-flex;
+    flex: 0 0 auto;
+    gap: 16px;
+    margin-right: -85.00px;
+    position: relative;
+  }
+  
+  .order-list-succeed-educational-text-23 {
+    margin-top: -1.00px;
+    width: fit-content;
+  }
+  
+  .order-list-succeed-educational-text-24 {
+    margin-top: -1.00px;
+    width: fit-content;
+  }
+  
+  .order-list-succeed-educational-text-25 {
+    margin-top: -1.00px;
+    width: fit-content;
+  }
+  
+  .order-list-succeed-educational-frame-38341 {
+    align-items: flex-end;
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    height: 33px;
+    position: relative;
+    width: 100%;
+  }
+  
+  .order-list-succeed-educational-grand-total {
+    letter-spacing: 0;
+    line-height: normal;
+    position: relative;
+    width: fit-content;
+  }
+  
+  .order-list-succeed-educational-xxx-2 {
+    color: var(--pink);
+    font-family: var(--font-family-noto_sans_thai);
+    font-size: var(--font-size-20);
+    font-weight: 600;
+  }
+  
+  .order-list-succeed-educational-text-26 {
+    text-align: right;
+    text-decoration: underline;
+    width: 142px;
+  }
+  
+  .order-list-succeed-educational-line-6-1 {
+    align-self: stretch;
+    height: 1px;
+    object-fit: cover;
+    position: relative;
+    width: 100%;
+  }
+  
+  .order-list-succeed-educational-text-28 {
+    margin-top: -1.00px;
+    width: fit-content;
+  }
+  
+  .order-list-succeed-educational-text-29 {
+    margin-top: -1.00px;
+    width: fit-content;
+  }
+  
+  .order-list-succeed-educational-text-30 {
+    margin-top: -1.00px;
+    width: fit-content;
+  }
+  
+  .order-list-succeed-educational-text-32 {
+    margin-top: -1.00px;
+    width: fit-content;
+  }
+  
+  .order-list-succeed-educational-text-33 {
+    margin-top: -1.00px;
+    width: fit-content;
+  }
+  
+  .order-list-succeed-educational-text-34 {
+    margin-top: -1.00px;
+    width: fit-content;
+  }
+  
+  .order-list-succeed-educational-xxx-5 {
+    color: var(--pink);
+    font-family: var(--font-family-noto_sans_thai);
+    font-size: var(--font-size-20);
+    font-weight: 600;
+  }
+  
+  .order-list-succeed-educational-footer {
+    align-items: flex-start;
+    background-color: var(--main);
+    display: flex;
+    flex-direction: row;
+    flex-shrink: 1;
+    height: 76px;
+    justify-content: flex-start;
+    margin-top: 90px;
+    padding: 22px 552px;
+    width: 1440px;
+  }
+  
+  .order-list-succeed-educational-copyright-2024 {
+    color: var(--white);
+    font-family: var(--font-family-noto_sans_thai);
+    font-size: var(--font-size-20);
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: normal;
+    margin-left: 1px;
+    min-height: 30px;
+  }
+  
+  .order-list-succeed-educational-frame-93-3 {
+    flex-direction: column;
+    position: relative;
+  }
+  
+  .order-list-succeed-educational-icon {
+    height: 34px;
+    position: relative;
+    width: 34px;
+  }
+  
+  .order-list-succeed-educational-navbar-link-text {
+    letter-spacing: 0;
+    line-height: normal;
+    margin-top: -1.00px;
+    position: relative;
+    width: fit-content;
+  }
+  
+  .order-list-succeed-educational-text-4 {
+    letter-spacing: 0;
+    line-height: normal;
+    position: relative;
+  }
+  
+  .order-list-succeed-educational-xxx-6 {
+    letter-spacing: 0;
+    line-height: normal;
+    margin-top: -1.00px;
+    position: relative;
+    width: fit-content;
   }
   
 /* #endregion */
-/* #region General Styles */
+
+/* #region order-list-cancel-educational */
+
+.order-list-cancel-educational {
+    align-items: center;
+    background-color: var(--white);
+    display: flex;
+    flex-direction: column;
+    height: 1471px;
+    width: 1440px;
+  }
+  
+  .order-list-cancel-educational-header {
+    align-items: center;
+    background-color: var(--main);
+    display: flex;
+    flex-direction: row;
+    flex-shrink: 1;
+    height: 80px;
+    justify-content: flex-end;
+    min-width: 1440px;
+    padding: 6px 87.8px;
+    width: auto;
+  }
+  
+  .order-list-cancel-educational-logo-1 {
+    align-self: flex-end;
+    height: 60px;
+    object-fit: cover;
+    width: 68px;
+  }
+  
+  .order-list-cancel-educational-navbar {
+    align-items: center;
+    display: inline-flex;
+    gap: 40px;
+    margin-bottom: 4.0px;
+    margin-left: 41px;
+    position: relative;
+  }
+  
+  .order-list-cancel-educational-navbar-link-text-4 {
+    text-decoration: underline;
+  }
+  
+  .order-list-cancel-educational-frame-38253 {
+    align-items: center;
+    display: inline-flex;
+    gap: 56px;
+    justify-content: flex-end;
+    margin-bottom: 5.0px;
+    margin-left: 220px;
+    position: relative;
+  }
+  
+  .order-list-cancel-educational-group {
+    height: 35px;
+    position: relative;
+    width: 31.17px;
+  }
+  
+  .order-list-cancel-educational-vector-1 {
+    height: 35px;
+    position: relative;
+    width: 35px;
+  }
+  
+  .order-list-cancel-educational-frame-38357 {
+    align-items: flex-start;
+    display: inline-flex;
+    gap: 32px;
+    margin-top: 70px;
+    position: relative;
+  }
+  
+  .order-list-cancel-educational-frame-38357-1 {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    position: relative;
+    width: 316px;
+  }
+  
+  .order-list-cancel-educational-frame-38354 {
+    align-items: flex-start;
+    align-self: stretch;
+    display: flex;
+    flex: 0 0 auto;
+    flex-direction: column;
+    gap: 10px;
+    position: relative;
+    width: 100%;
+  }
+  
+  .order-list-cancel-educational-frame-38352 {
+    align-items: flex-start;
+    align-self: stretch;
+    display: flex;
+    flex: 0 0 auto;
+    flex-direction: column;
+    gap: 16px;
+    position: relative;
+    width: 100%;
+  }
+  
+  .order-list-cancel-educational-frame-38350 {
+    align-items: center;
+    align-self: stretch;
+    display: flex;
+    flex: 0 0 auto;
+    gap: 32px;
+    position: relative;
+    width: 100%;
+  }
+  
+  .order-list-cancel-educational-frame-383 {
+    align-items: center;
+    display: inline-flex;
+    flex: 0 0 auto;
+    gap: 16px;
+    position: relative;
+  }
+  
+  .order-list-cancel-educational-text {
+    letter-spacing: 0;
+    line-height: normal;
+    margin-top: -0.50px;
+    position: relative;
+    text-align: center;
+    width: fit-content;
+  }
+  
+  .order-list-cancel-educational-frame-38348 {
+    align-items: center;
+    display: inline-flex;
+    flex: 0 0 auto;
+    gap: 24px;
+    position: relative;
+  }
+  
+  .order-list-cancel-educational-arrow-down-01 {
+    height: 24px;
+    position: relative;
+    width: 24px;
+  }
+  
+  .order-list-cancel-educational-frame-38351 {
+    align-items: center;
+    display: flex;
+    flex: 0 0 auto;
+    flex-direction: column;
+    gap: 8px;
+    padding: 0px 50px;
+    position: relative;
+    width: 251px;
+  }
+  
+  .order-list-cancel-educational-text-7 {
+    align-self: stretch;
+    color: var(--bkack);
+    font-family: var(--font-family-noto_sans_thai);
+    font-size: var(--font-size-20);
+    font-weight: 400;
+    margin-top: -1.00px;
+  }
+  
+  .order-list-cancel-educational-text-8 {
+    align-self: stretch;
+    color: var(--bkack);
+    font-family: var(--font-family-noto_sans_thai);
+    font-size: var(--font-size-20);
+    font-weight: 400;
+  }
+  
+  .order-list-cancel-educational-vector {
+    height: 1px;
+    object-fit: cover;
+    position: relative;
+    width: 316px;
+  }
+  
+  .order-list-cancel-educational-checkmark-square-04 {
+    height: 34px;
+    position: relative;
+    width: 34px;
+  }
+  
+  .order-list-cancel-educational-text-10 {
+    color: var(--pink);
+    font-family: var(--font-family-noto_sans_thai);
+    font-size: var(--font-size-22);
+    font-weight: 600;
+    margin-top: -0.50px;
+    text-align: center;
+    width: fit-content;
+  }
+  
+  .order-list-cancel-educational-vector-22 {
+    height: 1px;
+    object-fit: cover;
+    position: relative;
+    width: 316px;
+  }
+  
+  .order-list-cancel-educational-frame-38356 {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+    position: relative;
+    width: 892px;
+  }
+  
+  .order-list-cancel-educational-frame-38359 {
+    align-items: flex-start;
+    align-self: stretch;
+    display: flex;
+    flex: 0 0 auto;
+    flex-direction: column;
+    gap: 11px;
+    position: relative;
+    width: 100%;
+  }
+  
+  .order-list-cancel-educational-frame-38344 {
+    align-items: center;
+    align-self: stretch;
+    display: flex;
+    flex: 0 0 auto;
+    gap: 48px;
+    position: relative;
+    width: 100%;
+  }
+  
+  .order-list-cancel-educational-text-1 {
+    cursor: pointer;
+    margin-top: -1.00px;
+    width: fit-content;
+  }
+  
+  .order-list-cancel-educational-frame-38343 {
+    align-self: stretch;
+    height: 6px;
+    margin-bottom: -3.00px;
+    margin-right: -1.00px;
+    position: relative;
+    width: 100%;
+  }
+  
+  .order-list-cancel-educational-frame-20 {
+    align-items: center;
+    align-self: stretch;
+    background-color: #f2f2f2;
+    border: 1px solid;
+    border-color: var(--black);
+    border-radius: 8px;
+    display: flex;
+    gap: 24px;
+    height: 55px;
+    overflow: hidden;
+    padding: 8px 16px;
+    position: relative;
+    width: 100%;
+  }
+  
+  .order-list-cancel-educational-icon-magnifying-glass-searching-glass {
+    height: 30px;
+    position: relative;
+    width: 30px;
+  }
+  
+  .order-list-cancel-educational-text_input {
+    background-color: transparent;
+    border: 0;
+    color: #707070;
+    flex: 1;
+    flex-grow: 1;
+    font-family: var(--font-family-noto_sans_thai);
+    font-size: var(--font-size-18);
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: normal;
+    padding: 0;
+    position: relative;
+  }
+  
+  .order-list-cancel-educational-text_input::placeholder {
+    color: #70707099;
+  }
+  
+  .order-list-cancel-educational-frame {
+    align-items: flex-start;
+    align-self: stretch;
+    border: 1px solid;
+    border-color: var(--black);
+    border-radius: 20px;
+    display: flex;
+    flex: 0 0 auto;
+    flex-direction: column;
+    gap: 24px;
+    overflow: hidden;
+    padding: 25px 24px;
+    position: relative;
+    width: 100%;
+  }
+  
+  .order-list-cancel-educational-frame-38339 {
+    align-items: center;
+    align-self: stretch;
+    display: flex;
+    flex: 0 0 auto;
+    gap: 64px;
+    position: relative;
+    width: 100%;
+  }
+  
+  .order-list-cancel-educational-xxxxxxxx {
+    letter-spacing: 0;
+    line-height: normal;
+    position: relative;
+    width: 314px;
+  }
+  
+  .order-list-cancel-educational-frame-38341 {
+    align-items: center;
+    display: flex;
+    gap: 16px;
+    justify-content: flex-end;
+    position: relative;
+    width: 466px;
+  }
+  
+  .order-list-cancel-educational-text-17 {
+    cursor: pointer;
+    text-align: right;
+    width: fit-content;
+  }
+  
+  .order-list-cancel-educational-button {
+    align-items: center;
+    background-color: var(--red);
+    border-radius: 10px;
+    cursor: pointer;
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+    overflow: hidden;
+    padding: 8px 24px;
+    position: relative;
+    width: 153px;
+  }
+  
+  .order-list-cancel-educational-text_label {
+    letter-spacing: 0;
+    line-height: normal;
+    margin-top: -1.00px;
+    position: relative;
+    text-align: center;
+    width: fit-content;
+  }
+  
+  .order-list-cancel-educational-line-6 {
+    align-self: stretch;
+    height: 1px;
+    object-fit: cover;
+    position: relative;
+    width: 100%;
+  }
+  
+  .order-list-cancel-educational-frame-38 {
+    align-items: center;
+    align-self: stretch;
+    display: flex;
+    gap: 16px;
+    height: 108px;
+    position: relative;
+    width: 100%;
+  }
+  
+  .order-list-cancel-educational-frame-95 {
+    background-color: var(--gallery);
+    border: 1px solid;
+    border-color: var(--delta);
+    border-radius: 8.66px;
+    height: 110px;
+    margin-bottom: -1.00px;
+    margin-top: -1.00px;
+    overflow: hidden;
+    position: relative;
+    width: 110px;
+  }
+  
+  .order-list-cancel-educational-image-8 {
+    height: 110px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 110px;
+  }
+  
+  .order-list-cancel-educational-frame-94 {
+    align-items: center;
+    display: flex;
+    flex: 1;
+    flex-grow: 1;
+    gap: 16px;
+    height: 108px;
+    justify-content: space-around;
+    position: relative;
+  }
+  
+  .order-list-cancel-educational-frame-94-1 {
+    align-items: center;
+    display: flex;
+    flex: 1;
+    flex-grow: 1;
+    gap: 52px;
+    margin-bottom: -1.00px;
+    margin-top: -1.00px;
+    position: relative;
+  }
+  
+  .order-list-cancel-educational-frame-93 {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    height: 110px;
+    position: relative;
+    width: 281px;
+  }
+  
+  .order-list-cancel-educational-text-2 {
+    margin-right: -155.00px;
+    margin-top: -1.00px;
+    width: fit-content;
+  }
+  
+  .order-list-cancel-educational-frame-93-1 {
+    align-items: flex-start;
+    display: inline-flex;
+    flex: 0 0 auto;
+    gap: 4px;
+    margin-right: -85.00px;
+  }
+  
+  .order-list-cancel-educational-frame-38433 {
+    align-items: flex-start;
+    display: inline-flex;
+    flex: 0 0 auto;
+    gap: 16px;
+    position: relative;
+  }
+  
+  .order-list-cancel-educational-frame-9 {
+    align-items: flex-start;
+    display: inline-flex;
+    flex: 0 0 auto;
+    flex-direction: column;
+    gap: 4px;
+    position: relative;
+  }
+  
+  .order-list-cancel-educational-text-19 {
+    margin-top: -1.00px;
+    width: fit-content;
+  }
+  
+  .order-list-cancel-educational-text-20 {
+    margin-top: -1.00px;
+    width: fit-content;
+  }
+  
+  .order-list-cancel-educational-text-21 {
+    margin-top: -1.00px;
+    width: fit-content;
+  }
+  
+  .order-list-cancel-educational-frame-93-2 {
+    align-items: flex-end;
+    display: flex;
+    gap: 6px;
+    height: 110px;
+    width: 361px;
+  }
+  
+  .order-list-cancel-educational-xxx {
+    letter-spacing: 0;
+    line-height: normal;
+    margin-top: -1.00px;
+    position: relative;
+    width: fit-content;
+  }
+  
+  .order-list-cancel-educational-text-3 {
+    margin-right: -99.00px;
+    margin-top: -1.00px;
+    width: fit-content;
+  }
+  
+  .order-list-cancel-educational-frame-38433-1 {
+    align-items: flex-start;
+    display: inline-flex;
+    flex: 0 0 auto;
+    gap: 16px;
+    margin-right: -85.00px;
+    position: relative;
+  }
+  
+  .order-list-cancel-educational-text-23 {
+    margin-top: -1.00px;
+    width: fit-content;
+  }
+  
+  .order-list-cancel-educational-text-24 {
+    margin-top: -1.00px;
+    width: fit-content;
+  }
+  
+  .order-list-cancel-educational-text-25 {
+    margin-top: -1.00px;
+    width: fit-content;
+  }
+  
+  .order-list-cancel-educational-frame-38341-1 {
+    align-items: flex-end;
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    height: 33px;
+    position: relative;
+    width: 100%;
+  }
+  
+  .order-list-cancel-educational-grand-total {
+    letter-spacing: 0;
+    line-height: normal;
+    position: relative;
+    width: fit-content;
+  }
+  
+  .order-list-cancel-educational-xxx-2 {
+    color: var(--pink);
+    font-family: var(--font-family-noto_sans_thai);
+    font-size: var(--font-size-20);
+    font-weight: 600;
+  }
+  
+  .order-list-cancel-educational-text-26 {
+    text-align: right;
+    width: 142px;
+  }
+  
+  .order-list-cancel-educational-button-1 {
+    align-items: center;
+    background-color: var(--red);
+    border-radius: 10px;
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+    overflow: hidden;
+    padding: 8px 24px;
+    position: relative;
+    width: 153px;
+  }
+  
+  .order-list-cancel-educational-line-6-1 {
+    align-self: stretch;
+    height: 1px;
+    object-fit: cover;
+    position: relative;
+    width: 100%;
+  }
+  
+  .order-list-cancel-educational-text-28 {
+    margin-top: -1.00px;
+    width: fit-content;
+  }
+  
+  .order-list-cancel-educational-text-29 {
+    margin-top: -1.00px;
+    width: fit-content;
+  }
+  
+  .order-list-cancel-educational-text-30 {
+    margin-top: -1.00px;
+    width: fit-content;
+  }
+  
+  .order-list-cancel-educational-text-32 {
+    margin-top: -1.00px;
+    width: fit-content;
+  }
+  
+  .order-list-cancel-educational-text-33 {
+    margin-top: -1.00px;
+    width: fit-content;
+  }
+  
+  .order-list-cancel-educational-text-34 {
+    margin-top: -1.00px;
+    width: fit-content;
+  }
+  
+  .order-list-cancel-educational-xxx-5 {
+    color: var(--pink);
+    font-family: var(--font-family-noto_sans_thai);
+    font-size: var(--font-size-20);
+    font-weight: 600;
+  }
+  
+  .order-list-cancel-educational-footer {
+    align-items: flex-start;
+    background-color: var(--main);
+    display: flex;
+    flex-direction: row;
+    flex-shrink: 1;
+    height: 76px;
+    justify-content: flex-start;
+    margin-top: 92px;
+    padding: 22px 552px;
+    width: 1440px;
+  }
+  
+  .order-list-cancel-educational-copyright-2024 {
+    color: var(--white);
+    font-family: var(--font-family-noto_sans_thai);
+    font-size: var(--font-size-20);
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: normal;
+    margin-left: 1px;
+    min-height: 30px;
+  }
+  
+  .order-list-cancel-educational-frame-93-3 {
+    flex-direction: column;
+    position: relative;
+  }
+  
+  .order-list-cancel-educational-icon {
+    height: 34px;
+    position: relative;
+    width: 34px;
+  }
+  
+  .order-list-cancel-educational-navbar-link-text {
+    letter-spacing: 0;
+    line-height: normal;
+    margin-top: -1.00px;
+    position: relative;
+    width: fit-content;
+  }
+  
+  .order-list-cancel-educational-text-4 {
+    letter-spacing: 0;
+    line-height: normal;
+    position: relative;
+  }
+  
+  .order-list-cancel-educational-xxx-6 {
+    letter-spacing: 0;
+    line-height: normal;
+    margin-top: -1.00px;
+    position: relative;
+    width: fit-content;
+  }
+  
+/* #endregion */
+
+/* #region order-list-refund-educational */
+
+.order-list-refund-educational {
+    align-items: center;
+    background-color: var(--white);
+    display: flex;
+    flex-direction: column;
+    height: 1471px;
+    width: 1440px;
+  }
+  
+  .order-list-refund-educational-header {
+    align-items: center;
+    background-color: var(--main);
+    display: flex;
+    flex-direction: row;
+    flex-shrink: 1;
+    height: 80px;
+    justify-content: flex-end;
+    min-width: 1440px;
+    padding: 6px 87.8px;
+    width: auto;
+  }
+  
+  .order-list-refund-educational-logo-1 {
+    align-self: flex-end;
+    height: 60px;
+    object-fit: cover;
+    width: 68px;
+  }
+  
+  .order-list-refund-educational-navbar {
+    align-items: center;
+    display: inline-flex;
+    gap: 40px;
+    margin-bottom: 4.0px;
+    margin-left: 41px;
+    position: relative;
+  }
+  
+  .order-list-refund-educational-navbar-link-text-4 {
+    text-decoration: underline;
+  }
+  
+  .order-list-refund-educational-frame-38253 {
+    align-items: center;
+    display: inline-flex;
+    gap: 56px;
+    justify-content: flex-end;
+    margin-bottom: 5.0px;
+    margin-left: 220px;
+    position: relative;
+  }
+  
+  .order-list-refund-educational-group {
+    height: 35px;
+    position: relative;
+    width: 31.17px;
+  }
+  
+  .order-list-refund-educational-vector-1 {
+    height: 35px;
+    position: relative;
+    width: 35px;
+  }
+  
+  .order-list-refund-educational-overlap-group {
+    height: 1134px;
+    margin-top: 70px;
+    position: relative;
+    width: 1240px;
+  }
+  
+  .order-list-refund-educational-frame-38357 {
+    align-items: flex-start;
+    display: inline-flex;
+    gap: 32px;
+    left: 0;
+    position: absolute;
+    top: 0;
+  }
+  
+  .order-list-refund-educational-frame-38357-1 {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    position: relative;
+    width: 316px;
+  }
+  
+  .order-list-refund-educational-frame-38354 {
+    align-items: flex-start;
+    align-self: stretch;
+    display: flex;
+    flex: 0 0 auto;
+    flex-direction: column;
+    gap: 10px;
+    position: relative;
+    width: 100%;
+  }
+  
+  .order-list-refund-educational-frame-38352 {
+    align-items: flex-start;
+    align-self: stretch;
+    display: flex;
+    flex: 0 0 auto;
+    flex-direction: column;
+    gap: 16px;
+    position: relative;
+    width: 100%;
+  }
+  
+  .order-list-refund-educational-frame-38350 {
+    align-items: center;
+    align-self: stretch;
+    display: flex;
+    flex: 0 0 auto;
+    gap: 32px;
+    position: relative;
+    width: 100%;
+  }
+  
+  .order-list-refund-educational-frame-383 {
+    align-items: center;
+    display: inline-flex;
+    flex: 0 0 auto;
+    gap: 16px;
+    position: relative;
+  }
+  
+  .order-list-refund-educational-text {
+    letter-spacing: 0;
+    line-height: normal;
+    margin-top: -0.50px;
+    position: relative;
+    text-align: center;
+    width: fit-content;
+  }
+  
+  .order-list-refund-educational-frame-38348 {
+    align-items: center;
+    display: inline-flex;
+    flex: 0 0 auto;
+    gap: 24px;
+    position: relative;
+  }
+  
+  .order-list-refund-educational-arrow-down-01 {
+    height: 24px;
+    position: relative;
+    width: 24px;
+  }
+  
+  .order-list-refund-educational-frame-38351 {
+    align-items: center;
+    display: flex;
+    flex: 0 0 auto;
+    flex-direction: column;
+    gap: 8px;
+    padding: 0px 50px;
+    position: relative;
+    width: 251px;
+  }
+  
+  .order-list-refund-educational-text-7 {
+    align-self: stretch;
+    color: var(--bkack);
+    font-family: var(--font-family-noto_sans_thai);
+    font-size: var(--font-size-20);
+    font-weight: 400;
+    margin-top: -1.00px;
+  }
+  
+  .order-list-refund-educational-text-8 {
+    align-self: stretch;
+    color: var(--bkack);
+    font-family: var(--font-family-noto_sans_thai);
+    font-size: var(--font-size-20);
+    font-weight: 400;
+  }
+  
+  .order-list-refund-educational-vector {
+    height: 1px;
+    object-fit: cover;
+    position: relative;
+    width: 316px;
+  }
+  
+  .order-list-refund-educational-checkmark-square-04 {
+    height: 34px;
+    position: relative;
+    width: 34px;
+  }
+  
+  .order-list-refund-educational-text-10 {
+    color: var(--pink);
+    font-family: var(--font-family-noto_sans_thai);
+    font-size: var(--font-size-22);
+    font-weight: 600;
+    margin-top: -0.50px;
+    text-align: center;
+    width: fit-content;
+  }
+  
+  .order-list-refund-educational-vector-22 {
+    height: 1px;
+    object-fit: cover;
+    position: relative;
+    width: 316px;
+  }
+  
+  .order-list-refund-educational-frame-38356 {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+    position: relative;
+    width: 892px;
+  }
+  
+  .order-list-refund-educational-frame-38359 {
+    align-items: flex-start;
+    align-self: stretch;
+    display: flex;
+    flex: 0 0 auto;
+    flex-direction: column;
+    gap: 11px;
+    position: relative;
+    width: 100%;
+  }
+  
+  .order-list-refund-educational-frame-38344 {
+    align-items: center;
+    align-self: stretch;
+    display: flex;
+    flex: 0 0 auto;
+    gap: 48px;
+    position: relative;
+    width: 100%;
+  }
+  
+  .order-list-refund-educational-text-1 {
+    cursor: pointer;
+    margin-top: -1.00px;
+    width: fit-content;
+  }
+  
+  .order-list-refund-educational-frame-38343 {
+    align-self: stretch;
+    height: 3px;
+    margin-bottom: -1.50px;
+    margin-right: -1.00px;
+    position: relative;
+    width: 100%;
+  }
+  
+  .order-list-refund-educational-frame-20 {
+    align-items: center;
+    align-self: stretch;
+    background-color: #f2f2f2;
+    border: 1px solid;
+    border-color: var(--black);
+    border-radius: 8px;
+    display: flex;
+    gap: 24px;
+    height: 55px;
+    overflow: hidden;
+    padding: 8px 16px;
+    position: relative;
+    width: 100%;
+  }
+  
+  .order-list-refund-educational-icon-magnifying-glass-searching-glass {
+    height: 30px;
+    position: relative;
+    width: 30px;
+  }
+  
+  .order-list-refund-educational-text_input {
+    background-color: transparent;
+    border: 0;
+    color: #707070;
+    flex: 1;
+    flex-grow: 1;
+    font-family: var(--font-family-noto_sans_thai);
+    font-size: var(--font-size-18);
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: normal;
+    padding: 0;
+    position: relative;
+  }
+  
+  .order-list-refund-educational-text_input::placeholder {
+    color: #70707099;
+  }
+  
+  .order-list-refund-educational-frame {
+    align-items: flex-start;
+    align-self: stretch;
+    border: 1px solid;
+    border-color: var(--black);
+    border-radius: 20px;
+    display: flex;
+    flex: 0 0 auto;
+    flex-direction: column;
+    gap: 24px;
+    overflow: hidden;
+    padding: 25px 24px;
+    position: relative;
+    width: 100%;
+  }
+  
+  .order-list-refund-educational-frame-38339 {
+    align-items: center;
+    align-self: stretch;
+    display: flex;
+    flex: 0 0 auto;
+    gap: 64px;
+    position: relative;
+    width: 100%;
+  }
+  
+  .order-list-refund-educational-xxxxxxxx {
+    letter-spacing: 0;
+    line-height: normal;
+    position: relative;
+    width: 314px;
+  }
+  
+  .order-list-refund-educational-frame-38341 {
+    align-items: center;
+    display: flex;
+    gap: 16px;
+    justify-content: flex-end;
+    position: relative;
+    width: 466px;
+  }
+  
+  .order-list-refund-educational-text-17 {
+    cursor: pointer;
+    text-align: right;
+    width: fit-content;
+  }
+  
+  .order-list-refund-educational-button {
+    align-items: center;
+    background-color: #ffbe33;
+    border-radius: 10px;
+    /* cursor: pointer; */
+    display: inline-flex;
+    flex: 0 0 auto;
+    gap: 8px;
+    justify-content: center;
+    overflow: hidden;
+    padding: 8px 24px;
+    position: relative;
+  }
+  
+  .order-list-refund-educational-text_label {
+    letter-spacing: 0;
+    line-height: normal;
+    margin-top: -1.00px;
+    position: relative;
+    text-align: center;
+    width: fit-content;
+  }
+  
+  .order-list-refund-educational-line-6 {
+    align-self: stretch;
+    height: 1px;
+    object-fit: cover;
+    position: relative;
+    width: 100%;
+  }
+  
+  .order-list-refund-educational-frame-38 {
+    align-items: center;
+    align-self: stretch;
+    display: flex;
+    gap: 16px;
+    height: 108px;
+    position: relative;
+    width: 100%;
+  }
+  
+  .order-list-refund-educational-frame-95 {
+    background-color: var(--gallery);
+    border: 1px solid;
+    border-color: var(--delta);
+    border-radius: 8.66px;
+    height: 110px;
+    margin-bottom: -1.00px;
+    margin-top: -1.00px;
+    overflow: hidden;
+    position: relative;
+    width: 110px;
+  }
+  
+  .order-list-refund-educational-image-8 {
+    height: 110px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 110px;
+  }
+  
+  .order-list-refund-educational-frame-94 {
+    align-items: center;
+    display: flex;
+    flex: 1;
+    flex-grow: 1;
+    gap: 16px;
+    height: 108px;
+    justify-content: space-around;
+    position: relative;
+  }
+  
+  .order-list-refund-educational-frame-94-1 {
+    align-items: center;
+    display: flex;
+    flex: 1;
+    flex-grow: 1;
+    gap: 52px;
+    margin-bottom: -1.00px;
+    margin-top: -1.00px;
+    position: relative;
+  }
+  
+  .order-list-refund-educational-frame-93 {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    height: 110px;
+    position: relative;
+    width: 281px;
+  }
+  
+  .order-list-refund-educational-text-2 {
+    margin-right: -155.00px;
+    margin-top: -1.00px;
+    width: fit-content;
+  }
+  
+  .order-list-refund-educational-frame-93-1 {
+    align-items: flex-start;
+    display: inline-flex;
+    flex: 0 0 auto;
+    gap: 4px;
+    margin-right: -85.00px;
+  }
+  
+  .order-list-refund-educational-frame-38433 {
+    align-items: flex-start;
+    display: inline-flex;
+    flex: 0 0 auto;
+    gap: 16px;
+    position: relative;
+  }
+  
+  .order-list-refund-educational-frame-9 {
+    align-items: flex-start;
+    display: inline-flex;
+    flex: 0 0 auto;
+    flex-direction: column;
+    gap: 4px;
+    position: relative;
+  }
+  
+  .order-list-refund-educational-text-19 {
+    margin-top: -1.00px;
+    width: fit-content;
+  }
+  
+  .order-list-refund-educational-text-20 {
+    margin-top: -1.00px;
+    width: fit-content;
+  }
+  
+  .order-list-refund-educational-text-21 {
+    margin-top: -1.00px;
+    width: fit-content;
+  }
+  
+  .order-list-refund-educational-frame-93-2 {
+    align-items: flex-end;
+    display: flex;
+    gap: 6px;
+    height: 110px;
+    width: 361px;
+  }
+  
+  .order-list-refund-educational-xxx {
+    letter-spacing: 0;
+    line-height: normal;
+    margin-top: -1.00px;
+    position: relative;
+    width: fit-content;
+  }
+  
+  .order-list-refund-educational-text-3 {
+    margin-right: -99.00px;
+    margin-top: -1.00px;
+    width: fit-content;
+  }
+  
+  .order-list-refund-educational-frame-38433-1 {
+    align-items: flex-start;
+    display: inline-flex;
+    flex: 0 0 auto;
+    gap: 16px;
+    margin-right: -85.00px;
+    position: relative;
+  }
+  
+  .order-list-refund-educational-text-23 {
+    margin-top: -1.00px;
+    width: fit-content;
+  }
+  
+  .order-list-refund-educational-text-24 {
+    margin-top: -1.00px;
+    width: fit-content;
+  }
+  
+  .order-list-refund-educational-text-25 {
+    margin-top: -1.00px;
+    width: fit-content;
+  }
+  
+  .order-list-refund-educational-frame-38341-1 {
+    align-items: flex-end;
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    height: 33px;
+    position: relative;
+    width: 100%;
+  }
+  
+  .order-list-refund-educational-grand-total {
+    letter-spacing: 0;
+    line-height: normal;
+    position: relative;
+    width: fit-content;
+  }
+  
+  .order-list-refund-educational-xxx-2 {
+    color: var(--pink);
+    font-family: var(--font-family-noto_sans_thai);
+    font-size: var(--font-size-20);
+    font-weight: 600;
+  }
+  
+  .order-list-refund-educational-text-26 {
+    text-align: right;
+    width: 142px;
+  }
+  
+  .order-list-refund-educational-button-1 {
+    align-items: center;
+    background-color: var(--green);
+    border-radius: 10px;
+    display: inline-flex;
+    flex: 0 0 auto;
+    gap: 8px;
+    justify-content: center;
+    overflow: hidden;
+    padding: 8px 24px;
+    position: relative;
+  }
+  
+  .order-list-refund-educational-line-6-1 {
+    align-self: stretch;
+    height: 1px;
+    object-fit: cover;
+    position: relative;
+    width: 100%;
+  }
+  
+  .order-list-refund-educational-text-28 {
+    margin-top: -1.00px;
+    width: fit-content;
+  }
+  
+  .order-list-refund-educational-text-29 {
+    margin-top: -1.00px;
+    width: fit-content;
+  }
+  
+  .order-list-refund-educational-text-30 {
+    margin-top: -1.00px;
+    width: fit-content;
+  }
+  
+  .order-list-refund-educational-text-32 {
+    margin-top: -1.00px;
+    width: fit-content;
+  }
+  
+  .order-list-refund-educational-text-33 {
+    margin-top: -1.00px;
+    width: fit-content;
+  }
+  
+  .order-list-refund-educational-text-34 {
+    margin-top: -1.00px;
+    width: fit-content;
+  }
+  
+  .order-list-refund-educational-xxx-5 {
+    color: var(--pink);
+    font-family: var(--font-family-noto_sans_thai);
+    font-size: var(--font-size-20);
+    font-weight: 600;
+  }
+  
+  .order-list-refund-educational-vector-18 {
+    height: 6px;
+    left: 860px;
+    position: absolute;
+    top: 39px;
+    width: 141px;
+  }
+
+  .order-list-refund-educational-vector-18-2 {
+    height: 6px;
+    left: 345px;
+    position: absolute;
+    top: 39px;
+    width: 100px;
+  }
+  
+  .order-list-refund-educational-footer {
+    align-items: flex-start;
+    background-color: var(--main);
+    display: flex;
+    flex-direction: row;
+    flex-shrink: 1;
+    height: 76px;
+    justify-content: flex-start;
+    margin-top: 90px;
+    padding: 22px 552px;
+    width: 1440px;
+  }
+  
+  .order-list-refund-educational-copyright-2024 {
+    color: var(--white);
+    font-family: var(--font-family-noto_sans_thai);
+    font-size: var(--font-size-20);
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: normal;
+    margin-left: 1px;
+    min-height: 30px;
+  }
+  
+  .order-list-refund-educational-frame-93-3 {
+    flex-direction: column;
+    position: relative;
+  }
+  
+  .order-list-refund-educational-icon {
+    height: 34px;
+    position: relative;
+    width: 34px;
+  }
+  
+  .order-list-refund-educational-navbar-link-text {
+    letter-spacing: 0;
+    line-height: normal;
+    margin-top: -1.00px;
+    position: relative;
+    width: fit-content;
+  }
+  
+  .order-list-refund-educational-text-4 {
+    letter-spacing: 0;
+    line-height: normal;
+    position: relative;
+  }
+  
+  .order-list-refund-educational-xxx-6 {
+    letter-spacing: 0;
+    line-height: normal;
+    margin-top: -1.00px;
+    position: relative;
+    width: fit-content;
+  }
+  
+/* #endregion */
+
+/* #region order-list-detail-educational */
+
+.order-list-detail-educational {
+    align-items: flex-start;
+    background-color: var(--white);
+    display: flex;
+    flex-direction: column;
+    height: 1673px;
+    width: 1440px;
+  }
+  
+  .order-list-detail-educational-header {
+    align-items: center;
+    background-color: var(--main);
+    display: flex;
+    flex-direction: row;
+    flex-shrink: 1;
+    height: 80px;
+    justify-content: flex-end;
+    min-width: 1440px;
+    padding: 6px 87.8px;
+    width: auto;
+  }
+  
+  .order-list-detail-educational-logo-1 {
+    align-self: flex-end;
+    height: 60px;
+    object-fit: cover;
+    width: 68px;
+  }
+  
+  .order-list-detail-educational-navbar {
+    align-items: center;
+    display: inline-flex;
+    gap: 40px;
+    margin-bottom: 4.0px;
+    margin-left: 41px;
+    position: relative;
+  }
+  
+  .order-list-detail-educational-navbar-link-text-3 {
+    text-decoration: underline;
+  }
+  
+  .order-list-detail-educational-frame-38253 {
+    align-items: center;
+    display: inline-flex;
+    gap: 56px;
+    justify-content: flex-end;
+    margin-bottom: 5.0px;
+    margin-left: 220px;
+    position: relative;
+  }
+  
+  .order-list-detail-educational-group {
+    height: 35px;
+    position: relative;
+    width: 31.17px;
+  }
+  
+  .order-list-detail-educational-vector {
+    height: 35px;
+    position: relative;
+    width: 35px;
+  }
+  
+  .order-list-detail-educational-flex-row {
+    align-items: flex-start;
+    display: flex;
+    gap: 324px;
+    height: 90px;
+    margin-left: 100px;
+    margin-top: 62px;
+    min-width: 762px;
+  }
+  
+  .order-list-detail-educational-button {
+    align-items: center;
+    background-color: var(--pink);
+    border-radius: 10px;
+    cursor: pointer;
+    display: inline-flex;
+    gap: 8px;
+    justify-content: center;
+    overflow: hidden;
+    padding: 8px 24px;
+    position: relative;
+  }
+  
+  .order-list-detail-educational-icon-back {
+    height: 24px;
+    position: relative;
+    width: 24px;
+  }
+  
+  .order-list-detail-educational-text_label {
+    color: var(--main);
+    font-family: var(--font-family-noto_sans_thai);
+    font-size: var(--font-size-20);
+    font-weight: 600;
+    letter-spacing: 0;
+    line-height: normal;
+    margin-top: -1.00px;
+    position: relative;
+    text-align: center;
+    width: fit-content;
+  }
+  
+  .order-list-detail-educational-text-1-1 {
+    align-self: flex-end;
+    color: var(--bkack);
+    font-family: var(--font-family-noto_sans_thai);
+    font-size: var(--font-size-32);
+    font-weight: 500;
+    letter-spacing: 0;
+    line-height: 48.0px;
+    min-width: 284px;
+    text-align: center;
+    white-space: nowrap;
+  }
+  
+  .order-list-detail-educational-frame-38489 {
+    align-items: flex-end;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    margin-left: 12.0px;
+    margin-top: 63px;
+    position: relative;
+    width: 1252px;
+  }
+  
+  .order-list-detail-educational-frame-28 {
+    align-items: flex-start;
+    align-self: stretch;
+    border: 1px solid;
+    border-color: #00000033;
+    border-radius: 20px;
+    display: flex;
+    flex: 0 0 auto;
+    flex-direction: column;
+    gap: 24px;
+    overflow: hidden;
+    padding: 25px 24px;
+    position: relative;
+    width: 100%;
+  }
+  
+  .order-list-detail-educational-frame-38339 {
+    align-items: center;
+    align-self: stretch;
+    display: flex;
+    flex: 0 0 auto;
+    gap: 783px;
+    position: relative;
+    width: 100%;
+  }
+  
+  .order-list-detail-educational-text-7 {
+    line-height: normal;
+    width: 150px;
+  }
+  
+  .order-list-detail-educational-frame-38426 {
+    align-items: center;
+    display: flex;
+    gap: 15px;
+    justify-content: flex-end;
+    position: relative;
+    width: 271px;
+  }
+  
+  .order-list-detail-educational-xxxxxxxx {
+    color: var(--bkack);
+    font-family: var(--font-family-noto_sans_thai);
+    font-size: var(--font-size-28);
+    font-weight: 500;
+    letter-spacing: 0;
+    line-height: 42.0px;
+    margin-top: -1.00px;
+    position: relative;
+    width: 121px;
+  }
+  
+  .order-list-detail-educational-button-1 {
+    background-color: var(--gray);
+    border: 1px solid;
+    border-color: var(--main);
+    border-radius: 10px;
+    display: inline-flex;
+    flex: 0 0 auto;
+    gap: 8px;
+    padding: 8px 24px;
+  }
+  
+  .order-list-detail-educational-text_label-1 {
+    color: var(--main);
+    font-family: var(--font-family-noto_sans_thai);
+    font-size: var(--font-size-16);
+    font-weight: 600;
+  }
+  
+  .order-list-detail-educational-frame-384 {
+    align-items: flex-start;
+    align-self: stretch;
+    display: flex;
+    flex: 0 0 auto;
+    gap: 24px;
+    position: relative;
+    width: 100%;
+  }
+  
+  .order-list-detail-educational-text {
+    letter-spacing: 0;
+    line-height: normal;
+    margin-top: -1.00px;
+    position: relative;
+    width: 314px;
+  }
+  
+  .order-list-detail-educational-text-1 {
+    line-height: normal;
+    margin-top: -1.00px;
+    text-align: right;
+    width: 866px;
+  }
+  
+  .order-list-detail-educational-line {
+    align-self: stretch;
+    height: 1px;
+    object-fit: cover;
+    position: relative;
+    width: 100%;
+  }
+  
+  .order-list-detail-educational-frame-38425 {
+    align-items: flex-start;
+    align-self: stretch;
+    display: flex;
+    flex: 0 0 auto;
+    flex-direction: column;
+    gap: 32px;
+    position: relative;
+    width: 100%;
+  }
+  
+  .order-list-detail-educational-frame-38 {
+    align-items: flex-start;
+    align-self: stretch;
+    display: flex;
+    flex: 0 0 auto;
+    flex-direction: column;
+    gap: 16px;
+    position: relative;
+    width: 100%;
+  }
+  
+  .order-list-detail-educational-frame-38268 {
+    align-items: flex-start;
+    align-self: stretch;
+    background-color: var(--white);
+    border: 1px solid;
+    border-color: var(--bkack);
+    border-radius: 20px;
+    display: flex;
+    flex: 0 0 auto;
+    flex-direction: column;
+    gap: 15px;
+    padding: 16px;
+    position: relative;
+    width: 100%;
+  }
+  
+  .order-list-detail-educational-frame-38408 {
+    height: 66px;
+    margin-right: -62.00px;
+    position: relative;
+    width: 1234px;
+  }
+  
+  .order-list-detail-educational-frame-38407 {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    position: relative;
+    width: 1153px;
+  }
+  
+  .order-list-detail-educational-frame-38269 {
+    align-items: flex-start;
+    display: flex;
+    flex: 0 0 auto;
+    gap: 15px;
+    position: relative;
+    width: 1094px;
+  }
+  
+  .order-list-detail-educational-text-15 {
+    line-height: normal;
+    margin-top: -1.00px;
+    width: fit-content;
+  }
+  
+  .order-list-detail-educational-text-16 {
+    line-height: normal;
+    margin-top: -1.00px;
+    width: fit-content;
+  }
+  
+  .order-list-detail-educational-address {
+    letter-spacing: 0;
+    line-height: normal;
+    position: relative;
+    width: 1094px;
+  }
+  
+  .order-list-detail-educational-frame-38420 {
+    align-items: flex-start;
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    height: 172px;
+    position: relative;
+    width: 100%;
+  }
+  
+  .order-list-detail-educational-frame-38268-1 {
+    align-items: flex-start;
+    align-self: stretch;
+    background-color: var(--white);
+    border: 1px solid;
+    border-color: var(--bkack);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    height: 132px;
+    padding: 16px;
+    position: relative;
+    width: 100%;
+  }
+  
+  .order-list-detail-educational-frame-38424 {
+    align-items: flex-start;
+    display: flex;
+    flex: 0 0 auto;
+    gap: 15px;
+    margin-bottom: -1.00px;
+    margin-right: -16.00px;
+    position: relative;
+    width: 1188px;
+  }
+  
+  .order-list-detail-educational-frame-38408-1 {
+    align-items: flex-start;
+    display: inline-flex;
+    flex: 0 0 auto;
+    flex-direction: column;
+    gap: 10px;
+    position: relative;
+  }
+  
+  .order-list-detail-educational-frame-38407-1 {
+    align-items: flex-start;
+    display: flex;
+    flex: 0 0 auto;
+    flex-direction: column;
+    gap: 15px;
+    position: relative;
+    width: 1121px;
+  }
+  
+  .order-list-detail-educational-xxx-express-th00000000000 {
+    letter-spacing: 0;
+    line-height: normal;
+    margin-top: -1.00px;
+    position: relative;
+    width: fit-content;
+  }
+  
+  .order-list-detail-educational-frame-38423 {
+    align-items: flex-start;
+    display: inline-flex;
+    flex: 0 0 auto;
+    flex-direction: column;
+    gap: 8px;
+    position: relative;
+  }
+  
+  .order-list-detail-educational-text-18 {
+    color: #dab200;
+    font-family: var(--font-family-noto_sans_thai);
+    font-size: var(--font-size-18);
+    font-weight: 600;
+    line-height: normal;
+    margin-top: -1.00px;
+    width: 1094px;
+  }
+  
+  .order-list-detail-educational-text-19 {
+    line-height: normal;
+    width: 1094px;
+  }
+  
+  .order-list-detail-educational-dropdown {
+    cursor: pointer;
+    height: 34px;
+    position: relative;
+    width: 34px;
+  }
+  
+  .order-list-detail-educational-frame-38-1 {
+    align-items: center;
+    align-self: stretch;
+    display: flex;
+    gap: 16px;
+    height: 108px;
+    position: relative;
+    width: 100%;
+  }
+  
+  .order-list-detail-educational-frame-95 {
+    background-color: #f0eeed;
+    border: 1px solid;
+    border-color: #a2a2a2;
+    border-radius: 8.66px;
+    height: 110px;
+    margin-bottom: -1.00px;
+    margin-top: -1.00px;
+    overflow: hidden;
+    position: relative;
+    width: 110px;
+  }
+  
+  .order-list-detail-educational-image-8 {
+    height: 110px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 110px;
+  }
+  
+  .order-list-detail-educational-frame-94 {
+    align-items: center;
+    display: flex;
+    flex: 1;
+    flex-grow: 1;
+    gap: 16px;
+    height: 108px;
+    justify-content: space-around;
+    position: relative;
+  }
+  
+  .order-list-detail-educational-frame-94-1 {
+    align-items: center;
+    display: flex;
+    flex: 1;
+    flex-grow: 1;
+    gap: 52px;
+    margin-bottom: -1.00px;
+    margin-top: -1.00px;
+    position: relative;
+  }
+  
+  .order-list-detail-educational-frame-93 {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    height: 110px;
+    position: relative;
+    width: 281px;
+  }
+  
+  .order-list-detail-educational-text-21 {
+    color: var(--bkack);
+    font-family: var(--font-family-noto_sans_thai);
+    font-size: var(--font-size-22);
+    font-weight: 600;
+    line-height: normal;
+    margin-right: -155.00px;
+    margin-top: -1.00px;
+    width: fit-content;
+  }
+  
+  .order-list-detail-educational-frame-9 {
+    align-items: flex-start;
+    display: inline-flex;
+    flex: 0 0 auto;
+    flex-direction: column;
+    gap: 4px;
+    position: relative;
+  }
+  
+  .order-list-detail-educational-text-2 {
+    color: transparent;
+    font-family: var(--font-family-noto_sans_thai);
+    font-size: var(--font-size-16);
+    font-weight: 400;
+    line-height: normal;
+    margin-top: -1.00px;
+    width: fit-content;
+  }
+  
+  .order-list-detail-educational-span1 {
+    color: #a1a1a1;
+  }
+  
+  .order-list-detail-educational-frame-93-1 {
+    height: 110px;
+    left: 333px;
+    position: absolute;
+    top: 0;
+    width: 361px;
+  }
+  
+  .order-list-detail-educational-frame-18 {
+    align-items: center;
+    background-color: #efefef;
+    border-radius: 62px;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    overflow: hidden;
+    padding: 12px 20px;
+    position: relative;
+    width: 129px;
+  }
+  
+  .order-list-detail-educational-number {
+    letter-spacing: 0;
+    line-height: normal;
+    margin-top: -1.00px;
+    position: relative;
+    width: fit-content;
+  }
+  
+  .order-list-detail-educational-text-23 {
+    line-height: normal;
+    margin-top: -1.00px;
+    width: fit-content;
+  }
+  
+  .order-list-detail-educational-text-24 {
+    line-height: normal;
+    margin-right: -99.00px;
+    margin-top: -1.00px;
+    width: fit-content;
+  }
+  
+  .order-list-detail-educational-frame-38433 {
+    align-items: flex-start;
+    display: inline-flex;
+    flex: 0 0 auto;
+    gap: 16px;
+    position: relative;
+  }
+  
+  .order-list-detail-educational-number-1 {
+    letter-spacing: 0;
+    line-height: normal;
+    margin-top: -1.00px;
+    position: relative;
+    width: fit-content;
+  }
+  
+  .order-list-detail-educational-text-26 {
+    line-height: normal;
+    margin-top: -1.00px;
+    width: fit-content;
+  }
+  
+  .order-list-detail-educational-frame-93-2 {
+    align-items: flex-end;
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    height: 33px;
+    position: relative;
+    width: 100%;
+  }
+  
+  .order-list-detail-educational-frame-38340 {
+    align-items: center;
+    display: inline-flex;
+    flex: 0 0 auto;
+    gap: 16px;
+    position: relative;
+  }
+  
+  .order-list-detail-educational-grand-total {
+    letter-spacing: 0;
+    line-height: normal;
+    margin-top: -1.00px;
+    position: relative;
+    width: 202px;
+  }
+  
+  .order-list-detail-educational-address-1 {
+    color: var(--pink);
+    font-family: var(--font-family-noto_sans_thai);
+    font-size: var(--font-size-20);
+    font-weight: 600;
+    letter-spacing: 0;
+    line-height: normal;
+    margin-top: -1.00px;
+    position: relative;
+    width: fit-content;
+  }
+  
+  .order-list-detail-educational-frame-38436 {
+    align-items: flex-end;
+    display: inline-flex;
+    flex: 0 0 auto;
+    gap: 16px;
+    position: relative;
+  }
+  
+  .order-list-detail-educational-frame-38435 {
+    align-items: flex-start;
+    display: inline-flex;
+    flex: 0 0 auto;
+    flex-direction: column;
+    gap: 16px;
+    position: relative;
+  }
+  
+  .order-list-detail-educational-text-27 {
+    line-height: normal;
+    margin-top: -1.00px;
+    width: 429px;
+  }
+  
+  .order-list-detail-educational-button-2 {
+    background-color: var(--pink);
+    border: 1px solid;
+    border-color: #dce0e5;
+    border-radius: 8px;
+    box-shadow: inset 0px -2px 2px #3030301a , inset 0px 7px 12px #ffffff14;
+    display: inline-flex;
+    gap: 6px;
+    height: 48px;
+    padding: 8px 16px;
+  }
+  
+  .order-list-detail-educational-icon-btn-left {
+    height: 20px;
+    position: relative;
+    width: 20px;
+  }
+  
+  .order-list-detail-educational-text-sm {
+    color: #14181f;
+    font-family: var(--font-family-noto_sans_thai);
+    font-size: var(--font-size-18);
+    font-weight: 500;
+    line-height: 25.2px;
+    white-space: nowrap;
+    width: fit-content;
+  }
+  
+  .order-list-detail-educational-frame-38379 {
+    align-items: center;
+    display: inline-flex;
+    flex: 0 0 auto;
+    gap: 24px;
+    position: relative;
+  }
+  
+  .order-list-detail-educational-button-3 {
+    background-color: var(--gray);
+    border-radius: 10px;
+    display: flex;
+    gap: 8px;
+    padding: 8px 24px;
+    width: 223px;
+  }
+  
+  .order-list-detail-educational-button-4 {
+    background-color: var(--main);
+    border-radius: 10px;
+    display: flex;
+    gap: 8px;
+    padding: 8px 24px;
+    width: 245px;
+  }
+  
+  .order-list-detail-educational-footer {
+    align-items: flex-start;
+    background-color: var(--main);
+    display: flex;
+    flex-direction: row;
+    flex-shrink: 1;
+    height: 76px;
+    justify-content: flex-start;
+    margin-top: 85px;
+    padding: 22px 552px;
+    width: 1440px;
+  }
+  
+  .order-list-detail-educational-copyright-2024 {
+    color: var(--white);
+    font-family: var(--font-family-noto_sans_thai);
+    font-size: var(--font-size-20);
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: normal;
+    margin-left: 1px;
+    min-height: 30px;
+  }
+  
+  .order-list-detail-educational-button-5 {
+    align-items: center;
+    cursor: pointer;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .order-list-detail-educational-navbar-link-text {
+    letter-spacing: 0;
+    line-height: normal;
+    margin-top: -1.00px;
+    position: relative;
+    width: fit-content;
+  }
+  
+  .order-list-detail-educational-text-3 {
+    letter-spacing: 0;
+    position: relative;
+  }
+  
+  .order-list-detail-educational-text_label-3 {
+    letter-spacing: 0;
+    line-height: normal;
+    margin-top: -1.00px;
+    position: relative;
+    text-align: center;
+    width: fit-content;
+  }
 
 /* #endregion */
-/* #region General Styles */
 
-/* #endregion */
-/* #region General Styles */
-
-/* #endregion */
 /* #region General Styles */
 
 /* #endregion */
