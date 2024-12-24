@@ -23,6 +23,7 @@
   --font-family-montserrat: "Montserrat", Helvetica;
   --font-family-noto_sans_thai: "Noto Sans Thai", Helvetica;
 }
+
 .notosansthai-semi-bold-black-20px {
   color: var(--bkack);
   font-family: var(--font-family-noto_sans_thai);
