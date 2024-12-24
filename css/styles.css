@@ -7957,3 +7957,55 @@ input:focus {
 .content-ecs .span1-2 {
   color: #a1a1a1;
 }
+
+.content-ecs .button-2-2 {
+  background-color: var(--pink);
+  border: 1px solid;
+  border-color: #dce0e5;
+  border-radius: 8px;
+  box-shadow: inset 0px -2px 2px #3030301a , inset 0px 7px 12px #ffffff14;
+  display: inline-flex;
+  gap: 6px;
+  height: 48px;
+  padding: 8px 16px;
+  align-items: center;
+}
+
+.content-ecs .text-sm {
+  color: #14181f;
+  font-family: var(--font-family-noto_sans_thai);
+  font-size: var(--font-size-18);
+  font-weight: 500;
+  line-height: 25.2px;
+  white-space: nowrap;
+  width: fit-content;
+  align-items: center;
+}
+
+.content-ecs .button-3-2 {
+  background-color: var(--gray);
+  border-radius: 10px;
+  display: flex;
+  gap: 8px;
+  padding: 8px 24px;
+  width: 223px;
+  justify-content: center;
+}
+
+.content-ecs .button-4 {
+  background-color: var(--main);
+  justify-content: center;
+  border-radius: 10px;
+  display: flex;
+  gap: 8px;
+  padding: 8px 24px;
+  width: 245px;
+}
+
+.color-white {
+  color: white;
+}
+
+.pointer {
+  cursor: pointer;
+}
