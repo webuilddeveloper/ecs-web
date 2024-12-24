@@ -1297,14 +1297,6 @@
     font-weight: 400;
   }
 
-  .notosansthai-normal-black-20px {
-    color: var(--bkack);
-    font-family: var(--font-family-noto_sans_thai);
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 400;
-  }
-
   .notosansthai-normal-black-28px {
     color: var(--bkack);
     font-family: var(--font-family-noto_sans_thai);
@@ -6682,15 +6674,6 @@ input:focus {
   font-weight: 700;
 }
 
-.notosansthai-normal-black-20px {
-  color: var(--black-2);
-  font-family: var(--font-family-noto_sans_thai);
-  font-size: var(--font-size-m-2);
-  font-style: normal;
-  font-weight: 400;
-}
-
-
 .purchase-order-shipping-frame-20 {
   position: relative;
   display: flex;
@@ -7917,4 +7900,60 @@ input:focus {
 .purchase-order-shipping-navbar-link-text a {
   color: white;
   text-decoration: none;
+}
+
+.text-bold {
+  font-weight: bold;
+}
+
+.content-ecs .button-1-2 {
+  background-color: var(--gray);
+  border: 1px solid;
+  border-color: var(--main);
+  border-radius: 10px;
+  display: inline-flex;
+  flex: 0 0 auto;
+  gap: 8px;
+  padding: 8px 24px;
+}
+
+.content-ecs .frame-38268 {
+  align-items: flex-start;
+  align-self: stretch;
+  background-color: var(--white);
+  border: 1px solid;
+  border-color: var(--bkack);
+  border-radius: 20px;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 15px;
+  padding: 16px;
+  position: relative;
+  width: 100%;
+}
+
+.content-ecs .text-18-2 {
+  color: #dab200;
+  font-family: var(--font-family-noto_sans_thai);
+  font-size: var(--font-size-18);
+  font-weight: 600;
+  line-height: normal;
+  margin-top: -1.00px;
+  width: 1094px;
+}
+
+.content-ecs .text-21 {
+  color: var(--bkack);
+  font-family: var(--font-family-noto_sans_thai);
+  font-size: var(--font-size-22);
+  font-weight: 600;
+  line-height: normal;
+  margin-right: -155.00px;
+  margin-top: -1.00px;
+  width: fit-content;
+}
+
+.content-ecs .span1-2 {
+  color: #a1a1a1;
 }

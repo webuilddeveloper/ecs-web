@@ -422,7 +422,7 @@
 
 .content-ecs .text-7-2 {
   line-height: normal;
-  width: 150px;
+  /* width: 150px; */
 }
 
 .content-ecs .frame-38426 {
@@ -738,3 +738,5 @@
   gap: 24px;
   position: relative;
 }
+
+
