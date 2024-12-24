@@ -22,6 +22,8 @@
  
   --font-family-noto_sans_thai: "Noto Sans Thai", Helvetica;
 }
+
+
 .notosansthai-semi-bold-fiord-18px {
   color: var(--greysblue-grey800);
   font-family: var(--font-family-noto_sans_thai);
