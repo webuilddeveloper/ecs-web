@@ -52,17 +52,16 @@
       </a>
     </div>
   </div>
+
   <div class="content-center">
     <div class="content-ecs">
-
-
       <div class="frame-container">
 
         <!-- nav bar -->
         <div class="frame-38358">
           <div class="frame-38354">
             <div class="frame-38352">
-              <div class="frame-38350">
+              <button class="frame-38350 collapsible">
                 <div class="frame-383">
                   <img class="icon" src="img/icon-person2-2.svg" alt="icon person2" />
                   <div class="text valign-text-middle notosansthai-semi-bold-black-22px text-bold">บัญชีของฉัน</div>
@@ -70,13 +69,15 @@
                 <div class="frame-38348">
                   <img class="arrow-down-01" src="img/style-stroke--type-rounded-13.svg" alt="arrow-down-01" />
                 </div>
-              </div>
-              <div class="frame-38351">
-                <a class="no-text-underline"
-                  href="../../ปพ ออนไลน์ - front โปรไฟล์เขตพื้นที่การศึกษา/โปรไฟล์เขตพื้นที่การศึกษา.html">
-                  <div class="text-2-1 valign-text-middle">ข้อมูลส่วนบุคคล</div>
-                </a>
-                <div class="valign-text-middle text-2-1">ที่อยู่จัดส่งสินค้า</div>
+              </button>
+              <div class="subMenuCollapsible">
+                <div class="frame-38351">
+                  <a class="no-text-underline"
+                    href="../../ปพ ออนไลน์ - front โปรไฟล์เขตพื้นที่การศึกษา/โปรไฟล์เขตพื้นที่การศึกษา.html">
+                    <div class="text-2-1 valign-text-middle">ข้อมูลส่วนบุคคล</div>
+                  </a>
+                  <div class="valign-text-middle text-2-1">ที่อยู่จัดส่งสินค้า</div>
+                </div>
               </div>
             </div>
           </div>
@@ -103,6 +104,7 @@
               <div class="text valign-text-middle notosansthai-semi-bold-black-22px text-bold">ออกจากระบบ</div>
             </a>
           </div>
+          
         </div>
 
         <!-- content -->
@@ -144,8 +146,7 @@
                 หมายเลขคำสั่งซื้อ xxxxxxxx
               </div>
               <div class="frame-38341">
-                <a
-                  href="./order-details.html">
+                <a href="./order-details.html">
                   <div class="text-12 valign-text-middle text-4 notosansthai-normal-black-16px">
                     ดูรายละเอียด
                   </div>
@@ -220,7 +221,7 @@
               </div>
             </div>
           </div>
-          
+
         </div>
       </div>
 
@@ -229,6 +230,23 @@
   </div>
   <script>
     /* Copyright (c) 2016 Tobias Buschor https://goo.gl/gl0mbf | MIT License https://goo.gl/HgajeK */
+
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
+
+    for (i = 0; i < coll.length; i++) {
+      coll[i].addEventListener("click", 
+        function () {
+          this.classList.toggle("active");
+          var subMenuCollapsible = this.nextElementSibling;
+          if (subMenuCollapsible.style.display === "block") {
+            subMenuCollapsible.style.display = "none";
+          } else {
+            subMenuCollapsible.style.display = "block";
+          }
+        }
+      );
+    }
 
     if (!HTMLFormElement.prototype.reportValidity) {
       HTMLFormElement.prototype.reportValidity = function () {
