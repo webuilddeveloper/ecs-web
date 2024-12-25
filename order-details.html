@@ -57,10 +57,10 @@
     <div class="content-ecs">
 
       <div class="flex-row flex">
-        <div class="button-back pointer">
+        <a href="./order.html" class="button-back pointer">
           <img class="icon-back" src="./img/icon-back-4.svg" alt="icon back" />
           <div class="text_label valign-text-middle">ย้อนกลับ</div>
-        </div>
+        </a>
       </div>
 
       <h1 class="text-1-2">รายละเอียดคำสั่งซื้อ</h1>
@@ -96,17 +96,17 @@
               <div class="text2 valign-text-middle notosansthai-normal-black-16px">ที่อยู่ติดต่อกลับ</div>
               <div class="frame-38-2">
                 <div class="frame-38268">
-                  
-                    <div class="frame-38407">
-                      <div class="frame-38269 notosansthai-normal-black-18px text-bold">
-                        <div class="text-15-2 valign-text-middle text-3">ออกแบบ ทดลอง</div>
-                        <p class="text-15-2 valign-text-middle text-3">| (+66 ) 12 345 6789</p>
-                      </div>
-                      <p class="address valign-text-middle notosansthai-normal-black-16px">
-                        2249 ถนนลาดพร้าว แขวงลาดพร้าว เขตลาดพร้าว 10230 แขวงสะพานสอง เขตวังทองหลาง กรุงเทพมหานคร 10310
-                      </p>
+
+                  <div class="frame-38407">
+                    <div class="frame-38269 notosansthai-normal-black-18px text-bold">
+                      <div class="text-15-2 valign-text-middle text-3">ออกแบบ ทดลอง</div>
+                      <p class="text-15-2 valign-text-middle text-3">| (+66 ) 12 345 6789</p>
                     </div>
-                 
+                    <p class="address valign-text-middle notosansthai-normal-black-16px">
+                      2249 ถนนลาดพร้าว แขวงลาดพร้าว เขตลาดพร้าว 10230 แขวงสะพานสอง เขตวังทองหลาง กรุงเทพมหานคร 10310
+                    </p>
+                  </div>
+
                 </div>
               </div>
             </div>
@@ -219,19 +219,136 @@
             <article class="button-3-2 button-5-copy">
               <div class="text_label valign-text-middle">คืนเงิน / คืนสินค้า</div>
             </article>
-          </a><a href="javascript:SubmitForm('form6')" class="no-text-underline">
+          </a><a href="javascript:confirmDialogShow()" class="no-text-underline">
             <article class="button-4 button-5-copy">
-              <div class="text_label-3-2 valign-text-middle notosansthai-normal-black-20px text-bold color-white">ยืนยันการรับสินค้า</div>
+              <div class="text_label-3-2 valign-text-middle notosansthai-normal-black-20px text-bold color-white">
+                ยืนยันการรับสินค้า</div>
             </article>
           </a>
         </div>
 
       </div>
+
+
     </div>
+    <dialog id="confirmDialog" class="dialog">
+      <!-- <div class="view"></div> -->
+      <div class="popup">
+        <div class="frame-container">
+          <div class="frame-38264">
+            <div class="frame-38266">
+              <div class="frame-38265">
+                <h1 class="text_label-2 valign-text-middle text_label-4">ยื่นคำขอคืนเงิน/คืนสินค้า</h1>
+                <div class="text_label-3 valign-text-middle text_label-4 notosansthai-normal-black-20px">
+                  <span><span class="notosansthai-normal-black-20px">กรุณาใส่เหตุผลการคืนเงิน/คืนสินค้า
+                      หากยืนยันจะเป็นอันเสร็จสิ้นการไม่อนุมัติ</span><span class="span1-1"></span><span
+                      class="notosansthai-normal-black-20px">คำสั่งซื้อ</span>
+                  </span>
+                </div>
+              </div>
+              <div class="text-field-dialog">
+                <select id="agency" class="custom-dropdown notosansthai-normal-dove-gray-17px">
+                  <option value="" disabled selected>เลือกเหตุผล</option>
+                  <option value="กศน">เหตุผล1</option>
+                  <option value="สพฐ">เหตุผล2</option>
+                  <option value="มหาวิทยาลัย">เหตุผล3</option>
+                  <option value="อื่นๆ">เหตุผล4</option>
+                </select>
+              </div>
+              <div class="frame-38262">
+                <a href="javascript:confirmDialogClose()">
+                  <article class="button-5 button-7">
+                    <div class="text_label valign-text-middle notosansthai-semi-bold-midnight-blue-20px">
+                      ยกเลิก
+                    </div>
+                  </article>
+                </a><a href="javascript:approveButton()">
+                  <article class="button-6 button-7">
+                    <div class="text_label valign-text-middle notosansthai-semi-bold-white-20px">ยืนยัน</div>
+                  </article>
+                </a>
+              </div>
+            </div>
+          </div>
+          <a href="javascript:confirmDialogClose()"><img class="frame-1041" src="img/frame-1041.svg" alt="Frame 1041" />
+          </a>
+        </div>
+      </div>
+    </dialog>
+
+    <dialog id="confirmDialog" class="dialog">
+      <!-- <div class="view"></div> -->
+      <div class="popup">
+        <div class="frame-container">
+          <div class="frame-38264">
+            <div class="frame-38266">
+              <div class="frame-38265">
+                <h1 class="text_label-2 valign-text-middle text_label-4">ยื่นคำขอคืนเงิน/คืนสินค้า</h1>
+                <div class="text_label-3 valign-text-middle text_label-4 notosansthai-normal-black-20px">
+                  <span><span class="notosansthai-normal-black-20px">กรุณาใส่เหตุผลการคืนเงิน/คืนสินค้า
+                      หากยืนยันจะเป็นอันเสร็จสิ้นการไม่อนุมัติ</span><span class="span1-1"></span><span
+                      class="notosansthai-normal-black-20px">คำสั่งซื้อ</span>
+                  </span>
+                </div>
+              </div>
+              <div class="text-field-dialog">
+                <select id="agency" class="custom-dropdown notosansthai-normal-dove-gray-17px">
+                  <option value="" disabled selected>เลือกเหตุผล</option>
+                  <option value="กศน">เหตุผล1</option>
+                  <option value="สพฐ">เหตุผล2</option>
+                  <option value="มหาวิทยาลัย">เหตุผล3</option>
+                  <option value="อื่นๆ">เหตุผล4</option>
+                </select>
+              </div>
+              <div class="frame-38262">
+                <a href="javascript:confirmDialogClose()">
+                  <article class="button-5 button-7">
+                    <div class="text_label valign-text-middle notosansthai-semi-bold-midnight-blue-20px">
+                      ยกเลิก
+                    </div>
+                  </article>
+                </a><a href="javascript:SubmitForm('form3')">
+                  <article class="button-6 button-7">
+                    <div class="text_label valign-text-middle notosansthai-semi-bold-white-20px">ยืนยัน</div>
+                  </article>
+                </a>
+              </div>
+            </div>
+          </div>
+          <a href="javascript:confirmDialogClose()"><img class="frame-1041" src="img/frame-1041.svg" alt="Frame 1041" />
+          </a>
+        </div>
+      </div>
+    </dialog>
+
+    <dialog id="successDialog" class="dialog">
+      <div class="popup">
+        <div class="frame-container">
+          <div class="frame-38264">
+            <div class="frame-38266">
+              <div class="frame-38265">
+                <img class="check-one" src="img/check-one.svg" alt="check-one" />
+                <h1 class="text_label-3-2 valign-text-middle text_label-4-2">ยื่นคำขอคืนเงิน/คืนสินค้า<br />สำเร็จ</h1>
+              </div>
+            </div>
+          </div>
+          <a href="javascript:confirmDialogClose()"
+            ><img class="frame-1041" src="img/frame-1041.svg" alt="Frame 1041" />
+          </a>
+        </div>
+      </div>
+    </dialog>
+
   </div>
-  <footer class="footer"><p class="copyright-2024">Copyright 2024&nbsp;&nbsp; องค์การค้าของ สกสค.</p></footer>
+  <footer class="footer">
+    <p class="copyright-2024">Copyright 2024&nbsp;&nbsp; องค์การค้าของ สกสค.</p>
+  </footer>
+
+
   <script>
     /* Copyright (c) 2016 Tobias Buschor https://goo.gl/gl0mbf | MIT License https://goo.gl/HgajeK */
+    var dialog1 = false;
+    var dialog2 = false;
 
     if (!HTMLFormElement.prototype.reportValidity) {
       HTMLFormElement.prototype.reportValidity = function () {
@@ -251,6 +368,24 @@
         if (window.submitted) window.submitted();
       }
     }
+
+    function confirmDialogShow() { 
+      document.getElementById("confirmDialog").showModal(); 
+    } 
+
+    function confirmDialogClose() { 
+      document.getElementById("confirmDialog").close(); 
+      document.getElementById("successDialog").close(); 
+    }
+
+    function approveButton() { 
+      document.getElementById("confirmDialog").close(); 
+      document.getElementById("successDialog").showModal(); 
+    }
+
+
+
+
   </script>
 </body>
 
