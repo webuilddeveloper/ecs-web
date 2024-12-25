@@ -8871,7 +8871,7 @@ input:focus {
   border: 1px solid;
   border-color: #dce0e5;
   border-radius: 8px;
-  box-shadow: inset 0px -2px 2px #3030301a , inset 0px 7px 12px #ffffff14;
+  box-shadow: inset 0px -2px 2px #3030301a, inset 0px 7px 12px #ffffff14;
   display: flex;
   gap: 8px;
   height: 40px;
@@ -9199,6 +9199,7 @@ input:focus {
 .approve-school-text-2 {
   align-self: stretch;
   line-height: normal;
+  margin-top: 10px;
 }
 
 .approve-school-vector {
@@ -9245,6 +9246,7 @@ input:focus {
   line-height: normal;
   margin-right: -80.00px;
   width: 231px;
+  margin-top: 10px;
 }
 
 .approve-school-frame-38528 {
@@ -9675,7 +9677,7 @@ input:focus {
   border: 1px solid;
   border-color: var(--geyser);
   border-radius: 8px;
-  box-shadow: inset 0px -2px 2px #3030301a , inset 0px 7px 12px #ffffff14;
+  box-shadow: inset 0px -2px 2px #3030301a, inset 0px 7px 12px #ffffff14;
   display: flex;
   gap: 8px;
   height: 40px;
@@ -9725,7 +9727,7 @@ input:focus {
   border: 1px solid;
   border-color: var(--geyser);
   border-radius: 8px;
-  box-shadow: inset 0px -2px 2px #3030301a , inset 0px 7px 12px #ffffff14;
+  box-shadow: inset 0px -2px 2px #3030301a, inset 0px 7px 12px #ffffff14;
   cursor: pointer;
   gap: 6px;
   height: 32px;
@@ -9744,7 +9746,7 @@ input:focus {
 .approve-school-button-3 {
   background-color: var(--blue);
   border-radius: 8px;
-  box-shadow: inset 0px -2px 2px #3030301a , inset 0px 7px 12px #ffffff14;
+  box-shadow: inset 0px -2px 2px #3030301a, inset 0px 7px 12px #ffffff14;
   cursor: pointer;
   gap: 6px;
   height: 32px;
@@ -9909,14 +9911,19 @@ input:focus {
 }
 
 /* ลบสีม่วงของลิงก์ที่คลิกแล้ว */
-a:link, a:visited {
-  color: white; /* สีที่คุณต้องการ */
-  text-decoration: none; /* เอาเส้นใต้ลิงก์ออกถ้าต้องการ */
+a:link,
+a:visited {
+  color: white;
+  /* สีที่คุณต้องการ */
+  text-decoration: none;
+  /* เอาเส้นใต้ลิงก์ออกถ้าต้องการ */
 }
 
 /* เปลี่ยนสีเมื่อโฮเวอร์ */
-a:hover, a:active {
-  color: #f0f0f0; /* สีเมื่อโฮเวอร์ */
+a:hover,
+a:active {
+  color: #f0f0f0;
+  /* สีเมื่อโฮเวอร์ */
 }
 
 .approve-school-navbar-link-text a {
@@ -9976,6 +9983,7 @@ a:hover, a:active {
   position: relative;
   width: 35px;
 }
+
 .waiting-approve-school-vector-1 {
   height: 35px;
   margin-left: -241.83px;
@@ -10107,6 +10115,7 @@ a:hover, a:active {
 .waiting-approve-school-text-2 {
   align-self: stretch;
   line-height: normal;
+  margin-top: 10px;
 }
 
 .waiting-approve-school-text-4 {
@@ -10146,6 +10155,7 @@ a:hover, a:active {
   line-height: normal;
   margin-right: -80.00px;
   width: 231px;
+  margin-top: 10px
 }
 
 .waiting-approve-school-frame-38528 {
@@ -10548,7 +10558,7 @@ a:hover, a:active {
   border: 1px solid;
   border-color: var(--geyser);
   border-radius: 8px;
-  box-shadow: inset 0px -2px 2px #3030301a , inset 0px 7px 12px #ffffff14;
+  box-shadow: inset 0px -2px 2px #3030301a, inset 0px 7px 12px #ffffff14;
   display: flex;
   gap: 8px;
   height: 40px;
@@ -10598,7 +10608,7 @@ a:hover, a:active {
   border: 1px solid;
   border-color: var(--geyser);
   border-radius: 8px;
-  box-shadow: inset 0px -2px 2px #3030301a , inset 0px 7px 12px #ffffff14;
+  box-shadow: inset 0px -2px 2px #3030301a, inset 0px 7px 12px #ffffff14;
   cursor: pointer;
   gap: 6px;
   height: 32px;
@@ -10617,7 +10627,7 @@ a:hover, a:active {
 .waiting-approve-school-button-3 {
   background-color: var(--blue);
   border-radius: 8px;
-  box-shadow: inset 0px -2px 2px #3030301a , inset 0px 7px 12px #ffffff14;
+  box-shadow: inset 0px -2px 2px #3030301a, inset 0px 7px 12px #ffffff14;
   cursor: pointer;
   gap: 6px;
   height: 32px;
@@ -10735,6 +10745,7 @@ a:hover, a:active {
   min-width: 1440px;
   padding: 6px 87.8px;
 }
+
 .waiting-approve-school-navbar-link-text {
   letter-spacing: 0;
   line-height: normal;
@@ -10952,6 +10963,7 @@ a:hover, a:active {
 .paid-school-text-2 {
   align-self: stretch;
   line-height: normal;
+  margin-top: 10px;
 }
 
 .paid-school-vector-19 {
@@ -11007,6 +11019,7 @@ a:hover, a:active {
   line-height: normal;
   margin-right: -80.00px;
   width: 231px;
+  margin-top: 10px
 }
 
 .paid-school-frame-38528 {
@@ -11396,7 +11409,7 @@ a:hover, a:active {
   border: 1px solid;
   border-color: var(--geyser);
   border-radius: 8px;
-  box-shadow: inset 0px -2px 2px #3030301a , inset 0px 7px 12px #ffffff14;
+  box-shadow: inset 0px -2px 2px #3030301a, inset 0px 7px 12px #ffffff14;
   display: flex;
   gap: 8px;
   height: 40px;
@@ -11446,7 +11459,7 @@ a:hover, a:active {
   border: 1px solid;
   border-color: var(--geyser);
   border-radius: 8px;
-  box-shadow: inset 0px -2px 2px #3030301a , inset 0px 7px 12px #ffffff14;
+  box-shadow: inset 0px -2px 2px #3030301a, inset 0px 7px 12px #ffffff14;
   cursor: pointer;
   gap: 6px;
   height: 32px;
@@ -11465,7 +11478,7 @@ a:hover, a:active {
 .paid-school-button-3 {
   background-color: var(--blue);
   border-radius: 8px;
-  box-shadow: inset 0px -2px 2px #3030301a , inset 0px 7px 12px #ffffff14;
+  box-shadow: inset 0px -2px 2px #3030301a, inset 0px 7px 12px #ffffff14;
   gap: 6px;
   height: 32px;
   padding: 8px;
@@ -11512,7 +11525,7 @@ a:hover, a:active {
   border: 1px solid;
   border-color: var(--geyser);
   border-radius: 8px;
-  box-shadow: inset 0px -2px 2px #3030301a , inset 0px 7px 12px #ffffff14;
+  box-shadow: inset 0px -2px 2px #3030301a, inset 0px 7px 12px #ffffff14;
   gap: 6px;
   height: 32px;
   padding: 8px 6px;
@@ -11814,6 +11827,7 @@ a:hover, a:active {
 .draft-school-text-2 {
   align-self: stretch;
   line-height: normal;
+  margin-top: 10px;
 }
 
 .draft-school-vector {
@@ -11860,6 +11874,7 @@ a:hover, a:active {
   line-height: normal;
   margin-right: -80.00px;
   width: 231px;
+  margin-top: 10px
 }
 
 .draft-school-frame-38528 {
@@ -12247,7 +12262,7 @@ a:hover, a:active {
   border: 1px solid;
   border-color: var(--geyser);
   border-radius: 8px;
-  box-shadow: inset 0px -2px 2px #3030301a , inset 0px 7px 12px #ffffff14;
+  box-shadow: inset 0px -2px 2px #3030301a, inset 0px 7px 12px #ffffff14;
   display: flex;
   gap: 8px;
   height: 40px;
@@ -12297,7 +12312,7 @@ a:hover, a:active {
   border: 1px solid;
   border-color: var(--geyser);
   border-radius: 8px;
-  box-shadow: inset 0px -2px 2px #3030301a , inset 0px 7px 12px #ffffff14;
+  box-shadow: inset 0px -2px 2px #3030301a, inset 0px 7px 12px #ffffff14;
   display: flex;
   gap: 6px;
   height: 32px;
@@ -12316,7 +12331,7 @@ a:hover, a:active {
 .draft-school-button-3 {
   background-color: var(--blue);
   border-radius: 8px;
-  box-shadow: inset 0px -2px 2px #3030301a , inset 0px 7px 12px #ffffff14;
+  box-shadow: inset 0px -2px 2px #3030301a, inset 0px 7px 12px #ffffff14;
   display: flex;
   gap: 6px;
   height: 32px;
@@ -13044,7 +13059,7 @@ a:hover, a:active {
   border: 1px solid;
   border-color: #dce0e5;
   border-radius: 8px;
-  box-shadow: inset 0px -2px 2px #3030301a , inset 0px 7px 12px #ffffff14;
+  box-shadow: inset 0px -2px 2px #3030301a, inset 0px 7px 12px #ffffff14;
   display: inline-flex;
   gap: 6px;
   height: 48px;
@@ -13212,7 +13227,7 @@ a:hover, a:active {
   width: 100%;
 }
 
-.payment-summary-flex-row  {
+.payment-summary-flex-row {
   align-items: flex-start;
   align-self: flex-start;
   display: flex;
@@ -13637,7 +13652,7 @@ a:hover, a:active {
   border: 1px solid;
   border-color: #dce0e5;
   border-radius: 8px;
-  box-shadow: inset 0px -2px 2px #3030301a , inset 0px 7px 12px #ffffff14;
+  box-shadow: inset 0px -2px 2px #3030301a, inset 0px 7px 12px #ffffff14;
   display: flex;
   gap: 6px;
   height: 60px;

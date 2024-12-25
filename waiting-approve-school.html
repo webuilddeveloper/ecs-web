@@ -67,12 +67,14 @@
                         class="waiting-approve-school-text waiting-approve-school-valign-text-middle waiting-approve-school-text-5 notosansthai-semi-bold-black-22px">
                         บัญชีของฉัน</div>
                     </div>
-                    <div class="waiting-approve-school-frame-38348">
-                      <img class="waiting-approve-school-arrow-down-01" src="img/arrow-down-01-2.svg"
-                        alt="arrow-down-01" />
-                    </div>
+                    <a onclick="showMenuCollap()">
+                      <div class="waiting-approve-school-frame-38348">
+                        <img class="waiting-approve-school-arrow-down-01" src="img/arrow-down-01-2.svg"
+                          alt="arrow-down-01" />
+                      </div>
+                    </a>
                   </div>
-                  <div class="waiting-approve-school-frame-3835 notosansthai-normal-black-20px">
+                  <div id="collapMenu"  style="display: none;" class="waiting-approve-school-frame-3835 notosansthai-normal-black-20px">
                     <div
                       class="waiting-approve-school-text-1 waiting-approve-school-valign-text-middle waiting-approve-school-text-5">
                       ข้อมูลส่วนบุคคล</div>
@@ -120,13 +122,15 @@
                       class="waiting-approve-school-text waiting-approve-school-valign-text-middle waiting-approve-school-text-5 notosansthai-semi-bold-black-22px">
                       ปพ.ออนไลน์</div>
                   </div>
+                  <a onclick="showMenuCollap2()">
                   <div class="waiting-approve-school-frame-38348">
                     <img class="waiting-approve-school-arrow-down-01" src="img/arrow-down-01-2.svg"
                       alt="arrow-down-01" />
                   </div>
+                  </a>
                 </div>
                 <div class="waiting-approve-school-frame-3835">
-                  <div class="waiting-approve-school-frame-38351 notosansthai-normal-black-20px">
+                  <div id="collapMenu2"  style="display: none;" class="waiting-approve-school-frame-38351 notosansthai-normal-black-20px">
                     <div
                       class="waiting-approve-school-text-10 waiting-approve-school-valign-text-middle waiting-approve-school-text-5">
                       พิมพ์ใบปพ.ออนไลน์</div>
@@ -147,8 +151,7 @@
             <div class="waiting-approve-school-frame-38356">
               <div class="waiting-approve-school-frame-38357-1">
                 <div class="waiting-approve-school-frame-38344">
-                  <a
-                    href="./draft-school.html">
+                  <a href="./draft-school.html">
                     <div class="waiting-approve-school-text-1-1 notosansthai-semi-bold-black-20px">ร่างใบขอสั่งซื้อ
                     </div>
                   </a><a href="./waiting-approve-school.html">
@@ -411,6 +414,32 @@
         if (window.submitted) window.submitted();
       }
     }
+
+    let isCollape = false;
+    let isCollape2 = false;
+
+    function showMenuCollap() {
+      isCollape = !isCollape;
+      const content = document.getElementById("collapMenu");
+
+      if (isCollape) {
+        content.style.display = "block";
+      } else {
+        content.style.display = "none";
+      }
+    }
+
+    function showMenuCollap2() {
+      isCollape2 = !isCollape2;
+      const content2 = document.getElementById("collapMenu2");
+
+      if (isCollape2) {
+        content2.style.display = "block";
+      } else {
+        content2.style.display = "none";
+      }
+    }
+
   </script>
 </body>
 

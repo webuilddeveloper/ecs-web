@@ -60,17 +60,20 @@
               <div class="approve-school-frame-38354">
                 <div class="approve-school-frame-38352">
                   <div class="approve-school-frame-38350">
-                    <div class="approve-school-frame-38">
+                    <div class="approve-school-frame-38 ">
                       <img class="approve-school-icon" src="img/icon-person2-2.svg" alt="icon person2" />
                       <div
                         class="approve-school-text approve-school-valign-text-middle approve-school-text-3 notosansthai-semi-bold-black-22px">
                         บัญชีของฉัน</div>
                     </div>
-                    <div class="approve-school-frame-38348">
-                      <img class="approve-school-arrow-down-01" src="img/arrow-down-01-2.svg" alt="arrow-down-01" />
-                    </div>
+                    <a onclick="showMenuCollap()">
+                      <div class="approve-school-frame-38348">
+                        <img class="approve-school-arrow-down-01" src="img/arrow-down-01-2.svg" alt="arrow-down-01" />
+                      </div>
+                    </a>
                   </div>
-                  <div class="approve-school-frame-3835 notosansthai-normal-black-20px">
+                  <div id="collapMenu" class="approve-school-frame-3835 notosansthai-normal-black-20px"
+                    style="display: none;">
                     <div class="approve-school-text-1 approve-school-valign-text-middle approve-school-text-3">
                       ข้อมูลส่วนบุคคล</div>
                     <div class="approve-school-text-2 approve-school-valign-text-middle approve-school-text-3">
@@ -112,11 +115,13 @@
                       class="approve-school-text approve-school-valign-text-middle approve-school-text-3 notosansthai-semi-bold-black-22px">
                       ปพ.ออนไลน์</div>
                   </div>
-                  <div class="approve-school-frame-38348">
-                    <img class="approve-school-arrow-down-01" src="img/arrow-down-01-3.svg" alt="arrow-down-01" />
-                  </div>
+                  <a onclick="showMenuCollap2()">
+                    <div class="approve-school-frame-38348">
+                      <img class="approve-school-arrow-down-01" src="img/arrow-down-01-3.svg" alt="arrow-down-01" />
+                    </div>
+                  </a>
                 </div>
-                <div class="approve-school-frame-3835">
+                <div id="collapMenu2" style="display: none;" class="approve-school-frame-3835">
                   <div class="approve-school-frame-38351 notosansthai-normal-black-20px">
                     <div class="approve-school-text-10 approve-school-valign-text-middle approve-school-text-3">
                       พิมพ์ใบปพ.ออนไลน์</div>
@@ -361,6 +366,9 @@
   <script>
     /* Copyright (c) 2016 Tobias Buschor https://goo.gl/gl0mbf | MIT License https://goo.gl/HgajeK */
 
+  
+
+
     if (!HTMLFormElement.prototype.reportValidity) {
       HTMLFormElement.prototype.reportValidity = function () {
         if (this.checkValidity()) return true;
@@ -370,6 +378,31 @@
         this.removeChild(btn);
         return false;
       };
+    }
+
+    let isCollape = false;
+    let isCollape2 = false;
+
+    function showMenuCollap() {
+      isCollape = !isCollape;
+      const content = document.getElementById("collapMenu");
+
+      if (isCollape) {
+        content.style.display = "block";
+      } else {
+        content.style.display = "none";
+      }
+    }
+
+    function showMenuCollap2() {
+      isCollape2 = !isCollape2;
+      const content2 = document.getElementById("collapMenu2");
+
+      if (isCollape2) {
+        content2.style.display = "block";
+      } else {
+        content2.style.display = "none";
+      }
     }
 
     function SubmitForm(form_name) {
@@ -387,7 +420,7 @@
         content.classList.toggle('show');
       });
     });
-    
+
   </script>
 </body>
 

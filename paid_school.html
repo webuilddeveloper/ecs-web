@@ -66,11 +66,14 @@
                         class="paid-school-text paid-school-valign-text-middle paid-school-text-5 notosansthai-semi-bold-black-22px">
                         บัญชีของฉัน</div>
                     </div>
-                    <div class="paid-school-frame-38348">
-                      <img class="paid-school-arrow-down-01" src="img/arrow-down-01-2.svg" alt="arrow-down-01" />
-                    </div>
+                    <a onclick="showMenuCollap()">
+                      <div class="paid-school-frame-38348">
+                        <img class="paid-school-arrow-down-01" src="img/arrow-down-01-2.svg" alt="arrow-down-01" />
+                      </div>
+                    </a>
                   </div>
-                  <div class="paid-school-frame-3835 notosansthai-normal-black-20px">
+                  <div id="collapMenu" style="display: none;"
+                    class="paid-school-frame-3835 notosansthai-normal-black-20px">
                     <div class="paid-school-text-1 paid-school-valign-text-middle paid-school-text-5">ข้อมูลส่วนบุคคล
                     </div>
                     <div class="paid-school-text-2 paid-school-valign-text-middle paid-school-text-5">
@@ -111,11 +114,13 @@
                       class="paid-school-text paid-school-valign-text-middle paid-school-text-5 notosansthai-semi-bold-black-22px">
                       ปพ.ออนไลน์</div>
                   </div>
-                  <div class="paid-school-frame-38348">
-                    <img class="paid-school-arrow-down-01" src="img/arrow-down-01-3.svg" alt="arrow-down-01" />
-                  </div>
+                  <a onclick="showMenuCollap2()">
+                    <div class="paid-school-frame-38348">
+                      <img class="paid-school-arrow-down-01" src="img/arrow-down-01-3.svg" alt="arrow-down-01" />
+                    </div>
+                  </a>
                 </div>
-                <div class="paid-school-frame-3835">
+                <div id="collapMenu2" style="display: none;" class="paid-school-frame-3835">
                   <div class="paid-school-frame-38351 notosansthai-normal-black-20px">
                     <div class="paid-school-text-10 paid-school-valign-text-middle paid-school-text-5">พิมพ์ใบปพ.ออนไลน์
                     </div>
@@ -380,6 +385,32 @@
         if (window.submitted) window.submitted();
       }
     }
+
+    let isCollape = false;
+    let isCollape2 = false;
+
+    function showMenuCollap() {
+      isCollape = !isCollape;
+      const content = document.getElementById("collapMenu");
+
+      if (isCollape) {
+        content.style.display = "block";
+      } else {
+        content.style.display = "none";
+      }
+    }
+
+    function showMenuCollap2() {
+      isCollape2 = !isCollape2;
+      const content2 = document.getElementById("collapMenu2");
+
+      if (isCollape2) {
+        content2.style.display = "block";
+      } else {
+        content2.style.display = "none";
+      }
+    }
+
   </script>
 </body>
 

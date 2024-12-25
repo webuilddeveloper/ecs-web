@@ -66,11 +66,13 @@
                         class="draft-school-text draft-school-valign-text-middle draft-school-text-3 notosansthai-semi-bold-black-22px">
                         บัญชีของฉัน</div>
                     </div>
+                    <a onclick="showMenuCollap()">
                     <div class="draft-school-frame-38348">
                       <img class="draft-school-arrow-down-01" src="img/arrow-down-01-2.svg" alt="arrow-down-01" />
                     </div>
+                    </a>
                   </div>
-                  <div class="draft-school-frame-3835 notosansthai-normal-black-20px">
+                  <div id="collapMenu"  style="display: none;" class="draft-school-frame-3835 notosansthai-normal-black-20px">
                     <div class="draft-school-text-1 draft-school-valign-text-middle draft-school-text-3">ข้อมูลส่วนบุคคล
                     </div>
                     <div class="draft-school-text-2 draft-school-valign-text-middle draft-school-text-3">
@@ -112,12 +114,15 @@
                       class="draft-school-text draft-school-valign-text-middle draft-school-text-3 notosansthai-semi-bold-black-22px">
                       ปพ.ออนไลน์</div>
                   </div>
-                  <div class="draft-school-frame-38348">
-                    <img class="draft-school-arrow-down-01" src="img/arrow-down-01-3.svg" alt="arrow-down-01" />
-                  </div>
+                  <a onclick="showMenuCollap2()">
+                    <div class="draft-school-frame-38348">
+                      <img class="draft-school-arrow-down-01" src="img/arrow-down-01-3.svg" alt="arrow-down-01" />
+                    </div>
+                  </a>
                 </div>
                 <div class="draft-school-frame-3835">
-                  <div class="draft-school-frame-38351 notosansthai-normal-black-20px">
+                  <div id="collapMenu2" style="display: none;"
+                    class="draft-school-frame-38351 notosansthai-normal-black-20px">
                     <div class="draft-school-text-10 draft-school-valign-text-middle draft-school-text-3">
                       พิมพ์ใบปพ.ออนไลน์</div>
                     <div class="draft-school-text-2 draft-school-valign-text-middle draft-school-text-3">ประวัติการพิมพ์
@@ -314,6 +319,32 @@
     function goBack() {
       history.back();
     }
+
+    let isCollape = false;
+    let isCollape2 = false;
+
+    function showMenuCollap() {
+      isCollape = !isCollape;
+      const content = document.getElementById("collapMenu");
+
+      if (isCollape) {
+        content.style.display = "block";
+      } else {
+        content.style.display = "none";
+      }
+    }
+
+    function showMenuCollap2() {
+      isCollape2 = !isCollape2;
+      const content2 = document.getElementById("collapMenu2");
+
+      if (isCollape2) {
+        content2.style.display = "block";
+      } else {
+        content2.style.display = "none";
+      }
+    }
+
   </script>
 </body>
 
