@@ -1,6 +1,5 @@
-/* screen - u3621u3591u3607u3632u3648u3610u3637u3618u3609-u3585u3624u3609 */
 
-.u3621u3591u3607u3632u3648u3610u3637u3618u3609-u3585u3624u3609 {
+.register-non-formal-education {
   align-items: flex-start;
   background-color: var(--white);
   display: flex;
@@ -9,7 +8,7 @@
   width: 1440px;
 }
 
-.u3621u3591u3607u3632u3648u3610u3637u3618u3609-u3585u3624u3609 .header {
+.register-non-formal-education-header {
   align-items: center;
   background-color: var(--main);
   display: flex;
@@ -22,7 +21,7 @@
   width: auto;
 }
 
-.u3621u3591u3607u3632u3648u3610u3637u3618u3609-u3585u3624u3609 .text {
+.register-non-formal-education-text {
   letter-spacing: 0;
   line-height: normal;
   margin-top: -1.00px;
@@ -30,7 +29,7 @@
   width: fit-content;
 }
 
-.u3621u3591u3607u3632u3648u3610u3637u3618u3609-u3585u3624u3609 .frame-38253 {
+.register-non-formal-education-frame-38253 {
   align-items: center;
   display: inline-flex;
   gap: 56px;
@@ -40,7 +39,7 @@
   position: relative;
 }
 
-.u3621u3591u3607u3632u3648u3610u3637u3618u3609-u3585u3624u3609 .flex-row {
+.register-non-formal-education-flex-row {
   align-items: flex-start;
   display: flex;
   gap: 283px;
@@ -50,7 +49,7 @@
   min-width: 804px;
 }
 
-.u3621u3591u3607u3632u3648u3610u3637u3618u3609-u3585u3624u3609 .button {
+.register-non-formal-education-button {
   align-items: center;
   background-color: var(--pink);
   border-radius: 10px;
@@ -62,7 +61,7 @@
   position: relative;
 }
 
-.u3621u3591u3607u3632u3648u3610u3637u3618u3609-u3585u3624u3609 .text_label {
+.register-non-formal-education-text_label {
   letter-spacing: 0;
   line-height: normal;
   margin-top: -1.00px;
@@ -71,7 +70,7 @@
   width: fit-content;
 }
 
-.u3621u3591u3607u3632u3648u3610u3637u3618u3609-u3585u3624u3609 .text-71 {
+.register-non-formal-education-text-71 {
   align-self: flex-end;
   letter-spacing: 0;
   line-height: 60.0px;
@@ -80,7 +79,7 @@
   white-space: nowrap;
 }
 
-.u3621u3591u3607u3632u3648u3610u3637u3618u3609-u3585u3624u3609 .frame-38294 {
+.register-non-formal-education-frame-38294 {
   align-items: center;
   align-self: center;
   display: flex;
@@ -91,7 +90,7 @@
   width: 1240px;
 }
 
-.u3621u3591u3607u3632u3648u3610u3637u3618u3609-u3585u3624u3609 .text-1 {
+.register-non-formal-education-text-1 {
   align-self: stretch;
   letter-spacing: 0;
   line-height: normal;
@@ -99,7 +98,7 @@
   position: relative;
 }
 
-.u3621u3591u3607u3632u3648u3610u3637u3618u3609-u3585u3624u3609 .text_label-1 {
+.register-non-formal-education-text_label-1 {
   flex: 1;
   letter-spacing: 0;
   line-height: normal;
@@ -107,7 +106,7 @@
   position: relative;
 }
 
-.u3621u3591u3607u3632u3648u3610u3637u3618u3609-u3585u3624u3609 .frame-3828 {
+.register-non-formal-education-frame-3828 {
   align-items: center;
   display: inline-flex;
   flex: 0 0 auto;
@@ -115,7 +114,7 @@
   position: relative;
 }
 
-.u3621u3591u3607u3632u3648u3610u3637u3618u3609-u3585u3624u3609 .text-field {
+.register-non-formal-education-text-field {
   align-items: flex-start;
   align-self: stretch;
   display: flex;
@@ -127,7 +126,7 @@
   width: 100%;
 }
 
-.u3621u3591u3607u3632u3648u3610u3637u3618u3609-u3585u3624u3609 .frame-38298 {
+.register-non-formal-education-frame-38298 {
   align-items: center;
   display: flex;
   flex: 0 0 auto;
@@ -136,7 +135,7 @@
   width: 533px;
 }
 
-.u3621u3591u3607u3632u3648u3610u3637u3618u3609-u3585u3624u3609 .frame-3828-1 {
+.register-non-formal-education-frame-3828-1 {
   align-items: center;
   display: flex;
   gap: 10px;
@@ -144,7 +143,7 @@
   width: 120px;
 }
 
-.u3621u3591u3607u3632u3648u3610u3637u3618u3609-u3585u3624u3609 .frame-38296 {
+.register-non-formal-education-frame-38296 {
   align-items: flex-start;
   display: flex;
   flex: 1;
@@ -153,14 +152,14 @@
   position: relative;
 }
 
-.u3621u3591u3607u3632u3648u3610u3637u3618u3609-u3585u3624u3609 .text-84 {
+.register-non-formal-education-text-84 {
   letter-spacing: 0;
   line-height: normal;
   position: relative;
   width: fit-content;
 }
 
-.u3621u3591u3607u3632u3648u3610u3637u3618u3609-u3585u3624u3609 .text-85 {
+.register-non-formal-education-text-85 {
   align-self: stretch;
   letter-spacing: 0;
   line-height: normal;
@@ -169,7 +168,7 @@
   text-align: center;
 }
 
-.u3621u3591u3607u3632u3648u3610u3637u3618u3609-u3585u3624u3609 .button-1 {
+.register-non-formal-education-button-1 {
   align-items: center;
   background-color: var(--white);
   border: 1px solid;
@@ -184,7 +183,7 @@
   position: relative;
 }
 
-.u3621u3591u3607u3632u3648u3610u3637u3618u3609-u3585u3624u3609 .text-86 {
+.register-non-formal-education-text-86 {
   letter-spacing: 0;
   line-height: normal;
   margin-top: -2.00px;
@@ -192,7 +191,7 @@
   width: fit-content;
 }
 
-.u3621u3591u3607u3632u3648u3610u3637u3618u3609-u3585u3624u3609 .footer {
+.register-non-formal-education-footer {
   align-items: flex-start;
   background-color: var(--main);
   display: flex;
@@ -205,13 +204,13 @@
   width: 1440px;
 }
 
-input.text_label-1 {
+.register-non-formal-education-text_label-1 {
   border: none;
   outline: none;
   
 }
 
-.ellipse-2 {
+.register-non-formal-education-ellipse-2 {
   appearance: none; /* ซ่อนรูปแบบ Radio เริ่มต้น */
   width: 16px; /* ขนาดวงกลม */
   height: 16px;
@@ -221,17 +220,17 @@ input.text_label-1 {
   cursor: pointer; /* เปลี่ยนเป็นมือเมื่อ hover */
 }
 
-.ellipse-2:checked {
+.register-non-formal-education-ellipse-2:checked {
   background-color: #007bff; /* สีพื้นหลังเมื่อถูกเลือก */
   border-color: #007bff; /* สีขอบเมื่อถูกเลือก */
 }
 
-.ellipse-2:hover {
+.register-non-formal-education-ellipse-2:hover {
   border-color: #0056b3; /* สีขอบเมื่อ hover */
 }
 
 /* ปรับขนาดและลบเส้นขอบของ select */
-.custom-dropdown {
+.register-non-formal-education-custom-dropdown {
   width: 100%;
   height: 40px; /* กำหนดความสูง */
   padding: 5px 10px; /* ลด padding เพื่อให้ช่องไม่สูงเกินไป */
@@ -247,7 +246,7 @@ input.text_label-1 {
 }
 
 /* ปรับตำแหน่ง icon dropdown */
-.dropdown-icon {
+.register-non-formal-education-dropdown-icon {
   position: absolute;
   top: 50%;
   right: 10px;
@@ -257,7 +256,7 @@ input.text_label-1 {
 }
 
 /* จัดการ frame-20 */
-.frame-20 {
+.register-non-formal-education-frame-20 {
   position: relative;
   display: flex;
   align-items: center;
@@ -269,7 +268,7 @@ input.text_label-1 {
 }
 
 /* ปรับขนาดและลบเส้นขอบของ select */
-.custom-dropdown {
+.register-non-formal-education-custom-dropdown {
   width: 100%;
   height: 40px; /* ความสูงของช่อง */
   padding: 5px 10px; /* ระยะห่างภายใน */
@@ -284,7 +283,7 @@ input.text_label-1 {
 }
 
 /* จัดตำแหน่ง icon dropdown */
-.dropdown-icon {
+.register-non-formal-education-dropdown-icon {
   position: absolute;
   top: 50%;
   right: 10px; /* ระยะห่างจากขอบขวา */
@@ -294,7 +293,7 @@ input.text_label-1 {
 }
 
 /* จัดการ frame-20 */
-.frame-20 {
+.register-non-formal-education-frame-20 {
   position: relative;
   display: flex;
   align-items: center; /* จัดให้อยู่กลาง */
