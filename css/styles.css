@@ -1686,7 +1686,7 @@ input:focus {
 }
 
 .home-educational-span1 {
-  color: var(--pink);
+  color: var(--pink) !important;
 }
 
 .home-educational-text-7 {
@@ -16836,7 +16836,7 @@ input:focus {
   overflow: hidden;
   padding: 8px 24px;
   position: relative;
-  width: 153px;
+  min-width: 153px;
 }
 
 .content-ecs .status-cancel {
@@ -16850,6 +16850,19 @@ input:focus {
   padding: 8px 24px;
   position: relative;
   width: 153px;
+}
+
+.content-ecs .status-process {
+  align-items: center;
+  background-color: #FFBE33;
+  border-radius: 10px;
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  overflow: hidden;
+  padding: 8px 24px;
+  position: relative;
+  min-width: 153px;
 }
 
 .content-ecs .text-status {
@@ -26379,4 +26392,8 @@ a:active {
 .profile-school-navbar-link-text a {
   color: white;
   text-decoration: none;
+}
+
+.as-start {
+  align-self: flex-start;
 }
