@@ -16826,6 +16826,32 @@ input:focus {
   width: 153px;
 }
 
+.content-ecs .status-done {
+  align-items: center;
+  background-color: #039855;
+  border-radius: 10px;
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  overflow: hidden;
+  padding: 8px 24px;
+  position: relative;
+  width: 153px;
+}
+
+.content-ecs .status-cancel {
+  align-items: center;
+  background-color: #D92D20;
+  border-radius: 10px;
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  overflow: hidden;
+  padding: 8px 24px;
+  position: relative;
+  width: 153px;
+}
+
 .content-ecs .text-status {
   letter-spacing: 0;
   line-height: normal;
