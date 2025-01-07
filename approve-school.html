@@ -56,12 +56,13 @@
       <div class="approve-school-flex-row">
         <div class="approve-school-overlap-group">
           <div class="approve-school-frame-38357">
+
             <div class="approve-school-frame-38358">
               <div class="approve-school-frame-38354">
                 <div class="approve-school-frame-38352">
                   <div class="approve-school-frame-38350">
                     <div class="approve-school-frame-38 ">
-                      <img class="approve-school-icon" src="img/icon-person2-2.svg" alt="icon person2" />
+                      <img class="approve-school-icon" src="img/icon-person2-1.svg" alt="icon person2" />
                       <div
                         class="approve-school-text approve-school-valign-text-middle approve-school-text-3 notosansthai-semi-bold-black-22px">
                         บัญชีของฉัน</div>
@@ -83,26 +84,53 @@
               </div>
               <img class="approve-school-vector" src="img/vector-19-2.svg" alt="Vector 19" />
               <div class="approve-school-frame-38">
-                <img class="approve-school-icon" src="img/icon-report-2.svg" alt="icon Report" />
+                <img class="approve-school-icon" src="img/icon-report-1-active.svg" alt="icon Report" />
                 <div class="approve-school-text-4 approve-school-valign-text-middle approve-school-text-3">
                   เอกสารใบขอสั่งซื้อ</div>
               </div>
               <img class="approve-school-vector" src="img/vector-19-2.svg" alt="Vector 22" />
-              <div class="approve-school-frame-3852">
+              <a href="#" class="no-text-underline">
                 <div class="approve-school-frame-38">
-                  <img class="approve-school-icon" src="img/icon-report-3.svg" alt="icon Report" />
-                  <div
-                    class="approve-school-text approve-school-valign-text-middle approve-school-text-3 notosansthai-semi-bold-black-22px">
-                    รายการคำสั่งซื้อ</div>
+                  <img class="approve-school-icon" src="img/checkmark-square-04-1.svg" alt="icon Report" />
+                  <div class="approve-school-text approve-school-valign-text-middle approve-school-text-3 notosansthai-semi-bold-black-22px">
+                    อนุมัติสถานศึกษา</div>
                 </div>
-                <div class="approve-school-frame-3835">
-                  <div class="approve-school-frame-38351 notosansthai-normal-black-20px">
-                    <div class="approve-school-text-1 approve-school-valign-text-middle approve-school-text-3">
+              </a>
+              <img class="approve-school-vector" src="img/vector-19-2.svg" alt="Vector 22" />
+
+              <!-- <div class="frame-38350">
+                <a class="frame-383 no-text-underline" style="color: #000;"
+                  href="../../ปพ ออนไลน์ - font อนุมัติสถานศึกษา/รายการอนุมัติสถานศึกษา/u3629u3609u3640u3617u3633u3605u3636u3626u3606u3634u3609u3624u3638u3585u3625u3634.html">
+                  <img class="checkmark-square-04" src="img/checkmark-square-04-1.svg" alt="checkmark-square-04" />
+                  <div class="text valign-text-middle notosansthai-semi-bold-black-22px text-bold">อนุมัติสถานศึกษา</div>
+                </a>
+              </div> -->
+              <div class="approve-school-frame-38354">
+                <div class="approve-school-frame-38352">
+                  <div class="approve-school-frame-38350">
+                    <div class="approve-school-frame-38 ">
+                      <img class="approve-school-icon" src="img/icon-report-3.svg" alt="icon person2" />
+                      <div
+                        class="approve-school-text approve-school-valign-text-middle approve-school-text-3 notosansthai-semi-bold-black-22px">
+                        รายการคำสั่งซื้อ</div>
+                    </div>
+                    <a onclick="showMenuCollap3()">
+                      <div class="approve-school-frame-38348">
+                        <img class="approve-school-arrow-down-01" src="img/arrow-down-01-2.svg" alt="arrow-down-01" />
+                      </div>
+                    </a>
+                  </div>
+                  <div id="collapMenu3" class="approve-school-frame-3835 notosansthai-normal-black-20px"
+                    style="display: none;">
+                    <a href="./delivered-order.html" style="color: #000;">
+                      <div class="approve-school-text-1 approve-school-valign-text-middle approve-school-text-3">
                       เอกสารมีเลขคุม</div>
+                    </a>
+                    
                     <div class="approve-school-text-2 approve-school-valign-text-middle approve-school-text-3">
                       เอกสารไม่มีเลขคุม</div>
-                    <div class="approve-school-text-8 approve-school-valign-text-middle approve-school-text-3">เลขใบปพ.
-                      ออนไลน์(ปพ.1)</div>
+                    <div class="approve-school-text-2 approve-school-valign-text-middle approve-school-text-3">
+                      เลขใบปพ. ออนไลน์(ปพ.1)</div>
                   </div>
                 </div>
               </div>
@@ -138,6 +166,10 @@
                   ออกจากระบบ</div>
               </div>
             </div>
+
+            <!-- nav bar -->
+  
+        
             <div class="approve-school-frame-38356">
               <div class="approve-school-frame-38357-1">
                 <div class="approve-school-frame-38344 notosansthai-semi-bold-black-20px">
@@ -402,6 +434,17 @@
         content2.style.display = "block";
       } else {
         content2.style.display = "none";
+      }
+    }
+
+    function showMenuCollap3() {
+      isCollape = !isCollape;
+      const content = document.getElementById("collapMenu3");
+
+      if (isCollape) {
+        content.style.display = "block";
+      } else {
+        content.style.display = "none";
       }
     }
 
