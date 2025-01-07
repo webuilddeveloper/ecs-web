@@ -1091,8 +1091,10 @@
   align-items: center;
   align-self: stretch;
   background-color: var(--white);
+  /* background-color: #F3F3F3; */
   border: 1px solid;
-  border-color: var(--bggrey);
+  /* border-color: var(--bggrey); */
+  border-color: #00000059;
   border-radius: 8px;
   display: flex;
   flex: 0 0 auto;
@@ -1241,7 +1243,7 @@
 .content-ecs .flex-row {
   gap: 65px;
   /* height: 718px; */
-  margin-left: 12.0px;
+  /* margin-left: 12.0px; */
   min-width: 1252px;
   margin-top: 28px;
 }
@@ -1364,6 +1366,7 @@
   min-width: 192px;
   text-align: center;
   white-space: nowrap;
+  align-self: center;
 }
 
 /* #region globals */
@@ -1685,7 +1688,7 @@ input:focus {
 }
 
 .home-educational-span1 {
-  color: var(--pink);
+  color: var(--pink) !important;
 }
 
 .home-educational-text-7 {
@@ -12256,7 +12259,7 @@ input:focus {
   border: 1px solid;
   border-color: #dce0e5;
   border-radius: 8px;
-  box-shadow: inset 0px -2px 2px #3030301a , inset 0px 7px 12px #ffffff14;
+  box-shadow: inset 0px -2px 2px #3030301a, inset 0px 7px 12px #ffffff14;
   display: inline-flex;
   gap: 6px;
   height: 48px;
@@ -15710,12 +15713,13 @@ input:focus {
 .custom-dropdown {
   width: 100%;
   height: 40px;
-  padding: 5px 10px;
-  font-size: 14px;
+  /* padding: 5px 10px; */
+  font-size: var(--font-size-17);
   border: 1px solid #ccc;
   border-radius: 6px;
   background: #fff;
   cursor: pointer;
+  height: auto;
 }
 
 /* Address Details */
@@ -16137,9 +16141,10 @@ input:focus {
   flex: 0 0 auto;
   flex-direction: column;
   gap: 8px;
-  padding: 0px 50px;
+  /* padding: 0px 50px; */
+  padding-left: 50px;
   position: relative;
-  width: 251px;
+  /* width: 251px; */
 }
 
 .content-ecs .text-2-1 {
@@ -16798,7 +16803,8 @@ input:focus {
   align-items: flex-start;
   align-self: stretch;
   border: 1px solid;
-  border-color: var(--black);
+  /* border-color: var(--black); */
+  border-color: #00000059;
   border-radius: 20px;
   display: flex;
   flex: 0 0 auto;
@@ -16809,6 +16815,19 @@ input:focus {
   position: relative;
   width: 100%;
 
+}
+
+.content-ecs .status-must-delivered {
+  align-items: center;
+  background-color: var(--pink);
+  border-radius: 10px;
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  overflow: hidden;
+  padding: 8px 24px;
+  position: relative;
+  width: 153px;
 }
 
 .content-ecs .status-must-received {
@@ -16822,6 +16841,45 @@ input:focus {
   padding: 8px 24px;
   position: relative;
   width: 153px;
+}
+
+.content-ecs .status-done {
+  align-items: center;
+  background-color: #039855;
+  border-radius: 10px;
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  overflow: hidden;
+  padding: 8px 24px;
+  position: relative;
+  min-width: 153px;
+}
+
+.content-ecs .status-cancel {
+  align-items: center;
+  background-color: #D92D20;
+  border-radius: 10px;
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  overflow: hidden;
+  padding: 8px 24px;
+  position: relative;
+  width: 153px;
+}
+
+.content-ecs .status-process {
+  align-items: center;
+  background-color: #FFBE33;
+  border-radius: 10px;
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  overflow: hidden;
+  padding: 8px 24px;
+  position: relative;
+  min-width: 153px;
 }
 
 .content-ecs .text-status {
@@ -17096,6 +17154,12 @@ input:focus {
   height: -webkit-fill-available;
   background: transparent;
   border: none;
+  margin: 0;
+  padding: 0;
+}
+
+dialog::backdrop {
+  background-color: #0000004d;
 }
 
 
@@ -17213,9 +17277,10 @@ input:focus {
   flex: 0 0 auto;
   flex-direction: column;
   gap: 8px;
-  padding: 0px 50px;
+  /* padding: 0px 50px; */
+  padding-left: 50px;
   position: relative;
-  width: 251px;
+  /* width: 251px; */
 }
 
 .approve-school-text-1 {
@@ -17240,7 +17305,7 @@ input:focus {
 .approve-school-text-4 {
   color: var(--pink);
   font-family: var(--font-family-noto_sans_thai);
-  font-size: var(--font-size-l);
+  font-size: var(--font-size-22);
   font-weight: 600;
   line-height: normal;
   margin-top: -0.50px;
@@ -17381,7 +17446,7 @@ input:focus {
   flex: 1;
   flex-grow: 1;
   font-family: var(--font-family-noto_sans_thai);
-  font-size: var(--font-size-s);
+  font-size: var(--font-size-17);
   font-weight: 400;
   letter-spacing: 0;
   line-height: normal;
@@ -18281,7 +18346,7 @@ a:active {
   flex: 1;
   flex-grow: 1;
   font-family: var(--font-family-noto_sans_thai);
-  font-size: var(--font-size-s);
+  font-size: var(--font-size-17);
   font-weight: 400;
   letter-spacing: 0;
   line-height: normal;
@@ -19145,7 +19210,7 @@ a:active {
   flex: 1;
   flex-grow: 1;
   font-family: var(--font-family-noto_sans_thai);
-  font-size: var(--font-size-s);
+  font-size: var(--font-size-17);
   font-weight: 400;
   letter-spacing: 0;
   line-height: normal;
@@ -20000,7 +20065,7 @@ a:active {
   flex: 1;
   flex-grow: 1;
   font-family: var(--font-family-noto_sans_thai);
-  font-size: var(--font-size-s);
+  font-size: var(--font-size-17);
   font-weight: 400;
   letter-spacing: 0;
   line-height: normal;
@@ -21415,7 +21480,7 @@ a:active {
 }
 
 .payment-summary-frame-38419 {
-  align-items: flex-end;
+  align-items: center;
   align-self: stretch;
   display: flex;
   flex: 0 0 auto;
@@ -21720,7 +21785,7 @@ a:active {
   padding: 527px 444px;
   position: absolute;
   top: 0;
-  width: auto;
+  width: -webkit-fill-available;
 }
 
 .payment-summary-popup {
@@ -21733,7 +21798,7 @@ a:active {
 .payment-summary-frame-container {
   border-radius: 10px;
   height: 288px;
-  margin-bottom: 50px;
+  margin-bottom: 200px;
   position: relative;
   width: 552px;
 }
@@ -21956,7 +22021,8 @@ a:active {
   left: 0;
   position: absolute;
   top: 0;
-  width: 1440px;
+  /* width: 1440px; */
+  width: -webkit-fill-available;
 }
 
 .payment-qr-frame-38257 {
@@ -22450,7 +22516,8 @@ a:active {
   padding: 527px 444px;
   position: absolute;
   top: 0;
-  width: 1440px;
+  /* width: 1440px; */
+  width: -webkit-fill-available;
 }
 
 .payment-proof-popup {
@@ -22463,7 +22530,7 @@ a:active {
 .payment-proof-frame-container {
   border-radius: 10px;
   height: 288px;
-  margin-bottom: 50px;
+  margin-bottom: 200px;
   position: relative;
   width: 552px;
 }
@@ -22690,7 +22757,7 @@ a:active {
 
 .content-ecs .login-text-24 {
   color: var(--vulcan);
-  font-family:"Noto Sans Thai", Helvetica;
+  font-family: "Noto Sans Thai", Helvetica;
   font-size: var(--font-size-l);
   font-weight: 500;
   letter-spacing: 0;
@@ -22775,7 +22842,8 @@ a:active {
   text-align: center;
   width: 80%;
   max-width: 400px;
-  position: relative; /* เพื่อจัดปุ่มกากบาท */
+  position: relative;
+  /* เพื่อจัดปุ่มกากบาท */
 }
 
 .login-close-btn {
@@ -24792,7 +24860,8 @@ a:active {
 .register-educational-service-area-dropdown-icon {
   position: absolute;
   top: 50%;
-  right: 10px; /* ระยะห่างจากขอบขวา */
+  right: 10px;
+  /* ระยะห่างจากขอบขวา */
   transform: translateY(-50%);
   pointer-events: none;
 }
@@ -24845,15 +24914,21 @@ a:active {
   padding: 5px 10px;
   font-size: 16px;
   font-family: 'Noto Sans Thai', sans-serif;
-  color: #000; /* สีตัวอักษรเป็นสีดำ */
-  background-color: transparent; /* พื้นหลังโปร่งใส */
-  border: none; /* ลบเส้นขอบ */
-  outline: none; /* ลบขอบเวลาโฟกัส */
+  color: #000;
+  /* สีตัวอักษรเป็นสีดำ */
+  background-color: transparent;
+  /* พื้นหลังโปร่งใส */
+  border: none;
+  /* ลบเส้นขอบ */
+  outline: none;
+  /* ลบขอบเวลาโฟกัส */
 }
 
 .register-educational-service-area-input-field::placeholder {
-  color: #aaa; /* สีของ placeholder เป็นสีเทาอ่อน */
-  font-style: italic; /* ตัวเอียง (ถ้าต้องการ) */
+  color: #aaa;
+  /* สีของ placeholder เป็นสีเทาอ่อน */
+  font-style: italic;
+  /* ตัวเอียง (ถ้าต้องการ) */
 }
 
 
@@ -25637,14 +25712,19 @@ a:active {
 /* ปรับขนาดของ select */
 .register-officer-custom-dropdown {
   width: 100%;
-  height: 35px; /* ลดความสูงของช่อง */
+  height: 35px;
+  /* ลดความสูงของช่อง */
   padding: 5px 10px;
-  font-size: 14px; /* ปรับขนาดตัวอักษรให้เหมาะสม */
+  font-size: 14px;
+  /* ปรับขนาดตัวอักษรให้เหมาะสม */
   font-family: 'Noto Sans Thai', sans-serif;
   background-color: transparent;
-  border: none; /* ลบเส้นขอบ */
-  outline: none; /* ลบขอบตอนโฟกัส */
-  appearance: none; /* ซ่อนลูกศร dropdown เริ่มต้น */
+  border: none;
+  /* ลบเส้นขอบ */
+  outline: none;
+  /* ลบขอบตอนโฟกัส */
+  appearance: none;
+  /* ซ่อนลูกศร dropdown เริ่มต้น */
   cursor: pointer;
 }
 
@@ -25652,7 +25732,8 @@ a:active {
 .register-officer-dropdown-icon {
   position: absolute;
   top: 50%;
-  right: 10px; /* ระยะห่างจากขอบขวา */
+  right: 10px;
+  /* ระยะห่างจากขอบขวา */
   transform: translateY(-50%);
   pointer-events: none;
 }
@@ -25661,12 +25742,17 @@ a:active {
 .register-officer-frame-20 {
   position: relative;
   display: flex;
-  align-items: center; /* จัดเนื้อหาให้อยู่ตรงกลาง */
+  align-items: center;
+  /* จัดเนื้อหาให้อยู่ตรงกลาง */
   background-color: white;
-  border: 1px solid #ccc; /* เส้นขอบบาง */
-  border-radius: 4px; /* มุมมน */
-  height: 35px; /* ลดความสูงของ container */
-  overflow: hidden; /* ป้องกันเนื้อหาล้น */
+  border: 1px solid #ccc;
+  /* เส้นขอบบาง */
+  border-radius: 4px;
+  /* มุมมน */
+  height: 35px;
+  /* ลดความสูงของ container */
+  overflow: hidden;
+  /* ป้องกันเนื้อหาล้น */
   width: 100%;
 }
 
@@ -25702,16 +25788,22 @@ a:active {
   padding: 5px 10px;
   font-size: 16px;
   font-family: 'Noto Sans Thai', sans-serif;
-  color: #000; /* สีตัวอักษรเป็นสีดำ */
-  background-color: transparent; /* พื้นหลังโปร่งใส */
-  border: none; /* ลบเส้นขอบ */
-  outline: none; /* ลบขอบเวลาโฟกัส */
+  color: #000;
+  /* สีตัวอักษรเป็นสีดำ */
+  background-color: transparent;
+  /* พื้นหลังโปร่งใส */
+  border: none;
+  /* ลบเส้นขอบ */
+  outline: none;
+  /* ลบขอบเวลาโฟกัส */
 }
 
 /* สไตล์สำหรับ placeholder */
 .input-field::placeholder {
-  color: #aaa; /* สีของ placeholder เป็นสีเทาอ่อน */
-  font-style: italic; /* ตัวเอียง (ถ้าต้องการ) */
+  color: #aaa;
+  /* สีของ placeholder เป็นสีเทาอ่อน */
+  font-style: italic;
+  /* ตัวเอียง (ถ้าต้องการ) */
 }
 
 
@@ -26279,7 +26371,7 @@ a:active {
   background-color: #ffffff1a;
   border-color: #dce0e5;
   border-radius: 8px;
-  box-shadow: inset 0px -2px 2px #3030301a , inset 0px 7px 12px #ffffff14;
+  box-shadow: inset 0px -2px 2px #3030301a, inset 0px 7px 12px #ffffff14;
   cursor: pointer;
   display: inline-flex;
   gap: 6px;
@@ -26342,6 +26434,7 @@ a:active {
   gap: 24px;
   position: relative;
 }
+
 .profile-school-navbar-link-text {
   letter-spacing: 0;
   line-height: normal;
@@ -26355,7 +26448,7 @@ a:active {
   text-decoration: none;
 }
 
-.a-link-left{
+.a-link-left {
   color: black;
 }
 
@@ -26696,7 +26789,7 @@ a:active {
   border: 1px solid;
   border-color: var(--geyser);
   border-radius: 8px;
-  box-shadow: inset 0px -2px 2px #3030301a , inset 0px 7px 12px #ffffff14;
+  box-shadow: inset 0px -2px 2px #3030301a, inset 0px 7px 12px #ffffff14;
   display: flex;
   gap: 8px;
   height: 40px;
@@ -26943,7 +27036,7 @@ a:active {
   border: 1px solid;
   border-color: var(--geyser);
   border-radius: 8px;
-  box-shadow: inset 0px -2px 2px #3030301a , inset 0px 7px 12px #ffffff14;
+  box-shadow: inset 0px -2px 2px #3030301a, inset 0px 7px 12px #ffffff14;
   gap: 6px;
   height: 32px;
   padding: 8px 6px;
@@ -26958,7 +27051,7 @@ a:active {
 .print-document-information-button-4 {
   background-color: var(--blue);
   border-radius: 8px;
-  box-shadow: inset 0px -2px 2px #3030301a , inset 0px 7px 12px #ffffff14;
+  box-shadow: inset 0px -2px 2px #3030301a, inset 0px 7px 12px #ffffff14;
   gap: 6px;
   height: 32px;
   padding: 8px;
@@ -27411,7 +27504,7 @@ a:active {
   border: 1px solid;
   border-color: var(--geyser);
   border-radius: 8px;
-  box-shadow: inset 0px -2px 2px #3030301a , inset 0px 7px 12px #ffffff14;
+  box-shadow: inset 0px -2px 2px #3030301a, inset 0px 7px 12px #ffffff14;
   display: flex;
   gap: 8px;
   height: 40px;
@@ -27572,7 +27665,7 @@ a:active {
   border: 1px solid;
   border-color: var(--geyser);
   border-radius: 8px;
-  box-shadow: inset 0px -2px 2px #3030301a , inset 0px 7px 12px #ffffff14;
+  box-shadow: inset 0px -2px 2px #3030301a, inset 0px 7px 12px #ffffff14;
   cursor: pointer;
   display: flex;
   gap: 6px;
@@ -27591,7 +27684,7 @@ a:active {
 
 .print-document-history-button-2 {
   background-color: var(--blue);
-  box-shadow: inset 0px -2px 2px #3030301a , inset 0px 7px 12px #ffffff14;
+  box-shadow: inset 0px -2px 2px #3030301a, inset 0px 7px 12px #ffffff14;
 }
 
 .print-document-history-text-sm-1 {
@@ -27737,26 +27830,26 @@ a:active {
 
 
 .popup-confirm-view {
-  display: flex; 
-  justify-content: center; 
-  align-items: center; 
-  position: fixed; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
   top: 0;
   left: 0;
-  width: 100vw; 
-  height: 100vh; 
-  background-color: rgba(20, 24, 31, 0.5); 
-  z-index: 1000; 
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(20, 24, 31, 0.5);
+  z-index: 1000;
 }
 
 .popup-confirm-frame-container {
-  background-color: #fff; 
+  background-color: #fff;
   border-radius: 10px;
   width: 552px;
-  max-width: 90%; 
-  padding: 20px; 
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
-  position: relative; 
+  max-width: 90%;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  position: relative;
   bottom: 200px;
 }
 
@@ -27950,7 +28043,8 @@ a:active {
 }
 
 body.no-scroll {
-  overflow: hidden; /* ปิดการเลื่อน */
+  overflow: hidden;
+  /* ปิดการเลื่อน */
 }
 
 
@@ -27968,4 +28062,8 @@ body.no-scroll {
   padding: 8px 16px;
   position: relative;
   width: 100%;
+}
+
+.as-start {
+  align-self: flex-start;
 }
