@@ -4219,12 +4219,13 @@ input:focus {
   align-items: center;
   background-color: #14181f80;
   display: flex;
-  height: 1020px;
+  height: 100%;
   left: 0;
-  padding: 0 319px;
+  /* padding: 0 319px; */
+  justify-content: center;
   position: absolute;
   top: 4px;
-  width: 1440px;
+  width: 100%;
 }
 
 .order-approval-detail-frame-1041-3 {
@@ -4310,19 +4311,19 @@ input:focus {
 }
 
 .order-approval-detail-view-1 {
-  background-color: #14181f80;
-  height: 1020px;
+  /* background-color: #14181f80; */
+  height: 100%;
   left: 0;
   position: absolute;
   top: 4px;
-  width: 1440px;
+  width: 100%;
 }
 
 .order-approval-detail-popup {
   align-items: flex-start;
   display: flex;
   height: 288px;
-  left: 444px;
+  /* left: 444px; */
   min-width: 552px;
   position: absolute;
   top: 323px;
@@ -4797,21 +4798,22 @@ input:focus {
 
 .order-approval-attach-book-view-1 {
   background-color: #14181f80;
-  height: 1024px;
+  height: 100%;
   left: 0;
   position: absolute;
   top: 4px;
-  width: 1440px;
+  width: 100%;
 }
 
 .order-approval-attach-book-popup {
   align-items: flex-start;
   display: flex;
   height: 288px;
-  left: 444px;
+  /* left: 444px; */
   min-width: 552px;
   position: absolute;
-  top: 323px;
+  /* top: 323px; */
+  position-area: center;
 }
 
 .order-approval-attach-book-frame-container {
@@ -4946,12 +4948,13 @@ input:focus {
   align-items: center;
   background-color: #14181f80;
   display: flex;
-  height: 1024px;
+  height: 100%;
   left: 0;
-  padding: 0 319px;
+  /* padding: 0 319px; */
+  justify-content: center;
   position: absolute;
   top: 4px;
-  width: 1440px;
+  width: 100%;
 }
 
 .order-approval-attach-book-frame-1041-3 {
@@ -7410,21 +7413,22 @@ input:focus {
 
 .purchase-order-confirm-educational-view-1 {
   background-color: #14181f80;
-  height: 1024px;
+  height: 100%;
   left: 0;
   position: absolute;
   top: 4px;
-  width: 1440px;
+  width: 100%;
 }
 
 .purchase-order-confirm-educational-popup {
   align-items: flex-start;
   display: flex;
   height: 288px;
-  left: 444px;
+  /* left: 444px; */
   min-width: 552px;
   position: absolute;
-  top: 323px;
+  /* top: 323px; */
+  position-area: center;
 }
 
 .purchase-order-confirm-educational-frame-container {
@@ -7559,12 +7563,13 @@ input:focus {
   align-items: center;
   background-color: #14181f80;
   display: flex;
-  height: 1024px;
+  height: 100%;
   left: 0;
-  padding: 0 319px;
+  /* padding: 0 319px; */
+  justify-content: center;
   position: absolute;
   top: 4px;
-  width: 1440px;
+  width: 100%;
 }
 
 .purchase-order-confirm-educational-frame-1041-3 {
@@ -8657,11 +8662,11 @@ input:focus {
 
 .approval-educational-detail-view-1 {
   background-color: #14181f80;
-  height: 1020px;
+  height: 100%;
   left: 0;
   position: absolute;
   top: 4px;
-  width: 1440px;
+  width: 100%;
 }
 
 .approval-educational-detail-frame-38264 {
@@ -8774,10 +8779,11 @@ input:focus {
   align-items: flex-start;
   display: flex;
   height: 288px;
-  left: 444px;
+  /* left: 444px; */
   min-width: 552px;
   position: absolute;
-  top: 323px;
+  /* top: 323px; */
+  position-area: center;
 }
 
 .approval-educational-detail-frame-38264-2 {
@@ -8846,12 +8852,13 @@ input:focus {
   align-items: center;
   background-color: #14181f80;
   display: flex;
-  height: 1020px;
+  height: 100%;
   left: 0;
-  padding: 0 319px;
+  /* padding: 0 319px; */
+  justify-content: center;
   position: absolute;
   top: 4px;
-  width: 1440px;
+  width: 100%;
 }
 
 .approval-educational-detail-frame-1041-3 {
