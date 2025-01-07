@@ -1090,8 +1090,8 @@
 .content-ecs .frame-20 {
   align-items: center;
   align-self: stretch;
-  /* background-color: var(--white); */
-  background-color: #F3F3F3;
+  background-color: var(--white);
+  /* background-color: #F3F3F3; */
   border: 1px solid;
   /* border-color: var(--bggrey); */
   border-color: #00000059;
