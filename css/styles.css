@@ -6195,6 +6195,10 @@ input:focus {
   gap: 8px;
   height: 44px;
   position: relative;
+  display: flex;
+  flex-direction: row;
+  width: -webkit-fill-available;
+  justify-content: space-evenly;
 }
 
 .purchase-order-educational-button-7 {
