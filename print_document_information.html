@@ -255,7 +255,7 @@
                 <div
                   class="print-document-information-text-1-2 valign-text-middle print-document-information-text-1-3 notosansthai-normal-black-16px">
                   ดูรายละเอียด</div>
-                <a href="javascript:SubmitForm('form7')">
+                <a onclick="showPopup()">
                   <div class="print-document-information-button-3 print-document-information-button-5">
                     <div
                       class="print-document-information-text_label valign-text-middle notosansthai-normal-white-20px">
@@ -313,7 +313,7 @@
                 <div
                   class="print-document-information-text-1-2 valign-text-middle print-document-information-text-1-3 notosansthai-normal-black-16px">
                   ดูรายละเอียด</div>
-                <a href="javascript:SubmitForm('form7')">
+                <a onclick="showPopup()">
                   <div class="print-document-information-button-3 print-document-information-button-5">
                     <div
                       class="print-document-information-text_label valign-text-middle notosansthai-normal-white-20px">
@@ -417,50 +417,88 @@
             </article>
             <article class="popup-confirm-text-field-1">
               <div class="popup-confirm-text-3 notosansthai-normal-black-18px">ชุดที่</div>
-              <div class="popup-confirm-frame-20-1 frame-20-3">
-                <div class="popup-confirm-text_label-1 text_label-4 notosansthai-normal-dove-gray-17px">เลือกชุดที่
-                </div>
-                <img class="popup-confirm-dropdown" src="img/dropdown.svg" alt="dropdown" />
+              <div class="print-document-information-frame-2-1">
+                <select id="agency"
+                  class="print-document-information-custom-dropdown notosansthai-normal-slate-gray-15px">
+                  <option value="" disabled selected>เลือกชุดที่</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                </select>
+                <img class="print-document-information-dropdown-icon" src="img/dropdown-6.svg" alt="dropdown" />
               </div>
             </article>
             <article class="popup-confirm-text-field-1">
               <div class="popup-confirm-text-3 notosansthai-normal-black-18px">จำนวน</div>
-              <div class="popup-confirm-frame-20-1 frame-20-3">
+              <div class="popup-confirm-frame-20-1 popup-confirm-frame-20-3">
                 <input class="popup-confirm-text_input notosansthai-normal-dove-gray-17px" name="กรณากรอกชอผใชงาน"
                   placeholder="กรุณากรอกจำนวน" type="text" />
               </div>
             </article>
             <article class="popup-confirm-text-field-1">
-              <div class="popup-confirm-text_label-2 text_label-4">เลขที่แรก</div>
-              <div class="popup-confirm-frame-20-1 frame-20-3">
+              <div class="popup-confirm-text_label-2 popup-confirm-text_label-4">เลขที่แรก</div>
+              <div class="popup-confirm-frame-20-1 popup-confirm-frame-20-3">
                 <input class="popup-confirm-text_input notosansthai-normal-dove-gray-17px" name="กรณากรอกชอผใชงาน"
                   placeholder="กรุณากรอกเลขที่แรก" type="text" />
               </div>
             </article>
             <article class="popup-confirm-text-field-1">
               <div class="popup-confirm-text-3 notosansthai-normal-black-18px">เลขที่สุดท้าย</div>
-              <div class="popup-confirm-frame-20-1 frame-20-3">
+              <div class="popup-confirm-frame-20-1 popup-confirm-frame-20-3">
                 <input class="popup-confirm-text_input notosansthai-normal-dove-gray-17px" name="กรณากรอกชอผใชงาน"
-                  placeholder="-" type="text" />
+                  placeholder="กรุณากรอกเลขที่สุดท้าย" type="text" />
               </div>
             </article>
           </div>
           <div class="popup-confirm-frame-38521">
-            <a href="javascript:SubmitForm('form3')">
-              <article class="popup-confirm-button-4 button-6">
-                <div class="popup-confirm-text_label-3 valign-text-middle text_label-4">ยกเลิก</div>
+            <a onclick="showPopup()">
+              <article class="popup-confirm-button-4 popup-confirm-button-6">
+                <div class="popup-confirm-text_label-3 valign-text-middle popup-confirm-text_label-4">ยกเลิก</div>
               </article>
-            </a><a href="javascript:SubmitForm('form3')">
-              <article class="popup-confirm-button-5 button-6">
+            </a><a onclick="showPopup2()">
+              <article class="popup-confirm-button-5 popup-confirm-button-6">
                 <div class="popup-confirm-text_label valign-text-middle notosansthai-semi-bold-white-20px">ยืนยัน</div>
               </article>
             </a>
           </div>
         </div>
       </div>
-      <a href="javascript:SubmitForm('form3')"><img class="popup-confirm-frame-1041" src="img/frame-1041.svg"
-          alt="Frame 1041" />
+      <a onclick="showPopup()"><img class="popup-confirm-frame-1041" src="img/frame-1041.svg" alt="Frame 1041" />
       </a>
+    </div>
+  </div>
+  <div id="content2" class="popup-confirm-view"  style="display: none;">
+      <div class="popup-confirm-frame-container">
+        <div class="popup-confirm-frame-38264">
+          <div class="popup-confirm-frame-38266">
+            <div class="purchase-order-shipping-frame-38265">
+              <img class="purchase-order-shipping-check-one" src="img/check-one.svg" alt="check-one" />
+              <h1
+                class="purchase-order-shipping-text_label-2 purchase-order-shipping-valign-text-middle purchase-order-shipping-text_label-4 notosansthai-semi-bold-green-40px">
+                พิมพ์เอกสารสำเร็จ</h1>
+            </div>
+            <div class="purchase-order-shipping-frame-38262">
+              <a href="./home-school.html">
+                <article class="purchase-order-shipping-button-2 purchase-order-shipping-button-4">
+                  <div
+                    class="purchase-order-shipping-text_label purchase-order-shipping-valign-text-middle purchase-order-shipping-text_label-4">
+                    หน้าหลัก</div>
+                </article>
+              </a>
+              <a href="./print_document_information.html">
+                <article class="purchase-order-shipping-button-3 purchase-order-shipping-button-4">
+                  <div
+                    class="purchase-order-shipping-text_label-4-2 purchase-order-shipping-valign-text-middle purchase-order-shipping-text_label-4 purchase-order-shipping-notosansthai-semi-bold-white-20px">
+                    พิมพ์ใบปพ.ออนไลน์
+                  </div>
+                </article>
+              </a>
+            </div>
+          </div>
+        </div>
+        <a onclick="showPopupDraft2()"><img class="purchase-order-shipping-frame-1041" src="img/frame-1041-2.svg"
+            alt="Frame 1041" />
+        </a>
     </div>
   </div>
   <script>
@@ -524,12 +562,11 @@
 
       if (isShow) {
         content.style.display = "flex";
-        document.body.classList.add('no-scroll'); // ปิดการเลื่อน
+        document.body.classList.add('no-scroll');
 
       } else {
         content.style.display = "none";
-        document.body.classList.remove('no-scroll'); // เปิดการเลื่อนกลับ
-
+        document.body.classList.remove('no-scroll');
       }
     }
 
@@ -545,9 +582,12 @@
       const content2 = document.getElementById("content2");
 
       if (isShow2) {
-        content2.style.display = "block";
+        content2.style.display = "flex";
+        document.body.classList.add('no-scroll');
+
       } else {
         content2.style.display = "none";
+        document.body.classList.remove('no-scroll');
       }
     }
   </script>
