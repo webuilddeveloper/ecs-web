@@ -90,20 +90,35 @@
               เอกสารใบขอสั่งซื้อ</div>
           </div>
           <img class="print-document-information-vector" src="img/vector-19-2.svg" alt="Vector 22" />
-          <div class="print-document-information-frame-3852">
-            <div class="print-document-information-frame-38">
-              <img class="print-document-information-icon" src="img/icon-report-11.svg" alt="icon Report" />
-              <div class="print-document-information-text-1 valign-text-middle notosansthai-semi-bold-black-22px">
-                รายการคำสั่งซื้อ</div>
-            </div>
-            <div class="print-document-information-frame-3835">
-              <div class="print-document-information-frame-38351 notosansthai-normal-black-20px">
-                <div class="print-document-information-text-2 valign-text-middle">เอกสารมีเลขคุม</div>
-                <div class="print-document-information-text-3 valign-text-middle">เอกสารไม่มีเลขคุม</div>
-                <div class="print-document-information-text-8 valign-text-middle">เลขใบปพ. ออนไลน์(ปพ.1)</div>
+          <div class="print-document-information-frame-38354">
+            <div class="print-document-information-frame-38352">
+              <div class="print-document-information-frame-38350">
+                <div class="print-document-information-frame-38">
+                  <img class="print-document-information-icon" src="img/icon-report-11.svg" alt="icon person2" />
+                  <div class="print-document-information-text-1 valign-text-middle notosansthai-semi-bold-black-22px">
+                    รายการคำสั่งซื้อ</div>
+                </div>
+                <a onclick="showMenuCollapOrder()">
+                  <div class="approve-school-frame-38348">
+                    <img class="approve-school-arrow-down-01" src="img/arrow-down-01-2.svg" alt="arrow-down-01" />
+                  </div>
+                </a>
+              </div>
+              <div id="collapMenuOrder" class="approve-school-frame-3835 notosansthai-normal-black-20px"
+                style="display: none;">
+                <a href="./delivered-order.html">
+                  <div
+                    class="approve-school-text-1 approve-school-valign-text-middle approve-school-text-3 a-link-left">
+                    เอกสารมีเลขคุม</div>
+                </a>
+                <div class="approve-school-text-2 approve-school-valign-text-middle approve-school-text-3">
+                  เอกสารไม่มีเลขคุม</div>
+                <div class="approve-school-text-2 approve-school-valign-text-middle approve-school-text-3">
+                  เลขใบปพ. ออนไลน์(ปพ.1)</div>
               </div>
             </div>
           </div>
+          
           <img class="print-document-information-vector" src="img/vector-19-2.svg" alt="Vector 20" />
           <div class="print-document-information-frame-3852">
             <div class="print-document-information-frame-38528">
@@ -544,6 +559,17 @@
     function showMenuCollap2() {
       isCollape2 = !isCollape2;
       const content2 = document.getElementById("collapMenu2");
+
+      if (isCollape2) {
+        content2.style.display = "block";
+      } else {
+        content2.style.display = "none";
+      }
+    }
+
+    function showMenuCollapOrder() {
+      isCollape2 = !isCollape2;
+      const content2 = document.getElementById("collapMenuOrder");
 
       if (isCollape2) {
         content2.style.display = "block";
