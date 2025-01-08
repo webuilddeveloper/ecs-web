@@ -180,22 +180,30 @@
     function showPopupF() {
       const popup = document.getElementById("popupF");
       popup.style.display = "flex"; // แสดง popup
+      const contentCancel = document.getElementById("contentCancel");
+      document.body.classList.add('no-scroll');
     }
 
     function hidePopupF() {
       const popup = document.getElementById("popupF");
       popup.style.display = "none"; // ซ่อน popup
+      const contentCancel = document.getElementById("contentCancel");
+      document.body.classList.remove('no-scroll');
     }
 
     function showPopupS(param) {
       document.getElementById("textstatus").innerText = param;
       const popup = document.getElementById("popupS");
       popup.style.display = "flex"; // แสดง popup
+      const contentCancel = document.getElementById("contentCancel");
+      document.body.classList.add('no-scroll');
     }
 
     function hidePopupS() {
       const popup = document.getElementById("popupS");
       popup.style.display = "none"; // ซ่อน popup
+      const contentCancel = document.getElementById("contentCancel");
+      document.body.classList.remove('no-scroll');
     }
 
     function SubmitForm(form_name) {

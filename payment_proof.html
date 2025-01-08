@@ -40,7 +40,7 @@
         </a>
       </div>
       <div class="navbar-link-text-ecs">
-        <a href="./order.html">
+        <a href="./delivered-order.html">
           ประวัติการสั่งซื้อ
         </a>
       </div>
@@ -273,9 +273,11 @@
       const content = document.getElementById("content");
 
       if (isShow) {
-        content.style.display = "block";
+        content.style.display = "flex";
+        document.body.classList.add('no-scroll');
       } else {
         content.style.display = "none";
+        document.body.classList.remove('no-scroll');
       }
     }
 
@@ -291,9 +293,11 @@
       const content2 = document.getElementById("content2");
 
       if (isShow2) {
-        content2.style.display = "block";
+        content2.style.display = "flex";
+        document.body.classList.add('no-scroll');
       } else {
         content2.style.display = "none";
+        document.body.classList.remove('no-scroll');
       }
     }
   </script>
