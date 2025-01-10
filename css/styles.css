@@ -28149,3 +28149,50 @@ body.no-scroll {
   font-size: var(--font-size-40);
   font-weight: 600;
 }
+
+.tabs-container {
+  font-family: Arial, sans-serif;
+  align-self: flex-start;
+}
+
+.tabs {
+  display: flex;
+  border-bottom: 2px solid #ddd;
+  width: 300px;
+}
+
+.tab-btn {
+  flex: 1;
+  padding: 10px 20px;
+  text-align: center;
+  background-color: #f9f9f9;
+  border: none;
+  border-bottom: 2px solid transparent;
+  cursor: pointer;
+  transition: background-color 0.3s, border-bottom 0.3s;
+}
+
+.tab-btn:hover {
+  background-color: #eee;
+}
+
+.tab-btn.active {
+  background-color: #ffffff;
+  border-bottom: 2px solid #007bff;
+  color: #007bff;
+}
+
+.tab-content {
+  padding: 20px;
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-top: none;
+}
+
+.tab-panel {
+  display: none;
+}
+
+.tab-panel.active {
+  display: block;
+}
