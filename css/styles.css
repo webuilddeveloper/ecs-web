@@ -22752,9 +22752,11 @@ a:active {
   align-items: center;
   display: flex;
   gap: 46px;
-  margin-right: 43.0px;
+  width: 100%;
+  /* margin-right: 43.0px; */
   margin-top: 216px;
-  min-width: 1187px;
+  justify-content: center;
+  /* min-width: 1187px; */
 }
 
 .content-ecs .login-logo-1-1 {
@@ -22807,7 +22809,7 @@ a:active {
 .content-ecs .login-text-24 {
   color: var(--vulcan);
   font-family: "Noto Sans Thai", Helvetica;
-  font-size: var(--font-size-l);
+  font-size: var(--font-size-32);
   font-weight: 500;
   letter-spacing: 0;
   line-height: 48.0px;
