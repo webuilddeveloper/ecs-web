@@ -21760,7 +21760,7 @@ a:active {
   flex: 0 0 auto;
   gap: 43px;
   position: relative;
-  width: 629px;
+  /* width: 629px; */
 }
 
 .payment-summary-frame-14 {
