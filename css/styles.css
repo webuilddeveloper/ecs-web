@@ -28171,7 +28171,7 @@ body.no-scroll {
     display: flex;
     flex-direction: column;
     height: auto;
-    width: 100%;
+    /* width: 100%; */
     padding: 0px 30px;
   }
 
