@@ -489,19 +489,21 @@
   <div class="footer">
     <p class="purchase-order-copyright-2024">Copyright 2024&nbsp;&nbsp; องค์การค้าของ สกสค.</p>
   </div>
-  <div id="popup" class="purchase-order-popup-container" style="display: none;">
-    <div class="purchase-order-popup">
-      <div class="purchase-order-frame-container">
-        <div class="purchase-order-frame-38262" style="text-align: right;">
-          <img style="width: 30px;" src="img/frame-1041.svg" alt="Frame 1041" onclick="hidePopup()" />
-        </div>
-        <div class="purchase-order-frame-38266">
-          <div class="purchase-order-frame-38265">
-            <img class="purchase-order-alert-02" src="img/elements.png" alt="alert-02" />
-            <h1 class="purchase-order-text_label-2 valign-text-middle purchase-order-text_label-5" style="color: #039855;">ใส่ตะกร้าแล้ว
-            </h1>
+  <div id="popup" class="purchase-order-view" style="display: none;">
+    <div class="payment-proof-popup">
+      <div class="payment-proof-frame-container">
+        <div class="payment-proof-frame-38264">
+          <div class="payment-proof-frame-38266">
+            <div class="payment-proof-frame-38265">
+              <img class="payment-proof-check-one" src="img/check-one.svg" alt="check-one" />
+              <h1
+                class="purchase-order-text_label-2 payment-proof-valign-text-middle payment-proof-text_label-4-2">
+                ใส่ตะกร้าแล้ว</h1>
+            </div>
           </div>
         </div>
+        <a onclick="hidePopup()"><img class="payment-proof-frame-1041" src="img/frame-1041.svg" alt="Frame 1041" />
+        </a>
       </div>
     </div>
   </div>
@@ -627,11 +629,14 @@
     function showPopup() {
       const popup = document.getElementById("popup");
       popup.style.display = "flex"; // แสดง popup
+      document.body.classList.add('no-scroll');
     }
 
     function hidePopup() {
       const popup = document.getElementById("popup");
       popup.style.display = "none"; // ซ่อน popup
+      document.body.classList.remove('no-scroll');
+
     }
 
     function SubmitForm(form_name) {
