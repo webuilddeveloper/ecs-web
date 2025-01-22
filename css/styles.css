@@ -28564,3 +28564,29 @@ body.no-scroll {
   text-align: center;
   width: 468px;
 }
+
+.order-approval-list-table-header-2 {
+  align-items: center;
+  align-self: stretch;
+  background-color: var(--black-haze);
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-color: var(--geyser);
+  gap: 4px;
+  height: 44px;
+  padding: 8px;
+  position: relative;
+  align-content: center;
+}
+
+.order-approval-list-base-table-cell-4 {
+  align-items: center;
+  align-self: stretch;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-color: var(--geyser);
+  gap: 8px;
+  height: 44px;
+  padding: 8px;
+  position: relative;
+}
