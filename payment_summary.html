@@ -6,6 +6,7 @@
   <!--<meta name=description content="This site was generated with Anima. www.animaapp.com"/>-->
   <!-- <link rel="shortcut icon" type=image/png href="https://animaproject.s3.amazonaws.com/home/favicon.png" /> -->
   <meta name="viewport" content="width=1440, maximum-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="shortcut icon" type="image/png" href="https://animaproject.s3.amazonaws.com/home/favicon.png" />
   <meta name="og:type" content="website" />
   <meta name="twitter:card" content="photo" />
@@ -14,65 +15,68 @@
 </head>
 
 <body style="margin: 0; background: #ffffff">
-  <div class="header-ecs">
-    <a href="./login.html">
-      <img class="logo-ecs" src="img/logo------1.png" alt="logo ecs" />
-    </a>
-    <div class="navbar-ecs">
-      <div class="navbar-link-text-ecs">
-        <a href="./purchase-order-school.html">
-          ออกใบขอสั่งซื้อ
-        </a>
-      </div>
-      <div class="navbar-link-text-ecs">
-        <a href="./approve-school.html">
-          เอกสารใบขอสั่งซื้อ
-        </a>
-      </div>
-      <div class="navbar-link-text-ecs">
-        <a href="./delivered-order.html">
-          รายการคำสั่งซื้อ
-        </a>
-      </div>
-      <div class="navbar-link-text-ecs">
-        <a href="./order-cancel.htmll">
-          ยกเลิกเลข ปพ.
-        </a>
-      </div>
-      <div class="navbar-link-text-ecs">
-        <a href="./delivered-order.html">
-          ประวัติการสั่งซื้อ
-        </a>
-      </div>
-    </div>
-    <div class="header-action-ecs">
-      <img class="group" src="img/group@2x.png" alt="Group" />
-      <a href="./profile-school.html">
-        <img class="vector" src="img/vector-2.svg" alt="Vector" />
+  <div class="desktop">
+    <div class="header-ecs">
+      <a href="./login.html">
+        <img class="logo-ecs" src="img/logo------1.png" alt="logo ecs" />
       </a>
-    </div>
-  </div>
-  <div class="content-center">
-    <div class="content-ecs">
-      <div class="flex-row flex">
-        <a onclick="goBack()" class="button-back pointer">
-          <img class="icon-back" src="./img/icon-back-4.svg" alt="icon back" />
-          <div class="text_label valign-text-middle">ย้อนกลับ</div>
+      <div class="navbar-ecs">
+        <div class="navbar-link-text-ecs">
+          <a href="./purchase-order-school.html">
+            ออกใบขอสั่งซื้อ
+          </a>
+        </div>
+        <div class="navbar-link-text-ecs">
+          <a href="./approve-school.html">
+            เอกสารใบขอสั่งซื้อ
+          </a>
+        </div>
+        <div class="navbar-link-text-ecs">
+          <a href="./delivered-order.html">
+            รายการคำสั่งซื้อ
+          </a>
+        </div>
+        <div class="navbar-link-text-ecs">
+          <a href="./order-cancel.htmll">
+            ยกเลิกเลข ปพ.
+          </a>
+        </div>
+        <div class="navbar-link-text-ecs">
+          <a href="./delivered-order.html">
+            ประวัติการสั่งซื้อ
+          </a>
+        </div>
+      </div>
+      <div class="header-action-ecs">
+        <img class="group" src="img/group@2x.png" alt="Group" />
+        <a href="./profile-school.html">
+          <img class="vector" src="img/vector-2.svg" alt="Vector" />
         </a>
       </div>
+    </div>
+    <div class="content-center">
+      <div class="content-ecs">
+        <div class="flex-row flex">
+          <a onclick="goBack()" class="button-back pointer">
+            <img class="icon-back" src="./img/icon-back-4.svg" alt="icon back" />
+            <div class="text_label valign-text-middle">ย้อนกลับ</div>
+          </a>
+        </div>
 
-      <h1 class="text-1-2">ยอดชำระเงิน</h1>
-      <div class="frame-38489">
-        <div class="payment-summary-frame-38419">
-          <div class="payment-summary-frame-38395 notosansthai-semi-bold-black-20px">
-            <div class="payment-summary-text-7">วิธีชำระเงิน</div>
-            <div class="payment-summary-frame-29">
-              <div class="payment-summary-frame-3826">
-                <label class="purchase-order-shipping-radio-button">
-                  <input class="payment-summary-radio-button-1 payment-summary-frame-4" type="radio" name="delivery_option2" value="registered" />
-                  <span class="radio-label payment-summary-text-8 payment-summary-valign-text-middle">สแกน QR Code</span>
-                </label>
-                <!-- <div class="payment-summary-radio-button-1">
+        <h1 class="text-1-2">ยอดชำระเงิน</h1>
+        <div class="frame-38489">
+          <div class="payment-summary-frame-38419">
+            <div class="payment-summary-frame-38395 notosansthai-semi-bold-black-20px">
+              <div class="payment-summary-text-7">วิธีชำระเงิน</div>
+              <div class="payment-summary-frame-29">
+                <div class="payment-summary-frame-3826">
+                  <label class="purchase-order-shipping-radio-button">
+                    <input class="payment-summary-radio-button-1 payment-summary-frame-4" type="radio"
+                      name="delivery_option2" value="registered" />
+                    <span class="radio-label payment-summary-text-8 payment-summary-valign-text-middle">สแกน QR
+                      Code</span>
+                  </label>
+                  <!-- <div class="payment-summary-radio-button-1">
                   <div class="payment-summary-frame-4">
                     <div class="payment-summary-overlap-group">
                       <div class="payment-summary-ellipse-1"></div>
@@ -80,9 +84,9 @@
                   </div>
                 </div>
                 <div class="payment-summary-text-8 payment-summary-valign-text-middle">สแกน QR Code</div> -->
-              </div>
-              <img class="payment-summary-line" src="img/line-6-113.svg" alt="Line 6" />
-              <!-- <div class="payment-summary-frame-3826">
+                </div>
+                <img class="payment-summary-line" src="img/line-6-113.svg" alt="Line 6" />
+                <!-- <div class="payment-summary-frame-3826">
                 <div class="payment-summary-radio-button">
                   <div class="payment-summary-frame-3">
                     <div class="payment-summary-ellipse-2"></div>
@@ -90,121 +94,84 @@
                 </div>
                 <div class="payment-summary-qr-code payment-summary-valign-text-middle">โอนเข้าบัญชี</div>
               </div> -->
-              <!-- <img class="payment-summary-line" src="img/line-6-104.svg" alt="Line 7" /> -->
-              <div class="payment-summary-frame-3826">
-                <div class="payment-summary-radio-button">
-                  <div class="payment-summary-frame-3-1">
-                    <!-- <div class="payment-summary-ellipse-2-1"></div> -->
-                    <input class="payment-summary-ellipse-2-1" type="radio" name="delivery_option2" value="registered" disabled/>
+                <!-- <img class="payment-summary-line" src="img/line-6-104.svg" alt="Line 7" /> -->
+                <div class="payment-summary-frame-3826">
+                  <div class="payment-summary-radio-button">
+                    <div class="payment-summary-frame-3-1">
+                      <!-- <div class="payment-summary-ellipse-2-1"></div> -->
+                      <input class="payment-summary-ellipse-2-1" type="radio" name="delivery_option2" value="registered"
+                        disabled />
+                    </div>
+                  </div>
+                  <div class="payment-summary-gfmis payment-summary-valign-text-middle">GFMIS</div>
+                </div>
+              </div>
+            </div>
+            <div class="payment-summary-frame-28">
+              <div class="payment-summary-frame-102">
+                <div class="payment-summary-frame">
+                  <div
+                    class="payment-summary-transport-fee payment-summary-valign-text-middle notosansthai-normal-black-20px">
+                    ค่าขนส่ง /Transport Fee
+                  </div>
+                  <div class="payment-summary-xxxx-2 payment-summary-valign-text-middle notosansthai-bold-black-20px">
+                    xx.xx บาท</div>
+                </div>
+                <div class="payment-summary-frame">
+                  <div
+                    class="payment-summary-text_label-1 payment-summary-valign-text-middle payment-summary-text_label-5 notosansthai-normal-black-20px">
+                    มูลค่าสินค้าและค่าขนส่งก่อนภาษี /Price Before Vat
+                  </div>
+                  <div class="payment-summary-xxxx-2 payment-summary-valign-text-middle notosansthai-bold-black-20px">
+                    xx.xx บาท</div>
+                </div>
+                <div class="payment-summary-frame">
+                  <div
+                    class="payment-summary-total-vat payment-summary-valign-text-middle notosansthai-normal-black-20px">
+                    ภาษีมูลค่าเพิ่ม /Total Vat
+                  </div>
+                  <div class="payment-summary-xxxx-2 payment-summary-valign-text-middle notosansthai-bold-black-20px">
+                    xx.xx บาท</div>
+                </div>
+                <img class="payment-summary-line" src="img/line-6-104.svg" alt="Line 6" />
+                <div class="payment-summary-frame">
+                  <div
+                    class="payment-summary-grand-total payment-summary-valign-text-middle notosansthai-bold-black-20px">
+                    ยอดสุทธิ /Grand Total</div>
+                  <div class="payment-summary-xxxx-2 payment-summary-valign-text-middle notosansthai-bold-black-20px">xx.xx บาท</div>
+                </div>
+              </div>
+            </div>
+            <div class="payment-summary-frame-38477">
+              <a onclick="showPopup()">
+
+                <div class="payment-summary-frame-14">
+                  <div class="payment-summary-text-9 notosansthai-semi-bold-white-20px">ชำระเงิน</div>
+                </div>
+              </a>
+
+              <a href="javascript:SubmitForm('form6')">
+                <div class="request-detail-school-button-2 request-detail-school-button-6">
+                  <img class="request-detail-school-icon-btn-left" src="img/icon-btn-left-1.svg" alt="icon-btn-left" />
+                  <div class="request-detail-school-text-sm request-detail-school-text-3">ดาวน์โหลดเอกสาร์ใบแจ้งชำระเงิน
                   </div>
                 </div>
-                <div class="payment-summary-gfmis payment-summary-valign-text-middle">GFMIS</div>
-              </div>
-            </div>
-          </div>
-          <div class="payment-summary-frame-28">
-            <div class="payment-summary-frame-102">
-              <div class="payment-summary-frame">
-                <div
-                  class="payment-summary-transport-fee payment-summary-valign-text-middle notosansthai-normal-black-20px">
-                  ค่าขนส่ง /Transport Fee
-                </div>
-                <div class="payment-summary-xxxx-2 payment-summary-valign-text-middle notosansthai-bold-black-20px">
-                  xx.xx บาท</div>
-              </div>
-              <div class="payment-summary-frame">
-                <div
-                  class="payment-summary-text_label-1 payment-summary-valign-text-middle payment-summary-text_label-5 notosansthai-normal-black-20px">
-                  มูลค่าสินค้าและค่าขนส่งก่อนภาษี /Price Before Vat
-                </div>
-                <div class="payment-summary-xxxx-2 payment-summary-valign-text-middle notosansthai-bold-black-20px">
-                  xx.xx บาท</div>
-              </div>
-              <div class="payment-summary-frame">
-                <div
-                  class="payment-summary-total-vat payment-summary-valign-text-middle notosansthai-normal-black-20px">
-                  ภาษีมูลค่าเพิ่ม /Total Vat
-                </div>
-                <div class="payment-summary-xxxx-2 payment-summary-valign-text-middle notosansthai-bold-black-20px">
-                  xx.xx บาท</div>
-              </div>
-              <img class="payment-summary-line" src="img/line-6-104.svg" alt="Line 6" />
-              <div class="payment-summary-frame">
-                <div
-                  class="payment-summary-grand-total payment-summary-valign-text-middle notosansthai-bold-black-20px">
-                  ยอดสุทธิ /Grand Total</div>
-                <div class="payment-summary-xxxx-1 payment-summary-valign-text-middle xxxx-2">xx.xx บาท</div>
-              </div>
-            </div>
-          </div>
-          <div class="payment-summary-frame-38477">
-            <a onclick="showPopup()">
-  
-              <div class="payment-summary-frame-14">
-                <div class="payment-summary-text-9 notosansthai-semi-bold-white-20px">ชำระเงิน</div>
-              </div>
-            </a>
-  
-            <a href="javascript:SubmitForm('form6')">
-              <div class="request-detail-school-button-2 request-detail-school-button-6">
-                <img class="request-detail-school-icon-btn-left" src="img/icon-btn-left-1.svg" alt="icon-btn-left" />
-                <div class="request-detail-school-text-sm request-detail-school-text-3">ดาวน์โหลดเอกสาร์ใบแจ้งชำระเงิน</div>
-              </div>
-            </a>
-            <!-- <div class="payment-summary-button-1 payment-summary-button-4">
+              </a>
+              <!-- <div class="payment-summary-button-1 payment-summary-button-4">
               <img class="payment-summary-icon-btn-left" src="img/icon-btn-left-20.svg" alt="icon-btn-left" />
               <div class="payment-summary-text-sm">ดาวน์โหลดเอกสาร</div>
             </div> -->
-          </div>
-        </div>
-
-        
-        
-      </div>
-    </div>
-  </div>
-
-  <div id="content" class="payment-summary-view" style="display: none;">
-    <div class="payment-summary-popup">
-      <div class="payment-summary-frame-container">
-        <div class="payment-summary-frame-38264">
-          <div class="payment-summary-frame-38266">
-            <div class="payment-summary-frame-38265">
-              <h1
-                class="payment-summary-text_label-2 payment-summary-valign-text-middle payment-summary-text_label-5">
-                ยืนยันการชำระเงิน</h1>
-              <div
-                class="payment-summary-text_label-3 payment-summary-valign-text-middle payment-summary-text_label-5">
-                คุณต้องการที่จะชำระเงินนี้หรือไม่<br />หากยืนยันจะเป็นอันเสร็จสิ้นการยื่นคำขอ
-              </div>
-            </div>
-            <div class="payment-summary-frame-38262">
-              <a onclick="showPopup()">
-                <article class="payment-summary-button-2 payment-summary-button-4">
-                  <div
-                    class="payment-summary-text_label payment-summary-valign-text-middle payment-summary-text_label-5">
-                    ยกเลิก</div>
-                </article>
-              </a> <a
-                href="./payment_qr.html">
-                <article class="payment-summary-button-3 payment-summary-button-4">
-                  <div
-                    class="payment-summary-text_label-4 payment-summary-valign-text-middle payment-summary-text_label-5 notosansthai-semi-bold-white-20px">
-                    ยืนยัน
-                  </div>
-                </article>
-              </a>
             </div>
           </div>
+
+
+
         </div>
-        <a onclick="showPopup()"><img class="payment-summary-frame-1041" src="img/frame-1041.svg"
-            alt="Frame 1041" />
-        </a>
       </div>
     </div>
-  </div>
 
-  <!-- <div class="container-center-horizontal">
+
+    <!-- <div class="container-center-horizontal">
     <div class="payment-summary">
       
       <div class="payment-summary-frame-38478">
@@ -297,10 +264,305 @@
 
     </div>
   </div> -->
+  </div>
 
+  <div class="tablet">
+    <div class="header-ecs">
+      <a href="./login.html">
+        <img class="logo-ecs" src="img/logo------1.png" alt="logo ecs" />
+      </a>
+      
+      <div class="header-action-ecs">
+        <img class="group" src="img/Icon-Service.png" alt="Service" />
+        <img class="group" src="img/group@2x.png" alt="Group" />
+        <a href="./profile-school.html">
+          <img class="vector" src="img/vector-2.svg" alt="Vector" />
+        </a>
+      </div>
+    </div>
+    <div class="content-center">
+      <div class="content-ecs">
+        <div class="flex-row flex">
+          <a onclick="goBack()" class="button-back pointer">
+            <img class="icon-back" src="./img/icon menu.png" alt="icon back" />
+            <div class="text_label valign-text-middle">เมนู</div>
+          </a>
+        </div>
+
+        <h1 class="text-1-2">ยอดชำระเงิน</h1>
+        <div class="frame-38489">
+          <div class="payment-summary-frame-38419">
+            <div class="payment-summary-frame-38395 notosansthai-semi-bold-black-20px">
+              <div class="payment-summary-text-7">วิธีชำระเงิน</div>
+              <div class="payment-summary-frame-29">
+                <div class="payment-summary-frame-3826">
+                  <label class="purchase-order-shipping-radio-button">
+                    <input class="payment-summary-radio-button-1 payment-summary-frame-4" type="radio"
+                      name="delivery_option2" value="registered" />
+                    <span class="radio-label payment-summary-text-8 payment-summary-valign-text-middle">สแกน QR
+                      Code</span>
+                  </label>
+                  <!-- <div class="payment-summary-radio-button-1">
+                    <div class="payment-summary-frame-4">
+                      <div class="payment-summary-overlap-group">
+                        <div class="payment-summary-ellipse-1"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="payment-summary-text-8 payment-summary-valign-text-middle">สแกน QR Code</div> -->
+                </div>
+                <img class="payment-summary-line" src="img/line-6-113.svg" alt="Line 6" />
+                <!-- <div class="payment-summary-frame-3826">
+                  <div class="payment-summary-radio-button">
+                    <div class="payment-summary-frame-3">
+                      <div class="payment-summary-ellipse-2"></div>
+                    </div>
+                  </div>
+                  <div class="payment-summary-qr-code payment-summary-valign-text-middle">โอนเข้าบัญชี</div>
+                </div> -->
+                <!-- <img class="payment-summary-line" src="img/line-6-104.svg" alt="Line 7" /> -->
+                <div class="payment-summary-frame-3826">
+                  <div class="payment-summary-radio-button">
+                    <div class="payment-summary-frame-3-1">
+                      <!-- <div class="payment-summary-ellipse-2-1"></div> -->
+                      <input class="payment-summary-ellipse-2-1" type="radio" name="delivery_option2" value="registered"
+                        disabled />
+                    </div>
+                  </div>
+                  <div class="payment-summary-gfmis payment-summary-valign-text-middle">GFMIS</div>
+                </div>
+              </div>
+            </div>
+            <div class="payment-summary-frame-28">
+              <div class="payment-summary-frame-102">
+                <div class="payment-summary-frame">
+                  <div
+                    class="payment-summary-transport-fee payment-summary-valign-text-middle notosansthai-normal-black-20px">
+                    ค่าขนส่ง /Transport Fee
+                  </div>
+                  <div class="payment-summary-xxxx-2 payment-summary-valign-text-middle notosansthai-bold-black-20px">
+                    xx.xx บาท</div>
+                </div>
+                <div class="payment-summary-frame">
+                  <div
+                    class="payment-summary-text_label-1 payment-summary-valign-text-middle payment-summary-text_label-5 notosansthai-normal-black-20px">
+                    มูลค่าสินค้าและค่าขนส่งก่อนภาษี /Price Before Vat
+                  </div>
+                  <div class="payment-summary-xxxx-2 payment-summary-valign-text-middle notosansthai-bold-black-20px">
+                    xx.xx บาท</div>
+                </div>
+                <div class="payment-summary-frame">
+                  <div
+                    class="payment-summary-total-vat payment-summary-valign-text-middle notosansthai-normal-black-20px">
+                    ภาษีมูลค่าเพิ่ม /Total Vat
+                  </div>
+                  <div class="payment-summary-xxxx-2 payment-summary-valign-text-middle notosansthai-bold-black-20px">
+                    xx.xx บาท</div>
+                </div>
+                <img class="payment-summary-line" src="img/line-6-104.svg" alt="Line 6" />
+                <div class="payment-summary-frame">
+                  <div
+                    class="payment-summary-grand-total payment-summary-valign-text-middle notosansthai-bold-black-20px">
+                    ยอดสุทธิ /Grand Total</div>
+                  <div class="payment-summary-xxxx-2 payment-summary-valign-text-middle notosansthai-bold-black-20px">xx.xx บาท</div>
+                </div>
+              </div>
+            </div>
+            <div class="payment-summary-frame-38477">
+              <a onclick="showPopup()">
+
+                <div class="payment-summary-frame-14">
+                  <div class="payment-summary-text-9 notosansthai-semi-bold-white-20px">ชำระเงิน</div>
+                </div>
+              </a>
+
+              <a href="javascript:SubmitForm('form6')">
+                <div class="request-detail-school-button-2 request-detail-school-button-6">
+                  <img class="request-detail-school-icon-btn-left" src="img/icon-btn-left-1.svg" alt="icon-btn-left" />
+                  <div class="request-detail-school-text-sm request-detail-school-text-3">ดาวน์โหลดเอกสาร์ใบแจ้งชำระเงิน
+                  </div>
+                </div>
+              </a>
+              <!-- <div class="payment-summary-button-1 payment-summary-button-4">
+                <img class="payment-summary-icon-btn-left" src="img/icon-btn-left-20.svg" alt="icon-btn-left" />
+                <div class="payment-summary-text-sm">ดาวน์โหลดเอกสาร</div>
+              </div> -->
+            </div>
+          </div>
+
+
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="mobile">
+    <div class="header-ecs">
+      <a href="./login.html">
+        <img class="logo-ecs" src="img/logo------1.png" alt="logo ecs" />
+      </a>
+      
+      <div class="header-action-ecs">
+        <img class="group" src="img/Icon-Service.png" alt="Service" />
+        <img class="group" src="img/group@2x.png" alt="Group" />
+        <a href="./profile-school.html">
+          <img class="vector" src="img/vector-2.svg" alt="Vector" />
+        </a>
+      </div>
+    </div>
+    <div class="content-center">
+      <div class="content-ecs">
+        <div class="flex-row flex">
+          <a onclick="goBack()" class="button-back pointer">
+            <img class="icon-back" src="./img/icon menu.png" alt="icon back" />
+            <div class="text_label valign-text-middle">เมนู</div>
+          </a>
+        </div>
+
+        <h1 class="text-1-2">ยอดชำระเงิน</h1>
+        <div class="frame-38489">
+          <div class="payment-summary-frame-38419">
+            <div class="payment-summary-frame-38395 notosansthai-semi-bold-black-20px">
+              <div class="payment-summary-text-7">วิธีชำระเงิน</div>
+              <div class="payment-summary-frame-29">
+                <div class="payment-summary-frame-3826">
+                  <label class="purchase-order-shipping-radio-button">
+                    <input class="payment-summary-radio-button-1 payment-summary-frame-4" type="radio"
+                      name="delivery_option2" value="registered" />
+                    <span class="radio-label payment-summary-text-8 payment-summary-valign-text-middle">สแกน QR
+                      Code</span>
+                  </label>
+                  <!-- <div class="payment-summary-radio-button-1">
+                    <div class="payment-summary-frame-4">
+                      <div class="payment-summary-overlap-group">
+                        <div class="payment-summary-ellipse-1"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="payment-summary-text-8 payment-summary-valign-text-middle">สแกน QR Code</div> -->
+                </div>
+                <img class="payment-summary-line" src="img/line-6-113.svg" alt="Line 6" />
+                <!-- <div class="payment-summary-frame-3826">
+                  <div class="payment-summary-radio-button">
+                    <div class="payment-summary-frame-3">
+                      <div class="payment-summary-ellipse-2"></div>
+                    </div>
+                  </div>
+                  <div class="payment-summary-qr-code payment-summary-valign-text-middle">โอนเข้าบัญชี</div>
+                </div> -->
+                <!-- <img class="payment-summary-line" src="img/line-6-104.svg" alt="Line 7" /> -->
+                <div class="payment-summary-frame-3826">
+                  <div class="payment-summary-radio-button">
+                    <div class="payment-summary-frame-3-1">
+                      <!-- <div class="payment-summary-ellipse-2-1"></div> -->
+                      <input class="payment-summary-ellipse-2-1" type="radio" name="delivery_option2" value="registered"
+                        disabled />
+                    </div>
+                  </div>
+                  <div class="payment-summary-gfmis payment-summary-valign-text-middle">GFMIS</div>
+                </div>
+              </div>
+            </div>
+            <div class="payment-summary-frame-28">
+              <div class="payment-summary-frame-102">
+                <div class="payment-summary-frame">
+                  <div
+                    class="payment-summary-transport-fee payment-summary-valign-text-middle notosansthai-normal-black-20px">
+                    ค่าขนส่ง /Transport Fee
+                  </div>
+                  <div class="payment-summary-xxxx-2 payment-summary-valign-text-middle notosansthai-bold-black-20px">
+                    xx.xx บาท</div>
+                </div>
+                <div class="payment-summary-frame">
+                  <div
+                    class="payment-summary-text_label-1 payment-summary-valign-text-middle payment-summary-text_label-5 notosansthai-normal-black-20px">
+                    มูลค่าสินค้าและค่าขนส่งก่อนภาษี /Price Before Vat
+                  </div>
+                  <div class="payment-summary-xxxx-2 payment-summary-valign-text-middle notosansthai-bold-black-20px">
+                    xx.xx บาท</div>
+                </div>
+                <div class="payment-summary-frame">
+                  <div
+                    class="payment-summary-total-vat payment-summary-valign-text-middle notosansthai-normal-black-20px">
+                    ภาษีมูลค่าเพิ่ม /Total Vat
+                  </div>
+                  <div class="payment-summary-xxxx-2 payment-summary-valign-text-middle notosansthai-bold-black-20px">
+                    xx.xx บาท</div>
+                </div>
+                <img class="payment-summary-line" src="img/line-6-104.svg" alt="Line 6" />
+                <div class="payment-summary-frame">
+                  <div
+                    class="payment-summary-grand-total payment-summary-valign-text-middle notosansthai-bold-black-20px">
+                    ยอดสุทธิ /Grand Total</div>
+                  <div class="payment-summary-xxxx-2 payment-summary-valign-text-middle notosansthai-bold-black-20px">xx.xx บาท</div>
+                </div>
+              </div>
+            </div>
+            <div class="payment-summary-frame-38477">
+              <a onclick="showPopup()">
+
+                <div class="payment-summary-frame-14">
+                  <div class="payment-summary-text-9 notosansthai-semi-bold-white-20px">ชำระเงิน</div>
+                </div>
+              </a>
+
+              <a href="javascript:SubmitForm('form6')">
+                <div class="request-detail-school-button-2 request-detail-school-button-6">
+                  <img class="request-detail-school-icon-btn-left" src="img/icon-btn-left-1.svg" alt="icon-btn-left" />
+                  <div class="request-detail-school-text-sm request-detail-school-text-3">ดาวน์โหลดเอกสาร์ใบแจ้งชำระเงิน
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
   <footer class="footer">
     <p class="copyright-2024">Copyright 2024&nbsp;&nbsp; องค์การค้าของ สกสค.</p>
   </footer>
+
+
+  <div id="content" class="payment-summary-view" style="display: none;">
+    <div class="payment-summary-popup">
+      <div class="payment-summary-frame-container">
+        <div class="payment-summary-frame-38264">
+          <div class="payment-summary-frame-38266">
+            <div class="payment-summary-frame-38265">
+              <h1
+                class="payment-summary-text_label-2 payment-summary-valign-text-middle payment-summary-text_label-5">
+                ยืนยันการชำระเงิน</h1>
+              <div
+                class="payment-summary-text_label-3 payment-summary-valign-text-middle payment-summary-text_label-5">
+                คุณต้องการที่จะชำระเงินนี้หรือไม่<br />หากยืนยันจะเป็นอันเสร็จสิ้นการยื่นคำขอ
+              </div>
+            </div>
+            <div class="payment-summary-frame-38262">
+              <a onclick="showPopup()">
+                <article class="payment-summary-button-2 payment-summary-button-4">
+                  <div
+                    class="payment-summary-text_label payment-summary-valign-text-middle payment-summary-text_label-5">
+                    ยกเลิก</div>
+                </article>
+              </a> <a href="./payment_qr.html">
+                <article class="payment-summary-button-3 payment-summary-button-4">
+                  <div
+                    class="payment-summary-text_label-4 payment-summary-valign-text-middle payment-summary-text_label-5 notosansthai-semi-bold-white-20px">
+                    ยืนยัน
+                  </div>
+                </article>
+              </a>
+            </div>
+          </div>
+        </div>
+        <a onclick="showPopup()"><img class="payment-summary-frame-1041" src="img/frame-1041.svg" alt="Frame 1041" />
+        </a>
+      </div>
+    </div>
+  </div>
 
   <script>
     /* Copyright (c) 2016 Tobias Buschor https://goo.gl/gl0mbf | MIT License https://goo.gl/HgajeK */
