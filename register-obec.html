@@ -292,9 +292,105 @@
 
     </div>
   </div>
+  <div id="content" class="pdpa-view" style="display: none;">
+    <div class="pdpa-popup">
+      <div class="pdpa-frame-container">
+        <div class="pdpa-frame-38264">
+          <div class="pdpa-frame-38266">
+            <div class="pdpa-frame-38265">
+              <h1 class="pdpa-text_label-2 valign-text-middle pdpa-text_label-5">
+                นโยบายความเป็นส่วนตัว</h1>
+              <div class="pdpa-scrollable-content">
+                <div class="pdpa-text_label-3">
+                  <p class="text-23 content">
+                    เรียนผู้ใช้งาน, <br />
+                    <br />องค์การค้าของ สกสค. ขอแจ้งให้ทราบว่า ในการลงทะเบียนเพื่อใช้บริการของเรา
+                    ระบบจะมีการเก็บรวบรวมและบันทึกข้อมูลส่วนบุคคลของท่าน
+                    เพื่อให้การดำเนินงานและการให้บริการเป็นไปอย่างมีประสิทธิภาพ <br />
+                    <br />รายละเอียดการประมวลผลข้อมูลส่วนบุคคล: <br />
+                    <br />วัตถุประสงค์:
+                    <br />การบันทึกและจัดเก็บข้อมูลส่วนบุคคลเพื่อใช้ในระบบการลงทะเบียนและการให้บริการขององค์การค้า
+                    <br />ประเภทของข้อมูลส่วนบุคคลที่จะดำเนินการ: <br />ชื่อ-นามสกุล, ข้อมูลติดต่อ,
+                    และข้อมูลที่เกี่ยวข้องกับการลงทะเบียน <br />
+                    <br />ระยะเวลาในการจัดเก็บข้อมูล: <br />ข้อมูลจะถูกเก็บไว้ในระบบเป็นระยะเวลา 1 ปี
+                    หลังจากสิ้นสุดการให้บริการ <br />
+                    <br />หมายเหตุสำคัญ:
+                    <br />การให้ข้อมูลและการลงทะเบียนในระบบนี้ถือเป็นการยินยอมให้เราดำเนินการเก็บรวบรวมและประมวลผลข้อมูลส่วนบุคคลของท่าน
+                    โดยข้อมูลนี้จะถูกจัดการตามนโยบายความเป็นส่วนตัว
+                    และเราขอยืนยันว่าข้อมูลของท่านจะถูกใช้งานเฉพาะเพื่อวัตถุประสงค์ที่ระบุไว้เท่านั้น
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="pdpa-frame-38262">
+              <a onclick="showPopup()">
+                <article class="pdpa-button-3 pdpa-button-4">
+                  <div
+                    class="pdpa-text_label-4-2 valign-text-middle pdpa-text_label-5 notosansthai-semi-bold-white-20px">
+                    ยินยอม
+                  </div>
+                </article>
+              </a>
+              <a onclick="showPopup()">
+                <article class="pdpa-button-3 pdpa-button-4">
+                  <div
+                    class="pdpa-text_label-4-2 valign-text-middle pdpa-text_label-5 notosansthai-semi-bold-white-20px">
+                    ไม่ยินยอม
+                  </div>
+                </article>
+              </a>
+            </div>
+          </div>
+        </div>
+        </a>
+      </div>
+    </div>
+  </div>
   <footer class="footer">
     <p class="copyright-2024 notosansthai-normal-white-20px">Copyright 2024&nbsp;&nbsp; องค์การค้าของ สกสค.</p>
   </footer>
+
+  <script>
+
+    if (!HTMLFormElement.prototype.reportValidity) {
+      HTMLFormElement.prototype.reportValidity = function () {
+        if (this.checkValidity()) return true;
+        var btn = document.createElement("button");
+        this.appendChild(btn);
+        btn.click();
+        this.removeChild(btn);
+        return false;
+      };
+    }
+
+    function SubmitForm(form_name) {
+      var form = document.getElementsByName(form_name)[0];
+      if (form.reportValidity()) {
+        form.submit();
+        if (window.submitted) window.submitted();
+      }
+    }
+
+    const content = document.getElementById("content");
+    content.style.display = "flex";
+    document.body.classList.add('no-scroll');
+    let isShow = true;
+
+
+    function showPopup() {
+      isShow = !isShow;
+      const content = document.getElementById("content");
+
+      if (isShow) {
+        content.style.display = "flex";
+        document.body.classList.add('no-scroll');
+      } else {
+        content.style.display = "none";
+        document.body.classList.remove('no-scroll');
+      }
+    }
+
+  </script>
 </body>
 
 </html>
