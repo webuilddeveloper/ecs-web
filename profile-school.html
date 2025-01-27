@@ -6,6 +6,7 @@
   <!--<meta name=description content="This site was generated with Anima. www.animaapp.com"/>-->
   <!-- <link rel="shortcut icon" type=image/png href="https://animaproject.s3.amazonaws.com/home/favicon.png" /> -->
   <meta name="viewport" content="width=1440, maximum-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="shortcut icon" type="image/png" href="https://animaproject.s3.amazonaws.com/home/favicon.png" />
   <meta name="og:type" content="website" />
   <meta name="twitter:card" content="photo" />
@@ -14,234 +15,243 @@
 </head>
 
 <body style="margin: 0; background: #ffffff">
-  <div class="header-ecs">
-    <a href="./login.html">
-      <img class="logo-ecs" src="img/logo------1.png" alt="logo" />
-    </a>
-    <div class="navbar-ecs">
-      <div class="navbar-link-text-ecs">
-        <a href="./purchase-order-school.html">
-          ออกใบขอสั่งซื้อ
-        </a>
-      </div>
-      <div class="navbar-link-text-ecs">
-        <a href="./approve-school.html">
-          เอกสารใบขอสั่งซื้อ
-        </a>
-      </div>
-      <div class="navbar-link-text-ecs">
-        <a href="./delivered-order.html">
-          รายการคำสั่งซื้อ
-        </a>
-      </div>
-      <div class="navbar-link-text-ecs">
-        <a href="./order-cancel.html">
-          ยกเลิกเลข ปพ.
-        </a>
-      </div>
-      <div class="navbar-link-text-ecs">
-        <a href="./delivered-order.html">
-          ประวัติการสั่งซื้อ
-        </a>
-      </div>
-    </div>
-    <div class="header-action-ecs">
-      <img class="group" src="img/group@2x.png" alt="Group" />
-      <a href="./profile-school.html">
-        <img class="vector" src="img/vector-2.svg" alt="vector" />
+  <div class="desktop">
+    <div class="header-ecs">
+      <a href="./login.html">
+        <img class="logo-ecs" src="img/logo------1.png" alt="logo" />
       </a>
+      <div class="navbar-ecs">
+        <div class="navbar-link-text-ecs">
+          <a href="./purchase-order-school.html">
+            ออกใบขอสั่งซื้อ
+          </a>
+        </div>
+        <div class="navbar-link-text-ecs">
+          <a href="./approve-school.html">
+            เอกสารใบขอสั่งซื้อ
+          </a>
+        </div>
+        <div class="navbar-link-text-ecs">
+          <a href="./delivered-order.html">
+            รายการคำสั่งซื้อ
+          </a>
+        </div>
+        <div class="navbar-link-text-ecs">
+          <a href="./order-cancel.html">
+            ยกเลิกเลข ปพ.
+          </a>
+        </div>
+        <div class="navbar-link-text-ecs">
+          <a href="./delivered-order.html">
+            ประวัติการสั่งซื้อ
+          </a>
+        </div>
+      </div>
+      <div class="header-action-ecs">
+        <img class="group" src="img/group@2x.png" alt="Group" />
+        <a href="./profile-school.html">
+          <img class="vector" src="img/vector-2.svg" alt="vector" />
+        </a>
+      </div>
     </div>
-  </div>
-  <div class="container-center-horizontal">
-    <div class="profile-school">
-      <div class="profile-school-frame-38357">
-        <div class="profile-school-frame-38357-1">
-          <div class="profile-school-frame-38354">
-            <div class="profile-school-frame-38">
-              <div class="profile-school-frame-38350">
-                <div class="profile-school-frame-383">
-                  <img class="profile-school-icon" src="img/icon-person2-2.svg" alt="icon person2" />
-                  <div class="profile-school-text-1-1 profile-school-valign-text-middle">บัญชีของฉัน</div>
+    <div class="container-center-horizontal">
+      <div class="profile-school">
+        <div class="profile-school-frame-38357">
+          <div class="profile-school-frame-38357-1">
+            <div class="profile-school-frame-38354">
+              <div class="profile-school-frame-38">
+                <div class="profile-school-frame-38350">
+                  <div class="profile-school-frame-383">
+                    <img class="profile-school-icon" src="img/icon-person2-2.svg" alt="icon person2" />
+                    <div class="profile-school-text-1-1 profile-school-valign-text-middle">บัญชีของฉัน</div>
+                  </div>
+                  <a onclick="showMenuCollap()">
+                    <div class="approve-school-frame-38348">
+                      <img class="approve-school-arrow-down-01" src="img/arrow-down-01-2.svg" alt="arrow-down-01" />
+                    </div>
+                  </a>
                 </div>
-                <a onclick="showMenuCollap()">
-                  <div class="approve-school-frame-38348">
-                    <img class="approve-school-arrow-down-01" src="img/arrow-down-01-2.svg" alt="arrow-down-01" />
+                <div id="collapMenu" class="profile-school-frame-38351" style="display: none;">
+                  <div class="profile-school-text-2-1 profile-school-valign-text-middle ">ข้อมูลส่วนบุคคล</div>
+                  <div class="profile-school-text-1 profile-school-valign-text-middle notosansthai-normal-black-20px">
+                    ที่อยู่จัดส่งสินค้า</div>
+                </div>
+              </div>
+            </div>
+            <img class="profile-school-vector" src="img/vector-19-2.svg" alt="Vector 19" />
+            <div class="profile-school-frame-383">
+              <img class="profile-school-icon" src="img/icon-report-2.svg" alt="icon Report" />
+              <div class="profile-school-text-2 profile-school-valign-text-middle notosansthai-semi-bold-black-22px">
+                เอกสารใบขอสั่งซื้อ</div>
+            </div>
+            <img class="profile-school-vector" src="img/vector-19-2.svg" alt="Vector 22" />
+            <div class="profile-school-frame-383">
+              <img class="profile-school-icon" src="img/icon-report-2.svg" alt="icon Report" />
+              <div class="profile-school-text-2 profile-school-valign-text-middle notosansthai-semi-bold-black-22px">
+                รายการคำสั่งซื้อ</div>
+            </div>
+            <div class="profile-school-frame-38351">
+              <div class="profile-school-frame-38351-1 notosansthai-normal-black-20px">
+                <div class="profile-school-text-3 profile-school-valign-text-middle">เอกสารมีเลขคุม</div>
+                <div class="profile-school-text-1 profile-school-valign-text-middle">เอกสารไม่มีเลขคุม</div>
+                <div class="profile-school-text-8 profile-school-valign-text-middle">เลขใบปพ. ออนไลน์(ปพ.1)</div>
+              </div>
+            </div>
+            <img class="profile-school-vector" src="img/vector-19-2.svg" alt="Vector 20" />
+            <div class="profile-school-frame-383">
+              <img class="profile-school-icon" src="img/icon-print.svg" alt="icon print" />
+              <div class="profile-school-text-2 profile-school-valign-text-middle notosansthai-semi-bold-black-22px">
+                พิมพ์ใบปพ.ออนไลน์</div>
+            </div>
+            <img class="profile-school-vector" src="img/vector-19-2.svg" alt="Vector 23" />
+            <div class="profile-school-frame-383">
+              <img class="profile-school-icon" src="img/icon-logout-2.svg" alt="icon logout" />
+              <div class="profile-school-text-2 profile-school-valign-text-middle notosansthai-semi-bold-black-22px">
+                ออกจากระบบ</div>
+            </div>
+          </div>
+          <div class="profile-school-frame-38356">
+            <h1 class="profile-school-text-11">ข้อมูลส่วนบุคคล</h1>
+            <div class="profile-school-frame-38398">
+              <div class="profile-school-frame-38483">
+                <div class="profile-school-frame-38-1 frame-38-3">
+                  <img class="profile-school-ellipse-11" src="img/ellipse-11-1@2x.png" alt="Ellipse 11" />
+                  <div class="profile-school-group-239179">
+                    <div class="profile-school-text-12">ออกแบบ ทดลอง</div>
+                    <div class="profile-school-examplegmailcom">example@gmail.com</div>
+                  </div>
+                </div>
+                <a href="javascript:SubmitForm('form3')">
+                  <div class="profile-school-button">
+                    <div class="profile-school-text_label profile-school-valign-text-middle">แก้ไขรูปภาพ</div>
                   </div>
                 </a>
               </div>
-              <div id="collapMenu"  class="profile-school-frame-38351" style="display: none;">
-                <div class="profile-school-text-2-1 profile-school-valign-text-middle ">ข้อมูลส่วนบุคคล</div>
-                <div class="profile-school-text-1 profile-school-valign-text-middle notosansthai-normal-black-20px">ที่อยู่จัดส่งสินค้า</div>
-              </div>
-            </div>
-          </div>
-          <img class="profile-school-vector" src="img/vector-19-2.svg" alt="Vector 19" />
-          <div class="profile-school-frame-383">
-            <img class="profile-school-icon" src="img/icon-report-2.svg" alt="icon Report" />
-            <div class="profile-school-text-2 profile-school-valign-text-middle notosansthai-semi-bold-black-22px">เอกสารใบขอสั่งซื้อ</div>
-          </div>
-          <img class="profile-school-vector" src="img/vector-19-2.svg" alt="Vector 22" />
-          <div class="profile-school-frame-383">
-            <img class="profile-school-icon" src="img/icon-report-2.svg" alt="icon Report" />
-            <div class="profile-school-text-2 profile-school-valign-text-middle notosansthai-semi-bold-black-22px">รายการคำสั่งซื้อ</div>
-          </div>
-          <div class="profile-school-frame-38351">
-            <div class="profile-school-frame-38351-1 notosansthai-normal-black-20px">
-              <div class="profile-school-text-3 profile-school-valign-text-middle">เอกสารมีเลขคุม</div>
-              <div class="profile-school-text-1 profile-school-valign-text-middle">เอกสารไม่มีเลขคุม</div>
-              <div class="profile-school-text-8 profile-school-valign-text-middle">เลขใบปพ. ออนไลน์(ปพ.1)</div>
-            </div>
-          </div>
-          <img class="profile-school-vector" src="img/vector-19-2.svg" alt="Vector 20" />
-          <div class="profile-school-frame-383">
-            <img class="profile-school-icon" src="img/icon-print.svg" alt="icon print" />
-            <div class="profile-school-text-2 profile-school-valign-text-middle notosansthai-semi-bold-black-22px">พิมพ์ใบปพ.ออนไลน์</div>
-          </div>
-          <img class="profile-school-vector" src="img/vector-19-2.svg" alt="Vector 23" />
-          <div class="profile-school-frame-383">
-            <img class="profile-school-icon" src="img/icon-logout-2.svg" alt="icon logout" />
-            <div class="profile-school-text-2 profile-school-valign-text-middle notosansthai-semi-bold-black-22px">ออกจากระบบ</div>
-          </div>
-        </div>
-        <div class="profile-school-frame-38356">
-          <h1 class="profile-school-text-11">ข้อมูลส่วนบุคคล</h1>
-          <div class="profile-school-frame-38398">
-            <div class="profile-school-frame-38483">
-              <div class="profile-school-frame-38-1 frame-38-3">
-                <img class="profile-school-ellipse-11" src="img/ellipse-11-1@2x.png" alt="Ellipse 11" />
-                <div class="profile-school-group-239179">
-                  <div class="profile-school-text-12">ออกแบบ ทดลอง</div>
-                  <div class="profile-school-examplegmailcom">example@gmail.com</div>
-                </div>
-              </div>
-              <a href="javascript:SubmitForm('form3')">
-                <div class="profile-school-button">
-                  <div class="profile-school-text_label profile-school-valign-text-middle">แก้ไขรูปภาพ</div>
-                </div>
-              </a>
-            </div>
-            <div class="profile-school-frame-38397">
-              <div class="profile-school-frame-30">
-                <div class="profile-school-text-3 notosansthai-semi-bold-vulcan-20px">ข้อมูลหน่วยงาน</div>
-                <div class="profile-school-frame-38 notosansthai-normal-vulcan-18px">
-                  <div class="profile-school-text">สังกัด : สพฐ</div>
-                  <div class="profile-school-text-15">ตำแหน่ง : เจ้าหน้าที่</div>
-                </div>
-                <div class="profile-school-text-field">
-                  <div class="profile-school-text notosansthai-normal-black-18px">จังหวัด</div>
-                  <div class="profile-school-frame-20">
-                    <input class="profile-school-text_input notosansthai-normal-black-17px" name="ขอมลกรอกแลว" placeholder="data"
-                      type="text" />
+              <div class="profile-school-frame-38397">
+                <div class="profile-school-frame-30">
+                  <div class="profile-school-text-3 notosansthai-semi-bold-vulcan-20px">ข้อมูลหน่วยงาน</div>
+                  <div class="profile-school-frame-38 notosansthai-normal-vulcan-18px">
+                    <div class="profile-school-text">สังกัด : สพฐ</div>
+                    <div class="profile-school-text-15">ตำแหน่ง : เจ้าหน้าที่</div>
                   </div>
-                </div>
-                <div class="profile-school-text-field">
-                  <div class="profile-school-text notosansthai-normal-black-18px">อำเภอ/เขต</div>
-                  <div class="profile-school-frame-20">
-                    <input class="profile-school-text_input notosansthai-normal-black-17px" name="ขอมลกรอกแลว" placeholder="data"
-                      type="text" />
-                  </div>
-                </div>
-                <div class="profile-school-text-field">
-                  <div class="profile-school-text notosansthai-normal-black-18px">ตำบล/แขวง</div>
-                  <div class="profile-school-frame-20">
-                    <input class="profile-school-text_input notosansthai-normal-black-17px" name="ขอมลกรอกแลว" placeholder="data"
-                      type="text" />
-                  </div>
-                </div>
-                <div class="profile-school-text-field">
-                  <div class="profile-school-text notosansthai-normal-black-18px">ชื่อสถานศึกษา</div>
-                  <div class="profile-school-frame-20">
-                    <input class="profile-school-text_input notosansthai-normal-black-17px" name="ขอมลกรอกแลว" placeholder="data"
-                      type="text" />
-                  </div>
-                </div>
-                <div class="profile-school-text-field">
-                  <div class="profile-school-text notosansthai-normal-black-18px">รหัสสถานศึกษา</div>
-                  <div class="profile-school-frame-20">
-                    <input class="profile-school-text_input notosansthai-normal-black-17px" name="ขอมลกรอกแลว" placeholder="data"
-                      type="text" />
-                  </div>
-                </div>
-                <div class="profile-school-text-field">
-                  <div class="profile-school-text notosansthai-normal-black-18px">เลขประจำตัวผู้เสียภาษี</div>
-                  <div class="profile-school-frame-20">
-                    <input class="profile-school-text_input notosansthai-normal-black-17px" name="ขอมลกรอกแลว" placeholder="data"
-                      type="text" />
-                  </div>
-                </div>
-              </div>
-              <div class="profile-school-frame-28">
-                <div class="profile-school-text-3 notosansthai-semi-bold-vulcan-20px">ข้อมูลส่วนบุคคล</div>
-                <div class="profile-school-text-field">
-                  <div class="profile-school-text notosansthai-normal-black-18px">เลขบัตรประชาชน</div>
-                  <div class="profile-school-frame-20">
-                    <input class="profile-school-text_input notosansthai-normal-black-17px" name="ขอมลกรอกแลว" placeholder="data"
-                      type="text" />
-                  </div>
-                </div>
-                <div class="profile-school-frame-38-2 frame-38-3">
                   <div class="profile-school-text-field">
-                    <div class="profile-school-text notosansthai-normal-black-18px">คำนำหน้า</div>
+                    <div class="profile-school-text notosansthai-normal-black-18px">จังหวัด</div>
                     <div class="profile-school-frame-20">
-                      <input class="profile-school-text_input notosansthai-normal-black-17px" name="ขอมลกรอกแลว" placeholder="data"
-                        type="text" />
+                      <input class="profile-school-text_input notosansthai-normal-black-17px" name="ขอมลกรอกแลว"
+                        placeholder="data" type="text" />
+                    </div>
+                  </div>
+                  <div class="profile-school-text-field">
+                    <div class="profile-school-text notosansthai-normal-black-18px">อำเภอ/เขต</div>
+                    <div class="profile-school-frame-20">
+                      <input class="profile-school-text_input notosansthai-normal-black-17px" name="ขอมลกรอกแลว"
+                        placeholder="data" type="text" />
+                    </div>
+                  </div>
+                  <div class="profile-school-text-field">
+                    <div class="profile-school-text notosansthai-normal-black-18px">ตำบล/แขวง</div>
+                    <div class="profile-school-frame-20">
+                      <input class="profile-school-text_input notosansthai-normal-black-17px" name="ขอมลกรอกแลว"
+                        placeholder="data" type="text" />
+                    </div>
+                  </div>
+                  <div class="profile-school-text-field">
+                    <div class="profile-school-text notosansthai-normal-black-18px">ชื่อสถานศึกษา</div>
+                    <div class="profile-school-frame-20">
+                      <input class="profile-school-text_input notosansthai-normal-black-17px" name="ขอมลกรอกแลว"
+                        placeholder="data" type="text" />
+                    </div>
+                  </div>
+                  <div class="profile-school-text-field">
+                    <div class="profile-school-text notosansthai-normal-black-18px">รหัสสถานศึกษา</div>
+                    <div class="profile-school-frame-20">
+                      <input class="profile-school-text_input notosansthai-normal-black-17px" name="ขอมลกรอกแลว"
+                        placeholder="data" type="text" />
+                    </div>
+                  </div>
+                  <div class="profile-school-text-field">
+                    <div class="profile-school-text notosansthai-normal-black-18px">เลขประจำตัวผู้เสียภาษี</div>
+                    <div class="profile-school-frame-20">
+                      <input class="profile-school-text_input notosansthai-normal-black-17px" name="ขอมลกรอกแลว"
+                        placeholder="data" type="text" />
+                    </div>
+                  </div>
+                </div>
+                <div class="profile-school-frame-28">
+                  <div class="profile-school-text-3 notosansthai-semi-bold-vulcan-20px">ข้อมูลส่วนบุคคล</div>
+                  <div class="profile-school-text-field">
+                    <div class="profile-school-text notosansthai-normal-black-18px">เลขบัตรประชาชน</div>
+                    <div class="profile-school-frame-20">
+                      <input class="profile-school-text_input notosansthai-normal-black-17px" name="ขอมลกรอกแลว"
+                        placeholder="data" type="text" />
                     </div>
                   </div>
                   <div class="profile-school-frame-38-2 frame-38-3">
-                    <article class="profile-school-text-field">
-                      <div class="profile-school-text notosansthai-normal-black-18px">ชื่อ</div>
+                    <div class="profile-school-text-field">
+                      <div class="profile-school-text notosansthai-normal-black-18px">คำนำหน้า</div>
                       <div class="profile-school-frame-20">
-                        <input class="profile-school-text_input notosansthai-normal-black-17px" name="ขอมลกรอกแลว" placeholder="data"
-                          type="text" />
-                      </div>
-                    </article>
-                    <article class="profile-school-text-field">
-                      <div class="profile-school-text notosansthai-normal-black-18px">นามสกุล</div>
-                      <div class="profile-school-frame-20">
-                        <input class="profile-school-text_input notosansthai-normal-black-17px" name="ขอมลกรอกแลว" placeholder="data"
-                          type="text" />
-                      </div>
-                    </article>
-                  </div>
-                </div>
-                <div class="profile-school-frame-38-2 frame-38-3">
-                  <div class="profile-school-frame-38296">
-                    <div class="profile-school-text-field-1">
-                      <div class="profile-school-text notosansthai-normal-black-18px">เบอร์โทรศัพท์</div>
-                      <div class="profile-school-frame-20">
-                        <input class="profile-school-text_input notosansthai-normal-black-17px" name="ขอมลกรอกแลว" placeholder="data"
-                          type="text" />
+                        <input class="profile-school-text_input notosansthai-normal-black-17px" name="ขอมลกรอกแลว"
+                          placeholder="data" type="text" />
                       </div>
                     </div>
-                  </div>
-                  <div class="profile-school-text-field">
-                    <div class="profile-school-text notosansthai-normal-black-18px">อีเมล</div>
-                    <div class="profile-school-frame-20">
-                      <input class="profile-school-text_input notosansthai-normal-black-17px" name="ขอมลกรอกแลว" placeholder="data"
-                        type="text" />
+                    <div class="profile-school-frame-38-2 frame-38-3">
+                      <article class="profile-school-text-field">
+                        <div class="profile-school-text notosansthai-normal-black-18px">ชื่อ</div>
+                        <div class="profile-school-frame-20">
+                          <input class="profile-school-text_input notosansthai-normal-black-17px" name="ขอมลกรอกแลว"
+                            placeholder="data" type="text" />
+                        </div>
+                      </article>
+                      <article class="profile-school-text-field">
+                        <div class="profile-school-text notosansthai-normal-black-18px">นามสกุล</div>
+                        <div class="profile-school-frame-20">
+                          <input class="profile-school-text_input notosansthai-normal-black-17px" name="ขอมลกรอกแลว"
+                            placeholder="data" type="text" />
+                        </div>
+                      </article>
                     </div>
                   </div>
-                </div>
-                <div class="profile-school-frame-38">
-                  <div class="profile-school-frame-38308">
-                    <div class="profile-school-text-3 notosansthai-semi-bold-vulcan-20px">หนังสือแต่งตั้งให้ปฏิบัติหน้าที่</div>
-                    <div class="profile-school-text-1 notosansthai-normal-vulcan-18px">
-                      เอกสารที่สถานศึกษามอบหมายให้ท่านเป็น<br />ผู้ทำการสั่งซื้อเอกสารใบ ปพ.
-                    </div>
-                  </div>
-                  <div class="profile-school-frame-38485">
-                    <a href="javascript:SubmitForm('form3')">
-                      <div class="profile-school-frame-38399">
-                        <div class="profile-school-button-new profile-school-button-2">
-                          <div class="profile-school-text_label-1 profile-school-valign-text-middle">เอกสาร.PDF</div>
+                  <div class="profile-school-frame-38-2 frame-38-3">
+                    <div class="profile-school-frame-38296">
+                      <div class="profile-school-text-field-1">
+                        <div class="profile-school-text notosansthai-normal-black-18px">เบอร์โทรศัพท์</div>
+                        <div class="profile-school-frame-20">
+                          <input class="profile-school-text_input notosansthai-normal-black-17px" name="ขอมลกรอกแลว"
+                            placeholder="data" type="text" />
                         </div>
                       </div>
-                    </a><a href="javascript:SubmitForm('form3')">
-                      <div class="profile-school-button-1 profile-school-button-2">
-                        <img class="profile-school-icon-btn-left" src="img/icon-btn-left-50.svg" alt="icon-btn-left" />
-                        <div class="profile-school-text-sm">ดาวน์โหลดเอกสาร</div>
+                    </div>
+                    <div class="profile-school-text-field">
+                      <div class="profile-school-text notosansthai-normal-black-18px">อีเมล</div>
+                      <div class="profile-school-frame-20">
+                        <input class="profile-school-text_input notosansthai-normal-black-17px" name="ขอมลกรอกแลว"
+                          placeholder="data" type="text" />
                       </div>
-                    </a>
+                    </div>
+                  </div>
+                  <div class="profile-school-frame-38">
+                    <div class="profile-school-frame-38308">
+                      <div class="profile-school-text-3 notosansthai-semi-bold-vulcan-20px">
+                        หนังสือแต่งตั้งให้ปฏิบัติหน้าที่</div>
+                      <div class="profile-school-text-1 notosansthai-normal-vulcan-18px">
+                        เอกสารที่สถานศึกษามอบหมายให้ท่านเป็น<br />ผู้ทำการสั่งซื้อเอกสารใบ ปพ.
+                      </div>
+                    </div>
+                    <div class="profile-school-frame-38485">
+                      <a href="javascript:SubmitForm('form3')">
+                        <div class="profile-school-frame-38399">
+                          <div class="profile-school-button-new profile-school-button-2">
+                            <div class="profile-school-text_label-1 profile-school-valign-text-middle">เอกสาร.PDF</div>
+                          </div>
+                        </div>
+                      </a><a href="javascript:SubmitForm('form3')">
+                        <div class="profile-school-button-1 profile-school-button-2">
+                          <img class="profile-school-icon-btn-left" src="img/icon-btn-left-50.svg"
+                            alt="icon-btn-left" />
+                          <div class="profile-school-text-sm">ดาวน์โหลดเอกสาร</div>
+                        </div>
+                      </a>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -251,6 +261,353 @@
       </div>
     </div>
   </div>
+
+  <div class="tablet">
+    <div class="header-ecs">
+      <a href="./login.html">
+        <img class="logo-ecs" src="img/logo------1.png" alt="logo" />
+      </a>
+      <div class="header-action-ecs">
+        <img class="group" src="img/Icon-Service.png" alt="Service" />
+        <img class="group" src="img/group@2x.png" alt="Group" />
+        <a href="./profile-school.html">
+          <img class="vector" src="img/vector-2.svg" alt="Vector" />
+        </a>
+      </div>
+    </div>
+    <div class="container-center-horizontal">
+      <div class="profile-school-frame-38356">
+        <div style="margin-top: 60px;">
+          <a onclick="goBack()">
+            <div class="request-detail-school-button request-detail-school-button-6">
+              <img class="icon-back" style="width: 27px;height: 27px;" src="./img/icon menu.png" alt="icon back" />
+              <div
+                class="request-detail-school-text_label request-detail-school-valign-text-middle request-detail-school-text_label-3 notosansthai-semi-bold-midnight-blue-20px">
+                เมนู
+              </div>
+            </div>
+          </a>
+        </div>
+        <h1 class="profile-school-text-11">ข้อมูลส่วนบุคคล</h1>
+        <div class="profile-school-frame-38398">
+          <div class="profile-school-frame-38483">
+            <div class="profile-school-frame-38-1 frame-38-3">
+              <img class="profile-school-ellipse-11" src="img/ellipse-11-1@2x.png" alt="Ellipse 11" />
+              <div class="profile-school-group-239179">
+                <div class="profile-school-text-12">ออกแบบ ทดลอง</div>
+                <div class="profile-school-examplegmailcom">example@gmail.com</div>
+              </div>
+            </div>
+            <a href="javascript:SubmitForm('form3')">
+              <div class="profile-school-button">
+                <div class="profile-school-text_label profile-school-valign-text-middle">แก้ไขรูปภาพ</div>
+              </div>
+            </a>
+          </div>
+          <div class="profile-school-frame-38397">
+            <div class="profile-school-frame-30">
+              <div class="profile-school-text-3 notosansthai-semi-bold-vulcan-20px">ข้อมูลหน่วยงาน</div>
+              <div class="profile-school-frame-38 notosansthai-normal-vulcan-18px">
+                <div class="profile-school-text">สังกัด : สพฐ</div>
+                <div class="profile-school-text-15">ตำแหน่ง : เจ้าหน้าที่</div>
+              </div>
+              <div class="profile-school-text-field">
+                <div class="profile-school-text notosansthai-normal-black-18px">จังหวัด</div>
+                <div class="profile-school-frame-20">
+                  <input class="profile-school-text_input notosansthai-normal-black-17px" name="ขอมลกรอกแลว"
+                    placeholder="data" type="text" />
+                </div>
+              </div>
+              <div class="profile-school-text-field">
+                <div class="profile-school-text notosansthai-normal-black-18px">อำเภอ/เขต</div>
+                <div class="profile-school-frame-20">
+                  <input class="profile-school-text_input notosansthai-normal-black-17px" name="ขอมลกรอกแลว"
+                    placeholder="data" type="text" />
+                </div>
+              </div>
+              <div class="profile-school-text-field">
+                <div class="profile-school-text notosansthai-normal-black-18px">ตำบล/แขวง</div>
+                <div class="profile-school-frame-20">
+                  <input class="profile-school-text_input notosansthai-normal-black-17px" name="ขอมลกรอกแลว"
+                    placeholder="data" type="text" />
+                </div>
+              </div>
+              <div class="profile-school-text-field">
+                <div class="profile-school-text notosansthai-normal-black-18px">ชื่อสถานศึกษา</div>
+                <div class="profile-school-frame-20">
+                  <input class="profile-school-text_input notosansthai-normal-black-17px" name="ขอมลกรอกแลว"
+                    placeholder="data" type="text" />
+                </div>
+              </div>
+              <div class="profile-school-text-field">
+                <div class="profile-school-text notosansthai-normal-black-18px">รหัสสถานศึกษา</div>
+                <div class="profile-school-frame-20">
+                  <input class="profile-school-text_input notosansthai-normal-black-17px" name="ขอมลกรอกแลว"
+                    placeholder="data" type="text" />
+                </div>
+              </div>
+              <div class="profile-school-text-field">
+                <div class="profile-school-text notosansthai-normal-black-18px">เลขประจำตัวผู้เสียภาษี</div>
+                <div class="profile-school-frame-20">
+                  <input class="profile-school-text_input notosansthai-normal-black-17px" name="ขอมลกรอกแลว"
+                    placeholder="data" type="text" />
+                </div>
+              </div>
+            </div>
+            <div class="profile-school-frame-28">
+              <div class="profile-school-text-3 notosansthai-semi-bold-vulcan-20px">ข้อมูลส่วนบุคคล</div>
+              <div class="profile-school-text-field">
+                <div class="profile-school-text notosansthai-normal-black-18px">เลขบัตรประชาชน</div>
+                <div class="profile-school-frame-20">
+                  <input class="profile-school-text_input notosansthai-normal-black-17px" name="ขอมลกรอกแลว"
+                    placeholder="data" type="text" />
+                </div>
+              </div>
+              <div class="profile-school-frame-38-2 frame-38-3">
+                <div class="profile-school-text-field">
+                  <div class="profile-school-text notosansthai-normal-black-18px">คำนำหน้า</div>
+                  <div class="profile-school-frame-20">
+                    <input class="profile-school-text_input notosansthai-normal-black-17px" name="ขอมลกรอกแลว"
+                      placeholder="data" type="text" />
+                  </div>
+                </div>
+                <div class="profile-school-frame-38-2 frame-38-3">
+                  <article class="profile-school-text-field">
+                    <div class="profile-school-text notosansthai-normal-black-18px">ชื่อ</div>
+                    <div class="profile-school-frame-20">
+                      <input class="profile-school-text_input notosansthai-normal-black-17px" name="ขอมลกรอกแลว"
+                        placeholder="data" type="text" />
+                    </div>
+                  </article>
+                  <article class="profile-school-text-field">
+                    <div class="profile-school-text notosansthai-normal-black-18px">นามสกุล</div>
+                    <div class="profile-school-frame-20">
+                      <input class="profile-school-text_input notosansthai-normal-black-17px" name="ขอมลกรอกแลว"
+                        placeholder="data" type="text" />
+                    </div>
+                  </article>
+                </div>
+              </div>
+              <div class="profile-school-frame-38-2 frame-38-3">
+                <div class="profile-school-frame-38296">
+                  <div class="profile-school-text-field-1">
+                    <div class="profile-school-text notosansthai-normal-black-18px">เบอร์โทรศัพท์</div>
+                    <div class="profile-school-frame-20">
+                      <input class="profile-school-text_input notosansthai-normal-black-17px" name="ขอมลกรอกแลว"
+                        placeholder="data" type="text" />
+                    </div>
+                  </div>
+                </div>
+                <div class="profile-school-text-field">
+                  <div class="profile-school-text notosansthai-normal-black-18px">อีเมล</div>
+                  <div class="profile-school-frame-20">
+                    <input class="profile-school-text_input notosansthai-normal-black-17px" name="ขอมลกรอกแลว"
+                      placeholder="data" type="text" />
+                  </div>
+                </div>
+              </div>
+              <div class="profile-school-frame-38">
+                <div class="profile-school-frame-38308">
+                  <div class="profile-school-text-3 notosansthai-semi-bold-vulcan-20px">
+                    หนังสือแต่งตั้งให้ปฏิบัติหน้าที่</div>
+                  <div class="profile-school-text-1 notosansthai-normal-vulcan-18px">
+                    เอกสารที่สถานศึกษามอบหมายให้ท่านเป็น<br />ผู้ทำการสั่งซื้อเอกสารใบ ปพ.
+                  </div>
+                </div>
+                <div class="profile-school-frame-38485">
+                  <a href="javascript:SubmitForm('form3')">
+                    <div class="profile-school-frame-38399">
+                      <div class="profile-school-button-new profile-school-button-2">
+                        <div class="profile-school-text_label-1 profile-school-valign-text-middle">เอกสาร.PDF</div>
+                      </div>
+                    </div>
+                  </a><a href="javascript:SubmitForm('form3')">
+                    <div class="profile-school-button-1 profile-school-button-2">
+                      <img class="profile-school-icon-btn-left" src="img/icon-btn-left-50.svg" alt="icon-btn-left" />
+                      <div class="profile-school-text-sm">ดาวน์โหลดเอกสาร</div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="mobile">
+    <div class="header-ecs">
+      <a href="./login.html">
+        <img class="logo-ecs" src="img/logo------1.png" alt="logo" />
+      </a>
+      <div class="header-action-ecs">
+        <img class="group" src="img/Icon-Service.png" alt="Service" />
+        <img class="group" src="img/group@2x.png" alt="Group" />
+        <a href="./profile-school.html">
+          <img class="vector" src="img/vector-2.svg" alt="Vector" />
+        </a>
+      </div>
+    </div>
+    <div class="container-center-horizontal">
+      <div class="profile-school-frame-38356">
+        <div style="margin-top: 60px;">
+          <a onclick="goBack()">
+            <div class="request-detail-school-button request-detail-school-button-6">
+              <img class="icon-back" style="width: 27px;height: 27px;" src="./img/icon menu.png" alt="icon back" />
+              <div
+                class="request-detail-school-text_label request-detail-school-valign-text-middle request-detail-school-text_label-3 notosansthai-semi-bold-midnight-blue-20px">
+                เมนู
+              </div>
+            </div>
+          </a>
+        </div>
+        <h1 class="profile-school-text-11">ข้อมูลส่วนบุคคล</h1>
+        <div class="profile-school-frame-38398">
+          <div class="profile-school-frame-38483">
+            <div class="profile-school-frame-38-1 frame-38-3">
+              <img class="profile-school-ellipse-11" src="img/ellipse-11-1@2x.png" alt="Ellipse 11" />
+              <div class="profile-school-group-239179">
+                <div class="profile-school-text-12">ออกแบบ ทดลอง</div>
+                <div class="profile-school-examplegmailcom">example@gmail.com</div>
+              </div>
+            </div>
+            <a href="javascript:SubmitForm('form3')">
+              <div class="profile-school-button">
+                <div class="profile-school-text_label profile-school-valign-text-middle">แก้ไขรูป</div>
+              </div>
+            </a>
+          </div>
+            <div class="profile-school-frame-28">
+              <div class="profile-school-text-3 notosansthai-semi-bold-vulcan-20px">ข้อมูลหน่วยงาน</div>
+              <div class="profile-school-frame-38 notosansthai-normal-vulcan-18px">
+                <div class="profile-school-text">สังกัด : สพฐ</div>
+                <div class="profile-school-text-15">ตำแหน่ง : เจ้าหน้าที่</div>
+              </div>
+              <div class="profile-school-text-field">
+                <div class="profile-school-text notosansthai-normal-black-18px">จังหวัด</div>
+                <div class="profile-school-frame-20">
+                  <input class="profile-school-text_input notosansthai-normal-black-17px" name="ขอมลกรอกแลว"
+                    placeholder="data" type="text" />
+                </div>
+              </div>
+              <div class="profile-school-text-field">
+                <div class="profile-school-text notosansthai-normal-black-18px">อำเภอ/เขต</div>
+                <div class="profile-school-frame-20">
+                  <input class="profile-school-text_input notosansthai-normal-black-17px" name="ขอมลกรอกแลว"
+                    placeholder="data" type="text" />
+                </div>
+              </div>
+              <div class="profile-school-text-field">
+                <div class="profile-school-text notosansthai-normal-black-18px">ตำบล/แขวง</div>
+                <div class="profile-school-frame-20">
+                  <input class="profile-school-text_input notosansthai-normal-black-17px" name="ขอมลกรอกแลว"
+                    placeholder="data" type="text" />
+                </div>
+              </div>
+              <div class="profile-school-text-field">
+                <div class="profile-school-text notosansthai-normal-black-18px">ชื่อสถานศึกษา</div>
+                <div class="profile-school-frame-20">
+                  <input class="profile-school-text_input notosansthai-normal-black-17px" name="ขอมลกรอกแลว"
+                    placeholder="data" type="text" />
+                </div>
+              </div>
+              <div class="profile-school-text-field">
+                <div class="profile-school-text notosansthai-normal-black-18px">รหัสสถานศึกษา</div>
+                <div class="profile-school-frame-20">
+                  <input class="profile-school-text_input notosansthai-normal-black-17px" name="ขอมลกรอกแลว"
+                    placeholder="data" type="text" />
+                </div>
+              </div>
+              <div class="profile-school-text-field">
+                <div class="profile-school-text notosansthai-normal-black-18px">เลขประจำตัวผู้เสียภาษี</div>
+                <div class="profile-school-frame-20">
+                  <input class="profile-school-text_input notosansthai-normal-black-17px" name="ขอมลกรอกแลว"
+                    placeholder="data" type="text" />
+                </div>
+              </div>
+            </div>
+            <div class="profile-school-frame-28">
+              <div class="profile-school-text-3 notosansthai-semi-bold-vulcan-20px">ข้อมูลส่วนบุคคล</div>
+              <div class="profile-school-text-field">
+                <div class="profile-school-text notosansthai-normal-black-18px">เลขบัตรประชาชน</div>
+                <div class="profile-school-frame-20">
+                  <input class="profile-school-text_input notosansthai-normal-black-17px" name="ขอมลกรอกแลว"
+                    placeholder="data" type="text" />
+                </div>
+              </div>
+              <div class="profile-school-frame-38-2 frame-38-3">
+                <div class="profile-school-text-field">
+                  <div class="profile-school-text notosansthai-normal-black-18px">คำนำหน้า</div>
+                  <div class="profile-school-frame-20">
+                    <input class="profile-school-text_input notosansthai-normal-black-17px" name="ขอมลกรอกแลว"
+                      placeholder="data" type="text" />
+                  </div>
+                </div>
+                <div class="profile-school-frame-38-2 frame-38-3">
+                  <article class="profile-school-text-field">
+                    <div class="profile-school-text notosansthai-normal-black-18px">ชื่อ</div>
+                    <div class="profile-school-frame-20">
+                      <input class="profile-school-text_input notosansthai-normal-black-17px" name="ขอมลกรอกแลว"
+                        placeholder="data" type="text" />
+                    </div>
+                  </article>
+                  <article class="profile-school-text-field">
+                    <div class="profile-school-text notosansthai-normal-black-18px">นามสกุล</div>
+                    <div class="profile-school-frame-20">
+                      <input class="profile-school-text_input notosansthai-normal-black-17px" name="ขอมลกรอกแลว"
+                        placeholder="data" type="text" />
+                    </div>
+                  </article>
+                </div>
+              </div>
+              <div class="profile-school-frame-38-2 frame-38-3">
+                <div class="profile-school-frame-38296">
+                  <div class="profile-school-text-field-1">
+                    <div class="profile-school-text notosansthai-normal-black-18px">เบอร์โทรศัพท์</div>
+                    <div class="profile-school-frame-20">
+                      <input class="profile-school-text_input notosansthai-normal-black-17px" name="ขอมลกรอกแลว"
+                        placeholder="data" type="text" />
+                    </div>
+                  </div>
+                </div>
+                <div class="profile-school-text-field">
+                  <div class="profile-school-text notosansthai-normal-black-18px">อีเมล</div>
+                  <div class="profile-school-frame-20">
+                    <input class="profile-school-text_input notosansthai-normal-black-17px" name="ขอมลกรอกแลว"
+                      placeholder="data" type="text" />
+                  </div>
+                </div>
+              </div>
+              <div class="profile-school-frame-38">
+                <div class="profile-school-frame-38308">
+                  <div class="profile-school-text-3 notosansthai-semi-bold-vulcan-20px">
+                    หนังสือแต่งตั้งให้ปฏิบัติหน้าที่</div>
+                  <div class="profile-school-text-1 notosansthai-normal-vulcan-18px">
+                    เอกสารที่สถานศึกษามอบหมายให้ท่านเป็น<br />ผู้ทำการสั่งซื้อเอกสารใบ ปพ.
+                  </div>
+                </div>
+                <div class="profile-school-frame-38485">
+                  <a href="javascript:SubmitForm('form3')">
+                    <div class="profile-school-frame-38399">
+                      <div class="profile-school-button-new profile-school-button-2">
+                        <div class="profile-school-text_label-1 profile-school-valign-text-middle">เอกสาร.PDF</div>
+                      </div>
+                    </div>
+                  </a><a href="javascript:SubmitForm('form3')">
+                    <div class="profile-school-button-1 profile-school-button-2">
+                      <img class="profile-school-icon-btn-left" src="img/icon-btn-left-50.svg" alt="icon-btn-left" />
+                      <div class="profile-school-text-sm">ดาวน์โหลดเอกสาร</div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <footer class="footer">
     <p class="copyright-2024">Copyright 2024&nbsp;&nbsp; องค์การค้าของ สกสค.</p>
   </footer>

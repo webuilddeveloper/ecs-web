@@ -44,6 +44,8 @@
   --font-size-xxxl: 22px;
   --font-size-xxxxl: 40px;
 
+  --font-size-11: 11px;
+  --font-size-12: 12px;
   --font-size-13: 13px;
   --font-size-14: 14px;
   --font-size-15: 15px;
@@ -25872,6 +25874,7 @@ a:active {
 .profile-school-frame-38-1 {
   align-items: center;
   display: inline-flex;
+  gap: 15px;
 }
 
 .profile-school-arrow-down-01 {
@@ -25956,19 +25959,11 @@ a:active {
   width: 231px;
 }
 
-.profile-school-frame-38356 {
-  align-items: flex-start;
-  display: flex;
-  flex-direction: column;
-  gap: 36px;
-  position: relative;
-  width: 892px;
-}
 
 .profile-school-text-11 {
   color: var(--bkack);
   font-family: var(--font-family-noto_sans_thai);
-  font-size: var(--font-size-xxl);
+  font-size: var(--font-size-32);
   font-weight: 500;
   letter-spacing: 0;
   line-height: 48.0px;
@@ -25995,16 +25990,6 @@ a:active {
   width: 100%;
 }
 
-.profile-school-frame-38483 {
-  align-items: flex-start;
-  align-self: stretch;
-  display: flex;
-  flex: 0 0 auto;
-  gap: 400px;
-  position: relative;
-  width: 100%;
-}
-
 .profile-school-ellipse-11 {
   height: 100px;
   object-fit: cover;
@@ -26017,31 +26002,6 @@ a:active {
   margin-right: -4.00px;
   position: relative;
   width: 176px;
-}
-
-.profile-school-text-12 {
-  color: var(--bkack);
-  font-family: var(--font-family-poppins);
-  font-size: var(--font-size-l);
-  font-weight: 500;
-  left: 0;
-  letter-spacing: 0;
-  line-height: normal;
-  position: absolute;
-  top: 0;
-}
-
-.profile-school-examplegmailcom {
-  color: var(--bkack);
-  font-family: var(--font-family-poppins);
-  font-size: var(--font-size-xs);
-  font-weight: 400;
-  left: 0;
-  letter-spacing: 0;
-  line-height: normal;
-  opacity: 0.5;
-  position: absolute;
-  top: 36px;
 }
 
 .profile-school-button {
@@ -26057,19 +26017,6 @@ a:active {
   overflow: hidden;
   padding: 8px 24px;
   position: relative;
-}
-
-.profile-school-text_label {
-  color: var(--main);
-  font-family: var(--font-family-noto_sans_thai);
-  font-size: var(--font-size-l);
-  font-weight: 600;
-  letter-spacing: 0;
-  line-height: normal;
-  margin-top: -1.00px;
-  position: relative;
-  text-align: right;
-  width: fit-content;
 }
 
 .profile-school-frame-38397 {
@@ -28214,6 +28161,62 @@ body.no-scroll {
     position: relative;
     bottom: 200px;
   }
+  .profile-school-frame-38356 {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+    position: relative;
+    width: 892px;
+  }
+
+  .profile-school-frame-38483 {
+    align-items: flex-start;
+    align-self: stretch;
+    display: flex;
+    flex: 0 0 auto;
+    gap: 400px;
+    position: relative;
+    width: 100%;
+  }
+
+  .profile-school-text-12 {
+    color: var(--bkack);
+    font-family: var(--font-family-poppins);
+    font-size: var(--font-size-20);
+    font-weight: 500;
+    left: 0;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 0;
+  }
+
+  .profile-school-examplegmailcom {
+    color: var(--bkack);
+    font-family: var(--font-family-poppins);
+    font-size: var(--font-size-20);
+    font-weight: 400;
+    left: 0;
+    letter-spacing: 0;
+    line-height: normal;
+    opacity: 0.5;
+    position: absolute;
+    top: 36px;
+  }
+
+  .profile-school-text_label {
+    color: var(--main);
+    font-family: var(--font-family-noto_sans_thai);
+    font-size: var(--font-size-18);
+    font-weight: 600;
+    letter-spacing: 0;
+    line-height: normal;
+    margin-top: -1.00px;
+    position: relative;
+    text-align: right;
+    width: fit-content;
+  }
 }
 
 /* สำหรับ Tablet */
@@ -28441,6 +28444,62 @@ body.no-scroll {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     position: relative;
     bottom: 200px;
+  }
+
+  .profile-school-frame-38356 {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+    position: relative;
+  }
+
+  .profile-school-frame-38483 {
+    align-items: flex-start;
+    align-self: stretch;
+    display: flex;
+    flex: 0 0 auto;
+    position: relative;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .profile-school-text-12 {
+    color: var(--bkack);
+    font-family: var(--font-family-poppins);
+    font-size: var(--font-size-18);
+    font-weight: 500;
+    left: 0;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 0;
+  }
+
+  .profile-school-examplegmailcom {
+    color: var(--bkack);
+    font-family: var(--font-family-poppins);
+    font-size: var(--font-size-16);
+    font-weight: 400;
+    left: 0;
+    letter-spacing: 0;
+    line-height: normal;
+    opacity: 0.5;
+    position: absolute;
+    top: 36px;
+  }
+
+  .profile-school-text_label {
+    color: var(--main);
+    font-family: var(--font-family-noto_sans_thai);
+    font-size: var(--font-size-18);
+    font-weight: 600;
+    letter-spacing: 0;
+    line-height: normal;
+    margin-top: -1.00px;
+    position: relative;
+    text-align: right;
+    width: fit-content;
   }
 }
 
@@ -28785,6 +28844,91 @@ body.no-scroll {
     display: inline-flex;
     flex: 0 0 auto;
     gap: 20px;
+    position: relative;
+  }
+
+  .profile-school-frame-38356 {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+    position: relative;
+  }
+
+  .profile-school-frame-38483 {
+    align-items: flex-start;
+    align-self: stretch;
+    display: flex;
+    flex: 0 0 auto;
+    position: relative;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .profile-school-text-12 {
+    color: var(--bkack);
+    font-family: var(--font-family-poppins);
+    font-size: var(--font-size-13);
+    font-weight: 500;
+    left: 0;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 0;
+  }
+
+  .profile-school-examplegmailcom {
+    color: var(--bkack);
+    font-family: var(--font-family-poppins);
+    font-size: var(--font-size-11);
+    font-weight: 400;
+    left: 0;
+    letter-spacing: 0;
+    line-height: normal;
+    opacity: 0.5;
+    position: absolute;
+    top: 36px;
+  }
+
+  .profile-school-text_label {
+    color: var(--main);
+    font-family: var(--font-family-noto_sans_thai);
+    font-size: var(--font-size-13);
+    font-weight: 600;
+    letter-spacing: 0;
+    line-height: normal;
+    margin-top: -1.00px;
+    position: relative;
+    text-align: right;
+    width: fit-content;
+  }
+
+  .profile-school-ellipse-11 {
+    height: 60px;
+    object-fit: cover;
+    position: relative;
+    width: 60px;
+  }
+
+  .profile-school-group-239179 {
+    height: 60px;
+    margin-right: -4.00px;
+    position: relative;
+    width: 150px;
+  }
+
+  .profile-school-button {
+    align-items: flex-start;
+    background-color: var(--pink);
+    border-radius: 10px;
+    cursor: pointer;
+    display: inline-flex;
+    flex: 0 0 auto;
+    gap: 8px;
+    justify-content: center;
+    margin-right: -1.00px;
+    overflow: hidden;
+    padding: 8px 16px;
     position: relative;
   }
 }
