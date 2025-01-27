@@ -28621,12 +28621,13 @@ body.no-scroll {
     gap: 12px;
     height: 45px;
     justify-content: center;
-    margin-left: 23.0px;
+    /* margin-left: 23.0px; */
     margin-top: 33px;
     overflow: hidden;
     padding: 16px 54px;
     position: relative;
     width: 457px;
+    justify-self: center;
   }
 }
 

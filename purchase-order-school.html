@@ -48,7 +48,7 @@
       </div>
       <div class="header-action-ecs">
         <img class="group" src="img/group@2x.png" alt="Group" />
-        <a href="../ปพ ออนไลน์ - front โปรไฟล์สถานศึกษา/โปรไฟล์สถานศึกษา.htm">
+        <a href="./profile-school.html">
           <img class="vector" src="img/vector-2.svg" alt="vector" />
         </a>
       </div>
@@ -1432,167 +1432,167 @@
         </div>
       </div>
     </div>
-
-    <div class="footer">
-      <p class="purchase-order-copyright-2024">Copyright 2024&nbsp;&nbsp; องค์การค้าของ สกสค.</p>
-    </div>
-    <div id="popup" class="purchase-order-view" style="display: none;">
-      <div class="payment-proof-popup">
-        <div class="payment-proof-frame-container">
-          <div class="payment-proof-frame-38264">
-            <div class="payment-proof-frame-38266">
-              <div class="payment-proof-frame-38265">
-                <img class="payment-proof-check-one" src="img/check-one.svg" alt="check-one" />
-                <h1 class="purchase-order-text_label-2 payment-proof-valign-text-middle payment-proof-text_label-4-2">
-                  ใส่ตะกร้าแล้ว</h1>
-              </div>
+  </div>
+  <div class="footer">
+    <p class="purchase-order-copyright-2024">Copyright 2024&nbsp;&nbsp; องค์การค้าของ สกสค.</p>
+  </div>
+  <div id="popup" class="purchase-order-view" style="display: none;">
+    <div class="payment-proof-popup">
+      <div class="payment-proof-frame-container">
+        <div class="payment-proof-frame-38264">
+          <div class="payment-proof-frame-38266">
+            <div class="payment-proof-frame-38265">
+              <img class="payment-proof-check-one" src="img/check-one.svg" alt="check-one" />
+              <h1 class="purchase-order-text_label-2 payment-proof-valign-text-middle payment-proof-text_label-4-2">
+                ใส่ตะกร้าแล้ว</h1>
             </div>
           </div>
-          <a onclick="hidePopup()"><img class="payment-proof-frame-1041" src="img/frame-1041.svg" alt="Frame 1041" />
-          </a>
         </div>
+        <a onclick="hidePopup()"><img class="payment-proof-frame-1041" src="img/frame-1041.svg" alt="Frame 1041" />
+        </a>
       </div>
     </div>
+  </div>
 
-    <script>
-      /* Copyright (c) 2016 Tobias Buschor https://goo.gl/gl0mbf | MIT License https://goo.gl/HgajeK */
-      let count1 = 1;
-      let count2 = 1;
-      let count3 = 1;
-      let count4 = 1;
-      let count5 = 1;
-      let count6 = 1;
-      let count7 = 1;
-      let count8 = 1;
-      let count9 = 1;
-      let count10 = 0;
+  <script>
+    /* Copyright (c) 2016 Tobias Buschor https://goo.gl/gl0mbf | MIT License https://goo.gl/HgajeK */
+    let count1 = 1;
+    let count2 = 1;
+    let count3 = 1;
+    let count4 = 1;
+    let count5 = 1;
+    let count6 = 1;
+    let count7 = 1;
+    let count8 = 1;
+    let count9 = 1;
+    let count10 = 0;
 
-      if (!HTMLFormElement.prototype.reportValidity) {
-        HTMLFormElement.prototype.reportValidity = function () {
-          if (this.checkValidity()) return true;
-          var btn = document.createElement("button");
-          this.appendChild(btn);
-          btn.click();
-          this.removeChild(btn);
-          return false;
-        };
+    if (!HTMLFormElement.prototype.reportValidity) {
+      HTMLFormElement.prototype.reportValidity = function () {
+        if (this.checkValidity()) return true;
+        var btn = document.createElement("button");
+        this.appendChild(btn);
+        btn.click();
+        this.removeChild(btn);
+        return false;
+      };
+    }
+
+    function increase(param) {
+      let number = 0;
+      switch (param) {
+        case "count1":
+          count1++;
+          number = count1;
+          break;
+        case "count2":
+          count2++;
+          number = count2;
+          break;
+        case "count3":
+          count3++;
+          number = count3;
+          break;
+        case "count4":
+          count4++;
+          number = count4;
+          break;
+        case "count5":
+          count5++;
+          number = count5;
+          break;
+        case "count6":
+          count6++;
+          number = count6;
+          break;
+        case "count7":
+          count7++;
+          number = count7;
+          break;
+        case "count8":
+          count8++;
+          number = count8;
+          break;
+        case "count9":
+          count9++;
+          number = count9;
+          break;
+        default:
+          break;
       }
+      count10 = count1 + count2 + count3 + count4 + count5 + count6 + count7 + count8 + count9;
+      document.getElementById("count10").innerText = count10; // แสดงผล
+      document.getElementById(param).innerText = number; // แสดงผล
+    }
 
-      function increase(param) {
-        let number = 0;
-        switch (param) {
-          case "count1":
-            count1++;
-            number = count1;
-            break;
-          case "count2":
-            count2++;
-            number = count2;
-            break;
-          case "count3":
-            count3++;
-            number = count3;
-            break;
-          case "count4":
-            count4++;
-            number = count4;
-            break;
-          case "count5":
-            count5++;
-            number = count5;
-            break;
-          case "count6":
-            count6++;
-            number = count6;
-            break;
-          case "count7":
-            count7++;
-            number = count7;
-            break;
-          case "count8":
-            count8++;
-            number = count8;
-            break;
-          case "count9":
-            count9++;
-            number = count9;
-            break;
-          default:
-            break;
-        }
-        count10 = count1 + count2 + count3 + count4 + count5 + count6 + count7 + count8 + count9;
-        document.getElementById("count10").innerText = count10; // แสดงผล
-        document.getElementById(param).innerText = number; // แสดงผล
+    function decrease(param) {
+      let number = 0;
+      switch (param) {
+        case "count1":
+          count1--;
+          number = count1;
+          break;
+        case "count2":
+          count2--;
+          number = count2;
+          break;
+        case "count3":
+          count3--;
+          number = count3;
+          break;
+        case "count4":
+          count4--;
+          number = count4;
+          break;
+        case "count5":
+          count5--;
+          number = count5;
+          break;
+        case "count6":
+          count6--;
+          number = count6;
+          break;
+        case "count7":
+          count7--;
+          number = count7;
+          break;
+        case "count8":
+          count8--;
+          number = count8;
+          break;
+        case "count9":
+          count9--;
+          number = count9;
+          break;
+        default:
+          break;
       }
+      count10 = count1 + count2 + count3 + count4 + count5 + count6 + count7 + count8 + count9;
+      document.getElementById("count10").innerText = count10; // แสดงผล
+      document.getElementById(param).innerText = number; // แสดงผล
+    }
 
-      function decrease(param) {
-        let number = 0;
-        switch (param) {
-          case "count1":
-            count1--;
-            number = count1;
-            break;
-          case "count2":
-            count2--;
-            number = count2;
-            break;
-          case "count3":
-            count3--;
-            number = count3;
-            break;
-          case "count4":
-            count4--;
-            number = count4;
-            break;
-          case "count5":
-            count5--;
-            number = count5;
-            break;
-          case "count6":
-            count6--;
-            number = count6;
-            break;
-          case "count7":
-            count7--;
-            number = count7;
-            break;
-          case "count8":
-            count8--;
-            number = count8;
-            break;
-          case "count9":
-            count9--;
-            number = count9;
-            break;
-          default:
-            break;
-        }
-        count10 = count1 + count2 + count3 + count4 + count5 + count6 + count7 + count8 + count9;
-        document.getElementById("count10").innerText = count10; // แสดงผล
-        document.getElementById(param).innerText = number; // แสดงผล
-      }
+    function showPopup() {
+      const popup = document.getElementById("popup");
+      popup.style.display = "flex"; // แสดง popup
+      document.body.classList.add('no-scroll');
+    }
 
-      function showPopup() {
-        const popup = document.getElementById("popup");
-        popup.style.display = "flex"; // แสดง popup
-        document.body.classList.add('no-scroll');
-      }
+    function hidePopup() {
+      const popup = document.getElementById("popup");
+      popup.style.display = "none"; // ซ่อน popup
+      document.body.classList.remove('no-scroll');
 
-      function hidePopup() {
-        const popup = document.getElementById("popup");
-        popup.style.display = "none"; // ซ่อน popup
-        document.body.classList.remove('no-scroll');
+    }
 
-      }
-
-      function SubmitForm(form_name) {
-        // var form = document.getElementsByName(form_name)[0];
-        // if (form.reportValidity()) {
-        //   form.submit();
-        //   if (window.submitted) window.submitted();
-        // }
-      }
-    </script>
+    function SubmitForm(form_name) {
+      // var form = document.getElementsByName(form_name)[0];
+      // if (form.reportValidity()) {
+      //   form.submit();
+      //   if (window.submitted) window.submitted();
+      // }
+    }
+  </script>
 </body>
 
 </html>
