@@ -29430,3 +29430,40 @@ body.no-scroll {
   letter-spacing: 0;
   position: relative;
 }
+
+.notification-panel {
+  position: absolute;
+  top: 50px;
+  right: 10px;
+  width: 300px;
+  background: #fff;
+  border: 1px solid #ccc;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  padding: 16px;
+  z-index: 1000;
+}
+
+.notification-panel.hidden {
+  display: none;
+}
+
+.notification-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.notification-item {
+  padding: 8px;
+  border-bottom: 1px solid #ddd;
+}
+
+.notification-item.unread {
+  background: #f9f9f9;
+  font-weight: bold;
+}
+
+.notification-item:last-child {
+  border-bottom: none;
+}
