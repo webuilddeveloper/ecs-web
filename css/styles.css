@@ -29455,15 +29455,33 @@ body.no-scroll {
 }
 
 .notification-item {
+  display: flex;
+  align-items: flex-start;
   padding: 8px;
   border-bottom: 1px solid #ddd;
 }
 
-.notification-item.unread {
-  background: #f9f9f9;
-  font-weight: bold;
+.status-indicator {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: green;
+  margin-right: 8px;
+  margin-top: 4px;
 }
 
-.notification-item:last-child {
-  border-bottom: none;
+.status-indicator.read {
+  background-color: gray;
+}
+
+.notification-content {
+  flex: 1;
+}
+
+.notification-item.unread .status-indicator {
+  background-color: green;
+}
+
+.notification-item:not(.unread) .status-indicator {
+  background-color: gray;
 }

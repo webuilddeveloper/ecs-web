@@ -50,7 +50,39 @@
       </div>
     </div>
     <div class="header-action-ecs">
-      <img class="group" src="img/group@2x.png" alt="Group" />
+      <img
+        class="group"
+        src="img/group@2x.png"
+        alt="Group"
+        onclick="toggleNotificationPanel()"
+      />
+      <div id="notification-panel" class="notification-panel hidden">
+        <ul class="notification-list">
+          <li class="notification-item unread">
+            <span class="status-indicator"></span>
+            <div class="notification-content">
+              <p class="notosansthai-normal-vulcan-15px">
+                <strong class="notosansthai-semi-bold-vulcan-15px">หมายเลขคำสั่งซื้อ:</strong> 12345
+              </p>
+              <p class="notosansthai-normal-vulcan-15px">
+                <strong class="notosansthai-semi-bold-vulcan-15px">สถานะ:</strong> รอดำเนินการ
+              </p>
+            </div>
+          </li>
+          <li class="notification-item">
+            <span class="status-indicator read"></span>
+            <div class="notification-content">
+              <p class="notosansthai-normal-vulcan-15px">
+                <strong class="notosansthai-semi-bold-vulcan-15px">หมายเลขคำสั่งซื้อ:</strong> 67890
+              </p>
+              <p class="notosansthai-normal-vulcan-15px">
+                <strong class="notosansthai-semi-bold-vulcan-15px">สถานะ:</strong> สำเร็จ
+              </p>
+            </div>
+          </li>
+        </ul>
+      </div>
+      
       <a href="./profile-school.html">
         <img class="vector" src="img/vector-2.svg" alt="Vector" />
       </a>
@@ -1090,7 +1122,14 @@
         if (window.submitted) window.submitted();
       }
     }
+
+    function toggleNotificationPanel() {
+      const panel = document.getElementById('notification-panel');
+      panel.classList.toggle('hidden');
+    }
   </script>
+
+  
 </body>
 
 </html>
