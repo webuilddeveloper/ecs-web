@@ -13894,42 +13894,11 @@ input:focus {
   white-space: nowrap;
 }
 
-.purchase-order-detail-frame-38503 {
-  align-items: flex-start;
-  align-self: center;
-  display: flex;
-  flex-direction: column;
-  gap: 24px;
-  margin-right: 48.0px;
-  margin-top: 88px;
-  position: relative;
-  width: 1192px;
-}
-
-.purchase-order-detail-frame-38500 {
-  align-items: flex-start;
-  align-self: stretch;
-  display: flex;
-  flex: 0 0 auto;
-  gap: 40px;
-  position: relative;
-  width: 100%;
-}
 
 .purchase-order-detail-rectangle-4317 {
   height: 400px;
   position: relative;
   width: 400px;
-}
-
-.purchase-order-detail-frame-38502 {
-  align-items: flex-start;
-  display: flex;
-  flex-direction: column;
-  gap: 60px;
-  padding: 10px 0px;
-  position: relative;
-  width: 712px;
 }
 
 .purchase-order-detail-frame-38499 {
@@ -13939,79 +13908,6 @@ input:focus {
   flex: 0 0 auto;
   flex-direction: column;
   gap: 24px;
-  position: relative;
-  width: 100%;
-}
-
-.purchase-order-detail-frame-38431 {
-  align-items: flex-start;
-  align-self: stretch;
-  display: flex;
-  gap: 8px;
-  height: 60px;
-  position: relative;
-  width: 100%;
-}
-
-.purchase-order-detail-text {
-  letter-spacing: 0;
-  line-height: normal;
-  margin-top: -1.00px;
-  position: relative;
-  width: 120px;
-}
-
-.purchase-order-detail-text-8 {
-  letter-spacing: 0;
-  line-height: normal;
-  margin-right: -26.00px;
-  margin-top: -1.00px;
-  position: relative;
-  width: 610px;
-}
-
-.purchase-order-detail-frame-38432 {
-  align-items: flex-start;
-  align-self: stretch;
-  display: flex;
-  gap: 8px;
-  height: 120px;
-  position: relative;
-  width: 100%;
-}
-
-.purchase-order-detail-text-10 {
-  letter-spacing: 0;
-  line-height: normal;
-  margin-top: -1.00px;
-  position: relative;
-  width: 551px;
-}
-
-.purchase-order-detail-frame-38433 {
-  align-items: flex-start;
-  align-self: stretch;
-  display: flex;
-  gap: 8px;
-  height: 30px;
-  position: relative;
-  width: 100%;
-}
-
-.purchase-order-detail-address {
-  letter-spacing: 0;
-  line-height: normal;
-  margin-top: -1.00px;
-  position: relative;
-  width: 551px;
-}
-
-.purchase-order-detail-frame-38504 {
-  align-items: center;
-  align-self: stretch;
-  display: flex;
-  flex: 0 0 auto;
-  gap: 17px;
   position: relative;
   width: 100%;
 }
@@ -28229,6 +28125,113 @@ body.no-scroll {
     position: relative;
     width: 457px;
   }
+
+  .purchase-order-detail-text-8 {
+    letter-spacing: 0;
+    line-height: normal;
+    margin-right: -26.00px;
+    margin-top: -1.00px;
+    position: relative;
+    width: 610px;
+  }
+
+  .purchase-order-detail-text {
+    letter-spacing: 0;
+    line-height: normal;
+    margin-top: -1.00px;
+    position: relative;
+    width: 120px;
+  }
+
+  .purchase-order-detail-text-10 {
+    letter-spacing: 0;
+    line-height: normal;
+    margin-top: -1.00px;
+    position: relative;
+    width: 551px;
+  }
+
+  .purchase-order-detail-address {
+    letter-spacing: 0;
+    line-height: normal;
+    margin-top: -1.00px;
+    position: relative;
+    width: 551px;
+  }
+
+  .purchase-order-detail-frame-38503 {
+    align-items: flex-start;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin-right: 48.0px;
+    margin-top: 88px;
+    position: relative;
+    width: 1192px;
+  }
+
+  .purchase-order-detail-frame-38432 {
+    align-items: flex-start;
+    align-self: stretch;
+    display: flex;
+    gap: 8px;
+    height: 120px;
+    position: relative;
+    width: 100%;
+  }
+
+  .purchase-order-detail-frame-38431 {
+    align-items: flex-start;
+    align-self: stretch;
+    display: flex;
+    gap: 8px;
+    height: 60px;
+    position: relative;
+    width: 100%;
+  }
+
+
+  .purchase-order-detail-frame-38433 {
+    align-items: flex-start;
+    align-self: stretch;
+    display: flex;
+    gap: 8px;
+    height: 30px;
+    position: relative;
+    width: 100%;
+  }
+
+
+  .purchase-order-detail-frame-38500 {
+    align-items: flex-start;
+    align-self: stretch;
+    display: flex;
+    flex: 0 0 auto;
+    gap: 40px;
+    position: relative;
+    width: 100%;
+  }
+
+  .purchase-order-detail-frame-38502 {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    padding: 10px 0px;
+    position: relative;
+    width: 712px;
+  }
+
+  .purchase-order-detail-frame-38504 {
+    align-items: center;
+    align-self: stretch;
+    display: flex;
+    flex: 0 0 auto;
+    gap: 17px;
+    position: relative;
+    width: 100%;
+  }
 }
 
 /* สำหรับ Tablet */
@@ -28628,6 +28631,127 @@ body.no-scroll {
     position: relative;
     width: 457px;
     justify-self: center;
+  }
+
+  .purchase-order-detail {
+    align-items: flex-start;
+    background-color: var(--white);
+    display: flex;
+    flex-direction: column;
+    /* height: 1024px; */
+    width: 100%;
+  }
+
+  .purchase-order-detail-frame-38503 {
+    align-items: flex-start;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin-top: 60px;
+    position: relative;
+    width: 100%;
+  }
+
+  .purchase-order-detail-rectangle-4317 {
+    height: 320px;
+    position: relative;
+    width: 320px;
+  }
+
+  .purchase-order-detail-text-8 {
+    letter-spacing: 0;
+    line-height: normal;
+    margin-right: -26.00px;
+    margin-top: -1.00px;
+    position: relative;
+    width: 100%;
+  }
+
+  .purchase-order-detail-text {
+    letter-spacing: 0;
+    line-height: normal;
+    margin-top: -1.00px;
+    position: relative;
+    width: 100px;
+    text-wrap-mode: nowrap;
+  }
+
+  .purchase-order-detail-text-10 {
+    letter-spacing: 0;
+    line-height: normal;
+    margin-top: -1.00px;
+    position: relative;
+    width: 100%;
+  }
+
+  .purchase-order-detail-address {
+    letter-spacing: 0;
+    line-height: normal;
+    margin-top: -1.00px;
+    position: relative;
+    width: 100%;
+  }
+
+  .purchase-order-detail-frame-38432 {
+    align-items: flex-start;
+    align-self: stretch;
+    display: flex;
+    gap: 8px;
+    position: relative;
+    width: 100%;
+  }
+
+  .purchase-order-detail-frame-38431 {
+    align-items: flex-start;
+    align-self: stretch;
+    display: flex;
+    gap: 8px;
+    height: 60px;
+    position: relative;
+    width: 100%;
+  }
+
+
+  .purchase-order-detail-frame-38433 {
+    align-items: flex-start;
+    align-self: stretch;
+    display: flex;
+    gap: 8px;
+    height: 30px;
+    position: relative;
+    width: 100%;
+  }
+
+
+  .purchase-order-detail-frame-38500 {
+    align-items: flex-start;
+    align-self: stretch;
+    display: flex;
+    flex: 0 0 auto;
+    gap: 20px;
+    position: relative;
+    width: 100%;
+  }
+
+  .purchase-order-detail-frame-38502 {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    padding: 10px 0px;
+    position: relative;
+    width: 100%;
+  }
+
+  .purchase-order-detail-frame-38504 {
+    align-items: center;
+    align-self: stretch;
+    display: flex;
+    flex: 0 0 auto;
+    gap: 17px;
+    position: relative;
+    width: 100%;
   }
 }
 
@@ -29211,6 +29335,154 @@ body.no-scroll {
     padding: 8px 0px;
     position: relative;
     width: 78%;
+  }
+
+  .purchase-order-detail {
+    align-items: flex-start;
+    background-color: var(--white);
+    display: flex;
+    flex-direction: column;
+    /* height: 1024px; */
+    width: 100%;
+  }
+
+  .purchase-order-detail-frame-38503 {
+    align-items: flex-start;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin-top: 20px;
+    position: relative;
+    width: 100%;
+  }
+
+  .purchase-order-detail-rectangle-4317 {
+    height: 320px;
+    position: relative;
+    width: 100%;
+    object-fit: contain;
+
+  }
+
+  .purchase-order-detail-text-8 {
+    letter-spacing: 0;
+    line-height: normal;
+    margin-right: -26.00px;
+    margin-top: -1.00px;
+    position: relative;
+    width: 100%;
+  }
+
+  .purchase-order-detail-text {
+    letter-spacing: 0;
+    line-height: normal;
+    margin-top: -1.00px;
+    position: relative;
+    width: 100px;
+    text-wrap-mode: nowrap;
+  }
+
+  .purchase-order-detail-text-10 {
+    letter-spacing: 0;
+    line-height: normal;
+    margin-top: -1.00px;
+    position: relative;
+    width: 100%;
+  }
+
+  .purchase-order-detail-address {
+    letter-spacing: 0;
+    line-height: normal;
+    margin-top: -1.00px;
+    position: relative;
+    width: 100%;
+  }
+
+  .purchase-order-detail-frame-38432 {
+    align-items: flex-start;
+    align-self: stretch;
+    display: flex;
+    gap: 8px;
+    height: 120px;
+    position: relative;
+    width: 100%;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+  }
+
+  .purchase-order-detail-frame-38431 {
+    align-items: flex-start;
+    align-self: stretch;
+    display: flex;
+    gap: 8px;
+    height: 60px;
+    position: relative;
+    width: 100%;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+  }
+
+
+  .purchase-order-detail-frame-38433 {
+    align-items: flex-start;
+    align-self: stretch;
+    display: flex;
+    gap: 8px;
+    height: 30px;
+    position: relative;
+    width: 100%;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+  }
+
+
+  .purchase-order-detail-frame-38500 {
+    align-items: flex-start;
+    align-self: stretch;
+    display: flex;
+    flex: 0 0 auto;
+    gap: 20px;
+    position: relative;
+    width: 100%;
+  }
+
+  .purchase-order-detail-frame-38502 {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    padding: 10px 0px;
+    position: relative;
+    width: 100%;
+  }
+
+  .purchase-order-detail-frame-18 {
+    align-items: center;
+    background-color: #efefef;
+    border-radius: 10px;
+    display: inline-flex;
+    flex: 0 0 auto;
+    gap: 24px;
+    height: 46px;
+    justify-content: center;
+    overflow: hidden;
+    padding: 12px 20px;
+    position: relative;
+  }
+
+  .purchase-order-detail-frame-38504 {
+    align-items: center;
+    align-self: stretch;
+    display: flex;
+    flex: 0 0 auto;
+    position: relative;
+    width: 100%;
+    justify-content: space-around;
+  }
+
+  .purchase-order-detail-modal-content{
+    height: 40%;
   }
 }
 
