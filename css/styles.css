@@ -1452,6 +1452,14 @@ input:focus {
   font-weight: 400;
 }
 
+.notosansthai-normal-black-20px-2 {
+  color: #00000099;
+  font-family: var(--font-family-noto_sans_thai);
+  font-size: var(--font-size-20);
+  font-style: normal;
+  font-weight: 400;
+}
+
 .notosansthai-normal-clementine-13px {
   color: var(--clementine);
   font-family: var(--font-family-noto_sans_thai);
@@ -14638,7 +14646,7 @@ input:focus {
   flex-direction: column;
   gap: 16px;
   position: relative;
-  width: 600px;
+  /* width: 600px; */
 }
 
 
@@ -14666,7 +14674,7 @@ input:focus {
   align-self: stretch;
   background-color: var(--white);
   border: 1px solid;
-  border-color: var(--black);
+  border-color: #00000033;
   border-radius: 20px;
   display: flex;
   flex: 0 0 auto;
@@ -14920,7 +14928,7 @@ input:focus {
   align-items: flex-start;
   align-self: stretch;
   border: 1px solid;
-  border-color: var(--black);
+  border-color: #00000033;
   border-radius: 20px;
   display: flex;
   flex: 0 0 auto;
@@ -15210,7 +15218,7 @@ input:focus {
   align-items: flex-start;
   align-self: stretch;
   border: 1px solid;
-  border-color: var(--black);
+  border-color: #00000033;
   border-radius: 20px;
   display: flex;
   flex-direction: column;
@@ -15276,7 +15284,7 @@ input:focus {
 .purchase-order-shipping-xxxx-1 {
   color: var(--bkack);
   font-family: var(--font-family-noto_sans_thai);
-  font-size: var(--font-size-xl);
+  font-size: var(--font-size-24);
   font-weight: 700;
 }
 
@@ -15330,7 +15338,7 @@ input:focus {
 .purchase-order-shipping-text-23 {
   color: var(--white);
   font-family: var(--font-family-noto_sans_thai);
-  font-size: var(--font-size-m);
+  font-size: var(--font-size-20);
   font-weight: 700;
   letter-spacing: 0;
   line-height: normal;
@@ -15605,6 +15613,23 @@ input:focus {
   width: 468px;
 }
 
+.purchase-order-shipping-text_label-3-2 {
+  color: white;
+  font-family: var(--font-family-noto_sans_thai);
+  font-size: var(--font-size-16);
+  line-height: normal;
+  text-align: center;
+  color: var(--white);
+  font-weight: 600;
+  margin-left: -5.50px;
+  margin-right: -5.50px;
+  margin-top: -1.00px;
+  position: relative;
+  text-align: center;
+  width: fit-content;
+  /* width: 468px; */
+}
+
 .purchase-order-shipping-frame-38262 {
   align-items: center;
   display: inline-flex;
@@ -15625,6 +15650,20 @@ input:focus {
   position: relative;
   width: 216px;
 }
+
+.purchase-order-shipping-button-2-2 {
+  background-color: #012A6C;
+  border: 1px solid;
+  border-color: var(--main);
+  border-radius: 10px;
+  cursor: pointer;
+  display: flex;
+  gap: 8px;
+  padding: 8px 24px;
+  position: relative;
+  /* width: 216px; */
+}
+
 
 .purchase-order-shipping-button-3 {
   background-color: var(--main);
@@ -22009,6 +22048,22 @@ a:active {
   background-color: var(--gray);
   border: 1px solid;
   border-color: var(--licorice);
+  border-radius: 50px;
+  cursor: pointer;
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  overflow: hidden;
+  padding: 8px 16px;
+  position: relative;
+  width: 225px;
+}
+
+.payment-proof-button-new-2 {
+  align-items: center;
+  background-color: var(--pink);
+  border: 1px solid;
+  border-color: black;
   border-radius: 50px;
   cursor: pointer;
   display: flex;
