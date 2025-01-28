@@ -29702,3 +29702,58 @@ body.no-scroll {
   letter-spacing: 0;
   position: relative;
 }
+
+.notification-panel {
+  position: absolute;
+  top: 50px;
+  right: 10px;
+  width: 300px;
+  background: #fff;
+  border: 1px solid #ccc;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  padding: 16px;
+  z-index: 1000;
+}
+
+.notification-panel.hidden {
+  display: none;
+}
+
+.notification-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.notification-item {
+  display: flex;
+  align-items: flex-start;
+  padding: 8px;
+  border-bottom: 1px solid #ddd;
+}
+
+.status-indicator {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: green;
+  margin-right: 8px;
+  margin-top: 4px;
+}
+
+.status-indicator.read {
+  background-color: gray;
+}
+
+.notification-content {
+  flex: 1;
+}
+
+.notification-item.unread .status-indicator {
+  background-color: green;
+}
+
+.notification-item:not(.unread) .status-indicator {
+  background-color: gray;
+}
