@@ -63,6 +63,115 @@
     .content-ecs .input-select {
         width: -webkit-fill-available;
     }
+
+    .register-obec {
+        width: -webkit-fill-available;
+        height: fit-content;
+    }
+
+    .register-obec-flex-row {
+        align-items: flex-start;
+        display: flex;
+        /* gap: 283px; */
+        height: 102px;
+        margin-left: 0;
+        margin-top: 15px;
+        min-width: fit-content;
+    }
+
+    .register-obec-frame-38294 {
+        width: -webkit-fill-available;
+    }
+
+    .register-obec-frame-27 {
+        width: -webkit-fill-available;
+        padding: 20px;
+    }
+
+    .register-obec-frame-38298 {
+        width: -webkit-fill-available;
+        justify-content: space-between;
+        gap: 0;
+    }
+
+    .register-obec-frame-3828-1 {
+        width: -webkit-fill-available;
+    }
+
+    .register-obec-frame-14 {
+        margin-top: 0;
+    }
+
+    .register-obec-flex-row {
+        align-items: flex-start;
+        display: flex;
+        /* gap: 283px; */
+        height: 102px;
+        margin-left: 0;
+        margin-top: 15px;
+        min-width: fit-content;
+    }
+
+    .register-obec {
+        width: -webkit-fill-available;
+        height: fit-content;
+    }
+
+    .register-obec-frame-38294 {
+        width: -webkit-fill-available;
+    }
+
+    .register-obec-frame-27 {
+        width: -webkit-fill-available;
+        padding: 20px;
+    }
+
+    .register-obec-affiliation-input-select {
+        width: -webkit-fill-available;
+    }
+
+    .register-obec-custom-dropdown {
+        width: -webkit-fill-available;
+    }
+
+    .register-obec-frame-38397 {
+        flex-direction: column;
+    }
+
+    .register-obec-frame-29 {
+        width: -webkit-fill-available;
+    }
+
+    .register-obec-text {
+        width: -webkit-fill-available;
+    }
+
+    .register-obec-frame-38298 {
+        width: -webkit-fill-available;
+    }
+
+    .register-obec-frame-14 {
+        width: -webkit-fill-available;
+        margin-top: 0;
+    }
+
+    .pdpa-frame-container {
+        width: -webkit-fill-available;
+    }
+
+    .pdpa-frame-38264 {
+        width: -webkit-fill-available;
+        padding: 10px;
+      }
+
+      .pdpa-popup {
+        padding: 0 20px;
+      }
+
+      .pdpa-scrollable-content {
+        padding: 20px;
+        border-radius: 8px;
+      }
 }
 
 @media (max-width: 767px) {
@@ -153,6 +262,80 @@
     .content-ecs .input-select {
         width: -webkit-fill-available;
     }
+
+    .register-obec-flex-row {
+        align-items: flex-start;
+        display: flex;
+        /* gap: 283px; */
+        height: 102px;
+        margin-left: 0;
+        margin-top: 15px;
+        min-width: fit-content;
+    }
+
+    .register-obec {
+        width: -webkit-fill-available;
+        height: fit-content;
+    }
+
+    .register-obec-frame-38294 {
+        width: -webkit-fill-available;
+    }
+
+    .register-obec-frame-27 {
+        width: -webkit-fill-available;
+        padding: 20px;
+    }
+
+    .register-obec-affiliation-input-select {
+        width: -webkit-fill-available;
+    }
+
+    .register-obec-custom-dropdown {
+        width: -webkit-fill-available;
+    }
+
+    .register-obec-frame-38397 {
+        flex-direction: column;
+    }
+
+    .register-obec-frame-29 {
+        width: -webkit-fill-available;
+    }
+
+    .register-obec-text {
+        width: -webkit-fill-available;
+    }
+
+    .register-obec-frame-38298 {
+        width: -webkit-fill-available;
+    }
+
+    .register-obec-frame-14 {
+        width: -webkit-fill-available;
+        margin-top: 0;
+    }
+
+    .pdpa-frame-container {
+        width: -webkit-fill-available;
+    }
+
+    .pdpa-frame-38264 {
+        width: -webkit-fill-available;
+        padding: 10px;
+      }
+
+      .pdpa-popup {
+        padding: 0 20px;
+      }
+
+      .pdpa-scrollable-content {
+        padding: 20px;
+        border-radius: 8px;
+      }
+
+
+
 
 
 
