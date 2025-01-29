@@ -29160,7 +29160,7 @@ body.no-scroll {
     align-items: flex-start;
     align-self: stretch;
     border: 1px solid;
-    border-color: var(--black);
+    border-color: #0000001A;
     border-radius: 20px;
     display: flex;
     flex: 0 0 auto;
@@ -31190,6 +31190,7 @@ body.no-scroll {
     background-color: var(--white);
     display: flex;
     flex-direction: column;
+    width: 100%;
   }
 
   .draft-school-detail-edit-header {
@@ -31297,10 +31298,10 @@ body.no-scroll {
     display: flex;
     flex-direction: column;
     gap: 40px;
-    margin-left: 56.0px;
-    margin-top: 82px;
+    margin-top: 50px;
     position: relative;
-    width: 1260px;
+    width: 100%;
+    padding: 20px;
   }
 
   .draft-school-detail-edit-frame-38 {
@@ -31318,7 +31319,7 @@ body.no-scroll {
     align-items: flex-start;
     align-self: stretch;
     border: 1px solid;
-    border-color: var(--black);
+    border-color: #0000001A;
     border-radius: 20px;
     display: flex;
     flex: 0 0 auto;
@@ -31944,6 +31945,7 @@ body.no-scroll {
     gap: 324px;
     margin-top: 62px;
     min-width: 762px;
+    margin-left: 20px;
   }
 
   .request-detail-school-flex-row-2 {
@@ -33870,7 +33872,7 @@ body.no-scroll {
     margin-left: 56.0px;
     margin-top: 82px;
     position: relative;
-    width: 1260px;
+    width: 100%;
   }
 
   .draft-school-detail-edit-frame-38 {
@@ -33888,7 +33890,7 @@ body.no-scroll {
     align-items: flex-start;
     align-self: stretch;
     border: 1px solid;
-    border-color: var(--black);
+    border-color: #0000001A;
     border-radius: 20px;
     display: flex;
     flex: 0 0 auto;
