@@ -1,161 +1,153 @@
 @media (min-width: 768px) and (max-width: 1023px) {
-    .content-ecs .login-logo-1-1 {
+    .register-educational-service-area {
+        width: -webkit-fill-available;
         height: auto;
-        object-fit: cover;
-        width: 277px;
     }
 
-    .banner .left {
-        width: 50%;
-        margin-bottom: 0;
+    .register-educational-service-area-flex-row {
+        margin-left: 0;
+        margin-top: 15px;
+        min-width: -webkit-fill-available;
+    }
+
+    .register-educational-service-area-frame-38294 {
+        width: -webkit-fill-available;
+    }
+
+    .register-educational-service-area-frame-27 {
+        width: -webkit-fill-available;
+        padding: 20px;
+    }
+
+    .register-educational-service-area-frame-14 {
+        margin-top: 0;
+    }
+
+    .register-educational-service-area-frame-38298 {
+        width: -webkit-fill-available;
+    }
+
+    .pdpa-frame-38264 {
+        width: -webkit-fill-available;
+        padding: 10px;
+    }
+
+    .pdpa-scrollable-content {
         padding: 30px;
     }
 
-    .banner {
+    .register-non-formal-education-flex-row {
+        margin-left: 0;
+        margin-top: 15px;
         min-width: -webkit-fill-available;
-        align-items: normal;
     }
 
-    .banner .rectangle {
-        width: 50%;
-        height: -webkit-fill-available;
-    }
-
-    .home-educational-frame-38252 {
-        margin-right: 230px;
-        justify-content: flex-end;
-    }
-
-    .content-ecs .menu-button-row-ecs {
+    .register-non-formal-education {
         width: -webkit-fill-available;
-        justify-content: space-between;
+        height: auto;
     }
 
-    .content-ecs .menu-button-ecs {
-        width: -webkit-fill-available;
-        margin-top: 100px;
-    }
-
-    .content-ecs .frame-38454 {
+    .register-non-formal-education-frame-38294 {
         width: -webkit-fill-available;
     }
 
-    .content-ecs .vector-14 {
-        height: 1px;
-        left: 0;
-        object-fit: cover;
-        position: absolute;
-        top: 26px;
+    .register-non-formal-education-frame-27 {
         width: -webkit-fill-available;
+        padding: 20px;
     }
 
-    .content-ecs .frame-38312 {
+    .register-non-formal-education-frame-38298 {
+        width: -webkit-fill-available;
         gap: 0;
-        width: -webkit-fill-available;
-        justify-content: space-between;
     }
 
-    .content-ecs .frame-38449 {
-        width: -webkit-fill-available;
-        gap: 16px;
-    }
-
-    .content-ecs .input-select {
-        width: -webkit-fill-available;
+    .register-non-formal-education-frame-14 {
+        margin-top: 0;
     }
 }
 
 @media (max-width: 767px) {
-    .content-ecs .login-flex-row {
-        flex-direction: column;
-    }
-
-    .content-ecs .login-logo-1-1 {
-        height: auto;
-        object-fit: cover;
-        width: 199px;
-    }
-
-    .content-ecs .login-card-login {
+    .register-educational-service-area {
         width: -webkit-fill-available;
+        height: auto;
     }
 
-    .banner {
-        flex-direction: column;
+    .register-educational-service-area-flex-row {
+        margin-left: 0;
+        margin-top: 15px;
         min-width: -webkit-fill-available;
     }
 
-    .banner .rectangle {
+    .register-educational-service-area-frame-27 {
+        width: -webkit-fill-available;
+        padding: 20px;
+    }
+
+    .register-educational-service-area-frame-38294 {
+        width: -webkit-fill-available;
+    }
+
+    .register-educational-service-area-frame-38397 {
+        flex-direction: column;
+    }
+
+    .register-educational-service-area-frame-29 {
+        width: -webkit-fill-available;
+        overflow: visible;
+    }
+
+    .register-educational-service-area-frame-38298 {
+        width: -webkit-fill-available;
+    }
+
+    .register-educational-service-area-frame-14 {
+        margin-top: 0;
+    }
+
+    .pdpa-frame-38264 {
+        width: -webkit-fill-available;
+        padding: 10px;
+    }
+
+    .pdpa-scrollable-content {
+        padding: 30px;
+    }
+
+    .register-non-formal-education {
         width: -webkit-fill-available;
         height: auto;
     }
 
-    .home-educational-frame-38252 {
-        align-items: center;
-        display: inline-flex;
-        gap: 8px;
-        margin-right: 0;
-        margin-top: 22px;
-        position: relative;
+    .register-non-formal-education-flex-row {
+        margin-left: 0;
+        margin-top: 15px;
+        min-width: -webkit-fill-available;
     }
 
-    .banner .left {
-        width: -webkit-fill-available;
-        margin-top: 20px;
-    }
-
-    .content-ecs .menu-button-ecs {
-        width: -webkit-fill-available;
-        margin: 0;
-    }
-
-    .content-ecs .menu-button-row-ecs {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        width: -webkit-fill-available;
-        row-gap: 30px;
-        column-gap: 0;
-    }
-
-    .content-ecs .menu-button-button-1 {
-        width: 100%;
-    }
-
-    .content-ecs .frame-38454 {
+    .register-non-formal-education-frame-38294 {
         width: -webkit-fill-available;
     }
 
-    .dis-c {
-        display: flex;
-        justify-content: center;
-    }
-
-    .content-ecs .vector-14 {
-        height: 1px;
-        left: 0;
-        object-fit: cover;
-        position: absolute;
-        top: 26px;
+    .register-non-formal-education-frame-27 {
         width: -webkit-fill-available;
+        padding: 20px;
     }
 
-    .content-ecs .frame-38312 {
-        gap: 0;
+    .register-non-formal-education-frame-38397 {
+        flex-direction: column;
+    }
+
+    .register-non-formal-education-frame-29 {
         width: -webkit-fill-available;
-        justify-content: space-between;
+        overflow: visible;
     }
 
-    .content-ecs .frame-38449 {
-        width: -webkit-fill-available;
-        gap: 16px;
+    .register-non-formal-education-frame-28 {
+        overflow: visible;
     }
 
-    .content-ecs .input-select {
-        width: -webkit-fill-available;
+    .register-non-formal-education-frame-14 {
+        margin-top: 0;
     }
-
-
-
-
 
 }
