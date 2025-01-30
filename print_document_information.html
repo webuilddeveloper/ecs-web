@@ -1374,10 +1374,13 @@
     function showMenuHam() {
       isContentMenuHam = !isContentMenuHam;
       const contentMenuHam = document.getElementById("contentMenuHam");
+      const contentMenuHamMobile = document.getElementById("contentMenuHamMobile");
       if (isContentMenuHam) {
         contentMenuHam.style.display = "flex";
+        contentMenuHamMobile.style.display = "flex";
       } else {
         contentMenuHam.style.display = "none";
+        contentMenuHamMobile.style.display = "none";
       }
     }
 
