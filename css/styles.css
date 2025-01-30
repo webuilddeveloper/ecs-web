@@ -35971,6 +35971,15 @@ body.no-scroll {
     top: 10px;
     width: 31px;
   }
+
+  .purchase-order-shipping-frame-1041 {
+    cursor: pointer;
+    height: 31px;
+    left: 305px;
+    position: absolute;
+    top: 10px;
+    width: 31px;
+  }
 }
 
 /* media */
