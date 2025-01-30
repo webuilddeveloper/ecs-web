@@ -34633,6 +34633,11 @@ body.no-scroll {
     width: 314px;
   }
 
+  .pdpa-scrollable-content {
+    padding: 30px !important;
+  }
+
+
   .draft-school-detail-frame-38-1 {
     align-items: center;
     align-self: stretch;
@@ -34642,6 +34647,7 @@ body.no-scroll {
     position: relative;
     width: 100%;
   }
+
 
   .draft-school-detail-frame-95 {
     background-color: #f0eeed;
@@ -36291,6 +36297,10 @@ body.no-scroll {
     margin-bottom: 4.0px;
     margin-left: 41px;
     position: relative;
+  }
+
+  .pdpa-scrollable-content {
+    padding: 30px !important;
   }
 
   .request-detail-school-navbar-link-text-20 {

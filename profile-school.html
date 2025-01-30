@@ -268,12 +268,39 @@
         <img class="logo-ecs" src="img/logo------1.png" alt="logo" />
       </a>
       <div class="header-action-ecs">
-        <img class="group" src="img/Icon-Service.png" alt="Service" />
+        <img class="group" src="img/Icon-Service.png" alt="Service" onclick="showMenuNav()"/>
         <img class="group" src="img/group@2x.png" alt="Group" />
         <a href="./profile-school.html">
           <img class="vector" src="img/vector-2.svg" alt="Vector" />
         </a>
       </div>
+    </div>
+
+    <div id="subMenuHeader" class="sub-menu-header">
+      <a href="./purchase-order-school.html"
+        class="notosansthai-normal-black-20px no-text-underline textItemMenuHeader itemMenuHeader">
+        ออกใบขอสั่งซื้อ
+      </a>
+      <hr />
+      <a href="./approve-school.html"
+        class="notosansthai-normal-black-20px no-text-underline textItemMenuHeader itemMenuHeader">
+        เอกสารใบขอสั่งซื้อ
+      </a>
+      <hr />
+      <a href="./delivered-order.html"
+        class="notosansthai-normal-black-20px no-text-underline textItemMenuHeader itemMenuHeader">
+        รายการคำสั่งซื้อ
+      </a>
+      <hr />
+      <a href="./order-cancel.html"
+        class="notosansthai-normal-black-20px no-text-underline textItemMenuHeader itemMenuHeader">
+        ยกเลิกเลข ปพ.
+      </a>
+      <hr />
+      <a href="./delivered-order.html"
+        class="notosansthai-normal-black-20px no-text-underline textItemMenuHeader itemMenuHeader">
+        ประวัติการสั่งซื้อ
+      </a>
     </div>
     <div class="container-center-horizontal">
       <div class="profile-school-frame-38356">
@@ -442,12 +469,39 @@
         <img class="logo-ecs" src="img/logo------1.png" alt="logo" />
       </a>
       <div class="header-action-ecs">
-        <img class="group" src="img/Icon-Service.png" alt="Service" />
+        <img class="group" src="img/Icon-Service.png" alt="Service" onclick="showMenuNav()"/>
         <img class="group" src="img/group@2x.png" alt="Group" />
         <a href="./profile-school.html">
           <img class="vector" src="img/vector-2.svg" alt="Vector" />
         </a>
       </div>
+    </div>
+
+    <div id="subMenuHeaderMobile" class="sub-menu-header">
+      <a href="./purchase-order-school.html"
+        class="notosansthai-normal-black-20px no-text-underline textItemMenuHeader itemMenuHeader">
+        ออกใบขอสั่งซื้อ
+      </a>
+      <hr />
+      <a href="./approve-school.html"
+        class="notosansthai-normal-black-20px no-text-underline textItemMenuHeader itemMenuHeader">
+        เอกสารใบขอสั่งซื้อ
+      </a>
+      <hr />
+      <a href="./delivered-order.html"
+        class="notosansthai-normal-black-20px no-text-underline textItemMenuHeader itemMenuHeader">
+        รายการคำสั่งซื้อ
+      </a>
+      <hr />
+      <a href="./order-cancel.html"
+        class="notosansthai-normal-black-20px no-text-underline textItemMenuHeader itemMenuHeader">
+        ยกเลิกเลข ปพ.
+      </a>
+      <hr />
+      <a href="./delivered-order.html"
+        class="notosansthai-normal-black-20px no-text-underline textItemMenuHeader itemMenuHeader">
+        ประวัติการสั่งซื้อ
+      </a>
     </div>
     <div class="container-center-horizontal">
       <div class="profile-school-frame-38356">
@@ -613,6 +667,21 @@
   </footer>
   <script>
     /* Copyright (c) 2016 Tobias Buschor https://goo.gl/gl0mbf | MIT License https://goo.gl/HgajeK */
+
+    let isSubMenuHeader = false;
+
+    function showMenuNav() {
+      isSubMenuHeader = !isSubMenuHeader;
+      const subMenuHeader = document.getElementById("subMenuHeader");
+      const subMenuHeaderMobile = document.getElementById("subMenuHeaderMobile");
+      if (isSubMenuHeader) {
+        subMenuHeader.style.display = "flex";
+        subMenuHeaderMobile.style.display = "flex";
+      } else {
+        subMenuHeader.style.display = "none";
+        subMenuHeaderMobile.style.display = "none";
+      }
+    }
 
     if (!HTMLFormElement.prototype.reportValidity) {
       HTMLFormElement.prototype.reportValidity = function () {
