@@ -305,15 +305,42 @@
   <div class="tablet">
     <div class="header-ecs">
       <a href="./login.html">
-        <img class="logo-ecs" src="img/logo------1.png" alt="logo" />
+        <img class="logo-ecs" src="img/logo------1.png" alt="logo ecs" />
       </a>
+
       <div class="header-action-ecs">
-        <img class="group" src="img/Icon-Service.png" alt="Service" />
+        <img class="group" src="img/Icon-Service.png" alt="Service" onclick="showMenuNav()" />
         <img class="group" src="img/group@2x.png" alt="Group" />
         <a href="./profile-school.html">
           <img class="vector" src="img/vector-2.svg" alt="Vector" />
         </a>
       </div>
+    </div>
+    <div id="subMenuHeader" class="sub-menu-header">
+      <a href="./purchase-order-school.html"
+        class="notosansthai-normal-black-20px no-text-underline textItemMenuHeader itemMenuHeader">
+        ออกใบขอสั่งซื้อ
+      </a>
+      <hr />
+      <a href="./approve-school.html"
+        class="notosansthai-normal-black-20px no-text-underline textItemMenuHeader itemMenuHeader">
+        เอกสารใบขอสั่งซื้อ
+      </a>
+      <hr />
+      <a href="./delivered-order.html"
+        class="notosansthai-normal-black-20px no-text-underline textItemMenuHeader itemMenuHeader">
+        รายการคำสั่งซื้อ
+      </a>
+      <hr />
+      <a href="./order-cancel.html"
+        class="notosansthai-normal-black-20px no-text-underline textItemMenuHeader itemMenuHeader">
+        ยกเลิกเลข ปพ.
+      </a>
+      <hr />
+      <a href="./delivered-order.html"
+        class="notosansthai-normal-black-20px no-text-underline textItemMenuHeader itemMenuHeader">
+        ประวัติการสั่งซื้อ
+      </a>
     </div>
     <div class="container-center-horizontal">
       <div class="draft-school-detail-edit">
@@ -571,19 +598,45 @@
     </footer>
   </div>
   <div class="mobile">
-    <div class="mobile">
-      <div class="header-ecs">
-        <a href="./login.html">
-          <img class="logo-ecs" src="img/logo------1.png" alt="logo" />
+    <div class="header-ecs">
+      <a href="./login.html">
+        <img class="logo-ecs" src="img/logo------1.png" alt="logo ecs" />
+      </a>
+
+      <div class="header-action-ecs">
+        <img class="group" src="img/Icon-Service.png" alt="Service" onclick="showMenuNav()" />
+        <img class="group" src="img/group@2x.png" alt="Group" />
+        <a href="./profile-school.html">
+          <img class="vector" src="img/vector-2.svg" alt="Vector" />
         </a>
-        <div class="header-action-ecs">
-          <img class="group" src="img/Icon-Service.png" alt="Service" />
-          <img class="group" src="img/group@2x.png" alt="Group" />
-          <a href="./profile-school.html">
-            <img class="vector" src="img/vector-2.svg" alt="Vector" />
-          </a>
-        </div>
       </div>
+    </div>
+    <div id="subMenuHeaderMobile" class="sub-menu-header">
+      <a href="./purchase-order-school.html"
+        class="notosansthai-normal-black-20px no-text-underline textItemMenuHeader itemMenuHeader">
+        ออกใบขอสั่งซื้อ
+      </a>
+      <hr />
+      <a href="./approve-school.html"
+        class="notosansthai-normal-black-20px no-text-underline textItemMenuHeader itemMenuHeader">
+        เอกสารใบขอสั่งซื้อ
+      </a>
+      <hr />
+      <a href="./delivered-order.html"
+        class="notosansthai-normal-black-20px no-text-underline textItemMenuHeader itemMenuHeader">
+        รายการคำสั่งซื้อ
+      </a>
+      <hr />
+      <a href="./order-cancel.html"
+        class="notosansthai-normal-black-20px no-text-underline textItemMenuHeader itemMenuHeader">
+        ยกเลิกเลข ปพ.
+      </a>
+      <hr />
+      <a href="./delivered-order.html"
+        class="notosansthai-normal-black-20px no-text-underline textItemMenuHeader itemMenuHeader">
+        ประวัติการสั่งซื้อ
+      </a>
+    </div>
     <div class="container-center-horizontal">
       <div class="draft-school-detail-edit">
 
@@ -606,7 +659,8 @@
                 <div
                   class="draft-school-detail-edit-text-2 valign-text-middle draft-school-detail-edit-text-3 notosansthai-semi-bold-black-14px">
                   หมายเลขคำสั่งซื้อ
-                </div></div>
+                </div>
+              </div>
               <div class="draft-school-detail-edit-frame-38339">
                 <div class="draft-school-detail-edit-frame-38426">
                   <div class="draft-school-detail-edit-xxxxxxxx valign-text-middle">PR-20250123-586935555</div>
@@ -687,7 +741,8 @@
                   <div class="draft-school-detail-edit-frame-94">
                     <div class="draft-school-detail-edit-frame-94-1">
                       <div class="draft-school-detail-edit-frame-93">
-                        <p class="draft-school-detail-edit-text-10 valign-text-middle draft-school-detail-edit-text-3 text-clamp">
+                        <p
+                          class="draft-school-detail-edit-text-10 valign-text-middle draft-school-detail-edit-text-3 text-clamp">
                           ปพ.1:ป ระเบียนแสดงผลการเรียน ระดับ ประถมฯ <br />(ปรับปรุง 2555) (ฉบับใช้กับคอม)
                         </p>
                         <div class="draft-school-detail-edit-frame-9">
@@ -700,12 +755,13 @@
                           </div>
                         </div>
                         <div class="purchase-order-frame-18">
-                          <a href="javascript:decrease('count1')"><img class="purchase-order-frame-3" src="img/frame-18.svg"
-                              alt="Frame" />
+                          <a href="javascript:decrease('count1')"><img class="purchase-order-frame-3"
+                              src="img/frame-18.svg" alt="Frame" />
                           </a>
-                          <div class="purchase-order-number notosansthai-bold-black-14px"><span id="count1">1</span></div>
-                          <a href="javascript:increase('count1')"><img class="purchase-order-frame-4" src="img/frame-19.svg"
-                              alt="Frame" />
+                          <div class="purchase-order-number notosansthai-bold-black-14px"><span id="count1">1</span>
+                          </div>
+                          <a href="javascript:increase('count1')"><img class="purchase-order-frame-4"
+                              src="img/frame-19.svg" alt="Frame" />
                           </a>
                         </div>
                       </div>
@@ -737,12 +793,13 @@
                           </div>
                         </div>
                         <div class="purchase-order-frame-18">
-                          <a href="javascript:decrease('count2')"><img class="purchase-order-frame-3" src="img/frame-18.svg"
-                              alt="Frame" />
+                          <a href="javascript:decrease('count2')"><img class="purchase-order-frame-3"
+                              src="img/frame-18.svg" alt="Frame" />
                           </a>
-                          <div class="purchase-order-number notosansthai-bold-black-14px"><span id="count2">1</span></div>
-                          <a href="javascript:increase('count2')"><img class="purchase-order-frame-4" src="img/frame-19.svg"
-                              alt="Frame" />
+                          <div class="purchase-order-number notosansthai-bold-black-14px"><span id="count2">1</span>
+                          </div>
+                          <a href="javascript:increase('count2')"><img class="purchase-order-frame-4"
+                              src="img/frame-19.svg" alt="Frame" />
                           </a>
                         </div>
                       </div>
@@ -777,31 +834,38 @@
             <div class="draft-school-detail-edit-frame-38381">
               <div class="draft-school-detail-edit-frame-102">
                 <div class="draft-school-detail-edit-frame-3">
-                  <div class="draft-school-detail-edit-transport-fee valign-text-middle notosansthai-normal-op6-black-13px">
+                  <div
+                    class="draft-school-detail-edit-transport-fee valign-text-middle notosansthai-normal-op6-black-13px">
                     ค่าขนส่ง /Transport Fee
                   </div>
-                  <div class="draft-school-detail-edit-xxxx-2 valign-text-middle notosansthai-normal-black-13px">xx.xx บาท
+                  <div class="draft-school-detail-edit-xxxx-2 valign-text-middle notosansthai-normal-black-13px">xx.xx
+                    บาท
                   </div>
                 </div>
                 <div class="draft-school-detail-edit-frame-3">
-                  <div class="draft-school-detail-edit-transport-fee valign-text-middle notosansthai-normal-op6-black-13px">
+                  <div
+                    class="draft-school-detail-edit-transport-fee valign-text-middle notosansthai-normal-op6-black-13px">
                     มูลค่าสินค้าและค่าขนส่งก่อนภาษี /<br>Price Before Vat
                   </div>
-                  <div class="draft-school-detail-edit-xxxx-2 valign-text-middle notosansthai-normal-black-13px">xx.xx บาท
+                  <div class="draft-school-detail-edit-xxxx-2 valign-text-middle notosansthai-normal-black-13px">xx.xx
+                    บาท
                   </div>
                 </div>
                 <div class="draft-school-detail-edit-frame-3">
-                  <div class="draft-school-detail-edit-transport-fee valign-text-middle notosansthai-normal-op6-black-13px">
+                  <div
+                    class="draft-school-detail-edit-transport-fee valign-text-middle notosansthai-normal-op6-black-13px">
                     ภาษีมูลค่าเพิ่ม /Total Vat
                   </div>
-                  <div class="draft-school-detail-edit-xxxx-2 valign-text-middle notosansthai-normal-black-13px">xx.xx บาท
+                  <div class="draft-school-detail-edit-xxxx-2 valign-text-middle notosansthai-normal-black-13px">xx.xx
+                    บาท
                   </div>
                 </div>
                 <img class="draft-school-detail-edit-line" src="img/line-7-8.svg" alt="Line 6" />
                 <div class="draft-school-detail-edit-frame-3">
                   <div class="draft-school-detail-edit-grand-total valign-text-middle notosansthai-normal-black-15px">
                     ยอดสุทธิ /Grand Total</div>
-                  <div class="draft-school-detail-edit-xxxx-1 valign-text-middle notosansthai-normal-black-15px">xx.xx บาท</div>
+                  <div class="draft-school-detail-edit-xxxx-1 valign-text-middle notosansthai-normal-black-15px">xx.xx
+                    บาท</div>
                 </div>
               </div>
             </div>
@@ -900,6 +964,22 @@
     function goBack() {
       history.back();
     }
+
+    let isSubMenuHeader = false;
+
+    function showMenuNav() {
+      isSubMenuHeader = !isSubMenuHeader;
+      const subMenuHeader = document.getElementById("subMenuHeader");
+      const subMenuHeaderMobile = document.getElementById("subMenuHeaderMobile");
+      if (isSubMenuHeader) {
+        subMenuHeader.style.display = "flex";
+        subMenuHeaderMobile.style.display = "flex";
+      } else {
+        subMenuHeader.style.display = "none";
+        subMenuHeaderMobile.style.display = "none";
+      }
+    }
+
   </script>
 </body>
 
