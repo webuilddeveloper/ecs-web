@@ -35497,6 +35497,40 @@ body.no-scroll {
     position: relative;
   }
 
+  .container-menu-ham {
+    width: -webkit-fill-available;
+    margin-top: 15px;
+}
+
+.menu-ham {
+    background-color: #FCA0A6;
+    border-radius: 10px;
+    display: flex;
+    column-gap: 10px;
+    width: fit-content;
+    padding: 10px 20px;
+    align-items: center;
+}
+
+.icon-menu-ham {
+    width: 22px;
+    height: 22px;
+}
+
+.content-menu-ham {
+    display: none;
+    position: absolute;
+}
+
+.item-menu-ham {
+    display: flex;
+    background-color: white;
+    padding: 20px;
+    border-radius: 14px 14px 14px 14px;
+    box-shadow: 5px 5px 6px 0 rgba(0, 0, 0, 0.2), 0 0px 6px 0 rgba(0, 0, 0, 0.19);
+    z-index: 9999;
+}
+
 }
 
 .purchase-order-popup-container {
