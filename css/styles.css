@@ -29875,6 +29875,52 @@ body.no-scroll {
     position: relative;
     width: 621px;
   }
+
+  .payment-proof-text_label-2-2 {
+    color: #FCA0A6;
+    font-family: var(--font-family-noto_sans_thai);
+    font-size: var(--font-size-32);
+    font-weight: 600;
+    line-height: 60.0px;
+    margin-top: -1.00px;
+    text-align: center;
+    width: 468px;
+  }
+
+  .payment-proof-text_label-3-2 {
+    color: var(--bkack);
+    font-family: var(--font-family-noto_sans_thai);
+    font-size: var(--font-size-20);
+    font-weight: 400;
+    line-height: normal;
+    text-align: center;
+  }
+
+  .payment-proof-button-3-2 {
+    border: 1px solid;
+    background-color: var(--main);
+    border-radius: 10px;
+    cursor: pointer;
+    display: flex;
+    gap: 8px;
+    padding: 8px 24px;
+    position: relative;
+    width: 100%;
+  }
+
+  .payment-proof-button-2-2 {
+    /* background-color: var(--white); */
+    border: 1px solid;
+    border-color: var(--main);
+    border-radius: 10px;
+    cursor: pointer;
+    display: flex;
+    gap: 8px;
+    padding: 8px 24px;
+    position: relative;
+    width: 100%;
+    line-height: normal;
+  }
 }
 
 /* สำหรับ Tablet */
@@ -32637,6 +32683,52 @@ body.no-scroll {
     padding: 0px 0px 8px;
     position: relative;
     width: 621px;
+  }
+
+  .payment-proof-text_label-2-2 {
+    color: #FCA0A6;
+    font-family: var(--font-family-noto_sans_thai);
+    font-size: var(--font-size-32);
+    font-weight: 600;
+    line-height: 60.0px;
+    margin-top: -1.00px;
+    text-align: center;
+    width: 468px;
+  }
+
+  .payment-proof-text_label-3-2 {
+    color: var(--bkack);
+    font-family: var(--font-family-noto_sans_thai);
+    font-size: var(--font-size-20);
+    font-weight: 400;
+    line-height: normal;
+    text-align: center;
+  }
+
+  .payment-proof-button-3-2 {
+    border: 1px solid;
+    background-color: var(--main);
+    border-radius: 10px;
+    cursor: pointer;
+    display: flex;
+    gap: 8px;
+    padding: 8px 24px;
+    position: relative;
+    width: 100%;
+  }
+
+  .payment-proof-button-2-2 {
+    /* background-color: var(--white); */
+    border: 1px solid;
+    border-color: var(--main);
+    border-radius: 10px;
+    cursor: pointer;
+    display: flex;
+    gap: 8px;
+    padding: 8px 24px;
+    position: relative;
+    width: 100%;
+    line-height: normal;
   }
 }
 
@@ -35850,6 +35942,35 @@ body.no-scroll {
     position: relative;
     width: 100%;
   }
+
+  .payment-proof-text_label-2-2 {
+    color: #FCA0A6;
+    font-family: var(--font-family-noto_sans_thai);
+    font-size: var(--font-size-24);
+    font-weight: 600;
+    line-height: 60.0px;
+    margin-top: -1.00px;
+    text-align: center;
+    width: 468px;
+  }
+
+  .payment-proof-text_label-3-2 {
+    color: var(--bkack);
+    font-family: var(--font-family-noto_sans_thai);
+    font-size: var(--font-size-15);
+    font-weight: 400;
+    line-height: normal;
+    text-align: center;
+  }
+
+  .payment-proof-frame-1041 {
+    cursor: pointer;
+    height: 31px;
+    left: 305px;
+    position: absolute;
+    top: 10px;
+    width: 31px;
+  }
 }
 
 /* media */
@@ -36177,3 +36298,4 @@ body.no-scroll {
 .col-12 {
   width: calc(12 / 12 * 100%);
 }
+
