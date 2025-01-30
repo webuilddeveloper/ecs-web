@@ -613,8 +613,7 @@
                     <div class="print-document-information-frame-38350">
                       <div class="print-document-information-frame-38">
                         <img class="print-document-information-icon" src="img/icon-person2-1.svg" alt="icon person2" />
-                        <div
-                          class="print-document-information-text-1 valign-text-middle notosansthai-semi-bold-black-22px">
+                        <div class="print-document-information-text-1 valign-text-middle notosansthai-semi-bold-black-22px">
                           บัญชีของฉัน</div>
                       </div>
                       <div onclick="showMenuCollap()">
@@ -623,7 +622,7 @@
                         </div>
                       </div>
                     </div>
-                    <div id="collapMenu" class="approve-school-frame-3835 notosansthai-normal-black-20px"
+                    <div id="collapMenuMobile" class="approve-school-frame-3835 notosansthai-normal-black-20px"
                       style="display: none;">
                       <a href="./profile-school.html">
                         <div
@@ -647,8 +646,7 @@
                     <div class="print-document-information-frame-38350">
                       <div class="print-document-information-frame-38">
                         <img class="print-document-information-icon" src="img/icon-report-11.svg" alt="icon person2" />
-                        <div
-                          class="print-document-information-text-1 valign-text-middle notosansthai-semi-bold-black-22px">
+                        <div class="print-document-information-text-1 valign-text-middle notosansthai-semi-bold-black-22px">
                           รายการคำสั่งซื้อ</div>
                       </div>
                       <a onclick="showMenuCollapOrder()">
@@ -657,7 +655,7 @@
                         </div>
                       </a>
                     </div>
-                    <div id="collapMenuOrder" class="approve-school-frame-3835 notosansthai-normal-black-20px"
+                    <div id="collapMenuOrderMobile" class="approve-school-frame-3835 notosansthai-normal-black-20px"
                       style="display: none;">
                       <a href="./delivered-order.html">
                         <div
@@ -671,7 +669,7 @@
                     </div>
                   </div>
                 </div>
-
+                
                 <img class="print-document-information-vector" src="img/vector-19-2.svg" alt="Vector 20" />
                 <div class="print-document-information-frame-3852">
                   <div class="print-document-information-frame-38528">
@@ -685,11 +683,10 @@
                       </div>
                     </a>
                   </div>
-                  <div id="collapMenu2" style="display: none;" class="paid-school-frame-3835">
+                  <div id="collapMenu2Mobile" style="display: none;" class="paid-school-frame-3835">
                     <div class="paid-school-frame-38351 notosansthai-normal-black-20px">
                       <a href="./print_document_information.html">
-                        <div
-                          class="print-document-information-text-10 paid-school-valign-text-middle paid-school-text-5">
+                        <div class="print-document-information-text-10 paid-school-valign-text-middle paid-school-text-5">
                           พิมพ์ใบปพ.ออนไลน์
                         </div>
                       </a>
@@ -908,33 +905,41 @@
     function showMenuCollap() {
       isCollape = !isCollape;
       const content = document.getElementById("collapMenu");
+      const contentMobile = document.getElementById("collapMenuMobile");
       if (isCollape) {
         content.style.display = "block";
+        contentMobile.style.display = "block";
       } else {
         content.style.display = "none";
+        contentMobile.style.display = "none";
       }
-
+      
     }
 
     function showMenuCollap2() {
       isCollape2 = !isCollape2;
       const content2 = document.getElementById("collapMenu2");
-
+      const content2Mobile = document.getElementById("collapMenu2Mobile");
       if (isCollape2) {
         content2.style.display = "block";
+        content2Mobile.style.display = "block";
       } else {
         content2.style.display = "none";
+        content2Mobile.style.display = "none";
       }
     }
 
     function showMenuCollapOrder() {
       isCollape2 = !isCollape2;
       const content2 = document.getElementById("collapMenuOrder");
+      const content2Mobile = document.getElementById("collapMenuOrderMobile");
 
       if (isCollape2) {
         content2.style.display = "block";
+        content2Mobile.style.display = "block";
       } else {
         content2.style.display = "none";
+        content2Mobile.style.display = "none";
       }
     }
   </script>

@@ -628,7 +628,7 @@
                         </div>
                       </div>
                     </div>
-                    <div id="collapMenu" class="approve-school-frame-3835 notosansthai-normal-black-20px"
+                    <div id="collapMenuMobile" class="approve-school-frame-3835 notosansthai-normal-black-20px"
                       style="display: none;">
                       <a href="./profile-school.html">
                         <div
@@ -661,7 +661,7 @@
                         </div>
                       </a>
                     </div>
-                    <div id="collapMenuOrder" class="approve-school-frame-3835 notosansthai-normal-black-20px"
+                    <div id="collapMenuOrderMobile" class="approve-school-frame-3835 notosansthai-normal-black-20px"
                       style="display: none;">
                       <a href="./delivered-order.html">
                         <div
@@ -689,7 +689,7 @@
                       </div>
                     </a>
                   </div>
-                  <div id="collapMenu2" style="display: none;" class="paid-school-frame-3835">
+                  <div id="collapMenu2Mobile" style="display: none;" class="paid-school-frame-3835">
                     <div class="paid-school-frame-38351 notosansthai-normal-black-20px">
                       <a href="./print_document_information.html">
                         <div class="print-document-information-text-10 paid-school-valign-text-middle paid-school-text-5">
@@ -919,10 +919,13 @@
     function showMenuCollap() {
       isCollape = !isCollape;
       const content = document.getElementById("collapMenu");
+      const contentMobile = document.getElementById("collapMenuMobile");
       if (isCollape) {
         content.style.display = "block";
+        contentMobile.style.display = "block";
       } else {
         content.style.display = "none";
+        contentMobile.style.display = "none";
       }
       
     }
@@ -930,22 +933,27 @@
     function showMenuCollap2() {
       isCollape2 = !isCollape2;
       const content2 = document.getElementById("collapMenu2");
-
+      const content2Mobile = document.getElementById("collapMenu2Mobile");
       if (isCollape2) {
         content2.style.display = "block";
+        content2Mobile.style.display = "block";
       } else {
         content2.style.display = "none";
+        content2Mobile.style.display = "none";
       }
     }
 
     function showMenuCollapOrder() {
       isCollape2 = !isCollape2;
       const content2 = document.getElementById("collapMenuOrder");
+      const content2Mobile = document.getElementById("collapMenuOrderMobile");
 
       if (isCollape2) {
         content2.style.display = "block";
+        content2Mobile.style.display = "block";
       } else {
         content2.style.display = "none";
+        content2Mobile.style.display = "none";
       }
     }
   </script>
