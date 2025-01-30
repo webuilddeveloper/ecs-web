@@ -16768,7 +16768,7 @@ input:focus {
 .popup .notosansthai-semi-bold-midnight-blue-20px {
   color: var(--main);
   font-family: var(--font-family-noto_sans_thai);
-  font-size: var(--font-size-xl);
+  font-size: var(--font-size-20);
   font-style: normal;
   font-weight: 600;
 }
@@ -21072,7 +21072,7 @@ a:active {
 .notosansthai-semi-bold-midnight-blue-20px {
   color: var(--main);
   font-family: var(--font-family-noto_sans_thai);
-  font-size: var(--font-size-m);
+  font-size: var(--font-size-20);
   font-style: normal;
   font-weight: 600;
 }
@@ -27628,6 +27628,7 @@ a:active {
   flex: 0 0 auto;
   gap: 40px;
   position: relative;
+  justify-content: center;
 }
 
 .popup-confirm-button-4 {

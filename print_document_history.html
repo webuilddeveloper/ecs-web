@@ -10,538 +10,1402 @@
   <meta name="og:type" content="website" />
   <meta name="twitter:card" content="photo" />
   <link rel="stylesheet" type="text/css" href="css/styles.css" />
+  <link rel="stylesheet" type="text/css" href="css/styles-aom.css" />
 
 </head>
 
 <body style="margin: 0; background: #ffffff">
-  <div class="header-ecs">
-    <a href="./login.html">
-      <img class="logo-ecs" src="img/logo------1.png" alt="logo ecs" />
-    </a>
-    <div class="navbar-ecs">
-      <div class="navbar-link-text-ecs">
-        <a href="./purchase-order-school.html">
-          ออกใบขอสั่งซื้อ
-        </a>
-      </div>
-      <div class="navbar-link-text-ecs">
-        <a href="./approve-school.html">
-          เอกสารใบขอสั่งซื้อ
-        </a>
-      </div>
-      <div class="navbar-link-text-ecs">
-        <a href="./order.html">
-          รายการคำสั่งซื้อ
-        </a>
-      </div>
-      <div class="navbar-link-text-ecs">
-        <a href="./order-cancle.htmll">
-          ยกเลิกเลข ปพ.
-        </a>
-      </div>
-      <div class="navbar-link-text-ecs">
-        <a href="./delivered-order.html">
-          ประวัติการสั่งซื้อ
-        </a>
-      </div>
-    </div>
-    <div class="header-action-ecs">
-      <img class="group" src="img/group@2x.png" alt="Group" />
-      <a href="./profile-school.html">
-        <img class="vector" src="img/vector-2.svg" alt="Vector" />
+
+  <div class="desktop">
+    <div class="header-ecs">
+      <a href="./login.html">
+        <img class="logo-ecs" src="img/logo------1.png" alt="logo ecs" />
       </a>
-    </div>
-  </div>
-  <div class="container-center-horizontal">
-    <div class="print-document-history">
-
-      <div class="print-document-history-frame-38357">
-        <div class="print-document-history-frame-38520">
-          <div class="print-document-history-frame-38354">
-            <div class="print-document-history-frame-38">
-              <div class="print-document-history-frame-38350">
-                <div class="print-document-history-frame-38-1">
-                  <img class="print-document-history-icon" src="img/icon-person2-26.svg" alt="icon person2" />
-                  <div class="print-document-history-text valign-text-middle notosansthai-semi-bold-black-22px">
-                    บัญชีของฉัน</div>
-                </div>
-                <a onclick="showMenuCollap()">
-                  <div class="approve-school-frame-38348">
-                    <img class="approve-school-arrow-down-01" src="img/arrow-down-01-2.svg" alt="arrow-down-01" />
-                  </div>
-                </a>
-              </div>
-              <div id="collapMenu" class="approve-school-frame-3835 notosansthai-normal-black-20px"
-                style="display: none;">
-                <a href="./profile-school.html">
-                  <div
-                    class="approve-school-text-1 approve-school-valign-text-middle approve-school-text-3 a-link-left">
-                    ข้อมูลส่วนบุคคล</div>
-                </a>
-                <div class="approve-school-text-2 approve-school-valign-text-middle approve-school-text-3">
-                  ที่อยู่จัดส่งสินค้า</div>
-              </div>
-            </div>
-          </div>
-          <img class="print-document-history-vector" src="img/vector-19-2.svg" alt="Vector 19" />
-          <div class="print-document-history-frame-38-1">
-            <img class="print-document-history-icon" src="img/icon-report-58.svg" alt="icon Report" />
-            <div class="print-document-history-text valign-text-middle notosansthai-semi-bold-black-22px">
-              เอกสารใบขอสั่งซื้อ</div>
-          </div>
-          <img class="print-document-history-vector" src="img/vector-19-2.svg" alt="Vector 22" />
-          <div class="print-document-information-frame-38354">
-            <div class="print-document-information-frame-38352">
-              <div class="print-document-information-frame-38350">
-                <div class="print-document-information-frame-38">
-                  <img class="print-document-information-icon" src="img/icon-report-11.svg" alt="icon person2" />
-                  <div class="print-document-information-text-1 valign-text-middle notosansthai-semi-bold-black-22px">
-                    รายการคำสั่งซื้อ</div>
-                </div>
-                <a onclick="showMenuCollapOrder()">
-                  <div class="approve-school-frame-38348">
-                    <img class="approve-school-arrow-down-01" src="img/arrow-down-01-2.svg" alt="arrow-down-01" />
-                  </div>
-                </a>
-              </div>
-              <div id="collapMenuOrder" class="approve-school-frame-3835 notosansthai-normal-black-20px"
-                style="display: none;">
-                <a href="./delivered-order.html">
-                  <div
-                    class="approve-school-text-1 approve-school-valign-text-middle approve-school-text-3 a-link-left">
-                    เอกสารมีเลขคุม</div>
-                </a>
-                <div class="approve-school-text-2 approve-school-valign-text-middle approve-school-text-3">
-                  เอกสารไม่มีเลขคุม</div>
-                <div class="approve-school-text-2 approve-school-valign-text-middle approve-school-text-3">
-                  เลขใบปพ. ออนไลน์(ปพ.1)</div>
-              </div>
-            </div>
-          </div>
-          <img class="print-document-history-vector" src="img/vector-19-2.svg" alt="Vector 20" />
-          <div class="print-document-history-frame-3852">
-            <div class="print-document-history-frame-38528">
-              <div class="print-document-history-frame-38-1">
-                <img class="print-document-history-icon" src="img/icon-print-7.svg" alt="icon print" />
-                <div class="print-document-history-text-9 valign-text-middle print-document-history-text-3">ปพ.ออนไลน์
-                </div>
-              </div>
-              <a onclick="showMenuCollap2()">
-                <div class="paid-school-frame-38348">
-                  <img class="paid-school-arrow-down-01" src="img/arrow-down-01-3.svg" alt="arrow-down-01" />
-                </div>
-              </a>
-            </div>
-            <div id="collapMenu2" style="display: none;" class="paid-school-frame-3835">
-              <div class="paid-school-frame-38351 notosansthai-normal-black-20px">
-                <a href="./print_document_information.html">
-                  <div class="print-document-information-text-10-2 paid-school-valign-text-middle paid-school-text-5 a-link-left">
-                    พิมพ์ใบปพ.ออนไลน์
-                  </div>
-                </a>
-                <a href="./print_document_history.html">
-                  <div class="print-document-history-text-11 valign-text-middle print-document-history-text-3">
-                    ประวัติการพิมพ์</div>
-                </a>
-              </div>
-            </div>
-          </div>
-
-
-          <img class="print-document-history-vector" src="img/vector-19-2.svg" alt="Vector 23" />
-          <div class="print-document-history-frame-38-1">
-            <img class="print-document-history-icon" src="img/icon-logout-2.svg" alt="icon logout" />
-            <div class="print-document-history-text valign-text-middle notosansthai-semi-bold-black-22px">ออกจากระบบ
-            </div>
-          </div>
+      <div class="navbar-ecs">
+        <div class="navbar-link-text-ecs">
+          <a href="./purchase-order-school.html">
+            ออกใบขอสั่งซื้อ
+          </a>
         </div>
-        <div class="print-document-history-frame-38519">
-          <div class="print-document-history-frame-38455">
-            <div class="print-document-history-input-search input">
-              <div class="print-document-history-input-element input">
-                <img class="print-document-history-icon-3" src="img/icon-addon-3.svg" alt="icon-addon" />
-                <a href="javascript:SubmitForm('form10')"><input
-                    class="print-document-history-text_input notosansthai-normal-slate-gray-15px" name="พมพคาคนหา"
-                    placeholder="พิมพ์คำค้นหา" type="text" /></a>
-              </div>
-            </div>
-            <div class="print-document-history-frame-2">
-              <select id="agency" class="print-document-history-custom-dropdown notosansthai-normal-slate-gray-15px">
-                <option value="" disabled selected>ทุกประเภทแบบพิมพ์</option>
-                <option value="ปพ.1-ป">ปพ.1 : ป</option>
-                <option value="ปพ.1-บ">ปพ.1 : บ</option>
-                <option value="ปพ.1-พ">ปพ.1 : พ</option>
-              </select>
-              <img class="print-document-history-dropdown-icon" src="img/dropdown-6.svg" alt="dropdown" />
-            </div>
-          </div>
-          <div class="print-document-history-table">
-            <div class="print-document-history-frame-38">
-              <div class="print-document-history-frame-3346">
-                <article class="print-document-history-column-table-default-1">
-                  <div class="print-document-history-table-header">
-                    <div class="print-document-history-header-7 notosansthai-semi-bold-vulcan-15px">วันที่พิมพ์</div>
-                  </div>
-                  <div class="print-document-history-base-table-cell">
-                    <div
-                      class="print-document-history-text-cell print-document-history-text-3 notosansthai-normal-vulcan-15px">
-                      22 ต.ค. 2567</div>
-                  </div>
-                  <div class="print-document-history-base-table-cell">
-                    <div
-                      class="print-document-history-text-cell print-document-history-text-3 notosansthai-normal-vulcan-15px">
-                      22 ต.ค. 2567</div>
-                  </div>
-                  <div class="print-document-history-base-table-cell">
-                    <div
-                      class="print-document-history-text-cell print-document-history-text-3 notosansthai-normal-vulcan-15px">
-                      22 ต.ค. 2567</div>
-                  </div>
-                  <div class="print-document-history-base-table-cell">
-                    <div
-                      class="print-document-history-text-cell print-document-history-text-3 notosansthai-normal-vulcan-15px">
-                      22 ต.ค. 2567</div>
-                  </div>
-                  <div class="print-document-history-base-table-cell">
-                    <div
-                      class="print-document-history-text-cell print-document-history-text-3 notosansthai-normal-vulcan-15px">
-                      22 ต.ค. 2567</div>
-                  </div>
-                  <div class="print-document-history-base-table-cell">
-                    <div
-                      class="print-document-history-text-cell print-document-history-text-3 notosansthai-normal-vulcan-15px">
-                      22 ต.ค. 2567</div>
-                  </div>
-                  <div class="print-document-history-base-table-cell">
-                    <div
-                      class="print-document-history-text-cell print-document-history-text-3 notosansthai-normal-vulcan-15px">
-                      22 ต.ค. 2567</div>
-                  </div>
-                  <div class="print-document-history-base-table-cell">
-                    <div
-                      class="print-document-history-text-cell print-document-history-text-3 notosansthai-normal-vulcan-15px">
-                      22 ต.ค. 2567</div>
-                  </div>
-                  <div class="print-document-history-base-table-cell">
-                    <div
-                      class="print-document-history-text-cell print-document-history-text-3 notosansthai-normal-vulcan-15px">
-                      22 ต.ค. 2567</div>
-                  </div>
-                  <div class="print-document-history-base-table-cell">
-                    <div
-                      class="print-document-history-text-cell print-document-history-text-3 notosansthai-normal-vulcan-15px">
-                      22 ต.ค. 2567</div>
-                  </div>
-                </article>
-                <article class="print-document-history-column-table-default">
-                  <div class="print-document-history-table-header">
-                    <div class="print-document-history-header-7 notosansthai-semi-bold-vulcan-15px">ประเภทแบบพิมพ์</div>
-                  </div>
-                  <div class="print-document-history-base-table-cell">
-                    <div
-                      class="print-document-history-text-cell print-document-history-text-3 notosansthai-normal-vulcan-15px">
-                      ปพ.1 : ป</div>
-                  </div>
-                  <div class="print-document-history-base-table-cell">
-                    <div
-                      class="print-document-history-text-cell print-document-history-text-3 notosansthai-normal-vulcan-15px">
-                      ปพ.1 : ป</div>
-                  </div>
-                  <div class="print-document-history-base-table-cell">
-                    <div
-                      class="print-document-history-text-cell print-document-history-text-3 notosansthai-normal-vulcan-15px">
-                      ปพ.1 : ป</div>
-                  </div>
-                  <div class="print-document-history-base-table-cell">
-                    <div
-                      class="print-document-history-text-cell print-document-history-text-3 notosansthai-normal-vulcan-15px">
-                      ปพ.1 : ป</div>
-                  </div>
-                  <div class="print-document-history-base-table-cell">
-                    <div
-                      class="print-document-history-text-cell print-document-history-text-3 notosansthai-normal-vulcan-15px">
-                      ปพ.1 : บ</div>
-                  </div>
-                  <div class="print-document-history-base-table-cell">
-                    <div
-                      class="print-document-history-text-cell print-document-history-text-3 notosansthai-normal-vulcan-15px">
-                      ปพ.1 : บ</div>
-                  </div>
-                  <div class="print-document-history-base-table-cell">
-                    <div
-                      class="print-document-history-text-cell print-document-history-text-3 notosansthai-normal-vulcan-15px">
-                      ปพ.1 : บ</div>
-                  </div>
-                  <div class="print-document-history-base-table-cell">
-                    <div
-                      class="print-document-history-text-cell print-document-history-text-3 notosansthai-normal-vulcan-15px">
-                      ปพ.1 : พ</div>
-                  </div>
-                  <div class="print-document-history-base-table-cell">
-                    <div
-                      class="print-document-history-text-cell print-document-history-text-3 notosansthai-normal-vulcan-15px">
-                      ปพ.1 : พ</div>
-                  </div>
-                  <div class="print-document-history-base-table-cell">
-                    <div
-                      class="print-document-history-text-cell print-document-history-text-3 notosansthai-normal-vulcan-15px">
-                      ปพ.1 : พ</div>
-                  </div>
-                </article>
-                <article class="print-document-history-column-table-default">
-                  <div class="print-document-history-table-header">
-                    <div class="print-document-history-header-7 notosansthai-semi-bold-vulcan-15px">จำนวนตัวเลข</div>
-                  </div>
-                  <div class="print-document-history-base-table-cell">
-                    <div class="print-document-history-text-cell-1 notosansthai-normal-black-16px">100,000</div>
-                  </div>
-                  <div class="print-document-history-base-table-cell">
-                    <div class="print-document-history-text-cell-1 notosansthai-normal-black-16px">100,000</div>
-                  </div>
-                  <div class="print-document-history-base-table-cell">
-                    <div class="print-document-history-text-cell-1 notosansthai-normal-black-16px">100,000</div>
-                  </div>
-                  <div class="print-document-history-base-table-cell">
-                    <div class="print-document-history-text-cell-1 notosansthai-normal-black-16px">100,000</div>
-                  </div>
-                  <div class="print-document-history-base-table-cell">
-                    <div class="print-document-history-text-cell-1 notosansthai-normal-black-16px">100,000</div>
-                  </div>
-                  <div class="print-document-history-base-table-cell">
-                    <div class="print-document-history-text-cell-1 notosansthai-normal-black-16px">100,000</div>
-                  </div>
-                  <div class="print-document-history-base-table-cell">
-                    <div class="print-document-history-text-cell-1 notosansthai-normal-black-16px">100,000</div>
-                  </div>
-                  <div class="print-document-history-base-table-cell">
-                    <div class="print-document-history-text-cell-1 notosansthai-normal-black-16px">100,000</div>
-                  </div>
-                  <div class="print-document-history-base-table-cell">
-                    <div class="print-document-history-text-cell-1 notosansthai-normal-black-16px">100,000</div>
-                  </div>
-                  <div class="print-document-history-base-table-cell">
-                    <div class="print-document-history-text-cell-1 notosansthai-normal-black-16px">100,000</div>
-                  </div>
-                </article>
-                <article class="print-document-history-column-table-default">
-                  <div class="print-document-history-table-header">
-                    <div class="print-document-history-header-7 notosansthai-semi-bold-vulcan-15px">ชุดที่</div>
-                  </div>
-                  <div class="print-document-history-base-table-cell">
-                    <div class="print-document-history-text-cell-1 notosansthai-normal-black-16px">99001</div>
-                  </div>
-                  <div class="print-document-history-base-table-cell">
-                    <div class="print-document-history-text-cell-1 notosansthai-normal-black-16px">99001</div>
-                  </div>
-                  <div class="print-document-history-base-table-cell">
-                    <div class="print-document-history-text-cell-1 notosansthai-normal-black-16px">99001</div>
-                  </div>
-                  <div class="print-document-history-base-table-cell">
-                    <div class="print-document-history-text-cell-1 notosansthai-normal-black-16px">99001</div>
-                  </div>
-                  <div class="print-document-history-base-table-cell">
-                    <div class="print-document-history-text-cell-1 notosansthai-normal-black-16px">98001</div>
-                  </div>
-                  <div class="print-document-history-base-table-cell">
-                    <div class="print-document-history-text-cell-1 notosansthai-normal-black-16px">98001</div>
-                  </div>
-                  <div class="print-document-history-base-table-cell">
-                    <div class="print-document-history-text-cell-1 notosansthai-normal-black-16px">98001</div>
-                  </div>
-                  <div class="print-document-history-base-table-cell">
-                    <div class="print-document-history-text-cell-1 notosansthai-normal-black-16px">97001</div>
-                  </div>
-                  <div class="print-document-history-base-table-cell">
-                    <div class="print-document-history-text-cell-1 notosansthai-normal-black-16px">97001</div>
-                  </div>
-                  <div class="print-document-history-base-table-cell">
-                    <div class="print-document-history-text-cell-1 notosansthai-normal-black-16px">97001</div>
-                  </div>
-                </article>
-                <article class="print-document-history-column-table-default">
-                  <div class="print-document-history-table-header">
-                    <div class="print-document-history-header-7 notosansthai-semi-bold-vulcan-15px">เลขที่แรก</div>
-                  </div>
-                  <div class="print-document-history-base-table-cell">
-                    <div
-                      class="print-document-history-text-cell print-document-history-text-3 notosansthai-normal-vulcan-15px">
-                      011751</div>
-                  </div>
-                  <div class="print-document-history-base-table-cell">
-                    <div
-                      class="print-document-history-text-cell print-document-history-text-3 notosansthai-normal-vulcan-15px">
-                      111751</div>
-                  </div>
-                  <div class="print-document-history-base-table-cell">
-                    <div
-                      class="print-document-history-text-cell print-document-history-text-3 notosansthai-normal-vulcan-15px">
-                      211751</div>
-                  </div>
-                  <div class="print-document-history-base-table-cell">
-                    <div
-                      class="print-document-history-text-cell print-document-history-text-3 notosansthai-normal-vulcan-15px">
-                      311751</div>
-                  </div>
-                  <div class="print-document-history-base-table-cell">
-                    <div
-                      class="print-document-history-text-cell print-document-history-text-3 notosansthai-normal-vulcan-15px">
-                      011201</div>
-                  </div>
-                  <div class="print-document-history-base-table-cell">
-                    <div
-                      class="print-document-history-text-cell print-document-history-text-3 notosansthai-normal-vulcan-15px">
-                      111201</div>
-                  </div>
-                  <div class="print-document-history-base-table-cell">
-                    <div
-                      class="print-document-history-text-cell print-document-history-text-3 notosansthai-normal-vulcan-15px">
-                      211201</div>
-                  </div>
-                  <div class="print-document-history-base-table-cell">
-                    <div
-                      class="print-document-history-text-cell print-document-history-text-3 notosansthai-normal-vulcan-15px">
-                      015001</div>
-                  </div>
-                  <div class="print-document-history-base-table-cell">
-                    <div
-                      class="print-document-history-text-cell print-document-history-text-3 notosansthai-normal-vulcan-15px">
-                      115001</div>
-                  </div>
-                  <div class="print-document-history-base-table-cell">
-                    <div
-                      class="print-document-history-text-cell print-document-history-text-3 notosansthai-normal-vulcan-15px">
-                      215001</div>
-                  </div>
-                </article>
-                <article class="print-document-history-column-table-default">
-                  <div class="print-document-history-table-header">
-                    <div class="print-document-history-header-7 notosansthai-semi-bold-vulcan-15px">เลขที่สุดท้าย</div>
-                  </div>
-                  <div class="print-document-history-base-table-cell">
-                    <div
-                      class="print-document-history-text-cell print-document-history-text-3 notosansthai-normal-vulcan-15px">
-                      111750</div>
-                  </div>
-                  <div class="print-document-history-base-table-cell">
-                    <div
-                      class="print-document-history-text-cell print-document-history-text-3 notosansthai-normal-vulcan-15px">
-                      211750</div>
-                  </div>
-                  <div class="print-document-history-base-table-cell">
-                    <div
-                      class="print-document-history-text-cell print-document-history-text-3 notosansthai-normal-vulcan-15px">
-                      311750</div>
-                  </div>
-                  <div class="print-document-history-base-table-cell">
-                    <div
-                      class="print-document-history-text-cell print-document-history-text-3 notosansthai-normal-vulcan-15px">
-                      411750</div>
-                  </div>
-                  <div class="print-document-history-base-table-cell">
-                    <div
-                      class="print-document-history-text-cell print-document-history-text-3 notosansthai-normal-vulcan-15px">
-                      111200</div>
-                  </div>
-                  <div class="print-document-history-base-table-cell">
-                    <div
-                      class="print-document-history-text-cell print-document-history-text-3 notosansthai-normal-vulcan-15px">
-                      211200</div>
-                  </div>
-                  <div class="print-document-history-base-table-cell">
-                    <div
-                      class="print-document-history-text-cell print-document-history-text-3 notosansthai-normal-vulcan-15px">
-                      311200</div>
-                  </div>
-                  <div class="print-document-history-base-table-cell">
-                    <div
-                      class="print-document-history-text-cell print-document-history-text-3 notosansthai-normal-vulcan-15px">
-                      115000</div>
-                  </div>
-                  <div class="print-document-history-base-table-cell">
-                    <div
-                      class="print-document-history-text-cell print-document-history-text-3 notosansthai-normal-vulcan-15px">
-                      215000</div>
-                  </div>
-                  <div class="print-document-history-base-table-cell">
-                    <div
-                      class="print-document-history-text-cell print-document-history-text-3 notosansthai-normal-vulcan-15px">
-                      315000</div>
-                  </div>
-                </article>
-              </div>
-              <div class="print-document-history-input-select-button-footer-default">
-                <div class="print-document-history-frame-38263">
-                  <div class="print-document-history-input-select-1">
-                    <div class="print-document-history-select-field">
-                      <div class="print-document-history-select-1 notosansthai-normal-slate-gray-15px">แสดง 10</div>
-                      <img class="print-document-history-icon-3" src="img/dropdown-icon-44.svg" alt="dropdown-icon" />
+        <div class="navbar-link-text-ecs">
+          <a href="./approve-school.html">
+            เอกสารใบขอสั่งซื้อ
+          </a>
+        </div>
+        <div class="navbar-link-text-ecs">
+          <a href="./order.html">
+            รายการคำสั่งซื้อ
+          </a>
+        </div>
+        <div class="navbar-link-text-ecs">
+          <a href="./order-cancle.htmll">
+            ยกเลิกเลข ปพ.
+          </a>
+        </div>
+        <div class="navbar-link-text-ecs">
+          <a href="./delivered-order.html">
+            ประวัติการสั่งซื้อ
+          </a>
+        </div>
+      </div>
+      <div class="header-action-ecs">
+        <img class="group" src="img/group@2x.png" alt="Group" />
+        <a href="./profile-school.html">
+          <img class="vector" src="img/vector-2.svg" alt="Vector" />
+        </a>
+      </div>
+    </div>
+    <div class="container-center-horizontal">
+      <div class="print-document-history">
+
+        <div class="print-document-history-frame-38357">
+          <div class="print-document-history-frame-38520">
+            <div class="print-document-history-frame-38354">
+              <div class="print-document-history-frame-38">
+                <div class="print-document-history-frame-38350">
+                  <div class="print-document-history-frame-38-1">
+                    <img class="print-document-history-icon" src="img/icon-person2-26.svg" alt="icon person2" />
+                    <div class="print-document-history-text valign-text-middle notosansthai-semi-bold-black-22px">
+                      บัญชีของฉัน</div>
+                  </div>
+                  <a onclick="showMenuCollap()">
+                    <div class="approve-school-frame-38348">
+                      <img class="approve-school-arrow-down-01" src="img/arrow-down-01-2.svg" alt="arrow-down-01" />
                     </div>
-                  </div>
-                  <p class="print-document-history-text-13 print-document-history-text-3">แสดง 1-10 รายการ จาก 100
-                    รายการ</p>
+                  </a>
                 </div>
-                <div class="print-document-history-pagination">
-                  <a href="javascript:SubmitForm('form10')">
-                    <div class="print-document-history-button"><img class="print-document-history-icon-2 icon-3"
-                        src="img/icon-178.svg" alt="icon" /></div>
-                  </a><a href="javascript:SubmitForm('form10')">
-                    <div class="print-document-history-button-2 print-document-history-button-3">
-                      <div class="print-document-history-text-sm-1 print-document-history-text-sm-3">1</div>
+                <div id="collapMenu" class="approve-school-frame-3835 notosansthai-normal-black-20px"
+                  style="display: none;">
+                  <a href="./profile-school.html">
+                    <div
+                      class="approve-school-text-1 approve-school-valign-text-middle approve-school-text-3 a-link-left">
+                      ข้อมูลส่วนบุคคล</div>
+                  </a>
+                  <div class="approve-school-text-2 approve-school-valign-text-middle approve-school-text-3">
+                    ที่อยู่จัดส่งสินค้า</div>
+                </div>
+              </div>
+            </div>
+            <img class="print-document-history-vector" src="img/vector-19-2.svg" alt="Vector 19" />
+            <div class="print-document-history-frame-38-1">
+              <img class="print-document-history-icon" src="img/icon-report-58.svg" alt="icon Report" />
+              <div class="print-document-history-text valign-text-middle notosansthai-semi-bold-black-22px">
+                เอกสารใบขอสั่งซื้อ</div>
+            </div>
+            <img class="print-document-history-vector" src="img/vector-19-2.svg" alt="Vector 22" />
+            <div class="print-document-information-frame-38354">
+              <div class="print-document-information-frame-38352">
+                <div class="print-document-information-frame-38350">
+                  <div class="print-document-information-frame-38">
+                    <img class="print-document-information-icon" src="img/icon-report-11.svg" alt="icon person2" />
+                    <div class="print-document-information-text-1 valign-text-middle notosansthai-semi-bold-black-22px">
+                      รายการคำสั่งซื้อ</div>
+                  </div>
+                  <a onclick="showMenuCollapOrder()">
+                    <div class="approve-school-frame-38348">
+                      <img class="approve-school-arrow-down-01" src="img/arrow-down-01-2.svg" alt="arrow-down-01" />
                     </div>
-                  </a><a href="javascript:SubmitForm('form10')">
-                    <div class="print-document-history-button-1 print-document-history-button-3">
-                      <div
-                        class="print-document-history-text-sm print-document-history-text-3 notosansthai-medium-blue-15px">
-                        2</div>
+                  </a>
+                </div>
+                <div id="collapMenuOrder" class="approve-school-frame-3835 notosansthai-normal-black-20px"
+                  style="display: none;">
+                  <a href="./delivered-order.html">
+                    <div
+                      class="approve-school-text-1 approve-school-valign-text-middle approve-school-text-3 a-link-left">
+                      เอกสารมีเลขคุม</div>
+                  </a>
+                  <div class="approve-school-text-2 approve-school-valign-text-middle approve-school-text-3">
+                    เอกสารไม่มีเลขคุม</div>
+                  <div class="approve-school-text-2 approve-school-valign-text-middle approve-school-text-3">
+                    เลขใบปพ. ออนไลน์(ปพ.1)</div>
+                </div>
+              </div>
+            </div>
+            <img class="print-document-history-vector" src="img/vector-19-2.svg" alt="Vector 20" />
+            <div class="print-document-history-frame-3852">
+              <div class="print-document-history-frame-38528">
+                <div class="print-document-history-frame-38-1">
+                  <img class="print-document-history-icon" src="img/icon-print-7.svg" alt="icon print" />
+                  <div class="print-document-history-text-9 valign-text-middle print-document-history-text-3">ปพ.ออนไลน์
+                  </div>
+                </div>
+                <a onclick="showMenuCollap2()">
+                  <div class="paid-school-frame-38348">
+                    <img class="paid-school-arrow-down-01" src="img/arrow-down-01-3.svg" alt="arrow-down-01" />
+                  </div>
+                </a>
+              </div>
+              <div id="collapMenu2" style="display: none;" class="paid-school-frame-3835">
+                <div class="paid-school-frame-38351 notosansthai-normal-black-20px">
+                  <a href="./print_document_information.html">
+                    <div
+                      class="print-document-information-text-10-2 paid-school-valign-text-middle paid-school-text-5 a-link-left">
+                      พิมพ์ใบปพ.ออนไลน์
                     </div>
-                  </a><a href="javascript:SubmitForm('form10')">
-                    <div class="print-document-history-button-1 print-document-history-button-3">
-                      <div
-                        class="print-document-history-text-sm print-document-history-text-3 notosansthai-medium-blue-15px">
-                        3</div>
-                    </div>
-                  </a><a href="javascript:SubmitForm('form10')">
-                    <div class="print-document-history-button-1 print-document-history-button-3">
-                      <div
-                        class="print-document-history-text-sm print-document-history-text-3 notosansthai-medium-blue-15px">
-                        4</div>
-                    </div>
-                  </a><a href="javascript:SubmitForm('form10')">
-                    <div class="print-document-history-button-1 print-document-history-button-3">
-                      <div
-                        class="print-document-history-text-sm print-document-history-text-3 notosansthai-medium-blue-15px">
-                        5</div>
-                    </div>
-                  </a><a href="javascript:SubmitForm('form10')">
-                    <div class="print-document-history-button-1 print-document-history-button-3">
-                      <div
-                        class="print-document-history-text-sm print-document-history-text-3 notosansthai-medium-blue-15px">
-                        ...</div>
-                    </div>
-                  </a><a href="javascript:SubmitForm('form10')">
-                    <div class="print-document-history-button-1 print-document-history-button-3">
-                      <div
-                        class="print-document-history-text-sm-2 print-document-history-text-sm-3 notosansthai-medium-blue-15px">
-                        10</div>
-                    </div>
-                  </a><a href="javascript:SubmitForm('form10')">
-                    <div class="print-document-history-button"><img class="print-document-history-icon-2 icon-3"
-                        src="img/icon-179.svg" alt="icon" /></div>
+                  </a>
+                  <a href="./print_document_history.html">
+                    <div class="print-document-history-text-11 valign-text-middle print-document-history-text-3">
+                      ประวัติการพิมพ์</div>
                   </a>
                 </div>
               </div>
             </div>
+
+
+            <img class="print-document-history-vector" src="img/vector-19-2.svg" alt="Vector 23" />
+            <div class="print-document-history-frame-38-1">
+              <img class="print-document-history-icon" src="img/icon-logout-2.svg" alt="icon logout" />
+              <div class="print-document-history-text valign-text-middle notosansthai-semi-bold-black-22px">ออกจากระบบ
+              </div>
+            </div>
+          </div>
+          <div class="print-document-history-frame-38519">
+            <div class="print-document-history-frame-38455">
+              <div class="print-document-history-input-search input">
+                <div class="print-document-history-input-element input">
+                  <img class="print-document-history-icon-3" src="img/icon-addon-3.svg" alt="icon-addon" />
+                  <a href="javascript:SubmitForm('form10')"><input
+                      class="print-document-history-text_input notosansthai-normal-slate-gray-15px" name="พมพคาคนหา"
+                      placeholder="พิมพ์คำค้นหา" type="text" /></a>
+                </div>
+              </div>
+              <div class="print-document-history-frame-2">
+                <select id="agency" class="print-document-history-custom-dropdown notosansthai-normal-slate-gray-15px">
+                  <option value="" disabled selected>ทุกประเภทแบบพิมพ์</option>
+                  <option value="ปพ.1-ป">ปพ.1 : ป</option>
+                  <option value="ปพ.1-บ">ปพ.1 : บ</option>
+                  <option value="ปพ.1-พ">ปพ.1 : พ</option>
+                </select>
+                <img class="print-document-history-dropdown-icon" src="img/dropdown-6.svg" alt="dropdown" />
+              </div>
+            </div>
+            <div class="print-document-history-table">
+              <div class="print-document-history-frame-38">
+                <div class="print-document-history-frame-3346">
+                  <article class="print-document-history-column-table-default-1">
+                    <div class="print-document-history-table-header">
+                      <div class="print-document-history-header-7 notosansthai-semi-bold-vulcan-15px">วันที่พิมพ์</div>
+                    </div>
+                    <div class="print-document-history-base-table-cell">
+                      <div
+                        class="print-document-history-text-cell print-document-history-text-3 notosansthai-normal-vulcan-15px">
+                        22 ต.ค. 2567</div>
+                    </div>
+                    <div class="print-document-history-base-table-cell">
+                      <div
+                        class="print-document-history-text-cell print-document-history-text-3 notosansthai-normal-vulcan-15px">
+                        22 ต.ค. 2567</div>
+                    </div>
+                    <div class="print-document-history-base-table-cell">
+                      <div
+                        class="print-document-history-text-cell print-document-history-text-3 notosansthai-normal-vulcan-15px">
+                        22 ต.ค. 2567</div>
+                    </div>
+                    <div class="print-document-history-base-table-cell">
+                      <div
+                        class="print-document-history-text-cell print-document-history-text-3 notosansthai-normal-vulcan-15px">
+                        22 ต.ค. 2567</div>
+                    </div>
+                    <div class="print-document-history-base-table-cell">
+                      <div
+                        class="print-document-history-text-cell print-document-history-text-3 notosansthai-normal-vulcan-15px">
+                        22 ต.ค. 2567</div>
+                    </div>
+                    <div class="print-document-history-base-table-cell">
+                      <div
+                        class="print-document-history-text-cell print-document-history-text-3 notosansthai-normal-vulcan-15px">
+                        22 ต.ค. 2567</div>
+                    </div>
+                    <div class="print-document-history-base-table-cell">
+                      <div
+                        class="print-document-history-text-cell print-document-history-text-3 notosansthai-normal-vulcan-15px">
+                        22 ต.ค. 2567</div>
+                    </div>
+                    <div class="print-document-history-base-table-cell">
+                      <div
+                        class="print-document-history-text-cell print-document-history-text-3 notosansthai-normal-vulcan-15px">
+                        22 ต.ค. 2567</div>
+                    </div>
+                    <div class="print-document-history-base-table-cell">
+                      <div
+                        class="print-document-history-text-cell print-document-history-text-3 notosansthai-normal-vulcan-15px">
+                        22 ต.ค. 2567</div>
+                    </div>
+                    <div class="print-document-history-base-table-cell">
+                      <div
+                        class="print-document-history-text-cell print-document-history-text-3 notosansthai-normal-vulcan-15px">
+                        22 ต.ค. 2567</div>
+                    </div>
+                  </article>
+                  <article class="print-document-history-column-table-default">
+                    <div class="print-document-history-table-header">
+                      <div class="print-document-history-header-7 notosansthai-semi-bold-vulcan-15px">ประเภทแบบพิมพ์
+                      </div>
+                    </div>
+                    <div class="print-document-history-base-table-cell">
+                      <div
+                        class="print-document-history-text-cell print-document-history-text-3 notosansthai-normal-vulcan-15px">
+                        ปพ.1 : ป</div>
+                    </div>
+                    <div class="print-document-history-base-table-cell">
+                      <div
+                        class="print-document-history-text-cell print-document-history-text-3 notosansthai-normal-vulcan-15px">
+                        ปพ.1 : ป</div>
+                    </div>
+                    <div class="print-document-history-base-table-cell">
+                      <div
+                        class="print-document-history-text-cell print-document-history-text-3 notosansthai-normal-vulcan-15px">
+                        ปพ.1 : ป</div>
+                    </div>
+                    <div class="print-document-history-base-table-cell">
+                      <div
+                        class="print-document-history-text-cell print-document-history-text-3 notosansthai-normal-vulcan-15px">
+                        ปพ.1 : ป</div>
+                    </div>
+                    <div class="print-document-history-base-table-cell">
+                      <div
+                        class="print-document-history-text-cell print-document-history-text-3 notosansthai-normal-vulcan-15px">
+                        ปพ.1 : บ</div>
+                    </div>
+                    <div class="print-document-history-base-table-cell">
+                      <div
+                        class="print-document-history-text-cell print-document-history-text-3 notosansthai-normal-vulcan-15px">
+                        ปพ.1 : บ</div>
+                    </div>
+                    <div class="print-document-history-base-table-cell">
+                      <div
+                        class="print-document-history-text-cell print-document-history-text-3 notosansthai-normal-vulcan-15px">
+                        ปพ.1 : บ</div>
+                    </div>
+                    <div class="print-document-history-base-table-cell">
+                      <div
+                        class="print-document-history-text-cell print-document-history-text-3 notosansthai-normal-vulcan-15px">
+                        ปพ.1 : พ</div>
+                    </div>
+                    <div class="print-document-history-base-table-cell">
+                      <div
+                        class="print-document-history-text-cell print-document-history-text-3 notosansthai-normal-vulcan-15px">
+                        ปพ.1 : พ</div>
+                    </div>
+                    <div class="print-document-history-base-table-cell">
+                      <div
+                        class="print-document-history-text-cell print-document-history-text-3 notosansthai-normal-vulcan-15px">
+                        ปพ.1 : พ</div>
+                    </div>
+                  </article>
+                  <article class="print-document-history-column-table-default">
+                    <div class="print-document-history-table-header">
+                      <div class="print-document-history-header-7 notosansthai-semi-bold-vulcan-15px">จำนวนตัวเลข</div>
+                    </div>
+                    <div class="print-document-history-base-table-cell">
+                      <div class="print-document-history-text-cell-1 notosansthai-normal-black-16px">100,000</div>
+                    </div>
+                    <div class="print-document-history-base-table-cell">
+                      <div class="print-document-history-text-cell-1 notosansthai-normal-black-16px">100,000</div>
+                    </div>
+                    <div class="print-document-history-base-table-cell">
+                      <div class="print-document-history-text-cell-1 notosansthai-normal-black-16px">100,000</div>
+                    </div>
+                    <div class="print-document-history-base-table-cell">
+                      <div class="print-document-history-text-cell-1 notosansthai-normal-black-16px">100,000</div>
+                    </div>
+                    <div class="print-document-history-base-table-cell">
+                      <div class="print-document-history-text-cell-1 notosansthai-normal-black-16px">100,000</div>
+                    </div>
+                    <div class="print-document-history-base-table-cell">
+                      <div class="print-document-history-text-cell-1 notosansthai-normal-black-16px">100,000</div>
+                    </div>
+                    <div class="print-document-history-base-table-cell">
+                      <div class="print-document-history-text-cell-1 notosansthai-normal-black-16px">100,000</div>
+                    </div>
+                    <div class="print-document-history-base-table-cell">
+                      <div class="print-document-history-text-cell-1 notosansthai-normal-black-16px">100,000</div>
+                    </div>
+                    <div class="print-document-history-base-table-cell">
+                      <div class="print-document-history-text-cell-1 notosansthai-normal-black-16px">100,000</div>
+                    </div>
+                    <div class="print-document-history-base-table-cell">
+                      <div class="print-document-history-text-cell-1 notosansthai-normal-black-16px">100,000</div>
+                    </div>
+                  </article>
+                  <article class="print-document-history-column-table-default">
+                    <div class="print-document-history-table-header">
+                      <div class="print-document-history-header-7 notosansthai-semi-bold-vulcan-15px">ชุดที่</div>
+                    </div>
+                    <div class="print-document-history-base-table-cell">
+                      <div class="print-document-history-text-cell-1 notosansthai-normal-black-16px">99001</div>
+                    </div>
+                    <div class="print-document-history-base-table-cell">
+                      <div class="print-document-history-text-cell-1 notosansthai-normal-black-16px">99001</div>
+                    </div>
+                    <div class="print-document-history-base-table-cell">
+                      <div class="print-document-history-text-cell-1 notosansthai-normal-black-16px">99001</div>
+                    </div>
+                    <div class="print-document-history-base-table-cell">
+                      <div class="print-document-history-text-cell-1 notosansthai-normal-black-16px">99001</div>
+                    </div>
+                    <div class="print-document-history-base-table-cell">
+                      <div class="print-document-history-text-cell-1 notosansthai-normal-black-16px">98001</div>
+                    </div>
+                    <div class="print-document-history-base-table-cell">
+                      <div class="print-document-history-text-cell-1 notosansthai-normal-black-16px">98001</div>
+                    </div>
+                    <div class="print-document-history-base-table-cell">
+                      <div class="print-document-history-text-cell-1 notosansthai-normal-black-16px">98001</div>
+                    </div>
+                    <div class="print-document-history-base-table-cell">
+                      <div class="print-document-history-text-cell-1 notosansthai-normal-black-16px">97001</div>
+                    </div>
+                    <div class="print-document-history-base-table-cell">
+                      <div class="print-document-history-text-cell-1 notosansthai-normal-black-16px">97001</div>
+                    </div>
+                    <div class="print-document-history-base-table-cell">
+                      <div class="print-document-history-text-cell-1 notosansthai-normal-black-16px">97001</div>
+                    </div>
+                  </article>
+                  <article class="print-document-history-column-table-default">
+                    <div class="print-document-history-table-header">
+                      <div class="print-document-history-header-7 notosansthai-semi-bold-vulcan-15px">เลขที่แรก</div>
+                    </div>
+                    <div class="print-document-history-base-table-cell">
+                      <div
+                        class="print-document-history-text-cell print-document-history-text-3 notosansthai-normal-vulcan-15px">
+                        011751</div>
+                    </div>
+                    <div class="print-document-history-base-table-cell">
+                      <div
+                        class="print-document-history-text-cell print-document-history-text-3 notosansthai-normal-vulcan-15px">
+                        111751</div>
+                    </div>
+                    <div class="print-document-history-base-table-cell">
+                      <div
+                        class="print-document-history-text-cell print-document-history-text-3 notosansthai-normal-vulcan-15px">
+                        211751</div>
+                    </div>
+                    <div class="print-document-history-base-table-cell">
+                      <div
+                        class="print-document-history-text-cell print-document-history-text-3 notosansthai-normal-vulcan-15px">
+                        311751</div>
+                    </div>
+                    <div class="print-document-history-base-table-cell">
+                      <div
+                        class="print-document-history-text-cell print-document-history-text-3 notosansthai-normal-vulcan-15px">
+                        011201</div>
+                    </div>
+                    <div class="print-document-history-base-table-cell">
+                      <div
+                        class="print-document-history-text-cell print-document-history-text-3 notosansthai-normal-vulcan-15px">
+                        111201</div>
+                    </div>
+                    <div class="print-document-history-base-table-cell">
+                      <div
+                        class="print-document-history-text-cell print-document-history-text-3 notosansthai-normal-vulcan-15px">
+                        211201</div>
+                    </div>
+                    <div class="print-document-history-base-table-cell">
+                      <div
+                        class="print-document-history-text-cell print-document-history-text-3 notosansthai-normal-vulcan-15px">
+                        015001</div>
+                    </div>
+                    <div class="print-document-history-base-table-cell">
+                      <div
+                        class="print-document-history-text-cell print-document-history-text-3 notosansthai-normal-vulcan-15px">
+                        115001</div>
+                    </div>
+                    <div class="print-document-history-base-table-cell">
+                      <div
+                        class="print-document-history-text-cell print-document-history-text-3 notosansthai-normal-vulcan-15px">
+                        215001</div>
+                    </div>
+                  </article>
+                  <article class="print-document-history-column-table-default">
+                    <div class="print-document-history-table-header">
+                      <div class="print-document-history-header-7 notosansthai-semi-bold-vulcan-15px">เลขที่สุดท้าย
+                      </div>
+                    </div>
+                    <div class="print-document-history-base-table-cell">
+                      <div
+                        class="print-document-history-text-cell print-document-history-text-3 notosansthai-normal-vulcan-15px">
+                        111750</div>
+                    </div>
+                    <div class="print-document-history-base-table-cell">
+                      <div
+                        class="print-document-history-text-cell print-document-history-text-3 notosansthai-normal-vulcan-15px">
+                        211750</div>
+                    </div>
+                    <div class="print-document-history-base-table-cell">
+                      <div
+                        class="print-document-history-text-cell print-document-history-text-3 notosansthai-normal-vulcan-15px">
+                        311750</div>
+                    </div>
+                    <div class="print-document-history-base-table-cell">
+                      <div
+                        class="print-document-history-text-cell print-document-history-text-3 notosansthai-normal-vulcan-15px">
+                        411750</div>
+                    </div>
+                    <div class="print-document-history-base-table-cell">
+                      <div
+                        class="print-document-history-text-cell print-document-history-text-3 notosansthai-normal-vulcan-15px">
+                        111200</div>
+                    </div>
+                    <div class="print-document-history-base-table-cell">
+                      <div
+                        class="print-document-history-text-cell print-document-history-text-3 notosansthai-normal-vulcan-15px">
+                        211200</div>
+                    </div>
+                    <div class="print-document-history-base-table-cell">
+                      <div
+                        class="print-document-history-text-cell print-document-history-text-3 notosansthai-normal-vulcan-15px">
+                        311200</div>
+                    </div>
+                    <div class="print-document-history-base-table-cell">
+                      <div
+                        class="print-document-history-text-cell print-document-history-text-3 notosansthai-normal-vulcan-15px">
+                        115000</div>
+                    </div>
+                    <div class="print-document-history-base-table-cell">
+                      <div
+                        class="print-document-history-text-cell print-document-history-text-3 notosansthai-normal-vulcan-15px">
+                        215000</div>
+                    </div>
+                    <div class="print-document-history-base-table-cell">
+                      <div
+                        class="print-document-history-text-cell print-document-history-text-3 notosansthai-normal-vulcan-15px">
+                        315000</div>
+                    </div>
+                  </article>
+                </div>
+                <div class="print-document-history-input-select-button-footer-default">
+                  <div class="print-document-history-frame-38263">
+                    <div class="print-document-history-input-select-1">
+                      <div class="print-document-history-select-field">
+                        <div class="print-document-history-select-1 notosansthai-normal-slate-gray-15px">แสดง 10</div>
+                        <img class="print-document-history-icon-3" src="img/dropdown-icon-44.svg" alt="dropdown-icon" />
+                      </div>
+                    </div>
+                    <p class="print-document-history-text-13 print-document-history-text-3">แสดง 1-10 รายการ จาก 100
+                      รายการ</p>
+                  </div>
+                  <div class="print-document-history-pagination">
+                    <a href="javascript:SubmitForm('form10')">
+                      <div class="print-document-history-button"><img class="print-document-history-icon-2 icon-3"
+                          src="img/icon-178.svg" alt="icon" /></div>
+                    </a><a href="javascript:SubmitForm('form10')">
+                      <div class="print-document-history-button-2 print-document-history-button-3">
+                        <div class="print-document-history-text-sm-1 print-document-history-text-sm-3">1</div>
+                      </div>
+                    </a><a href="javascript:SubmitForm('form10')">
+                      <div class="print-document-history-button-1 print-document-history-button-3">
+                        <div
+                          class="print-document-history-text-sm print-document-history-text-3 notosansthai-medium-blue-15px">
+                          2</div>
+                      </div>
+                    </a><a href="javascript:SubmitForm('form10')">
+                      <div class="print-document-history-button-1 print-document-history-button-3">
+                        <div
+                          class="print-document-history-text-sm print-document-history-text-3 notosansthai-medium-blue-15px">
+                          3</div>
+                      </div>
+                    </a><a href="javascript:SubmitForm('form10')">
+                      <div class="print-document-history-button-1 print-document-history-button-3">
+                        <div
+                          class="print-document-history-text-sm print-document-history-text-3 notosansthai-medium-blue-15px">
+                          4</div>
+                      </div>
+                    </a><a href="javascript:SubmitForm('form10')">
+                      <div class="print-document-history-button-1 print-document-history-button-3">
+                        <div
+                          class="print-document-history-text-sm print-document-history-text-3 notosansthai-medium-blue-15px">
+                          5</div>
+                      </div>
+                    </a><a href="javascript:SubmitForm('form10')">
+                      <div class="print-document-history-button-1 print-document-history-button-3">
+                        <div
+                          class="print-document-history-text-sm print-document-history-text-3 notosansthai-medium-blue-15px">
+                          ...</div>
+                      </div>
+                    </a><a href="javascript:SubmitForm('form10')">
+                      <div class="print-document-history-button-1 print-document-history-button-3">
+                        <div
+                          class="print-document-history-text-sm-2 print-document-history-text-sm-3 notosansthai-medium-blue-15px">
+                          10</div>
+                      </div>
+                    </a><a href="javascript:SubmitForm('form10')">
+                      <div class="print-document-history-button"><img class="print-document-history-icon-2 icon-3"
+                          src="img/icon-179.svg" alt="icon" /></div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </div>
+
+  <div class="tablet">
+    <div class="header-ecs">
+      <a href="./login.html">
+        <img class="logo-ecs" src="img/logo------1.png" alt="logo ecs" />
+      </a>
+
+      <div class="header-action-ecs">
+        <img class="group" src="img/Icon-Service.png" alt="Service" />
+        <img class="group" src="img/group@2x.png" alt="Group" />
+        <a href="./profile-school.html">
+          <img class="vector" src="img/vector-2.svg" alt="Vector" />
+        </a>
+      </div>
+    </div>
+
+    <div class="container-center-horizontal">
+      <div class="print-document-history">
+        <div class="container-menu-ham pointer">
+          <div class="menu-ham" onclick="showMenuHam()">
+            <img class="icon-menu-ham" src="img/icon-menu.png" alt="icon back" />
+            <div
+              class="register-obec-text_label register-obec-valign-text-middle notosansthai-semi-bold-midnight-blue-20px">
+              เมนู</div>
+          </div>
+          <div id="contentMenuHam" class="content-menu-ham">
+            <div class="item-menu-ham">
+              <div class="print-document-information-frame-38357-1">
+                <div class="print-document-information-frame-38354">
+                  <div class="print-document-information-frame-38352">
+                    <div class="print-document-information-frame-38350">
+                      <div class="print-document-information-frame-38">
+                        <img class="print-document-information-icon" src="img/icon-person2-1.svg" alt="icon person2" />
+                        <div class="print-document-information-text-1 valign-text-middle notosansthai-semi-bold-black-22px">
+                          บัญชีของฉัน</div>
+                      </div>
+                      <div onclick="showMenuCollap()">
+                        <div class="approve-school-frame-38348">
+                          <img class="approve-school-arrow-down-01" src="img/arrow-down-01-2.svg" alt="arrow-down-01" />
+                        </div>
+                      </div>
+                    </div>
+                    <div id="collapMenu" class="approve-school-frame-3835 notosansthai-normal-black-20px"
+                      style="display: none;">
+                      <a href="./profile-school.html">
+                        <div
+                          class="approve-school-text-1 approve-school-valign-text-middle approve-school-text-3 a-link-left">
+                          ข้อมูลส่วนบุคคล</div>
+                      </a>
+                      <div class="approve-school-text-2 approve-school-valign-text-middle approve-school-text-3">
+                        ที่อยู่จัดส่งสินค้า</div>
+                    </div>
+                  </div>
+                </div>
+                <img class="print-document-information-vector" src="img/vector-19-2.svg" alt="Vector 19" />
+                <div class="print-document-information-frame-38">
+                  <img class="print-document-information-icon" src="img/icon-report-11.svg" alt="icon Report" />
+                  <div class="print-document-information-text-1 valign-text-middle notosansthai-semi-bold-black-22px">
+                    เอกสารใบขอสั่งซื้อ</div>
+                </div>
+                <img class="print-document-information-vector" src="img/vector-19-2.svg" alt="Vector 22" />
+                <div class="print-document-information-frame-38354">
+                  <div class="print-document-information-frame-38352">
+                    <div class="print-document-information-frame-38350">
+                      <div class="print-document-information-frame-38">
+                        <img class="print-document-information-icon" src="img/icon-report-11.svg" alt="icon person2" />
+                        <div class="print-document-information-text-1 valign-text-middle notosansthai-semi-bold-black-22px">
+                          รายการคำสั่งซื้อ</div>
+                      </div>
+                      <a onclick="showMenuCollapOrder()">
+                        <div class="approve-school-frame-38348">
+                          <img class="approve-school-arrow-down-01" src="img/arrow-down-01-2.svg" alt="arrow-down-01" />
+                        </div>
+                      </a>
+                    </div>
+                    <div id="collapMenuOrder" class="approve-school-frame-3835 notosansthai-normal-black-20px"
+                      style="display: none;">
+                      <a href="./delivered-order.html">
+                        <div
+                          class="approve-school-text-1 approve-school-valign-text-middle approve-school-text-3 a-link-left">
+                          เอกสารมีเลขคุม</div>
+                      </a>
+                      <div class="approve-school-text-2 approve-school-valign-text-middle approve-school-text-3">
+                        เอกสารไม่มีเลขคุม</div>
+                      <div class="approve-school-text-2 approve-school-valign-text-middle approve-school-text-3">
+                        เลขใบปพ. ออนไลน์(ปพ.1)</div>
+                    </div>
+                  </div>
+                </div>
+                
+                <img class="print-document-information-vector" src="img/vector-19-2.svg" alt="Vector 20" />
+                <div class="print-document-information-frame-3852">
+                  <div class="print-document-information-frame-38528">
+                    <div class="print-document-information-frame-38">
+                      <img class="print-document-information-icon" src="img/icon-print-1.svg" alt="icon print" />
+                      <div class="print-document-information-text-9 valign-text-middle">ปพ.ออนไลน์</div>
+                    </div>
+                    <a onclick="showMenuCollap2()">
+                      <div class="paid-school-frame-38348">
+                        <img class="paid-school-arrow-down-01" src="img/arrow-down-01-3.svg" alt="arrow-down-01" />
+                      </div>
+                    </a>
+                  </div>
+                  <div id="collapMenu2" style="display: none;" class="paid-school-frame-3835">
+                    <div class="paid-school-frame-38351 notosansthai-normal-black-20px">
+                      <a href="./print_document_information.html">
+                        <div class="print-document-information-text-10 paid-school-valign-text-middle paid-school-text-5">
+                          พิมพ์ใบปพ.ออนไลน์
+                        </div>
+                      </a>
+                      <a href="./print_document_history.html">
+                        <div class="paid-school-text-2 paid-school-valign-text-middle paid-school-text-5 a-link-left">
+                          ประวัติการพิมพ์
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <img class="print-document-information-vector" src="img/vector-23-1.svg" alt="Vector 23" />
+                <div class="print-document-information-frame-38">
+                  <img class="print-document-information-icon" src="img/icon-logout-1.svg" alt="icon logout" />
+                  <div class="print-document-information-text-1 valign-text-middle notosansthai-semi-bold-black-22px">
+                    ออกจากระบบ</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="print-document-history-frame-38357">
+
+          <div class="print-document-history-frame-38519">
+            <div class="print-document-history-frame-38455">
+              <div class="print-document-history-input-search input">
+                <div class="print-document-history-input-element input">
+                  <img class="print-document-history-icon-3" src="img/icon-addon-3.svg" alt="icon-addon" />
+                  <a href="javascript:SubmitForm('form10')"><input
+                      class="print-document-history-text_input notosansthai-normal-slate-gray-15px" name="พมพคาคนหา"
+                      placeholder="พิมพ์คำค้นหา" type="text" /></a>
+                </div>
+              </div>
+              <div class="print-document-history-frame-2">
+                <select id="agency" class="print-document-history-custom-dropdown notosansthai-normal-slate-gray-15px">
+                  <option value="" disabled selected>ทุกประเภทแบบพิมพ์</option>
+                  <option value="ปพ.1-ป">ปพ.1 : ป</option>
+                  <option value="ปพ.1-บ">ปพ.1 : บ</option>
+                  <option value="ปพ.1-พ">ปพ.1 : พ</option>
+                </select>
+                <img class="print-document-history-dropdown-icon" src="img/dropdown-6.svg" alt="dropdown" />
+              </div>
+            </div>
+            <div class="print-document-history-table">
+              <div class="print-document-history-frame-38">
+                <div class="print-document-history-frame-3346">
+                  <article class="print-document-history-column-table-default-1">
+                    <div class="print-document-history-table-header">
+                      <div class="print-document-history-header-7 notosansthai-semi-bold-vulcan-15px">วันที่พิมพ์</div>
+                    </div>
+                    <div class="print-document-history-base-table-cell">
+                      <div
+                        class="print-document-history-text-cell print-document-history-text-3 notosansthai-normal-vulcan-15px">
+                        22 ต.ค. 2567</div>
+                    </div>
+                    <div class="print-document-history-base-table-cell">
+                      <div
+                        class="print-document-history-text-cell print-document-history-text-3 notosansthai-normal-vulcan-15px">
+                        22 ต.ค. 2567</div>
+                    </div>
+                    <div class="print-document-history-base-table-cell">
+                      <div
+                        class="print-document-history-text-cell print-document-history-text-3 notosansthai-normal-vulcan-15px">
+                        22 ต.ค. 2567</div>
+                    </div>
+                    <div class="print-document-history-base-table-cell">
+                      <div
+                        class="print-document-history-text-cell print-document-history-text-3 notosansthai-normal-vulcan-15px">
+                        22 ต.ค. 2567</div>
+                    </div>
+                    <div class="print-document-history-base-table-cell">
+                      <div
+                        class="print-document-history-text-cell print-document-history-text-3 notosansthai-normal-vulcan-15px">
+                        22 ต.ค. 2567</div>
+                    </div>
+                    <div class="print-document-history-base-table-cell">
+                      <div
+                        class="print-document-history-text-cell print-document-history-text-3 notosansthai-normal-vulcan-15px">
+                        22 ต.ค. 2567</div>
+                    </div>
+                    <div class="print-document-history-base-table-cell">
+                      <div
+                        class="print-document-history-text-cell print-document-history-text-3 notosansthai-normal-vulcan-15px">
+                        22 ต.ค. 2567</div>
+                    </div>
+                    <div class="print-document-history-base-table-cell">
+                      <div
+                        class="print-document-history-text-cell print-document-history-text-3 notosansthai-normal-vulcan-15px">
+                        22 ต.ค. 2567</div>
+                    </div>
+                    <div class="print-document-history-base-table-cell">
+                      <div
+                        class="print-document-history-text-cell print-document-history-text-3 notosansthai-normal-vulcan-15px">
+                        22 ต.ค. 2567</div>
+                    </div>
+                    <div class="print-document-history-base-table-cell">
+                      <div
+                        class="print-document-history-text-cell print-document-history-text-3 notosansthai-normal-vulcan-15px">
+                        22 ต.ค. 2567</div>
+                    </div>
+                  </article>
+                  <article class="print-document-history-column-table-default">
+                    <div class="print-document-history-table-header">
+                      <div class="print-document-history-header-7 notosansthai-semi-bold-vulcan-15px">ประเภทแบบพิมพ์
+                      </div>
+                    </div>
+                    <div class="print-document-history-base-table-cell">
+                      <div
+                        class="print-document-history-text-cell print-document-history-text-3 notosansthai-normal-vulcan-15px">
+                        ปพ.1 : ป</div>
+                    </div>
+                    <div class="print-document-history-base-table-cell">
+                      <div
+                        class="print-document-history-text-cell print-document-history-text-3 notosansthai-normal-vulcan-15px">
+                        ปพ.1 : ป</div>
+                    </div>
+                    <div class="print-document-history-base-table-cell">
+                      <div
+                        class="print-document-history-text-cell print-document-history-text-3 notosansthai-normal-vulcan-15px">
+                        ปพ.1 : ป</div>
+                    </div>
+                    <div class="print-document-history-base-table-cell">
+                      <div
+                        class="print-document-history-text-cell print-document-history-text-3 notosansthai-normal-vulcan-15px">
+                        ปพ.1 : ป</div>
+                    </div>
+                    <div class="print-document-history-base-table-cell">
+                      <div
+                        class="print-document-history-text-cell print-document-history-text-3 notosansthai-normal-vulcan-15px">
+                        ปพ.1 : บ</div>
+                    </div>
+                    <div class="print-document-history-base-table-cell">
+                      <div
+                        class="print-document-history-text-cell print-document-history-text-3 notosansthai-normal-vulcan-15px">
+                        ปพ.1 : บ</div>
+                    </div>
+                    <div class="print-document-history-base-table-cell">
+                      <div
+                        class="print-document-history-text-cell print-document-history-text-3 notosansthai-normal-vulcan-15px">
+                        ปพ.1 : บ</div>
+                    </div>
+                    <div class="print-document-history-base-table-cell">
+                      <div
+                        class="print-document-history-text-cell print-document-history-text-3 notosansthai-normal-vulcan-15px">
+                        ปพ.1 : พ</div>
+                    </div>
+                    <div class="print-document-history-base-table-cell">
+                      <div
+                        class="print-document-history-text-cell print-document-history-text-3 notosansthai-normal-vulcan-15px">
+                        ปพ.1 : พ</div>
+                    </div>
+                    <div class="print-document-history-base-table-cell">
+                      <div
+                        class="print-document-history-text-cell print-document-history-text-3 notosansthai-normal-vulcan-15px">
+                        ปพ.1 : พ</div>
+                    </div>
+                  </article>
+                  <article class="print-document-history-column-table-default">
+                    <div class="print-document-history-table-header">
+                      <div class="print-document-history-header-7 notosansthai-semi-bold-vulcan-15px">จำนวนตัวเลข</div>
+                    </div>
+                    <div class="print-document-history-base-table-cell">
+                      <div class="print-document-history-text-cell-1 notosansthai-normal-black-16px">100,000</div>
+                    </div>
+                    <div class="print-document-history-base-table-cell">
+                      <div class="print-document-history-text-cell-1 notosansthai-normal-black-16px">100,000</div>
+                    </div>
+                    <div class="print-document-history-base-table-cell">
+                      <div class="print-document-history-text-cell-1 notosansthai-normal-black-16px">100,000</div>
+                    </div>
+                    <div class="print-document-history-base-table-cell">
+                      <div class="print-document-history-text-cell-1 notosansthai-normal-black-16px">100,000</div>
+                    </div>
+                    <div class="print-document-history-base-table-cell">
+                      <div class="print-document-history-text-cell-1 notosansthai-normal-black-16px">100,000</div>
+                    </div>
+                    <div class="print-document-history-base-table-cell">
+                      <div class="print-document-history-text-cell-1 notosansthai-normal-black-16px">100,000</div>
+                    </div>
+                    <div class="print-document-history-base-table-cell">
+                      <div class="print-document-history-text-cell-1 notosansthai-normal-black-16px">100,000</div>
+                    </div>
+                    <div class="print-document-history-base-table-cell">
+                      <div class="print-document-history-text-cell-1 notosansthai-normal-black-16px">100,000</div>
+                    </div>
+                    <div class="print-document-history-base-table-cell">
+                      <div class="print-document-history-text-cell-1 notosansthai-normal-black-16px">100,000</div>
+                    </div>
+                    <div class="print-document-history-base-table-cell">
+                      <div class="print-document-history-text-cell-1 notosansthai-normal-black-16px">100,000</div>
+                    </div>
+                  </article>
+                  <article class="print-document-history-column-table-default">
+                    <div class="print-document-history-table-header">
+                      <div class="print-document-history-header-7 notosansthai-semi-bold-vulcan-15px">ชุดที่</div>
+                    </div>
+                    <div class="print-document-history-base-table-cell">
+                      <div class="print-document-history-text-cell-1 notosansthai-normal-black-16px">99001</div>
+                    </div>
+                    <div class="print-document-history-base-table-cell">
+                      <div class="print-document-history-text-cell-1 notosansthai-normal-black-16px">99001</div>
+                    </div>
+                    <div class="print-document-history-base-table-cell">
+                      <div class="print-document-history-text-cell-1 notosansthai-normal-black-16px">99001</div>
+                    </div>
+                    <div class="print-document-history-base-table-cell">
+                      <div class="print-document-history-text-cell-1 notosansthai-normal-black-16px">99001</div>
+                    </div>
+                    <div class="print-document-history-base-table-cell">
+                      <div class="print-document-history-text-cell-1 notosansthai-normal-black-16px">98001</div>
+                    </div>
+                    <div class="print-document-history-base-table-cell">
+                      <div class="print-document-history-text-cell-1 notosansthai-normal-black-16px">98001</div>
+                    </div>
+                    <div class="print-document-history-base-table-cell">
+                      <div class="print-document-history-text-cell-1 notosansthai-normal-black-16px">98001</div>
+                    </div>
+                    <div class="print-document-history-base-table-cell">
+                      <div class="print-document-history-text-cell-1 notosansthai-normal-black-16px">97001</div>
+                    </div>
+                    <div class="print-document-history-base-table-cell">
+                      <div class="print-document-history-text-cell-1 notosansthai-normal-black-16px">97001</div>
+                    </div>
+                    <div class="print-document-history-base-table-cell">
+                      <div class="print-document-history-text-cell-1 notosansthai-normal-black-16px">97001</div>
+                    </div>
+                  </article>
+                  <article class="print-document-history-column-table-default">
+                    <div class="print-document-history-table-header">
+                      <div class="print-document-history-header-7 notosansthai-semi-bold-vulcan-15px">เลขที่แรก</div>
+                    </div>
+                    <div class="print-document-history-base-table-cell">
+                      <div
+                        class="print-document-history-text-cell print-document-history-text-3 notosansthai-normal-vulcan-15px">
+                        011751</div>
+                    </div>
+                    <div class="print-document-history-base-table-cell">
+                      <div
+                        class="print-document-history-text-cell print-document-history-text-3 notosansthai-normal-vulcan-15px">
+                        111751</div>
+                    </div>
+                    <div class="print-document-history-base-table-cell">
+                      <div
+                        class="print-document-history-text-cell print-document-history-text-3 notosansthai-normal-vulcan-15px">
+                        211751</div>
+                    </div>
+                    <div class="print-document-history-base-table-cell">
+                      <div
+                        class="print-document-history-text-cell print-document-history-text-3 notosansthai-normal-vulcan-15px">
+                        311751</div>
+                    </div>
+                    <div class="print-document-history-base-table-cell">
+                      <div
+                        class="print-document-history-text-cell print-document-history-text-3 notosansthai-normal-vulcan-15px">
+                        011201</div>
+                    </div>
+                    <div class="print-document-history-base-table-cell">
+                      <div
+                        class="print-document-history-text-cell print-document-history-text-3 notosansthai-normal-vulcan-15px">
+                        111201</div>
+                    </div>
+                    <div class="print-document-history-base-table-cell">
+                      <div
+                        class="print-document-history-text-cell print-document-history-text-3 notosansthai-normal-vulcan-15px">
+                        211201</div>
+                    </div>
+                    <div class="print-document-history-base-table-cell">
+                      <div
+                        class="print-document-history-text-cell print-document-history-text-3 notosansthai-normal-vulcan-15px">
+                        015001</div>
+                    </div>
+                    <div class="print-document-history-base-table-cell">
+                      <div
+                        class="print-document-history-text-cell print-document-history-text-3 notosansthai-normal-vulcan-15px">
+                        115001</div>
+                    </div>
+                    <div class="print-document-history-base-table-cell">
+                      <div
+                        class="print-document-history-text-cell print-document-history-text-3 notosansthai-normal-vulcan-15px">
+                        215001</div>
+                    </div>
+                  </article>
+                  <article class="print-document-history-column-table-default">
+                    <div class="print-document-history-table-header">
+                      <div class="print-document-history-header-7 notosansthai-semi-bold-vulcan-15px">เลขที่สุดท้าย
+                      </div>
+                    </div>
+                    <div class="print-document-history-base-table-cell">
+                      <div
+                        class="print-document-history-text-cell print-document-history-text-3 notosansthai-normal-vulcan-15px">
+                        111750</div>
+                    </div>
+                    <div class="print-document-history-base-table-cell">
+                      <div
+                        class="print-document-history-text-cell print-document-history-text-3 notosansthai-normal-vulcan-15px">
+                        211750</div>
+                    </div>
+                    <div class="print-document-history-base-table-cell">
+                      <div
+                        class="print-document-history-text-cell print-document-history-text-3 notosansthai-normal-vulcan-15px">
+                        311750</div>
+                    </div>
+                    <div class="print-document-history-base-table-cell">
+                      <div
+                        class="print-document-history-text-cell print-document-history-text-3 notosansthai-normal-vulcan-15px">
+                        411750</div>
+                    </div>
+                    <div class="print-document-history-base-table-cell">
+                      <div
+                        class="print-document-history-text-cell print-document-history-text-3 notosansthai-normal-vulcan-15px">
+                        111200</div>
+                    </div>
+                    <div class="print-document-history-base-table-cell">
+                      <div
+                        class="print-document-history-text-cell print-document-history-text-3 notosansthai-normal-vulcan-15px">
+                        211200</div>
+                    </div>
+                    <div class="print-document-history-base-table-cell">
+                      <div
+                        class="print-document-history-text-cell print-document-history-text-3 notosansthai-normal-vulcan-15px">
+                        311200</div>
+                    </div>
+                    <div class="print-document-history-base-table-cell">
+                      <div
+                        class="print-document-history-text-cell print-document-history-text-3 notosansthai-normal-vulcan-15px">
+                        115000</div>
+                    </div>
+                    <div class="print-document-history-base-table-cell">
+                      <div
+                        class="print-document-history-text-cell print-document-history-text-3 notosansthai-normal-vulcan-15px">
+                        215000</div>
+                    </div>
+                    <div class="print-document-history-base-table-cell">
+                      <div
+                        class="print-document-history-text-cell print-document-history-text-3 notosansthai-normal-vulcan-15px">
+                        315000</div>
+                    </div>
+                  </article>
+                </div>
+                <div class="print-document-history-input-select-button-footer-default">
+                  <div class="print-document-history-frame-38263">
+                    <div class="print-document-history-input-select-1">
+                      <div class="print-document-history-select-field">
+                        <div class="print-document-history-select-1 notosansthai-normal-slate-gray-15px">แสดง 10</div>
+                        <img class="print-document-history-icon-3" src="img/dropdown-icon-44.svg" alt="dropdown-icon" />
+                      </div>
+                    </div>
+                    <p class="print-document-history-text-13 print-document-history-text-3">แสดง 1-10 รายการ จาก 100
+                      รายการ</p>
+                  </div>
+                  <div class="print-document-history-pagination">
+                    <a href="javascript:SubmitForm('form10')">
+                      <div class="print-document-history-button"><img class="print-document-history-icon-2 icon-3"
+                          src="img/icon-178.svg" alt="icon" /></div>
+                    </a><a href="javascript:SubmitForm('form10')">
+                      <div class="print-document-history-button-2 print-document-history-button-3">
+                        <div class="print-document-history-text-sm-1 print-document-history-text-sm-3">1</div>
+                      </div>
+                    </a><a href="javascript:SubmitForm('form10')">
+                      <div class="print-document-history-button-1 print-document-history-button-3">
+                        <div
+                          class="print-document-history-text-sm print-document-history-text-3 notosansthai-medium-blue-15px">
+                          2</div>
+                      </div>
+                    </a><a href="javascript:SubmitForm('form10')">
+                      <div class="print-document-history-button-1 print-document-history-button-3">
+                        <div
+                          class="print-document-history-text-sm print-document-history-text-3 notosansthai-medium-blue-15px">
+                          ...</div>
+                      </div>
+                    </a><a href="javascript:SubmitForm('form10')">
+                      <div class="print-document-history-button-1 print-document-history-button-3">
+                        <div
+                          class="print-document-history-text-sm-2 print-document-history-text-sm-3 notosansthai-medium-blue-15px">
+                          10</div>
+                      </div>
+                    </a><a href="javascript:SubmitForm('form10')">
+                      <div class="print-document-history-button"><img class="print-document-history-icon-2 icon-3"
+                          src="img/icon-179.svg" alt="icon" /></div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="mobile">
+    <div class="header-ecs">
+      <a href="./login.html">
+        <img class="logo-ecs" src="img/logo------1.png" alt="logo ecs" />
+      </a>
+
+      <div class="header-action-ecs">
+        <img class="group" src="img/Icon-Service.png" alt="Service" />
+        <img class="group" src="img/group@2x.png" alt="Group" />
+        <a href="./profile-school.html">
+          <img class="vector" src="img/vector-2.svg" alt="Vector" />
+        </a>
+      </div>
+    </div>
+
+    <div class="container-center-horizontal">
+      <div class="print-document-history">
+        <div class="container-menu-ham pointer">
+          <div class="menu-ham" onclick="showMenuHam()">
+            <img class="icon-menu-ham" src="img/icon-menu.png" alt="icon back" />
+            <div
+              class="register-obec-text_label register-obec-valign-text-middle notosansthai-semi-bold-midnight-blue-20px">
+              เมนู</div>
+          </div>
+          <div id="contentMenuHam" class="content-menu-ham">
+            <div class="item-menu-ham">
+              <div class="print-document-information-frame-38357-1">
+                <div class="print-document-information-frame-38354">
+                  <div class="print-document-information-frame-38352">
+                    <div class="print-document-information-frame-38350">
+                      <div class="print-document-information-frame-38">
+                        <img class="print-document-information-icon" src="img/icon-person2-1.svg" alt="icon person2" />
+                        <div class="print-document-information-text-1 valign-text-middle notosansthai-semi-bold-black-22px">
+                          บัญชีของฉัน</div>
+                      </div>
+                      <div onclick="showMenuCollap()">
+                        <div class="approve-school-frame-38348">
+                          <img class="approve-school-arrow-down-01" src="img/arrow-down-01-2.svg" alt="arrow-down-01" />
+                        </div>
+                      </div>
+                    </div>
+                    <div id="collapMenu" class="approve-school-frame-3835 notosansthai-normal-black-20px"
+                      style="display: none;">
+                      <a href="./profile-school.html">
+                        <div
+                          class="approve-school-text-1 approve-school-valign-text-middle approve-school-text-3 a-link-left">
+                          ข้อมูลส่วนบุคคล</div>
+                      </a>
+                      <div class="approve-school-text-2 approve-school-valign-text-middle approve-school-text-3">
+                        ที่อยู่จัดส่งสินค้า</div>
+                    </div>
+                  </div>
+                </div>
+                <img class="print-document-information-vector" src="img/vector-19-2.svg" alt="Vector 19" />
+                <div class="print-document-information-frame-38">
+                  <img class="print-document-information-icon" src="img/icon-report-11.svg" alt="icon Report" />
+                  <div class="print-document-information-text-1 valign-text-middle notosansthai-semi-bold-black-22px">
+                    เอกสารใบขอสั่งซื้อ</div>
+                </div>
+                <img class="print-document-information-vector" src="img/vector-19-2.svg" alt="Vector 22" />
+                <div class="print-document-information-frame-38354">
+                  <div class="print-document-information-frame-38352">
+                    <div class="print-document-information-frame-38350">
+                      <div class="print-document-information-frame-38">
+                        <img class="print-document-information-icon" src="img/icon-report-11.svg" alt="icon person2" />
+                        <div class="print-document-information-text-1 valign-text-middle notosansthai-semi-bold-black-22px">
+                          รายการคำสั่งซื้อ</div>
+                      </div>
+                      <a onclick="showMenuCollapOrder()">
+                        <div class="approve-school-frame-38348">
+                          <img class="approve-school-arrow-down-01" src="img/arrow-down-01-2.svg" alt="arrow-down-01" />
+                        </div>
+                      </a>
+                    </div>
+                    <div id="collapMenuOrder" class="approve-school-frame-3835 notosansthai-normal-black-20px"
+                      style="display: none;">
+                      <a href="./delivered-order.html">
+                        <div
+                          class="approve-school-text-1 approve-school-valign-text-middle approve-school-text-3 a-link-left">
+                          เอกสารมีเลขคุม</div>
+                      </a>
+                      <div class="approve-school-text-2 approve-school-valign-text-middle approve-school-text-3">
+                        เอกสารไม่มีเลขคุม</div>
+                      <div class="approve-school-text-2 approve-school-valign-text-middle approve-school-text-3">
+                        เลขใบปพ. ออนไลน์(ปพ.1)</div>
+                    </div>
+                  </div>
+                </div>
+                
+                <img class="print-document-information-vector" src="img/vector-19-2.svg" alt="Vector 20" />
+                <div class="print-document-information-frame-3852">
+                  <div class="print-document-information-frame-38528">
+                    <div class="print-document-information-frame-38">
+                      <img class="print-document-information-icon" src="img/icon-print-1.svg" alt="icon print" />
+                      <div class="print-document-information-text-9 valign-text-middle">ปพ.ออนไลน์</div>
+                    </div>
+                    <a onclick="showMenuCollap2()">
+                      <div class="paid-school-frame-38348">
+                        <img class="paid-school-arrow-down-01" src="img/arrow-down-01-3.svg" alt="arrow-down-01" />
+                      </div>
+                    </a>
+                  </div>
+                  <div id="collapMenu2" style="display: none;" class="paid-school-frame-3835">
+                    <div class="paid-school-frame-38351 notosansthai-normal-black-20px">
+                      <a href="./print_document_information.html">
+                        <div class="print-document-information-text-10 paid-school-valign-text-middle paid-school-text-5">
+                          พิมพ์ใบปพ.ออนไลน์
+                        </div>
+                      </a>
+                      <a href="./print_document_history.html">
+                        <div class="paid-school-text-2 paid-school-valign-text-middle paid-school-text-5 a-link-left">
+                          ประวัติการพิมพ์
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <img class="print-document-information-vector" src="img/vector-23-1.svg" alt="Vector 23" />
+                <div class="print-document-information-frame-38">
+                  <img class="print-document-information-icon" src="img/icon-logout-1.svg" alt="icon logout" />
+                  <div class="print-document-information-text-1 valign-text-middle notosansthai-semi-bold-black-22px">
+                    ออกจากระบบ</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="print-document-history-frame-38357">
+
+          <div class="print-document-history-frame-38519">
+            <div class="print-document-history-frame-38455">
+              <div class="print-document-history-input-search input">
+                <div class="print-document-history-input-element input">
+                  <img class="print-document-history-icon-3" src="img/icon-addon-3.svg" alt="icon-addon" />
+                  <a href="javascript:SubmitForm('form10')"><input
+                      class="print-document-history-text_input notosansthai-normal-slate-gray-15px" name="พมพคาคนหา"
+                      placeholder="พิมพ์คำค้นหา" type="text" /></a>
+                </div>
+              </div>
+              <div class="print-document-history-frame-2">
+                <select id="agency" class="print-document-history-custom-dropdown notosansthai-normal-slate-gray-15px">
+                  <option value="" disabled selected>ทุกประเภทแบบพิมพ์</option>
+                  <option value="ปพ.1-ป">ปพ.1 : ป</option>
+                  <option value="ปพ.1-บ">ปพ.1 : บ</option>
+                  <option value="ปพ.1-พ">ปพ.1 : พ</option>
+                </select>
+                <img class="print-document-history-dropdown-icon" src="img/dropdown-6.svg" alt="dropdown" />
+              </div>
+            </div>
+            <div class="print-document-history-table">
+              <div class="print-document-history-frame-38">
+                <div class="print-document-history-frame-3346">
+                  <article class="print-document-history-column-table-default-1">
+                    <div class="print-document-history-table-header">
+                      <div class="print-document-history-header-7 notosansthai-semi-bold-vulcan-15px">วันที่พิมพ์</div>
+                    </div>
+                    <div class="print-document-history-base-table-cell">
+                      <div
+                        class="print-document-history-text-cell print-document-history-text-3 notosansthai-normal-vulcan-15px">
+                        22 ต.ค. 2567</div>
+                    </div>
+                    <div class="print-document-history-base-table-cell">
+                      <div
+                        class="print-document-history-text-cell print-document-history-text-3 notosansthai-normal-vulcan-15px">
+                        22 ต.ค. 2567</div>
+                    </div>
+                    <div class="print-document-history-base-table-cell">
+                      <div
+                        class="print-document-history-text-cell print-document-history-text-3 notosansthai-normal-vulcan-15px">
+                        22 ต.ค. 2567</div>
+                    </div>
+                    <div class="print-document-history-base-table-cell">
+                      <div
+                        class="print-document-history-text-cell print-document-history-text-3 notosansthai-normal-vulcan-15px">
+                        22 ต.ค. 2567</div>
+                    </div>
+                    <div class="print-document-history-base-table-cell">
+                      <div
+                        class="print-document-history-text-cell print-document-history-text-3 notosansthai-normal-vulcan-15px">
+                        22 ต.ค. 2567</div>
+                    </div>
+                    <div class="print-document-history-base-table-cell">
+                      <div
+                        class="print-document-history-text-cell print-document-history-text-3 notosansthai-normal-vulcan-15px">
+                        22 ต.ค. 2567</div>
+                    </div>
+                    <div class="print-document-history-base-table-cell">
+                      <div
+                        class="print-document-history-text-cell print-document-history-text-3 notosansthai-normal-vulcan-15px">
+                        22 ต.ค. 2567</div>
+                    </div>
+                    <div class="print-document-history-base-table-cell">
+                      <div
+                        class="print-document-history-text-cell print-document-history-text-3 notosansthai-normal-vulcan-15px">
+                        22 ต.ค. 2567</div>
+                    </div>
+                    <div class="print-document-history-base-table-cell">
+                      <div
+                        class="print-document-history-text-cell print-document-history-text-3 notosansthai-normal-vulcan-15px">
+                        22 ต.ค. 2567</div>
+                    </div>
+                    <div class="print-document-history-base-table-cell">
+                      <div
+                        class="print-document-history-text-cell print-document-history-text-3 notosansthai-normal-vulcan-15px">
+                        22 ต.ค. 2567</div>
+                    </div>
+                  </article>
+                  <article class="print-document-history-column-table-default">
+                    <div class="print-document-history-table-header">
+                      <div class="print-document-history-header-7 notosansthai-semi-bold-vulcan-15px">ประเภทแบบพิมพ์
+                      </div>
+                    </div>
+                    <div class="print-document-history-base-table-cell">
+                      <div
+                        class="print-document-history-text-cell print-document-history-text-3 notosansthai-normal-vulcan-15px">
+                        ปพ.1 : ป</div>
+                    </div>
+                    <div class="print-document-history-base-table-cell">
+                      <div
+                        class="print-document-history-text-cell print-document-history-text-3 notosansthai-normal-vulcan-15px">
+                        ปพ.1 : ป</div>
+                    </div>
+                    <div class="print-document-history-base-table-cell">
+                      <div
+                        class="print-document-history-text-cell print-document-history-text-3 notosansthai-normal-vulcan-15px">
+                        ปพ.1 : ป</div>
+                    </div>
+                    <div class="print-document-history-base-table-cell">
+                      <div
+                        class="print-document-history-text-cell print-document-history-text-3 notosansthai-normal-vulcan-15px">
+                        ปพ.1 : ป</div>
+                    </div>
+                    <div class="print-document-history-base-table-cell">
+                      <div
+                        class="print-document-history-text-cell print-document-history-text-3 notosansthai-normal-vulcan-15px">
+                        ปพ.1 : บ</div>
+                    </div>
+                    <div class="print-document-history-base-table-cell">
+                      <div
+                        class="print-document-history-text-cell print-document-history-text-3 notosansthai-normal-vulcan-15px">
+                        ปพ.1 : บ</div>
+                    </div>
+                    <div class="print-document-history-base-table-cell">
+                      <div
+                        class="print-document-history-text-cell print-document-history-text-3 notosansthai-normal-vulcan-15px">
+                        ปพ.1 : บ</div>
+                    </div>
+                    <div class="print-document-history-base-table-cell">
+                      <div
+                        class="print-document-history-text-cell print-document-history-text-3 notosansthai-normal-vulcan-15px">
+                        ปพ.1 : พ</div>
+                    </div>
+                    <div class="print-document-history-base-table-cell">
+                      <div
+                        class="print-document-history-text-cell print-document-history-text-3 notosansthai-normal-vulcan-15px">
+                        ปพ.1 : พ</div>
+                    </div>
+                    <div class="print-document-history-base-table-cell">
+                      <div
+                        class="print-document-history-text-cell print-document-history-text-3 notosansthai-normal-vulcan-15px">
+                        ปพ.1 : พ</div>
+                    </div>
+                  </article>
+                  <article class="print-document-history-column-table-default">
+                    <div class="print-document-history-table-header">
+                      <div class="print-document-history-header-7 notosansthai-semi-bold-vulcan-15px">จำนวนตัวเลข</div>
+                    </div>
+                    <div class="print-document-history-base-table-cell">
+                      <div class="print-document-history-text-cell-1 notosansthai-normal-black-16px">100,000</div>
+                    </div>
+                    <div class="print-document-history-base-table-cell">
+                      <div class="print-document-history-text-cell-1 notosansthai-normal-black-16px">100,000</div>
+                    </div>
+                    <div class="print-document-history-base-table-cell">
+                      <div class="print-document-history-text-cell-1 notosansthai-normal-black-16px">100,000</div>
+                    </div>
+                    <div class="print-document-history-base-table-cell">
+                      <div class="print-document-history-text-cell-1 notosansthai-normal-black-16px">100,000</div>
+                    </div>
+                    <div class="print-document-history-base-table-cell">
+                      <div class="print-document-history-text-cell-1 notosansthai-normal-black-16px">100,000</div>
+                    </div>
+                    <div class="print-document-history-base-table-cell">
+                      <div class="print-document-history-text-cell-1 notosansthai-normal-black-16px">100,000</div>
+                    </div>
+                    <div class="print-document-history-base-table-cell">
+                      <div class="print-document-history-text-cell-1 notosansthai-normal-black-16px">100,000</div>
+                    </div>
+                    <div class="print-document-history-base-table-cell">
+                      <div class="print-document-history-text-cell-1 notosansthai-normal-black-16px">100,000</div>
+                    </div>
+                    <div class="print-document-history-base-table-cell">
+                      <div class="print-document-history-text-cell-1 notosansthai-normal-black-16px">100,000</div>
+                    </div>
+                    <div class="print-document-history-base-table-cell">
+                      <div class="print-document-history-text-cell-1 notosansthai-normal-black-16px">100,000</div>
+                    </div>
+                  </article>
+                  
+                </div>
+                <div class="print-document-history-input-select-button-footer-default">
+                  <div class="print-document-history-frame-38263">
+                    <div class="print-document-history-input-select-1">
+                      <div class="print-document-history-select-field">
+                        <div class="print-document-history-select-1 notosansthai-normal-slate-gray-15px">แสดง 10</div>
+                        <img class="print-document-history-icon-3" src="img/dropdown-icon-44.svg" alt="dropdown-icon" />
+                      </div>
+                    </div>
+                    
+                  </div>
+                  <div class="print-document-history-pagination">
+                    <a href="javascript:SubmitForm('form10')">
+                      <div class="print-document-history-button"><img class="print-document-history-icon-2 icon-3"
+                          src="img/icon-178.svg" alt="icon" /></div>
+                    </a><a href="javascript:SubmitForm('form10')">
+                      <div class="print-document-history-button-2 print-document-history-button-3">
+                        <div class="print-document-history-text-sm-1 print-document-history-text-sm-3">1</div>
+                      </div>
+                    </a><a href="javascript:SubmitForm('form10')">
+                      <div class="print-document-history-button-1 print-document-history-button-3">
+                        <div
+                          class="print-document-history-text-sm print-document-history-text-3 notosansthai-medium-blue-15px">
+                          ...</div>
+                      </div>
+                    </a><a href="javascript:SubmitForm('form10')">
+                      <div class="print-document-history-button-1 print-document-history-button-3">
+                        <div
+                          class="print-document-history-text-sm-2 print-document-history-text-sm-3 notosansthai-medium-blue-15px">
+                          10</div>
+                      </div>
+                    </a><a href="javascript:SubmitForm('form10')">
+                      <div class="print-document-history-button"><img class="print-document-history-icon-2 icon-3"
+                          src="img/icon-179.svg" alt="icon" /></div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <footer class="footer">
     <p class="copyright-2024">Copyright 2024&nbsp;&nbsp; องค์การค้าของ สกสค.</p>
   </footer>
 
   <script>
     /* Copyright (c) 2016 Tobias Buschor https://goo.gl/gl0mbf | MIT License https://goo.gl/HgajeK */
+
+    
+
+    let isContentMenuHam = false;
+
+    function showMenuHam() {
+      isContentMenuHam = !isContentMenuHam;
+      const contentMenuHam = document.getElementById("contentMenuHam");
+      if (isContentMenuHam) {
+        contentMenuHam.style.display = "flex";
+      } else {
+        contentMenuHam.style.display = "none";
+      }
+    }
 
     if (!HTMLFormElement.prototype.reportValidity) {
       HTMLFormElement.prototype.reportValidity = function () {
@@ -569,12 +1433,12 @@
     function showMenuCollap() {
       isCollape = !isCollape;
       const content = document.getElementById("collapMenu");
-
       if (isCollape) {
         content.style.display = "block";
       } else {
         content.style.display = "none";
       }
+      
     }
 
     function showMenuCollap2() {
@@ -598,7 +1462,7 @@
         content2.style.display = "none";
       }
     }
-    
+
   </script>
 </body>
 
