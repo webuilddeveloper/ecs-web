@@ -32730,6 +32730,27 @@ body.no-scroll {
     width: 100%;
     line-height: normal;
   }
+
+  .content-center {
+    margin-top: 5px;
+}
+
+.content-ecs .frame-38356 {
+    margin-top: 50px;
+    width: -webkit-fill-available;
+}
+
+.content-ecs .frame-container {
+    min-width: -webkit-fill-available;
+}
+
+.content-ecs .frame-93 {
+    width: -webkit-fill-available;
+}
+
+.content-ecs .frame-93-2 {
+    width: auto;
+}
 }
 
 /* สำหรับ Mobile */
@@ -35850,9 +35871,12 @@ body.no-scroll {
     overflow: hidden;
     position: relative;
     width: 95px;
-    .container-menu-ham {
-    width: -webkit-fill-available;
-    margin-top: 15px;
+    
+}
+
+.container-menu-ham {
+  width: -webkit-fill-available;
+  margin-top: 15px;
 }
 
 .menu-ham {
@@ -35882,6 +35906,58 @@ body.no-scroll {
     border-radius: 14px 14px 14px 14px;
     box-shadow: 5px 5px 6px 0 rgba(0, 0, 0, 0.2), 0 0px 6px 0 rgba(0, 0, 0, 0.19);
     z-index: 9999;
+}
+
+.content-center {
+  margin-top: 5px;
+}
+
+.content-ecs .frame-38356 {
+  margin-top: 50px;
+  width: -webkit-fill-available;
+}
+
+.content-ecs .frame-container {
+  min-width: -webkit-fill-available;
+}
+
+.content-ecs .frame-93 {
+  width: -webkit-fill-available;
+  height: -webkit-fill-available;
+}
+
+.content-ecs .frame-93-2 {
+  width: auto;
+}
+
+.container-nav-bar {
+  overflow: scroll;
+  width: -webkit-fill-available;
+}
+
+.content-ecs .frame-38355 {
+  width: max-content;
+}
+
+.content-ecs .text-1-title {
+  margin-right: 0;
+}
+
+.content-ecs .frame-38-4 {
+  height: auto;
+  align-items: flex-start;
+}
+
+.content-ecs .frame-94 {
+  height: auto;
+}
+
+.content-ecs .frame-38433 {
+  flex-wrap: wrap;
+}
+
+.content-ecs .text-2-title {
+  margin-right: 0;
 }
 
 }
