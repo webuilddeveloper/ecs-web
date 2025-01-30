@@ -35960,6 +35960,64 @@ body.no-scroll {
     margin-right: 0;
   }
 
+  .order-details-cancel-image-8 {
+    height: 95px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 95px;
+  }
+
+  .order-details-cancel-frame-9 {
+    align-items: center;
+    display: inline-flex;
+    flex: 0 0 auto;
+    flex-direction: row;
+    gap: 4px;
+    position: relative;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .order-details-cancel-frame-18 {
+    align-items: center;
+    background-color: #efefef;
+    border-radius: 62px;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    overflow: hidden;
+    padding: 6px 12px;
+    position: relative;
+  }
+
+  .order-details-button-3-2 {
+    background-color: var(--gray);
+    border-radius: 10px;
+    display: flex;
+    gap: 8px;
+    padding: 8px 24px;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .order-details-button-4 {
+    background-color: var(--main);
+    justify-content: center;
+    border-radius: 10px;
+    display: flex;
+    gap: 8px;
+    padding: 8px 24px;
+    width: 100%;
+  }
+
+  .order-details-dialog {
+    width: -webkit-fill-available;
+    height: -webkit-fill-available;
+    background: transparent;
+    border: none;
+  }
+
   .order-details-button-5 {
     background-color: var(--white);
     border: 1px solid;
