@@ -33832,7 +33832,7 @@ body.no-scroll {
   }
 
   .pdpa-scrollable-content {
-    padding: 30px;
+    padding: 30px !important;
   }
 
   .register-non-formal-education-flex-row {
@@ -35474,7 +35474,7 @@ body.no-scroll {
   }
 
   .pdpa-scrollable-content {
-    padding: 30px;
+    padding: 30px !important;
   }
 
   .register-non-formal-education {

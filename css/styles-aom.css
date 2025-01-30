@@ -1,7 +1,61 @@
 
 
 @media (min-width: 768px) and (max-width: 1023px) {
-    
+    .register-educational-service-area {
+        width: -webkit-fill-available;
+    }
+
+    .pdpa-frame-38264 {
+        width: -webkit-fill-available;
+        padding: 20px;
+    }
+
+    .register-educational-service-area-frame-38294 {
+        width: -webkit-fill-available;
+    }
+
+    .register-educational-service-area-frame-27 {
+        width: -webkit-fill-available;
+    }
+
+    .register-educational-service-area-frame-38298 {
+        width: -webkit-fill-available;
+    }
+
+    .register-educational-service-area-frame-38298 {
+        width: -webkit-fill-available;
+    }
+
+    .register-non-formal-education {
+        width: -webkit-fill-available;
+    }
+
+    .register-non-formal-education-flex-row {
+        min-width: -webkit-fill-available;
+        margin-top: 15px;
+        margin-left: 0;
+    }
+
+    .register-non-formal-education-frame-38294 {
+        width: -webkit-fill-available;
+    }
+
+    .register-non-formal-education-frame-27 {
+        width: -webkit-fill-available;
+        padding: 20px;
+    }
+
+    .register-non-formal-education-frame-3828-1 {
+        width: fit-content;
+    }
+
+    .register-non-formal-education-frame-38298 {
+        width: -webkit-fill-available;
+    }
+
+    .register-non-formal-education-frame-14 {
+        margin-top: 0;
+    }
 }
 
 @media (max-width: 767px) {
@@ -48,6 +102,11 @@
 
     .print-document-information-frame-2 {
         width: -webkit-fill-available;
+    }
+
+    .pdpa-frame-38264 {
+        width: -webkit-fill-available;
+        padding: 20px;
     }
 
     
