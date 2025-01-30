@@ -13732,7 +13732,7 @@ input:focus {
 .notosansthai-normal-black-16px {
   color: var(--black);
   font-family: var(--font-family-noto_sans_thai);
-  font-size: var(--font-size-14);
+  font-size: var(--font-size-16);
   font-style: normal;
   font-weight: 400;
 }
@@ -29767,7 +29767,7 @@ body.no-scroll {
     min-width: 552px;
     justify-content: center;
   }
-  
+
   .purchase-order-shipping-frame-container {
     background-color: #fff;
     border-radius: 10px;
@@ -29787,7 +29787,7 @@ body.no-scroll {
     position: relative;
     width: 472px;
   }
-  
+
   .purchase-order-shipping-frame-38262 {
     align-items: center;
     display: flex;
@@ -29796,6 +29796,23 @@ body.no-scroll {
     gap: 24px;
     height: 42px;
     position: relative;
+  }
+
+  .group-delete {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: flex-end;
+  }
+
+  .img-delete {
+    height: 20px;
+    width: 20px;
+  }
+
+  .img-delete-m {
+    height: 10px;
+    width: 10px;
   }
 
 }
@@ -31317,7 +31334,7 @@ body.no-scroll {
     display: flex;
     flex-direction: column;
     gap: 40px;
-    margin-top: 50px;
+    margin-top: 30px;
     position: relative;
     width: 100%;
     padding: 20px;
@@ -31444,6 +31461,7 @@ body.no-scroll {
     padding: 16px;
     position: relative;
     width: 100%;
+    height: 140px;
   }
 
   .draft-school-detail-edit-frame-38446 {
@@ -31453,13 +31471,13 @@ body.no-scroll {
     gap: 48px;
     margin-right: -16.00px;
     position: relative;
-    width: 1196px;
+    width: 100%;
   }
 
   .draft-school-detail-edit-frame-38408 {
     height: 66px;
     position: relative;
-    width: 1088px;
+    width: 100%;
   }
 
   .draft-school-detail-edit-frame-38407 {
@@ -31468,7 +31486,7 @@ body.no-scroll {
     flex-direction: column;
     gap: 15px;
     position: relative;
-    width: 1147px;
+    width: 100%;
   }
 
   .draft-school-detail-edit-frame-38269 {
@@ -31477,7 +31495,7 @@ body.no-scroll {
     flex: 0 0 auto;
     gap: 15px;
     position: relative;
-    width: 1094px;
+    width: 100%;
   }
 
   .draft-school-detail-edit-text-6 {
@@ -31494,7 +31512,7 @@ body.no-scroll {
     letter-spacing: 0;
     line-height: normal;
     position: relative;
-    width: 1094px;
+    width: 100%;
   }
 
   .draft-school-detail-edit-dropdown {
@@ -32197,7 +32215,7 @@ body.no-scroll {
     min-width: 552px;
     justify-content: center;
   }
-  
+
   .purchase-order-shipping-frame-container {
     background-color: #fff;
     border-radius: 10px;
@@ -32217,7 +32235,7 @@ body.no-scroll {
     position: relative;
     width: 472px;
   }
-  
+
   .purchase-order-shipping-frame-38262 {
     align-items: center;
     display: flex;
@@ -32226,6 +32244,27 @@ body.no-scroll {
     gap: 24px;
     height: 42px;
     position: relative;
+  }
+
+  .notosansthai-normal-op6-black-20px {
+    color: var(--bkack);
+    opacity: 0.6;
+    font-family: var(--font-family-noto_sans_thai);
+    font-size: var(--font-size-20);
+    font-style: normal;
+    font-weight: 400;
+  }
+
+  .group-delete {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: flex-end;
+  }
+
+  .img-delete {
+    height: 20px;
+    width: 20px;
   }
 
 }
@@ -33449,7 +33488,7 @@ body.no-scroll {
     display: flex;
     flex: 0 0 auto;
     flex-direction: column;
-    gap: 24px;
+    gap: 15px;
     overflow: hidden;
     padding: 10px;
     position: relative;
@@ -34123,6 +34162,14 @@ body.no-scroll {
     text-align: center;
   }
 
+  .draft-school-detail-edit-text_label-m {
+    color: var(--main);
+    font-family: var(--font-family-noto_sans_thai);
+    font-size: var(--font-size-13);
+    font-weight: 600;
+    text-align: center;
+  }
+
   .draft-school-detail-edit-text-1-1 {
     align-self: flex-end;
     color: var(--bkack);
@@ -34141,9 +34188,7 @@ body.no-scroll {
     align-self: center;
     display: flex;
     flex-direction: column;
-    gap: 40px;
-    margin-left: 56.0px;
-    margin-top: 82px;
+    margin-top: 50px;
     position: relative;
     width: 100%;
   }
@@ -34168,9 +34213,9 @@ body.no-scroll {
     display: flex;
     flex: 0 0 auto;
     flex-direction: column;
-    gap: 24px;
+    gap: 15px;
     overflow: hidden;
-    padding: 25px 24px;
+    padding: 10px;
     position: relative;
     width: 100%;
   }
@@ -34200,7 +34245,7 @@ body.no-scroll {
   .draft-school-detail-edit-xxxxxxxx {
     color: var(--bkack);
     font-family: var(--font-family-noto_sans_thai);
-    font-size: 28px;
+    font-size: 16px;
     font-weight: 500;
     letter-spacing: 0;
     line-height: 42.0px;
@@ -34214,14 +34259,13 @@ body.no-scroll {
     border-color: var(--main);
     border-radius: 10px;
     display: inline-flex;
-    flex: 0 0 auto;
-    padding: 8px 24px;
+    padding: 5px;
   }
 
   .draft-school-detail-edit-text_label-1 {
     color: var(--main);
     font-family: var(--font-family-noto_sans_thai);
-    font-size: var(--font-size-xs);
+    font-size: var(--font-size-13);
     font-weight: 600;
     text-align: center;
   }
@@ -34238,13 +34282,13 @@ body.no-scroll {
 
   .draft-school-detail-edit-text {
     margin-top: -1.00px;
-    width: 314px;
+    width: 100%;
   }
 
   .draft-school-detail-edit-text-4 {
     margin-top: -1.00px;
     text-align: right;
-    width: 866px;
+    width: 100%;
   }
 
   .draft-school-detail-edit-line {
@@ -34269,22 +34313,22 @@ body.no-scroll {
     padding: 16px;
     position: relative;
     width: 100%;
+    height: 150px;
   }
 
   .draft-school-detail-edit-frame-38446 {
     align-items: flex-start;
     display: flex;
     flex: 0 0 auto;
-    gap: 48px;
     margin-right: -16.00px;
     position: relative;
-    width: 1196px;
+    width: 100%;
   }
 
   .draft-school-detail-edit-frame-38408 {
     height: 66px;
     position: relative;
-    width: 1088px;
+    width: 100%;
   }
 
   .draft-school-detail-edit-frame-38407 {
@@ -34293,7 +34337,7 @@ body.no-scroll {
     flex-direction: column;
     gap: 15px;
     position: relative;
-    width: 1147px;
+    width: 100%;
   }
 
   .draft-school-detail-edit-frame-38269 {
@@ -34302,7 +34346,7 @@ body.no-scroll {
     flex: 0 0 auto;
     gap: 15px;
     position: relative;
-    width: 1094px;
+    width: 100%;
   }
 
   .draft-school-detail-edit-text-6 {
@@ -34319,7 +34363,7 @@ body.no-scroll {
     letter-spacing: 0;
     line-height: normal;
     position: relative;
-    width: 1094px;
+    width: 100%;
   }
 
   .draft-school-detail-edit-dropdown {
@@ -34397,7 +34441,7 @@ body.no-scroll {
   }
 
   .draft-school-detail-edit-frame-38-1 {
-    align-items: center;
+    align-items: flex-start;
     align-self: stretch;
     display: flex;
     gap: 16px;
@@ -34447,6 +34491,7 @@ body.no-scroll {
     margin-bottom: -1.00px;
     margin-top: -1.00px;
     position: relative;
+    width: 100%;
   }
 
   .draft-school-detail-edit-frame-93 {
@@ -34456,17 +34501,16 @@ body.no-scroll {
     gap: 6px;
     height: 110px;
     position: relative;
-    width: 281px;
+    width: 100%;
   }
 
   .draft-school-detail-edit-text-10 {
     color: var(--bkack);
     font-family: var(--font-family-noto_sans_thai);
-    font-size: var(--font-size-l);
+    font-size: var(--font-size-13);
     font-weight: 600;
     margin-right: -155.00px;
     margin-top: -1.00px;
-    width: fit-content;
   }
 
   .draft-school-detail-edit-frame-9 {
@@ -34698,7 +34742,7 @@ body.no-scroll {
     border-radius: 10px;
     display: flex;
     padding: 8px 24px;
-    width: 223px;
+    width: 155px;
   }
 
   .draft-school-detail-edit-button-3 {
@@ -34706,7 +34750,7 @@ body.no-scroll {
     border-radius: 10px;
     display: flex;
     padding: 8px 24px;
-    width: 245px;
+    width: 180px;
   }
 
   .draft-school-detail-edit-text_label-4 {
@@ -34766,6 +34810,14 @@ body.no-scroll {
     margin-top: -1.00px;
     position: relative;
     width: fit-content;
+    width: 40px;
+  }
+
+  .draft-school-detail-edit-text_label-5-2 {
+    letter-spacing: 0;
+    line-height: normal;
+    margin-top: -1.00px;
+    position: relative;
   }
 
   .draft-school-detail-edit-xxxx-2 {
@@ -34833,7 +34885,6 @@ body.no-scroll {
     font-style: normal;
     font-weight: 400;
   }
-
 
   .notosansthai-normal-black-13px {
     color: var(--bkack);
@@ -35193,7 +35244,7 @@ body.no-scroll {
     height: 287px;
     min-width: 350px;
   }
-  
+
   .purchase-order-shipping-frame-container {
     background-color: #fff;
     border-radius: 10px;
@@ -35212,7 +35263,7 @@ body.no-scroll {
     position: relative;
     width: 272px;
   }
-  
+
   .purchase-order-shipping-frame-38262 {
     align-items: center;
     display: inline-flex;
@@ -35251,6 +35302,27 @@ body.no-scroll {
     position: relative;
   }
 
+  .request-detail-school-flex-row-1 {
+    align-items: flex-start;
+    display: flex;
+    gap: 324px;
+    margin-top: 62px;
+  }
+
+  .request-detail-school-flex-row-2 {
+    align-items: flex-start;
+    display: flex;
+    gap: 324px;
+    min-width: 762px;
+    justify-content: center;
+  }
+
+  .img-delete {
+    height: 20px;
+    width: 20px;
+  }
+
+  /* mobile */
 }
 
 .purchase-order-popup-container {
