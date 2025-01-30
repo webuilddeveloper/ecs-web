@@ -29816,6 +29816,65 @@ body.no-scroll {
     width: 10px;
   }
 
+  .order-details-button-3-2 {
+    background-color: var(--gray);
+    border-radius: 10px;
+    display: flex;
+    gap: 8px;
+    padding: 8px 24px;
+    width: 223px;
+    justify-content: center;
+  }
+  
+  .order-details-button-4 {
+    background-color: var(--main);
+    justify-content: center;
+    border-radius: 10px;
+    display: flex;
+    gap: 8px;
+    padding: 8px 24px;
+    width: 245px;
+  }
+
+  .order-details-dialog {
+    width: -webkit-fill-available;
+    height: -webkit-fill-available;
+    background: transparent;
+    border: none;
+  }
+
+  .order-details-button-5 {
+    background-color: var(--white);
+    border: 1px solid;
+    border-color: var(--main);
+    border-radius: 10px;
+    cursor: pointer;
+    display: flex;
+    gap: 8px;
+    padding: 8px 24px;
+    width: 216px;
+  }
+  
+  .order-details-button-6 {
+    background-color: var(--main);
+    border-radius: 10px;
+    cursor: pointer;
+    display: flex;
+    gap: 8px;
+    padding: 8px 24px;
+    width: 216px;
+  }
+  
+  .order-details-text-field-dialog {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    /* height: 85px; */
+    padding: 0px 0px 8px;
+    position: relative;
+    width: 621px;
+  }
 }
 
 /* สำหรับ Tablet */
@@ -32518,6 +32577,66 @@ body.no-scroll {
     height: 110px;
     position: relative;
     width: 100%;
+  }
+
+  .order-details-button-3-2 {
+    background-color: var(--gray);
+    border-radius: 10px;
+    display: flex;
+    gap: 8px;
+    padding: 8px 24px;
+    width: 223px;
+    justify-content: center;
+  }
+  
+  .order-details-button-4 {
+    background-color: var(--main);
+    justify-content: center;
+    border-radius: 10px;
+    display: flex;
+    gap: 8px;
+    padding: 8px 24px;
+    width: 245px;
+  }
+
+  .order-details-dialog {
+    width: -webkit-fill-available;
+    height: -webkit-fill-available;
+    background: transparent;
+    border: none;
+  }
+
+  .order-details-button-5 {
+    background-color: var(--white);
+    border: 1px solid;
+    border-color: var(--main);
+    border-radius: 10px;
+    cursor: pointer;
+    display: flex;
+    gap: 8px;
+    padding: 8px 24px;
+    width: 216px;
+  }
+  
+  .order-details-button-6 {
+    background-color: var(--main);
+    border-radius: 10px;
+    cursor: pointer;
+    display: flex;
+    gap: 8px;
+    padding: 8px 24px;
+    width: 216px;
+  }
+
+  .order-details-text-field-dialog {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    /* height: 85px; */
+    padding: 0px 0px 8px;
+    position: relative;
+    width: 621px;
   }
 }
 
@@ -35670,6 +35789,66 @@ body.no-scroll {
     overflow: hidden;
     padding: 6px 12px;
     position: relative;
+  }
+
+  .order-details-button-3-2 {
+    background-color: var(--gray);
+    border-radius: 10px;
+    display: flex;
+    gap: 8px;
+    padding: 8px 24px;
+    width: 100%;
+    justify-content: center;
+  }
+  
+  .order-details-button-4 {
+    background-color: var(--main);
+    justify-content: center;
+    border-radius: 10px;
+    display: flex;
+    gap: 8px;
+    padding: 8px 24px;
+    width: 100%;
+  }
+
+  .order-details-dialog {
+    width: -webkit-fill-available;
+    height: -webkit-fill-available;
+    background: transparent;
+    border: none;
+  }
+
+  .order-details-button-5 {
+    background-color: var(--white);
+    border: 1px solid;
+    border-color: var(--main);
+    border-radius: 10px;
+    cursor: pointer;
+    display: flex;
+    gap: 8px;
+    padding: 8px 24px;
+    width: 100%;
+  }
+  
+  .order-details-button-6 {
+    background-color: var(--main);
+    border-radius: 10px;
+    cursor: pointer;
+    display: flex;
+    gap: 8px;
+    padding: 8px 24px;
+    width: 100%;
+  }
+
+  .order-details-text-field-dialog {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    /* height: 85px; */
+    padding: 0px 0px 8px;
+    position: relative;
+    width: 100%;
   }
 }
 
