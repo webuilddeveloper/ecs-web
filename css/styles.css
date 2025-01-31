@@ -37892,7 +37892,7 @@ body.no-scroll {
     border: 1px solid;
     border-color: #a2a2a2;
     border-radius: 8.66px;
-    height: 120px;
+    height: 110px;
     margin-bottom: -1.00px;
     margin-top: -1.00px;
     overflow: hidden;
@@ -37957,6 +37957,7 @@ body.no-scroll {
     height: 120px;
     position: relative;
     width: 100%;
+    justify-content: space-between;
   }
 
   .request-detail-school-text-12 {
@@ -37970,12 +37971,13 @@ body.no-scroll {
   }
 
   .request-detail-school-frame-9 {
-    align-items: flex-start;
+    align-items: center;
     display: inline-flex;
     flex: 0 0 auto;
-    flex-direction: column;
+    flex-direction: row;
     gap: 4px;
     position: relative;
+    justify-content: space-between;
   }
 
   .request-detail-school-text-1-1 {
@@ -38010,7 +38012,7 @@ body.no-scroll {
     overflow: hidden;
     padding: 12px 20px;
     position: relative;
-    width: 129px;
+    width: auto;
   }
 
   .request-detail-school-text-14 {
