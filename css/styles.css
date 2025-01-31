@@ -36823,6 +36823,7 @@ body.no-scroll {
     gap: 20px;
     position: relative;
     width: 100%;
+    flex-wrap: wrap;
   }
 
   .purchase-order-shipping-frame-38406 {

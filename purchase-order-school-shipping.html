@@ -312,6 +312,11 @@
                 <div class="purchase-order-shipping-text-23">ชำระเงิน</div>
               </div>
             </a>
+            <a onclick="showPopupSubmitRequest()">
+              <div class="purchase-order-shipping-frame-14">
+                <div class="purchase-order-shipping-text-23">ขอคำส่งใบอนุญาต</div>
+              </div>
+            </a>
           </div>
         </div>
       </div>
@@ -614,6 +619,11 @@
             </a> <a onclick="showPopup()" style="width: 100%;">
               <div class="purchase-order-shipping-frame-14">
                 <div class="purchase-order-shipping-text-23">ชำระเงิน</div>
+              </div>
+            </a>
+            <a onclick="showPopupSubmitRequest()" style="width: 100%;">
+              <div class="purchase-order-shipping-frame-14">
+                <div class="purchase-order-shipping-text-23">ขอคำส่งใบอนุญาต</div>
               </div>
             </a>
           </div>
@@ -925,6 +935,11 @@
                 <div class="purchase-order-shipping-text-23" style="font-size: 15px;">ชำระเงิน</div>
               </div>
             </a>
+            <a onclick="showPopupSubmitRequest()" style="width: 100%;">
+              <div class="purchase-order-shipping-frame-14">
+                <div class="purchase-order-shipping-text-23" style="font-size: 15px;">ขอคำส่งใบอนุญาต</div>
+              </div>
+            </a>
           </div>
         </div>
       </div>
@@ -1121,6 +1136,73 @@
       </div>
     </div>
   </div>
+  <div id="contentSubmitRequest" class="purchase-order-shipping-view" style="display: none;">
+    <div class="purchase-order-shipping-popup">
+      <div class="purchase-order-shipping-frame-container">
+        <div class="purchase-order-shipping-frame-38264">
+          <div class="purchase-order-shipping-frame-38266">
+            <div class="purchase-order-shipping-frame-38265">
+              <h1
+                class="purchase-order-shipping-text_label-2 purchase-order-shipping-valign-text-middle purchase-order-shipping-text_label-5">
+                ยืนยันการส่งใบขออนุญาต</h1>
+              <div
+                class="purchase-order-shipping-text_label-3 purchase-order-shipping-valign-text-middle purchase-order-shipping-text_label-5">
+                คุณต้องการที่จะยืนยันคำสั่งการส่งใบขออนุญาตนี้หรือไม่<br />หากยืนยันจะเข้าสู่ขั้นตอนการส่งใบขออนุญาต
+              </div>
+            </div>
+            <div class="purchase-order-shipping-frame-38262">
+              <a onclick="showPopupSubmitRequest()">
+                <article class="purchase-order-shipping-button-2 purchase-order-shipping-button-4">
+                  <div
+                    class="purchase-order-shipping-text_label purchase-order-shipping-valign-text-middle purchase-order-shipping-text_label-5">
+                    ยกเลิก</div>
+                </article>
+              </a> <a onclick="showPopupSubmitRequest2()">
+                <article class="purchase-order-shipping-button-3 purchase-order-shipping-button-4">
+                  <div
+                    class="purchase-order-shipping-text_label-4-2 purchase-order-shipping-valign-text-middle  purchase-order-shipping-notosansthai-semi-bold-white-20px">
+                    ยืนยัน
+                  </div>
+                </article>
+              </a>
+            </div>
+          </div>
+        </div>
+        <a onclick="showPopupSubmitRequest()"><img class="purchase-order-shipping-frame-1041" src="img/frame-1041.svg"
+            alt="Frame 1041" />
+        </a>
+      </div>
+    </div>
+  </div>
+  <div id="contentSubmitRequest2" class="purchase-order-shipping-view" style="display: none;">
+    <div class="purchase-order-shipping-popup">
+      <div class="purchase-order-shipping-frame-container">
+        <div class="purchase-order-shipping-frame-38264">
+          <div class="purchase-order-shipping-frame-38266">
+            <div class="purchase-order-shipping-frame-38265">
+              <img class="purchase-order-shipping-check-one" src="img/check-one.svg" alt="check-one" />
+              <h1
+                class="purchase-order-shipping-text_label-2 purchase-order-shipping-valign-text-middle purchase-order-shipping-text_label-4">
+                ยืนยันการส่งใบขออนุญาต</h1>
+            </div>
+            <div class="purchase-order-shipping-frame-38262">
+              <a onclick="showPopupSubmitRequest2()">
+                <article class="purchase-order-shipping-button-3 purchase-order-shipping-button-4">
+                  <div
+                    class="purchase-order-shipping-text_label-4-2 purchase-order-shipping-valign-text-middle purchase-order-shipping-text_label-4 purchase-order-shipping-notosansthai-semi-bold-white-20px">
+                    ตกลง
+                  </div>
+                </article>
+              </a>
+            </div>
+          </div>
+        </div>
+        <a onclick="showPopupSubmitRequest2()"><img class="purchase-order-shipping-frame-1041" src="img/frame-1041-2.svg"
+            alt="Frame 1041" />
+        </a>
+      </div>
+    </div>
+  </div>
 
   <div class="footer">
     <p class="purchase-order-copyright-2024">Copyright 2024&nbsp;&nbsp; องค์การค้าของ สกสค.</p>
@@ -1133,6 +1215,8 @@
     let isShowCancel2 = false;
     let isShowDraft = false;
     let isShowDraft2 = false;
+    let isShowSubmitRequest = false;
+    let isShowSubmitRequest2 = false;
 
 
     if (!HTMLFormElement.prototype.reportValidity) {
@@ -1235,6 +1319,38 @@
         document.body.classList.add('no-scroll');
       } else {
         contentDraft2.style.display = "none";
+        document.body.classList.remove('no-scroll');
+      }
+    }
+
+    function showPopupSubmitRequest() {
+      isShowSubmitRequest = !isShowSubmitRequest;
+      const contentSubmitRequest = document.getElementById("contentSubmitRequest");
+
+      if (isShowSubmitRequest) {
+        contentSubmitRequest.style.display = "flex";
+        document.body.classList.add('no-scroll');
+      } else {
+        contentSubmitRequest.style.display = "none";
+        document.body.classList.remove('no-scroll');
+      }
+    }
+
+    function showPopupSubmitRequest2() {
+      if (isShowSubmitRequest) {
+        isShowSubmitRequest = false;
+        contentSubmitRequest.style.display = "none";
+      }
+
+
+      isShowSubmitRequest2 = !isShowSubmitRequest2;
+      const contentSubmitRequest2 = document.getElementById("contentSubmitRequest2");
+
+      if (isShowSubmitRequest2) {
+        contentSubmitRequest2.style.display = "flex";
+        document.body.classList.add('no-scroll');
+      } else {
+        contentSubmitRequest2.style.display = "none";
         document.body.classList.remove('no-scroll');
       }
     }
