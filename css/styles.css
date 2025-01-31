@@ -15893,12 +15893,13 @@ input:focus {
   display: inline-flex;
   flex: 0 0 auto;
   gap: 4px;
-  margin-right: -85.00px;
+  /* margin-right: -85.00px; */
 }
 
 .content-ecs .frame-93-3 {
-  flex-direction: column;
+  /* flex-direction: column; */
   position: relative;
+  width: -webkit-fill-available;
 }
 
 .content-ecs .frame-38433 {
@@ -35216,6 +35217,48 @@ body.no-scroll {
     width: 100%;
   }
 
+  .content-ecs .frame {
+    padding: 20px;
+  }
+
+  .notosansthai-semi-bold-black-22px {
+    font-size: var(--font-size-15);
+  }
+
+  .notosansthai-normal-black-20px {
+    font-size: var(--font-size-15);
+  }
+
+  .notosansthai-normal-black-16px {
+    font-size: var(--font-size-11);
+  }
+
+  .notosansthai-semi-bold-white-20px {
+    font-size: var(--font-size-13);
+  }
+
+  .content-ecs .frame-38433 {
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  .content-ecs .status-must-delivered {
+    width: max-content;
+  }
+
+  .content-ecs .status-must-received {
+    width: max-content;
+  }
+
+
+  .content-ecs .frame-95 {
+    width: 100px;
+  }
+
+  .content-ecs .image-8 {
+    width: -webkit-fill-available;
+  }
+
   .purchase-order-result-frame-94 {
     align-items: center;
     display: flex;
@@ -38395,6 +38438,24 @@ body.no-scroll {
     position: relative;
   }
 
+  .content-ecs .frame-container {
+    min-width: -webkit-fill-available;
+    height: auto;
+  }
+
+  .request-detail-school-image-8 {
+    height: 110px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 110px;
+  }
+
+  .content-ecs .frame-93-2 {
+    width: auto;
+    height: auto;
+  }
+
   .request-detail-school-frame-94-1 {
     align-items: center;
     display: flex;
@@ -39534,6 +39595,11 @@ body.no-scroll {
     width: fit-content;
   }
 
+
+  .content-ecs .frame-93-1 {
+    justify-content: space-between;
+    align-items: flex-end;
+  }
 
 }
 
