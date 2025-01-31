@@ -15850,6 +15850,12 @@ input:focus {
   width: 110px;
 }
 
+.card-total {
+  padding: 10px 20px;
+  background-color: #F0F0F0;
+  border-radius: 30px;
+}
+
 .content-ecs .frame-94 {
   align-items: center;
   display: flex;
@@ -15879,7 +15885,8 @@ input:focus {
   gap: 6px;
   height: 110px;
   position: relative;
-  width: 281px;
+  /* width: 281px; */
+  width: -webkit-fill-available;
 }
 
 .content-ecs .text-1-title {
@@ -15937,7 +15944,8 @@ input:focus {
   line-height: normal;
   margin-top: -1.00px;
   position: relative;
-  width: fit-content;
+  /* width: fit-content; */
+  width: max-content;
 }
 
 .content-ecs .text-2-title {
@@ -33757,6 +33765,18 @@ body.no-scroll {
   }
 
   .content-ecs .status-must-received {
+    width: max-content;
+  }
+
+  .content-ecs .status-done {
+    min-width: max-content;
+  }
+
+  .content-ecs .status-cancel {
+    width: max-content;
+  }
+
+  .content-ecs .status-process {
     width: max-content;
   }
 
