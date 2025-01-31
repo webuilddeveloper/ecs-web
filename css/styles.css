@@ -30775,8 +30775,8 @@ body.no-scroll {
   }
 
   .pdpa-frame-38264 {
-    width: -webkit-fill-available;
-    padding: 10px;
+    width: -webkit-fill-available !important;
+    padding: 10px !important;
   }
 
   .pdpa-popup {
@@ -32825,11 +32825,6 @@ body.no-scroll {
     width: -webkit-fill-available;
   }
 
-  .pdpa-frame-38264 {
-    width: -webkit-fill-available;
-    padding: 20px;
-  }
-
   .register-educational-service-area-frame-38294 {
     width: -webkit-fill-available;
   }
@@ -33678,6 +33673,24 @@ body.no-scroll {
     font-size: var(--font-size-20);
     font-style: normal;
     font-weight: 600;
+  }
+
+  .register-educational-service-area-flex-row {
+    min-width: -webkit-fill-available;
+    margin-left: 0;
+    margin-top: 15px;
+  }
+
+  .register-educational-service-area-text-99 {
+    margin-right: 0;
+  }
+
+  .register-educational-service-area-text-100 {
+    margin-right: 0;
+  }
+
+  .register-educational-service-area-frame-14 {
+    margin-top: 20px;
   }
 
 }
@@ -34995,6 +35008,7 @@ body.no-scroll {
 
   .pdpa-popup {
     padding: 0 20px;
+    min-width: -webkit-fill-available !important;
   }
 
   .pdpa-scrollable-content {
@@ -35023,7 +35037,8 @@ body.no-scroll {
   }
 
   .register-educational-service-area-frame-14 {
-    margin-top: 0;
+    margin-top: 0 !important;
+    width: -webkit-fill-available !important;
   }
 
   .register-educational-service-area-frame-38298 {
@@ -36668,17 +36683,13 @@ body.no-scroll {
     width: -webkit-fill-available;
   }
 
-  .register-educational-service-area-frame-14 {
-    margin-top: 0;
-  }
-
   .pdpa-frame-38264 {
     width: -webkit-fill-available;
     padding: 10px;
   }
 
   .pdpa-scrollable-content {
-    padding: 30px;
+    padding: 20px !important;
   }
 
   .register-non-formal-education {
@@ -37475,8 +37486,20 @@ body.no-scroll {
   }
 
   .pdpa-frame-38264 {
-    width: -webkit-fill-available;
-    padding: 20px;
+    width: -webkit-fill-available !important;
+    padding: 10px !important;
+  }
+
+  .pdpa-text_label-2 {
+    font-size: var(--font-size-28) !important;
+  }
+
+  .pdpa-text_label-3 {
+    font-size: var(--font-size-15) !important;
+  }
+
+  .pdpa-button-3 {
+    width: -webkit-fill-available !important;
   }
 
 
@@ -39354,12 +39377,6 @@ body.no-scroll {
   padding-right: 10px;
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15), 0 1px 4px rgba(0, 0, 0, 0.1);
   padding: 30px 80px;
-}
-
-.pdpa-frame-38262 {
-  display: flex;
-  justify-content: flex-end;
-  margin-top: 20px;
 }
 
 .pdpa-button-2 {
