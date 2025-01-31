@@ -33807,9 +33807,7 @@ body.no-scroll {
     top: 80px;
     /* width: 1440px; */
     width: -webkit-fill-available;
-=======
     padding: 0px 30px;
->>>>>>> 7729a54bea7e5cb1734f28b97a87274e62ba919a
   }
 
   .payment-qr-frame-38257 {
@@ -34175,7 +34173,7 @@ body.no-scroll {
     justify-content: center;
     pointer-events: none;
     width: 100%;
-    padding: 5px 30px;
+    padding: 5px 20px;
   }
 
   .container-center-horizontal>* {
@@ -39142,6 +39140,26 @@ body.no-scroll {
     gap: 40px;
     position: relative;
     width: 100%;
+  }
+
+  .print-document-information-frame-38520 {
+    width: -webkit-fill-available;
+  }
+
+  .print-document-information-frame-38263 {
+    width: -webkit-fill-available;
+  }
+
+  .print-document-information-text-field {
+    width: 50%;
+  }
+
+  .print-document-information-text_input {
+    width: -webkit-fill-available;
+  }
+
+  .print-document-information-frame-38339 {
+    gap: 20px;
   }
 
 }
