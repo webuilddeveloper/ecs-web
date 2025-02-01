@@ -28788,7 +28788,7 @@ body.no-scroll {
     flex-direction: column;
     gap: 16px;
     position: relative;
-    /* width: 600px; */
+    width: 100%;
   }
 
   .purchase-order-shipping-frame-38408 {
@@ -39533,4 +39533,21 @@ body.no-scroll {
   font-size: var(--font-size-16);
   font-style: normal;
   font-weight: 400;
+}
+
+.register-non-formal-education-dropdown-container {
+  display: flex;
+  gap: 10px; /* เพิ่มช่องว่างระหว่าง Dropdown */
+  align-items: center;
+  width: 100%; /* ให้เต็มพื้นที่ */
+}
+
+.register-non-formal-education-text-field {
+  flex: 1; /* ให้ Dropdown มีขนาดเท่ากัน */
+}
+
+.register-non-formal-education-custom-dropdown {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
 }
