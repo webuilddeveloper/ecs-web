@@ -168,7 +168,7 @@
                   
                 </div>
               </div> -->
-              <!-- <div class="purchase-order-shipping-frame-3839-2 notosansthai-semi-bold-black-20px">
+              <div class="purchase-order-shipping-frame-3839-2 notosansthai-semi-bold-black-20px">
               <div class="purchase-order-shipping-text">ประเภทสั่งซื้อ</div>
               <div class="purchase-order-shipping-frame-2">
                 <label class="purchase-order-shipping-radio-button">
@@ -181,7 +181,7 @@
                   <span class="radio-label">เขตสั่งซื้อให้</span>
                 </label>
               </div>
-            </div> -->
+            </div>
             </div>
             <div class="purchase-order-shipping-frame-3839">
               <div class="purchase-order-shipping-text notosansthai-semi-bold-black-20px">รายการสินค้า</div>
@@ -258,21 +258,25 @@
                 </div>
               </div>
             </div>
+
             <div class="purchase-order-shipping-text-21 notosansthai-semi-bold-black-20px">แนบเอกสารการสั่งซื้อ</div>
-            <div class="purchase-order-shipping-frame-28">
-              <div class="purchase-order-shipping-frame-3826">
-                <div class="purchase-order-shipping-frame-38399">
-                  <div class="payment-proof-button-new-2 ">
+            
+        
+            <!-- รายการไฟล์ที่เลือก -->
+            <div id="file-list-container" class="file-list-container">
+              <div class="purchase-order-shipping-frame">
+                <!-- ปุ่มอัปโหลดไฟล์ -->
+                <label class="payment-proof-button" for="file-upload">
                     <img class="payment-proof-icon" src="img/icon-upload-file-5.svg" alt="icon Upload File" />
-                    <div
-                      class="payment-proof-text_label-2 payment-proof-valign-text-middle payment-proof-text_label-4 kanit-normal-licorice-17px">
-                      เลือกไฟล์
-                    </div>
-                  </div>
-                  <div class="purchase-order-shipping-pdf">กรุณาเลือกไฟล์ .pdf ที่มีขนาดไม่เกิน 1MB</div>
-                </div>
-              </div>
+                    <span>เพิ่มไฟล์</span>
+                </label>
+                <!-- Input file ที่ซ่อน -->
+                <input type="file" id="file-upload" accept=".pdf" multiple>
             </div>
+              <div id="empty-message" class="empty-message">ยังไม่มีไฟล์ที่เลือก</div>
+              <div id="file-items"></div>
+            </div>
+            
             <div class="purchase-order-shipping-frame-28">
               <div class="purchase-order-shipping-frame-102">
                 <div class="purchase-order-shipping-frame-1">
@@ -326,7 +330,7 @@
             </a>
             <a onclick="showPopupSubmitRequest()">
               <div class="purchase-order-shipping-frame-14">
-                <div class="purchase-order-shipping-text-23">ขอคำส่งใบอนุญาต</div>
+                <div class="purchase-order-shipping-text-23">ส่งคำขอใบอนุญาต</div>
               </div>
             </a>
           </div>
@@ -567,20 +571,14 @@
                 </div>
               </div>
             </div>
-            <div class="purchase-order-shipping-text-21 notosansthai-semi-bold-black-20px">แนบเอกสารการสั่งซื้อ</div>
-            <div class="purchase-order-shipping-frame-28">
-              <div class="purchase-order-shipping-frame-3826">
-                <div class="purchase-order-shipping-frame-38399">
-                  <div class="payment-proof-button-new-2 ">
+            <div class="purchase-order-shipping-text">แนบเอกสารการสั่งซื้อ</div>
+            <div class="purchase-order-shipping-frame">
+                <label class="payment-proof-button" for="file-upload">
                     <img class="payment-proof-icon" src="img/icon-upload-file-5.svg" alt="icon Upload File" />
-                    <div
-                      class="payment-proof-text_label-2 payment-proof-valign-text-middle payment-proof-text_label-4 kanit-normal-licorice-17px">
-                      เลือกไฟล์
-                    </div>
-                  </div>
-                  <div class="purchase-order-shipping-pdf">กรุณาเลือกไฟล์ .pdf ที่มีขนาดไม่เกิน 1MB</div>
-                </div>
-              </div>
+                    <span>เลือกไฟล์</span>
+                </label>
+                <input type="file" id="file-upload" accept=".pdf" />
+                <div id="file-name">กรุณาเลือกไฟล์ .pdf ที่มีขนาดไม่เกิน 1MB</div>
             </div>
             <div class="purchase-order-shipping-frame-28">
               <div class="purchase-order-shipping-frame-102">
@@ -635,7 +633,7 @@
             </a>
             <a onclick="showPopupSubmitRequest()" style="width: 100%;">
               <div class="purchase-order-shipping-frame-14">
-                <div class="purchase-order-shipping-text-23">ขอคำส่งใบอนุญาต</div>
+                <div class="purchase-order-shipping-text-23">ส่งคำขอใบอนุญาต</div>
               </div>
             </a>
           </div>
@@ -949,7 +947,7 @@
             </a>
             <a onclick="showPopupSubmitRequest()" style="width: 100%;">
               <div class="purchase-order-shipping-frame-14">
-                <div class="purchase-order-shipping-text-23" style="font-size: 15px;">ขอคำส่งใบอนุญาต</div>
+                <div class="purchase-order-shipping-text-23" style="font-size: 15px;">ส่งคำขอใบอนุญาต</div>
               </div>
             </a>
           </div>
@@ -1382,6 +1380,75 @@
       }
     }
 
+  </script>
+
+  <script>
+    let selectedFiles = []; // เก็บรายการไฟล์
+
+    document.getElementById('file-upload').addEventListener('change', function(event) {
+        const files = event.target.files;
+        const fileItemsContainer = document.getElementById('file-items');
+        const emptyMessage = document.getElementById('empty-message');
+
+        for (let i = 0; i < files.length; i++) {
+            let file = files[i];
+
+            // ตรวจสอบขนาดไฟล์ไม่เกิน 1MB
+            if (file.size > 1024 * 1024) {
+                alert("ไฟล์ " + file.name + " มีขนาดเกิน 1MB และจะไม่ถูกเพิ่ม");
+                continue;
+            }
+
+            // ตรวจสอบว่าไฟล์ถูกเพิ่มไปแล้วหรือยัง
+            if (!selectedFiles.some(f => f.name === file.name)) {
+                selectedFiles.push(file);
+
+                // สร้าง element แสดงไฟล์
+                let fileItem = document.createElement('div');
+                fileItem.className = "file-item";
+                fileItem.innerHTML = `
+                    <span>${file.name}</span>
+                    <span class="remove-file" onclick="removeFile('${file.name}')">❌</span>
+                `;
+
+                fileItemsContainer.appendChild(fileItem);
+            }
+        }
+
+        updateEmptyMessage();
+
+        // รีเซ็ต input file เพื่อให้สามารถอัปโหลดไฟล์เดิมได้อีก
+        this.value = "";
+    });
+
+    function removeFile(fileName) {
+        // ลบไฟล์ออกจากรายการ
+        selectedFiles = selectedFiles.filter(file => file.name !== fileName);
+
+        // อัปเดตรายการไฟล์ใน UI
+        const fileItemsContainer = document.getElementById('file-items');
+        fileItemsContainer.innerHTML = "";
+        selectedFiles.forEach(file => {
+            let fileItem = document.createElement('div');
+            fileItem.className = "file-item";
+            fileItem.innerHTML = `
+                <span>${file.name}</span>
+                <span class="remove-file" onclick="removeFile('${file.name}')">❌</span>
+            `;
+            fileItemsContainer.appendChild(fileItem);
+        });
+
+        updateEmptyMessage();
+    }
+
+    function updateEmptyMessage() {
+        const emptyMessage = document.getElementById('empty-message');
+        if (selectedFiles.length === 0) {
+            emptyMessage.style.display = "block";
+        } else {
+            emptyMessage.style.display = "none";
+        }
+    }
   </script>
 </body>
 

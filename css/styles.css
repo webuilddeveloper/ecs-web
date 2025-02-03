@@ -14834,7 +14834,7 @@ input:focus {
   align-self: stretch;
   display: flex;
   gap: 16px;
-  height: 108px;
+  /* height: 108px; */
   position: relative;
   width: 100%;
 }
@@ -20919,8 +20919,8 @@ a:active {
   background-color: var(--pink);
   border-radius: 10px;
   display: inline-flex;
-  margin-left: 100px;
-  margin-top: 62px;
+  /* margin-left: 100px; */
+  /* margin-top: 62px; */
   padding: 8px 24px;
 }
 
@@ -21051,7 +21051,7 @@ a:active {
   overflow: hidden;
   padding: 8px 16px;
   position: relative;
-  width: 225px;
+  width: 300px;
 }
 
 .payment-proof-text_label-2 {
@@ -39550,4 +39550,78 @@ body.no-scroll {
   width: 100%;
   padding: 10px;
   font-size: 16px;
+}
+
+
+
+.purchase-order-shipping-frame {
+  /* margin-top: 10px; */
+}
+.payment-proof-button {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  width: 150px;
+  text-align: center;
+  background-color: #f8f8f8;
+}
+.payment-proof-icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+.file-list-container {
+  display: flex;
+  flex-wrap: wrap; /* ถ้าไฟล์เยอะ จะขึ้นบรรทัดใหม่ */
+  justify-content: flex-start; /* จัดไฟล์ให้เรียงจากซ้ายไปขวา */
+  align-items: center;
+  overflow-x: auto; /* ถ้ามีไฟล์เยอะ จะเลื่อนแนวนอนได้ */
+  margin-top: 10px;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 20px;
+  /* background-color: #f9f9f9; */
+  min-height: 80px; /* ความสูงขั้นต่ำ */
+  width: 100%; /* กำหนดความกว้างเต็มพื้นที่ */
+  max-width: 100%; /* ขีดจำกัดความกว้าง */
+  white-space: nowrap;
+  position: relative;
+  box-sizing: border-box; /* รวม padding และ border ใน width */
+}
+
+/* ปรับให้ไฟล์แต่ละไฟล์ดูชัดเจนขึ้น */
+.file-item {
+  display: flex;
+  align-items: center;
+  background: #e9e9e9;
+  padding: 8px 12px;
+  border-radius: 8px;
+  margin-right: 10px;
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+/* ปรับขนาดปุ่มลบให้ใหญ่ขึ้น */
+.remove-file {
+  margin-left: 10px;
+  color: red;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+/* ปรับข้อความ "ยังไม่มีไฟล์ที่เลือก" ให้อยู่ตรงกลาง */
+.empty-message {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 16px;
+  color: #888;
+  white-space: nowrap;
+}
+input[type="file"] {
+  display: none;
 }
