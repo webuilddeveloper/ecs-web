@@ -29962,6 +29962,12 @@ body.no-scroll {
     top: 310px;
     width: 354px;
   }
+
+  .waiting-approve-school-collapProduct {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
 }
 
 /* à¸ªà¸³à¸«à¸£à¸±à¸š Tablet */
@@ -39537,13 +39543,16 @@ body.no-scroll {
 
 .register-non-formal-education-dropdown-container {
   display: flex;
-  gap: 10px; /* เพิ่มช่องว่างระหว่าง Dropdown */
+  gap: 10px;
+  /* เพิ่มช่องว่างระหว่าง Dropdown */
   align-items: center;
-  width: 100%; /* ให้เต็มพื้นที่ */
+  width: 100%;
+  /* ให้เต็มพื้นที่ */
 }
 
 .register-non-formal-education-text-field {
-  flex: 1; /* ให้ Dropdown มีขนาดเท่ากัน */
+  flex: 1;
+  /* ให้ Dropdown มีขนาดเท่ากัน */
 }
 
 .register-non-formal-education-custom-dropdown {
@@ -39557,6 +39566,7 @@ body.no-scroll {
 .purchase-order-shipping-frame {
   /* margin-top: 10px; */
 }
+
 .payment-proof-button {
   display: flex;
   align-items: center;
@@ -39567,28 +39577,37 @@ body.no-scroll {
   text-align: center;
   background-color: #f8f8f8;
 }
+
 .payment-proof-icon {
   width: 20px;
   height: 20px;
   margin-right: 10px;
 }
+
 .file-list-container {
   display: flex;
-  flex-wrap: wrap; /* ถ้าไฟล์เยอะ จะขึ้นบรรทัดใหม่ */
-  justify-content: flex-start; /* จัดไฟล์ให้เรียงจากซ้ายไปขวา */
+  flex-wrap: wrap;
+  /* ถ้าไฟล์เยอะ จะขึ้นบรรทัดใหม่ */
+  justify-content: flex-start;
+  /* จัดไฟล์ให้เรียงจากซ้ายไปขวา */
   align-items: center;
-  overflow-x: auto; /* ถ้ามีไฟล์เยอะ จะเลื่อนแนวนอนได้ */
+  overflow-x: auto;
+  /* ถ้ามีไฟล์เยอะ จะเลื่อนแนวนอนได้ */
   margin-top: 10px;
   padding: 15px;
   border: 1px solid #ddd;
   border-radius: 20px;
   /* background-color: #f9f9f9; */
-  min-height: 80px; /* ความสูงขั้นต่ำ */
-  width: 100%; /* กำหนดความกว้างเต็มพื้นที่ */
-  max-width: 100%; /* ขีดจำกัดความกว้าง */
+  min-height: 80px;
+  /* ความสูงขั้นต่ำ */
+  width: 100%;
+  /* กำหนดความกว้างเต็มพื้นที่ */
+  max-width: 100%;
+  /* ขีดจำกัดความกว้าง */
   white-space: nowrap;
   position: relative;
-  box-sizing: border-box; /* รวม padding และ border ใน width */
+  box-sizing: border-box;
+  /* รวม padding และ border ใน width */
 }
 
 /* ปรับให้ไฟล์แต่ละไฟล์ดูชัดเจนขึ้น */
@@ -39622,6 +39641,7 @@ body.no-scroll {
   color: #888;
   white-space: nowrap;
 }
+
 input[type="file"] {
   display: none;
 }
