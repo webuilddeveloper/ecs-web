@@ -2020,41 +2020,42 @@
 
     function increase(param) {
       let number = 0;
+      let currentValue = parseInt(document.getElementById(param).value) || 0;
       switch (param) {
         case "count1":
-          count1++;
+          count1 = currentValue +1;
           number = count1;
           break;
         case "count2":
-          count2++;
+          count2= currentValue +1;
           number = count2;
           break;
         case "count3":
-          count3++;
+          count3= currentValue +1;
           number = count3;
           break;
         case "count4":
-          count4++;
+          count4= currentValue +1;
           number = count4;
           break;
         case "count5":
-          count5++;
+          count5= currentValue +1;
           number = count5;
           break;
         case "count6":
-          count6++;
+          count6= currentValue +1;
           number = count6;
           break;
         case "count7":
-          count7++;
+          count7= currentValue +1;
           number = count7;
           break;
         case "count8":
-          count8++;
+          count8= currentValue +1;
           number = count8;
           break;
         case "count9":
-          count9++;
+          count9= currentValue +1;
           number = count9;
           break;
         default:
@@ -2068,41 +2069,42 @@
 
     function decrease(param) {
       let number = 0;
+      let currentValue = parseInt(document.getElementById(param).value) || 0;
       switch (param) {
         case "count1":
-          count1--;
+          count1 = currentValue - 1;
           number = count1;
           break;
         case "count2":
-          count2--;
+          count2 = currentValue - 1;
           number = count2;
           break;
         case "count3":
-          count3--;
+          count3 = currentValue - 1;
           number = count3;
           break;
         case "count4":
-          count4--;
+          count4 = currentValue - 1;
           number = count4;
           break;
         case "count5":
-          count5--;
+          count5 = currentValue - 1;
           number = count5;
           break;
         case "count6":
-          count6--;
+          count6 = currentValue - 1;
           number = count6;
           break;
         case "count7":
-          count7--;
+          count7 = currentValue - 1;
           number = count7;
           break;
         case "count8":
-          count8--;
+          count8 = currentValue - 1;
           number = count8;
           break;
         case "count9":
-          count9--;
+          count9 = currentValue - 1;
           number = count9;
           break;
         default:
