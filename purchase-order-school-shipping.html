@@ -63,8 +63,9 @@
               <div class="purchase-order-result-text_label purchase-order-result-valign-text-middle">ย้อนกลับ</div>
             </div>
           </a>
-          <h1 class="purchase-order-result-text-1-1">รายละเอียดการจัดส่ง</h1>
+          
         </div>
+        <h1 class="purchase-order-result-text-1-1" style="align-self: center;">รายละเอียดการจัดส่ง</h1>
         <div class="purchase-order-shipping-frame-38493">
           <div class="purchase-order-shipping-frame-38395">
 
@@ -158,37 +159,7 @@
                 </div>
               </div>
             </div>
-            <div class="purchase-order-shipping-frame-g-r">
-              <!-- <div class="purchase-order-shipping-frame-3839-2 notosansthai-semi-bold-black-20px">
-                <div class="purchase-order-shipping-text">ตัวเลือกการจัดส่ง</div>
-                <div class="purchase-order-shipping-frame-2">
-                  <label class="purchase-order-shipping-radio-button">
-                    <input type="radio" name="delivery_option2" value="registered" />
-                    <span class="radio-label">ลงทะเบียน</span>
-                  </label>
-                  <img class="purchase-order-shipping-line" src="img/line-7-2.svg" alt="Line 7" />
-                  <label class="purchase-order-shipping-radio-button">
-                    <input type="radio" name="delivery_option2" value="EMS" />
-                    <span class="radio-label">EMS</span>
-                  </label>
-                  
-                </div>
-              </div> -->
-              <div class="purchase-order-shipping-frame-3839-2 notosansthai-semi-bold-black-20px">
-                <div class="purchase-order-shipping-text">ประเภทสั่งซื้อ</div>
-                <div class="purchase-order-shipping-frame-2">
-                  <label class="purchase-order-shipping-radio-button">
-                    <input type="radio" name="delivery_option2" value="สั่งซื้อเอง" />
-                    <span class="radio-label">สั่งซื้อเอง</span>
-                  </label>
-                  <img class="purchase-order-shipping-line" src="img/line-7-2.svg" alt="Line 7" />
-                  <label class="purchase-order-shipping-radio-button">
-                    <input type="radio" name="delivery_option2" value="เขตสั่งซื้อให้" />
-                    <span class="radio-label">เขตสั่งซื้อให้</span>
-                  </label>
-                </div>
-              </div>
-            </div>
+            
             <div class="purchase-order-shipping-frame-3839">
               <div class="purchase-order-shipping-text notosansthai-semi-bold-black-20px">รายการสินค้า</div>
               <div class="purchase-order-shipping-frame-2">
@@ -245,6 +216,28 @@
                 <div class="purchase-order-shipping-frame">
                   <div class="purchase-order-shipping-frame-95"><img class="purchase-order-shipping-image-8"
                       src="img/image-8-16@2x.png" alt="image 8" /></div>
+                  <div class="purchase-order-shipping-frame-94">
+                    <div class="purchase-order-shipping-frame-93">
+                      <p
+                        class="purchase-order-shipping-text-16 purchase-order-shipping-valign-text-middle notosansthai-semi-bold-black-22px text-bold">
+                        ปพ.3:ป&nbsp;&nbsp;แบบรายงานผู้สำเร็จการศึกษา ระดับประถมศึกษา (ฉบับใช้กับคอม)
+                      </p>
+                      <div class="purchase-order-shipping-text-17">
+                        <span class="notosansthai-normal-black-16px">ราคาต่อแผ่น: </span><span
+                          class="purchase-order-shipping-span1">5 บาท</span>
+                      </div>
+                    </div>
+                    <div class="purchase-order-shipping-frame-95-1">
+                      <div class="purchase-order-shipping-frame-18">
+                        <div class="purchase-order-shipping-address-2 address-3 notosansthai-normal-black-14px">50 แผ่น
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- <div class="purchase-order-shipping-frame">
+                  <div class="purchase-order-shipping-frame-95"><img class="purchase-order-shipping-image-8"
+                      src="img/image-8-16@2x.png" alt="image 8" /></div>
                   <div class="purchase-order-shipping-frame-94-1">
                     <div class="purchase-order-shipping-frame-93">
                       <p
@@ -261,28 +254,78 @@
                       </div>
                     </div>
                   </div>
+                </div> -->
+              </div>
+            </div>
+
+            <div class="purchase-order-shipping-frame-g-r">
+              <!-- <div class="purchase-order-shipping-frame-3839-2 notosansthai-semi-bold-black-20px">
+                <div class="purchase-order-shipping-text">ตัวเลือกการจัดส่ง</div>
+                <div class="purchase-order-shipping-frame-2">
+                  <label class="purchase-order-shipping-radio-button">
+                    <input type="radio" name="delivery_option2" value="registered" />
+                    <span class="radio-label">ลงทะเบียน</span>
+                  </label>
+                  <img class="purchase-order-shipping-line" src="img/line-7-2.svg" alt="Line 7" />
+                  <label class="purchase-order-shipping-radio-button">
+                    <input type="radio" name="delivery_option2" value="EMS" />
+                    <span class="radio-label">EMS</span>
+                  </label>
+                  
+                </div>
+              </div> -->
+              <div class="purchase-order-shipping-frame-3839-2 notosansthai-semi-bold-black-20px">
+                <div class="purchase-order-shipping-text">ประเภทสั่งซื้อ</div>
+                <div class="purchase-order-shipping-frame-2">
+                  <label class="purchase-order-shipping-radio-button">
+                    <input type="radio" name="delivery_option2" value="1" onclick="changeOrderType('1')" checked/>
+                    <span class="radio-label">สั่งซื้อเอง</span>
+                    <div class="purchase-order-shipping-frame" id="order-type-upload">
+                      <!-- ปุ่มอัปโหลดไฟล์ -->
+                      <label class="payment-proof-button" for="file-upload-order-type">
+                        <img class="payment-proof-icon" src="img/icon-upload-file-5.svg" alt="icon Upload File" />
+                        <span class="radio-label">เพิ่มไฟล์</span>
+                      </label>
+                      <!-- Input file ที่ซ่อน -->
+                      <input type="file" id="file-upload-order-type" accept=".pdf" multiple>
+                      <div id="file-items-order-type"></div>
+                    </div>
+                  </label>
+                  <img class="purchase-order-shipping-line" src="img/line-7-2.svg" alt="Line 7" />
+                  <label class="purchase-order-shipping-radio-button">
+                    <input type="radio" name="delivery_option2" value="2" onclick="changeOrderType('2')" />
+                    <span class="radio-label">เขตสั่งซื้อให้</span>
+                    <div class="purchase-order-shipping-frame" id="order-type-upload2">
+                      <label class="payment-proof-button" for="file-upload-order-type2">
+                        <img class="payment-proof-icon" src="img/icon-upload-file-5.svg" alt="icon Upload File" />
+                        <span class="radio-label">เพิ่มไฟล์</span>
+                      </label>
+                      <input type="file" id="file-upload-order-type2" accept=".pdf" multiple>
+                      <div id="file-items-order-type2"></div>
+                    </div>
+                  </label>
                 </div>
               </div>
             </div>
 
-            <div class="purchase-order-shipping-text-21 notosansthai-semi-bold-black-20px">แนบเอกสารการสั่งซื้อ</div>
+            <div class="purchase-order-shipping-frame-3839-2 notosansthai-semi-bold-black-20px">
 
-
-            <!-- รายการไฟล์ที่เลือก -->
-            <div id="file-list-container" class="file-list-container">
-              <div class="purchase-order-shipping-frame">
-                <!-- ปุ่มอัปโหลดไฟล์ -->
-                <label class="payment-proof-button" for="file-upload">
-                  <img class="payment-proof-icon" src="img/icon-upload-file-5.svg" alt="icon Upload File" />
-                  <span>เพิ่มไฟล์</span>
-                </label>
-                <!-- Input file ที่ซ่อน -->
-                <input type="file" id="file-upload" accept=".pdf" multiple>
+              <div class="purchase-order-shipping-text-21 notosansthai-semi-bold-black-20px">แนบเอกสารการสั่งซื้อ</div>
+              <!-- รายการไฟล์ที่เลือก -->
+              <div id="file-list-container" class="file-list-container">
+                <div class="purchase-order-shipping-frame">
+                  <!-- ปุ่มอัปโหลดไฟล์ -->
+                  <label class="payment-proof-button" for="file-upload">
+                    <img class="payment-proof-icon" src="img/icon-upload-file-5.svg" alt="icon Upload File" />
+                    <span>เพิ่มไฟล์</span>
+                  </label>
+                  <!-- Input file ที่ซ่อน -->
+                  <input type="file" id="file-upload" accept=".pdf" multiple>
+                </div>
+                <div id="empty-message" class="empty-message">ยังไม่มีไฟล์ที่เลือก</div>
+                <div id="file-items"></div>
               </div>
-              <div id="empty-message" class="empty-message">ยังไม่มีไฟล์ที่เลือก</div>
-              <div id="file-items"></div>
             </div>
-
             <div class="purchase-order-shipping-frame-28">
               <div class="purchase-order-shipping-frame-102">
                 <div class="purchase-order-shipping-frame-1">
@@ -312,13 +355,22 @@
                     class="purchase-order-shipping-xxxx-2 purchase-order-shipping-valign-text-middle notosansthai-bold-black-20px">
                     xx.xx บาท</div>
                 </div>
+                <div class="purchase-order-shipping-frame-1">
+                  <div
+                    class="purchase-order-shipping-total-vat purchase-order-shipping-valign-text-middle notosansthai-normal-black-20px-2">
+                    ยอดสุทธิ /Grand Total
+                  </div>
+                  <div
+                    class="purchase-order-shipping-xxxx-2 purchase-order-shipping-valign-text-middle notosansthai-bold-black-20px">
+                    xx.xx บาท</div>
+                </div>
                 <img class="purchase-order-shipping-line" src="img/line-7-2.svg" alt="Line 6" />
                 <div class="purchase-order-shipping-frame-1">
                   <div
                     class="purchase-order-shipping-grand-total purchase-order-shipping-valign-text-middle notosansthai-bold-black-20px">
-                    ยอดสุทธิ /Grand Total</div>
-                  <div class="purchase-order-shipping-xxxx-1 purchase-order-shipping-valign-text-middle xxxx-2">xx.xx
-                    บาท
+                   </div>
+                  <div class="purchase-order-shipping-xxxx-1 purchase-order-shipping-valign-text-middle xxxx-2">xxxxxxx
+                    
                   </div>
                 </div>
               </div>
@@ -508,6 +560,7 @@
               </div>
             </div> -->
             </div>
+           
             <div class="purchase-order-shipping-frame-3839">
               <div class="purchase-order-shipping-text notosansthai-semi-bold-black-20px">รายการสินค้า</div>
               <div class="purchase-order-shipping-frame-2">
@@ -570,16 +623,63 @@
                         class="purchase-order-shipping-text-14 purchase-order-shipping-valign-text-middle notosansthai-semi-bold-black-22px text-bold">
                         ปพ.3:ป&nbsp;&nbsp;แบบรายงานผู้สำเร็จการศึกษา ระดับประถมศึกษา (ฉบับใช้กับคอม)
                       </p>
-                      <div class="purchase-order-shipping-text-19 notosansthai-normal-black-16px">ราคาต่อแผ่น: 5 บาท
+                      <div class="purchase-order-shipping-text-17">
+                        <span class="notosansthai-normal-black-16px">ราคาต่อแผ่น: </span><span
+                          class="purchase-order-shipping-span1">5
+                          บาท</span>
                       </div>
                     </div>
                     <div class="purchase-order-shipping-frame-95-1">
-                      <div class="purchase-order-shipping-frame-18-1 notosansthai-normal-black-14px">
-                        <div class="purchase-order-shipping-number">50</div>
-                        <div class="purchase-order-shipping-text-20">แผ่น</div>
+                      <div class="purchase-order-shipping-frame-18">
+                        <div class="purchase-order-shipping-address-2 address-3 notosansthai-normal-black-14px">50 แผ่น
+                        </div>
                       </div>
                     </div>
                   </div>
+                </div>
+                
+              </div>
+            </div>
+            <div class="purchase-order-shipping-frame-g-r">
+              <div class="purchase-order-shipping-frame-3839-2 notosansthai-semi-bold-black-20px">
+                <div class="purchase-order-shipping-text">ประเภทสั่งซื้อ</div>
+                <div class="purchase-order-shipping-frame-2">
+                  <!-- <label class="purchase-order-shipping-radio-button">
+                    <input type="radio" name="delivery_option3" value="registered" />
+                    <span class="radio-label">สั่งซื้อเอง</span>
+                  </label>
+                  <img class="purchase-order-shipping-line" src="img/line-7-2.svg" alt="Line 7" />
+                  <label class="purchase-order-shipping-radio-button">
+                    <input type="radio" name="delivery_option3" value="EMS" />
+                    <span class="radio-label">เขตสั่งซื้อให้</span>
+                  </label> -->
+                  <label class="purchase-order-shipping-radio-button">
+                    <input type="radio" name="delivery_option2" value="1" onclick="changeOrderType('1')" checked/>
+                    <span class="radio-label">สั่งซื้อเอง</span>
+                    <div class="purchase-order-shipping-frame" id="order-type-upload-tablet">
+                      <!-- ปุ่มอัปโหลดไฟล์ -->
+                      <label class="payment-proof-button" for="file-upload-order-type-tablet">
+                        <img class="payment-proof-icon" src="img/icon-upload-file-5.svg" alt="icon Upload File" />
+                        <span class="radio-label">เพิ่มไฟล์</span>
+                      </label>
+                      <!-- Input file ที่ซ่อน -->
+                      <input type="file" id="file-upload-order-type-tablet" accept=".pdf" multiple>
+                      <div id="file-items-order-type-tablet"></div>
+                    </div>
+                  </label>
+                  <img class="purchase-order-shipping-line" src="img/line-7-2.svg" alt="Line 7" />
+                  <label class="purchase-order-shipping-radio-button">
+                    <input type="radio" name="delivery_option2" value="2" onclick="changeOrderType('2')" />
+                    <span class="radio-label">เขตสั่งซื้อให้</span>
+                    <div class="purchase-order-shipping-frame" id="order-type-upload2-tablet">
+                      <label class="payment-proof-button" for="file-upload-order-type2-tablet">
+                        <img class="payment-proof-icon" src="img/icon-upload-file-5.svg" alt="icon Upload File" />
+                        <span class="radio-label">เพิ่มไฟล์</span>
+                      </label>
+                      <input type="file" id="file-upload-order-type2-tablet" accept=".pdf" multiple>
+                      <div id="file-items-order-type2-tablet"></div>
+                    </div>
+                  </label>
                 </div>
               </div>
             </div>
@@ -621,13 +721,21 @@
                     class="purchase-order-shipping-xxxx-2 purchase-order-shipping-valign-text-middle notosansthai-bold-black-20px">
                     xx.xx บาท</div>
                 </div>
+                <div class="purchase-order-shipping-frame-1">
+                  <div
+                    class="purchase-order-shipping-total-vat purchase-order-shipping-valign-text-middle notosansthai-normal-black-20px-2">
+                    ยอดสุทธิ /Grand Total
+                  </div>
+                  <div
+                    class="purchase-order-shipping-xxxx-2 purchase-order-shipping-valign-text-middle notosansthai-bold-black-20px">
+                    xx.xx บาท</div>
+                </div>
                 <img class="purchase-order-shipping-line" src="img/line-7-2.svg" alt="Line 6" />
                 <div class="purchase-order-shipping-frame-1">
                   <div
                     class="purchase-order-shipping-grand-total purchase-order-shipping-valign-text-middle notosansthai-bold-black-20px">
-                    ยอดสุทธิ /Grand Total</div>
-                  <div class="purchase-order-shipping-xxxx-1 purchase-order-shipping-valign-text-middle xxxx-2">xx.xx
-                    บาท
+                    </div>
+                  <div class="purchase-order-shipping-xxxx-1 purchase-order-shipping-valign-text-middle xxxx-2">xxxxxxxxx
                   </div>
                 </div>
               </div>
@@ -816,6 +924,7 @@
               </div>
             </div> -->
             </div>
+            
             <div class="purchase-order-shipping-frame-3839">
               <div class="purchase-order-shipping-text notosansthai-semi-bold-black-20px">รายการสินค้า</div>
               <div class="purchase-order-shipping-frame-2">
@@ -890,6 +999,49 @@
                       </div>
                     </div>
                   </div>
+                </div>
+              </div>
+            </div>
+            <div class="purchase-order-shipping-frame-g-r">
+              <div class="purchase-order-shipping-frame-3839-2 notosansthai-semi-bold-black-20px">
+                <div class="purchase-order-shipping-text">ประเภทสั่งซื้อ</div>
+                <div class="purchase-order-shipping-frame-2">
+                  <!-- <label class="purchase-order-shipping-radio-button">
+                    <input type="radio" name="delivery_option3" value="registered" />
+                    <span class="radio-label">สั่งซื้อเอง</span>
+                  </label>
+                  <img class="purchase-order-shipping-line" src="img/line-7-2.svg" alt="Line 7" />
+                  <label class="purchase-order-shipping-radio-button">
+                    <input type="radio" name="delivery_option3" value="EMS" />
+                    <span class="radio-label">เขตสั่งซื้อให้</span>
+                  </label> -->
+                  <label class="purchase-order-shipping-radio-button">
+                    <input type="radio" name="delivery_option2" value="1" onclick="changeOrderType('1')" checked/>
+                    <span class="radio-label">สั่งซื้อเอง</span>
+                    <div class="purchase-order-shipping-frame" id="order-type-upload-mobile">
+                      <!-- ปุ่มอัปโหลดไฟล์ -->
+                      <label class="payment-proof-button" for="file-upload-order-type-mobile">
+                        <img class="payment-proof-icon" src="img/icon-upload-file-5.svg" alt="icon Upload File" />
+                        <span class="radio-label">เพิ่มไฟล์</span>
+                      </label>
+                      <!-- Input file ที่ซ่อน -->
+                      <input type="file" id="file-upload-order-type-mobile" accept=".pdf" multiple>
+                      <div id="file-items-order-type-mobile"></div>
+                    </div>
+                  </label>
+                  <img class="purchase-order-shipping-line" src="img/line-7-2.svg" alt="Line 7" />
+                  <label class="purchase-order-shipping-radio-button">
+                    <input type="radio" name="delivery_option2" value="2" onclick="changeOrderType('2')" />
+                    <span class="radio-label">เขตสั่งซื้อให้</span>
+                    <div class="purchase-order-shipping-frame" id="order-type-upload2-mobile">
+                      <label class="payment-proof-button" for="file-upload-order-type2-mobile">
+                        <img class="payment-proof-icon" src="img/icon-upload-file-5.svg" alt="icon Upload File" />
+                        <span class="radio-label">เพิ่มไฟล์</span>
+                      </label>
+                      <input type="file" id="file-upload-order-type2-mobile" accept=".pdf" multiple>
+                      <div id="file-items-order-type2-mobile"></div>
+                    </div>
+                  </label>
                 </div>
               </div>
             </div>
@@ -1321,7 +1473,7 @@
                 </article>
               </a><a href="javascript:showSucessDilod()">
                 <article class="button-6 button-7">
-                  <div class="text_label valign-text-middle notosansthai-semi-bold-white-20px">ยืนยัน</div>
+                  <div class="text_label valign-text-middle notosansthai-semi-bold-midnight-white-20px">ยืนยัน</div>
                 </article>
               </a>
             </div>
@@ -1542,10 +1694,110 @@
 
   <script>
     let selectedFiles = []; // เก็บรายการไฟล์
+    let delivery_option2 = '1';
 
-    document.getElementById('file-upload').addEventListener('change', function (event) {
+    // document.getElementById('file-upload').addEventListener('change', function (event) {
+    //   const files = event.target.files;
+    //   const fileItemsContainer = document.getElementById('file-items');
+    //   const emptyMessage = document.getElementById('empty-message');
+
+    //   for (let i = 0; i < files.length; i++) {
+    //     let file = files[i];
+
+    //     // ตรวจสอบขนาดไฟล์ไม่เกิน 1MB
+    //     if (file.size > 1024 * 1024) {
+    //       alert("ไฟล์ " + file.name + " มีขนาดเกิน 1MB และจะไม่ถูกเพิ่ม");
+    //       continue;
+    //     }
+
+    //     // ตรวจสอบว่าไฟล์ถูกเพิ่มไปแล้วหรือยัง
+    //     if (!selectedFiles.some(f => f.name === file.name)) {
+    //       selectedFiles.push(file);
+
+    //       // สร้าง element แสดงไฟล์
+    //       let fileItem = document.createElement('div');
+    //       fileItem.className = "file-item";
+    //       fileItem.innerHTML = `
+    //                 <span>${file.name}</span>
+    //                 <span class="remove-file" onclick="removeFile('${file.name}')">❌</span>
+    //             `;
+
+    //       fileItemsContainer.appendChild(fileItem);
+    //     }
+    //   }
+
+    //   updateEmptyMessage();
+
+    //   // รีเซ็ต input file เพื่อให้สามารถอัปโหลดไฟล์เดิมได้อีก
+    //   this.value = "";
+    // });
+
+    function changeOrderType(param) {
+      const fileItemsOrder = document.getElementById('order-type-upload');
+      const fileItemsOrderTablet = document.getElementById('order-type-upload-tablet');
+      const fileItemsOrderMobile = document.getElementById('order-type-upload-mobile');
+      
+      const fileItemsOrder2 = document.getElementById('order-type-upload2');
+      const fileItemsOrder2Tablet = document.getElementById('order-type-upload2-tablet');
+      const fileItemsOrder2Mobile = document.getElementById('order-type-upload2-mobile');
+
+      if (param == '1') {
+        delivery_option2 = '1';
+        fileItemsOrder.style.display = "flex";
+        fileItemsOrderTablet.style.display = "flex";
+        fileItemsOrderMobile.style.display = "flex";
+
+        fileItemsOrder2.style.display = "none";
+        fileItemsOrder2Tablet.style.display = "none";
+        fileItemsOrder2Mobile.style.display = "none";
+
+        // let fileItem = document.createElement('div');
+        // fileItem.className = "file-items-order-type2";
+        // removeFileOrderType2(file.name)
+      } else {
+        delivery_option2 = '2';
+        fileItemsOrder.style.display = "none";
+        fileItemsOrderTablet.style.display = "none";
+        fileItemsOrderMobile.style.display = "none";
+
+        fileItemsOrder2.style.display = "flex";
+        fileItemsOrder2Tablet.style.display = "flex";
+        fileItemsOrder2Mobile.style.display = "flex";
+
+        // let fileItem = document.createElement('div');
+        // fileItem.className = "file-items-order-type";
+        // removeFileOrderType(file.name)
+      }
+    }
+
+    document.addEventListener('DOMContentLoaded', function () {
+      const fileItemsOrder = document.getElementById('order-type-upload');
+      const fileItemsOrderTablet = document.getElementById('order-type-upload-tablet');
+      const fileItemsOrderMobile = document.getElementById('order-type-upload-mobile');
+      
+      const fileItemsOrder2 = document.getElementById('order-type-upload2');
+      const fileItemsOrder2Tablet = document.getElementById('order-type-upload2-tablet');
+      const fileItemsOrder2Mobile = document.getElementById('order-type-upload2-mobile');
+      if (delivery_option2 == '1') {
+        fileItemsOrder.style.display = "flex";
+        fileItemsOrderTablet.style.display = "flex";
+        fileItemsOrderMobile.style.display = "flex";
+        fileItemsOrder2.style.display = "none";
+        fileItemsOrder2Tablet.style.display = "none";
+        fileItemsOrder2Mobile.style.display = "none";
+      } else {
+        fileItemsOrder.style.display = "none";
+        fileItemsOrderTablet.style.display = "none";
+        fileItemsOrderMobile.style.display = "none";
+        fileItemsOrder2.style.display = "flex";
+        fileItemsOrder2Tablet.style.display = "flex";
+        fileItemsOrder2Mobile.style.display = "flex";
+      }
+    });
+
+    document.getElementById('file-upload-order-type').addEventListener('change', function (event) {
       const files = event.target.files;
-      const fileItemsContainer = document.getElementById('file-items');
+      const fileItemsContainer = document.getElementById('file-items-order-type');
       const emptyMessage = document.getElementById('empty-message');
 
       for (let i = 0; i < files.length; i++) {
@@ -1563,10 +1815,46 @@
 
           // สร้าง element แสดงไฟล์
           let fileItem = document.createElement('div');
-          fileItem.className = "file-item";
+          fileItem.className = "file-items-order-type";
           fileItem.innerHTML = `
                     <span>${file.name}</span>
-                    <span class="remove-file" onclick="removeFile('${file.name}')">❌</span>
+                    <span class="remove-file" onclick="removeFileOrderType('${file.name}')">❌</span>
+                `;
+
+          fileItemsContainer.appendChild(fileItem);
+        }
+      }
+
+      updateEmptyMessage();
+
+      // รีเซ็ต input file เพื่อให้สามารถอัปโหลดไฟล์เดิมได้อีก
+      this.value = "";
+    });
+
+    document.getElementById('file-upload-order-type2').addEventListener('change', function (event) {
+      const files = event.target.files;
+      const fileItemsContainer = document.getElementById('file-items-order-type2');
+      const emptyMessage = document.getElementById('empty-message');
+
+      for (let i = 0; i < files.length; i++) {
+        let file = files[i];
+
+        // ตรวจสอบขนาดไฟล์ไม่เกิน 1MB
+        if (file.size > 1024 * 1024) {
+          alert("ไฟล์ " + file.name + " มีขนาดเกิน 1MB และจะไม่ถูกเพิ่ม");
+          continue;
+        }
+
+        // ตรวจสอบว่าไฟล์ถูกเพิ่มไปแล้วหรือยัง
+        if (!selectedFiles.some(f => f.name === file.name)) {
+          selectedFiles.push(file);
+
+          // สร้าง element แสดงไฟล์
+          let fileItem = document.createElement('div');
+          fileItem.className = "file-items-order-type2";
+          fileItem.innerHTML = `
+                    <span>${file.name}</span>
+                    <span class="remove-file" onclick="removeFileOrderType2('${file.name}')">❌</span>
                 `;
 
           fileItemsContainer.appendChild(fileItem);
@@ -1597,6 +1885,46 @@
       });
 
       updateEmptyMessage();
+    }
+
+    function removeFileOrderType(fileName) {
+      // ลบไฟล์ออกจากรายการ
+      selectedFiles = selectedFiles.filter(file => file.name !== fileName);
+
+      // อัปเดตรายการไฟล์ใน UI
+      const fileItemsContainer = document.getElementById('file-items-order-type');
+      fileItemsContainer.innerHTML = "";
+      selectedFiles.forEach(file => {
+        let fileItem = document.createElement('div');
+        fileItem.className = "file-item-order-type";
+        fileItem.innerHTML = `
+                <span>${file.name}</span>
+                <span class="remove-file" onclick="removeFileOrderType('${file.name}')">❌</span>
+            `;
+        fileItemsContainer.appendChild(fileItem);
+      });
+
+      // updateEmptyMessage();
+    }
+
+    function removeFileOrderType2(fileName) {
+      // ลบไฟล์ออกจากรายการ
+      selectedFiles = selectedFiles.filter(file => file.name !== fileName);
+
+      // อัปเดตรายการไฟล์ใน UI
+      const fileItemsContainer = document.getElementById('file-items-order-type2');
+      fileItemsContainer.innerHTML = "";
+      selectedFiles.forEach(file => {
+        let fileItem = document.createElement('div');
+        fileItem.className = "file-item-order-type2";
+        fileItem.innerHTML = `
+                <span>${file.name}</span>
+                <span class="remove-file" onclick="removeFileOrderType2('${file.name}')">❌</span>
+            `;
+        fileItemsContainer.appendChild(fileItem);
+      });
+
+      // updateEmptyMessage();
     }
 
     function updateEmptyMessage() {
