@@ -39831,3 +39831,18 @@ input[type="file"] {
   width: 367px !important;
 } */
 
+.notification-icon {
+  position: relative;
+  display: inline-block;
+}
+
+.notification-badge {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  width: 10px;
+  height: 10px;
+  background-color: red;
+  border-radius: 50%;
+  display: none; /* ซ่อนจุดแดงเริ่มต้น */
+}
