@@ -27082,9 +27082,9 @@ body.no-scroll {
 
   .purchase-order-image-8 {
     height: 110px;
-    left: 0;
+    /* left: 0; */
     position: absolute;
-    top: 0;
+    /* top: 0; */
     width: 110px;
   }
 
@@ -39388,6 +39388,7 @@ body.no-scroll {
   padding: 8px;
   position: relative;
   align-content: center;
+  text-align: center;
 }
 
 .order-approval-list-base-table-cell-4 {
@@ -39397,9 +39398,11 @@ body.no-scroll {
   border-bottom-width: 1px;
   border-color: var(--geyser);
   gap: 8px;
-  height: 44px;
+  /* height: 44px; */
+  /* height: max-content; */
   padding: 8px;
   position: relative;
+  height: -webkit-fill-available;
 }
 
 .pdpa-view {
@@ -39816,18 +39819,12 @@ input[type="file"] {
   width: -webkit-fill-available;
 }
 
-/* .purchase-order-shipping-frame-14 {
-  align-items: center;
-  background-color: var(--main);
-  border-radius: 62px;
-  cursor: pointer;
-  display: flex;
-  gap: 12px;
-  height: 45px;
-  justify-content: center;
-  overflow: hidden;
-  padding: 16px 54px;
-  position: relative;
-  width: 367px !important;
-} */
+.table-purchase-order {
+  width: -webkit-fill-available;
+}
+
+.tr-table-purchase-order {
+  height: 130px;
+}
+
 
