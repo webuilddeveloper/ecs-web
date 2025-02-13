@@ -28863,6 +28863,7 @@ body.no-scroll {
     gap: 24px;
     /* margin-right: -16.00px; */
     position: relative;
+    width: -webkit-fill-available;
     /* width: 1224px; */
     /* width: 100%; */
   }
@@ -28873,7 +28874,8 @@ body.no-scroll {
     flex-direction: column;
     gap: 15px;
     position: relative;
-    width: 993px;
+    /* width: 993px; */
+    width: -webkit-fill-available;
   }
 
   .purchase-order-shipping-frame-38269 {
@@ -28894,7 +28896,7 @@ body.no-scroll {
   .purchase-order-shipping-frame-38437 {
     align-items: flex-start;
     display: flex;
-    flex: 0 0 auto;
+    /* flex: 0 0 auto; */
     /* gap: 135px; */
     position: relative;
     width: 100%;
@@ -37266,7 +37268,8 @@ body.no-scroll {
   }
 
   .content-ecs .frame-38355 {
-    width: max-content;
+    /* width: max-content; */
+    width: -webkit-fill-available;
     flex-direction: column;
   }
 
@@ -39213,7 +39216,8 @@ body.no-scroll {
     /* height: 85px; */
     padding: 0px 0px 8px;
     position: relative;
-    width: 100%;
+    /* width: 100%; */
+    width: -webkit-fill-available;
   }
 
   .content-ecs .text-field-1 {
