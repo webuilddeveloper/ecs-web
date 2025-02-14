@@ -17837,7 +17837,7 @@ a:active {
 .waiting-approve-school-frame-20 {
   align-items: center;
   align-self: stretch;
-  background-color: #f2f2f2;
+  /* background-color: #f2f2f2; */
   border: 1px solid;
   border-color: #00000033;
   border-radius: 8px;
@@ -17886,9 +17886,10 @@ a:active {
   flex-direction: column;
   gap: 24px;
   overflow: hidden;
-  padding: 25px 24px;
+  padding: 25px 23px;
   position: relative;
   width: 100%;
+  margin-bottom: 10px;
 }
 
 .waiting-approve-school-frame-38339 {
