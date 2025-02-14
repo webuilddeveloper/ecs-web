@@ -26845,9 +26845,6 @@ body.no-scroll {
 
 /* à¸ªà¸³à¸«à¸£à¸±à¸š Desktop */
 @media (min-width: 1024px) {
-  .desktop {
-    display: block;
-  }
 
   .header-ecs {
     background-color: #012a6c;
@@ -33790,9 +33787,6 @@ body.no-scroll {
 
 /* à¸ªà¸³à¸«à¸£à¸±à¸š Mobile */
 @media (max-width: 767px) {
-  .mobile {
-    display: block;
-  }
 
   .header-ecs {
     background-color: #012a6c;
