@@ -39643,3 +39643,7 @@ input[type="file"] {
   display: flex;
   flex-direction: column;
 }
+
+.collapProduct {
+      display: none;
+    }
