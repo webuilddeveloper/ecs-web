@@ -26842,10 +26842,20 @@ body.no-scroll {
   width: 270px;
 }
 
-
+.desktop,
+.tablet,
+.mobile {
+  display: none;
+  /* à¸‹à¹ˆà¸­à¸™à¸—à¸¸à¸ div */
+}
 
 /* à¸ªà¸³à¸«à¸£à¸±à¸š Desktop */
 @media (min-width: 1024px) {
+
+  .desktop {
+    display: block;
+  }
+
 
   .header-ecs {
     background-color: #012a6c;
@@ -30039,6 +30049,10 @@ body.no-scroll {
 
 /* à¸ªà¸³à¸«à¸£à¸±à¸š Tablet */
 @media (min-width: 768px) and (max-width: 1023px) {
+  .tablet {
+    display: block;
+  }
+
   .header-ecs {
     background-color: #012a6c;
     align-items: center;
@@ -33788,6 +33802,9 @@ body.no-scroll {
 
 /* à¸ªà¸³à¸«à¸£à¸±à¸š Mobile */
 @media (max-width: 767px) {
+  .mobile {
+    display: block;
+  }
 
   .header-ecs {
     background-color: #012a6c;
