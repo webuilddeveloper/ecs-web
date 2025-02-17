@@ -30058,6 +30058,10 @@ body.no-scroll {
     display: none !important;
   }
 
+  .input-item-doc {
+    width: 50px;
+    text-align: center;
+  }
 }
 
 /* à¸ªà¸³à¸«à¸£à¸±à¸š Tablet */
@@ -33816,6 +33820,26 @@ body.no-scroll {
     display: none !important;
   }
 
+  .align-content-center {
+    align-content: center;
+  }
+
+  .input-item-doc {
+    width: 30px;
+    text-align: center;
+  }
+
+
+  .purchase-order-frame-38387 {
+    justify-content: center;
+    /* จัดตำแหน่งปุ่มให้ตรงกลาง */
+    width: 100%;
+    /* ให้ปุ่มอยู่ในแถวที่เต็มความกว้าง */
+  }
+
+  .display-none-t {
+    display: none;
+  }
 
 }
 
@@ -34287,12 +34311,12 @@ body.no-scroll {
   }
 
   .purchase-order-frame-18 {
-    background-color: #F0F0F0;
+    background-color: var(--gallery-2);
     align-items: center;
     border-radius: 10px;
     display: flex;
-    gap: 20px;
-    height: 27px;
+    gap: 5px;
+    height: 46px;
     justify-content: center;
     overflow: hidden;
     padding: 12px 20px;
@@ -39194,6 +39218,77 @@ body.no-scroll {
     text-wrap: wrap;
   }
 
+  .align-content-center {
+    align-content: center;
+  }
+
+  .input-item-doc {
+    width: 10px;
+    text-align: center;
+  }
+
+  .purchase-order-frame-2 {
+    width: 100%;
+    /* ให้กล่องช่องใส่ข้อมูลและปุ่มเต็มความกว้าง */
+  }
+
+  .purchase-order-frame-38387 {
+    justify-content: center;
+    /* จัดตำแหน่งปุ่มให้ตรงกลาง */
+    width: 100%;
+    /* ให้ปุ่มอยู่ในแถวที่เต็มความกว้าง */
+  }
+
+  .display-none-m {
+    display: none;
+  }
+
+  .purchase-order-frame-2 {
+    background-color: var(--white);
+    border: 1px solid;
+    border-color: var(--bggrey);
+    border-radius: 8px;
+    flex: none;
+    flex-grow: none;
+    height: 42px;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .purchase-order-school-table-m {
+    border: 1px solid #00000033;
+    /* เส้นขอบของตาราง */
+    border-collapse: separate;
+    /* ไม่ให้เส้นขอบทับซ้อนกัน */
+    border-radius: 20px;
+    /* มุมโค้ง */
+    width: 100%;
+    /* ให้ตารางเต็มความกว้าง */
+    overflow: hidden;
+  }
+
+  .purchase-order-school-valign-text-middle-m {
+    height: 100%;
+    min-height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .order-approval-list-input-element {
+    align-items: center;
+    background-color: var(--white);
+    border: 1px solid;
+    border-color: var(--geyser);
+    border-radius: 8px;
+    box-shadow: 0px 1px 2px #7f7f7f1f;
+    flex: 1;
+    flex-grow: 1;
+    gap: 8px;
+    height: auto;
+    overflow: hidden;
+    padding: 8px 10px;
+  }
 }
 
 /* media */
@@ -39659,11 +39754,6 @@ input[type="file"] {
   padding: 8px 16px;
   position: relative;
   /* width: 100%; */
-}
-
-.input-item-doc {
-  width: 50px;
-  text-align: center;
 }
 
 .box-input-dialog-row {
