@@ -3861,4 +3861,33 @@
         align-content: center;
         justify-content: center;
     }
+
+    .notosansthai-bold-black-22px-18px-13px {
+        color: var(--bkack);
+        font-family: var(--font-family-noto_sans_thai);
+        font-size: var(--font-size-18);
+        font-style: normal;
+        font-weight: 700;
+      }
+
+      .purchase-order-result-text-14 {
+        color: var(--black);
+        font-family: var(--font-family-noto_sans_thai);
+        font-size: var(--font-size-20);
+        font-weight: 700;
+        margin-top: -1.00px;
+        text-align: right;
+        width: fit-content;
+      }
+
+      .purchase-order-result-grand-total {
+        color: var(--black);
+        font-family: var(--font-family-noto_sans_thai);
+        font-size: var(--font-size-18);
+        font-weight: 700;
+        letter-spacing: 0;
+        line-height: normal;
+        position: relative;
+        width: fit-content;
+      }
 }
