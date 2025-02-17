@@ -12412,7 +12412,6 @@ input:focus {
   height: 90px;
   /* margin-left: 100px; */
   margin-top: 62px;
-  min-width: 705px;
 }
 
 .purchase-order-button-3 {
@@ -12470,6 +12469,8 @@ input:focus {
   gap: 40px;
   position: relative;
   width: 100%;
+  flex-wrap: wrap;
+  flex-direction: row;
 }
 
 .purchase-order-frame-2 {
@@ -30376,7 +30377,7 @@ body.no-scroll {
   }
 
   .purchase-order-frame-18 {
-    background-color: #F0F0F0;
+    background-color: var(--gallery-2);
     align-items: center;
     border-radius: 10px;
     display: flex;
@@ -34319,7 +34320,7 @@ body.no-scroll {
     flex-direction: row;
     gap: 6px;
     position: relative;
-    width: 200px;
+    width: 100%;
   }
 
   .purchase-order-frame-33 {
@@ -34364,6 +34365,7 @@ body.no-scroll {
     padding: 16px 54px;
     position: relative;
     width: 100%;
+    margin-top: 50px;
   }
 
   .purchase-order-select-field {
@@ -39635,7 +39637,8 @@ input[type="file"] {
   height: 10px;
   background-color: red;
   border-radius: 50%;
-  display: none; /* ซ่อนจุดแดงเริ่มต้น */
+  display: none;
+  /* ซ่อนจุดแดงเริ่มต้น */
 }
 
 /* //////////////////////////////////////////////////////////////// */
@@ -39645,5 +39648,24 @@ input[type="file"] {
 }
 
 .collapProduct {
-      display: none;
-    }
+  display: none;
+}
+
+.frame-3346 {
+  align-items: flex-start;
+  align-self: stretch;
+  display: flex;
+  flex: 0 0 auto;
+  position: relative;
+  width: 100%;
+  /* overflow-y: auto; */
+}
+
+.order-approval-list-text-sm-wrap {
+  letter-spacing: 0;
+  line-height: 21.0px;
+  margin-bottom: -1.50px;
+  margin-top: -3.50px;
+  position: relative;
+  width: fit-content;
+}
