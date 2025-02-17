@@ -5,6 +5,7 @@
     <!--<meta name=description content="This site was generated with Anima. www.animaapp.com"/>-->
     <!-- <link rel="shortcut icon" type=image/png href="https://animaproject.s3.amazonaws.com/home/favicon.png" /> -->
     <meta name="viewport" content="width=1440, maximum-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" type="image/png" href="https://animaproject.s3.amazonaws.com/home/favicon.png" />
     <meta name="og:type" content="website" />
     <meta name="twitter:card" content="photo" />
@@ -14,9 +15,9 @@
   <body style="margin: 0; background: #ffffff">
     <div class="header-ecs">
       <a href="./login.html">
-        <img class="logo-ecs" src="img/logo------1.png" alt="logo" />
+        <img class="logo-ecs" src="img/logo------1.png" alt="logo ecs" />
       </a>
-      <div class="navbar-ecs">
+      <div class="navbar-ecs header-menu">
         <div class="navbar-link-text-ecs">
           <a href="./purchase-order-school.html">
             ออกใบขอสั่งซื้อ
@@ -28,7 +29,7 @@
           </a>
         </div>
         <div class="navbar-link-text-ecs">
-          <a href="./order.html">
+          <a href="./delivered-order.html">
             รายการคำสั่งซื้อ
           </a>
         </div>
@@ -38,17 +39,50 @@
           </a>
         </div>
         <div class="navbar-link-text-ecs">
-          <a href="./order.html">
+          <a href="./delivered-order.html">
             ประวัติการสั่งซื้อ
           </a>
         </div>
       </div>
       <div class="header-action-ecs">
-        <img class="group" src="img/group@2x.png" alt="Group" />
+        <img class="group site-navbar" src="img/Icon-Service.png" alt="Service" onclick="showMenuNav()" />
+        <div class="notification-icon">
+          <img class="group" src="img/group@2x.png" alt="Group" onclick="toggleNotificationPanel()" />
+          <span id="notification-badge" class="notification-badge"></span> <!-- จุดแดง -->
+        </div>
+  
+        <div id="notification-panel" class="notification-panel hidden">
+          <ul class="notification-list">
+            <li class="notification-item unread">
+              <span class="status-indicator"></span>
+              <div class="notification-content">
+                <p class="notosansthai-normal-vulcan-15px">
+                  <strong class="notosansthai-semi-bold-vulcan-15px">หมายเลขคำสั่งซื้อ:</strong> 12345
+                </p>
+                <p class="notosansthai-normal-vulcan-15px">
+                  <strong class="notosansthai-semi-bold-vulcan-15px">สถานะ:</strong> รอดำเนินการ
+                </p>
+              </div>
+            </li>
+            <li class="notification-item">
+              <span class="status-indicator read"></span>
+              <div class="notification-content">
+                <p class="notosansthai-normal-vulcan-15px">
+                  <strong class="notosansthai-semi-bold-vulcan-15px">หมายเลขคำสั่งซื้อ:</strong> 67890
+                </p>
+                <p class="notosansthai-normal-vulcan-15px">
+                  <strong class="notosansthai-semi-bold-vulcan-15px">สถานะ:</strong> สำเร็จ
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+  
         <a href="./profile-school.html">
-          <img class="vector" src="img/vector-2.svg" alt="vector" />
+          <img class="vector" src="img/vector-2.svg" alt="Vector" />
         </a>
       </div>
+  
     </div>
     <div class="container-center-horizontal">
       <div class="register-obec">
@@ -57,8 +91,8 @@
             <img class="register-officer-icon-back" src="img/icon-back-1.svg" alt="icon back" />
             <div class="register-officer-text_label-1 register-officer-valign-text-middle notosansthai-semi-bold-midnight-blue-20px">ย้อนกลับ</div>
           </div>
-          <h1 class="register-officer-text-25 notosansthai-semi-bold-black-40px">ลงทะเบียน สำหรับเจ้าหน้าที่องค์การค้า สกสค.</h1>
         </div>
+        <h1 class="register-officer-text-25 notosansthai-semi-bold-black-40px title-register" style="align-self: center;">ลงทะเบียน สำหรับเจ้าหน้าที่องค์การค้า สกสค.</h1>
         <div class="register-officer-frame-38294">
           <div class="register-officer-frame-38397">
             <div class="register-officer-frame-28">

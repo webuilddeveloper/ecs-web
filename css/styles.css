@@ -114,6 +114,7 @@
   height: 76px;
   justify-content: center;
   margin-top: 100px;
+  width: -webkit-fill-available;
   /* padding: 22px 552px; */
   /* width: 1440px; */
 }
@@ -953,7 +954,7 @@
   align-self: stretch;
   display: flex;
   flex: 0 0 auto;
-  gap: 100px;
+  gap: 30px;
   position: relative;
   width: 100%;
   justify-content: space-between;
@@ -22747,8 +22748,10 @@ a:active {
   background-color: var(--white);
   display: flex;
   flex-direction: column;
-  height: 1739px;
-  width: 1440px;
+  /* height: 1739px; */
+  /* width: 1440px; */
+  width: -webkit-fill-available;
+  height: -webkit-fill-available;
 }
 
 .register-non-formal-education-header {
@@ -22787,9 +22790,10 @@ a:active {
   display: flex;
   gap: 283px;
   height: 102px;
-  margin-left: 100px;
+  /* margin-left: 100px; */
   margin-top: 62px;
   min-width: 804px;
+  width: -webkit-fill-available;
 }
 
 .register-non-formal-education-button {
@@ -22861,7 +22865,7 @@ a:active {
   align-items: flex-start;
   align-self: stretch;
   display: flex;
-  flex: 0 0 auto;
+  /* flex: 0 0 auto; */
   flex-direction: column;
   gap: 8px;
   padding: 0px 0px 8px;
@@ -23105,7 +23109,7 @@ a:active {
 .register-non-formal-education-frame-29 {
   align-items: flex-start;
   border: 1px solid;
-  border-color: var(--black);
+  border-color: #cccccc;
   border-radius: 20px;
   display: flex;
   flex: 1;
@@ -23140,7 +23144,7 @@ a:active {
   align-items: center;
   align-self: stretch;
   border: 1px solid;
-  border-color: var(--black);
+  border-color: #cccccc;
   border-radius: 20px;
   display: flex;
   flex: 1;
@@ -23159,7 +23163,8 @@ a:active {
   gap: 8px;
   padding: 0px 0px 8px;
   position: relative;
-  width: 306px;
+  /* width: 306px; */
+  width: -webkit-fill-available;
 }
 
 .notosansthai-semi-bold-black-40px {
@@ -23668,7 +23673,7 @@ a:active {
 .register-educational-service-area-frame-29 {
   align-items: flex-start;
   border: 1px solid;
-  border-color: var(--black);
+  border-color: #cccccc;
   border-radius: 20px;
   display: flex;
   flex: 1;
@@ -23703,7 +23708,7 @@ a:active {
   align-items: center;
   align-self: stretch;
   border: 1px solid;
-  border-color: var(--black);
+  border-color: #cccccc;
   border-radius: 20px;
   display: flex;
   flex: 1;
@@ -23906,7 +23911,7 @@ a:active {
   display: flex;
   gap: 10px;
   position: relative;
-  width: 120px;
+  /* width: 120px; */
 }
 
 .register-obec-frame-38296 {
@@ -23990,6 +23995,7 @@ a:active {
   /* à¸ªà¸µà¸žà¸·à¹‰à¸™à¸«à¸¥à¸±à¸‡ */
   cursor: pointer;
   /* à¹€à¸›à¸¥à¸µà¹ˆà¸¢à¸™à¹€à¸›à¹‡à¸™à¸¡à¸·à¸­à¹€à¸¡à¸·à¹ˆà¸­ hover */
+  margin: 0;
 }
 
 .register-obec-ellipse-2:checked {
@@ -24128,7 +24134,7 @@ a:active {
 .register-obec-frame-29 {
   align-items: flex-start;
   border: 1px solid;
-  border-color: var(--black);
+  border-color: #cccccc;
   border-radius: 20px;
   display: flex;
   flex: 1;
@@ -24163,7 +24169,7 @@ a:active {
   align-items: center;
   align-self: stretch;
   border: 1px solid;
-  border-color: var(--black);
+  border-color: #cccccc;
   border-radius: 20px;
   display: flex;
   flex: 1;
@@ -26981,6 +26987,7 @@ body.no-scroll {
     justify-content: space-around;
     position: relative;
     width: 747px;
+    flex-direction: column;
   }
 
 
@@ -30046,6 +30053,11 @@ body.no-scroll {
   .site-navbar {
     display: none;
   }
+
+  .hidden-lg-down {
+    display: none !important;
+  }
+
 }
 
 /* à¸ªà¸³à¸«à¸£à¸±à¸š Tablet */
@@ -33799,6 +33811,12 @@ body.no-scroll {
   .header-menu {
     display: none;
   }
+
+  .hidden-md-down {
+    display: none !important;
+  }
+
+
 }
 
 /* à¸ªà¸³à¸«à¸£à¸±à¸š Mobile */
@@ -33982,7 +34000,7 @@ body.no-scroll {
     align-items: center;
     display: flex;
     gap: 16px;
-    height: 108px;
+    /* height: 108px; */
     justify-content: space-around;
     position: relative;
     width: 100%;
@@ -33995,6 +34013,7 @@ body.no-scroll {
     position: relative;
     width: 100%;
     justify-content: space-between;
+    flex-direction: column;
   }
 
 
@@ -34069,7 +34088,7 @@ body.no-scroll {
     gap: 332px;
     height: 90px;
     /* margin-left: 100px; */
-    margin-top: 62px;
+    margin-top: 20px;
     min-width: 100%;
   }
 
@@ -36573,7 +36592,8 @@ body.no-scroll {
   }
 
   .register-non-formal-education-frame-14 {
-    margin-top: 0;
+    margin-top: 20px;
+    width: -webkit-fill-available;
   }
 
   .purchase-order-shipping-frame-38493 {
@@ -37002,6 +37022,8 @@ body.no-scroll {
 
   .content-center {
     margin-top: 5px;
+    display: flex;
+    flex-direction: column;
   }
 
   .content-ecs .frame-38356 {
@@ -39118,6 +39140,60 @@ body.no-scroll {
     display: none;
   }
 
+  .hidden-sm-down {
+    display: none !important;
+  }
+
+  .print-document-information-text-9 {
+    font-size: var(--font-size-15);
+  }
+
+  .content-ecs .frame-38-1 {
+    overflow: scroll;
+  }
+
+  .content-ecs .frame-3346 {
+    width: max-content;
+  }
+
+  .content-ecs .frame-38449 {
+    flex-direction: column;
+  }
+
+  .content-banner {
+    background-color: var(--white);
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: 100%;
+  }
+
+  .register-non-formal-education-frame-38 {
+    width: -webkit-fill-available;
+    flex-direction: column;
+  }
+
+  .register-non-formal-education-text-field-1 {
+    width: -webkit-fill-available;
+  }
+
+  .register-officer-frame-38294 {
+    width: -webkit-fill-available;
+  }
+
+  .register-officer-flex-row {
+    min-width: -webkit-fill-available;
+    margin-left: 0;
+    margin-top: 15px;
+  }
+
+  .title-register {
+    align-self: center;
+    width: -webkit-fill-available;
+    min-width: -webkit-fill-available;
+    text-wrap: wrap;
+  }
+
 }
 
 /* media */
@@ -39466,7 +39542,7 @@ body.no-scroll {
 }
 
 .register-non-formal-education-text-field {
-  flex: 1;
+  /* flex: 1; */
   /* ให้ Dropdown มีขนาดเท่ากัน */
 }
 
@@ -39649,6 +39725,24 @@ input[type="file"] {
 
 .collapProduct {
   display: none;
+}
+
+.dropdown-affiliation {
+  width: -webkit-fill-available;
+  max-width: 500px;
+}
+
+.register-obec-frame-38291 {
+  width: -webkit-fill-available;
+  display: flex;
+  gap: 15px;
+}
+
+.register-non-formal-education-frame-3829 {
+  width: -webkit-fill-available;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
 }
 
 .frame-3346 {

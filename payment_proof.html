@@ -15,12 +15,12 @@
 </head>
 
 <body style="margin: 0; background: #ffffff">
-  <div class="desktop">
+  
     <div class="header-ecs">
       <a href="./login.html">
         <img class="logo-ecs" src="img/logo------1.png" alt="logo ecs" />
       </a>
-      <div class="navbar-ecs">
+      <div class="navbar-ecs header-menu">
         <div class="navbar-link-text-ecs">
           <a href="./purchase-order-school.html">
             ออกใบขอสั่งซื้อ
@@ -37,7 +37,7 @@
           </a>
         </div>
         <div class="navbar-link-text-ecs">
-          <a href="./order-cancel.htmll">
+          <a href="./order-cancel.html">
             ยกเลิกเลข ปพ.
           </a>
         </div>
@@ -48,11 +48,44 @@
         </div>
       </div>
       <div class="header-action-ecs">
-        <img class="group" src="img/group@2x.png" alt="Group" />
+        <img class="group site-navbar" src="img/Icon-Service.png" alt="Service" onclick="showMenuNav()" />
+        <div class="notification-icon">
+          <img class="group" src="img/group@2x.png" alt="Group" onclick="toggleNotificationPanel()" />
+          <span id="notification-badge" class="notification-badge"></span> <!-- จุดแดง -->
+        </div>
+  
+        <div id="notification-panel" class="notification-panel hidden">
+          <ul class="notification-list">
+            <li class="notification-item unread">
+              <span class="status-indicator"></span>
+              <div class="notification-content">
+                <p class="notosansthai-normal-vulcan-15px">
+                  <strong class="notosansthai-semi-bold-vulcan-15px">หมายเลขคำสั่งซื้อ:</strong> 12345
+                </p>
+                <p class="notosansthai-normal-vulcan-15px">
+                  <strong class="notosansthai-semi-bold-vulcan-15px">สถานะ:</strong> รอดำเนินการ
+                </p>
+              </div>
+            </li>
+            <li class="notification-item">
+              <span class="status-indicator read"></span>
+              <div class="notification-content">
+                <p class="notosansthai-normal-vulcan-15px">
+                  <strong class="notosansthai-semi-bold-vulcan-15px">หมายเลขคำสั่งซื้อ:</strong> 67890
+                </p>
+                <p class="notosansthai-normal-vulcan-15px">
+                  <strong class="notosansthai-semi-bold-vulcan-15px">สถานะ:</strong> สำเร็จ
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+  
         <a href="./profile-school.html">
           <img class="vector" src="img/vector-2.svg" alt="Vector" />
         </a>
       </div>
+  
     </div>
     <div class="container-center-horizontal">
       <div class="payment-proof">
@@ -66,9 +99,9 @@
               </div>
             </div>
           </a>
-          <h1 class="request-detail-school-text-1-2 request-detail-school-text-1-3" style="font-size: 24px;">
-            ข้อมูลหลักฐานการชำระเงิน</h1>
         </div>
+        <h1 class="request-detail-school-text-1-2 request-detail-school-text-1-3" style="font-size: 24px; align-self: center;">
+          ข้อมูลหลักฐานการชำระเงิน</h1>
         <div class="payment-proof-overlap-group">
           <div class="payment-proof-frame-38505">
             <div class="payment-proof-frame-38395">
@@ -89,7 +122,7 @@
                         </p>
                       </div>
                     </div>
-                    <a href="javascript:SubmitForm('form6')">
+                    <a href="javascript:SubmitForm('form6')" class="hidden-sm-down">
                       <div class="payment-proof-button-new-1">
                         <div
                           class="payment-proof-text_label-2 payment-proof-valign-text-middle payment-proof-text_label-4 kanit-normal-licorice-17px">
@@ -103,6 +136,14 @@
                       <div class="payment-proof-text_label-3 payment-proof-text_label-4">12345671840</div>
                     </div>
                   </div>
+                  <a href="javascript:SubmitForm('form6')" class="hidden-md-down hidden-lg-down">
+                    <div class="payment-proof-button-new-1">
+                      <div
+                        class="payment-proof-text_label-2 payment-proof-valign-text-middle payment-proof-text_label-4 kanit-normal-licorice-17px">
+                        เอกสาร.PDF
+                      </div>
+                    </div>
+                  </a>
                 </div>
                 <img class="payment-proof-line" src="img/line-6-125.svg" alt="Line 6" />
                 <div class="payment-proof-frame-9">
@@ -134,12 +175,12 @@
                     <!-- ปุ่มอัปโหลดไฟล์ -->
                     <label class="payment-proof-button" for="file-upload">
                       <img class="payment-proof-icon" src="img/icon-upload-file-5.svg" alt="icon Upload File" />
-                      <span>เพิ่มไฟล์</span>
+                      <span class="notosansthai-normal-black-18px">เพิ่มไฟล์</span>
                     </label>
                     <!-- Input file ที่ซ่อน -->
                     <input type="file" id="file-upload" accept=".pdf" multiple>
                   </div>
-                  <div id="empty-message" class="empty-message">ยังไม่มีไฟล์ที่เลือก</div>
+                  <div id="empty-message" class="empty-message notosansthai-normal-dove-gray-17px">ยังไม่มีไฟล์ที่เลือก</div>
                   <div id="file-items"></div>
                   <!-- </div>
                 <div class="upload-container register-non-formal-education-frame-19">
@@ -191,12 +232,12 @@
                     <!-- ปุ่มอัปโหลดไฟล์ -->
                     <label class="payment-proof-button" for="file-upload2">
                       <img class="payment-proof-icon" src="img/icon-upload-file-5.svg" alt="icon Upload File" />
-                      <span>เพิ่มไฟล์</span>
+                      <span class="notosansthai-normal-black-18px">เพิ่มไฟล์</span>
                     </label>
                     <!-- Input file ที่ซ่อน -->
                     <input type="file" id="file-upload2" accept=".pdf" multiple>
                   </div>
-                  <div id="empty-message2" class="empty-message">ยังไม่มีไฟล์ที่เลือก</div>
+                  <div id="empty-message2" class="empty-message notosansthai-normal-dove-gray-17px">ยังไม่มีไฟล์ที่เลือก</div>
                   <div id="file-items2"></div>
                   <!-- </div>
                 <div class="upload-container register-non-formal-education-frame-19">
@@ -246,534 +287,9 @@
         </div>
       </div>
     </div>
-  </div>
+  
 
-  <div class="tablet">
-    <div class="header-ecs">
-      <a href="./login.html">
-        <img class="logo-ecs" src="img/logo------1.png" alt="logo ecs" />
-      </a>
-
-      <div class="header-action-ecs">
-        <img class="group" src="img/Icon-Service.png" alt="Service" onclick="showMenuNav()" />
-        <img class="group" src="img/group@2x.png" alt="Group" />
-        <a href="./profile-school.html">
-          <img class="vector" src="img/vector-2.svg" alt="Vector" />
-        </a>
-      </div>
-    </div>
-    <div id="subMenuHeader" class="sub-menu-header">
-      <a href="./purchase-order-school.html"
-        class="notosansthai-normal-black-20px no-text-underline textItemMenuHeader itemMenuHeader">
-        ออกใบขอสั่งซื้อ
-      </a>
-      <hr />
-      <a href="./approve-school.html"
-        class="notosansthai-normal-black-20px no-text-underline textItemMenuHeader itemMenuHeader">
-        เอกสารใบขอสั่งซื้อ
-      </a>
-      <hr />
-      <a href="./delivered-order.html"
-        class="notosansthai-normal-black-20px no-text-underline textItemMenuHeader itemMenuHeader">
-        รายการคำสั่งซื้อ
-      </a>
-      <hr />
-      <a href="./order-cancel.html"
-        class="notosansthai-normal-black-20px no-text-underline textItemMenuHeader itemMenuHeader">
-        ยกเลิกเลข ปพ.
-      </a>
-      <hr />
-      <a href="./delivered-order.html"
-        class="notosansthai-normal-black-20px no-text-underline textItemMenuHeader itemMenuHeader">
-        ประวัติการสั่งซื้อ
-      </a>
-    </div>
-    <div class="container-center-horizontal">
-      <div class="payment-proof">
-        <div class="container-menu-ham pointer">
-          <div class="menu-ham" onclick="showMenuHam()">
-            <img class="icon-menu-ham" src="img/icon-menu.png" alt="icon back" />
-            <div
-              class="register-obec-text_label register-obec-valign-text-middle notosansthai-semi-bold-midnight-blue-20px">
-              เมนู</div>
-          </div>
-          <div id="contentMenuHam" class="content-menu-ham">
-            <div class="item-menu-ham">
-              <div class="print-document-information-frame-38357-1">
-                <div class="print-document-information-frame-38354">
-                  <div class="print-document-information-frame-38352">
-                    <div class="print-document-information-frame-38350">
-                      <div class="print-document-information-frame-38">
-                        <img class="print-document-information-icon" src="img/icon-person2-1.svg" alt="icon person2" />
-                        <div
-                          class="print-document-information-text-1 valign-text-middle notosansthai-semi-bold-black-22px">
-                          บัญชีของฉัน</div>
-                      </div>
-                      <div onclick="showMenuCollap()">
-                        <div class="approve-school-frame-38348">
-                          <img class="approve-school-arrow-down-01" src="img/arrow-down-01-2.svg" alt="arrow-down-01" />
-                        </div>
-                      </div>
-                    </div>
-                    <div id="collapMenu" class="approve-school-frame-3835 notosansthai-normal-black-20px"
-                      style="display: none;">
-                      <a href="./profile-school.html">
-                        <div
-                          class="approve-school-text-1 approve-school-valign-text-middle approve-school-text-3 a-link-left">
-                          ข้อมูลส่วนบุคคล</div>
-                      </a>
-                      <div class="approve-school-text-2 approve-school-valign-text-middle approve-school-text-3">
-                        ที่อยู่จัดส่งสินค้า</div>
-                    </div>
-                  </div>
-                </div>
-                <img class="print-document-information-vector" src="img/vector-19-2.svg" alt="Vector 19" />
-                <div class="print-document-information-frame-38">
-                  <img class="print-document-information-icon" src="img/icon-report-11.svg" alt="icon Report" />
-                  <div class="print-document-information-text-1 valign-text-middle notosansthai-semi-bold-black-22px">
-                    เอกสารใบขอสั่งซื้อ</div>
-                </div>
-                <img class="print-document-information-vector" src="img/vector-19-2.svg" alt="Vector 22" />
-                <div class="print-document-information-frame-38354">
-                  <div class="print-document-information-frame-38352">
-                    <div class="print-document-information-frame-38350">
-                      <div class="print-document-information-frame-38">
-                        <img class="print-document-information-icon" src="img/icon-report-11.svg" alt="icon person2" />
-                        <div
-                          class="print-document-information-text-1 valign-text-middle notosansthai-semi-bold-black-22px">
-                          รายการคำสั่งซื้อ</div>
-                      </div>
-                      <a onclick="showMenuCollapOrder()">
-                        <div class="approve-school-frame-38348">
-                          <img class="approve-school-arrow-down-01" src="img/arrow-down-01-2.svg" alt="arrow-down-01" />
-                        </div>
-                      </a>
-                    </div>
-                    <div id="collapMenuOrder" class="approve-school-frame-3835 notosansthai-normal-black-20px"
-                      style="display: none;">
-                      <a href="./delivered-order.html">
-                        <div
-                          class="approve-school-text-1 approve-school-valign-text-middle approve-school-text-3 a-link-left">
-                          เอกสารมีเลขคุม</div>
-                      </a>
-                      <div class="approve-school-text-2 approve-school-valign-text-middle approve-school-text-3">
-                        เอกสารไม่มีเลขคุม</div>
-                      <div class="approve-school-text-2 approve-school-valign-text-middle approve-school-text-3">
-                        เลขใบปพ. ออนไลน์(ปพ.1)</div>
-                    </div>
-                  </div>
-                </div>
-
-                <img class="print-document-information-vector" src="img/vector-19-2.svg" alt="Vector 20" />
-                <div class="print-document-information-frame-3852">
-                  <div class="print-document-information-frame-38528">
-                    <div class="print-document-information-frame-38">
-                      <img class="print-document-information-icon" src="img/icon-print-1.svg" alt="icon print" />
-                      <div class="print-document-information-text-9 valign-text-middle">ปพ.ออนไลน์</div>
-                    </div>
-                    <a onclick="showMenuCollap2()">
-                      <div class="paid-school-frame-38348">
-                        <img class="paid-school-arrow-down-01" src="img/arrow-down-01-3.svg" alt="arrow-down-01" />
-                      </div>
-                    </a>
-                  </div>
-                  <div id="collapMenu2" style="display: none;" class="paid-school-frame-3835">
-                    <div class="paid-school-frame-38351 notosansthai-normal-black-20px">
-                      <a href="./print_document_information.html">
-                        <div
-                          class="print-document-information-text-10 paid-school-valign-text-middle paid-school-text-5">
-                          พิมพ์ใบปพ.ออนไลน์
-                        </div>
-                      </a>
-                      <a href="./print_document_history.html">
-                        <div class="paid-school-text-2 paid-school-valign-text-middle paid-school-text-5 a-link-left">
-                          ประวัติการพิมพ์
-                        </div>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-                <img class="print-document-information-vector" src="img/vector-23-1.svg" alt="Vector 23" />
-                <div class="print-document-information-frame-38">
-                  <img class="print-document-information-icon" src="img/icon-logout-1.svg" alt="icon logout" />
-                  <div class="print-document-information-text-1 valign-text-middle notosansthai-semi-bold-black-22px">
-                    ออกจากระบบ</div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <h1 class="request-detail-school-text-1-2 request-detail-school-text-1-3" style="align-self: center;">
-          ข้อมูลหลักฐานการชำระเงิน</h1>
-        <div class="payment-proof-overlap-group">
-          <div class="payment-proof-frame-38505">
-            <div class="payment-proof-frame-38395">
-              <div class="payment-proof-text-7">รายการสินค้า</div>
-              <div class="payment-proof-frame-27">
-                <div class="payment-proof-frame-38434">
-                  <div class="payment-proof-frame-9">
-                    <div class="payment-proof-frame-94">
-                      <div class="payment-proof-frame-93">
-                        <div class="payment-proof-text payment-proof-valign-text-middle">
-                          <span><span class="notosansthai-bold-black-22px">หนังสืออนุมัติการสั่งซื้อจากเขตฯ</span><span
-                              class="payment-proof-span1">*</span>
-                          </span>
-                        </div>
-                        <p class="payment-proof-text_label-1 payment-proof-text_label-4 notosansthai-normal-black-16px">
-                          กรุณาอัพโหลดหนังสืออนุมัติการสั่งซื้อจากเขตฯ จำนวน 1 ไฟล์ โดยขนาดไฟล์ที่ อัพโหลดต้องไม่เกิน
-                          1MB
-                        </p>
-                      </div>
-                    </div>
-                    <!-- <a href="javascript:SubmitForm('form6')"> -->
-                    <div class="payment-proof-button-new-1">
-                      <div
-                        class="payment-proof-text_label-2 payment-proof-valign-text-middle payment-proof-text_label-4 kanit-normal-licorice-17px">
-                        เอกสาร.PDF
-                      </div>
-                    </div>
-                    <!-- </a> -->
-                  </div>
-                  <div class="payment-proof-text-field">
-                    <div class="payment-proof-frame-20">
-                      <div class="payment-proof-text_label-3 payment-proof-text_label-4">12345671840</div>
-                    </div>
-                  </div>
-                </div>
-                <img class="payment-proof-line" src="img/line-6-125.svg" alt="Line 6" />
-                <div class="payment-proof-frame-9">
-                  <div class="payment-proof-frame-94">
-                    <div class="payment-proof-frame-93">
-                      <div class="payment-proof-text payment-proof-valign-text-middle">
-                        <span><span class="notosansthai-bold-black-22px">หลักฐานการชำระเงิน</span><span
-                            class="payment-proof-span1">*</span>
-                        </span>
-                      </div>
-                      <p class="payment-proof-text_label-1 payment-proof-text_label-4 notosansthai-normal-black-16px">
-                        กรุณาอัพโหลดหลักฐานการชำระเงิน จำนวน 1 รูป โดยขนาดไฟล์ที่ อัพโหลดต้องไม่เกิน 1MB
-                      </p>
-                    </div>
-                  </div>
-                  <!-- <a href="javascript:SubmitForm('form6')"> -->
-                  <div class="payment-proof-button-new-2">
-                    <img class="payment-proof-icon" src="img/icon-upload-file-4.svg" alt="icon Upload File" />
-                    <div
-                      class="payment-proof-text_label-2 payment-proof-valign-text-middle payment-proof-text_label-4 kanit-normal-licorice-17px">
-                      เลือกไฟล์
-                    </div>
-                  </div>
-                  <!-- </a> -->
-                </div>
-                <img class="payment-proof-line" src="img/line-7-109.svg" alt="Line 7" />
-                <div class="payment-proof-frame-9">
-                  <div class="payment-proof-frame-94">
-                    <div class="payment-proof-frame-93">
-                      <div class="payment-proof-text-10 payment-proof-valign-text-middle notosansthai-bold-black-22px">
-                        หลักฐานเอกสารเพิ่มเติม</div>
-                      <p class="payment-proof-text_label-1 payment-proof-text_label-4 notosansthai-normal-black-16px">
-                        กรุณาอัพโหลดหลักฐานการชำระเงิน จำนวน 1 รูป โดยขนาดไฟล์ที่ อัพโหลดต้องไม่เกิน 1MB
-                      </p>
-                    </div>
-                  </div>
-                  <a href="javascript:SubmitForm('form6')">
-                    <div class="payment-proof-button-new-2">
-                      <img class="payment-proof-icon" src="img/icon-upload-file-5.svg" alt="icon Upload File" />
-                      <div
-                        class="payment-proof-text_label-2 payment-proof-valign-text-middle payment-proof-text_label-4 kanit-normal-licorice-17px">
-                        เลือกไฟล์
-                      </div>
-                    </div>
-                  </a>
-                </div>
-                <a href="javascript:SubmitForm('form6')">
-                  <div class="payment-proof-button-1 payment-proof-button-2">
-                    <img class="payment-proof-icon" src="img/icon-plus-2.svg" alt="icon plus" />
-                    <div class="payment-proof-text_label payment-proof-valign-text-middle payment-proof-text_label-4">
-                      เพิ่มไฟล์</div>
-                  </div>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div>
-            <a style="
-        display: flex;
-        justify-content: center;">
-              <div class="payment-proof-frame-14" onclick="showPopup()">
-                <div class="payment-proof-text-11 notosansthai-semi-bold-white-20px">ยืนยันการส่งหลักฐาน</div>
-              </div>
-            </a>
-          </div>
-
-
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="mobile">
-    <div class="header-ecs">
-      <a href="./login.html">
-        <img class="logo-ecs" src="img/logo------1.png" alt="logo ecs" />
-      </a>
-
-      <div class="header-action-ecs">
-        <img class="group pointer" src="img/Icon-Service.png" alt="Service" onclick="showMenuNav()" />
-        <img class="group" src="img/group@2x.png" alt="Group" />
-        <a href="./profile-school.html">
-          <img class="vector" src="img/vector-2.svg" alt="Vector" />
-        </a>
-      </div>
-    </div>
-
-    <div id="subMenuHeaderMobile" class="sub-menu-header">
-      <a href="./purchase-order-school.html"
-        class="notosansthai-normal-black-20px no-text-underline textItemMenuHeader itemMenuHeader">
-        ออกใบขอสั่งซื้อ
-      </a>
-      <hr />
-      <a href="./approve-school.html"
-        class="notosansthai-normal-black-20px no-text-underline textItemMenuHeader itemMenuHeader">
-        เอกสารใบขอสั่งซื้อ
-      </a>
-      <hr />
-      <a href="./delivered-order.html"
-        class="notosansthai-normal-black-20px no-text-underline textItemMenuHeader itemMenuHeader">
-        รายการคำสั่งซื้อ
-      </a>
-      <hr />
-      <a href="./order-cancel.html"
-        class="notosansthai-normal-black-20px no-text-underline textItemMenuHeader itemMenuHeader">
-        ยกเลิกเลข ปพ.
-      </a>
-      <hr />
-      <a href="./delivered-order.html"
-        class="notosansthai-normal-black-20px no-text-underline textItemMenuHeader itemMenuHeader">
-        ประวัติการสั่งซื้อ
-      </a>
-    </div>
-    <div class="container-center-horizontal">
-      <div class="payment-proof">
-        <div class="container-menu-ham pointer">
-          <div class="menu-ham" onclick="showMenuHam()">
-            <img class="icon-menu-ham" src="img/icon-menu.png" alt="icon back" />
-            <div
-              class="register-obec-text_label register-obec-valign-text-middle notosansthai-semi-bold-midnight-blue-20px">
-              เมนู</div>
-          </div>
-          <div id="contentMenuHamMobile" class="content-menu-ham">
-            <div class="item-menu-ham">
-              <div class="print-document-information-frame-38357-1">
-                <div class="print-document-information-frame-38354">
-                  <div class="print-document-information-frame-38352">
-                    <div class="print-document-information-frame-38350">
-                      <div class="print-document-information-frame-38">
-                        <img class="print-document-information-icon" src="img/icon-person2-1.svg" alt="icon person2" />
-                        <div
-                          class="print-document-information-text-1 valign-text-middle notosansthai-semi-bold-black-22px">
-                          บัญชีของฉัน</div>
-                      </div>
-                      <div onclick="showMenuCollap()">
-                        <div class="approve-school-frame-38348">
-                          <img class="approve-school-arrow-down-01" src="img/arrow-down-01-2.svg" alt="arrow-down-01" />
-                        </div>
-                      </div>
-                    </div>
-                    <div id="collapMenuMobile" class="approve-school-frame-3835 notosansthai-normal-black-20px"
-                      style="display: none;">
-                      <a href="./profile-school.html">
-                        <div
-                          class="approve-school-text-1 approve-school-valign-text-middle approve-school-text-3 a-link-left">
-                          ข้อมูลส่วนบุคคล</div>
-                      </a>
-                      <div class="approve-school-text-2 approve-school-valign-text-middle approve-school-text-3">
-                        ที่อยู่จัดส่งสินค้า</div>
-                    </div>
-                  </div>
-                </div>
-                <img class="print-document-information-vector" src="img/vector-19-2.svg" alt="Vector 19" />
-                <div class="print-document-information-frame-38">
-                  <img class="print-document-information-icon" src="img/icon-report-11.svg" alt="icon Report" />
-                  <div class="print-document-information-text-1 valign-text-middle notosansthai-semi-bold-black-22px">
-                    เอกสารใบขอสั่งซื้อ</div>
-                </div>
-                <img class="print-document-information-vector" src="img/vector-19-2.svg" alt="Vector 22" />
-                <div class="print-document-information-frame-38354">
-                  <div class="print-document-information-frame-38352">
-                    <div class="print-document-information-frame-38350">
-                      <div class="print-document-information-frame-38">
-                        <img class="print-document-information-icon" src="img/icon-report-11.svg" alt="icon person2" />
-                        <div
-                          class="print-document-information-text-1 valign-text-middle notosansthai-semi-bold-black-22px">
-                          รายการคำสั่งซื้อ</div>
-                      </div>
-                      <a onclick="showMenuCollapOrder()">
-                        <div class="approve-school-frame-38348">
-                          <img class="approve-school-arrow-down-01" src="img/arrow-down-01-2.svg" alt="arrow-down-01" />
-                        </div>
-                      </a>
-                    </div>
-                    <div id="collapMenuOrderMobile" class="approve-school-frame-3835 notosansthai-normal-black-20px"
-                      style="display: none;">
-                      <a href="./delivered-order.html">
-                        <div
-                          class="approve-school-text-1 approve-school-valign-text-middle approve-school-text-3 a-link-left">
-                          เอกสารมีเลขคุม</div>
-                      </a>
-                      <div class="approve-school-text-2 approve-school-valign-text-middle approve-school-text-3">
-                        เอกสารไม่มีเลขคุม</div>
-                      <div class="approve-school-text-2 approve-school-valign-text-middle approve-school-text-3">
-                        เลขใบปพ. ออนไลน์(ปพ.1)</div>
-                    </div>
-                  </div>
-                </div>
-
-                <img class="print-document-information-vector" src="img/vector-19-2.svg" alt="Vector 20" />
-                <div class="print-document-information-frame-3852">
-                  <div class="print-document-information-frame-38528">
-                    <div class="print-document-information-frame-38">
-                      <img class="print-document-information-icon" src="img/icon-print-1.svg" alt="icon print" />
-                      <div class="print-document-information-text-9 valign-text-middle">ปพ.ออนไลน์</div>
-                    </div>
-                    <a onclick="showMenuCollap2()">
-                      <div class="paid-school-frame-38348">
-                        <img class="paid-school-arrow-down-01" src="img/arrow-down-01-3.svg" alt="arrow-down-01" />
-                      </div>
-                    </a>
-                  </div>
-                  <div id="collapMenu2Mobile" style="display: none;" class="paid-school-frame-3835">
-                    <div class="paid-school-frame-38351 notosansthai-normal-black-20px">
-                      <a href="./print_document_information.html">
-                        <div
-                          class="print-document-information-text-10 paid-school-valign-text-middle paid-school-text-5">
-                          พิมพ์ใบปพ.ออนไลน์
-                        </div>
-                      </a>
-                      <a href="./print_document_history.html">
-                        <div class="paid-school-text-2 paid-school-valign-text-middle paid-school-text-5 a-link-left">
-                          ประวัติการพิมพ์
-                        </div>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-                <img class="print-document-information-vector" src="img/vector-23-1.svg" alt="Vector 23" />
-                <div class="print-document-information-frame-38">
-                  <img class="print-document-information-icon" src="img/icon-logout-1.svg" alt="icon logout" />
-                  <div class="print-document-information-text-1 valign-text-middle notosansthai-semi-bold-black-22px">
-                    ออกจากระบบ</div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <h1 class="request-detail-school-text-1-2 request-detail-school-text-1-3" style="align-self: center;">
-          ข้อมูลหลักฐานการชำระเงิน</h1>
-        <div class="payment-proof-overlap-group">
-          <div class="payment-proof-frame-38505">
-            <div class="payment-proof-frame-38395">
-              <div class="payment-proof-text-7">รายการสินค้า</div>
-              <div class="payment-proof-frame-27">
-                <div class="payment-proof-frame-38434">
-                  <div class="payment-proof-frame-9">
-                    <div class="payment-proof-frame-94">
-                      <div class="payment-proof-frame-93">
-                        <div class="payment-proof-text payment-proof-valign-text-middle">
-                          <span><span class="notosansthai-bold-black-22px">หนังสืออนุมัติการสั่งซื้อจากเขตฯ</span><span
-                              class="payment-proof-span1">*</span>
-                          </span>
-                        </div>
-                        <p class="payment-proof-text_label-1 payment-proof-text_label-4 notosansthai-normal-black-16px">
-                          กรุณาอัพโหลดหนังสืออนุมัติการสั่งซื้อจากเขตฯ จำนวน 1 ไฟล์ โดยขนาดไฟล์ที่ อัพโหลดต้องไม่เกิน
-                          1MB
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="payment-proof-text-field">
-                    <div class="payment-proof-frame-20">
-                      <div class="payment-proof-text_label-3 payment-proof-text_label-4">12345671840</div>
-                    </div>
-                  </div>
-                </div>
-                <a href="javascript:SubmitForm('form6')">
-                  <div class="payment-proof-button-new-1">
-                    <div
-                      class="payment-proof-text_label-2 payment-proof-valign-text-middle payment-proof-text_label-4 kanit-normal-licorice-17px">
-                      เอกสาร.PDF
-                    </div>
-                  </div>
-                </a>
-                <img class="payment-proof-line" src="img/line-6-125.svg" alt="Line 6" />
-                <div class="payment-proof-frame-9">
-                  <div class="payment-proof-frame-94">
-                    <div class="payment-proof-frame-93">
-                      <div class="payment-proof-text payment-proof-valign-text-middle">
-                        <span><span class="notosansthai-bold-black-22px">หลักฐานการชำระเงิน</span><span
-                            class="payment-proof-span1">*</span>
-                        </span>
-                      </div>
-                      <p class="payment-proof-text_label-1 payment-proof-text_label-4 notosansthai-normal-black-16px">
-                        กรุณาอัพโหลดหลักฐานการชำระเงิน จำนวน 1 รูป โดยขนาดไฟล์ที่ อัพโหลดต้องไม่เกิน 1MB
-                      </p>
-                    </div>
-                  </div>
-
-                </div>
-                <a href="javascript:SubmitForm('form6')">
-                  <div class="payment-proof-button-new-2 ">
-                    <img class="payment-proof-icon" src="img/icon-upload-file-4.svg" alt="icon Upload File" />
-                    <div
-                      class="payment-proof-text_label-2 payment-proof-valign-text-middle payment-proof-text_label-4 kanit-normal-licorice-17px">
-                      เลือกไฟล์
-                    </div>
-                  </div>
-                </a>
-                <img class="payment-proof-line" src="img/line-7-109.svg" alt="Line 7" />
-                <div class="payment-proof-frame-9">
-                  <div class="payment-proof-frame-94">
-                    <div class="payment-proof-frame-93">
-                      <div class="payment-proof-text-10 payment-proof-valign-text-middle notosansthai-bold-black-22px">
-                        หลักฐานเอกสารเพิ่มเติม</div>
-                      <p class="payment-proof-text_label-1 payment-proof-text_label-4 notosansthai-normal-black-16px">
-                        กรุณาอัพโหลดหลักฐานการชำระเงิน จำนวน 1 รูป โดยขนาดไฟล์ที่ อัพโหลดต้องไม่เกิน 1MB
-                      </p>
-                    </div>
-                  </div>
-
-                </div>
-                <a href="javascript:SubmitForm('form6')">
-                  <div class="payment-proof-button-new-2 ">
-                    <img class="payment-proof-icon" src="img/icon-upload-file-5.svg" alt="icon Upload File" />
-                    <div
-                      class="payment-proof-text_label-2 payment-proof-valign-text-middle payment-proof-text_label-4 kanit-normal-licorice-17px">
-                      เลือกไฟล์
-                    </div>
-                  </div>
-                </a>
-                <a href="javascript:SubmitForm('form6')">
-                  <div class="payment-proof-button-1 payment-proof-button-2">
-                    <img class="payment-proof-icon" src="img/icon-plus-2.svg" alt="icon plus" />
-                    <div class="payment-proof-text_label payment-proof-valign-text-middle payment-proof-text_label-4">
-                      เพิ่มไฟล์</div>
-                  </div>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div>
-            <a>
-              <div class="payment-proof-frame-14" onclick="showPopup()">
-                <div class="payment-proof-text-11 notosansthai-semi-bold-white-20px">ยืนยันการส่งหลักฐาน</div>
-              </div>
-            </a>
-          </div>
-
-
-        </div>
-      </div>
-    </div>
-  </div>
+  
 
   <div id="content" class="payment-proof-view" style="display: none;">
     <div class="payment-proof-popup">
