@@ -13896,7 +13896,7 @@ input:focus {
   align-self: flex-end;
   color: var(--black);
   font-family: var(--font-family-noto_sans_thai);
-  font-size: var(--font-size-l-2);
+  font-size: var(--font-size-32);
   font-weight: 500;
   letter-spacing: 0;
   line-height: 48.0px;
@@ -30062,6 +30062,16 @@ body.no-scroll {
     width: 50px;
     text-align: center;
   }
+
+  .purchase-order-detail-frame-38500-image {
+    width: 100%;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+}
 }
 
 /* à¸ªà¸³à¸«à¸£à¸±à¸š Tablet */
@@ -34536,6 +34546,7 @@ body.no-scroll {
     gap: 20px;
     position: relative;
     width: 100%;
+    flex-wrap: wrap;
   }
 
   .purchase-order-detail-frame-38502 {

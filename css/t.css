@@ -3843,4 +3843,22 @@
     .display-none-t {
         display: none;
     }
+
+    .notosansthai-semi-bold-vulcan-20px {
+        color: var(--vulcan);
+        font-family: var(--font-family-noto_sans_thai);
+        font-size: var(--font-size-18);
+        font-style: normal;
+        font-weight: 600;
+    }
+
+    .purchase-order-detail-frame-38500-image {
+        width: 100%;
+        display: flex;
+        gap: 20px;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+    }
 }

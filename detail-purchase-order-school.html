@@ -11,15 +11,17 @@
   <meta name="og:type" content="website" />
   <meta name="twitter:card" content="photo" />
   <link rel="stylesheet" type="text/css" href="css/styles.css" />
+  <link rel="stylesheet" type="text/css" href="css/m.css" />
+  <link rel="stylesheet" type="text/css" href="css/t.css" />
 </head>
 
 <body style="margin: 0; background: #ffffff">
-  <div class="desktop">
+  <!-- <div class="desktop"> -->
     <div class="header-ecs">
       <a href="./login.html">
         <img class="logo-ecs" src="img/logo------1.png" alt="logo ecs" />
       </a>
-      <div class="navbar-ecs">
+      <div class="navbar-ecs header-menu">
         <div class="navbar-link-text-ecs">
           <a href="./purchase-order-school.html">
             ออกใบขอสั่งซื้อ
@@ -31,12 +33,12 @@
           </a>
         </div>
         <div class="navbar-link-text-ecs">
-          <a href="./order.html">
+          <a href="./delivered-order.html">
             รายการคำสั่งซื้อ
           </a>
         </div>
         <div class="navbar-link-text-ecs">
-          <a href="./order-cancel.htmll">
+          <a href="./order-cancel.html">
             ยกเลิกเลข ปพ.
           </a>
         </div>
@@ -47,29 +49,94 @@
         </div>
       </div>
       <div class="header-action-ecs">
-        <img class="group" src="img/group@2x.png" alt="Group" />
+        <img class="group site-navbar" src="img/Icon-Service.png" alt="Service" onclick="showMenuNav()" />
+        <div class="notification-icon">
+          <img class="group" src="img/group@2x.png" alt="Group" onclick="toggleNotificationPanel()" />
+          <span id="notification-badge" class="notification-badge"></span> <!-- จุดแดง -->
+        </div>
+  
+        <div id="notification-panel" class="notification-panel hidden">
+          <ul class="notification-list">
+            <li class="notification-item unread">
+              <span class="status-indicator"></span>
+              <div class="notification-content">
+                <p class="notosansthai-normal-vulcan-15px">
+                  <strong class="notosansthai-semi-bold-vulcan-15px">หมายเลขคำสั่งซื้อ:</strong> 12345
+                </p>
+                <p class="notosansthai-normal-vulcan-15px">
+                  <strong class="notosansthai-semi-bold-vulcan-15px">สถานะ:</strong> รอดำเนินการ
+                </p>
+              </div>
+            </li>
+            <li class="notification-item">
+              <span class="status-indicator read"></span>
+              <div class="notification-content">
+                <p class="notosansthai-normal-vulcan-15px">
+                  <strong class="notosansthai-semi-bold-vulcan-15px">หมายเลขคำสั่งซื้อ:</strong> 67890
+                </p>
+                <p class="notosansthai-normal-vulcan-15px">
+                  <strong class="notosansthai-semi-bold-vulcan-15px">สถานะ:</strong> สำเร็จ
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+  
         <a href="./profile-school.html">
           <img class="vector" src="img/vector-2.svg" alt="Vector" />
         </a>
       </div>
     </div>
+    <div id="subMenuHeader" class="sub-menu-header" style="display: none;">
+      <a href="./purchase-order-school.html"
+        class="notosansthai-normal-black-20px no-text-underline textItemMenuHeader itemMenuHeader">
+        ออกใบขอสั่งซื้อ
+      </a>
+      <hr />
+      <a href="./approve-school.html"
+        class="notosansthai-normal-black-20px no-text-underline textItemMenuHeader itemMenuHeader">
+        เอกสารใบขอสั่งซื้อ
+      </a>
+      <hr />
+      <a href="./delivered-order.html"
+        class="notosansthai-normal-black-20px no-text-underline textItemMenuHeader itemMenuHeader">
+        รายการคำสั่งซื้อ
+      </a>
+      <hr />
+      <a href="./order-cancel.html"
+        class="notosansthai-normal-black-20px no-text-underline textItemMenuHeader itemMenuHeader">
+        ยกเลิกเลข ปพ.
+      </a>
+      <hr />
+      <a href="./delivered-order.html"
+        class="notosansthai-normal-black-20px no-text-underline textItemMenuHeader itemMenuHeader">
+        ประวัติการสั่งซื้อ
+      </a>
+    </div>
     <div class="container-center-horizontal">
       <div class="purchase-order-detail">
-        <div class="purchase-order-detail-flex-row">
+        <div class="purchase-order-flex-row">
           <a href="./purchase-order-school.html">
-            <div class="purchase-order-detail-button purchase-order-detail-button-2">
-              <img class="purchase-order-detail-icon-back" src="img/icon-back-4.svg" alt="icon back" />
-              <div
-                class="purchase-order-detail-text_label purchase-order-detail-valign-text-middle purchase-order-detail-text_label-2">
-                ย้อนกลับ</div>
+            <div class="purchase-order-button-3 purchase-order-button-8">
+              <img class="purchase-order-icon-back" src="img/icon-back-3.svg" alt="icon back" />
+              <div class="purchase-order-text_label valign-text-middle purchase-order-text_label-5">ย้อนกลับ</div>
             </div>
           </a>
-          <h1 class="purchase-order-detail-text-6">รายละเอียดสินค้า</h1>
         </div>
+        <h1 class="purchase-order-detail-text-6" style="align-self: center;">รายละเอียดสินค้า</h1>
         <div class="purchase-order-detail-frame-38503">
           <div class="purchase-order-detail-frame-38500">
-            <img class="purchase-order-detail-rectangle-4317" src="img/rectangle-4317-1@2x.png" alt="Rectangle 4317"
+            <div class="purchase-order-detail-frame-38500-image">
+              <img class="purchase-order-detail-rectangle-4317" src="img/rectangle-4317-1@2x.png" alt="Rectangle 4317"
               onclick="openModal(); currentSlide(3)" />
+              <div class="purchase-order-detail-frame-38501">
+                <img class="purchase-order-detail-rectangle-4318" src="img/rectangle-4318-1@2x.png" alt="Rectangle 4318"
+                  onclick="openModal(); currentSlide(1)" />
+                <img class="purchase-order-detail-rectangle-4319" src="img/rectangle-4319-1@2x.png" alt="Rectangle 4319"
+                  onclick="openModal(); currentSlide(2)" />
+              </div>
+            </div>
+            
             <div class="purchase-order-detail-frame-38502">
               <div class="purchase-order-detail-frame-38499">
                 <div class="purchase-order-detail-frame-38431">
@@ -119,25 +186,19 @@
               </div>
             </div>
           </div>
-          <div class="purchase-order-detail-frame-38501">
-            <img class="purchase-order-detail-rectangle-4318" src="img/rectangle-4318-1@2x.png" alt="Rectangle 4318"
-              onclick="openModal(); currentSlide(1)" />
-            <img class="purchase-order-detail-rectangle-4319" src="img/rectangle-4319-1@2x.png" alt="Rectangle 4319"
-              onclick="openModal(); currentSlide(2)" />
-          </div>
         </div>
       </div>
     </div>
-  </div>
+  <!-- </div> -->
 
-  <div class="tablet">
+  <!-- <div class="tablet">
     <div class="header-ecs">
       <a href="./login.html">
         <img class="logo-ecs" src="img/logo------1.png" alt="logo ecs" />
       </a>
 
       <div class="header-action-ecs">
-        <img class="group" src="img/Icon-Service.png" alt="Service" onclick="showMenuNav()"/>
+        <img class="group" src="img/Icon-Service.png" alt="Service" onclick="showMenuNav()" />
         <img class="group" src="img/group@2x.png" alt="Group" />
         <a href="./profile-school.html">
           <img class="vector" src="img/vector-2.svg" alt="Vector" />
@@ -203,7 +264,8 @@
                     class="purchase-order-detail-text purchase-order-detail-valign-text-middle notosansthai-semi-bold-vulcan-20px">
                     รายละเอียด :</div>
                   <p
-                    class="purchase-order-detail-text-10 purchase-order-detail-valign-text-middle notosansthai-normal-vulcan-20px">เอกสารแสดงผลการเรียนของนักเรียนระดับประถมศึกษา โดยระบุ ผลการเรียนของรายวิชาในแต่ละภาคเรียน
+                    class="purchase-order-detail-text-10 purchase-order-detail-valign-text-middle notosansthai-normal-vulcan-20px">
+                    เอกสารแสดงผลการเรียนของนักเรียนระดับประถมศึกษา โดยระบุ ผลการเรียนของรายวิชาในแต่ละภาคเรียน
                     ข้อมูลพฤติกรรมคุณลักษณะ อันพึงประสงค์ และกิจกรรมพัฒนาผู้เรียนใช้เป็นเอกสารหลักฐานในการ
                     ยื่นสมัครเรียนต่อในระดับมัธยมศึกษาตอนต้น
                   </p>
@@ -244,10 +306,9 @@
         </div>
       </div>
     </div>
-  </div>
+  </div> -->
 
-
-  <div class="mobile">
+  <!-- <div class="mobile">
     <div class="header-ecs">
       <a href="./login.html">
         <img class="logo-ecs" src="img/logo------1.png" alt="logo ecs" />
@@ -328,7 +389,8 @@
                   class="purchase-order-detail-text purchase-order-detail-valign-text-middle notosansthai-semi-bold-vulcan-20px">
                   รายละเอียด :</div>
                 <p
-                  class="purchase-order-detail-text-10 purchase-order-detail-valign-text-middle notosansthai-normal-vulcan-20px">เอกสารแสดงผลการเรียนของนักเรียนระดับประถมศึกษา โดยระบุ ผลการเรียนของรายวิชาในแต่ละภาคเรียน
+                  class="purchase-order-detail-text-10 purchase-order-detail-valign-text-middle notosansthai-normal-vulcan-20px">
+                  เอกสารแสดงผลการเรียนของนักเรียนระดับประถมศึกษา โดยระบุ ผลการเรียนของรายวิชาในแต่ละภาคเรียน
                   ข้อมูลพฤติกรรมคุณลักษณะ อันพึงประสงค์ และกิจกรรมพัฒนาผู้เรียนใช้เป็นเอกสารหลักฐานในการ
                   ยื่นสมัครเรียนต่อในระดับมัธยมศึกษาตอนต้น
                 </p>
@@ -362,7 +424,7 @@
         </div>
       </div>
     </div>
-  </div>
+  </div> -->
 
   <div id="myModal" class="payment-proof-view" style="display: none;">
     <!-- <span class="purchase-order-detail-close" onclick="closeModal()">&times;</span> -->
@@ -460,6 +522,11 @@
         subMenuHeader.style.display = "none";
         subMenuHeaderMobile.style.display = "none";
       }
+    }
+
+    function toggleNotificationPanel() {
+      const panel = document.getElementById('notification-panel');
+      panel.classList.toggle('hidden');
     }
   </script>
 </body>
