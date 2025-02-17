@@ -191,202 +191,224 @@
                 </div>
                 <img class="waiting-approve-school-frame-38343" src="img/frame-38343-9.svg" alt="Frame 38343" />
               </div>
+
+
               <div class="waiting-approve-school-frame-20">
                 <img class="waiting-approve-school-icon-magnifying-glass-searching-glass"
-                  src="img/icon-magnifying-glass-searching-glass-2.svg" alt="icon Magnifying Glass Searching Glass" />
-                <input class="waiting-approve-school-text_input" name="คณสามารถคนหาโดยใชหมายเลขใบขอสงซอ"
-                  placeholder="คุณสามารถค้นหาโดยใช้หมายเลขใบขอสั่งซื้อ" type="text" />
+                     src="img/icon-magnifying-glass-searching-glass-2.svg"
+                     alt="icon Magnifying Glass Searching Glass" />
+                <input id="searchInput" class="waiting-approve-school-text_input"
+                       placeholder="คุณสามารถค้นหาโดยใช้หมายเลขใบขอสั่งซื้อ" type="text"
+                       onkeyup="filterOrders()" />
               </div>
-              <div class="waiting-approve-school-frame">
-                <div class="waiting-approve-school-frame-38339">
-                  <div
-                    class="waiting-approve-school-xxxxxxxx waiting-approve-school-valign-text-middle notosansthai-semi-bold-black-20px">
-                    หมายเลขใบขอสั่งซื้อ xxxxxxxx
-                  </div>
-                  <div class="waiting-approve-school-frame-38341">
-                    <a href="">
-                      <div
-                        class="waiting-approve-school-text-18 waiting-approve-school-valign-text-middle waiting-approve-school-text-5 notosansthai-normal-black-16px">
-                        ดูรายละเอียด</div>
-                    </a>
-                    <div class="waiting-approve-school-button waiting-approve-school-button-4">
-                      <div
-                        class="waiting-approve-school-text_label waiting-approve-school-valign-text-middle notosansthai-semi-bold-black-20px">
-                        รออนุมัติ</div>
-                    </div>
-                  </div>
-                </div>
-                <div id="collapProduct" class="waiting-approve-school-collapProduct" style="display: none;">
-                  <img class="waiting-approve-school-line" src="img/line-6-2.svg" alt="Line 6" />
-                  <div class="waiting-approve-school-frame-38-1">
-                    <div class="waiting-approve-school-frame-95"><img class="waiting-approve-school-image-8"
-                        src="img/image-8-2@2x.png" alt="image 8" /></div>
-                    <div class="waiting-approve-school-frame-94">
-                      <div class="waiting-approve-school-frame-94-1">
-                        <div class="waiting-approve-school-frame-93">
-                          <p
-                            class="waiting-approve-school-text-3 waiting-approve-school-valign-text-middle waiting-approve-school-text-5 notosansthai-semi-bold-black-22px">
-                            ปพ.1:ป ระเบียนแสดงผลการเรียน ระดับ ประถมฯ <br />(ปรับปรุง 2555) (ฉบับใช้กับคอม)
-                          </p>
-                          <div class="waiting-approve-school-frame-9">
-                            <div class="waiting-approve-school-frame-9">
+
+              <table>
+                <tbody>
+                  <tr>
+                    <td>
+                      <div class="waiting-approve-school-frame">
+                        <div class="waiting-approve-school-frame-38339">
+                          <div
+                            class="waiting-approve-school-xxxxxxxx waiting-approve-school-valign-text-middle notosansthai-semi-bold-black-20px">
+                            หมายเลขใบขอสั่งซื้อ 123
+                          </div>
+                          <div class="waiting-approve-school-frame-38341">
+                            <a href="">
                               <div
-                                class="waiting-approve-school-text-20 waiting-approve-school-text-5 notosansthai-normal-white-16px">
-                                <span class="notosansthai-normal-black-16px">ราคาต่อเล่ม:
-                                </span><span class="notosansthai-normal-black-16px-2">160
-                                  บาท</span>
-                              </div>
+                                class="waiting-approve-school-text-18 waiting-approve-school-valign-text-middle waiting-approve-school-text-5 notosansthai-normal-black-16px">
+                                ดูรายละเอียด</div>
+                            </a>
+                            <div class="waiting-approve-school-button waiting-approve-school-button-4">
+                              <div
+                                class="waiting-approve-school-text_label waiting-approve-school-valign-text-middle notosansthai-semi-bold-black-20px">
+                                รออนุมัติ</div>
                             </div>
                           </div>
                         </div>
-                        <div class="waiting-approve-school-frame-93-1"></div>
-                      </div>
-                    </div>
-                    <div class="waiting-approve-school-frame-18 notosansthai-medium-black-14px">
-                      <div class="waiting-approve-school-number-4">1</div>
-                      <div class="waiting-approve-school-text-21 waiting-approve-school-text-5">เล่ม</div>
-                    </div>
-                  </div>
-                  <div class="waiting-approve-school-frame-38-1">
-                    <div class="waiting-approve-school-frame-95"><img class="waiting-approve-school-image-8"
-                        src="img/image-8-3@2x.png" alt="image 8" /></div>
-                    <div class="waiting-approve-school-frame-94">
-                      <div class="waiting-approve-school-frame-94-1">
-                        <div class="waiting-approve-school-frame-93">
-                          <p
-                            class="waiting-approve-school-text-2-1 waiting-approve-school-valign-text-middle notosansthai-semi-bold-black-20px">
-                            ปพ.1:บ&nbsp;&nbsp;ระเบียนแสดงผลการเรียน ระดับ ม.ต้น <br />(ปรับปรุง 2555) (ฉบับใช้กับคอม)
-                          </p>
-                          <div class="waiting-approve-school-frame-38433">
-                            <div class="waiting-approve-school-frame-9">
-                              <div
-                                class="waiting-approve-school-text-23 waiting-approve-school-text-5 notosansthai-normal-white-16px">
-                                <span class="notosansthai-normal-black-16px">ราคาต่อเล่ม:
-                                </span><span class="notosansthai-normal-black-16px-2">160
-                                  บาท</span>
+                        <div id="collapProduct" class="waiting-approve-school-collapProduct" style="display: none;">
+                          <img class="waiting-approve-school-line" src="img/line-6-2.svg" alt="Line 6" />
+                          <div class="waiting-approve-school-frame-38-1">
+                            <div class="waiting-approve-school-frame-95"><img class="waiting-approve-school-image-8"
+                                src="img/image-8-2@2x.png" alt="image 8" /></div>
+                            <div class="waiting-approve-school-frame-94">
+                              <div class="waiting-approve-school-frame-94-1">
+                                <div class="waiting-approve-school-frame-93">
+                                  <p
+                                    class="waiting-approve-school-text-3 waiting-approve-school-valign-text-middle waiting-approve-school-text-5 notosansthai-semi-bold-black-22px">
+                                    ปพ.1:ป ระเบียนแสดงผลการเรียน ระดับ ประถมฯ <br />(ปรับปรุง 2555) (ฉบับใช้กับคอม)
+                                  </p>
+                                  <div class="waiting-approve-school-frame-9">
+                                    <div class="waiting-approve-school-frame-9">
+                                      <div
+                                        class="waiting-approve-school-text-20 waiting-approve-school-text-5 notosansthai-normal-white-16px">
+                                        <span class="notosansthai-normal-black-16px">ราคาต่อเล่ม:
+                                        </span><span class="notosansthai-normal-black-16px-2">160
+                                          บาท</span>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="waiting-approve-school-frame-93-1"></div>
                               </div>
+                            </div>
+                            <div class="waiting-approve-school-frame-18 notosansthai-medium-black-14px">
+                              <div class="waiting-approve-school-number-4">1</div>
+                              <div class="waiting-approve-school-text-21 waiting-approve-school-text-5">เล่ม</div>
+                            </div>
+                          </div>
+                          <div class="waiting-approve-school-frame-38-1">
+                            <div class="waiting-approve-school-frame-95"><img class="waiting-approve-school-image-8"
+                                src="img/image-8-3@2x.png" alt="image 8" /></div>
+                            <div class="waiting-approve-school-frame-94">
+                              <div class="waiting-approve-school-frame-94-1">
+                                <div class="waiting-approve-school-frame-93">
+                                  <p
+                                    class="waiting-approve-school-text-2-1 waiting-approve-school-valign-text-middle notosansthai-semi-bold-black-20px">
+                                    ปพ.1:บ&nbsp;&nbsp;ระเบียนแสดงผลการเรียน ระดับ ม.ต้น <br />(ปรับปรุง 2555) (ฉบับใช้กับคอม)
+                                  </p>
+                                  <div class="waiting-approve-school-frame-38433">
+                                    <div class="waiting-approve-school-frame-9">
+                                      <div
+                                        class="waiting-approve-school-text-23 waiting-approve-school-text-5 notosansthai-normal-white-16px">
+                                        <span class="notosansthai-normal-black-16px">ราคาต่อเล่ม:
+                                        </span><span class="notosansthai-normal-black-16px-2">160
+                                          บาท</span>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="waiting-approve-school-frame-93-1"></div>
+                              </div>
+                            </div>
+                            <div class="waiting-approve-school-frame-18 notosansthai-medium-black-14px">
+                              <div class="waiting-approve-school-number-4">1</div>
+                              <div class="waiting-approve-school-text-24 waiting-approve-school-text-5">เล่ม</div>
                             </div>
                           </div>
                         </div>
-                        <div class="waiting-approve-school-frame-93-1"></div>
-                      </div>
-                    </div>
-                    <div class="waiting-approve-school-frame-18 notosansthai-medium-black-14px">
-                      <div class="waiting-approve-school-number-4">1</div>
-                      <div class="waiting-approve-school-text-24 waiting-approve-school-text-5">เล่ม</div>
-                    </div>
-                  </div>
-                </div>
-                <img class="waiting-approve-school-line" src="img/line-6-2.svg" alt="Line 7" />
-                <div class="waiting-approve-school-frame-38341-1">
-                  <div class="waiting-approve-school-frame-38">
-                    <div
-                      class="waiting-approve-school-grand-total waiting-approve-school-valign-text-middle notosansthai-normal-black-16px">
-                      ยอดสุทธิ /Grand Total :
-                    </div>
-                    <div class="waiting-approve-school-xxx-2 waiting-approve-school-valign-text-middle">xxx บาท</div>
-                    <a onclick="showProductCollap('collapProduct')">
-                      <div class="approve-school-frame-38348">
-                        <img class="approve-school-arrow-down-01" src="img/arrow-down-01-2.svg" alt="arrow-down-01" />
-                      </div>
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div class="waiting-approve-school-frame">
-                <div class="waiting-approve-school-frame-38339">
-                  <div
-                    class="waiting-approve-school-xxxxxxxx waiting-approve-school-valign-text-middle notosansthai-semi-bold-black-20px">
-                    หมายเลขใบขอสั่งซื้อ xxxxxxxx
-                  </div>
-                  <div class="waiting-approve-school-frame-38341">
-                    <div
-                      class="waiting-approve-school-text-25 waiting-approve-school-valign-text-middle waiting-approve-school-text-5 notosansthai-normal-black-16px">
-                      ดูรายละเอียด</div>
-                    <div class="waiting-approve-school-button waiting-approve-school-button-4">
-                      <div
-                        class="waiting-approve-school-text_label waiting-approve-school-valign-text-middle notosansthai-semi-bold-black-20px">
-                        รออนุมัติ</div>
-                    </div>
-                  </div>
-                </div>
-                <div id="collapProduct2" class="waiting-approve-school-collapProduct" style="display: none;">
-                  <img class="waiting-approve-school-line" src="img/line-6-2.svg" alt="Line 6" />
-                  <div class="waiting-approve-school-frame-38-1">
-                    <div class="waiting-approve-school-frame-95"><img class="waiting-approve-school-image-8"
-                        src="img/image-8-2@2x.png" alt="image 8" /></div>
-                    <div class="waiting-approve-school-frame-94">
-                      <div class="waiting-approve-school-frame-94-1">
-                        <div class="waiting-approve-school-frame-93">
-                          <p
-                            class="waiting-approve-school-text-3 waiting-approve-school-valign-text-middle waiting-approve-school-text-5 notosansthai-semi-bold-black-22px">
-                            ปพ.1:ป ระเบียนแสดงผลการเรียน ระดับ ประถมฯ <br />(ปรับปรุง 2555) (ฉบับใช้กับคอม)
-                          </p>
-                          <div class="waiting-approve-school-frame-9">
-                            <div class="waiting-approve-school-frame-9">
-                              <div
-                                class="waiting-approve-school-text-27 waiting-approve-school-text-5 notosansthai-normal-white-16px">
-                                <span class="notosansthai-normal-black-16px">ราคาต่อเล่ม:
-                                </span><span class="notosansthai-normal-black-16px-2">160
-                                  บาท</span>
+                        <img class="waiting-approve-school-line" src="img/line-6-2.svg" alt="Line 7" />
+                        <div class="waiting-approve-school-frame-38341-1">
+                          <div class="waiting-approve-school-frame-38">
+                            <div
+                              class="waiting-approve-school-grand-total waiting-approve-school-valign-text-middle notosansthai-normal-black-16px">
+                              ยอดสุทธิ /Grand Total :
+                            </div>
+                            <div class="waiting-approve-school-xxx-2 waiting-approve-school-valign-text-middle">xxx บาท</div>
+                            <a onclick="showProductCollap('collapProduct')">
+                              <div class="approve-school-frame-38348">
+                                <img class="approve-school-arrow-down-01" src="img/arrow-down-01-2.svg" alt="arrow-down-01" />
                               </div>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="waiting-approve-school-frame">
+                        <div class="waiting-approve-school-frame-38339">
+                          <div
+                            class="waiting-approve-school-xxxxxxxx waiting-approve-school-valign-text-middle notosansthai-semi-bold-black-20px">
+                            หมายเลขใบขอสั่งซื้อ 456
+                          </div>
+                          <div class="waiting-approve-school-frame-38341">
+                            <div
+                              class="waiting-approve-school-text-25 waiting-approve-school-valign-text-middle waiting-approve-school-text-5 notosansthai-normal-black-16px">
+                              ดูรายละเอียด</div>
+                            <div class="waiting-approve-school-button waiting-approve-school-button-4">
+                              <div
+                                class="waiting-approve-school-text_label waiting-approve-school-valign-text-middle notosansthai-semi-bold-black-20px">
+                                รออนุมัติ</div>
                             </div>
                           </div>
                         </div>
-                        <div class="waiting-approve-school-frame-93-1"></div>
-                      </div>
-                    </div>
-                    <div class="waiting-approve-school-frame-18 notosansthai-medium-black-14px">
-                      <div class="waiting-approve-school-number-4">1</div>
-                      <div class="waiting-approve-school-text-28 waiting-approve-school-text-5">เล่ม</div>
-                    </div>
-                  </div>
-                  <div class="waiting-approve-school-frame-38-1">
-                    <div class="waiting-approve-school-frame-95"><img class="waiting-approve-school-image-8"
-                        src="img/image-8-3@2x.png" alt="image 8" /></div>
-                    <div class="waiting-approve-school-frame-94">
-                      <div class="waiting-approve-school-frame-94-1">
-                        <div class="waiting-approve-school-frame-93">
-                          <p
-                            class="waiting-approve-school-text-2-1 waiting-approve-school-valign-text-middle notosansthai-semi-bold-black-20px">
-                            ปพ.1:บ&nbsp;&nbsp;ระเบียนแสดงผลการเรียน ระดับ ม.ต้น <br />(ปรับปรุง 2555) (ฉบับใช้กับคอม)
-                          </p>
-                          <div class="waiting-approve-school-frame-38433">
-                            <div class="waiting-approve-school-frame-9">
-                              <div
-                                class="waiting-approve-school-text-30 waiting-approve-school-text-5 notosansthai-normal-white-16px">
-                                <span class="notosansthai-normal-black-16px">ราคาต่อเล่ม:
-                                </span><span class="notosansthai-normal-black-16px-2">160
-                                  บาท</span>
+                        <div id="collapProduct2" class="waiting-approve-school-collapProduct" style="display: none;">
+                          <img class="waiting-approve-school-line" src="img/line-6-2.svg" alt="Line 6" />
+                          <div class="waiting-approve-school-frame-38-1">
+                            <div class="waiting-approve-school-frame-95"><img class="waiting-approve-school-image-8"
+                                src="img/image-8-2@2x.png" alt="image 8" /></div>
+                            <div class="waiting-approve-school-frame-94">
+                              <div class="waiting-approve-school-frame-94-1">
+                                <div class="waiting-approve-school-frame-93">
+                                  <p
+                                    class="waiting-approve-school-text-3 waiting-approve-school-valign-text-middle waiting-approve-school-text-5 notosansthai-semi-bold-black-22px">
+                                    ปพ.1:ป ระเบียนแสดงผลการเรียน ระดับ ประถมฯ <br />(ปรับปรุง 2555) (ฉบับใช้กับคอม)
+                                  </p>
+                                  <div class="waiting-approve-school-frame-9">
+                                    <div class="waiting-approve-school-frame-9">
+                                      <div
+                                        class="waiting-approve-school-text-27 waiting-approve-school-text-5 notosansthai-normal-white-16px">
+                                        <span class="notosansthai-normal-black-16px">ราคาต่อเล่ม:
+                                        </span><span class="notosansthai-normal-black-16px-2">160
+                                          บาท</span>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="waiting-approve-school-frame-93-1"></div>
                               </div>
+                            </div>
+                            <div class="waiting-approve-school-frame-18 notosansthai-medium-black-14px">
+                              <div class="waiting-approve-school-number-4">1</div>
+                              <div class="waiting-approve-school-text-28 waiting-approve-school-text-5">เล่ม</div>
+                            </div>
+                          </div>
+                          <div class="waiting-approve-school-frame-38-1">
+                            <div class="waiting-approve-school-frame-95"><img class="waiting-approve-school-image-8"
+                                src="img/image-8-3@2x.png" alt="image 8" /></div>
+                            <div class="waiting-approve-school-frame-94">
+                              <div class="waiting-approve-school-frame-94-1">
+                                <div class="waiting-approve-school-frame-93">
+                                  <p
+                                    class="waiting-approve-school-text-2-1 waiting-approve-school-valign-text-middle notosansthai-semi-bold-black-20px">
+                                    ปพ.1:บ&nbsp;&nbsp;ระเบียนแสดงผลการเรียน ระดับ ม.ต้น <br />(ปรับปรุง 2555) (ฉบับใช้กับคอม)
+                                  </p>
+                                  <div class="waiting-approve-school-frame-38433">
+                                    <div class="waiting-approve-school-frame-9">
+                                      <div
+                                        class="waiting-approve-school-text-30 waiting-approve-school-text-5 notosansthai-normal-white-16px">
+                                        <span class="notosansthai-normal-black-16px">ราคาต่อเล่ม:
+                                        </span><span class="notosansthai-normal-black-16px-2">160
+                                          บาท</span>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="waiting-approve-school-frame-93-1"></div>
+                              </div>
+                            </div>
+                            <div class="waiting-approve-school-frame-18 notosansthai-medium-black-14px">
+                              <div class="waiting-approve-school-number-4">1</div>
+                              <div class="waiting-approve-school-text-31 waiting-approve-school-text-5">เล่ม</div>
                             </div>
                           </div>
                         </div>
-                        <div class="waiting-approve-school-frame-93-1"></div>
+                        <img class="waiting-approve-school-line" src="img/line-6-2.svg" alt="Line 7" />
+                        <div class="waiting-approve-school-frame-38341-1">
+                          <div class="waiting-approve-school-frame-38">
+                            <div
+                              class="waiting-approve-school-grand-total waiting-approve-school-valign-text-middle notosansthai-normal-black-16px">
+                              ยอดสุทธิ /Grand Total :
+                            </div>
+                            <div class="waiting-approve-school-xxx-2 waiting-approve-school-valign-text-middle">xxx บาท</div>
+                            <a onclick="showProductCollap('collapProduct2')">
+                              <div class="approve-school-frame-38348">
+                                <img class="approve-school-arrow-down-01" src="img/arrow-down-01-2.svg" alt="arrow-down-01" />
+                              </div>
+                            </a>
+                          </div>
+                        </div>
                       </div>
-                    </div>
-                    <div class="waiting-approve-school-frame-18 notosansthai-medium-black-14px">
-                      <div class="waiting-approve-school-number-4">1</div>
-                      <div class="waiting-approve-school-text-31 waiting-approve-school-text-5">เล่ม</div>
-                    </div>
-                  </div>
-                </div>
-                <img class="waiting-approve-school-line" src="img/line-6-2.svg" alt="Line 7" />
-                <div class="waiting-approve-school-frame-38341-1">
-                  <div class="waiting-approve-school-frame-38">
-                    <div
-                      class="waiting-approve-school-grand-total waiting-approve-school-valign-text-middle notosansthai-normal-black-16px">
-                      ยอดสุทธิ /Grand Total :
-                    </div>
-                    <div class="waiting-approve-school-xxx-2 waiting-approve-school-valign-text-middle">xxx บาท</div>
-                    <a onclick="showProductCollap('collapProduct2')">
-                      <div class="approve-school-frame-38348">
-                        <img class="approve-school-arrow-down-01" src="img/arrow-down-01-2.svg" alt="arrow-down-01" />
-                      </div>
-                    </a>
-                  </div>
-                </div>
-              </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            
+
+              
+              
+
               <div class="waiting-approve-school-frame-38520">
                 <div class="waiting-approve-school-frame-38263">
                   <div class="waiting-approve-school-input-select">
@@ -499,8 +521,34 @@
         content.style.display = "none";
       }
     }
+    
 
   </script>
+
+<script>
+  function filterOrders() {
+      var input, filter, table, tr, td, i, txtValue;
+      input = document.getElementById("searchInput");
+      filter = input.value.trim();
+      table = document.querySelectorAll(".waiting-approve-school-frame"); // ใช้ selector สำหรับแต่ละใบขอสั่งซื้อ
+      tr = document.querySelectorAll(".waiting-approve-school-xxxxxxxx"); // หมายเลขใบขอสั่งซื้อ
+  
+      // ลูปผ่านทุกหมายเลขใบขอสั่งซื้อ
+      for (i = 0; i < tr.length; i++) {
+          td = tr[i];
+          if (td) {
+              txtValue = td.textContent || td.innerText;
+              // ตรวจสอบว่าตรงกับค่าที่กรอกใน input หรือไม่
+              if (txtValue.indexOf(filter) > -1 || filter === "") {
+                  table[i].style.display = "";
+              } else {
+                  table[i].style.display = "none";
+              }
+          }
+      }
+  }
+  </script>
+  
 </body>
 
 </html>
