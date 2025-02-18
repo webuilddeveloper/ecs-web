@@ -33869,7 +33869,7 @@ body.no-scroll {
   }
 
   .display-none-t {
-    display: none;
+    display: none !important;
   }
 
   .notosansthai-semi-bold-vulcan-20px {
@@ -39341,7 +39341,7 @@ body.no-scroll {
   }
 
   .display-none-m {
-    display: none;
+    display: none !important;
   }
 
   .purchase-order-frame-2 {
@@ -39459,6 +39459,16 @@ body.no-scroll {
     font-family: var(--font-family-noto_sans_thai);
     font-size: var(--font-size-15);
     font-weight: 700;
+  }
+
+  .content-ecs .frame-38339 {
+    align-items: center;
+    align-self: stretch;
+    display: flex;
+    flex: 0 0 auto;
+    gap: 5px;
+    position: relative;
+    width: 100%;
   }
 }
 
