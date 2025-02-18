@@ -11,231 +11,308 @@
   <meta name="og:type" content="website" />
   <meta name="twitter:card" content="photo" />
   <link rel="stylesheet" type="text/css" href="css/styles.css" />
+  <!-- <link rel="stylesheet" type="text/css" href="css/m.css" />
+  <link rel="stylesheet" type="text/css" href="css/t.css" /> -->
 
 </head>
 
 <body style="margin: 0; background: #ffffff">
-  <div class="desktop">
-    <div class="header-ecs">
-      <a href="./login.html">
-        <img class="logo-ecs" src="img/logo------1.png" alt="logo" />
-      </a>
-      <div class="navbar-ecs">
-        <div class="navbar-link-text-ecs">
-          <a href="./purchase-order-school.html">
-            ออกใบขอสั่งซื้อ
-          </a>
-        </div>
-        <div class="navbar-link-text-ecs">
-          <a href="./approve-school.html">
-            เอกสารใบขอสั่งซื้อ
-          </a>
-        </div>
-        <div class="navbar-link-text-ecs">
-          <a href="./delivered-order.html">
-            รายการคำสั่งซื้อ
-          </a>
-        </div>
-        <div class="navbar-link-text-ecs">
-          <a href="./order-cancel.html">
-            ยกเลิกเลข ปพ.
-          </a>
-        </div>
-        <div class="navbar-link-text-ecs">
-          <a href="./delivered-order.html">
-            ประวัติการสั่งซื้อ
-          </a>
-        </div>
+  <!-- <div class="desktop"> -->
+  <div class="header-ecs">
+    <a href="./login.html">
+      <img class="logo-ecs" src="img/logo------1.png" alt="logo ecs" />
+    </a>
+    <div class="navbar-ecs header-menu">
+      <div class="navbar-link-text-ecs">
+        <a href="./purchase-order-school.html">
+          ออกใบขอสั่งซื้อ
+        </a>
       </div>
-      <div class="header-action-ecs">
-        <img class="group" src="img/group@2x.png" alt="Group" />
-        <a href="./profile-school.html">
-          <img class="vector" src="img/vector-2.svg" alt="vector" />
+      <div class="navbar-link-text-ecs">
+        <a href="./approve-school.html">
+          เอกสารใบขอสั่งซื้อ
+        </a>
+      </div>
+      <div class="navbar-link-text-ecs">
+        <a href="./delivered-order.html">
+          รายการคำสั่งซื้อ
+        </a>
+      </div>
+      <div class="navbar-link-text-ecs">
+        <a href="./order-cancel.html">
+          ยกเลิกเลข ปพ.
+        </a>
+      </div>
+      <div class="navbar-link-text-ecs">
+        <a href="./delivered-order.html">
+          ประวัติการสั่งซื้อ
         </a>
       </div>
     </div>
-    <div class="container-center-horizontal">
-      <div class="purchase-order-shipping">
-        <div class="purchase-order-result-flex-row">
-          <a href="./purchase-order-school.html">
-            <div class="purchase-order-result-button">
-              <img class="purchase-order-result-icon-back" src="img/icon-back-5.svg" alt="icon back" />
-              <div class="purchase-order-result-text_label purchase-order-result-valign-text-middle">ย้อนกลับ</div>
-            </div>
-          </a>
-          
-        </div>
-        <h1 class="purchase-order-result-text-1-1" style="align-self: center;">รายละเอียดการจัดส่ง</h1>
-        <div class="purchase-order-shipping-frame-38493">
-          <div class="purchase-order-shipping-frame-38395">
+    <div class="header-action-ecs">
+      <img class="group site-navbar" src="img/Icon-Service.png" alt="Service" onclick="showMenuNav()" />
+      <div class="notification-icon">
+        <img class="group" src="img/group@2x.png" alt="Group" onclick="toggleNotificationPanel()" />
+        <span id="notification-badge" class="notification-badge"></span> <!-- จุดแดง -->
+      </div>
 
-            <div class="purchase-order-shipping-frame-3839">
-              <div class="purchase-order-shipping-text notosansthai-semi-bold-black-20px">ที่อยู่ในการจัดส่ง</div>
-              <div class="purchase-order-shipping-frame-38392">
-                <div class="purchase-order-shipping-frame-38268">
-                  <div class="purchase-order-shipping-frame-38406">
-                    <div class="purchase-order-shipping-frame-38405">
-                      <div class="purchase-order-shipping-frame-38262">
-                        <div class="purchase-order-shipping-radio-button">
-                          <div class="purchase-order-shipping-frame-3">
-                            <div class="purchase-order-shipping-ellipse-2"></div>
-                          </div>
+      <div id="notification-panel" class="notification-panel hidden">
+        <ul class="notification-list">
+          <li class="notification-item unread">
+            <span class="status-indicator"></span>
+            <div class="notification-content">
+              <p class="notosansthai-normal-vulcan-15px">
+                <strong class="notosansthai-semi-bold-vulcan-15px">หมายเลขคำสั่งซื้อ:</strong> 12345
+              </p>
+              <p class="notosansthai-normal-vulcan-15px">
+                <strong class="notosansthai-semi-bold-vulcan-15px">สถานะ:</strong> รอดำเนินการ
+              </p>
+            </div>
+          </li>
+          <li class="notification-item">
+            <span class="status-indicator read"></span>
+            <div class="notification-content">
+              <p class="notosansthai-normal-vulcan-15px">
+                <strong class="notosansthai-semi-bold-vulcan-15px">หมายเลขคำสั่งซื้อ:</strong> 67890
+              </p>
+              <p class="notosansthai-normal-vulcan-15px">
+                <strong class="notosansthai-semi-bold-vulcan-15px">สถานะ:</strong> สำเร็จ
+              </p>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <a href="./profile-school.html">
+        <img class="vector" src="img/vector-2.svg" alt="Vector" />
+      </a>
+    </div>
+  </div>
+  <div id="subMenuHeader" class="sub-menu-header" style="display: none;">
+    <a href="./purchase-order-school.html"
+      class="notosansthai-normal-black-20px no-text-underline textItemMenuHeader itemMenuHeader">
+      ออกใบขอสั่งซื้อ
+    </a>
+    <hr />
+    <a href="./approve-school.html"
+      class="notosansthai-normal-black-20px no-text-underline textItemMenuHeader itemMenuHeader">
+      เอกสารใบขอสั่งซื้อ
+    </a>
+    <hr />
+    <a href="./delivered-order.html"
+      class="notosansthai-normal-black-20px no-text-underline textItemMenuHeader itemMenuHeader">
+      รายการคำสั่งซื้อ
+    </a>
+    <hr />
+    <a href="./order-cancel.html"
+      class="notosansthai-normal-black-20px no-text-underline textItemMenuHeader itemMenuHeader">
+      ยกเลิกเลข ปพ.
+    </a>
+    <hr />
+    <a href="./delivered-order.html"
+      class="notosansthai-normal-black-20px no-text-underline textItemMenuHeader itemMenuHeader">
+      ประวัติการสั่งซื้อ
+    </a>
+  </div>
+  <div class="container-center-horizontal">
+    <div class="purchase-order-shipping">
+      <div class="purchase-order-result-flex-row">
+        <a href="./purchase-order-school.html">
+          <div class="purchase-order-result-button">
+            <img class="purchase-order-result-icon-back" src="img/icon-back-5.svg" alt="icon back" />
+            <div class="purchase-order-result-text_label purchase-order-result-valign-text-middle">ย้อนกลับ</div>
+          </div>
+        </a>
+
+      </div>
+      <h1 class="purchase-order-result-text-1-1" style="align-self: center;">รายละเอียดการจัดส่ง</h1>
+      <div class="purchase-order-shipping-frame-38493">
+        <div class="purchase-order-shipping-frame-38395">
+
+          <div class="purchase-order-shipping-frame-3839">
+            <div class="purchase-order-shipping-text notosansthai-semi-bold-black-20px">ที่อยู่ในการจัดส่ง</div>
+            <div class="purchase-order-shipping-frame-38392">
+              <div class="purchase-order-shipping-frame-38268">
+                <div class="purchase-order-shipping-frame-38406">
+                  <div class="purchase-order-shipping-frame-38405">
+                    <div class="purchase-order-shipping-frame-38262">
+                      <div class="purchase-order-shipping-radio-button">
+                        <div class="purchase-order-shipping-frame-3">
+                          <div class="purchase-order-shipping-ellipse-2"></div>
                         </div>
-                        <div
-                          class="purchase-order-shipping-text-8 purchase-order-shipping-valign-text-middle notosansthai-semi-bold-black-20px">
-                          รับที่องค์การค้า</div>
                       </div>
+                      <div
+                        class="purchase-order-shipping-text-8 purchase-order-shipping-valign-text-middle notosansthai-semi-bold-black-20px">
+                        รับที่องค์การค้า</div>
                     </div>
-                    <div class="purchase-order-shipping-listbox-component">
-                      <div class="purchase-order-shipping-list-box-title purchase-order-shipping-list-box">
-                        <div class="purchase-order-shipping-text_label-1 purchase-order-shipping-text_label-6">
-                          เลือกสาขาองค์การค้า</div>
-                      </div>
-                      <div class="purchase-order-shipping-list-box-main purchase-order-shipping-list-box">
-                        <select id="agency" class="purchase-order-shipping-custom-dropdown">
-                          <option value="" disabled selected>กรุณาเลือกสาขา</option>
-                          <option value="สาขา ลาดพร้าว">สาขา ลาดพร้าว</option>
-                          <option value="สาขา อ้อมน้อย">สาขา อ้อมน้อย</option>
-                          <option value="สาขา อิมพีเรียลสำโรง">สาขา อิมพีเรียลสำโรง</option>
-                          <option value="สาขา ท้องฟ้าจำลอง">สาขา ท้องฟ้าจำลอง</option>
-                          <option value="สาขา เชียร์รังสิต">สาขา เชียร์รังสิต</option>
-                          <option value="สาขา ราชบพิธ">สาขา ราชบพิธ</option>
-                          <option value="สาขา คุรุสภา">สาขา คุรุสภา</option>
-                        </select>
-                        <img class="purchase-order-shipping-dropdown-icon" src="img/dropdown-6.svg" alt="dropdown" />
+                  </div>
+                  <div class="purchase-order-shipping-listbox-component">
+                    <div class="purchase-order-shipping-list-box-title purchase-order-shipping-list-box">
+                      <div class="purchase-order-shipping-text_label-1 purchase-order-shipping-text_label-6">
+                        เลือกสาขาองค์การค้า</div>
+                    </div>
+                    <div class="purchase-order-shipping-list-box-main purchase-order-shipping-list-box">
+                      <select id="agency" class="purchase-order-shipping-custom-dropdown">
+                        <option value="" disabled selected>กรุณาเลือกสาขา</option>
+                        <option value="สาขา ลาดพร้าว">สาขา ลาดพร้าว</option>
+                        <option value="สาขา อ้อมน้อย">สาขา อ้อมน้อย</option>
+                        <option value="สาขา อิมพีเรียลสำโรง">สาขา อิมพีเรียลสำโรง</option>
+                        <option value="สาขา ท้องฟ้าจำลอง">สาขา ท้องฟ้าจำลอง</option>
+                        <option value="สาขา เชียร์รังสิต">สาขา เชียร์รังสิต</option>
+                        <option value="สาขา ราชบพิธ">สาขา ราชบพิธ</option>
+                        <option value="สาขา คุรุสภา">สาขา คุรุสภา</option>
+                      </select>
+                      <img class="purchase-order-shipping-dropdown-icon" src="img/dropdown-6.svg" alt="dropdown" />
+                    </div>
+                  </div>
+                </div>
+                <img class="purchase-order-shipping-line" src="img/line-6-3.svg" alt="Line 6" />
+                <div class="purchase-order-shipping-frame-38408">
+                  <div class="purchase-order-shipping-radio-button-3">
+                    <div class="purchase-order-shipping-frame-4">
+                      <div class="purchase-order-shipping-overlap-group">
+                        <div class="purchase-order-shipping-ellipse-1"></div>
                       </div>
                     </div>
                   </div>
-                  <img class="purchase-order-shipping-line" src="img/line-6-3.svg" alt="Line 6" />
-                  <div class="purchase-order-shipping-frame-38408">
-                    <div class="purchase-order-shipping-radio-button-3">
-                      <div class="purchase-order-shipping-frame-4">
-                        <div class="purchase-order-shipping-overlap-group">
-                          <div class="purchase-order-shipping-ellipse-1"></div>
-                        </div>
+                  <div class="purchase-order-shipping-frame-38437">
+                    <div class="purchase-order-shipping-frame-38407">
+                      <div class="purchase-order-shipping-frame-38269 notosansthai-semi-bold-black-20px">
+                        <div class="purchase-order-shipping-text-9 purchase-order-shipping-valign-text-middle">ออกแบบ
+                          ทดลอง</div>
+                        <p class="purchase-order-shipping-text-10 purchase-order-shipping-valign-text-middle">| (+66 )
+                          12 345 6789</p>
                       </div>
-                    </div>
-                    <div class="purchase-order-shipping-frame-38437">
-                      <div class="purchase-order-shipping-frame-38407">
-                        <div class="purchase-order-shipping-frame-38269 notosansthai-semi-bold-black-20px">
-                          <div class="purchase-order-shipping-text-9 purchase-order-shipping-valign-text-middle">ออกแบบ
-                            ทดลอง</div>
-                          <p class="purchase-order-shipping-text-10 purchase-order-shipping-valign-text-middle">| (+66 )
-                            12 345 6789</p>
-                        </div>
-                        <p
-                          class="purchase-order-shipping-address purchase-order-shipping-valign-text-middle address-3 notosansthai-normal-black-16px">
-                          2249 ถนนลาดพร้าว แขวงลาดพร้าว เขตลาดพร้าว 10230 แขวงสะพานสอง เขตวังทองหลาง กรุงเทพมหานคร 10310
-                        </p>
-                        <a href="javascript:SubmitForm('form3')">
-                          <div class="purchase-order-shipping-button-2-2">
-                            <div
-                              class="purchase-order-shipping-text_label-3-2 purchase-order-shipping-valign-text-middle purchase-order-shipping-text_label-6">
-                              ค่าเริ่มต้น</div>
-                          </div>
-                        </a>
-                      </div>
-                      <!-- <a href="./profile-school.html"><img class="purchase-order-shipping-dropdown"
-                          src="img/dropdown.png" alt="dropdown" /></a> -->
-                      <div class="purchase-order-shipping-button-2-2" onclick="showEditAddressDialog()">
-                        <div
-                          class="purchase-order-shipping-text_label-3-2 purchase-order-shipping-valign-text-middle purchase-order-shipping-text_label-6">
-                          แก้ไข</div>
-                      </div>
-                    </div>
-
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="purchase-order-shipping-text-21 notosansthai-semi-bold-black-20px">ตัวเลือกการจัดส่ง</div>
-            <div class="purchase-order-shipping-frame-28">
-              <div class="purchase-order-shipping-frame-3826">
-                <div class="purchase-order-shipping-frame-38399">
-                  <label class="purchase-order-shipping-radio-button notosansthai-semi-bold-black-20px">
-                    <input type="radio" name="delivery_option2" value="EMS" />
-                    <span class="radio-label">EMS</span>
-                  </label>
-                </div>
-              </div>
-            </div>
-            
-            <div class="purchase-order-shipping-frame-3839">
-              <div class="purchase-order-shipping-text notosansthai-semi-bold-black-20px">รายการสินค้า</div>
-              <div class="purchase-order-shipping-frame-2">
-                <div class="purchase-order-shipping-frame">
-                  <div class="purchase-order-shipping-frame-95"><img class="purchase-order-shipping-image-8"
-                      src="img/image-8-9@2x.png" alt="image 8" /></div>
-                  <div class="purchase-order-shipping-frame-94">
-                    <div class="purchase-order-shipping-frame-93">
                       <p
-                        class="purchase-order-shipping-text-14 purchase-order-shipping-valign-text-middle notosansthai-semi-bold-black-22px text-bold">
-                        ปพ.1:ป ระเบียนแสดงผลการเรียน ระดับ ประถมฯ (ปรับปรุง 2555) (ฉบับใช้กับคอม)
+                        class="purchase-order-shipping-address purchase-order-shipping-valign-text-middle address-3 notosansthai-normal-black-16px">
+                        2249 ถนนลาดพร้าว แขวงลาดพร้าว เขตลาดพร้าว 10230 แขวงสะพานสอง เขตวังทองหลาง กรุงเทพมหานคร 10310
                       </p>
-                      <div class="purchase-order-shipping-frame-92">
-                        <div class="purchase-order-shipping-text-15">
-                          <span class="notosansthai-normal-black-16px">ราคาต่อเล่ม: </span><span
-                            class="purchase-order-shipping-span1">160
-                          </span><span class="purchase-order-shipping-span2">บาท</span>
+                      <a href="javascript:SubmitForm('form3')">
+                        <div class="purchase-order-shipping-button-2-2">
+                          <div
+                            class="purchase-order-shipping-text_label-3-2 purchase-order-shipping-valign-text-middle purchase-order-shipping-text_label-6">
+                            ค่าเริ่มต้น</div>
                         </div>
-                      </div>
+                      </a>
                     </div>
-                    <div class="purchase-order-shipping-frame-95-1">
-                      <div class="purchase-order-shipping-frame-18">
+                    <!-- <a href="./profile-school.html"><img class="purchase-order-shipping-dropdown"
+                          src="img/dropdown.png" alt="dropdown" /></a> -->
+                    <div class="purchase-order-shipping-button-2-2" onclick="showEditAddressDialog()">
+                      <div
+                        class="purchase-order-shipping-text_label-3-2 purchase-order-shipping-valign-text-middle purchase-order-shipping-text_label-6">
+                        แก้ไข</div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="purchase-order-shipping-text-21 notosansthai-semi-bold-black-20px">ตัวเลือกการจัดส่ง</div>
+          <div class="purchase-order-shipping-frame-28">
+            <div class="purchase-order-shipping-frame-3826">
+              <div class="purchase-order-shipping-frame-38399">
+                <label class="purchase-order-shipping-radio-button notosansthai-semi-bold-black-20px">
+                  <input type="radio" name="delivery_option2" value="EMS" />
+                  <span class="radio-label">EMS</span>
+                </label>
+              </div>
+            </div>
+          </div>
+
+          <div class="purchase-order-shipping-frame-3839">
+            <div class="purchase-order-shipping-text notosansthai-semi-bold-black-20px">รายการสินค้า</div>
+            <div class="purchase-order-shipping-frame-2">
+              <div class="purchase-order-shipping-frame">
+                <div class="purchase-order-shipping-frame-95"><img class="purchase-order-shipping-image-8"
+                    src="img/image-8-9@2x.png" alt="image 8" /></div>
+                <div class="purchase-order-shipping-frame-94">
+                  <div class="purchase-order-shipping-frame-93">
+                    <p
+                      class="purchase-order-shipping-text-14 purchase-order-shipping-valign-text-middle notosansthai-semi-bold-black-22px text-bold">
+                      ปพ.1:ป ระเบียนแสดงผลการเรียน ระดับ ประถมฯ (ปรับปรุง 2555) (ฉบับใช้กับคอม)
+                    </p>
+                    <div class="purchase-order-shipping-frame-92">
+                      <div class="purchase-order-shipping-text-15">
+                        <span class="notosansthai-normal-black-16px">ราคาต่อเล่ม: </span><span
+                          class="purchase-order-shipping-span1">160
+                        </span><span class="purchase-order-shipping-span2">บาท</span>
+                      </div>
+                      <div class="purchase-order-shipping-frame-18 display-none-t display-none-d">
                         <div class="purchase-order-shipping-address-1 address-3 notosansthai-normal-black-14px">1 เล่ม
                         </div>
                       </div>
                     </div>
                   </div>
+                  <div class="purchase-order-shipping-frame-95-1 display-none-m">
+                    <div class="purchase-order-shipping-frame-18">
+                      <div class="purchase-order-shipping-address-1 address-3 notosansthai-normal-black-14px">1 เล่ม
+                      </div>
+                    </div>
+                  </div>
                 </div>
-                <img class="purchase-order-shipping-line" src="img/line-7-2.svg" alt="Line 5" />
-                <div class="purchase-order-shipping-frame">
-                  <div class="purchase-order-shipping-frame-95"><img class="purchase-order-shipping-image-8"
-                      src="img/image-8-10@2x.png" alt="image 8" /></div>
-                  <div class="purchase-order-shipping-frame-94">
-                    <div class="purchase-order-shipping-frame-93">
-                      <p
-                        class="purchase-order-shipping-text-16 purchase-order-shipping-valign-text-middle notosansthai-semi-bold-black-22px text-bold">
-                        ปพ.1:บ&nbsp;&nbsp;ระเบียนแสดงผลการเรียน ระดับ ม.ต้น (ปรับปรุง 2555) (ฉบับใช้กับคอม)
-                      </p>
-                      <div class="purchase-order-shipping-text-17">
+              </div>
+              <img class="purchase-order-shipping-line" src="img/line-7-2.svg" alt="Line 5" />
+              <div class="purchase-order-shipping-frame">
+                <div class="purchase-order-shipping-frame-95"><img class="purchase-order-shipping-image-8"
+                    src="img/image-8-10@2x.png" alt="image 8" /></div>
+                <div class="purchase-order-shipping-frame-94">
+                  <div class="purchase-order-shipping-frame-93">
+                    <p
+                      class="purchase-order-shipping-text-14 purchase-order-shipping-valign-text-middle notosansthai-semi-bold-black-22px text-bold">
+                      ปพ.1:บ&nbsp;&nbsp;ระเบียนแสดงผลการเรียน ระดับ ม.ต้น (ปรับปรุง 2555) (ฉบับใช้กับคอม)
+                    </p>
+                    <div class="purchase-order-shipping-frame-92">
+                      <div class="purchase-order-shipping-text-15">
                         <span class="notosansthai-normal-black-16px">ราคาต่อเล่ม: </span><span
                           class="purchase-order-shipping-span1">160
-                          บาท</span>
+                        </span><span class="purchase-order-shipping-span2">บาท</span>
                       </div>
-                    </div>
-                    <div class="purchase-order-shipping-frame-95-1">
-                      <div class="purchase-order-shipping-frame-18">
-                        <div class="purchase-order-shipping-address-2 address-3 notosansthai-normal-black-14px">1 เล่ม
+                      <div class="purchase-order-shipping-frame-18 display-none-t display-none-d">
+                        <div class="purchase-order-shipping-address-1 address-3 notosansthai-normal-black-14px">1 เล่ม
                         </div>
                       </div>
                     </div>
                   </div>
+                  <div class="purchase-order-shipping-frame-95-1 display-none-m">
+                    <div class="purchase-order-shipping-frame-18">
+                      <div class="purchase-order-shipping-address-2 address-3 notosansthai-normal-black-14px">1 เล่ม
+                      </div>
+                    </div>
+                  </div>
                 </div>
-                <img class="purchase-order-shipping-line" src="img/line-7-2.svg" alt="Line 6" />
-                <div class="purchase-order-shipping-frame">
-                  <div class="purchase-order-shipping-frame-95"><img class="purchase-order-shipping-image-8"
-                      src="img/image-8-16@2x.png" alt="image 8" /></div>
-                  <div class="purchase-order-shipping-frame-94">
-                    <div class="purchase-order-shipping-frame-93">
-                      <p
-                        class="purchase-order-shipping-text-16 purchase-order-shipping-valign-text-middle notosansthai-semi-bold-black-22px text-bold">
-                        ปพ.3:ป&nbsp;&nbsp;แบบรายงานผู้สำเร็จการศึกษา ระดับประถมศึกษา (ฉบับใช้กับคอม)
-                      </p>
-                      <div class="purchase-order-shipping-text-17">
+              </div>
+              <img class="purchase-order-shipping-line" src="img/line-7-2.svg" alt="Line 6" />
+              <div class="purchase-order-shipping-frame">
+                <div class="purchase-order-shipping-frame-95"><img class="purchase-order-shipping-image-8"
+                    src="img/image-8-16@2x.png" alt="image 8" /></div>
+                <div class="purchase-order-shipping-frame-94">
+                  <div class="purchase-order-shipping-frame-93">
+                    <p
+                      class="purchase-order-shipping-text-14 purchase-order-shipping-valign-text-middle notosansthai-semi-bold-black-22px text-bold">
+                      ปพ.3:ป&nbsp;&nbsp;แบบรายงานผู้สำเร็จการศึกษา ระดับประถมศึกษา (ฉบับใช้กับคอม)
+                    </p>
+                    <div class="purchase-order-shipping-frame-92">
+                      <div class="purchase-order-shipping-text-15">
                         <span class="notosansthai-normal-black-16px">ราคาต่อแผ่น: </span><span
-                          class="purchase-order-shipping-span1">5 บาท</span>
+                          class="purchase-order-shipping-span1">5
+                        </span><span class="purchase-order-shipping-span2">บาท</span>
                       </div>
-                    </div>
-                    <div class="purchase-order-shipping-frame-95-1">
-                      <div class="purchase-order-shipping-frame-18">
-                        <div class="purchase-order-shipping-address-2 address-3 notosansthai-normal-black-14px">50 แผ่น
+                      <div class="purchase-order-shipping-frame-18 display-none-t display-none-d">
+                        <div class="purchase-order-shipping-address-1 address-3 notosansthai-normal-black-14px">50 แผ่น
                         </div>
                       </div>
                     </div>
                   </div>
+                  <div class="purchase-order-shipping-frame-95-1 display-none-m">
+                    <div class="purchase-order-shipping-frame-18">
+                      <div class="purchase-order-shipping-address-2 address-3 notosansthai-normal-black-14px">50 แผ่น
+                      </div>
+                    </div>
+                  </div>
                 </div>
-                <!-- <div class="purchase-order-shipping-frame">
+              </div>
+              <!-- <div class="purchase-order-shipping-frame">
                   <div class="purchase-order-shipping-frame-95"><img class="purchase-order-shipping-image-8"
                       src="img/image-8-16@2x.png" alt="image 8" /></div>
                   <div class="purchase-order-shipping-frame-94-1">
@@ -255,11 +332,11 @@
                     </div>
                   </div>
                 </div> -->
-              </div>
             </div>
+          </div>
 
-            <div class="purchase-order-shipping-frame-g-r">
-              <!-- <div class="purchase-order-shipping-frame-3839-2 notosansthai-semi-bold-black-20px">
+          <div class="purchase-order-shipping-frame-g-r">
+            <!-- <div class="purchase-order-shipping-frame-3839-2 notosansthai-semi-bold-black-20px">
                 <div class="purchase-order-shipping-text">ตัวเลือกการจัดส่ง</div>
                 <div class="purchase-order-shipping-frame-2">
                   <label class="purchase-order-shipping-radio-button">
@@ -274,148 +351,149 @@
                   
                 </div>
               </div> -->
-              <div class="purchase-order-shipping-frame-3839-2 notosansthai-semi-bold-black-20px">
-                <div class="purchase-order-shipping-text">ประเภทสั่งซื้อ</div>
-                <div class="purchase-order-shipping-frame-2">
-                  <label class="purchase-order-shipping-radio-button">
-                    <input type="radio" name="delivery_option2" value="1" onclick="changeOrderType('1')" checked/>
-                    <span class="radio-label">สั่งซื้อเอง</span>
-                    <div class="purchase-order-shipping-frame" id="order-type-upload">
-                      <!-- ปุ่มอัปโหลดไฟล์ -->
-                      <label class="payment-proof-button" for="file-upload-order-type">
-                        <img class="payment-proof-icon" src="img/icon-upload-file-5.svg" alt="icon Upload File" />
-                        <span class="radio-label">เพิ่มไฟล์</span>
-                      </label>
-                      <!-- Input file ที่ซ่อน -->
-                      <input type="file" id="file-upload-order-type" accept=".pdf" multiple>
-                      <div id="file-items-order-type"></div>
-                    </div>
-                  </label>
-                  <img class="purchase-order-shipping-line" src="img/line-7-2.svg" alt="Line 7" />
-                  <label class="purchase-order-shipping-radio-button">
-                    <input type="radio" name="delivery_option2" value="2" onclick="changeOrderType('2')" />
-                    <span class="radio-label">เขตสั่งซื้อให้</span>
-                    <div class="purchase-order-shipping-frame" id="order-type-upload2">
-                      <label class="payment-proof-button" for="file-upload-order-type2">
-                        <img class="payment-proof-icon" src="img/icon-upload-file-5.svg" alt="icon Upload File" />
-                        <span class="radio-label">เพิ่มไฟล์</span>
-                      </label>
-                      <input type="file" id="file-upload-order-type2" accept=".pdf" multiple>
-                      <div id="file-items-order-type2"></div>
-                    </div>
-                  </label>
-                </div>
-              </div>
-            </div>
-
             <div class="purchase-order-shipping-frame-3839-2 notosansthai-semi-bold-black-20px">
+              <div class="purchase-order-shipping-text">ประเภทสั่งซื้อ</div>
+              <div class="purchase-order-shipping-frame-2">
+                <label class="purchase-order-shipping-radio-button">
+                  <input type="radio" name="delivery_option2" value="1" onclick="changeOrderType('1')" checked />
+                  <span class="radio-label">สั่งซื้อเอง</span>
+                  <div class="purchase-order-shipping-frame" id="order-type-upload">
+                    <!-- ปุ่มอัปโหลดไฟล์ -->
+                    <label class="payment-proof-button" for="file-upload-order-type">
+                      <img class="payment-proof-icon" src="img/icon-upload-file-5.svg" alt="icon Upload File" />
+                      <span class="radio-label">เพิ่มไฟล์</span>
+                    </label>
+                    <!-- Input file ที่ซ่อน -->
+                    <input type="file" id="file-upload-order-type" accept=".pdf" multiple>
+                    <div id="file-items-order-type" class="file-items-order-type-class"></div>
+                  </div>
+                </label>
+                <img class="purchase-order-shipping-line" src="img/line-7-2.svg" alt="Line 7" />
+                <label class="purchase-order-shipping-radio-button">
+                  <input type="radio" name="delivery_option2" value="2" onclick="changeOrderType('2')" />
+                  <span class="radio-label">เขตสั่งซื้อให้</span>
+                  <div class="purchase-order-shipping-frame" id="order-type-upload2">
+                    <label class="payment-proof-button" for="file-upload-order-type2">
+                      <img class="payment-proof-icon" src="img/icon-upload-file-5.svg" alt="icon Upload File" />
+                      <span class="radio-label">เพิ่มไฟล์</span>
+                    </label>
+                    <input type="file" id="file-upload-order-type2" accept=".pdf" multiple>
+                    <div id="file-items-order-type2" class="file-items-order-type-class"></div>
+                  </div>
+                </label>
+              </div>
+            </div>
+          </div>
 
-              <div class="purchase-order-shipping-text-21 notosansthai-semi-bold-black-20px">แนบเอกสารการสั่งซื้อ</div>
-              <!-- รายการไฟล์ที่เลือก -->
-              <div id="file-list-container" class="file-list-container">
-                <div class="purchase-order-shipping-frame">
-                  <!-- ปุ่มอัปโหลดไฟล์ -->
-                  <label class="payment-proof-button" for="file-upload">
-                    <img class="payment-proof-icon" src="img/icon-upload-file-5.svg" alt="icon Upload File" />
-                    <span>เพิ่มไฟล์</span>
-                  </label>
-                  <!-- Input file ที่ซ่อน -->
-                  <input type="file" id="file-upload" accept=".pdf" multiple>
-                </div>
-                <div id="empty-message" class="empty-message">ยังไม่มีไฟล์ที่เลือก</div>
-                <div id="file-items"></div>
+          <div class="purchase-order-shipping-frame-3839-2 notosansthai-semi-bold-black-20px">
+
+            <div class="purchase-order-shipping-text-21 notosansthai-semi-bold-black-20px">แนบเอกสารการสั่งซื้อ</div>
+            <!-- รายการไฟล์ที่เลือก -->
+            <div id="file-list-container" class="file-list-container">
+              <div class="purchase-order-shipping-frame">
+                <!-- ปุ่มอัปโหลดไฟล์ -->
+                <label class="payment-proof-button" for="file-upload">
+                  <img class="payment-proof-icon" src="img/icon-upload-file-5.svg" alt="icon Upload File" />
+                  <span>เพิ่มไฟล์</span>
+                </label>
+                <!-- Input file ที่ซ่อน -->
+                <input type="file" id="file-upload" accept=".pdf" multiple>
+                <div id="empty-message" class="empty-message-2">ยังไม่มีไฟล์ที่เลือก</div>
               </div>
+              <div id="file-items"></div>
             </div>
-            <div class="purchase-order-shipping-frame-28">
-              <div class="purchase-order-shipping-frame-102">
-                <div class="purchase-order-shipping-frame-1">
-                  <div
-                    class="purchase-order-shipping-transport-fee purchase-order-shipping-valign-text-middle notosansthai-normal-black-20px-2">
-                    ส่วนลดการค้า/Discount
-                  </div>
-                  <div
-                    class="purchase-order-shipping-xxxx-2 purchase-order-shipping-valign-text-middle notosansthai-bold-black-20px">
-                    0.00 บาท</div>
+          </div>
+          <div class="purchase-order-shipping-frame-28">
+            <div class="purchase-order-shipping-frame-102">
+              <div class="purchase-order-shipping-frame-1">
+                <div
+                  class="purchase-order-shipping-transport-fee purchase-order-shipping-valign-text-middle notosansthai-normal-black-20px-2">
+                  ส่วนลดการค้า/Discount
                 </div>
-                <div class="purchase-order-shipping-frame-1">
-                  <div
-                    class="purchase-order-shipping-transport-fee purchase-order-shipping-valign-text-middle notosansthai-normal-black-20px-2">
-                    ยอดเงินหลังหักส่วนลด/Price After Discount
-                  </div>
-                  <div
-                    class="purchase-order-shipping-xxxx-2 purchase-order-shipping-valign-text-middle notosansthai-bold-black-20px">
-                    8,000.00 บาท</div>
+                <div
+                  class="purchase-order-shipping-xxxx-2 purchase-order-shipping-valign-text-middle notosansthai-bold-black-20px-18px-13px">
+                  0.00 บาท</div>
+              </div>
+              <div class="purchase-order-shipping-frame-1">
+                <div
+                  class="purchase-order-shipping-transport-fee purchase-order-shipping-valign-text-middle notosansthai-normal-black-20px-2">
+                  ยอดเงินหลังหักส่วนลด/Price After Discount
                 </div>
-                <div class="purchase-order-shipping-frame-1">
-                  <div
-                    class="purchase-order-shipping-transport-fee purchase-order-shipping-valign-text-middle notosansthai-normal-black-20px-2">
-                    ค่าขนส่ง/Transport Fee
-                  </div>
-                  <div
-                    class="purchase-order-shipping-xxxx-2 purchase-order-shipping-valign-text-middle notosansthai-bold-black-20px">
-                    320.00 บาท</div>
+                <div
+                  class="purchase-order-shipping-xxxx-2 purchase-order-shipping-valign-text-middle notosansthai-bold-black-20px-18px-13px">
+                  8,000.00 บาท</div>
+              </div>
+              <div class="purchase-order-shipping-frame-1">
+                <div
+                  class="purchase-order-shipping-transport-fee purchase-order-shipping-valign-text-middle notosansthai-normal-black-20px-2">
+                  ค่าขนส่ง/Transport Fee
                 </div>
-                <div class="purchase-order-shipping-frame-1">
-                  <div
-                    class="purchase-order-shipping-text_label-5 purchase-order-shipping-valign-text-middle purchase-order-shipping-text_label-6 notosansthai-normal-black-20px-2">
-                    มูลค่าสินค้าและค่าขนส่งก่อนภาษี/Price Before Vat
-                  </div>
-                  <div
-                    class="purchase-order-shipping-xxxx-2 purchase-order-shipping-valign-text-middle notosansthai-bold-black-20px">
-                    7,775.70 บาท</div>
+                <div
+                  class="purchase-order-shipping-xxxx-2 purchase-order-shipping-valign-text-middle notosansthai-bold-black-20px-18px-13px">
+                  320.00 บาท</div>
+              </div>
+              <div class="purchase-order-shipping-frame-1">
+                <div
+                  class="purchase-order-shipping-text_label-5 purchase-order-shipping-valign-text-middle purchase-order-shipping-text_label-6 notosansthai-normal-black-20px-2">
+                  มูลค่าสินค้าและค่าขนส่งก่อนภาษี/Price Before Vat
                 </div>
-                <div class="purchase-order-shipping-frame-1">
-                  <div
-                    class="purchase-order-shipping-total-vat purchase-order-shipping-valign-text-middle notosansthai-normal-black-20px-2">
-                    ภาษีมูลค่าเพิ่ม/Total Vat
-                  </div>
-                  <div
-                    class="purchase-order-shipping-xxxx-2 purchase-order-shipping-valign-text-middle notosansthai-bold-black-20px">
-                    544.30 บาท</div>
+                <div
+                  class="purchase-order-shipping-xxxx-2 purchase-order-shipping-valign-text-middle notosansthai-bold-black-20px-18px-13px">
+                  7,775.70 บาท</div>
+              </div>
+              <div class="purchase-order-shipping-frame-1">
+                <div
+                  class="purchase-order-shipping-total-vat purchase-order-shipping-valign-text-middle notosansthai-normal-black-20px-2">
+                  ภาษีมูลค่าเพิ่ม/Total Vat
                 </div>
-                <div class="purchase-order-shipping-frame-1">
-                  <div
-                    class="purchase-order-shipping-total-vat purchase-order-shipping-valign-text-middle notosansthai-normal-black-20px-2">
-                    ยอดสุทธิ/Grand Total
-                  </div>
-                  <div
-                    class="purchase-order-shipping-xxxx-2 purchase-order-shipping-valign-text-middle notosansthai-bold-black-20px">
-                    8,320.00 บาท</div>
+                <div
+                  class="purchase-order-shipping-xxxx-2 purchase-order-shipping-valign-text-middle notosansthai-bold-black-20px-18px-13px">
+                  544.30 บาท</div>
+              </div>
+              <div class="purchase-order-shipping-frame-1">
+                <div
+                  class="purchase-order-shipping-total-vat purchase-order-shipping-valign-text-middle notosansthai-normal-black-20px-2">
+                  ยอดสุทธิ/Grand Total
                 </div>
-                <img class="purchase-order-shipping-line" src="img/line-7-2.svg" alt="Line 6" />
-                <div class="purchase-order-shipping-frame-1">
-                  <div
-                    class="purchase-order-shipping-grand-total purchase-order-shipping-valign-text-middle notosansthai-bold-black-20px">
-                   </div>
-                  <div class="purchase-order-shipping-xxxx-1 purchase-order-shipping-valign-text-middle xxxx-2">แปดพันสามร้อยยี่สิบบาทถ้วน
-                    
-                  </div>
+                <div
+                  class="purchase-order-shipping-xxxx-2 purchase-order-shipping-valign-text-middle notosansthai-bold-black-20px-18px-13px">
+                  8,320.00 บาท</div>
+              </div>
+              <img class="purchase-order-shipping-line" src="img/line-7-2.svg" alt="Line 6" />
+              <div class="purchase-order-shipping-frame-1">
+                <div
+                  class="purchase-order-shipping-grand-total purchase-order-shipping-valign-text-middle notosansthai-bold-black-20px-18px-13px">
+                </div>
+                <div class="purchase-order-shipping-xxxx-1 purchase-order-shipping-valign-text-middle xxxx-2">
+                  แปดพันสามร้อยยี่สิบบาทถ้วน
+
                 </div>
               </div>
             </div>
           </div>
-          <div class="purchase-order-shipping-frame-38492">
-            <a onclick="showPopupCancel()">
-              <div class="purchase-order-shipping-frame-38396">
-                <div class="purchase-order-shipping-text-22 notosansthai-bold-black-20px">ยกเลิกใบขอสั่งซื้อ</div>
-              </div>
-            </a> <a onclick="showPopup()">
-              <div class="purchase-order-shipping-frame-14">
-                <div class="purchase-order-shipping-text-23">ชำระเงิน</div>
-              </div>
-            </a>
-            <a onclick="showPopupSubmitRequest()">
-              <div class="purchase-order-shipping-frame-14">
-                <div class="purchase-order-shipping-text-23">ส่งคำขอใบอนุญาต</div>
-              </div>
-            </a>
-          </div>
+        </div>
+        <div class="purchase-order-shipping-frame-38492">
+          <a onclick="showPopupCancel()" style="width: 100%;">
+            <div class="purchase-order-shipping-frame-38396">
+              <div class="purchase-order-shipping-text-22 notosansthai-bold-black-20px">ยกเลิกใบขอสั่งซื้อ</div>
+            </div>
+          </a> <a onclick="showPopup()" style="width: 100%;">
+            <div class="purchase-order-shipping-frame-14">
+              <div class="purchase-order-shipping-text-23">ชำระเงิน</div>
+            </div>
+          </a>
+          <a onclick="showPopupSubmitRequest()" style="width: 100%;">
+            <div class="purchase-order-shipping-frame-14">
+              <div class="purchase-order-shipping-text-23">ส่งคำขอใบอนุญาต</div>
+            </div>
+          </a>
         </div>
       </div>
     </div>
   </div>
+  <!-- </div> -->
 
-  <div class="tablet">
+  <!-- <div class="tablet">
     <div class="header-ecs">
       <a href="./login.html">
         <img class="logo-ecs" src="img/logo------1.png" alt="logo ecs" />
@@ -535,9 +613,6 @@
                           </div>
                         </a>
                       </div>
-                      <!-- <a href="./profile-school.html"><img class="purchase-order-shipping-dropdown"
-                          src="img/dropdown.png" alt="dropdown" /></a> -->
-
                       <div class="purchase-order-shipping-button-2-2" onclick="showEditAddressDialog()">
                         <div
                           class="purchase-order-shipping-text_label-3-2 purchase-order-shipping-valign-text-middle purchase-order-shipping-text_label-6">
@@ -552,33 +627,14 @@
               <div class="purchase-order-shipping-frame-3839-2 notosansthai-semi-bold-black-20px">
                 <div class="purchase-order-shipping-text">ตัวเลือกการจัดส่ง</div>
                 <div class="purchase-order-shipping-frame-2">
-                  <!-- <label class="purchase-order-shipping-radio-button">
-                    <input type="radio" name="delivery_option2" value="registered" />
-                    <span class="radio-label">ลงทะเบียน</span>
-                  </label> -->
-                  <!-- <img class="purchase-order-shipping-line" src="img/line-7-2.svg" alt="Line 7" /> -->
                   <label class="purchase-order-shipping-radio-button">
                     <input type="radio" name="delivery_option2" value="EMS" />
                     <span class="radio-label">EMS</span>
                   </label>
                 </div>
               </div>
-              <!-- <div class="purchase-order-shipping-frame-3839-2 notosansthai-semi-bold-black-20px">
-              <div class="purchase-order-shipping-text">ประเภทสั่งซื้อ</div>
-              <div class="purchase-order-shipping-frame-2">
-                <label class="purchase-order-shipping-radio-button">
-                  <input type="radio" name="delivery_option2" value="สั่งซื้อเอง" />
-                  <span class="radio-label">สั่งซื้อเอง</span>
-                </label>
-                <img class="purchase-order-shipping-line" src="img/line-7-2.svg" alt="Line 7" />
-                <label class="purchase-order-shipping-radio-button">
-                  <input type="radio" name="delivery_option2" value="เขตสั่งซื้อให้" />
-                  <span class="radio-label">เขตสั่งซื้อให้</span>
-                </label>
-              </div>
-            </div> -->
             </div>
-           
+
             <div class="purchase-order-shipping-frame-3839">
               <div class="purchase-order-shipping-text notosansthai-semi-bold-black-20px">รายการสินค้า</div>
               <div class="purchase-order-shipping-frame-2">
@@ -655,32 +711,21 @@
                     </div>
                   </div>
                 </div>
-                
+
               </div>
             </div>
             <div class="purchase-order-shipping-frame-g-r">
               <div class="purchase-order-shipping-frame-3839-2 notosansthai-semi-bold-black-20px">
                 <div class="purchase-order-shipping-text">ประเภทสั่งซื้อ</div>
                 <div class="purchase-order-shipping-frame-2">
-                  <!-- <label class="purchase-order-shipping-radio-button">
-                    <input type="radio" name="delivery_option3" value="registered" />
-                    <span class="radio-label">สั่งซื้อเอง</span>
-                  </label>
-                  <img class="purchase-order-shipping-line" src="img/line-7-2.svg" alt="Line 7" />
                   <label class="purchase-order-shipping-radio-button">
-                    <input type="radio" name="delivery_option3" value="EMS" />
-                    <span class="radio-label">เขตสั่งซื้อให้</span>
-                  </label> -->
-                  <label class="purchase-order-shipping-radio-button">
-                    <input type="radio" name="delivery_option2" value="1" onclick="changeOrderType('1')" checked/>
+                    <input type="radio" name="delivery_option2" value="1" onclick="changeOrderType('1')" checked />
                     <span class="radio-label">สั่งซื้อเอง</span>
                     <div class="purchase-order-shipping-frame" id="order-type-upload-tablet">
-                      <!-- ปุ่มอัปโหลดไฟล์ -->
                       <label class="payment-proof-button" for="file-upload-order-type-tablet">
                         <img class="payment-proof-icon" src="img/icon-upload-file-5.svg" alt="icon Upload File" />
                         <span class="radio-label">เพิ่มไฟล์</span>
                       </label>
-                      <!-- Input file ที่ซ่อน -->
                       <input type="file" id="file-upload-order-type-tablet" accept=".pdf" multiple>
                       <div id="file-items-order-type-tablet"></div>
                     </div>
@@ -752,8 +797,9 @@
                 <div class="purchase-order-shipping-frame-1">
                   <div
                     class="purchase-order-shipping-grand-total purchase-order-shipping-valign-text-middle notosansthai-bold-black-20px">
-                    </div>
-                  <div class="purchase-order-shipping-xxxx-1 purchase-order-shipping-valign-text-middle xxxx-2">xxxxxxxxx
+                  </div>
+                  <div class="purchase-order-shipping-xxxx-1 purchase-order-shipping-valign-text-middle xxxx-2">
+                    xxxxxxxxx
                   </div>
                 </div>
               </div>
@@ -778,9 +824,9 @@
         </div>
       </div>
     </div>
-  </div>
+  </div> -->
 
-  <div class="mobile">
+  <!-- <div class="mobile">
     <div class="header-ecs">
       <a href="./login.html">
         <img class="logo-ecs" src="img/logo------1.png" alt="logo ecs" />
@@ -900,8 +946,7 @@
                           </div>
                         </a>
                       </div>
-                      <!-- <a href="./profile-school.html"><img class="purchase-order-shipping-dropdown"
-                          src="img/dropdown.png" alt="dropdown" /></a> -->
+                      
                       <div class="purchase-order-shipping-button-2-2" onclick="showEditAddressDialog()">
                         <div
                           class="purchase-order-shipping-text_label-3-2 purchase-order-shipping-valign-text-middle purchase-order-shipping-text_label-6">
@@ -916,33 +961,14 @@
               <div class="purchase-order-shipping-frame-3839-2 notosansthai-semi-bold-black-20px">
                 <div class="purchase-order-shipping-text">ตัวเลือกการจัดส่ง</div>
                 <div class="purchase-order-shipping-frame-2">
-                  <!-- <label class="purchase-order-shipping-radio-button">
-                    <input type="radio" name="delivery_option2" value="registered" />
-                    <span class="radio-label">ลงทะเบียน</span>
-                  </label> -->
-                  <!-- <img class="purchase-order-shipping-line" src="img/line-7-2.svg" alt="Line 7" /> -->
                   <label class="purchase-order-shipping-radio-button">
                     <input type="radio" name="delivery_option2" value="EMS" />
                     <span class="radio-label">EMS</span>
                   </label>
                 </div>
               </div>
-              <!-- <div class="purchase-order-shipping-frame-3839-2 notosansthai-semi-bold-black-20px">
-              <div class="purchase-order-shipping-text">ประเภทสั่งซื้อ</div>
-              <div class="purchase-order-shipping-frame-2">
-                <label class="purchase-order-shipping-radio-button">
-                  <input type="radio" name="delivery_option2" value="สั่งซื้อเอง" />
-                  <span class="radio-label">สั่งซื้อเอง</span>
-                </label>
-                <img class="purchase-order-shipping-line" src="img/line-7-2.svg" alt="Line 7" />
-                <label class="purchase-order-shipping-radio-button">
-                  <input type="radio" name="delivery_option2" value="เขตสั่งซื้อให้" />
-                  <span class="radio-label">เขตสั่งซื้อให้</span>
-                </label>
-              </div>
-            </div> -->
             </div>
-            
+
             <div class="purchase-order-shipping-frame-3839">
               <div class="purchase-order-shipping-text notosansthai-semi-bold-black-20px">รายการสินค้า</div>
               <div class="purchase-order-shipping-frame-2">
@@ -1024,25 +1050,14 @@
               <div class="purchase-order-shipping-frame-3839-2 notosansthai-semi-bold-black-20px">
                 <div class="purchase-order-shipping-text">ประเภทสั่งซื้อ</div>
                 <div class="purchase-order-shipping-frame-2">
-                  <!-- <label class="purchase-order-shipping-radio-button">
-                    <input type="radio" name="delivery_option3" value="registered" />
-                    <span class="radio-label">สั่งซื้อเอง</span>
-                  </label>
-                  <img class="purchase-order-shipping-line" src="img/line-7-2.svg" alt="Line 7" />
                   <label class="purchase-order-shipping-radio-button">
-                    <input type="radio" name="delivery_option3" value="EMS" />
-                    <span class="radio-label">เขตสั่งซื้อให้</span>
-                  </label> -->
-                  <label class="purchase-order-shipping-radio-button">
-                    <input type="radio" name="delivery_option2" value="1" onclick="changeOrderType('1')" checked/>
+                    <input type="radio" name="delivery_option2" value="1" onclick="changeOrderType('1')" checked />
                     <span class="radio-label">สั่งซื้อเอง</span>
                     <div class="purchase-order-shipping-frame" id="order-type-upload-mobile">
-                      <!-- ปุ่มอัปโหลดไฟล์ -->
                       <label class="payment-proof-button" for="file-upload-order-type-mobile">
                         <img class="payment-proof-icon" src="img/icon-upload-file-5.svg" alt="icon Upload File" />
                         <span class="radio-label">เพิ่มไฟล์</span>
                       </label>
-                      <!-- Input file ที่ซ่อน -->
                       <input type="file" id="file-upload-order-type-mobile" accept=".pdf" multiple>
                       <div id="file-items-order-type-mobile"></div>
                     </div>
@@ -1141,7 +1156,7 @@
         </div>
       </div>
     </div>
-  </div>
+  </div> -->
 
   <div id="content" class="purchase-order-shipping-view" style="display: none;">
     <div class="purchase-order-shipping-popup">
@@ -1754,7 +1769,7 @@
       const fileItemsOrder = document.getElementById('order-type-upload');
       const fileItemsOrderTablet = document.getElementById('order-type-upload-tablet');
       const fileItemsOrderMobile = document.getElementById('order-type-upload-mobile');
-      
+
       const fileItemsOrder2 = document.getElementById('order-type-upload2');
       const fileItemsOrder2Tablet = document.getElementById('order-type-upload2-tablet');
       const fileItemsOrder2Mobile = document.getElementById('order-type-upload2-mobile');
@@ -1792,7 +1807,7 @@
       const fileItemsOrder = document.getElementById('order-type-upload');
       const fileItemsOrderTablet = document.getElementById('order-type-upload-tablet');
       const fileItemsOrderMobile = document.getElementById('order-type-upload-mobile');
-      
+
       const fileItemsOrder2 = document.getElementById('order-type-upload2');
       const fileItemsOrder2Tablet = document.getElementById('order-type-upload2-tablet');
       const fileItemsOrder2Mobile = document.getElementById('order-type-upload2-mobile');
@@ -1952,6 +1967,11 @@
       } else {
         emptyMessage.style.display = "none";
       }
+    }
+
+    function toggleNotificationPanel() {
+      const panel = document.getElementById('notification-panel');
+      panel.classList.toggle('hidden');
     }
   </script>
 </body>

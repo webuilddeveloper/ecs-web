@@ -14847,6 +14847,7 @@ input:focus {
   position: relative;
   width: -webkit-fill-available;
   height: fit-content;
+  flex-wrap: wrap;
 }
 
 .purchase-order-shipping-frame-94 {
@@ -30084,6 +30085,14 @@ body.no-scroll {
     font-style: normal;
     font-weight: 700;
   }
+
+  .notosansthai-bold-black-20px-18px-13px {
+    color: var(--bkack);
+    font-family: var(--font-family-noto_sans_thai);
+    font-size: var(--font-size-20);
+    font-style: normal;
+    font-weight: 700;
+  }
 }
 
 /* à¸ªà¸³à¸«à¸£à¸±à¸š Tablet */
@@ -33908,6 +33917,29 @@ body.no-scroll {
     line-height: normal;
     position: relative;
     width: fit-content;
+  }
+
+  .notosansthai-bold-black-20px-18px-13px {
+    color: var(--bkack);
+    font-family: var(--font-family-noto_sans_thai);
+    font-size: var(--font-size-18);
+    font-style: normal;
+    font-weight: 700;
+  }
+  
+  .notosansthai-normal-black-20px-2 {
+    color: #00000099;
+    font-family: var(--font-family-noto_sans_thai);
+    font-size: var(--font-size-18);
+    font-style: normal;
+    font-weight: 400;
+  }
+
+  .purchase-order-shipping-xxxx-1 {
+    color: var(--bkack);
+    font-family: var(--font-family-noto_sans_thai);
+    font-size: var(--font-size-20);
+    font-weight: 700;
   }
 }
 
@@ -39405,6 +39437,29 @@ body.no-scroll {
     position: relative;
     width: fit-content;
   }
+
+  .notosansthai-bold-black-20px-18px-13px {
+    color: var(--bkack);
+    font-family: var(--font-family-noto_sans_thai);
+    font-size: var(--font-size-13);
+    font-style: normal;
+    font-weight: 700;
+  }
+  
+  .notosansthai-normal-black-20px-2 {
+    color: #00000099;
+    font-family: var(--font-family-noto_sans_thai);
+    font-size: var(--font-size-13);
+    font-style: normal;
+    font-weight: 400;
+  }
+
+  .purchase-order-shipping-xxxx-1 {
+    color: var(--bkack);
+    font-family: var(--font-family-noto_sans_thai);
+    font-size: var(--font-size-15);
+    font-weight: 700;
+  }
 }
 
 /* media */
@@ -39970,3 +40025,21 @@ input[type="file"] {
   width: fit-content;
 }
 
+.file-items-order-type-class {
+  gap: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-content: center;
+  justify-content: flex-start;
+}
+
+.empty-message-2 {
+  /* position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%); */
+  font-size: 16px;
+  color: #888;
+  white-space: nowrap;
+}
