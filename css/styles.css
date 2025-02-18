@@ -12747,24 +12747,23 @@ input:focus {
 
 
 .purchase-order-frame-18 {
+  background-color: #F0F0F0;
   align-items: center;
-  background-color: var(--gallery-2);
-  border-radius: 10px;
+  border-radius: 30px;
   display: flex;
-  gap: 20px;
-  height: 46px;
+  gap: 15px;
+  height: fit-content;
   justify-content: center;
   overflow: hidden;
   padding: 12px 20px;
   position: relative;
-  /* width: 110px; */
-  width: auto;
+  /* width: 89px; */
 }
 
 .purchase-order-frame-3 {
   cursor: pointer;
   height: 16px;
-  margin-left: -5.50px;
+  /* margin-left: -5.50px; */
   position: relative;
   width: 16px;
 }
@@ -12780,7 +12779,7 @@ input:focus {
 .purchase-order-frame-4 {
   cursor: pointer;
   height: 16px;
-  margin-right: -5.50px;
+  /* margin-right: -5.50px; */
   position: relative;
   width: 16px;
 }
@@ -20733,6 +20732,7 @@ a:active {
   flex-direction: column;
   gap: 32px;
   position: relative;
+  width: -webkit-fill-available;
 }
 
 .request-detail-school-button-3 {
@@ -23730,14 +23730,6 @@ a:active {
   width: 306px;
 }
 
-.notosansthai-semi-bold-black-40px {
-  color: var(--black);
-  font-family: var(--font-family-noto_sans_thai);
-  font-size: 40px;
-  font-style: normal;
-  font-weight: bold;
-}
-
 .register-educational-service-area-frame-38 {
   align-items: flex-start;
   align-self: stretch;
@@ -24191,14 +24183,6 @@ a:active {
   width: 306px;
 }
 
-.notosansthai-semi-bold-black-40px {
-  color: var(--black);
-  font-family: var(--font-family-noto_sans_thai);
-  font-size: 40px;
-  font-style: normal;
-  font-weight: bold;
-}
-
 .register-obec-frame-38 {
   align-items: flex-start;
   align-self: stretch;
@@ -24407,8 +24391,6 @@ a:active {
   padding: 22px 552px;
   width: 1440px;
 }
-
-
 
 /* à¸›à¸£à¸±à¸šà¸‚à¸™à¸²à¸”à¸‚à¸­à¸‡ select */
 .register-officer-custom-dropdown {
@@ -27481,7 +27463,7 @@ body.no-scroll {
     display: flex;
     flex-direction: column;
     gap: 40px;
-    margin-left: 48.0px;
+    /* margin-left: 48.0px; */
     margin-top: 85px;
     position: relative;
     width: 100%;
@@ -27522,10 +27504,6 @@ body.no-scroll {
     /* gap: 650px; */
     position: relative;
     width: 100%;
-  }
-
-  .draft-school-detail-text-2 {
-    width: 282px;
   }
 
   .draft-school-detail-frame-38426 {
@@ -27909,7 +27887,7 @@ body.no-scroll {
     display: flex;
     flex-direction: column;
     gap: 24px;
-    height: 245px;
+    /* height: 245px; */
     overflow: hidden;
     padding: 20px 24px;
     position: relative;
@@ -27981,7 +27959,7 @@ body.no-scroll {
     border-radius: 10px;
     display: flex;
     padding: 8px 24px;
-    width: 245px;
+    /* width: 245px; */
   }
 
   .draft-school-detail-text_label-4 {
@@ -28051,6 +28029,7 @@ body.no-scroll {
     letter-spacing: 0;
     line-height: normal;
     position: relative;
+    text-wrap: nowrap;
   }
 
   .draft-school-detail-text_label-5 {
@@ -28503,9 +28482,10 @@ body.no-scroll {
     display: flex;
     flex-direction: column;
     gap: 6px;
-    height: 110px;
+    width: -webkit-fill-available;
+    /* height: 110px; */
     position: relative;
-    width: 281px;
+    /* width: 281px; */
   }
 
   .draft-school-detail-edit-text-10 {
@@ -28678,7 +28658,7 @@ body.no-scroll {
     align-items: flex-start;
     align-self: stretch;
     border: 1px solid;
-    border-color: var(--black);
+    border-color: #0000001A;
     border-radius: 20px;
     display: flex;
     flex-direction: column;
@@ -30084,6 +30064,72 @@ body.no-scroll {
     font-style: normal;
     font-weight: 700;
   }
+
+  .text-summarize {
+    font-family: var(--font-family-noto_sans_thai);
+    font-size: var(--font-size-20);
+  }
+
+  .title-text-summarize {
+    color: #666666;
+    font-style: normal;
+    line-height: 1.3;
+  }
+
+  .value-text-summarize {
+    color: black;
+    font-weight: 700;
+    text-wrap: nowrap;
+  }
+
+  .button-edit {
+    color: var(--main);
+    font-family: var(--font-family-noto_sans_thai);
+    font-size: var(--font-size-20);
+    font-weight: 600;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+    margin-top: -1.00px;
+    position: relative;
+  }
+
+  .button-confirm {
+    color: var(--white);
+    font-family: var(--font-family-noto_sans_thai);
+    font-size: var(--font-size-20);
+    font-style: normal;
+    font-weight: 600;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+    margin-top: -1.00px;
+    position: relative;
+  }
+
+  .button-group-action-draft-school {
+    align-items: center;
+    display: inline-flex;
+    flex: 0 0 auto;
+    gap: 24px;
+    position: relative;
+    justify-content: flex-end;
+    width: -webkit-fill-available;
+  }
+
+  .container-file-item {
+    padding: 8px 16px;
+    background-color: white;
+    border: 1px solid #DCE0E5;
+    border-radius: 10px;
+    font-family: var(--font-family-noto_sans_thai);
+    font-size: var(--font-size-18);
+    color: #14181F;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
 /* à¸ªà¸³à¸«à¸£à¸±à¸š Tablet */
@@ -30414,7 +30460,7 @@ body.no-scroll {
     padding: 8px 8px;
   }
 
-  .purchase-order-frame-18 {
+  /* .purchase-order-frame-18 {
     background-color: var(--gallery-2);
     align-items: center;
     border-radius: 10px;
@@ -30426,6 +30472,20 @@ body.no-scroll {
     padding: 12px 20px;
     position: relative;
     width: 110px;
+  } */
+
+  .purchase-order-frame-18 {
+    background-color: #F0F0F0;
+    align-items: center;
+    border-radius: 30px;
+    display: flex;
+    gap: 15px;
+    height: fit-content;
+    justify-content: center;
+    overflow: hidden;
+    padding: 4px 15px;
+    position: relative;
+    /* width: 89px; */
   }
 
   .div-edit-item-doc {
@@ -31044,7 +31104,7 @@ body.no-scroll {
     gap: 16px;
     position: relative;
     width: 100%;
-    padding: 0 10px;
+    /* padding: 0 10px; */
   }
 
   .draft-school-detail-frame {
@@ -31454,12 +31514,12 @@ body.no-scroll {
     align-items: flex-start;
     align-self: stretch;
     border: 1px solid;
-    border-color: var(--black);
+    border-color: #0000001A;
     border-radius: 20px;
     display: flex;
     flex-direction: column;
     gap: 24px;
-    height: 245px;
+    /* height: 245px; */
     overflow: hidden;
     padding: 20px 24px;
     position: relative;
@@ -31745,7 +31805,7 @@ body.no-scroll {
     margin-top: 30px;
     position: relative;
     width: 100%;
-    padding: 20px;
+    /* padding: 20px; */
   }
 
   .draft-school-detail-edit-frame-38 {
@@ -33909,6 +33969,72 @@ body.no-scroll {
     position: relative;
     width: fit-content;
   }
+
+  .text-summarize {
+    font-family: var(--font-family-noto_sans_thai);
+    font-size: var(--font-size-18);
+  }
+
+  .title-text-summarize {
+    color: #666666;
+    font-style: normal;
+    line-height: 1.3;
+  }
+
+  .value-text-summarize {
+    color: black;
+    font-weight: 700;
+    text-wrap: nowrap;
+  }
+
+  .button-edit {
+    color: var(--main);
+    font-family: var(--font-family-noto_sans_thai);
+    font-size: var(--font-size-18);
+    font-weight: 600;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+    margin-top: -1.00px;
+    position: relative;
+  }
+
+  .button-confirm {
+    color: var(--white);
+    font-family: var(--font-family-noto_sans_thai);
+    font-size: var(--font-size-18);
+    font-style: normal;
+    font-weight: 600;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+    margin-top: -1.00px;
+    position: relative;
+  }
+
+  .button-group-action-draft-school {
+    align-items: center;
+    display: inline-flex;
+    flex: 0 0 auto;
+    gap: 24px;
+    position: relative;
+    justify-content: flex-end;
+    width: -webkit-fill-available;
+  }
+
+  .container-file-item {
+    padding: 8px 16px;
+    background-color: white;
+    border: 1px solid #DCE0E5;
+    border-radius: 10px;
+    font-family: var(--font-family-noto_sans_thai);
+    font-size: var(--font-size-18);
+    color: #14181F;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
 /* à¸ªà¸³à¸«à¸£à¸±à¸š Mobile */
@@ -34379,17 +34505,17 @@ body.no-scroll {
   }
 
   .purchase-order-frame-18 {
-    background-color: var(--gallery-2);
+    background-color: #F0F0F0;
     align-items: center;
-    border-radius: 10px;
+    border-radius: 30px;
     display: flex;
-    gap: 5px;
-    height: 46px;
+    gap: 15px;
+    height: fit-content;
     justify-content: center;
     overflow: hidden;
-    padding: 12px 20px;
+    padding: 4px 15px;
     position: relative;
-    width: 89px;
+    /* width: 89px; */
   }
 
   .purchase-order-frame-38319 {
@@ -35180,32 +35306,37 @@ body.no-scroll {
     flex-direction: column;
     gap: 15px;
     overflow: hidden;
-    padding: 10px;
+    padding: 20px;
     position: relative;
     width: 100%;
   }
 
   .draft-school-detail-frame-38339 {
-    align-items: center;
+    /* align-items: center; */
     align-self: stretch;
     display: flex;
     flex: 0 0 auto;
     /* gap: 650px; */
     position: relative;
     width: 100%;
+    justify-content: space-between;
+    align-items: flex-start;
   }
-
+/* 
   .draft-school-detail-text-2 {
     width: 282px;
-  }
+  } */
 
   .draft-school-detail-frame-38426 {
-    align-items: center;
+    /* align-items: center; */
     display: flex;
     gap: 5px;
     justify-content: flex-end;
     position: relative;
-    width: 100%;
+    /* width: 100%; */
+    width: auto;
+    flex-direction: column;
+    align-items: flex-end;
   }
 
   .draft-school-detail-xxxxxxxx {
@@ -35226,7 +35357,8 @@ body.no-scroll {
     border-radius: 10px;
     display: inline-flex;
     flex: 0 0 auto;
-    padding: 5px;
+    /* padding: 5px; */
+    padding: 5px 10px;
   }
 
   .draft-school-detail-text_label-1 {
@@ -35396,7 +35528,7 @@ body.no-scroll {
     align-self: stretch;
     display: flex;
     gap: 16px;
-    height: 108px;
+    /* height: 108px; */
     position: relative;
     width: 100%;
   }
@@ -35449,8 +35581,8 @@ body.no-scroll {
     align-items: flex-start;
     display: flex;
     flex-direction: column;
-    gap: 6px;
-    height: 110px;
+    gap: 15px;
+    /* height: 110px; */
     position: relative;
     width: 100%;
   }
@@ -35460,18 +35592,22 @@ body.no-scroll {
     font-family: var(--font-family-noto_sans_thai);
     font-size: var(--font-size-13);
     font-weight: 600;
-    margin-right: -155.00px;
+    /* margin-right: -155.00px; */
     margin-top: -1.00px;
     width: fit-content;
   }
 
   .draft-school-detail-frame-9 {
-    align-items: flex-start;
+    /* align-items: flex-start; */
     display: inline-flex;
     flex: 0 0 auto;
-    flex-direction: column;
+    /* flex-direction: column; */
+    flex-direction: row;
     gap: 4px;
     position: relative;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: -webkit-fill-available;
   }
 
   .draft-school-detail-text-1 {
@@ -35484,7 +35620,8 @@ body.no-scroll {
   }
 
   .draft-school-detail-span1 {
-    color: #a1a1a1;
+    color: black;
+    font-size: var(--font-size-11);
   }
 
   .draft-school-detail-frame-93-1 {
@@ -35503,9 +35640,9 @@ body.no-scroll {
     gap: 20px;
     justify-content: center;
     overflow: hidden;
-    padding: 12px 20px;
+    padding: 6px 15px;
     position: relative;
-    width: 129px;
+    /* width: 129px; */
   }
 
   .draft-school-detail-text-12 {
@@ -35551,8 +35688,10 @@ body.no-scroll {
     align-items: center;
     display: inline-flex;
     flex: 0 0 auto;
-    gap: 24px;
+    gap: 16px;
     position: relative;
+    width: -webkit-fill-available;
+    /* justify-content: space-between; */
   }
 
   .draft-school-detail-button-new {
@@ -35582,7 +35721,7 @@ body.no-scroll {
     display: flex;
     flex-direction: column;
     gap: 24px;
-    height: 245px;
+    /* height: 245px; */
     overflow: hidden;
     padding: 20px 24px;
     position: relative;
@@ -35609,6 +35748,7 @@ body.no-scroll {
     justify-content: space-between;
     position: relative;
     width: 100%;
+    gap: 20px;
   }
 
   .draft-school-detail-transport-fee {
@@ -35654,7 +35794,7 @@ body.no-scroll {
     border-radius: 10px;
     display: flex;
     padding: 8px 24px;
-    width: 180px;
+    /* width: 180px; */
   }
 
   .draft-school-detail-text_label-4 {
@@ -35731,7 +35871,7 @@ body.no-scroll {
     line-height: normal;
     margin-top: -1.00px;
     position: relative;
-    width: 40px;
+    /* width: 40px; */
   }
 
   .draft-school-detail-text_label-5-2 {
@@ -35905,7 +36045,7 @@ body.no-scroll {
     flex-direction: column;
     gap: 15px;
     overflow: hidden;
-    padding: 10px;
+    padding: 16px;
     position: relative;
     width: 100%;
   }
@@ -36188,8 +36328,8 @@ body.no-scroll {
     align-items: flex-start;
     display: flex;
     flex-direction: column;
-    gap: 6px;
-    height: 110px;
+    gap: 15px;
+    height: -webkit-fill-available;
     position: relative;
     width: 100%;
   }
@@ -36199,17 +36339,20 @@ body.no-scroll {
     font-family: var(--font-family-noto_sans_thai);
     font-size: var(--font-size-13);
     font-weight: 600;
-    margin-right: -155.00px;
+    /* margin-right: -155.00px; */
     margin-top: -1.00px;
   }
 
   .draft-school-detail-edit-frame-9 {
-    align-items: flex-start;
+    /* align-items: flex-start; */
     display: inline-flex;
     flex: 0 0 auto;
-    flex-direction: column;
+    flex-direction: row;
     gap: 4px;
     position: relative;
+    align-items: center;
+    width: -webkit-fill-available;
+    justify-content: space-between;
   }
 
   .draft-school-detail-edit-text-1 {
@@ -36500,7 +36643,7 @@ body.no-scroll {
     margin-top: -1.00px;
     position: relative;
     width: fit-content;
-    width: 40px;
+    /* width: 40px; */
   }
 
   .draft-school-detail-edit-text_label-5-2 {
@@ -37559,8 +37702,9 @@ body.no-scroll {
     gap: 324px;
     height: 90px;
     /* margin-left: 100px; */
-    margin-top: 62px;
-    min-width: 762px;
+    margin-top: 20px;
+    min-width: -webkit-fill-available;
+    /* min-width: 762px; */
   }
 
   .request-detail-school-button {
@@ -38151,7 +38295,7 @@ body.no-scroll {
     display: inline-flex;
     flex: 0 0 auto;
     flex-direction: column;
-    gap: 32px;
+    gap: 20px;
     position: relative;
     width: 100%;
   }
@@ -38170,8 +38314,9 @@ body.no-scroll {
     align-items: center;
     display: inline-flex;
     flex: 0 0 auto;
-    gap: 24px;
+    gap: 20px;
     position: relative;
+    width: -webkit-fill-available;
   }
 
   .request-detail-school-button-4 {
@@ -38224,6 +38369,7 @@ body.no-scroll {
     justify-content: center;
     overflow: hidden;
     position: relative;
+    width: -webkit-fill-available;
   }
 
   .request-detail-school-navbar-link-text {
@@ -39404,6 +39550,92 @@ body.no-scroll {
     line-height: normal;
     position: relative;
     width: fit-content;
+  }
+
+  .notosansthai-semi-bold-black-40px {
+    font-size: var(--font-size-28);
+  }
+
+  .notosansthai-semi-bold-black-20px {
+    font-size: var(--font-size-16);
+  }
+
+  .text-summarize {
+    font-family: var(--font-family-noto_sans_thai);
+    font-size: var(--font-size-13);
+  }
+
+  .title-text-summarize {
+    color: #666666;
+    font-style: normal;
+    line-height: 1.3;
+  }
+
+  .value-text-summarize {
+    color: black;
+    font-weight: 700;
+    text-wrap: nowrap;
+  }
+
+  .button-edit {
+    color: var(--main);
+    font-family: var(--font-family-noto_sans_thai);
+    font-size: var(--font-size-13);
+    font-weight: 600;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+    margin-top: -1.00px;
+    position: relative;
+  }
+
+  .button-confirm {
+    color: var(--white);
+    font-family: var(--font-family-noto_sans_thai);
+    font-size: var(--font-size-13);
+    font-style: normal;
+    font-weight: 600;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+    margin-top: -1.00px;
+    position: relative;
+  }
+
+  .button-group-action-draft-school {
+    align-items: center;
+    display: inline-flex;
+    flex: 0 0 auto;
+    gap: 24px;
+    position: relative;
+    width: -webkit-fill-available;
+    justify-content: center;
+  }
+
+  .container-file-item {
+    padding: 8px 16px;
+    background-color: white;
+    border: 1px solid #DCE0E5;
+    border-radius: 10px;
+    font-family: var(--font-family-noto_sans_thai);
+    font-size: var(--font-size-13);
+    color: #14181F;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .request-detail-school-button-4 {
+    width: -webkit-fill-available;
+  }
+
+  .request-detail-school-button-3 {
+    width: -webkit-fill-available;
+  }
+
+  .button-attach-file-payment {
+    width: -webkit-fill-available;
   }
 }
 
