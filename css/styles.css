@@ -26181,7 +26181,8 @@ a:active {
   display: flex;
   flex-direction: column;
   position: relative;
-  width: 172px;
+  /* width: 172px; */
+  width: -webkit-fill-available;
 }
 
 .print-document-history-table-header {
@@ -26226,10 +26227,11 @@ a:active {
 .print-document-history-column-table-default {
   align-items: flex-start;
   display: flex;
-  flex: 1;
+  /* flex: 1; */
   flex-direction: column;
   flex-grow: 1;
   position: relative;
+  width: -webkit-fill-available;
 }
 
 .print-document-history-text-cell-1 {
@@ -33773,7 +33775,7 @@ body.no-scroll {
     display: flex;
     gap: 8px;
     padding: 8px 24px;
-    width: 245px;
+    width: 200px;
   }
 
   .request-detail-school-button-5 {
@@ -33782,7 +33784,7 @@ body.no-scroll {
     display: flex;
     gap: 8px;
     padding: 8px 24px;
-    width: 245px;
+    width: 200px;
   }
 
   .request-detail-school-footer {
@@ -33977,6 +33979,31 @@ body.no-scroll {
     line-height: normal;
     position: relative;
     width: fit-content;
+  }
+
+  .button-edit {
+    color: var(--main);
+    font-family: var(--font-family-noto_sans_thai);
+    font-size: var(--font-size-13);
+    font-weight: 600;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+    margin-top: -1.00px;
+    position: relative;
+  }
+
+  .button-confirm {
+    color: var(--white);
+    font-family: var(--font-family-noto_sans_thai);
+    font-size: var(--font-size-13);
+    font-style: normal;
+    font-weight: 600;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+    margin-top: -1.00px;
+    position: relative;
   }
 }
 
@@ -39236,11 +39263,12 @@ body.no-scroll {
   }
 
   .print-document-information-text_input {
-    width: -webkit-fill-available;
+    width: inherit;
   }
 
   .print-document-information-frame-38339 {
     gap: 20px;
+    align-items: flex-start;
   }
 
   .login-frame-38264 {
@@ -39611,6 +39639,32 @@ body.no-scroll {
   }
 
   .button-attach-file-payment {
+    width: -webkit-fill-available;
+  }
+
+  .print-document-information-frame-38341 {
+    gap: 10px;
+    flex-direction: column-reverse;
+    width: auto;
+  }
+
+  .popup-confirm-frame-38264 {
+    width: -webkit-fill-available;
+  }
+
+  .popup-confirm-frame-38266 {
+    width: -webkit-fill-available;
+  }
+
+  .popup-confirm-frame-38265 {
+    width: -webkit-fill-available;
+  }
+
+  .popup-confirm-text-field-1 {
+    width: -webkit-fill-available;
+  }
+
+  .popup-confirm-frame-3852 {
     width: -webkit-fill-available;
   }
 }
