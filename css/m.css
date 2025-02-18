@@ -5518,4 +5518,37 @@
         position: relative;
         width: fit-content;
       }
+
+      .notosansthai-bold-black-20px-18px-13px {
+        color: var(--bkack);
+        font-family: var(--font-family-noto_sans_thai);
+        font-size: var(--font-size-13);
+        font-style: normal;
+        font-weight: 700;
+      }
+      
+      .notosansthai-normal-black-20px-2 {
+        color: #00000099;
+        font-family: var(--font-family-noto_sans_thai);
+        font-size: var(--font-size-13);
+        font-style: normal;
+        font-weight: 400;
+      }
+
+      .purchase-order-shipping-xxxx-1 {
+        color: var(--bkack);
+        font-family: var(--font-family-noto_sans_thai);
+        font-size: var(--font-size-15);
+        font-weight: 700;
+      }
+
+      .content-ecs .frame-38339 {
+        align-items: center;
+        align-self: stretch;
+        display: flex;
+        flex: 0 0 auto;
+        gap: 5px;
+        position: relative;
+        width: 100%;
+      }
 }
