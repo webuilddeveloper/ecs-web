@@ -15,46 +15,103 @@
 </head>
 
 <body style="margin: 0; background: #ffffff">
-  <div class="desktop">
-    <div class="header-ecs">
-      <a href="./login.html">
-        <img class="logo-ecs" src="img/logo------1.png" alt="logo ecs" />
-      </a>
-      <div class="navbar-ecs">
-        <div class="navbar-link-text-ecs">
-          <a href="./purchase-order-school.html">
-            ออกใบขอสั่งซื้อ
-          </a>
-        </div>
-        <div class="navbar-link-text-ecs">
-          <a href="./approve-school.html">
-            เอกสารใบขอสั่งซื้อ
-          </a>
-        </div>
-        <div class="navbar-link-text-ecs">
-          <a href="./delivered-order.html">
-            รายการคำสั่งซื้อ
-          </a>
-        </div>
-        <div class="navbar-link-text-ecs">
-          <a href="./order-cancel.html">
-            ยกเลิกเลข ปพ.
-          </a>
-        </div>
-        <div class="navbar-link-text-ecs">
-          <a href="./delivered-order.html">
-            ประวัติการสั่งซื้อ
-          </a>
-        </div>
+
+  <div class="header-ecs">
+    <a href="./login.html">
+      <img class="logo-ecs" src="img/logo------1.png" alt="logo ecs" />
+    </a>
+    <div class="navbar-ecs header-menu">
+      <div class="navbar-link-text-ecs">
+        <a href="./purchase-order-school.html">
+          ออกใบขอสั่งซื้อ
+        </a>
       </div>
-      <div class="header-action-ecs">
-        <img class="group" src="img/group@2x.png" alt="Group" />
-        <a href="./profile-school.html">
-          <img class="vector" src="img/vector-2.svg" alt="Vector" />
+      <div class="navbar-link-text-ecs">
+        <a href="./approve-school.html">
+          เอกสารใบขอสั่งซื้อ
+        </a>
+      </div>
+      <div class="navbar-link-text-ecs">
+        <a href="./delivered-order.html">
+          รายการคำสั่งซื้อ
+        </a>
+      </div>
+      <div class="navbar-link-text-ecs">
+        <a href="./order-cancel.html">
+          ยกเลิกเลข ปพ.
+        </a>
+      </div>
+      <div class="navbar-link-text-ecs">
+        <a href="./delivered-order.html">
+          ประวัติการสั่งซื้อ
         </a>
       </div>
     </div>
+    <div class="header-action-ecs">
+      <img class="group site-navbar" src="img/Icon-Service.png" alt="Service" onclick="showMenuNav()" />
+      <div class="notification-icon">
+        <img class="group" src="img/group@2x.png" alt="Group" onclick="toggleNotificationPanel()" />
+        <span id="notification-badge" class="notification-badge"></span> <!-- จุดแดง -->
+      </div>
 
+      <div id="notification-panel" class="notification-panel hidden">
+        <ul class="notification-list">
+          <li class="notification-item unread">
+            <span class="status-indicator"></span>
+            <div class="notification-content">
+              <p class="notosansthai-normal-vulcan-15px">
+                <strong class="notosansthai-semi-bold-vulcan-15px">หมายเลขคำสั่งซื้อ:</strong> 12345
+              </p>
+              <p class="notosansthai-normal-vulcan-15px">
+                <strong class="notosansthai-semi-bold-vulcan-15px">สถานะ:</strong> รอดำเนินการ
+              </p>
+            </div>
+          </li>
+          <li class="notification-item">
+            <span class="status-indicator read"></span>
+            <div class="notification-content">
+              <p class="notosansthai-normal-vulcan-15px">
+                <strong class="notosansthai-semi-bold-vulcan-15px">หมายเลขคำสั่งซื้อ:</strong> 67890
+              </p>
+              <p class="notosansthai-normal-vulcan-15px">
+                <strong class="notosansthai-semi-bold-vulcan-15px">สถานะ:</strong> สำเร็จ
+              </p>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <a href="./profile-school.html">
+        <img class="vector" src="img/vector-2.svg" alt="Vector" />
+      </a>
+    </div>
+  </div>
+  <div id="subMenuHeader" class="sub-menu-header" style="display: none;">
+    <a href="./purchase-order-school.html"
+      class="notosansthai-normal-black-20px no-text-underline textItemMenuHeader itemMenuHeader">
+      ออกใบขอสั่งซื้อ
+    </a>
+    <hr />
+    <a href="./approve-school.html"
+      class="notosansthai-normal-black-20px no-text-underline textItemMenuHeader itemMenuHeader">
+      เอกสารใบขอสั่งซื้อ
+    </a>
+    <hr />
+    <a href="./delivered-order.html"
+      class="notosansthai-normal-black-20px no-text-underline textItemMenuHeader itemMenuHeader">
+      รายการคำสั่งซื้อ
+    </a>
+    <hr />
+    <a href="./order-cancel.html"
+      class="notosansthai-normal-black-20px no-text-underline textItemMenuHeader itemMenuHeader">
+      ยกเลิกเลข ปพ.
+    </a>
+    <hr />
+    <a href="./delivered-order.html"
+      class="notosansthai-normal-black-20px no-text-underline textItemMenuHeader itemMenuHeader">
+      ประวัติการสั่งซื้อ
+    </a>
+  </div>
     <div class="content-center">
       <div class="content-ecs">
 
@@ -64,21 +121,19 @@
             <div class="text_label valign-text-middle">ย้อนกลับ</div>
           </a>
         </div>
-
-        <h1 class="text-1-2">รายละเอียดคำสั่งซื้อ</h1>
         <div class="frame-38489">
-          <div class="as-start text-7-2 valign-text-middle text-3 notosansthai-normal-black-20px text-bold">
-            สาเหตุการไม่อนุมัติ
-          </div>
-          <div class="frame-28 notosansthai-normal-black-16px">
-            <div class="frame-38339">
-              <div class="text-7-2 valign-text-middle text-3 notosansthai-normal-black-18px text-bold">
-                คำสั่งซื้อไม่ตรงกับหนังสืออนุมัติการสั่งซื้อจากเขต
-              </div>
-
+          <h1 class="text-1-2">รายละเอียดคำสั่งซื้อ</h1>
+          <div class="frame-288">
+            <div class="as-start text-7-2 valign-text-middle text-3 notosansthai-normal-black-20px text-bold">
+              สาเหตุการไม่อนุมัติ
             </div>
-
-
+            <div class="frame-28 notosansthai-normal-black-16px">
+              <div class="frame-38339">
+                <div class="text-7-2 valign-text-middle text-3 notosansthai-normal-black-18px text-bold">
+                  คำสั่งซื้อไม่ตรงกับหนังสืออนุมัติการสั่งซื้อจากเขต
+                </div>
+              </div>
+            </div>
           </div>
           <div class="frame-28 notosansthai-normal-black-16px">
             <div class="frame-38339">
@@ -175,12 +230,16 @@
                             <span class="notosansthai-normal-black-16px">ราคาต่อเล่ม: </span><span class="span1-2">160
                               บาท</span>
                           </div>
+                          <div class="frame-18 notosansthai-medium-black-14px hidden-md-down hidden-lg-down">
+                            <div class="number">1</div>
+                            <div class="text-23 text-3">เล่ม</div>
+                          </div>
                         </div>
                       </div>
                       <div class="frame-93-1-2"></div>
                     </div>
                   </div>
-                  <div class="frame-18 notosansthai-medium-black-14px">
+                  <div class="frame-18 notosansthai-medium-black-14px hidden-sm-down">
                     <div class="number">1</div>
                     <div class="text-23 text-3">เล่ม</div>
                   </div>
@@ -194,335 +253,21 @@
                         <p class="text-21">
                           ปพ.1:บ&nbsp;&nbsp;ระเบียนแสดงผลการเรียน ระดับ ม.ต้น <br />(ปรับปรุง 2555) (ฉบับใช้กับคอม)
                         </p>
-                        <div class="frame-38433">
-                          <div class="frame-9">
-                            <div class="text-2-2 text-3">
-                              <span class="notosansthai-normal-black-16px">ราคาต่อเล่ม: </span><span class="span1-2">160
-                                บาท</span>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="frame-93-1-2"></div>
-                    </div>
-                  </div>
-                  <div class="frame-18 notosansthai-medium-black-14px">
-                    <div class="number">1</div>
-                    <div class="text-23 text-3">เล่ม</div>
-                  </div>
-                </div>
-              </div>
-
-            </div>
-            <img class="line" src="img/line-6-30.svg" alt="Line 6" />
-            <div class="frame-93-2-2">
-              <div class="frame-38340">
-                <div class="grand-total-2 valign-text-middle notosansthai-normal-black-20px text-bold">
-                  ยอดสุทธิ /Grand Total
-                </div>
-                <div class="order-list-detail-educational-address-1 valign-text-middle">320 บาท</div>
-              </div>
-            </div>
-            <div class="frame-38-3">
-              <div class="frame-38436">
-                <div class="frame-38435">
-                  <div class="text-27 valign-text-middle text-3 notosansthai-normal-black-16px">ใบแทนใบเสร็จ</div>
-                  <a href="javascript:SubmitForm('form6')">
-                    <div class="button-2-2 button-5-copy">
-                      <img class="icon-btn-left" src="./img/icon-btn-left-4.svg" alt="icon-btn-left" />
-                      <div class="text-sm text-3">124805390_ใบเสร็จ.PDF</div>
-                    </div>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-
-        </div>
-
-
-      </div>
-      <dialog id="confirmDialog" class="dialog">
-        <!-- <div class="view"></div> -->
-        <div class="popup">
-          <div class="frame-container">
-            <div class="frame-38264">
-              <div class="frame-38266">
-                <div class="frame-38265">
-                  <h1 class="text_label-2 valign-text-middle text_label-4">ยื่นคำขอคืนเงิน/คืนสินค้า</h1>
-                  <div class="text_label-3 valign-text-middle text_label-4 notosansthai-normal-black-20px">
-                    <span><span class="notosansthai-normal-black-20px">กรุณาใส่เหตุผลการคืนเงิน/คืนสินค้า
-                        หากยืนยันจะเป็นอันเสร็จสิ้นการไม่อนุมัติ</span><span class="span1-1"></span><span
-                        class="notosansthai-normal-black-20px">คำสั่งซื้อ</span>
-                    </span>
-                  </div>
-                </div>
-                <div class="text-field-dialog">
-                  <select id="agency" class="custom-dropdown notosansthai-normal-dove-gray-17px">
-                    <option value="" disabled selected>เลือกเหตุผล</option>
-                    <option value="กศน">เหตุผล1</option>
-                    <option value="สพฐ">เหตุผล2</option>
-                    <option value="มหาวิทยาลัย">เหตุผล3</option>
-                    <option value="อื่นๆ">เหตุผล4</option>
-                  </select>
-                </div>
-                <div class="frame-38262">
-                  <a href="javascript:confirmDialogClose()">
-                    <article class="button-5 button-7">
-                      <div class="text_label valign-text-middle notosansthai-semi-bold-midnight-blue-20px">
-                        ยกเลิก
-                      </div>
-                    </article>
-                  </a><a href="javascript:approveButton()">
-                    <article class="button-6 button-7">
-                      <div class="text_label valign-text-middle notosansthai-semi-bold-white-20px">ยืนยัน</div>
-                    </article>
-                  </a>
-                </div>
-              </div>
-            </div>
-            <a href="javascript:confirmDialogClose()"><img class="frame-1041" src="img/frame-1041.svg"
-                alt="Frame 1041" />
-            </a>
-          </div>
-        </div>
-      </dialog>
-
-      <dialog id="confirmDialog" class="dialog">
-        <!-- <div class="view"></div> -->
-        <div class="popup">
-          <div class="frame-container">
-            <div class="frame-38264">
-              <div class="frame-38266">
-                <div class="frame-38265">
-                  <h1 class="text_label-2 valign-text-middle text_label-4">ยื่นคำขอคืนเงิน/คืนสินค้า</h1>
-                  <div class="text_label-3 valign-text-middle text_label-4 notosansthai-normal-black-20px">
-                    <span><span class="notosansthai-normal-black-20px">กรุณาใส่เหตุผลการคืนเงิน/คืนสินค้า
-                        หากยืนยันจะเป็นอันเสร็จสิ้นการไม่อนุมัติ</span><span class="span1-1"></span><span
-                        class="notosansthai-normal-black-20px">คำสั่งซื้อ</span>
-                    </span>
-                  </div>
-                </div>
-                <div class="text-field-dialog">
-                  <select id="agency" class="custom-dropdown notosansthai-normal-dove-gray-17px">
-                    <option value="" disabled selected>เลือกเหตุผล</option>
-                    <option value="กศน">เหตุผล1</option>
-                    <option value="สพฐ">เหตุผล2</option>
-                    <option value="มหาวิทยาลัย">เหตุผล3</option>
-                    <option value="อื่นๆ">เหตุผล4</option>
-                  </select>
-                </div>
-                <div class="frame-38262">
-                  <a href="javascript:confirmDialogClose()">
-                    <article class="button-5 button-7">
-                      <div class="text_label valign-text-middle notosansthai-semi-bold-midnight-blue-20px">
-                        ยกเลิก
-                      </div>
-                    </article>
-                  </a><a href="javascript:SubmitForm('form3')">
-                    <article class="button-6 button-7">
-                      <div class="text_label valign-text-middle notosansthai-semi-bold-white-20px">ยืนยัน</div>
-                    </article>
-                  </a>
-                </div>
-              </div>
-            </div>
-            <a href="javascript:confirmDialogClose()"><img class="frame-1041" src="img/frame-1041.svg"
-                alt="Frame 1041" />
-            </a>
-          </div>
-        </div>
-      </dialog>
-
-      <dialog id="successDialog" class="dialog">
-        <div class="popup">
-          <div class="frame-container">
-            <div class="frame-38264">
-              <div class="frame-38266">
-                <div class="frame-38265">
-                  <img class="check-one" src="img/check-one.svg" alt="check-one" />
-                  <h1 class="text_label-3-2 valign-text-middle text_label-4-2">ยื่นคำขอคืนเงิน/คืนสินค้า<br />สำเร็จ
-                  </h1>
-                </div>
-              </div>
-            </div>
-            <a href="javascript:confirmDialogClose()"><img class="frame-1041" src="img/frame-1041.svg"
-                alt="Frame 1041" />
-            </a>
-          </div>
-        </div>
-      </dialog>
-
-    </div>
-  </div>
-
-  <div class="tablet">
-    <div class="header-ecs">
-      <a href="./login.html">
-        <img class="logo-ecs" src="img/logo------1.png" alt="logo ecs" />
-      </a>
-      <div class="header-action-ecs">
-        <img class="group" src="img/Icon-Service.png" alt="Service" />
-        <img class="group" src="img/group@2x.png" alt="Group" />
-        <a href="./profile-school.html">
-          <img class="vector" src="img/vector-2.svg" alt="Vector" />
-        </a>
-      </div>
-    </div>
-
-    <div class="content-center">
-      <div class="content-ecs">
-
-        <div class="flex-row flex">
-          <a href="./cancel-order.html" class="button-back pointer">
-            <img class="icon-back" src="./img/icon-back-4.svg" alt="icon back" />
-            <div class="text_label valign-text-middle">ย้อนกลับ</div>
-          </a>
-        </div>
-
-        <h1 class="text-1-2">รายละเอียดคำสั่งซื้อ</h1>
-        <div class="frame-38489">
-          <div class="as-start text-7-2 valign-text-middle text-3 notosansthai-normal-black-20px text-bold">
-            สาเหตุการไม่อนุมัติ
-          </div>
-          <div class="frame-28 notosansthai-normal-black-16px">
-            <div class="frame-38339">
-              <div class="text-7-2 valign-text-middle text-3 notosansthai-normal-black-18px text-bold">
-                คำสั่งซื้อไม่ตรงกับหนังสืออนุมัติการสั่งซื้อจากเขต
-              </div>
-
-            </div>
-
-
-          </div>
-          <div class="frame-28 notosansthai-normal-black-16px">
-            <div class="frame-38339">
-              <div class="text-7-2 valign-text-middle text-3 notosansthai-normal-black-20px text-bold">หมายเลขคำสั่งซื้อ
-              </div>
-              <div class="frame-38426">
-                <div class="text-7-2 valign-text-middle text-3 notosansthai-normal-black-28px text-bold">xxxxxxxx</div>
-                <a href="javascript:SubmitForm('form6')">
-                  <div class="button-1-2 button-5-copy">
-                    <div class="text_label-1-2 valign-text-middle text_label-3-2">คัดลอก</div>
-                  </div>
-                </a>
-              </div>
-            </div>
-            <div class="frame-38339">
-              <div class="text2 valign-text-middle">ชำระผ่าน</div>
-              <div class="text2-1 valign-text-middle text-3">โอนผ้านบัญชี</div>
-            </div>
-            <div class="frame-38339">
-              <div class="text2 valign-text-middle">เวลาที่สั่งซื้อ</div>
-              <div class="text2-1 valign-text-middle text-3">16-10-2024 09:11</div>
-            </div>
-            <div class="frame-38339">
-              <div class="text2 valign-text-middle">เวลาที่ชำระเงิน</div>
-              <div class="text2-1 valign-text-middle text-3">16-10-2024 09:12</div>
-            </div>
-            <div class="frame-38339">
-              <div class="text2 valign-text-middle">เวลาที่จัดส่งสินค้า</div>
-              <div class="text2-1 valign-text-middle text-3">17-10-2024 16:00</div>
-            </div>
-            <div class="frame-38339 notosansthai-normal-black-16px">
-              <div class="text2 valign-text-middle">เวลาที่จัดส่งสำเร็จ</div>
-              <div class="text2-1 valign-text-middle text-3">21-10-2024 07:13</div>
-            </div>
-            <img class="line" src="img/line-6-25.svg" alt="Line 7" />
-            <div class="frame-38425">
-              <div class="frame-38-2">
-                <div class="text2 valign-text-middle notosansthai-normal-black-16px">ที่อยู่ติดต่อกลับ</div>
-                <div class="frame-38-2">
-                  <div class="frame-38268">
-
-                    <div class="order-details-cancel-frame-38407">
-                      <div class="order-details-cancel-frame-38269 notosansthai-normal-black-18px text-bold">
-                        <div class="text-15-2 valign-text-middle text-3">ออกแบบ ทดลอง</div>
-                        <p class="text-15-2 valign-text-middle text-3">| (+66 ) 12 345 6789</p>
-                      </div>
-                      <p class="order-details-cancel-address valign-text-middle notosansthai-normal-black-16px">
-                        2249 ถนนลาดพร้าว แขวงลาดพร้าว เขตลาดพร้าว 10230 แขวงสะพานสอง เขตวังทองหลาง กรุงเทพมหานคร 10310
-                      </p>
-                    </div>
-
-                  </div>
-                </div>
-              </div>
-              <div class="frame-38420">
-                <div class="text valign-text-middle notosansthai-normal-black-16px">ข้อมูลการจัดส่ง</div>
-                <div class="frame-38268">
-                  <div class="order-details-cancel-frame-38424" style="justify-content: space-between;">
-                    <div class="frame-38408-1" style="width: 100%;">
-                      <div class="frame-38407-1">
-                        <div class="frame-38269">
-                          <div
-                            class="xxx-express-th00000000000 valign-text-middle notosansthai-normal-black-18px text-bold">
-                            XXX Express : TH00000000000
-                          </div>
-                        </div>
-                        <div class="frame-38423">
-                          <div class="text-18-2 valign-text-middle text-3">พัสดุกำลังจัดส่ง</div>
-                          <div class="text-19 valign-text-middle text-3 notosansthai-normal-black-16px">
-                            20-10-2024 11:11
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <a href="javascript:SubmitForm('form6')"><img class="dropdown" src="img/dropdown-17.svg"
-                        alt="dropdown" />
-                    </a>
-                  </div>
-                </div>
-              </div>
-
-              <div class="frame-38-2">
-                <div class="text valign-text-middle notosansthai-normal-black-16px">รายการสินค้า</div>
-                <div class="frame-38-1-2">
-                  <div class="frame-95"><img class="image-8" src="img/image-8-2@2x.png" alt="image 8" /></div>
-                  <div class="frame-94">
-                    <div class="frame-94-1">
-                      <div class="order-details-cancel-frame-93">
-                        <p class="order-details-cancel-text-21 valign-text-middle text-3">
-                          ปพ.1:ป ระเบียนแสดงผลการเรียน ระดับ ประถมฯ <br />(ปรับปรุง 2555) (ฉบับใช้กับคอม)
-                        </p>
                         <div class="frame-9">
                           <div class="text-2-2 text-3">
                             <span class="notosansthai-normal-black-16px">ราคาต่อเล่ม: </span><span class="span1-2">160
                               บาท</span>
                           </div>
-                        </div>
-                      </div>
-                      <div class="frame-93-1-2"></div>
-                    </div>
-                  </div>
-                  <div class="frame-18 notosansthai-medium-black-14px">
-                    <div class="number">1</div>
-                    <div class="text-23 text-3">เล่ม</div>
-                  </div>
-                </div>
-                <img class="line" src="img/line-6-25.svg" alt="Line 6" />
-                <div class="frame-38-1-2">
-                  <div class="frame-95"><img class="image-8" src="img/image-8-3@2x.png" alt="image 8" /></div>
-                  <div class="frame-94">
-                    <div class="frame-94-1">
-                      <div class="order-details-cancel-frame-93">
-                        <p class="order-details-cancel-text-21">
-                          ปพ.1:บ&nbsp;&nbsp;ระเบียนแสดงผลการเรียน ระดับ ม.ต้น <br />(ปรับปรุง 2555) (ฉบับใช้กับคอม)
-                        </p>
-                        <div class="frame-38433">
-                          <div class="frame-9">
-                            <div class="text-2-2 text-3">
-                              <span class="notosansthai-normal-black-16px">ราคาต่อเล่ม: </span><span class="span1-2">160
-                                บาท</span>
-                            </div>
+                          <div class="frame-18 notosansthai-medium-black-14px hidden-md-down hidden-lg-down">
+                            <div class="number">1</div>
+                            <div class="text-23 text-3">เล่ม</div>
                           </div>
                         </div>
                       </div>
                       <div class="frame-93-1-2"></div>
                     </div>
                   </div>
-                  <div class="frame-18 notosansthai-medium-black-14px">
+                  <div class="frame-18 notosansthai-medium-black-14px hidden-sm-down">
                     <div class="number">1</div>
                     <div class="text-23 text-3">เล่ม</div>
                   </div>
@@ -671,327 +416,6 @@
       </dialog>
 
     </div>
-  </div>
-
-  <div class="mobile">
-    <div class="header-ecs">
-      <a href="./login.html">
-        <img class="logo-ecs" src="img/logo------1.png" alt="logo ecs" />
-      </a>
-      <div class="header-action-ecs">
-        <img class="group" src="img/Icon-Service.png" alt="Service" />
-        <img class="group" src="img/group@2x.png" alt="Group" />
-        <a href="./profile-school.html">
-          <img class="vector" src="img/vector-2.svg" alt="Vector" />
-        </a>
-      </div>
-    </div>
-
-    <div class="content-center">
-      <div class="content-ecs">
-
-        <div class="flex-row flex">
-          <a href="./cancel-order.html" class="button-back pointer">
-            <img class="icon-back" src="./img/icon-back-4.svg" alt="icon back" />
-            <div class="text_label valign-text-middle">ย้อนกลับ</div>
-          </a>
-        </div>
-
-        <h1 class="text-1-2">รายละเอียดคำสั่งซื้อ</h1>
-        <div class="frame-38489">
-          <div class="as-start text-7-2 valign-text-middle text-3 notosansthai-normal-black-20px text-bold">
-            สาเหตุการไม่อนุมัติ
-          </div>
-          <div class="frame-28 notosansthai-normal-black-16px">
-            <div class="frame-38339">
-              <div class="text-7-2 valign-text-middle text-3 notosansthai-normal-black-14px text-bold">
-                คำสั่งซื้อไม่ตรงกับหนังสืออนุมัติการสั่งซื้อจากเขต
-              </div>
-            </div>
-
-          </div>
-          <div class="frame-28 notosansthai-normal-black-16px">
-            <div class="frame-38339">
-              <div class="text-7-2 valign-text-middle text-3 notosansthai-normal-black-20px text-bold">หมายเลขคำสั่งซื้อ
-              </div>
-              <!-- <div class="frame-38426">
-                <div class="text-7-2 valign-text-middle text-3 notosansthai-normal-black-28px text-bold">xxxxxxxx</div>
-                <a href="javascript:SubmitForm('form6')">
-                  <div class="button-1-2 button-5-copy">
-                    <div class="text_label-1-2 valign-text-middle text_label-3-2">คัดลอก</div>
-                  </div>
-                </a>
-              </div> -->
-            </div>
-            <div class="frame-38339">
-              <div class="order-details-cancel-text2 valign-text-middle">ชำระผ่าน</div>
-              <div class="order-details-cancel-text2-1 valign-text-middle text-3">โอนผ้านบัญชี</div>
-            </div>
-            <div class="frame-38339">
-              <div class="order-details-cancel-text2 valign-text-middle">เวลาที่สั่งซื้อ</div>
-              <div class="order-details-cancel-text2-1 valign-text-middle text-3">16-10-2024 09:11</div>
-            </div>
-            <div class="frame-38339">
-              <div class="order-details-cancel-text2 valign-text-middle">เวลาที่ชำระเงิน</div>
-              <div class="order-details-cancel-text2-1 valign-text-middle text-3">16-10-2024 09:12</div>
-            </div>
-            <div class="frame-38339">
-              <div class="order-details-cancel-text2 valign-text-middle">เวลาที่จัดส่งสินค้า</div>
-              <div class="order-details-cancel-text2-1 valign-text-middle text-3">17-10-2024 16:00</div>
-            </div>
-            <div class="frame-38339 notosansthai-normal-black-16px">
-              <div class="order-details-cancel-text2 valign-text-middle">เวลาที่จัดส่งสำเร็จ</div>
-              <div class="order-details-cancel-text2-1 valign-text-middle text-3">21-10-2024 07:13</div>
-            </div>
-            <img class="line" src="img/line-6-25.svg" alt="Line 7" />
-            <div class="frame-38425">
-              <div class="frame-38-2">
-                <div class="text2 valign-text-middle notosansthai-normal-black-16px">ที่อยู่ติดต่อกลับ</div>
-                <div class="frame-38-2">
-                  <div class="frame-38268">
-
-                    <div class="order-details-cancel-frame-38407">
-                      <div class="order-details-cancel-frame-38269 notosansthai-normal-black-18px text-bold">
-                        <div class="text-15-2 valign-text-middle text-3">ออกแบบ ทดลอง</div>
-                        <p class="text-15-2 valign-text-middle text-3">| (+66 ) 12 345 6789</p>
-                      </div>
-                      <p class="order-details-cancel-address valign-text-middle notosansthai-normal-black-16px"
-                        style="font-size: 13px;">
-                        2249 ถนนลาดพร้าว แขวงลาดพร้าว เขตลาดพร้าว 10230 แขวงสะพานสอง เขตวังทองหลาง กรุงเทพมหานคร 10310
-                      </p>
-                    </div>
-
-                  </div>
-                </div>
-              </div>
-              <div class="frame-38420">
-                <div class="text valign-text-middle notosansthai-normal-black-16px">ข้อมูลการจัดส่ง</div>
-                <div class="frame-38268">
-                  <div class="order-details-cancel-frame-38424" style="justify-content: space-between;">
-                    <div class="frame-38408-1" style="width: 100%;">
-                      <div class="frame-38407-1">
-                        <div class="frame-38269">
-                          <div
-                            class="xxx-express-th00000000000 valign-text-middle notosansthai-normal-black-18px text-bold"
-                            style="font-size: 13px;">
-                            XXX Express : TH00000000000
-                          </div>
-                        </div>
-                        <div class="frame-38423">
-                          <div class="text-18-2 valign-text-middle text-3" style="font-size: 13px;">พัสดุกำลังจัดส่ง
-                          </div>
-                          <div class="text-19 valign-text-middle text-3 notosansthai-normal-black-16px"
-                            style="font-size: 13px;">
-                            20-10-2024 11:11
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <a href="javascript:SubmitForm('form6')"><img class="dropdown" src="img/dropdown-17.svg"
-                        alt="dropdown" />
-                    </a>
-                  </div>
-                </div>
-              </div>
-
-              <div class="frame-38-2">
-                <div class="text valign-text-middle notosansthai-normal-black-16px">รายการสินค้า</div>
-                <div class="frame-38-1-2">
-                  <div class="order-details-cancel-frame-95"><img class="order-details-cancel-image-8"
-                      src="img/image-8-2@2x.png" alt="image 8" /></div>
-                  <div class="frame-94">
-                    <div class="frame-94-1">
-                      <div class="order-details-cancel-frame-93">
-                        <p class="order-details-cancel-text-21 valign-text-middle text-3">
-                          ปพ.1:ป ระเบียนแสดงผลการเรียน ระดับ ประถมฯ <br />(ปรับปรุง 2555) (ฉบับใช้กับคอม)
-                        </p>
-                        <div class="order-details-cancel-frame-9">
-                          <div class="text-2-2 text-3">
-                            <span class="notosansthai-normal-black-11px">ราคาต่อเล่ม: </span><span
-                              class="span1-2 notosansthai-normal-black-11px">160
-                              บาท</span>
-                          </div>
-                          <div class="order-details-cancel-frame-18 notosansthai-medium-black-1px">
-                            <div class="number">1</div>
-                            <div class="text-23 text-3">เล่ม</div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="frame-93-1-2"></div>
-                    </div>
-                  </div>
-                </div>
-                <img class="line" src="img/line-6-25.svg" alt="Line 6" />
-                <div class="frame-38-1-2">
-                  <div class="order-details-cancel-frame-95"><img class="order-details-cancel-image-8"
-                      src="img/image-8-3@2x.png" alt="image 8" /></div>
-                  <div class="frame-94">
-                    <div class="frame-94-1">
-                      <div class="order-details-cancel-frame-93">
-                        <p class="order-details-cancel-text-21">
-                          ปพ.1:บ&nbsp;&nbsp;ระเบียนแสดงผลการเรียน ระดับ ม.ต้น <br />(ปรับปรุง 2555) (ฉบับใช้กับคอม)
-                        </p>
-                        <div class="order-details-cancel-frame-9">
-                          <div class="text-2-2 text-3">
-                            <span class="notosansthai-normal-black-11px">ราคาต่อเล่ม: </span><span
-                              class="span1-2 notosansthai-normal-black-11px">160
-                              บาท</span>
-                          </div>
-                          <div class="order-details-cancel-frame-18 notosansthai-medium-black-1px">
-                            <div class="number">1</div>
-                            <div class="text-23 text-3">เล่ม</div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                </div>
-              </div>
-
-            </div>
-            <img class="line" src="img/line-6-30.svg" alt="Line 6" />
-            <div class="frame-93-2-2">
-              <div class="frame-38340">
-                <div class="grand-total-2 valign-text-middle notosansthai-normal-black-20px text-bold">
-                  ยอดสุทธิ /Grand Total
-                </div>
-                <div class="order-list-detail-educational-address-1 valign-text-middle">320 บาท</div>
-              </div>
-            </div>
-            <div class="frame-38-3">
-              <div class="frame-38436">
-                <div class="frame-38435">
-                  <div class="text-27 valign-text-middle text-3 notosansthai-normal-black-16px">ใบแทนใบเสร็จ</div>
-                  <a href="javascript:SubmitForm('form6')">
-                    <div class="button-2-2 button-5-copy">
-                      <img class="icon-btn-left" src="./img/icon-btn-left-4.svg" alt="icon-btn-left" />
-                      <div class="text-sm text-3">124805390_ใบเสร็จ.PDF</div>
-                    </div>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-
-        </div>
-
-
-      </div>
-      <dialog id="confirmDialog" class="dialog">
-        <!-- <div class="view"></div> -->
-        <div class="popup">
-          <div class="frame-container">
-            <div class="frame-38264">
-              <div class="frame-38266">
-                <div class="frame-38265">
-                  <h1 class="text_label-2 valign-text-middle text_label-4">ยื่นคำขอคืนเงิน/คืนสินค้า</h1>
-                  <div class="text_label-3 valign-text-middle text_label-4 notosansthai-normal-black-20px">
-                    <span><span class="notosansthai-normal-black-20px">กรุณาใส่เหตุผลการคืนเงิน/คืนสินค้า
-                        หากยืนยันจะเป็นอันเสร็จสิ้นการไม่อนุมัติ</span><span class="span1-1"></span><span
-                        class="notosansthai-normal-black-20px">คำสั่งซื้อ</span>
-                    </span>
-                  </div>
-                </div>
-                <div class="text-field-dialog">
-                  <select id="agency" class="custom-dropdown notosansthai-normal-dove-gray-17px">
-                    <option value="" disabled selected>เลือกเหตุผล</option>
-                    <option value="กศน">เหตุผล1</option>
-                    <option value="สพฐ">เหตุผล2</option>
-                    <option value="มหาวิทยาลัย">เหตุผล3</option>
-                    <option value="อื่นๆ">เหตุผล4</option>
-                  </select>
-                </div>
-                <div class="frame-38262">
-                  <a href="javascript:confirmDialogClose()">
-                    <article class="button-5 button-7">
-                      <div class="text_label valign-text-middle notosansthai-semi-bold-midnight-blue-20px">
-                        ยกเลิก
-                      </div>
-                    </article>
-                  </a><a href="javascript:approveButton()">
-                    <article class="button-6 button-7">
-                      <div class="text_label valign-text-middle notosansthai-semi-bold-white-20px">ยืนยัน</div>
-                    </article>
-                  </a>
-                </div>
-              </div>
-            </div>
-            <a href="javascript:confirmDialogClose()"><img class="frame-1041" src="img/frame-1041.svg"
-                alt="Frame 1041" />
-            </a>
-          </div>
-        </div>
-      </dialog>
-
-      <dialog id="confirmDialog" class="dialog">
-        <!-- <div class="view"></div> -->
-        <div class="popup">
-          <div class="frame-container">
-            <div class="frame-38264">
-              <div class="frame-38266">
-                <div class="frame-38265">
-                  <h1 class="text_label-2 valign-text-middle text_label-4">ยื่นคำขอคืนเงิน/คืนสินค้า</h1>
-                  <div class="text_label-3 valign-text-middle text_label-4 notosansthai-normal-black-20px">
-                    <span><span class="notosansthai-normal-black-20px">กรุณาใส่เหตุผลการคืนเงิน/คืนสินค้า
-                        หากยืนยันจะเป็นอันเสร็จสิ้นการไม่อนุมัติ</span><span class="span1-1"></span><span
-                        class="notosansthai-normal-black-20px">คำสั่งซื้อ</span>
-                    </span>
-                  </div>
-                </div>
-                <div class="text-field-dialog">
-                  <select id="agency" class="custom-dropdown notosansthai-normal-dove-gray-17px">
-                    <option value="" disabled selected>เลือกเหตุผล</option>
-                    <option value="กศน">เหตุผล1</option>
-                    <option value="สพฐ">เหตุผล2</option>
-                    <option value="มหาวิทยาลัย">เหตุผล3</option>
-                    <option value="อื่นๆ">เหตุผล4</option>
-                  </select>
-                </div>
-                <div class="frame-38262">
-                  <a href="javascript:confirmDialogClose()">
-                    <article class="button-5 button-7">
-                      <div class="text_label valign-text-middle notosansthai-semi-bold-midnight-blue-20px">
-                        ยกเลิก
-                      </div>
-                    </article>
-                  </a><a href="javascript:SubmitForm('form3')">
-                    <article class="button-6 button-7">
-                      <div class="text_label valign-text-middle notosansthai-semi-bold-white-20px">ยืนยัน</div>
-                    </article>
-                  </a>
-                </div>
-              </div>
-            </div>
-            <a href="javascript:confirmDialogClose()"><img class="frame-1041" src="img/frame-1041.svg"
-                alt="Frame 1041" />
-            </a>
-          </div>
-        </div>
-      </dialog>
-
-      <dialog id="successDialog" class="dialog">
-        <div class="popup">
-          <div class="frame-container">
-            <div class="frame-38264">
-              <div class="frame-38266">
-                <div class="frame-38265">
-                  <img class="check-one" src="img/check-one.svg" alt="check-one" />
-                  <h1 class="text_label-3-2 valign-text-middle text_label-4-2">ยื่นคำขอคืนเงิน/คืนสินค้า<br />สำเร็จ
-                  </h1>
-                </div>
-              </div>
-            </div>
-            <a href="javascript:confirmDialogClose()"><img class="frame-1041" src="img/frame-1041.svg"
-                alt="Frame 1041" />
-            </a>
-          </div>
-        </div>
-      </dialog>
-
-    </div>
-  </div>
 
   <footer class="footer">
     <p class="copyright-2024">Copyright 2024&nbsp;&nbsp; องค์การค้าของ สกสค.</p>

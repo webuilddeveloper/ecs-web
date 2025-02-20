@@ -89,6 +89,32 @@
     </div>
 
   </div>
+  <div id="subMenuHeader" class="sub-menu-header" style="display: none;">
+    <a href="./purchase-order-school.html"
+      class="notosansthai-normal-black-20px no-text-underline textItemMenuHeader itemMenuHeader">
+      ออกใบขอสั่งซื้อ
+    </a>
+    <hr />
+    <a href="./approve-school.html"
+      class="notosansthai-normal-black-20px no-text-underline textItemMenuHeader itemMenuHeader">
+      เอกสารใบขอสั่งซื้อ
+    </a>
+    <hr />
+    <a href="./delivered-order.html"
+      class="notosansthai-normal-black-20px no-text-underline textItemMenuHeader itemMenuHeader">
+      รายการคำสั่งซื้อ
+    </a>
+    <hr />
+    <a href="./order-cancel.html"
+      class="notosansthai-normal-black-20px no-text-underline textItemMenuHeader itemMenuHeader">
+      ยกเลิกเลข ปพ.
+    </a>
+    <hr />
+    <a href="./delivered-order.html"
+      class="notosansthai-normal-black-20px no-text-underline textItemMenuHeader itemMenuHeader">
+      ประวัติการสั่งซื้อ
+    </a>
+  </div>
 
     <div class="container-center-horizontal">
       <div class="print-document-information">
@@ -710,13 +736,10 @@
 
     function showMenuHam() {
       isContentMenuHam = !isContentMenuHam;
-      const contentMenuHam = document.getElementById("contentMenuHam");
       const contentMenuHamMobile = document.getElementById("contentMenuHamMobile");
       if (isContentMenuHam) {
-        contentMenuHam.style.display = "flex";
         contentMenuHamMobile.style.display = "flex";
       } else {
-        contentMenuHam.style.display = "none";
         contentMenuHamMobile.style.display = "none";
       }
     }

@@ -6,6 +6,7 @@
   <!--<meta name=description content="This site was generated with Anima. www.animaapp.com"/>-->
   <!-- <link rel="shortcut icon" type=image/png href="https://animaproject.s3.amazonaws.com/home/favicon.png" /> -->
   <meta name="viewport" content="width=1440, maximum-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="shortcut icon" type="image/png" href="https://animaproject.s3.amazonaws.com/home/favicon.png" />
   <meta name="og:type" content="website" />
   <meta name="twitter:card" content="photo" />
@@ -13,754 +14,294 @@
 </head>
 
 <body style="margin: 0; background: #ffffff">
-  <div class="desktop">
-    <div class="header-ecs">
-      <a href="./login.html">
-        <img class="logo-ecs" src="img/logo------1.png" alt="logo ecs" />
-      </a>
-      <div class="navbar-ecs">
-        <div class="navbar-link-text-ecs">
-          <a href="./purchase-order-school.html">
-            ออกใบขอสั่งซื้อ
-          </a>
-        </div>
-        <div class="navbar-link-text-ecs">
-          <a href="./approve-school.html">
-            เอกสารใบขอสั่งซื้อ
-          </a>
-        </div>
-        <div class="navbar-link-text-ecs">
-          <a href="./order.html">
-            รายการคำสั่งซื้อ
-          </a>
-        </div>
-        <div class="navbar-link-text-ecs">
-          <a href="./order-cancel.htmll">
-            ยกเลิกเลข ปพ.
-          </a>
-        </div>
-        <div class="navbar-link-text-ecs">
-          <a href="./delivered-order.html">
-            ประวัติการสั่งซื้อ
-          </a>
-        </div>
+  <div class="header-ecs">
+    <a href="./login.html">
+      <img class="logo-ecs" src="img/logo------1.png" alt="logo ecs" />
+    </a>
+    <div class="navbar-ecs header-menu">
+      <div class="navbar-link-text-ecs">
+        <a href="./purchase-order-school.html">
+          ออกใบขอสั่งซื้อ
+        </a>
       </div>
-      <div class="header-action-ecs">
-        <img class="group" src="img/group@2x.png" alt="Group" />
-        <a href="./profile-school.html">
-          <img class="vector" src="img/vector-2.svg" alt="Vector" />
+      <div class="navbar-link-text-ecs">
+        <a href="./approve-school.html">
+          เอกสารใบขอสั่งซื้อ
+        </a>
+      </div>
+      <div class="navbar-link-text-ecs">
+        <a href="./delivered-order.html">
+          รายการคำสั่งซื้อ
+        </a>
+      </div>
+      <div class="navbar-link-text-ecs">
+        <a href="./order-cancel.html">
+          ยกเลิกเลข ปพ.
+        </a>
+      </div>
+      <div class="navbar-link-text-ecs">
+        <a href="./delivered-order.html">
+          ประวัติการสั่งซื้อ
         </a>
       </div>
     </div>
-    <div class="container-center-horizontal">
-      <div class="draft-school">
-        <div class="draft-school-flex-row">
-          <div class="draft-school-overlap-group">
-            <div class="draft-school-frame-38357">
-              <div class="approve-school-frame-38358">
-                <div class="approve-school-frame-38354">
-                  <div class="approve-school-frame-38352">
-                    <div class="approve-school-frame-38350">
-                      <div class="approve-school-frame-38 ">
-                        <img class="approve-school-icon" src="img/icon-person2-1.svg" alt="icon person2" />
-                        <div
-                          class="approve-school-text approve-school-valign-text-middle approve-school-text-3 notosansthai-semi-bold-black-22px">
-                          บัญชีของฉัน</div>
-                      </div>
-                      <a onclick="showMenuCollap()">
-                        <div class="draft-school-frame-38348">
-                          <img class="draft-school-arrow-down-01" src="img/arrow-down-01-2.svg" alt="arrow-down-01" />
-                        </div>
-                      </a>
-                    </div>
-                    <div id="collapMenu" style="display: none;"
-                      class="draft-school-frame-3835 notosansthai-normal-black-20px">
-                      <a href="./profile-school.html">
-                        <div
-                          class="draft-school-text-1 draft-school-valign-text-middle draft-school-text-3 a-link-left">
-                          ข้อมูลส่วนบุคคล
-                        </div>
-                      </a>
-                      <div class="draft-school-text-2 draft-school-valign-text-middle draft-school-text-3">
-                        ที่อยู่จัดส่งสินค้า</div>
-                    </div>
-                  </div>
-                </div>
-                <img class="approve-school-vector" src="img/vector-19-2.svg" alt="Vector 19" />
-                <div class="approve-school-frame-38">
-                  <img class="approve-school-icon" src="img/icon-report-1-active.svg" alt="icon Report" />
-                  <div class="approve-school-text-4 approve-school-valign-text-middle approve-school-text-3">
-                    เอกสารใบขอสั่งซื้อ</div>
-                </div>
+    <div class="header-action-ecs">
+      <img class="group site-navbar" src="img/Icon-Service.png" alt="Service" onclick="showMenuNav()" />
+      <div class="notification-icon">
+        <img class="group" src="img/group@2x.png" alt="Group" onclick="toggleNotificationPanel()" />
+        <span id="notification-badge" class="notification-badge"></span> <!-- จุดแดง -->
+      </div>
 
-                <img class="approve-school-vector" src="img/vector-19-2.svg" alt="Vector 22" />
+      <div id="notification-panel" class="notification-panel hidden">
+        <ul class="notification-list">
+          <li class="notification-item unread">
+            <span class="status-indicator"></span>
+            <div class="notification-content">
+              <p class="notosansthai-normal-vulcan-15px">
+                <strong class="notosansthai-semi-bold-vulcan-15px">หมายเลขคำสั่งซื้อ:</strong> 12345
+              </p>
+              <p class="notosansthai-normal-vulcan-15px">
+                <strong class="notosansthai-semi-bold-vulcan-15px">สถานะ:</strong> รอดำเนินการ
+              </p>
+            </div>
+          </li>
+          <li class="notification-item">
+            <span class="status-indicator read"></span>
+            <div class="notification-content">
+              <p class="notosansthai-normal-vulcan-15px">
+                <strong class="notosansthai-semi-bold-vulcan-15px">หมายเลขคำสั่งซื้อ:</strong> 67890
+              </p>
+              <p class="notosansthai-normal-vulcan-15px">
+                <strong class="notosansthai-semi-bold-vulcan-15px">สถานะ:</strong> สำเร็จ
+              </p>
+            </div>
+          </li>
+        </ul>
+      </div>
 
-                <!-- <div class="frame-38350">
-                  <a class="frame-383 no-text-underline" style="color: #000;"
-                    href="../../ปพ ออนไลน์ - font อนุมัติสถานศึกษา/รายการอนุมัติสถานศึกษา/u3629u3609u3640u3617u3633u3605u3636u3626u3606u3634u3609u3624u3638u3585u3625u3634.html">
-                    <img class="checkmark-square-04" src="img/checkmark-square-04-1.svg" alt="checkmark-square-04" />
-                    <div class="text valign-text-middle notosansthai-semi-bold-black-22px text-bold">อนุมัติสถานศึกษา</div>
-                  </a>
-                </div> -->
-                <div class="approve-school-frame-38354">
-                  <div class="approve-school-frame-38352">
-                    <div class="approve-school-frame-38350">
-                      <div class="approve-school-frame-38 ">
-                        <img class="approve-school-icon" src="img/icon-report-3.svg" alt="icon person2" />
-                        <div
-                          class="approve-school-text approve-school-valign-text-middle approve-school-text-3 notosansthai-semi-bold-black-22px">
-                          รายการคำสั่งซื้อ</div>
-                      </div>
-                      <a onclick="showMenuCollap3()">
-                        <div class="approve-school-frame-38348">
-                          <img class="approve-school-arrow-down-01" src="img/arrow-down-01-2.svg" alt="arrow-down-01" />
-                        </div>
-                      </a>
-                    </div>
-                    <div id="collapMenu3" class="approve-school-frame-3835 notosansthai-normal-black-20px"
-                      style="display: none;">
-                      <a href="./delivered-order.html" style="color: #000;">
-                        <div class="approve-school-text-1 approve-school-valign-text-middle approve-school-text-3">
-                          เอกสารมีเลขคุม</div>
-                      </a>
+      <a href="./profile-school.html">
+        <img class="vector" src="img/vector-2.svg" alt="Vector" />
+      </a>
+    </div>
 
-                      <div class="approve-school-text-2 approve-school-valign-text-middle approve-school-text-3">
-                        เอกสารไม่มีเลขคุม</div>
-                      <div class="approve-school-text-2 approve-school-valign-text-middle approve-school-text-3">
-                        เลขใบปพ. ออนไลน์(ปพ.1)</div>
-                    </div>
-                  </div>
-                </div>
-                <img class="approve-school-vector" src="img/vector-22-1.svg" alt="Vector 20" />
-                <div class="approve-school-frame-3852">
-                  <div class="approve-school-frame-38528">
-                    <div class="approve-school-frame-38">
-                      <img class="approve-school-icon" src="img/icon-print-2.svg" alt="icon print" />
+  </div>
+  <div id="subMenuHeader" class="sub-menu-header" style="display: none;">
+    <a href="./purchase-order-school.html"
+      class="notosansthai-normal-black-20px no-text-underline textItemMenuHeader itemMenuHeader">
+      ออกใบขอสั่งซื้อ
+    </a>
+    <hr />
+    <a href="./approve-school.html"
+      class="notosansthai-normal-black-20px no-text-underline textItemMenuHeader itemMenuHeader">
+      เอกสารใบขอสั่งซื้อ
+    </a>
+    <hr />
+    <a href="./delivered-order.html"
+      class="notosansthai-normal-black-20px no-text-underline textItemMenuHeader itemMenuHeader">
+      รายการคำสั่งซื้อ
+    </a>
+    <hr />
+    <a href="./order-cancel.html"
+      class="notosansthai-normal-black-20px no-text-underline textItemMenuHeader itemMenuHeader">
+      ยกเลิกเลข ปพ.
+    </a>
+    <hr />
+    <a href="./delivered-order.html"
+      class="notosansthai-normal-black-20px no-text-underline textItemMenuHeader itemMenuHeader">
+      ประวัติการสั่งซื้อ
+    </a>
+  </div>
+  <div class="container-center-horizontal">
+    <div class="paid-school">
+      <div class="paid-school-flex-row">
+        <div class="paid-school-overlap-group">
+          <div class="paid-school-frame-38357">
+
+            <div class="approve-school-frame-38358 hidden-sm-down hidden-md-down">
+              <div class="approve-school-frame-38354">
+                <div class="approve-school-frame-38352">
+                  <div class="approve-school-frame-38350">
+                    <div class="approve-school-frame-38 ">
+                      <img class="approve-school-icon" src="img/icon-person2-1.svg" alt="icon person2" />
                       <div
                         class="approve-school-text approve-school-valign-text-middle approve-school-text-3 notosansthai-semi-bold-black-22px">
-                        ปพ.ออนไลน์</div>
+                        บัญชีของฉัน</div>
                     </div>
-                    <a onclick="showMenuCollap2()">
+                    <a onclick="showMenuCollap()">
                       <div class="approve-school-frame-38348">
-                        <img class="approve-school-arrow-down-01" src="img/arrow-down-01-3.svg" alt="arrow-down-01" />
+                        <img class="approve-school-arrow-down-01" src="img/arrow-down-01-2.svg" alt="arrow-down-01" />
                       </div>
                     </a>
                   </div>
-                  <div class="draft-school-frame-3835">
-                    <div id="collapMenu2" style="display: none;"
-                      class="draft-school-frame-38351 notosansthai-normal-black-20px">
-                      <a href="./print_document_information.html">
-                        <div
-                          class="draft-school-text-10 draft-school-valign-text-middle draft-school-text-3 a-link-left">
-                          พิมพ์ใบปพ.ออนไลน์</div>
-                      </a>
-                      <a href="./print_document_history.html">
-                        <div
-                          class="draft-school-text-2 draft-school-valign-text-middle draft-school-text-3 a-link-left">
-                          ประวัติการพิมพ์
-                        </div>
-                      </a>
-                    </div>
+                  <div id="collapMenu" style="display: none;"
+                    class="paid-school-frame-3835 notosansthai-normal-black-20px">
+                    <a href="./profile-school.html">
+                      <div class="paid-school-text-1 paid-school-valign-text-middle paid-school-text-5 a-link-left">
+                        ข้อมูลส่วนบุคคล
+                      </div>
+                    </a>
+                    <div class="paid-school-text-2 paid-school-valign-text-middle paid-school-text-5">
+                      ที่อยู่จัดส่งสินค้า</div>
                   </div>
-                </div>
-                <img class="approve-school-vector" src="img/vector-23-1.svg" alt="Vector 23" />
-                <div class="approve-school-frame-38">
-                  <img class="approve-school-icon" src="img/icon-logout-1.svg" alt="icon logout" />
-                  <div
-                    class="approve-school-text approve-school-valign-text-middle approve-school-text-3 notosansthai-semi-bold-black-22px">
-                    ออกจากระบบ</div>
                 </div>
               </div>
-              <div class="draft-school-frame-38356">
-                <div class="draft-school-frame-38355">
-                  <div class="draft-school-frame-38344 notosansthai-semi-bold-black-20px">
-                    <a href="./draft-school.html">
-                      <div class="draft-school-text-1-1 notosansthai-semi-bold-black-20px">ร่างใบขอสั่งซื้อ</div>
-                    </a><a href="./waiting-approve-school.html">
-                      <div class="draft-school-text-1-1 notosansthai-semi-bold-black-20px">รออนุมัติ</div>
-                    </a><a href="./paid_school.html">
-                      <div class="draft-school-text-1-1 notosansthai-semi-bold-black-20px">ที่ต้องชำระเงิน</div>
-                    </a><a href="./approve-school.html">
-                      <div class="draft-school-text-1-1 notosansthai-semi-bold-black-20px">อนุมัติสำเร็จ</div>
-                    </a>
-                    <a href="./cancel-school.html">
-                      <div class="draft-school-text-1-1 notosansthai-semi-bold-black-20px">ยกเลิก</div>
-                    </a>
-                  </div>
-                  <img class="draft-school-frame-38343" src="img/frame-38343-9.svg" alt="Frame 38343" />
-                </div>
-                <div class="draft-school-frame-20">
-                  <img class="draft-school-icon-magnifying-glass-searching-glass"
-                    src="img/icon-magnifying-glass-searching-glass-1.svg" alt="icon Magnifying Glass Searching Glass" />
-                  <input class="draft-school-text_input" name="คณสามารถคนหาโดยใชหมายเลขใบขอสงซอ"
-                    placeholder="คุณสามารถค้นหาโดยใช้หมายเลขใบขอสั่งซื้อ" type="text" />
-                </div>
-                <div class="draft-school-frame-38357-1">
-                  <div class="draft-school-frame-38339">
-                    <div
-                      class="draft-school-xxxxxxxx draft-school-valign-text-middle notosansthai-semi-bold-black-20px">
-                      หมายเลขร่างใบขอสั่งซื้อ xxxxxxxx
-                    </div>
-                    <div class="draft-school-frame-38341">
-                      <a href="./draft-school-detail.html">
-                        <div
-                          class="draft-school-text-18 draft-school-valign-text-middle draft-school-text-3 notosansthai-normal-black-16px">
-                          ดูรายละเอียด
-                        </div>
-                      </a><a href="javascript:SubmitForm('form12')">
-                        <div class="draft-school-button-2 draft-school-button-4">
-                          <div
-                            class="draft-school-text_label draft-school-valign-text-middle notosansthai-semi-bold-black-20px">
-                            ร่างใบขอสั่งซื้อ
-                          </div>
-                        </div>
-                      </a>
-                    </div>
-                  </div>
-                  <img class="draft-school-line" src="img/line-6-1.svg" alt="Line 6" />
-                  <div class="draft-school-frame-38-1">
-                    <div class="draft-school-frame-95"><img class="draft-school-image-8" src="img/image-8-2@2x.png"
-                        alt="image 8" /></div>
-                    <div class="draft-school-frame-94">
-                      <div class="draft-school-frame-94-1">
-                        <div class="draft-school-frame-93">
-                          <p
-                            class="draft-school-text-19 draft-school-valign-text-middle draft-school-text-3 notosansthai-semi-bold-black-22px">
-                            ปพ.1:ป ระเบียนแสดงผลการเรียน ระดับ ประถมฯ <br />(ปรับปรุง 2555) (ฉบับใช้กับคอม)
-                          </p>
-                          <div class="draft-school-frame-9">
-                            <div class="draft-school-frame-9">
-                              <div class="draft-school-text-2-1">
-                                <span class="notosansthai-normal-black-16px">ราคาต่อเล่ม: </span><span
-                                  class="draft-school-span1">160
-                                  บาท</span>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="draft-school-frame-93-1"></div>
-                      </div>
-                    </div>
-                    <div class="draft-school-frame-18 notosansthai-medium-black-14px">
-                      <div class="draft-school-number-2">1</div>
-                      <div class="draft-school-text-21 draft-school-text-3">เล่ม</div>
-                    </div>
-                  </div>
-                  <div class="draft-school-frame-38-1">
-                    <div class="draft-school-frame-95"><img class="draft-school-image-8" src="img/image-8-3@2x.png"
-                        alt="image 8" /></div>
-                    <div class="draft-school-frame-94">
-                      <div class="draft-school-frame-94-1">
-                        <div class="draft-school-frame-93">
-                          <p
-                            class="draft-school-text-22 draft-school-valign-text-middle draft-school-text-3 notosansthai-semi-bold-black-20px">
-                            ปพ.1:บ&nbsp;&nbsp;ระเบียนแสดงผลการเรียน ระดับ ม.ต้น <br />(ปรับปรุง 2555) (ฉบับใช้กับคอม)
-                          </p>
-                          <div class="draft-school-frame-38433">
-                            <div class="draft-school-frame-9">
-                              <div class="draft-school-text-2-1">
-                                <span class="notosansthai-normal-black-16px">ราคาต่อเล่ม: </span><span
-                                  class="draft-school-span1">160
-                                  บาท</span>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="draft-school-frame-93-1"></div>
-                      </div>
-                    </div>
-                    <div class="draft-school-frame-18 notosansthai-medium-black-14px">
-                      <div class="draft-school-number-2">1</div>
-                      <div class="draft-school-text-24 draft-school-text-3">เล่ม</div>
-                    </div>
-                  </div>
-                  <img class="draft-school-line" src="img/line-7-1.svg" alt="Line 7" />
-                  <div class="draft-school-frame-38341-1">
-                    <div class="draft-school-frame-38">
+              <img class="approve-school-vector" src="img/vector-19-2.svg" alt="Vector 19" />
+              <div class="approve-school-frame-38">
+                <img class="approve-school-icon" src="img/icon-report-1-active.svg" alt="icon Report" />
+                <div class="approve-school-text-4 approve-school-valign-text-middle approve-school-text-3">
+                  เอกสารใบขอสั่งซื้อ</div>
+              </div>
+
+              <img class="approve-school-vector" src="img/vector-19-2.svg" alt="Vector 22" />
+
+              <!-- <div class="frame-38350">
+                <a class="frame-383 no-text-underline" style="color: #000;"
+                  href="../../ปพ ออนไลน์ - font อนุมัติสถานศึกษา/รายการอนุมัติสถานศึกษา/u3629u3609u3640u3617u3633u3605u3636u3626u3606u3634u3609u3624u3638u3585u3625u3634.html">
+                  <img class="checkmark-square-04" src="img/checkmark-square-04-1.svg" alt="checkmark-square-04" />
+                  <div class="text valign-text-middle notosansthai-semi-bold-black-22px text-bold">อนุมัติสถานศึกษา</div>
+                </a>
+              </div> -->
+              <div class="approve-school-frame-38354">
+                <div class="approve-school-frame-38352">
+                  <div class="approve-school-frame-38350">
+                    <div class="approve-school-frame-38 ">
+                      <img class="approve-school-icon" src="img/icon-report-3.svg" alt="icon person2" />
                       <div
-                        class="draft-school-grand-total draft-school-valign-text-middle notosansthai-normal-black-16px">
-                        ยอดสุทธิ /Grand Total :
-                      </div>
-                      <div class="draft-school-xxx draft-school-valign-text-middle">xxx บาท</div>
+                        class="approve-school-text approve-school-valign-text-middle approve-school-text-3 notosansthai-semi-bold-black-22px">
+                        รายการคำสั่งซื้อ</div>
                     </div>
+                    <a onclick="showMenuCollap3()">
+                      <div class="approve-school-frame-38348">
+                        <img class="approve-school-arrow-down-01" src="img/arrow-down-01-2.svg" alt="arrow-down-01" />
+                      </div>
+                    </a>
+                  </div>
+                  <div id="collapMenu3" class="approve-school-frame-3835 notosansthai-normal-black-20px"
+                    style="display: none;">
+                    <a href="./delivered-order.html" style="color: #000;">
+                      <div class="approve-school-text-1 approve-school-valign-text-middle approve-school-text-3">
+                        เอกสารมีเลขคุม</div>
+                    </a>
+
+                    <div class="approve-school-text-2 approve-school-valign-text-middle approve-school-text-3">
+                      เอกสารไม่มีเลขคุม</div>
+                    <div class="approve-school-text-2 approve-school-valign-text-middle approve-school-text-3">
+                      เลขใบปพ. ออนไลน์(ปพ.1)</div>
                   </div>
                 </div>
-                <div class="draft-school-frame-38520">
-                  <div class="draft-school-frame-38263">
-                    <div class="draft-school-input-select">
-                      <div class="draft-school-select-field">
-                        <div class="draft-school-select">แสดง3</div>
-                        <img class="draft-school-dropdown-icon" src="img/dropdown-icon-7.svg" alt="dropdown-icon" />
-                      </div>
-                    </div>
-                    <p class="draft-school-text-25 draft-school-text-3">แสดง 1-3 รายการ จาก 8 รายการ</p>
+              </div>
+              <img class="approve-school-vector" src="img/vector-22-1.svg" alt="Vector 20" />
+              <div class="approve-school-frame-3852">
+                <div class="approve-school-frame-38528">
+                  <div class="approve-school-frame-38">
+                    <img class="approve-school-icon" src="img/icon-print-2.svg" alt="icon print" />
+                    <div
+                      class="approve-school-text approve-school-valign-text-middle approve-school-text-3 notosansthai-semi-bold-black-22px">
+                      ปพ.ออนไลน์</div>
                   </div>
-                  <div class="draft-school-pagination">
-                    <a href="javascript:SubmitForm('form12')">
-                      <div class="draft-school-button draft-school-button-4"><img class="draft-school-icon-1"
-                          src="img/icon-2.svg" alt="icon" /></div>
-                    </a><a href="javascript:SubmitForm('form12')">
-                      <div class="draft-school-button-3 draft-school-button-4">
-                        <div class="draft-school-text-sm-1">1</div>
+                  <a onclick="showMenuCollap2()">
+                    <div class="approve-school-frame-38348">
+                      <img class="approve-school-arrow-down-01" src="img/arrow-down-01-3.svg" alt="arrow-down-01" />
+                    </div>
+                  </a>
+                </div>
+                <div id="collapMenu2" style="display: none;" class="paid-school-frame-3835">
+                  <div class="paid-school-frame-38351 notosansthai-normal-black-20px">
+                    <a href="./print_document_information.html">
+                      <div class="paid-school-text-10 paid-school-valign-text-middle paid-school-text-5 a-link-left">
+                        พิมพ์ใบปพ.ออนไลน์
                       </div>
-                    </a><a href="javascript:SubmitForm('form12')">
-                      <div class="draft-school-button-1 draft-school-button-4">
-                        <div class="draft-school-text-sm draft-school-text-3">2</div>
+                    </a>
+                    <a href="./print_document_history.html">
+                      <div class="paid-school-text-2 paid-school-valign-text-middle paid-school-text-5 a-link-left">
+                        ประวัติการพิมพ์
                       </div>
-                    </a><a href="javascript:SubmitForm('form12')">
-                      <div class="draft-school-button-1 draft-school-button-4">
-                        <div class="draft-school-text-sm draft-school-text-3">3</div>
-                      </div>
-                    </a><a href="javascript:SubmitForm('form12')">
-                      <div class="draft-school-button draft-school-button-4"><img class="draft-school-icon-1"
-                          src="img/icon-3.svg" alt="icon" /></div>
                     </a>
                   </div>
                 </div>
               </div>
+              <img class="approve-school-vector" src="img/vector-23-1.svg" alt="Vector 23" />
+              <div class="approve-school-frame-38">
+                <img class="approve-school-icon" src="img/icon-logout-1.svg" alt="icon logout" />
+                <div
+                  class="approve-school-text approve-school-valign-text-middle approve-school-text-3 notosansthai-semi-bold-black-22px">
+                  ออกจากระบบ</div>
+              </div>
             </div>
-            <img class="draft-school-vector-19" src="img/vector-19-10.svg" alt="Vector 19" />
-          </div>
-        </div>
-      </div>
-    </div>
-    <footer class="footer">
-      <p class="copyright-2024">Copyright 2024&nbsp;&nbsp; องค์การค้าของ สกสค.</p>
-    </footer>
-  </div>
-  <div class="tablet">
-    <div class="header-ecs">
-      <a href="./login.html">
-        <img class="logo-ecs" src="img/logo------1.png" alt="logo ecs" />
-      </a>
 
-      <div class="header-action-ecs">
-        <img class="group" src="img/Icon-Service.png" alt="Service" onclick="showMenuNav()" />
-        <img class="group" src="img/group@2x.png" alt="Group" />
-        <a href="./profile-school.html">
-          <img class="vector" src="img/vector-2.svg" alt="Vector" />
-        </a>
-      </div>
-    </div>
-    <div id="subMenuHeader" class="sub-menu-header">
-      <a href="./purchase-order-school.html"
-        class="notosansthai-normal-black-20px no-text-underline textItemMenuHeader itemMenuHeader">
-        ออกใบขอสั่งซื้อ
-      </a>
-      <hr />
-      <a href="./approve-school.html"
-        class="notosansthai-normal-black-20px no-text-underline textItemMenuHeader itemMenuHeader">
-        เอกสารใบขอสั่งซื้อ
-      </a>
-      <hr />
-      <a href="./delivered-order.html"
-        class="notosansthai-normal-black-20px no-text-underline textItemMenuHeader itemMenuHeader">
-        รายการคำสั่งซื้อ
-      </a>
-      <hr />
-      <a href="./order-cancel.html"
-        class="notosansthai-normal-black-20px no-text-underline textItemMenuHeader itemMenuHeader">
-        ยกเลิกเลข ปพ.
-      </a>
-      <hr />
-      <a href="./delivered-order.html"
-        class="notosansthai-normal-black-20px no-text-underline textItemMenuHeader itemMenuHeader">
-        ประวัติการสั่งซื้อ
-      </a>
-    </div>
-    <div class="container-center-horizontal">
-      <div class="draft-school">
-        <div class="container-menu-ham pointer">
-          <div class="menu-ham" onclick="showMenuHam()">
-            <img class="icon-menu-ham" src="img/icon-menu.png" alt="icon back" />
-            <div
-              class="register-obec-text_label register-obec-valign-text-middle notosansthai-semi-bold-midnight-blue-20px">
-              เมนู</div>
-          </div>
-          <div id="contentMenuHam" class="content-menu-ham">
-            <div class="item-menu-ham">
-              <div class="print-document-information-frame-38357-1">
-                <div class="print-document-information-frame-38354">
-                  <div class="print-document-information-frame-38352">
-                    <div class="print-document-information-frame-38350">
-                      <div class="print-document-information-frame-38">
-                        <img class="print-document-information-icon" src="img/icon-person2-1.svg" alt="icon person2" />
-                        <div
-                          class="print-document-information-text-1 valign-text-middle notosansthai-semi-bold-black-22px">
-                          บัญชีของฉัน</div>
-                      </div>
-                      <div onclick="showMenuCollap()">
-                        <div class="approve-school-frame-38348">
-                          <img class="approve-school-arrow-down-01" src="img/arrow-down-01-2.svg" alt="arrow-down-01" />
-                        </div>
-                      </div>
-                    </div>
-                    <div id="collapMenu" class="approve-school-frame-3835 notosansthai-normal-black-20px"
-                      style="display: none;">
-                      <a href="./profile-school.html">
-                        <div
-                          class="approve-school-text-1 approve-school-valign-text-middle approve-school-text-3 a-link-left">
-                          ข้อมูลส่วนบุคคล</div>
-                      </a>
-                      <div class="approve-school-text-2 approve-school-valign-text-middle approve-school-text-3">
-                        ที่อยู่จัดส่งสินค้า</div>
-                    </div>
-                  </div>
-                </div>
-                <img class="print-document-information-vector" src="img/vector-19-2.svg" alt="Vector 19" />
-                <div class="print-document-information-frame-38">
-                  <img class="print-document-information-icon" src="img/icon-report-11.svg" alt="icon Report" />
-                  <div class="print-document-information-text-1 valign-text-middle notosansthai-semi-bold-black-22px">
-                    เอกสารใบขอสั่งซื้อ</div>
-                </div>
-                <img class="print-document-information-vector" src="img/vector-19-2.svg" alt="Vector 22" />
-                <div class="print-document-information-frame-38354">
-                  <div class="print-document-information-frame-38352">
-                    <div class="print-document-information-frame-38350">
-                      <div class="print-document-information-frame-38">
-                        <img class="print-document-information-icon" src="img/icon-report-11.svg" alt="icon person2" />
-                        <div
-                          class="print-document-information-text-1 valign-text-middle notosansthai-semi-bold-black-22px">
-                          รายการคำสั่งซื้อ</div>
-                      </div>
-                      <a onclick="showMenuCollapOrder()">
-                        <div class="approve-school-frame-38348">
-                          <img class="approve-school-arrow-down-01" src="img/arrow-down-01-2.svg" alt="arrow-down-01" />
-                        </div>
-                      </a>
-                    </div>
-                    <div id="collapMenuOrder" class="approve-school-frame-3835 notosansthai-normal-black-20px"
-                      style="display: none;">
-                      <a href="./delivered-order.html">
-                        <div
-                          class="approve-school-text-1 approve-school-valign-text-middle approve-school-text-3 a-link-left">
-                          เอกสารมีเลขคุม</div>
-                      </a>
-                      <div class="approve-school-text-2 approve-school-valign-text-middle approve-school-text-3">
-                        เอกสารไม่มีเลขคุม</div>
-                      <div class="approve-school-text-2 approve-school-valign-text-middle approve-school-text-3">
-                        เลขใบปพ. ออนไลน์(ปพ.1)</div>
-                    </div>
-                  </div>
-                </div>
+            <div class="paid-school-frame-38356">
 
-                <img class="print-document-information-vector" src="img/vector-19-2.svg" alt="Vector 20" />
-                <div class="print-document-information-frame-3852">
-                  <div class="print-document-information-frame-38528">
-                    <div class="print-document-information-frame-38">
-                      <img class="print-document-information-icon" src="img/icon-print-1.svg" alt="icon print" />
-                      <div class="print-document-information-text-9 valign-text-middle">ปพ.ออนไลน์</div>
-                    </div>
-                    <a onclick="showMenuCollap2()">
-                      <div class="paid-school-frame-38348">
-                        <img class="paid-school-arrow-down-01" src="img/arrow-down-01-3.svg" alt="arrow-down-01" />
-                      </div>
-                    </a>
-                  </div>
-                  <div id="collapMenu2" style="display: none;" class="paid-school-frame-3835">
-                    <div class="paid-school-frame-38351 notosansthai-normal-black-20px">
-                      <a href="./print_document_information.html">
-                        <div
-                          class="print-document-information-text-10 paid-school-valign-text-middle paid-school-text-5">
-                          พิมพ์ใบปพ.ออนไลน์
-                        </div>
-                      </a>
-                      <a href="./print_document_history.html">
-                        <div class="paid-school-text-2 paid-school-valign-text-middle paid-school-text-5 a-link-left">
-                          ประวัติการพิมพ์
-                        </div>
-                      </a>
-                    </div>
-                  </div>
+              <div class="container-menu-ham pointer display-none-d">
+                <div class="menu-ham" onclick="showMenuHam()">
+                  <img class="icon-menu-ham" src="img/icon-menu.png" alt="icon back" />
+                  <div
+                    class="register-obec-text_label register-obec-valign-text-middle notosansthai-semi-bold-midnight-blue-20px">
+                    เมนู</div>
                 </div>
-                <img class="print-document-information-vector" src="img/vector-23-1.svg" alt="Vector 23" />
-                <div class="print-document-information-frame-38">
-                  <img class="print-document-information-icon" src="img/icon-logout-1.svg" alt="icon logout" />
-                  <div class="print-document-information-text-1 valign-text-middle notosansthai-semi-bold-black-22px">
-                    ออกจากระบบ</div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="draft-school-flex-row">
-          <div class="draft-school-overlap-group">
-            <div class="draft-school-frame-38357">
-                <div class="approve-school-frame-38354">
-                  <div class="approve-school-frame-38352">
-                    <div class="draft-school-frame-38356">
-                      <div class="draft-school-frame-38355">
-                        <div class="draft-school-frame-38344 notosansthai-semi-bold-black-20px">
-                          <a href="./draft-school.html">
-                            <div class="draft-school-text-1-1 notosansthai-semi-bold-black-20px">ร่างใบขอสั่งซื้อ</div>
-                          </a><a href="./waiting-approve-school.html">
-                            <div class="draft-school-text-1-1 notosansthai-semi-bold-black-20px">รออนุมัติ</div>
-                          </a><a href="./paid_school.html">
-                            <div class="draft-school-text-1-1 notosansthai-semi-bold-black-20px">ที่ต้องชำระเงิน</div>
-                          </a><a href="./approve-school.html">
-                            <div class="draft-school-text-1-1 notosansthai-semi-bold-black-20px">อนุมัติสำเร็จ</div>
-                          </a>
-                          <a href="./cancel-school.html">
-                            <div class="draft-school-text-1-1 notosansthai-semi-bold-black-20px">ยกเลิก</div>
-                          </a>
-                        </div>
-                        <img class="draft-school-frame-38343" src="img/frame-38343-9.svg" alt="Frame 38343" />
-                      </div>
-                      <div class="draft-school-frame-20">
-                        <img class="draft-school-icon-magnifying-glass-searching-glass"
-                          src="img/icon-magnifying-glass-searching-glass-1.svg"
-                          alt="icon Magnifying Glass Searching Glass" />
-                        <input class="draft-school-text_input" name="คณสามารถคนหาโดยใชหมายเลขใบขอสงซอ"
-                          placeholder="คุณสามารถค้นหาโดยใช้หมายเลขใบขอสั่งซื้อ" type="text" />
-                      </div>
-                      <div class="draft-school-frame-38357-1">
-                        <div class="draft-school-frame-38339">
-                          <div
-                            class="draft-school-xxxxxxxx draft-school-valign-text-middle notosansthai-semi-bold-black-20px">
-                            หมายเลขร่างใบขอสั่งซื้อ xxxxxxxx
-                          </div>
-                          <div class="draft-school-frame-38341">
-                            <a href="./draft-school-detail.html">
+                <div id="contentMenuHam" class="content-menu-ham">
+                  <div class="item-menu-ham">
+                    <div class="print-document-information-frame-38357-1">
+                      <div class="print-document-information-frame-38354">
+                        <div class="print-document-information-frame-38352">
+                          <div class="print-document-information-frame-38350">
+                            <div class="print-document-information-frame-38">
+                              <img class="print-document-information-icon" src="img/icon-person2-1.svg"
+                                alt="icon person2" />
                               <div
-                                class="draft-school-text-18 draft-school-valign-text-middle draft-school-text-3 notosansthai-normal-black-16px">
-                                ดูรายละเอียด
-                              </div>
-                            </a><a href="javascript:SubmitForm('form12')">
-                              <div class="draft-school-button-2 draft-school-button-4">
-                                <div
-                                  class="draft-school-text_label draft-school-valign-text-middle notosansthai-semi-bold-black-20px">
-                                  ร่างใบขอสั่งซื้อ
-                                </div>
-                              </div>
-                            </a>
-                          </div>
-                        </div>
-                        <img class="draft-school-line" src="img/line-6-1.svg" alt="Line 6" />
-                        <div class="draft-school-frame-38-1">
-                          <div class="draft-school-frame-95"><img class="draft-school-image-8"
-                              src="img/image-8-2@2x.png" alt="image 8" /></div>
-                          <div class="draft-school-frame-94">
-                            <div class="draft-school-frame-94-1">
-                              <div class="draft-school-frame-93">
-                                <p
-                                  class="draft-school-text-19 draft-school-valign-text-middle draft-school-text-3 notosansthai-semi-bold-black-22px">
-                                  ปพ.1:ป ระเบียนแสดงผลการเรียน ระดับ ประถมฯ <br />(ปรับปรุง 2555) (ฉบับใช้กับคอม)
-                                </p>
-                                <div class="draft-school-frame-9">
-                                  <div class="draft-school-frame-9">
-                                    <div class="draft-school-text-2-1">
-                                      <span class="notosansthai-normal-black-16px">ราคาต่อเล่ม: </span><span
-                                        class="draft-school-span1">160
-                                        บาท</span>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                              <div class="draft-school-frame-93-1"></div>
-                            </div>
-                          </div>
-                          <div class="draft-school-frame-18 notosansthai-medium-black-14px">
-                            <div class="draft-school-number-2">1</div>
-                            <div class="draft-school-text-21 draft-school-text-3">เล่ม</div>
-                          </div>
-                        </div>
-                        <div class="draft-school-frame-38-1">
-                          <div class="draft-school-frame-95"><img class="draft-school-image-8"
-                              src="img/image-8-3@2x.png" alt="image 8" /></div>
-                          <div class="draft-school-frame-94">
-                            <div class="draft-school-frame-94-1">
-                              <div class="draft-school-frame-93">
-                                <p
-                                  class="draft-school-text-22 draft-school-valign-text-middle draft-school-text-3 notosansthai-semi-bold-black-20px">
-                                  ปพ.1:บ&nbsp;&nbsp;ระเบียนแสดงผลการเรียน ระดับ ม.ต้น <br />(ปรับปรุง 2555)
-                                  (ฉบับใช้กับคอม)
-                                </p>
-                                <div class="draft-school-frame-38433">
-                                  <div class="draft-school-frame-9">
-                                    <div class="draft-school-text-2-1">
-                                      <span class="notosansthai-normal-black-16px">ราคาต่อเล่ม: </span><span
-                                        class="draft-school-span1">160
-                                        บาท</span>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                              <div class="draft-school-frame-93-1"></div>
-                            </div>
-                          </div>
-                          <div class="draft-school-frame-18 notosansthai-medium-black-14px">
-                            <div class="draft-school-number-2">1</div>
-                            <div class="draft-school-text-24 draft-school-text-3">เล่ม</div>
-                          </div>
-                        </div>
-                        <img class="draft-school-line" src="img/line-7-1.svg" alt="Line 7" />
-                        <div class="draft-school-frame-38341-1">
-                          <div class="draft-school-frame-38">
-                            <div
-                              class="draft-school-grand-total draft-school-valign-text-middle notosansthai-normal-black-16px">
-                              ยอดสุทธิ /Grand Total :
-                            </div>
-                            <div class="draft-school-xxx draft-school-valign-text-middle">xxx บาท</div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="draft-school-frame-38520">
-                        <div class="draft-school-frame-38263">
-                          <div class="draft-school-input-select">
-                            <div class="draft-school-select-field">
-                              <div class="draft-school-select">แสดง3</div>
-                              <img class="draft-school-dropdown-icon" src="img/dropdown-icon-7.svg"
-                                alt="dropdown-icon" />
-                            </div>
-                          </div>
-                          <p class="draft-school-text-25 draft-school-text-3">แสดง 1-3 รายการ จาก 8 รายการ</p>
-                        </div>
-                        <div class="draft-school-pagination">
-                          <a href="javascript:SubmitForm('form12')">
-                            <div class="draft-school-button draft-school-button-4"><img class="draft-school-icon-1"
-                                src="img/icon-2.svg" alt="icon" /></div>
-                          </a><a href="javascript:SubmitForm('form12')">
-                            <div class="draft-school-button-3 draft-school-button-4">
-                              <div class="draft-school-text-sm-1">1</div>
-                            </div>
-                          </a><a href="javascript:SubmitForm('form12')">
-                            <div class="draft-school-button-1 draft-school-button-4">
-                              <div class="draft-school-text-sm draft-school-text-3">2</div>
-                            </div>
-                          </a><a href="javascript:SubmitForm('form12')">
-                            <div class="draft-school-button-1 draft-school-button-4">
-                              <div class="draft-school-text-sm draft-school-text-3">3</div>
-                            </div>
-                          </a><a href="javascript:SubmitForm('form12')">
-                            <div class="draft-school-button draft-school-button-4"><img class="draft-school-icon-1"
-                                src="img/icon-3.svg" alt="icon" /></div>
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <img class="draft-school-vector-19" src="img/vector-19-10.svg" alt="Vector 19" />
-                </div>
-            </div>
-          </div>
-          <footer class="footer">
-            <p class="copyright-2024">Copyright 2024&nbsp;&nbsp; องค์การค้าของ สกสค.</p>
-          </footer>
-        </div>
-        <div class="mobile">
-          <div class="header-ecs">
-            <a href="./login.html">
-              <img class="logo-ecs" src="img/logo------1.png" alt="logo ecs" />
-            </a>
-            <div class="navbar-ecs">
-              <div class="navbar-link-text-ecs">
-                <a href="./purchase-order-school.html">
-                  ออกใบขอสั่งซื้อ
-                </a>
-              </div>
-              <div class="navbar-link-text-ecs">
-                <a href="./approve-school.html">
-                  เอกสารใบขอสั่งซื้อ
-                </a>
-              </div>
-              <div class="navbar-link-text-ecs">
-                <a href="./order.html">
-                  รายการคำสั่งซื้อ
-                </a>
-              </div>
-              <div class="navbar-link-text-ecs">
-                <a href="./order-cancel.htmll">
-                  ยกเลิกเลข ปพ.
-                </a>
-              </div>
-              <div class="navbar-link-text-ecs">
-                <a href="./delivered-order.html">
-                  ประวัติการสั่งซื้อ
-                </a>
-              </div>
-            </div>
-            <div class="header-action-ecs">
-              <img class="group" src="img/group@2x.png" alt="Group" />
-              <a href="./profile-school.html">
-                <img class="vector" src="img/vector-2.svg" alt="Vector" />
-              </a>
-            </div>
-          </div>
-          <div class="container-center-horizontal">
-            <div class="draft-school">
-              <div class="draft-school-flex-row">
-                <div class="draft-school-overlap-group">
-                  <div class="draft-school-frame-38357">
-                    <div class="approve-school-frame-38358">
-                      <div class="approve-school-frame-38354">
-                        <div class="approve-school-frame-38352">
-                          <div class="approve-school-frame-38350">
-                            <div class="approve-school-frame-38 ">
-                              <img class="approve-school-icon" src="img/icon-person2-1.svg" alt="icon person2" />
-                              <div
-                                class="approve-school-text approve-school-valign-text-middle approve-school-text-3 notosansthai-semi-bold-black-22px">
+                                class="print-document-information-text-1 valign-text-middle notosansthai-semi-bold-black-22px">
                                 บัญชีของฉัน</div>
                             </div>
-                            <a onclick="showMenuCollap()">
-                              <div class="draft-school-frame-38348">
-                                <img class="draft-school-arrow-down-01" src="img/arrow-down-01-2.svg"
+                            <div onclick="showMenuCollap()">
+                              <div class="approve-school-frame-38348">
+                                <img class="approve-school-arrow-down-01" src="img/arrow-down-01-2.svg"
                                   alt="arrow-down-01" />
                               </div>
-                            </a>
+                            </div>
                           </div>
-                          <div id="collapMenu" style="display: none;"
-                            class="draft-school-frame-3835 notosansthai-normal-black-20px">
+                          <div id="collapMenuMobile" class="approve-school-frame-3835 notosansthai-normal-black-20px"
+                            style="display: none;">
                             <a href="./profile-school.html">
                               <div
-                                class="draft-school-text-1 draft-school-valign-text-middle draft-school-text-3 a-link-left">
-                                ข้อมูลส่วนบุคคล
-                              </div>
+                                class="approve-school-text-1 approve-school-valign-text-middle approve-school-text-3 a-link-left">
+                                ข้อมูลส่วนบุคคล</div>
                             </a>
-                            <div class="draft-school-text-2 draft-school-valign-text-middle draft-school-text-3">
+                            <div class="approve-school-text-2 approve-school-valign-text-middle approve-school-text-3">
                               ที่อยู่จัดส่งสินค้า</div>
                           </div>
                         </div>
                       </div>
-                      <img class="approve-school-vector" src="img/vector-19-2.svg" alt="Vector 19" />
-                      <div class="approve-school-frame-38">
-                        <img class="approve-school-icon" src="img/icon-report-1-active.svg" alt="icon Report" />
-                        <div class="approve-school-text-4 approve-school-valign-text-middle approve-school-text-3">
+                      <img class="print-document-information-vector" src="img/vector-19-2.svg" alt="Vector 19" />
+                      <div class="print-document-information-frame-38">
+                        <img class="print-document-information-icon" src="img/icon-report-11.svg" alt="icon Report" />
+                        <div
+                          class="print-document-information-text-1 valign-text-middle notosansthai-semi-bold-black-22px">
                           เอกสารใบขอสั่งซื้อ</div>
                       </div>
-
-                      <img class="approve-school-vector" src="img/vector-19-2.svg" alt="Vector 22" />
-
-                      <!-- <div class="frame-38350">
-                  <a class="frame-383 no-text-underline" style="color: #000;"
-                    href="../../ปพ ออนไลน์ - font อนุมัติสถานศึกษา/รายการอนุมัติสถานศึกษา/u3629u3609u3640u3617u3633u3605u3636u3626u3606u3634u3609u3624u3638u3585u3625u3634.html">
-                    <img class="checkmark-square-04" src="img/checkmark-square-04-1.svg" alt="checkmark-square-04" />
-                    <div class="text valign-text-middle notosansthai-semi-bold-black-22px text-bold">อนุมัติสถานศึกษา</div>
-                  </a>
-                </div> -->
-                      <div class="approve-school-frame-38354">
-                        <div class="approve-school-frame-38352">
-                          <div class="approve-school-frame-38350">
-                            <div class="approve-school-frame-38 ">
-                              <img class="approve-school-icon" src="img/icon-report-3.svg" alt="icon person2" />
+                      <img class="print-document-information-vector" src="img/vector-19-2.svg" alt="Vector 22" />
+                      <div class="print-document-information-frame-38354">
+                        <div class="print-document-information-frame-38352">
+                          <div class="print-document-information-frame-38350">
+                            <div class="print-document-information-frame-38">
+                              <img class="print-document-information-icon" src="img/icon-report-11.svg"
+                                alt="icon person2" />
                               <div
-                                class="approve-school-text approve-school-valign-text-middle approve-school-text-3 notosansthai-semi-bold-black-22px">
+                                class="print-document-information-text-1 valign-text-middle notosansthai-semi-bold-black-22px">
                                 รายการคำสั่งซื้อ</div>
                             </div>
-                            <a onclick="showMenuCollap3()">
+                            <a onclick="showMenuCollapOrder()">
                               <div class="approve-school-frame-38348">
                                 <img class="approve-school-arrow-down-01" src="img/arrow-down-01-2.svg"
                                   alt="arrow-down-01" />
                               </div>
                             </a>
                           </div>
-                          <div id="collapMenu3" class="approve-school-frame-3835 notosansthai-normal-black-20px"
+                          <div id="collapMenuOrder" class="approve-school-frame-3835 notosansthai-normal-black-20px"
                             style="display: none;">
-                            <a href="./delivered-order.html" style="color: #000;">
+                            <a href="./delivered-order.html">
                               <div
-                                class="approve-school-text-1 approve-school-valign-text-middle approve-school-text-3">
+                                class="approve-school-text-1 approve-school-valign-text-middle approve-school-text-3 a-link-left">
                                 เอกสารมีเลขคุม</div>
                             </a>
-
                             <div class="approve-school-text-2 approve-school-valign-text-middle approve-school-text-3">
                               เอกสารไม่มีเลขคุม</div>
                             <div class="approve-school-text-2 approve-school-valign-text-middle approve-school-text-3">
@@ -768,303 +309,352 @@
                           </div>
                         </div>
                       </div>
-                      <img class="approve-school-vector" src="img/vector-22-1.svg" alt="Vector 20" />
-                      <div class="approve-school-frame-3852">
-                        <div class="approve-school-frame-38528">
-                          <div class="approve-school-frame-38">
-                            <img class="approve-school-icon" src="img/icon-print-2.svg" alt="icon print" />
-                            <div
-                              class="approve-school-text approve-school-valign-text-middle approve-school-text-3 notosansthai-semi-bold-black-22px">
-                              ปพ.ออนไลน์</div>
+
+                      <img class="print-document-information-vector" src="img/vector-19-2.svg" alt="Vector 20" />
+                      <div class="print-document-information-frame-3852">
+                        <div class="print-document-information-frame-38528">
+                          <div class="print-document-information-frame-38">
+                            <img class="print-document-information-icon" src="img/icon-print-1.svg" alt="icon print" />
+                            <div class="print-document-information-text-9 valign-text-middle">ปพ.ออนไลน์</div>
                           </div>
                           <a onclick="showMenuCollap2()">
-                            <div class="approve-school-frame-38348">
-                              <img class="approve-school-arrow-down-01" src="img/arrow-down-01-3.svg"
+                            <div class="paid-school-frame-38348">
+                              <img class="paid-school-arrow-down-01" src="img/arrow-down-01-3.svg"
                                 alt="arrow-down-01" />
                             </div>
                           </a>
                         </div>
-                        <div class="draft-school-frame-3835">
-                          <div id="collapMenu2" style="display: none;"
-                            class="draft-school-frame-38351 notosansthai-normal-black-20px">
+                        <div id="collapMenu2Mobile" style="display: none;" class="paid-school-frame-3835">
+                          <div class="paid-school-frame-38351 notosansthai-normal-black-20px">
                             <a href="./print_document_information.html">
                               <div
-                                class="draft-school-text-10 draft-school-valign-text-middle draft-school-text-3 a-link-left">
-                                พิมพ์ใบปพ.ออนไลน์</div>
+                                class="print-document-information-text-10 paid-school-valign-text-middle paid-school-text-5">
+                                พิมพ์ใบปพ.ออนไลน์
+                              </div>
                             </a>
                             <a href="./print_document_history.html">
                               <div
-                                class="draft-school-text-2 draft-school-valign-text-middle draft-school-text-3 a-link-left">
+                                class="paid-school-text-2 paid-school-valign-text-middle paid-school-text-5 a-link-left">
                                 ประวัติการพิมพ์
                               </div>
                             </a>
                           </div>
                         </div>
                       </div>
-                      <img class="approve-school-vector" src="img/vector-23-1.svg" alt="Vector 23" />
-                      <div class="approve-school-frame-38">
-                        <img class="approve-school-icon" src="img/icon-logout-1.svg" alt="icon logout" />
+                      <img class="print-document-information-vector" src="img/vector-23-1.svg" alt="Vector 23" />
+                      <div class="print-document-information-frame-38">
+                        <img class="print-document-information-icon" src="img/icon-logout-1.svg" alt="icon logout" />
                         <div
-                          class="approve-school-text approve-school-valign-text-middle approve-school-text-3 notosansthai-semi-bold-black-22px">
+                          class="print-document-information-text-1 valign-text-middle notosansthai-semi-bold-black-22px">
                           ออกจากระบบ</div>
                       </div>
                     </div>
-                    <div class="draft-school-frame-38356">
-                      <div class="draft-school-frame-38355">
-                        <div class="draft-school-frame-38344 notosansthai-semi-bold-black-20px">
-                          <a href="./draft-school.html">
-                            <div class="draft-school-text-1-1 notosansthai-semi-bold-black-20px">ร่างใบขอสั่งซื้อ</div>
-                          </a><a href="./waiting-approve-school.html">
-                            <div class="draft-school-text-1-1 notosansthai-semi-bold-black-20px">รออนุมัติ</div>
-                          </a><a href="./paid_school.html">
-                            <div class="draft-school-text-1-1 notosansthai-semi-bold-black-20px">ที่ต้องชำระเงิน</div>
-                          </a><a href="./approve-school.html">
-                            <div class="draft-school-text-1-1 notosansthai-semi-bold-black-20px">อนุมัติสำเร็จ</div>
-                          </a>
-                          <a href="./cancel-school.html">
-                            <div class="draft-school-text-1-1 notosansthai-semi-bold-black-20px">ยกเลิก</div>
-                          </a>
-                        </div>
-                        <img class="draft-school-frame-38343" src="img/frame-38343-9.svg" alt="Frame 38343" />
-                      </div>
-                      <div class="draft-school-frame-20">
-                        <img class="draft-school-icon-magnifying-glass-searching-glass"
-                          src="img/icon-magnifying-glass-searching-glass-1.svg"
-                          alt="icon Magnifying Glass Searching Glass" />
-                        <input class="draft-school-text_input" name="คณสามารถคนหาโดยใชหมายเลขใบขอสงซอ"
-                          placeholder="คุณสามารถค้นหาโดยใช้หมายเลขใบขอสั่งซื้อ" type="text" />
-                      </div>
-                      <div class="draft-school-frame-38357-1">
-                        <div class="draft-school-frame-38339">
-                          <div
-                            class="draft-school-xxxxxxxx draft-school-valign-text-middle notosansthai-semi-bold-black-20px">
-                            หมายเลขร่างใบขอสั่งซื้อ xxxxxxxx
-                          </div>
-                          <div class="draft-school-frame-38341">
-                            <a href="./draft-school-detail.html">
-                              <div
-                                class="draft-school-text-18 draft-school-valign-text-middle draft-school-text-3 notosansthai-normal-black-16px">
-                                ดูรายละเอียด
-                              </div>
-                            </a><a href="javascript:SubmitForm('form12')">
-                              <div class="draft-school-button-2 draft-school-button-4">
-                                <div
-                                  class="draft-school-text_label draft-school-valign-text-middle notosansthai-semi-bold-black-20px">
-                                  ร่างใบขอสั่งซื้อ
-                                </div>
-                              </div>
-                            </a>
-                          </div>
-                        </div>
-                        <img class="draft-school-line" src="img/line-6-1.svg" alt="Line 6" />
-                        <div class="draft-school-frame-38-1">
-                          <div class="draft-school-frame-95"><img class="draft-school-image-8"
-                              src="img/image-8-2@2x.png" alt="image 8" /></div>
-                          <div class="draft-school-frame-94">
-                            <div class="draft-school-frame-94-1">
-                              <div class="draft-school-frame-93">
-                                <p
-                                  class="draft-school-text-19 draft-school-valign-text-middle draft-school-text-3 notosansthai-semi-bold-black-22px">
-                                  ปพ.1:ป ระเบียนแสดงผลการเรียน ระดับ ประถมฯ <br />(ปรับปรุง 2555) (ฉบับใช้กับคอม)
-                                </p>
-                                <div class="draft-school-frame-9">
-                                  <div class="draft-school-frame-9">
-                                    <div class="draft-school-text-2-1">
-                                      <span class="notosansthai-normal-black-16px">ราคาต่อเล่ม: </span><span
-                                        class="draft-school-span1">160
-                                        บาท</span>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                              <div class="draft-school-frame-93-1"></div>
-                            </div>
-                          </div>
-                          <div class="draft-school-frame-18 notosansthai-medium-black-14px">
-                            <div class="draft-school-number-2">1</div>
-                            <div class="draft-school-text-21 draft-school-text-3">เล่ม</div>
-                          </div>
-                        </div>
-                        <div class="draft-school-frame-38-1">
-                          <div class="draft-school-frame-95"><img class="draft-school-image-8"
-                              src="img/image-8-3@2x.png" alt="image 8" /></div>
-                          <div class="draft-school-frame-94">
-                            <div class="draft-school-frame-94-1">
-                              <div class="draft-school-frame-93">
-                                <p
-                                  class="draft-school-text-22 draft-school-valign-text-middle draft-school-text-3 notosansthai-semi-bold-black-20px">
-                                  ปพ.1:บ&nbsp;&nbsp;ระเบียนแสดงผลการเรียน ระดับ ม.ต้น <br />(ปรับปรุง 2555)
-                                  (ฉบับใช้กับคอม)
-                                </p>
-                                <div class="draft-school-frame-38433">
-                                  <div class="draft-school-frame-9">
-                                    <div class="draft-school-text-2-1">
-                                      <span class="notosansthai-normal-black-16px">ราคาต่อเล่ม: </span><span
-                                        class="draft-school-span1">160
-                                        บาท</span>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                              <div class="draft-school-frame-93-1"></div>
-                            </div>
-                          </div>
-                          <div class="draft-school-frame-18 notosansthai-medium-black-14px">
-                            <div class="draft-school-number-2">1</div>
-                            <div class="draft-school-text-24 draft-school-text-3">เล่ม</div>
-                          </div>
-                        </div>
-                        <img class="draft-school-line" src="img/line-7-1.svg" alt="Line 7" />
-                        <div class="draft-school-frame-38341-1">
-                          <div class="draft-school-frame-38">
-                            <div
-                              class="draft-school-grand-total draft-school-valign-text-middle notosansthai-normal-black-16px">
-                              ยอดสุทธิ /Grand Total :
-                            </div>
-                            <div class="draft-school-xxx draft-school-valign-text-middle">xxx บาท</div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="draft-school-frame-38520">
-                        <div class="draft-school-frame-38263">
-                          <div class="draft-school-input-select">
-                            <div class="draft-school-select-field">
-                              <div class="draft-school-select">แสดง3</div>
-                              <img class="draft-school-dropdown-icon" src="img/dropdown-icon-7.svg"
-                                alt="dropdown-icon" />
-                            </div>
-                          </div>
-                          <p class="draft-school-text-25 draft-school-text-3">แสดง 1-3 รายการ จาก 8 รายการ</p>
-                        </div>
-                        <div class="draft-school-pagination">
-                          <a href="javascript:SubmitForm('form12')">
-                            <div class="draft-school-button draft-school-button-4"><img class="draft-school-icon-1"
-                                src="img/icon-2.svg" alt="icon" /></div>
-                          </a><a href="javascript:SubmitForm('form12')">
-                            <div class="draft-school-button-3 draft-school-button-4">
-                              <div class="draft-school-text-sm-1">1</div>
-                            </div>
-                          </a><a href="javascript:SubmitForm('form12')">
-                            <div class="draft-school-button-1 draft-school-button-4">
-                              <div class="draft-school-text-sm draft-school-text-3">2</div>
-                            </div>
-                          </a><a href="javascript:SubmitForm('form12')">
-                            <div class="draft-school-button-1 draft-school-button-4">
-                              <div class="draft-school-text-sm draft-school-text-3">3</div>
-                            </div>
-                          </a><a href="javascript:SubmitForm('form12')">
-                            <div class="draft-school-button draft-school-button-4"><img class="draft-school-icon-1"
-                                src="img/icon-3.svg" alt="icon" /></div>
-                          </a>
-                        </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="frame-38355">
+                <div class="text-field">
+                  <div class="container-custom-dropdown-filter">
+                    <select id="agency" class="custom-dropdown-filter notosansthai-normal-dove-gray-17px"
+                      onchange="changeStatusOrder(event.target.value)">
+                      <!-- <option value="" disabled>สถานะ</option> -->
+                      <option value="1" selected>ร่างใบขอสั่งซื้อ</option>
+                      <option value="2">รออนุมัติ</option>
+                      <option value="3" >ที่ต้องชำระเงิน</option>
+                      <option value="4">อนุมัติสำเร็จ</option>
+                      <option value="5">ยกเลิก</option>
+
+                    </select>
+                  </div>
+                </div>
+                <div class="frame-20 box-input-search-order ">
+                  <img class="icon-magnifying-glass-searching-glass"
+                    src="img/icon-magnifying-glass-searching-glass-2.svg" alt="icon Magnifying Glass Searching Glass" />
+                  <input class="text_input input-search-order" name="คณสามารถคนหาโดยใชหมายเลขคาสงซอหรอชอสนคา"
+                    placeholder="คุณสามารถค้นหาโดยใช้หมายเลขคำสั่งซื้อ หรือ ชื่อสินค้า" type="text" />
+                </div>
+              </div>
+
+              <div class="approve-school-frame">
+                <div class="approve-school-frame-38339">
+                  <div
+                    class="approve-school-xxxxxxxx approve-school-valign-text-middle notosansthai-semi-bold-black-22px">
+                    หมายเลขใบขอสั่งซื้อ <br>xxxxxxxx
+                  </div>
+                  <div class="approve-school-frame-38341">
+                    <a href="./draft-school-detail.html" class="hidden-sm-down hidden-md-down">
+                      <div
+                        class="approve-school-text-18 approve-school-valign-text-middle approve-school-text-3 notosansthai-normal-black-16px">
+                        ดูรายละเอียด</div>
+                    </a>
+                    <div class="draft-school-button-2 draft-school-button-4">
+                      <div
+                        class="draft-school-text_label draft-school-valign-text-middle notosansthai-semi-bold-black-20px">
+                        ร่างใบขอสั่งซื้อ
                       </div>
                     </div>
                   </div>
-                  <img class="draft-school-vector-19" src="img/vector-19-10.svg" alt="Vector 19" />
+                </div>
+                <div id="collapProduct" class="waiting-approve-school-collapProduct" style="display: none;">
+                  <img class="approve-school-line-2" src="img/line-6-1.svg" alt="Line 6" />
+                  <div class="approve-school-frame-38-1">
+                    <div class="approve-school-frame-1"><img class="approve-school-image-8" src="img/image-8-2@2x.png"
+                        alt="image 8" /></div>
+                    <div class="approve-school-frame-94">
+                      <div class="approve-school-frame-94-1 approve-school-frame-94-3">
+                        <div class="approve-school-frame-93">
+                          <p
+                            class="approve-school-text-19 approve-school-valign-text-middle approve-school-text-3 notosansthai-semi-bold-black-22px">
+                            ปพ.1:ป ระเบียนแสดงผลการเรียน ระดับ ประถมฯ <br />(ปรับปรุง 2555) (ฉบับใช้กับคอม)
+                          </p>
+
+                          <div class="approve-school-frame-9">
+                            <div class="approve-school-text-2-1">
+                              <span class="notosansthai-normal-black-16px">ราคาต่อเล่ม: </span><span
+                                class="approve-school-span1">160
+                                บาท</span>
+                            </div>
+                            <div class="approve-school-frame-18 notosansthai-medium-black-14px hidden-lg-down hidden-md-down">
+                              <div class="approve-school-number-4">1</div>
+                              <div class="approve-school-text-21 approve-school-text-3">เล่ม</div>
+                            </div>
+                          </div>
+
+                        </div>
+                      </div>
+                    </div>
+                    <div class="approve-school-frame-18 notosansthai-medium-black-14px hidden-sm-down ">
+                      <div class="approve-school-number-4">1</div>
+                      <div class="approve-school-text-21 approve-school-text-3">เล่ม</div>
+                    </div>
+                  </div>
+
+                  <div class="approve-school-frame-38-1">
+                    <div class="approve-school-frame-1"><img class="approve-school-image-8" src="img/image-8-3@2x.png"
+                        alt="image 8" /></div>
+                    <div class="approve-school-frame-94">
+                      <div class="approve-school-frame-94-1 approve-school-frame-94-3">
+                        <div class="approve-school-frame-93">
+                          <p
+                            class="approve-school-text-19 approve-school-valign-text-middle approve-school-text-3 notosansthai-semi-bold-black-22px">
+                            ปพ.1:บ&nbsp;&nbsp;ระเบียนแสดงผลการเรียน ระดับ ม.ต้น <br />(ปรับปรุง 2555) (ฉบับใช้กับคอม)
+                          </p>
+
+                          <div class="approve-school-frame-9">
+                            <div class="approve-school-text-2-1">
+                              <span class="notosansthai-normal-black-16px">ราคาต่อเล่ม: </span><span
+                                class="approve-school-span1">160
+                                บาท</span>
+                            </div>
+                            <div class="approve-school-frame-18 notosansthai-medium-black-14px hidden-lg-down hidden-md-down">
+                              <div class="approve-school-number-4">1</div>
+                              <div class="approve-school-text-21 approve-school-text-3">เล่ม</div>
+                            </div>
+                          </div>
+
+                        </div>
+                      </div>
+                    </div>
+                    <div class="approve-school-frame-18 notosansthai-medium-black-14px hidden-sm-down ">
+                      <div class="approve-school-number-4">1</div>
+                      <div class="approve-school-text-21 approve-school-text-3">เล่ม</div>
+                    </div>
+                  </div>
+                </div>
+                <img class="approve-school-line-2" src="img/line-7-12.svg" alt="Line 7" />
+                <div class="waiting-approve-school-frame-38341-1">
+                  <div class="waiting-approve-school-frame-38">
+                    <div
+                      class="waiting-approve-school-grand-total waiting-approve-school-valign-text-middle notosansthai-normal-black-16px">
+                      ยอดสุทธิ /Grand Total :
+                    </div>
+                    <div class="waiting-approve-school-xxx-2 waiting-approve-school-valign-text-middle">xxx บาท</div>
+                    <a onclick="showProductCollap('collapProduct')">
+                      <div class="approve-school-frame-38348">
+                        <img class="approve-school-arrow-down-01" src="img/arrow-down-01-2.svg" alt="arrow-down-01" />
+                      </div>
+                    </a>
+                  </div>
                 </div>
               </div>
+
+              <div class="approve-school-frame-38520">
+                <div class="approve-school-frame-38263">
+                  <div class="approve-school-input-select">
+                    <div class="approve-school-select-field">
+                      <div class="approve-school-select">แสดง3</div>
+                      <img class="approve-school-dropdown-icon" src="img/dropdown-icon-11.svg" alt="dropdown-icon" />
+                    </div>
+                  </div>
+                  <p class="approve-school-text-32 approve-school-text-3 hidden-sm-down">แสดง 1-3 รายการ จาก 8 รายการ
+                  </p>
+                </div>
+                <div class="approve-school-pagination">
+                  <a href="javascript:SubmitForm('form9')">
+                    <div class="approve-school-button-1 approve-school-button-4"><img class="approve-school-icon-1"
+                        src="img/icon-10.svg" alt="icon" /></div>
+                  </a><a href="javascript:SubmitForm('form9')">
+                    <div class="approve-school-button-3 approve-school-button-4">
+                      <div class="approve-school-text-sm-1">1</div>
+                    </div>
+                  </a><a href="javascript:SubmitForm('form9')" class="hidden-sm-down">
+                    <div class="approve-school-button-2 approve-school-button-4">
+                      <div class="approve-school-text-sm approve-school-text-3">2</div>
+                    </div>
+                  </a><a href="javascript:SubmitForm('form9')" class="hidden-sm-down">
+                    <div class="approve-school-button-2 approve-school-button-4">
+                      <div class="approve-school-text-sm approve-school-text-3">3</div>
+                    </div>
+                  </a><a href="javascript:SubmitForm('form9')">
+                    <div class="approve-school-button-1 approve-school-button-4"><img class="approve-school-icon-1"
+                        src="img/icon-11.svg" alt="icon" /></div>
+                  </a>
+                </div>
+              </div>
+
+
             </div>
           </div>
-          <footer class="footer">
-            <p class="copyright-2024">Copyright 2024&nbsp;&nbsp; องค์การค้าของ สกสค.</p>
-          </footer>
         </div>
+      </div>
+    </div>
+  </div>
+  <footer class="footer">
+    <p class="copyright-2024">Copyright 2024&nbsp;&nbsp; องค์การค้าของ สกสค.</p>
+  </footer>
 
-        <script>
-          /* Copyright (c) 2016 Tobias Buschor https://goo.gl/gl0mbf | MIT License https://goo.gl/HgajeK */
+  <script>
+    /* Copyright (c) 2016 Tobias Buschor https://goo.gl/gl0mbf | MIT License https://goo.gl/HgajeK */
 
-          if (!HTMLFormElement.prototype.reportValidity) {
-            HTMLFormElement.prototype.reportValidity = function () {
-              if (this.checkValidity()) return true;
-              var btn = document.createElement("button");
-              this.appendChild(btn);
-              btn.click();
-              this.removeChild(btn);
-              return false;
-            };
-          }
+    function showProductCollap(param) {
+      isCollape = !isCollape;
+      const content = document.getElementById(param);
 
-          function SubmitForm(form_name) {
-            var form = document.getElementsByName(form_name)[0];
-            if (form.reportValidity()) {
-              form.submit();
-              if (window.submitted) window.submitted();
-            }
-          }
+      if (isCollape) {
+        content.style.display = "flex";
+      } else {
+        content.style.display = "none";
+      }
+    }
 
-          function goBack() {
-            history.back();
-          }
+    function changeStatusOrder(param) {
+      if (param == '1') {
+        window.location.href = "./draft-school.html";
+      } else if (param == '2') {
+        window.location.href = "./waiting-approve-school.html";
+      } else if (param == '3') {
+        window.location.href = "./paid_school.html";
+      } else if (param == '4') {
+        window.location.href = "./approve-school.html";
+      } else if (param == '5') {
+        window.location.href = "./cancel-school.html";
+      }
+    }
 
-          let isCollape = false;
-          let isCollape2 = false;
+    if (!HTMLFormElement.prototype.reportValidity) {
+      HTMLFormElement.prototype.reportValidity = function () {
+        if (this.checkValidity()) return true;
+        var btn = document.createElement("button");
+        this.appendChild(btn);
+        btn.click();
+        this.removeChild(btn);
+        return false;
+      };
+    }
 
-          function showMenuCollap() {
-            isCollape = !isCollape;
-            const content = document.getElementById("collapMenu");
+    function SubmitForm(form_name) {
+      var form = document.getElementsByName(form_name)[0];
+      if (form.reportValidity()) {
+        form.submit();
+        if (window.submitted) window.submitted();
+      }
+    }
 
-            if (isCollape) {
-              content.style.display = "block";
-            } else {
-              content.style.display = "none";
-            }
-          }
+    function goBack() {
+      history.back();
+    }
 
-          function showMenuCollap2() {
-            isCollape2 = !isCollape2;
-            const content2 = document.getElementById("collapMenu2");
+    let isCollape = false;
+    let isCollape2 = false;
 
-            if (isCollape2) {
-              content2.style.display = "block";
-            } else {
-              content2.style.display = "none";
-            }
-          }
+    function showMenuCollap() {
+      isCollape = !isCollape;
+      const content = document.getElementById("collapMenu");
+      const contentMobile = document.getElementById("collapMenuMobile");
 
-          function showMenuCollap3() {
-            isCollape = !isCollape;
-            const content = document.getElementById("collapMenu3");
+      if (isCollape) {
+        content.style.display = "block";
+        contentMobile.style.display = "block";
+      } else {
+        content.style.display = "none";
+        contentMobile.style.display = "none";
+      }
+    }
 
-            if (isCollape) {
-              content.style.display = "block";
-            } else {
-              content.style.display = "none";
-            }
-          }
+    function showMenuCollap2() {
+      isCollape2 = !isCollape2;
+      const content2 = document.getElementById("collapMenu2");
+      const content2Mobile = document.getElementById("collapMenu2Mobile");
+
+      if (isCollape2) {
+        content2.style.display = "block";
+        content2Mobile.style.display = "block";
+      } else {
+        content2.style.display = "none";
+        content2Mobile.style.display = "none";
+      }
+    }
+
+    function showMenuCollap3() {
+      isCollape = !isCollape;
+      const content = document.getElementById("collapMenu3");
+
+      if (isCollape) {
+        content.style.display = "block";
+      } else {
+        content.style.display = "none";
+      }
+    }
 
 
 
-          let isSubMenuHeader = false;
+    let isSubMenuHeader = false;
 
-          function showMenuNav() {
-            isSubMenuHeader = !isSubMenuHeader;
-            const subMenuHeader = document.getElementById("subMenuHeader");
-            const subMenuHeaderMobile = document.getElementById("subMenuHeaderMobile");
-            if (isSubMenuHeader) {
-              subMenuHeader.style.display = "flex";
-              subMenuHeaderMobile.style.display = "flex";
-            } else {
-              subMenuHeader.style.display = "none";
-              subMenuHeaderMobile.style.display = "none";
-            }
-          }
+    function showMenuNav() {
+      isSubMenuHeader = !isSubMenuHeader;
+      const subMenuHeader = document.getElementById("subMenuHeader");
+      if (isSubMenuHeader) {
+        subMenuHeader.style.display = "flex";
+      } else {
+        subMenuHeader.style.display = "none";
+      }
+    }
 
-          let isContentMenuHam = false;
+    let isContentMenuHam = false;
 
-          function showMenuHam() {
-            isContentMenuHam = !isContentMenuHam;
-            const contentMenuHam = document.getElementById("contentMenuHam");
-            const contentMenuHamMobile = document.getElementById("contentMenuHamMobile");
-            if (isContentMenuHam) {
-              contentMenuHam.style.display = "flex";
-              contentMenuHamMobile.style.display = "flex";
-            } else {
-              contentMenuHam.style.display = "none";
-              contentMenuHamMobile.style.display = "none";
-            }
-          }
+    function showMenuHam() {
+      isContentMenuHam = !isContentMenuHam;
+      const contentMenuHam = document.getElementById("contentMenuHam");
+      if (isContentMenuHam) {
+        contentMenuHam.style.display = "flex";
+      } else {
+        contentMenuHam.style.display = "none";
+      }
+    }
 
-        </script>
+    function showMenuCollapOrder() {
+      isCollape2 = !isCollape2;
+      const content2 = document.getElementById("collapMenuOrder");
+
+      if (isCollape2) {
+        content2.style.display = "block";
+      } else {
+        content2.style.display = "none";
+      }
+    }
+
+  </script>
 </body>
 
 </html>
