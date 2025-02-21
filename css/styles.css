@@ -20775,7 +20775,7 @@ a:active {
   display: flex;
   gap: 8px;
   padding: 8px 24px;
-  /* width: 245px; */
+  min-width: 200px;
   width: -webkit-fill-available;
 }
 
@@ -20786,7 +20786,7 @@ a:active {
   display: flex;
   gap: 8px;
   padding: 8px 24px;
-  /* width: 245px; */
+  min-width: 200px;
   width: -webkit-fill-available;
 }
 
@@ -21162,7 +21162,7 @@ a:active {
   height: 60px;
   justify-content: center;
   margin-right: 1.0px;
-  margin-top: 248px;
+  margin-top: 100px;
   overflow: hidden;
   padding: 16px 54px;
   position: relative;
@@ -30260,6 +30260,14 @@ body.no-scroll {
     flex-wrap: wrap;
     width: -webkit-fill-available;
   }
+
+  .request-detail-school-button-5_2 {
+    background-color: var(--main);
+    border-radius: 10px;
+    display: flex;
+    gap: 8px;
+    padding: 9px 30px;
+  }
 }
 
 /* à¸ªà¸³à¸«à¸£à¸±à¸š Tablet */
@@ -33870,7 +33878,7 @@ body.no-scroll {
     display: inline-flex;
     flex: 0 0 auto;
     flex-direction: column;
-    gap: 32px;
+    gap: 20px;
     position: relative;
   }
 
@@ -33881,7 +33889,8 @@ body.no-scroll {
     flex: 0 0 auto;
     gap: 8px;
     padding: 8px 24px;
-    width: 514px;
+    min-width: 425px;
+    width: -webkit-fill-available;
   }
 
   .request-detail-school-frame-38379 {
@@ -33891,6 +33900,7 @@ body.no-scroll {
     gap: 24px;
     position: relative;
     width: -webkit-fill-available;
+    justify-content: flex-end;
   }
 
   .request-detail-school-button-4 {
@@ -33901,7 +33911,8 @@ body.no-scroll {
     display: flex;
     gap: 8px;
     padding: 8px 24px;
-    /* width: 200px; */
+    min-width: 200px;
+    width: max-content;
   }
 
   .request-detail-school-button-5 {
@@ -33910,7 +33921,8 @@ body.no-scroll {
     display: flex;
     gap: 8px;
     padding: 9px 24px;
-    /* width: 200px; */
+    min-width: 200px;
+    width: max-content;
   }
 
   .request-detail-school-footer {
@@ -34873,6 +34885,14 @@ body.no-scroll {
 
   .purchase-order-frame-38385 {
     flex-direction: column;
+  }
+
+  .request-detail-school-button-5_2 {
+    background-color: var(--main);
+    border-radius: 10px;
+    display: flex;
+    gap: 8px;
+    padding: 9px 20px;
   }
 
 }
@@ -39162,7 +39182,7 @@ body.no-scroll {
     flex: 0 0 auto;
     gap: 8px;
     padding: 8px 24px;
-    width: 350px;
+    min-width: 357px;
   }
 
   .request-detail-school-frame-38379 {
@@ -39183,7 +39203,8 @@ body.no-scroll {
     display: flex;
     gap: 8px;
     padding: 8px 24px;
-    width: 165px;
+    min-width: 170px;
+    width: -webkit-fill-available;
   }
 
   .request-detail-school-button-5 {
@@ -39192,7 +39213,8 @@ body.no-scroll {
     display: flex;
     gap: 8px;
     padding: 8px 24px;
-    width: 165px;
+    min-width: 165px;
+    width: -webkit-fill-available;
   }
 
   .request-detail-school-footer {
@@ -39225,7 +39247,8 @@ body.no-scroll {
     justify-content: center;
     overflow: hidden;
     position: relative;
-    width: -webkit-fill-available;
+    /* width: -webkit-fill-available; */
+    width: max-content;
   }
 
   .request-detail-school-navbar-link-text {
@@ -40515,14 +40538,6 @@ body.no-scroll {
     justify-content: center;
   }
 
-  .request-detail-school-button-4 {
-    width: -webkit-fill-available;
-  }
-
-  .request-detail-school-button-3 {
-    width: -webkit-fill-available;
-  }
-
   .button-attach-file-payment {
     width: -webkit-fill-available;
   }
@@ -40861,6 +40876,14 @@ body.no-scroll {
   .purchase-order-frame-38385 {
     flex-direction: column;
     gap: 25px;
+  }
+
+  .request-detail-school-button-4-dialog {
+    min-width: -webkit-fill-available;
+  }
+
+  .request-detail-school-button-5-dialog {
+    min-width: -webkit-fill-available;
   }
 
 }
