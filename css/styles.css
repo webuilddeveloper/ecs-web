@@ -30230,6 +30230,7 @@ body.no-scroll {
     display: flex;
     flex-direction: row;
     gap: 16px;
+    flex-wrap: wrap;
   }
 
   .text-cause-order-cancel {
@@ -34840,6 +34841,7 @@ body.no-scroll {
     display: flex;
     flex-direction: column;
     gap: 16px;
+    flex-wrap: wrap;
   }
 
   .text-cause-order-cancel {
@@ -40826,6 +40828,7 @@ body.no-scroll {
     display: flex;
     flex-direction: column;
     gap: 16px;
+    flex-wrap: wrap;
   }
 
   .text-cause-order-cancel {
