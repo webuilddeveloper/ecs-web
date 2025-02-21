@@ -12470,7 +12470,7 @@ input:focus {
   gap: 40px;
   position: relative;
   width: 100%;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
   flex-direction: row;
 }
 
@@ -12481,7 +12481,7 @@ input:focus {
   border-radius: 8px;
   flex: 1;
   flex-grow: 1;
-  height: 42px;
+  height: 47px;
   overflow: hidden;
   position: relative;
 }
@@ -13176,7 +13176,8 @@ input:focus {
 /* à¸›à¸£à¸±à¸šà¸‚à¸™à¸²à¸”à¹à¸¥à¸°à¸¥à¸šà¹€à¸ªà¹‰à¸™à¸‚à¸­à¸šà¸‚à¸­à¸‡ select */
 .purchase-order-custom-dropdown {
   width: 100%;
-  height: 40px;
+  /* height: 40px; */
+  /* height: -webkit-fill-available; */
   /* à¸à¸³à¸«à¸™à¸”à¸„à¸§à¸²à¸¡à¸ªà¸¹à¸‡ */
   padding: 5px 10px;
   /* à¸¥à¸” padding à¹€à¸žà¸·à¹ˆà¸­à¹ƒà¸«à¹‰à¸Šà¹ˆà¸­à¸‡à¹„à¸¡à¹ˆà¸ªà¸¹à¸‡à¹€à¸à¸´à¸™à¹„à¸› */
@@ -13599,7 +13600,7 @@ input:focus {
 
 .popup {
   align-content: center;
-  height: 236px;
+  min-height: 236px;
   background: white;
   padding: 20px;
   border-radius: 10px;
@@ -16562,7 +16563,7 @@ input:focus {
 .popup {
   align-items: flex-start;
   display: flex;
-  height: 364px;
+  /* height: 364px; */
   left: 319px;
   min-width: 801px;
   position: absolute;
@@ -20761,7 +20762,9 @@ a:active {
   flex: 0 0 auto;
   gap: 24px;
   position: relative;
-  width: -webkit-fill-available;
+  /* width: -webkit-fill-available; */
+  width: auto;
+  justify-content: center;
 }
 
 .request-detail-school-button-4 {
@@ -30232,6 +30235,27 @@ body.no-scroll {
     color: black;
     font-size: var(--font-size-18);
   }
+
+  .title-success-dialog {
+    font-size: var(--font-size-32) !important;
+    color: var(--green);
+    font-family: var(--font-family-noto_sans_thai);
+    font-weight: 600;
+    line-height: 60.0px;
+    width: 100%;
+  }
+
+  .group-input-filter {
+    align-items: flex-start;
+    align-self: stretch;
+    display: flex;
+    /* flex: 0 0 auto; */
+    gap: 40px;
+    position: relative;
+    /* width: 100%; */
+    flex-wrap: wrap;
+    width: -webkit-fill-available;
+  }
 }
 
 /* à¸ªà¸³à¸«à¸£à¸±à¸š Tablet */
@@ -33862,6 +33886,7 @@ body.no-scroll {
     flex: 0 0 auto;
     gap: 24px;
     position: relative;
+    width: -webkit-fill-available;
   }
 
   .request-detail-school-button-4 {
@@ -33872,7 +33897,7 @@ body.no-scroll {
     display: flex;
     gap: 8px;
     padding: 8px 24px;
-    width: 200px;
+    /* width: 200px; */
   }
 
   .request-detail-school-button-5 {
@@ -33881,7 +33906,7 @@ body.no-scroll {
     display: flex;
     gap: 8px;
     padding: 9px 24px;
-    width: 200px;
+    /* width: 200px; */
   }
 
   .request-detail-school-footer {
@@ -34719,7 +34744,7 @@ body.no-scroll {
     min-width: 400px;
     position: absolute;
     left: 50%;
-    transform: translate(-50%, 900%);
+    transform: translate(-50%, 150%);
     /* top: 725px; */
   }
 
@@ -34816,6 +34841,30 @@ body.no-scroll {
     font-family: var(--font-family-noto_sans_thai);
     color: black;
     font-size: var(--font-size-15);
+  }
+
+  .title-success-dialog {
+    font-size: var(--font-size-24) !important;
+    color: var(--green);
+    font-family: var(--font-family-noto_sans_thai);
+    font-weight: 600;
+    line-height: 60.0px;
+    width: 100%;
+  }
+
+  .group-input-filter {
+    align-items: flex-start;
+    align-self: stretch;
+    display: flex;
+    flex: 0 0 auto;
+    gap: 40px;
+    position: relative;
+    width: 100%;
+    flex-wrap: wrap;
+  }
+
+  .purchase-order-frame-38385 {
+    flex-direction: column;
   }
 
 }
@@ -35408,7 +35457,7 @@ body.no-scroll {
     overflow: hidden;
     padding: 8px 0px;
     position: relative;
-    width: 78%;
+    /* width: 78%; */
   }
 
   .purchase-order-detail {
@@ -38284,7 +38333,7 @@ body.no-scroll {
     min-width: auto;
     position: absolute;
     left: 50%;
-    transform: translate(-50%, 600%);
+    transform: translate(-50%, 100%);
     width: 100%;
     /* top: 725px; */
   }
@@ -40775,6 +40824,31 @@ body.no-scroll {
     font-family: var(--font-family-noto_sans_thai);
     color: black;
     font-size: var(--font-size-13);
+  }
+
+  .title-success-dialog {
+    font-size: var(--font-size-24) !important;
+    color: var(--green);
+    font-family: var(--font-family-noto_sans_thai);
+    font-weight: 600;
+    line-height: 60.0px;
+    width: 100%;
+  }
+
+  .group-input-filter {
+    align-items: flex-start;
+    align-self: stretch;
+    display: flex;
+    flex: 0 0 auto;
+    gap: 25px;
+    position: relative;
+    width: 100%;
+    flex-wrap: wrap;
+  }
+
+  .purchase-order-frame-38385 {
+    flex-direction: column;
+    gap: 25px;
   }
 
 }
