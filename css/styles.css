@@ -1292,7 +1292,7 @@
   border: none;
 }
 
-.content-ecs .text_label {
+.text_label {
   color: var(--main);
   font-family: var(--font-family-noto_sans_thai);
   font-size: 20px;
@@ -15543,7 +15543,7 @@ input:focus {
   align-items: center;
 }
 
-.content-ecs .button-3-2 {
+.button-3-2 {
   background-color: var(--gray);
   border-radius: 10px;
   display: flex;
@@ -15553,7 +15553,7 @@ input:focus {
   justify-content: center;
 }
 
-.content-ecs .button-4 {
+.button-4 {
   background-color: var(--main);
   justify-content: center;
   border-radius: 10px;
@@ -16013,7 +16013,7 @@ input:focus {
   font-weight: 600;
 }
 
-.content-ecs .text_label-3-2 {
+.text_label-3-2 {
   letter-spacing: 0;
   line-height: normal;
   margin-top: -1.00px;
@@ -16305,7 +16305,7 @@ input:focus {
   width: 20px;
 }
 
-.content-ecs .frame-38379 {
+.frame-38379 {
   align-items: center;
   display: inline-flex;
   flex: 0 0 auto;
@@ -20761,6 +20761,7 @@ a:active {
   flex: 0 0 auto;
   gap: 24px;
   position: relative;
+  width: -webkit-fill-available;
 }
 
 .request-detail-school-button-4 {
@@ -20771,16 +20772,19 @@ a:active {
   display: flex;
   gap: 8px;
   padding: 8px 24px;
-  width: 245px;
+  /* width: 245px; */
+  width: -webkit-fill-available;
 }
 
 .request-detail-school-button-5 {
   background-color: var(--main);
+  border: 1px solid var(--main);
   border-radius: 10px;
   display: flex;
   gap: 8px;
   padding: 8px 24px;
-  width: 245px;
+  /* width: 245px; */
+  width: -webkit-fill-available;
 }
 
 .request-detail-school-footer {
@@ -30207,6 +30211,27 @@ body.no-scroll {
     color: black;
     font-size: var(--font-size-17);
   }
+
+  .button-font-white {
+    font-family: var(--font-family-noto_sans_thai);
+    color: white;
+    font-size: var(--font-size-20);
+    font-weight: 600;
+  }
+
+  .text-file-upload {
+    line-height: 1.5;
+    font-family: var(--font-family-noto_sans_thai);
+    color: black;
+    font-size: var(--font-size-18);
+  }
+
+  .text-cause-order-cancel {
+    line-height: 1.5;
+    font-family: var(--font-family-noto_sans_thai);
+    color: black;
+    font-size: var(--font-size-18);
+  }
 }
 
 /* à¸ªà¸³à¸«à¸£à¸±à¸š Tablet */
@@ -34772,6 +34797,27 @@ body.no-scroll {
     font-size: var(--font-size-15);
   }
 
+  .button-font-white {
+    font-family: var(--font-family-noto_sans_thai);
+    color: white;
+    font-size: var(--font-size-17);
+    font-weight: 600;
+  }
+
+  .text-file-upload {
+    line-height: 1.5;
+    font-family: var(--font-family-noto_sans_thai);
+    color: black;
+    font-size: var(--font-size-16);
+  }
+
+  .text-cause-order-cancel {
+    line-height: 1.5;
+    font-family: var(--font-family-noto_sans_thai);
+    color: black;
+    font-size: var(--font-size-15);
+  }
+
 }
 
 /* à¸ªà¸³à¸«à¸£à¸±à¸š Mobile */
@@ -39069,6 +39115,7 @@ body.no-scroll {
     gap: 20px;
     position: relative;
     width: -webkit-fill-available;
+    justify-content: center;
   }
 
   .request-detail-school-button-4 {
@@ -39397,7 +39444,7 @@ body.no-scroll {
     align-items: center;
     align-self: stretch;
     display: flex;
-    gap: 24px;
+    gap: 10px;
     height: 42px;
     position: relative;
     width: 100%;
@@ -39414,10 +39461,11 @@ body.no-scroll {
     display: flex;
     height: 20px;
     justify-content: center;
-    left: 2px;
+    /* left: 2px; */
     min-width: 20px;
     position: relative;
-    top: 2px;
+    /* top: 2px; */
+    margin: 0;
   }
 
   .payment-summary-overlap-group {
@@ -39444,6 +39492,7 @@ body.no-scroll {
     line-height: normal;
     position: relative;
     width: fit-content;
+    font-weight: 600;
   }
 
   .payment-summary-line {
@@ -39458,9 +39507,10 @@ body.no-scroll {
     align-items: flex-start;
     display: flex;
     gap: 10px;
-    height: 24px;
+    height: 20px;
     position: relative;
-    width: 24px;
+    width: 20px;
+    left: 3px;
   }
 
   .payment-summary-frame-3 {
@@ -39494,8 +39544,9 @@ body.no-scroll {
     border: 2px solid;
     border-color: var(--gray);
     border-radius: 12px;
-    height: 24px;
-    width: 24px;
+    height: 20px;
+    width: 20px;
+    margin: 0;
   }
 
   .payment-summary-gfmis {
@@ -40468,6 +40519,7 @@ body.no-scroll {
 
   .content-ecs .address {
     width: -webkit-fill-available;
+    font-size: var(--font-size-13);
   }
 
   .content-ecs .frame-38339 {
@@ -40508,26 +40560,27 @@ body.no-scroll {
     width: -webkit-fill-available;
   }
 
-  .content-ecs .frame-38379 {
+  .frame-38379 {
     width: -webkit-fill-available;
-    justify-content: center;
+    justify-content: flex-end;
+    gap: 15px;
   }
 
-  .content-ecs .text_label {
+  .text_label {
     font-size: var(--font-size-13);
   }
 
-  .content-ecs .button-3-2 {
+  .button-3-2 {
     width: -webkit-fill-available;
     text-wrap: nowrap;
   }
 
-  .content-ecs .button-4 {
+  .button-4 {
     width: -webkit-fill-available;
     text-wrap: nowrap;
   }
 
-  .content-ecs .text_label-3-2 {
+  .text_label-3-2 {
     font-size: var(--font-size-13) !important;
   }
 
@@ -40701,7 +40754,28 @@ body.no-scroll {
 
   .content-ecs .frame-38373-1 {
     padding: 50px;
-}
+  }
+
+  .button-font-white {
+    font-family: var(--font-family-noto_sans_thai);
+    color: white;
+    font-size: var(--font-size-15);
+    font-weight: 600;
+  }
+
+  .text-file-upload {
+    line-height: 1.5;
+    font-family: var(--font-family-noto_sans_thai);
+    color: black;
+    font-size: var(--font-size-13);
+  }
+
+  .text-cause-order-cancel {
+    line-height: 1.5;
+    font-family: var(--font-family-noto_sans_thai);
+    color: black;
+    font-size: var(--font-size-13);
+  }
 
 }
 

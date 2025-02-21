@@ -100,13 +100,13 @@
         <div class="frame-38489">
           <div class="payment-summary-frame-38419">
             <div class="payment-summary-frame-38395 notosansthai-semi-bold-black-20px">
-              <div class="payment-summary-text-7">วิธีชำระเงิน</div>
+              <div class="payment-summary-text-7 notosansthai-bold-black-20px">วิธีชำระเงิน</div>
               <div class="payment-summary-frame-29">
                 <div class="payment-summary-frame-3826">
                   <label class="purchase-order-shipping-radio-button">
                     <input class="payment-summary-radio-button-1 payment-summary-frame-4" type="radio"
                       name="delivery_option2" value="registered" />
-                    <span class="radio-label payment-summary-text-8 payment-summary-valign-text-middle">สแกน QR
+                    <span class="radio-label payment-summary-text-8 payment-summary-valign-text-middle notosansthai-normal-black-20px">สแกน QR
                       Code</span>
                   </label>
                   <!-- <div class="payment-summary-radio-button-1">
@@ -123,7 +123,7 @@
                   <label class="purchase-order-shipping-radio-button">
                     <input class="payment-summary-radio-button-1 payment-summary-frame-4" type="radio"
                       name="delivery_option2" value="registered" />
-                    <span class="radio-label payment-summary-text-8 payment-summary-valign-text-middle">โอนเข้าบัญชี</span>
+                    <span class="radio-label payment-summary-text-8 payment-summary-valign-text-middle notosansthai-normal-black-20px">โอนเข้าบัญชี</span>
                   </label>
                 </div>
                 <img class="payment-summary-line" src="img/line-6-113.svg" alt="Line 6" />
@@ -137,14 +137,11 @@
               </div> -->
                 <!-- <img class="payment-summary-line" src="img/line-6-104.svg" alt="Line 7" /> -->
                 <div class="payment-summary-frame-3826">
-                  <div class="payment-summary-radio-button">
-                    <div class="payment-summary-frame-3-1">
-                      <!-- <div class="payment-summary-ellipse-2-1"></div> -->
-                      <input class="payment-summary-ellipse-2-1" type="radio" name="delivery_option2" value="registered"
-                        disabled />
-                    </div>
-                  </div>
-                  <div class="payment-summary-gfmis payment-summary-valign-text-middle">GFMIS</div>
+                  <label class="purchase-order-shipping-radio-button">
+                    <input class="payment-summary-radio-button-1 payment-summary-frame-4" type="radio"
+                      name="delivery_option2" value="registered"  disabled/>
+                    <span class="payment-summary-gfmis payment-summary-valign-text-middle notosansthai-normal-black-20px">GFMIS</span>
+                  </label>
                 </div>
               </div>
             </div>
@@ -326,17 +323,18 @@
                 คุณต้องการที่จะชำระเงินนี้หรือไม่<br />หากยืนยันจะเป็นอันเสร็จสิ้นการยื่นคำขอ
               </div>
             </div>
-            <div class="payment-summary-frame-38262">
-              <a onclick="showPopup()">
-                <article class="payment-summary-button-2 payment-summary-button-4">
-                  <div
-                    class="payment-summary-text_label payment-summary-valign-text-middle payment-summary-text_label-5">
-                    ยกเลิก</div>
+            
+            <div class="request-detail-school-frame-38379">
+              <a onclick="showPopup()" class="no-text-underline" style="width: -webkit-fill-available;">
+                <article class="request-detail-school-button-4 request-detail-school-button-6" style="min-width: 100px;">
+                  <div class="button-edit">
+                    ยกเลิก
+                  </div>
                 </article>
-              </a> <a href="./payment_qr.html">
-                <article class="payment-summary-button-3 payment-summary-button-4">
-                  <div
-                    class="payment-summary-text_label-4 payment-summary-valign-text-middle payment-summary-text_label-5 notosansthai-semi-bold-white-20px">
+              </a>
+              <a href="./payment_qr.html" class="no-text-underline" style="width: -webkit-fill-available;">
+                <article class="request-detail-school-button-5 request-detail-school-button-6" style="min-width: 100px;">
+                  <div class="button-confirm">
                     ยืนยัน
                   </div>
                 </article>
