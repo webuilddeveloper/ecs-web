@@ -30227,6 +30227,9 @@ body.no-scroll {
     font-family: var(--font-family-noto_sans_thai);
     color: black;
     font-size: var(--font-size-18);
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
   }
 
   .text-cause-order-cancel {
@@ -34834,6 +34837,9 @@ body.no-scroll {
     font-family: var(--font-family-noto_sans_thai);
     color: black;
     font-size: var(--font-size-16);
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
   }
 
   .text-cause-order-cancel {
@@ -40817,6 +40823,9 @@ body.no-scroll {
     font-family: var(--font-family-noto_sans_thai);
     color: black;
     font-size: var(--font-size-13);
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
   }
 
   .text-cause-order-cancel {
