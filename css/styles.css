@@ -1121,7 +1121,7 @@
 
 .content-ecs .frame-38373 {
   align-items: flex-start;
-  align-self: flex-end;
+  /* align-self: flex-end; */
   display: flex;
   flex-direction: column;
   gap: 40px;
@@ -4558,6 +4558,7 @@ input:focus {
   flex-direction: column;
   gap: 6px;
   position: relative;
+  width: 100%;
 }
 
 .order-approval-attach-book-text-8 {
@@ -4569,7 +4570,7 @@ input:focus {
   line-height: normal;
   margin-top: -1.00px;
   position: relative;
-  width: 747px;
+  width: 100%;
 }
 
 .order-approval-attach-book-span0 {
@@ -30270,6 +30271,22 @@ body.no-scroll {
     gap: 8px;
     padding: 9px 30px;
   }
+
+  .order-cancel-attach-book-button-new {
+    align-items: center;
+    background-color: var(--pink);
+    border: 1px solid;
+    border-color: #DCE0E5;
+    border-radius: 8px;
+    display: flex;
+    /* gap: 8px; */
+    justify-content: center;
+    overflow: hidden;
+    padding: 8px 16px;
+    position: relative;
+    width: 160px;
+    cursor: pointer;
+  }
 }
 
 /* à¸ªà¸³à¸«à¸£à¸±à¸š Tablet */
@@ -34897,6 +34914,21 @@ body.no-scroll {
     padding: 9px 20px;
   }
 
+  .order-cancel-attach-book-button-new {
+    align-items: center;
+    background-color: var(--pink);
+    border: 1px solid;
+    border-color: #DCE0E5;
+    border-radius: 8px;
+    display: flex;
+    /* gap: 8px; */
+    justify-content: center;
+    overflow: hidden;
+    padding: 8px 16px;
+    position: relative;
+    width: 160px;
+    cursor: pointer;
+  }
 }
 
 /* à¸ªà¸³à¸«à¸£à¸±à¸š Mobile */
@@ -40876,6 +40908,22 @@ body.no-scroll {
     min-width: -webkit-fill-available;
   }
 
+  .order-cancel-attach-book-button-new {
+    align-items: center;
+    background-color: var(--pink);
+    border: 1px solid;
+    border-color: #DCE0E5;
+    border-radius: 8px;
+    display: flex;
+    /* gap: 8px; */
+    justify-content: center;
+    overflow: hidden;
+    padding: 4px 8px;
+    position: relative;
+    width: 160px;
+    cursor: pointer;
+  }
+
 }
 
 /* media */
@@ -41569,4 +41617,40 @@ input[type="file"] {
 
 .position-absolute{
   position: absolute;
+}
+
+.order-cancel-attach-book-frame-96 {
+  align-items: center;
+  align-self: stretch;
+  display: flex;
+  gap: 5px;
+  height: 108px;
+  position: relative;
+  width: 100%;
+}
+
+.order-cancel-attach-book-frame-94 {
+  align-items: center;
+  display: flex;
+  gap: 16px;
+  height: 108px;
+  justify-content: space-around;
+  position: relative;
+  width: 100%;
+}
+
+.order-cancel-frame-14 {
+  align-items: center;
+  background-color: var(--main);
+  border-radius: 10px;
+  display: flex;
+  gap: 12px;
+  height: 45px;
+  justify-content: center;
+  margin-left: 23.0px;
+  margin-top: 33px;
+  overflow: hidden;
+  padding: 16px 54px;
+  position: relative;
+  align-self: center
 }
