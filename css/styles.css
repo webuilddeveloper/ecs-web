@@ -26111,6 +26111,8 @@ a:active {
   gap: 32px;
   justify-content: center;
   position: relative;
+  width: 100%;
+  margin-top: 50px;
 }
 
 .print-document-history-frame-38455 {
@@ -26495,6 +26497,7 @@ a:active {
   overflow: hidden;
   position: relative;
   color: var(--bggrey);
+  width: 100%;
 }
 
 
@@ -26509,9 +26512,10 @@ a:active {
   height: 100vh;
   background-color: rgba(20, 24, 31, 0.5);
   z-index: 1000;
+  overflow-x: auto;
 }
 
-.popup-confirm-frame-container {
+/* .popup-confirm-frame-container {
   background-color: #fff;
   border-radius: 10px;
   width: 552px;
@@ -26520,7 +26524,7 @@ a:active {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   position: relative;
   bottom: 200px;
-}
+} */
 
 .popup-confirm-popup {
   align-items: flex-end;
@@ -26675,10 +26679,11 @@ a:active {
 .popup-confirm-frame-1041 {
   cursor: pointer;
   height: 31px;
-  left: 505px;
+  /* left: 505px; */
   position: absolute;
   top: 10px;
   width: 31px;
+  right: 10px;
 }
 
 .popup-confirm-button-6 {
@@ -26927,7 +26932,7 @@ body.no-scroll {
     flex-direction: column;
     height: auto;
     width: 100%;
-    padding: 0px 30px;
+    padding: 0px 100px;
   }
 
   .content-ecs .frame-38489 {
@@ -30384,6 +30389,21 @@ body.no-scroll {
     cursor: pointer;
   }
 
+  .popup-confirm-frame-container {
+    position: relative;
+    width: 100%;
+    max-width: 90%;
+    bottom: 45%;
+    left: 25%;
+  }
+
+  .popup-confirm-frame-container2 {
+    position: relative;
+    width: 100%;
+    max-width: 90%;
+    bottom: 25%;
+    left: 25%;
+  }
 }
 
 /* à¸ªà¸³à¸«à¸£à¸±à¸š Tablet */
@@ -33225,7 +33245,7 @@ body.no-scroll {
   }
 
   .content-center {
-    margin-top: 5px;
+    margin-top: 30px;
   }
 
   .content-ecs .frame-38356 {
@@ -35071,6 +35091,22 @@ body.no-scroll {
   .content-ecs .frame-3346 {
     width: max-content;
 }
+
+  .popup-confirm-frame-container {
+    position: relative;
+    width: 100%;
+    max-width: 90%;
+    bottom: 45%;
+    left: 10%;
+  }
+
+  .popup-confirm-frame-container2 {
+    position: relative;
+    width: 100%;
+    max-width: 90%;
+    bottom: 25%;
+    left: 10%;
+  }
 
 }
 
@@ -38311,7 +38347,7 @@ body.no-scroll {
   }
 
   .content-center {
-    margin-top: 5px;
+    margin-top: 30px;
     display: flex;
     flex-direction: column;
   }
@@ -39468,6 +39504,7 @@ body.no-scroll {
     position: relative;
     width: -webkit-fill-available;
     justify-content: center;
+    flex-wrap: wrap;
   }
 
   .request-detail-school-button-4 {
@@ -41218,6 +41255,21 @@ body.no-scroll {
     height: auto;
     align-items: anchor-center;
   }
+  .popup-confirm-frame-container {
+    position: relative;
+    width: 100%;
+    max-width: 90%;
+    bottom: 45%;
+    /* left: 20%; */
+  }
+
+  .popup-confirm-frame-container2 {
+    position: relative;
+    width: 100%;
+    max-width: 90%;
+    bottom: 25%;
+    /* left: 20%; */
+  }
 }
 
 /* media */
@@ -41332,6 +41384,7 @@ body.no-scroll {
   padding: 8px;
   position: relative;
   height: -webkit-fill-available;
+  text-align: -webkit-center;
 }
 
 .pdpa-view {
