@@ -70,19 +70,31 @@
   --font-family-poppins: "Poppins", Helvetica;
 }
 
+.hd-left {
+  display: flex;
+  gap: 70px;
+}
+
 
 .navbar-ecs {
   align-items: center;
   display: inline-flex;
-  gap: 70px;
+  gap: 40px;
   margin-bottom: 4.0px;
-  margin-left: 41px;
+  /* margin-left: 70px; */
   position: relative;
   color: #ffffff;
   font-family: "Noto Sans Thai", Helvetica;
   font-size: 20px;
   font-style: normal;
   font-weight: 600;
+}
+
+.content-header {
+  max-width: 1340px;
+  display: flex;
+  width: -webkit-fill-available;
+  justify-content: space-between;
 }
 
 .navbar-link-text-ecs {
@@ -149,7 +161,7 @@
   display: flex;
   flex-direction: column;
   gap: 21px;
-  margin-bottom: 77.0px;
+  /* margin-bottom: 77.0px; */
   position: relative;
   width: 525px;
 }
@@ -26884,7 +26896,7 @@ body.no-scroll {
     gap: 56px;
     justify-content: flex-end;
     margin-bottom: 5.0px;
-    margin-left: 345px;
+    /* margin-left: 345px; */
     position: relative;
   }
 
@@ -30307,8 +30319,33 @@ body.no-scroll {
     background-color: #E0EDFF;
     border-radius: 16px;
     padding: 16px;
+    width: -webkit-fill-available;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .title-button-od-create {
     font-size: var(--font-size-20);
     font-family: var(--font-family-noto_sans_thai);
+    font-weight: 600;
+    display: flex;
+    gap: 16px;
+    align-items: center;
+  }
+
+  .card-build-order .icon {
+    width: 48px;
+    height: 48px;
+  }
+
+  .card-build-order .button {
+    background-color: #3348FF;
+    color: var(--white);
+    font-size: var(--font-size-16);
+    font-family: var(--font-family-noto_sans_thai);
+    font-weight: 600;
+    padding: 12px 24px;
+    height: auto;
   }
 
 }
