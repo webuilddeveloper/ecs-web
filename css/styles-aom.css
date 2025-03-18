@@ -11,6 +11,16 @@
     }
 }
 
-.title-button-od-create {
-    background-color: #E0EDFF;
+.list-product-in-column {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.list-column {
+    flex-direction: column;
+}
+
+.th-20-px {
+    min-width: 20px;
 }

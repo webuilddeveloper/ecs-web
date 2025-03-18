@@ -42134,4 +42134,13 @@ hr {
 
 .title-column-table {
   display: flex;
+  align-items: center;
+}
+
+.al-start {
+  align-items: flex-start;
+}
+
+.al-center {
+  align-content: center;
 }
