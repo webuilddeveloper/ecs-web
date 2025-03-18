@@ -21,29 +21,120 @@
     </a>
     <div class="navbar-ecs header-menu">
       <div class="navbar-link-text-ecs">
-        <a href="./purchase-order-school.html">
-          ออกใบขอสั่งซื้อ
-        </a>
+        <div class="title-menu-header pointer" onclick="showMenuNav1()">
+          ใบขอสั่งซื้อ
+          <img class="icon-down-header" src="img/arrow-down-white.svg" alt="logo ecs" />
+        </div>
+        <div class="submenu-theme" id="menu-header-1">
+          <a href="./purchase-order-school.html">
+            ออกใบขอสั่งซื้อ
+          </a>
+          <hr>
+          <a href="./draft-school.html">
+            ร่างใบขอสั่งซื้อ
+          </a>
+          <hr>
+          <div class="sub-menu-card">
+            <div class="title-menu-sub-root pointer" onclick="showMenuNav1_1()">
+              รายการใบขอสั่งซื้อ
+              <img class="icon-menu-sub-root" src="img/arrow-right-white.svg" alt="logo ecs" />
+            </div>
+            <div class="submenu-theme-2" id="menu-header-1-1">
+              <a href="./purchase-order-school.html">
+                ทั้งหมด
+              </a>
+              <hr>
+              <a href="./waiting-approve-school.html">
+                รอรับการอนุมัติ
+              </a>
+              <hr>
+              <a href="./purchase-order-school.html">
+                ไม่ได้รับการอนุมัติ
+              </a>
+              <hr>
+              <a href="./approve-school.html">
+                ได้รับการอนุมัติ
+              </a>
+              <hr>
+              <a href="./paid_school.html">
+                รอการชำระเงิน
+              </a>
+              <hr>
+              <a href="./cancel-school.html">
+                รายการที่ถูกยกเลิก
+              </a>
+            </div>
+          </div>
+        </div>
       </div>
       <div class="navbar-link-text-ecs">
-        <a href="./approve-school.html">
-          เอกสารใบขอสั่งซื้อ
-        </a>
+        <div class="title-menu-header pointer" onclick="showMenuNav2()">
+          คำสั่งซื้อ
+          <img class="icon-down-header" src="img/arrow-down-white.svg" alt="logo ecs" />
+        </div>
+        <div class="submenu-theme" id="menu-header-2">
+          <a href="./purchase-order-school.html">
+            ทั้งหมด
+          </a>
+          <hr>
+          <a href="./purchase-order-school.html">
+            รอการตรวจสอบ
+          </a>
+          <hr>
+          <a href="./purchase-order-school.html">
+            รอการแก้ไข
+          </a>
+          <hr>
+          <a href="./purchase-order-school.html">
+            ที่ต้องได้รับ
+          </a>
+          <hr>
+          <a href="./purchase-order-school.html">
+            จัดส่งสำเร็จ
+          </a>
+          <hr>
+          <a href="./purchase-order-school.html">
+            ยกเลิก/คืนเงิน/คืนสินค้า
+          </a>
+        </div>
       </div>
       <div class="navbar-link-text-ecs">
-        <a href="./delivered-order.html">
-          รายการคำสั่งซื้อ
-        </a>
+        <div class="title-menu-header pointer" onclick="showMenuNav3()">
+          เลข ปพ.
+          <img class="icon-down-header" src="img/arrow-down-white.svg" alt="logo ecs" />
+        </div>
+        <div class="submenu-theme" id="menu-header-3">
+          <a href="./purchase-order-school.html">
+            พิมพ์ใบ ปพ.
+          </a>
+          <hr>
+          <a href="./purchase-order-school.html">
+            ประวัติการพิมพ์
+          </a>
+          <hr>
+          <a href="./order-cancel.html">
+            ยกเลิกเลข ปพ.
+          </a>
+        </div>
       </div>
       <div class="navbar-link-text-ecs">
-        <a href="./order-cancel.html">
-          ยกเลิกเลข ปพ.
-        </a>
-      </div>
-      <div class="navbar-link-text-ecs">
-        <a href="./delivered-order.html">
-          ประวัติการสั่งซื้อ
-        </a>
+        <div class="title-menu-header pointer" onclick="showMenuNav4()">
+          รายงาน.
+          <img class="icon-down-header" src="img/arrow-down-white.svg" alt="logo ecs" />
+        </div>
+        <div class="submenu-theme" id="menu-header-4">
+          <a href="./purchase-order-school.html">
+            รายงานการพิมพ์ใบ ปพ.
+          </a>
+          <hr>
+          <a href="./purchase-order-school.html">
+            รายงานการใช้ตัวเลข
+          </a>
+          <hr>
+          <a href="./purchase-order-school.html">
+            รายงานการสั่งซื้อ
+          </a>
+        </div>
       </div>
     </div>
     <div class="header-action-ecs">
@@ -80,38 +171,123 @@
         </ul>
       </div>
 
-      <a href="./profile-school.html">
-        <img class="vector" src="img/vector-2.svg" alt="Vector" />
-      </a>
+      
+      <div class="title-menu-header pointer" onclick="showMenuNav3()">
+        <a href="./profile-school.html">
+          <img class="vector" src="img/vector-2.svg" alt="Vector" />
+        </a>
+          ออกจากระบบ
+        </div>
     </div>
-
   </div>
 
   <div id="subMenuHeader" class="sub-menu-header" style="display: none;">
-    <a href="./purchase-order-school.html"
-      class="notosansthai-normal-black-20px no-text-underline textItemMenuHeader itemMenuHeader">
-      ออกใบขอสั่งซื้อ
-    </a>
+    <div class="title-menu-header" onclick="showMenuNav1()">
+      ใบขอสั่งซื้อ
+      <img class="icon-down-header" src="img/arrow-down-white.svg" alt="logo ecs" />
+    </div>
+    <div class="sub-menu-header-1-rps" id="menu-header-1-rps">
+      <a class="title-menu-header" href="./purchase-order-school.html">
+        ออกใบขอสั่งซื้อ
+      </a>
+      <hr>
+      <a class="title-menu-header" href="./purchase-order-school.html">
+        ออกใบขอสั่งซื้อ
+      </a>
+      <hr>
+      <div class="title-menu-header" onclick="showMenuNav1_1()">
+        รายการใบขอสั่งซื้อ
+        <img class="icon-down-header" src="img/arrow-down-white.svg" alt="logo ecs" />
+      </div>
+      <div class="sub-menu-header-1-1-rps" id="menu-header-1-1-rps">
+        <a class="title-menu-header" href="./purchase-order-school.html">
+          ทั้งหมด
+        </a>
+        <hr>
+        <a class="title-menu-header" href="./purchase-order-school.html">
+          รอรับการอนุมัติ
+        </a>
+        <hr>
+        <a class="title-menu-header" href="./purchase-order-school.html">
+          ได้รับการอนุมัติ
+        </a>
+        <hr>
+        <a class="title-menu-header" href="./purchase-order-school.html">
+          รอการชำระเงิน
+        </a>
+        <hr>
+        <a class="title-menu-header" href="./purchase-order-school.html">
+          รายการที่ถูกยกเลิก
+        </a>
+      </div>
+    </div>
     <hr />
-    <a href="./approve-school.html"
-      class="notosansthai-normal-black-20px no-text-underline textItemMenuHeader itemMenuHeader">
-      เอกสารใบขอสั่งซื้อ
-    </a>
+    <div class="title-menu-header" onclick="showMenuNav2()">
+      คำสั่งซื้อ
+      <img class="icon-down-header" src="img/arrow-down-white.svg" alt="logo ecs" />
+    </div>
+    <div class="sub-menu-header-2-rps" id="menu-header-2-rps">
+      <a class="title-menu-header" href="./purchase-order-school.html">
+        ทั้งหมด
+      </a>
+      <hr>
+      <a class="title-menu-header" href="./purchase-order-school.html">
+        รอตรวจสอบ
+      </a>
+      <hr>
+      <a class="title-menu-header" href="./purchase-order-school.html">
+        รอการแก้ไข
+      </a>
+      <hr>
+      <a class="title-menu-header" href="./purchase-order-school.html">
+        ที่ต้องได้รับ
+      </a>
+      <hr>
+      <a class="title-menu-header" href="./purchase-order-school.html">
+        จัดส่งสำเร็จ
+      </a>
+      <hr>
+      <a class="title-menu-header" href="./purchase-order-school.html">
+        ยกเลิก/คืนเงิน/คืนสินค้า
+      </a>
+      
+    </div>
     <hr />
-    <a href="./delivered-order.html"
-      class="notosansthai-normal-black-20px no-text-underline textItemMenuHeader itemMenuHeader">
-      รายการคำสั่งซื้อ
-    </a>
+    <div class="title-menu-header" onclick="showMenuNav3()">
+      เลข ปพ.
+      <img class="icon-down-header" src="img/arrow-down-white.svg" alt="logo ecs" />
+    </div>
+    <div class="sub-menu-header-3-rps" id="menu-header-3-rps">
+      <a class="title-menu-header" href="./purchase-order-school.html">
+        พิมพ์ใบ ปพ.
+      </a>
+      <hr>
+      <a class="title-menu-header" href="./purchase-order-school.html">
+        ประวัติการพิมพ์
+      </a>
+      <hr>
+      <a class="title-menu-header" href="./purchase-order-school.html">
+        ยกเลิกเลข ปพ.
+      </a>
+    </div>
     <hr />
-    <a href="./order-cancel.html"
-      class="notosansthai-normal-black-20px no-text-underline textItemMenuHeader itemMenuHeader">
-      ยกเลิกเลข ปพ.
-    </a>
-    <hr />
-    <a href="./delivered-order.html"
-      class="notosansthai-normal-black-20px no-text-underline textItemMenuHeader itemMenuHeader">
-      ประวัติการสั่งซื้อ
-    </a>
+    <div class="title-menu-header" onclick="showMenuNav4()">
+      รายงาน.
+      <img class="icon-down-header" src="img/arrow-down-white.svg" alt="logo ecs" />
+    </div>
+    <div class="sub-menu-header-4-rps" id="menu-header-4-rps">
+      <a class="title-menu-header" href="./purchase-order-school.html">
+        รายงานการพิมพ์ ใบ ปพ.
+      </a>
+      <hr>
+      <a class="title-menu-header" href="./purchase-order-school.html">
+        รายงานการใช้ตัวเลข
+      </a>
+      <hr>
+      <a class="title-menu-header" href="./purchase-order-school.html">
+        รายงานการสั่งซื้อ
+      </a>
+    </div>
   </div>
   <div class="content-center">
     <div class="content-ecs">
@@ -319,6 +495,142 @@
         if (window.submitted) window.submitted();
       }
     }
+
+    const menuHeader1 = document.getElementById("menu-header-1");
+    const menuHeader1_rps = document.getElementById("menu-header-1-rps");
+    const menuHeader1_1 = document.getElementById("menu-header-1-1");
+    const menuHeader1_1_rps = document.getElementById("menu-header-1-1-rps");
+    const menuHeader2 = document.getElementById("menu-header-2");
+    const menuHeader2_rps = document.getElementById("menu-header-2-rps");
+    const menuHeader3 = document.getElementById("menu-header-3");
+    const menuHeader3_rps = document.getElementById("menu-header-3-rps");
+    const menuHeader4 = document.getElementById("menu-header-4");
+    const menuHeader4_rps = document.getElementById("menu-header-4-rps");
+
+
+    let isMenuHeader1 = false;
+    let isMenuHeader1_1 = false;
+    let isMenuHeader2 = false;
+    let isMenuHeader3 = false;
+    let isMenuHeader4 = false;
+
+    function showMenuNav1() {
+      isMenuHeader1 = !isMenuHeader1;
+      isMenuHeader1_1 = false;
+      isMenuHeader2 = false;
+      isMenuHeader3 = false;
+      isMenuHeader4 = false;
+      // const subMenuHeaderMobile = document.getElementById("subMenuHeaderMobile");
+      menuHeader1_1.style.display = "none";
+      menuHeader2.style.display = "none";
+      menuHeader2_rps.style.display = "none";
+      menuHeader3.style.display = "none";
+      menuHeader3_rps.style.display = "none";
+      menuHeader4.style.display = "none";
+      menuHeader4_rps.style.display = "none";
+      if (isMenuHeader1) {
+        menuHeader1.style.display = "flex";
+        menuHeader1_rps.style.display = "flex";
+        // subMenuHeaderMobile.style.display = "flex";
+      } else {
+        menuHeader1.style.display = "none";
+        menuHeader1_rps.style.display = "none";
+        // subMenuHeaderMobile.style.display = "none";
+      }
+    }
+
+    function showMenuNav1_1() {
+      isMenuHeader1_1 = !isMenuHeader1_1;
+      // const subMenuHeaderMobile = document.getElementById("subMenuHeaderMobile");
+      if (isMenuHeader1_1) {
+        menuHeader1_1.style.display = "flex";
+        menuHeader1_1_rps.style.display = "flex";
+        // subMenuHeaderMobile.style.display = "flex";
+      } else {
+        menuHeader1_1.style.display = "none";
+        menuHeader1_1_rps.style.display = "none";
+        // subMenuHeaderMobile.style.display = "none";
+      }
+    }
+
+
+    function showMenuNav2() {
+      isMenuHeader2 = !isMenuHeader2;
+      isMenuHeader1 = false;
+      isMenuHeader1_1 = false;
+      isMenuHeader3 = false;
+      isMenuHeader4 = false;
+      menuHeader1.style.display = "none";
+      menuHeader1_rps.style.display = "none";
+      menuHeader1_1.style.display = "none";
+      menuHeader1_1_rps.style.display = "none";
+      menuHeader3.style.display = "none";
+      menuHeader3_rps.style.display = "none";
+      menuHeader4.style.display = "none";
+      menuHeader4_rps.style.display = "none";
+      // const subMenuHeaderMobile = document.getElementById("subMenuHeaderMobile");
+      if (isMenuHeader2) {
+        menuHeader2.style.display = "flex";
+        menuHeader2_rps.style.display = "flex";
+        // subMenuHeaderMobile.style.display = "flex";
+      } else {
+        menuHeader2.style.display = "none";
+        menuHeader2_rps.style.display = "none";
+        // subMenuHeaderMobile.style.display = "none";
+      }
+    }
+
+
+    function showMenuNav3() {
+      isMenuHeader3 = !isMenuHeader3;
+      isMenuHeader1 = false;
+      isMenuHeader1_1 = false;
+      isMenuHeader2 = false;
+      isMenuHeader4 = false;
+      menuHeader1.style.display = "none";
+      menuHeader1_rps.style.display = "none";
+      menuHeader1_1.style.display = "none";
+      menuHeader1_1_rps.style.display = "none";
+      menuHeader2.style.display = "none";
+      menuHeader2_rps.style.display = "none";
+      menuHeader4.style.display = "none";
+      menuHeader4_rps.style.display = "none";
+      if (isMenuHeader3) {
+        menuHeader3.style.display = "flex";
+        menuHeader3_rps.style.display = "flex";
+      } else {
+        menuHeader3.style.display = "none";
+        menuHeader3_rps.style.display = "none";
+      }
+    }
+
+
+    function showMenuNav4() {
+      isMenuHeader4 = !isMenuHeader4;
+      isMenuHeader1 = false;
+      isMenuHeader1_1 = false;
+      isMenuHeader2 = false;
+      isMenuHeader3 = false;
+      menuHeader1.style.display = "none";
+      menuHeader1_rps.style.display = "none";
+      menuHeader1_1.style.display = "none";
+      menuHeader1_1_rps.style.display = "none";
+      menuHeader2.style.display = "none";
+      menuHeader2_rps.style.display = "none";
+      menuHeader3.style.display = "none";
+      menuHeader3_rps.style.display = "none";
+      // const subMenuHeaderMobile = document.getElementById("subMenuHeaderMobile");
+      if (isMenuHeader4) {
+        menuHeader4.style.display = "flex";
+        menuHeader4_rps.style.display = "flex";
+        // subMenuHeaderMobile.style.display = "flex";
+      } else {
+        menuHeader4.style.display = "none";
+        menuHeader4_rps.style.display = "none";
+        // subMenuHeaderMobile.style.display = "none";
+      }
+    }
+
 
     let isSubMenuHeader = false;
 
