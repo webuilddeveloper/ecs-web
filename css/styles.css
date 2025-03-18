@@ -564,6 +564,7 @@
   flex: 0 0 auto;
   position: relative;
   width: 100%;
+  overflow-x: auto;
 }
 
 .content-ecs .column-table-default {
@@ -35088,9 +35089,9 @@ body.no-scroll {
     align-items: anchor-center;
   }
 
-  .content-ecs .frame-3346 {
+  /* .content-ecs .frame-3346 {
     width: max-content;
-}
+} */
 
   .popup-confirm-frame-container {
     position: relative;
@@ -40579,9 +40580,9 @@ body.no-scroll {
     overflow: scroll;
   }
 
-  .content-ecs .frame-3346 {
+  /* .content-ecs .frame-3346 {
     width: max-content;
-  }
+  } */
 
   .content-ecs .frame-38449 {
     flex-direction: column;
@@ -41861,7 +41862,7 @@ input[type="file"] {
   flex: 0 0 auto;
   position: relative;
   width: 100%;
-  /* overflow-y: auto; */
+  overflow-x: auto;
 }
 
 .order-approval-list-text-sm-wrap {
