@@ -347,18 +347,18 @@
                       <tr>
                         <th class="order-approval-list-table-header-2 notosansthai-semi-bold-vulcan-15px">ลำดับ</th>
 
-                        <th class="order-approval-list-table-header-2 notosansthai-semi-bold-vulcan-15px">
+                        <th class="order-approval-list-table-header-2 notosansthai-semi-bold-vulcan-15px" style="min-width: 125px;">
                           ประเภทแบบพิมพ์</th>
-                        <th class="order-approval-list-table-header-2 notosansthai-semi-bold-vulcan-15px">จำนวนตัวเลข
+                        <th class="order-approval-list-table-header-2 notosansthai-semi-bold-vulcan-15px" style="min-width: 125px;">จำนวนตัวเลข
                         </th>
-                        <th class="order-approval-list-table-header-2 notosansthai-semi-bold-vulcan-15px">
+                        <th class="order-approval-list-table-header-2 notosansthai-semi-bold-vulcan-15px" style="min-width: 125px;">
                           ชุดที่
                         </th>
-                        <th class="order-approval-list-table-header-2 notosansthai-semi-bold-vulcan-15px">
+                        <th class="order-approval-list-table-header-2 notosansthai-semi-bold-vulcan-15px" style="min-width: 125px;">
                           เลขที่แรก</th>
-                        <th class="order-approval-list-table-header-2 notosansthai-semi-bold-vulcan-15px">เลขที่สุดท้าย
+                        <th class="order-approval-list-table-header-2 notosansthai-semi-bold-vulcan-15px" style="min-width: 125px;">เลขที่สุดท้าย
                         </th>
-                        <th class="order-approval-list-table-header-2 notosansthai-semi-bold-vulcan-15px">
+                        <th class="order-approval-list-table-header-2 notosansthai-semi-bold-vulcan-15px" style="min-width: 125px;">
                           พิมพ์ใบ ปพ.
                         </th>
                       </tr>
@@ -915,6 +915,11 @@
           }
         }
       }
+    }
+ 
+    function toggleNotificationPanel() {
+      const panel = document.getElementById('notification-panel');
+      panel.classList.toggle('hidden');
     }
  </script>
 </body>
