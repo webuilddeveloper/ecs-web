@@ -22,173 +22,176 @@
   <!-- <div class="desktop"> -->
   <div class="header-ecs">
     <div class="content-header">
-    <div class="hd-left">
-      <a href="./login.html">
-        <img class="logo-ecs" src="img/logo------1.png" alt="logo ecs" />
-      </a>
-      <div class="navbar-ecs header-menu">
-        <div class="navbar-link-text-ecs">
-          <div class="title-menu-header pointer" onclick="showMenuNav1()">
-            ใบขอสั่งซื้อ
-            <img class="icon-down-header" src="img/arrow-down-white.svg" alt="logo ecs" />
-          </div>
-          <div class="submenu-theme" id="menu-header-1">
-            <a href="./purchase-order-school.html">
-              ออกใบขอสั่งซื้อ
-            </a>
-            <hr>
-            <a href="./draft-school.html">
-              ร่างใบขอสั่งซื้อ
-            </a>
-            <hr>
-            <div class="sub-menu-card">
-              <div class="title-menu-sub-root pointer" onclick="showMenuNav1_1()">
-                รายการใบขอสั่งซื้อ
-                <img class="icon-menu-sub-root" src="img/arrow-right-white.svg" alt="logo ecs" />
-              </div>
-              <div class="submenu-theme-2" id="menu-header-1-1">
-                <a href="./purchase-order-school.html">
-                  ทั้งหมด
-                </a>
-                <hr>
-                <a href="./waiting-approve-school.html">
-                  รอรับการอนุมัติ
-                </a>
-                <hr>
-                <a href="./purchase-order-school.html">
-                  ไม่ได้รับการอนุมัติ
-                </a>
-                <hr>
-                <a href="./approve-school.html">
-                  ได้รับการอนุมัติ
-                </a>
-                <hr>
-                <a href="./paid_school.html">
-                  รอการชำระเงิน
-                </a>
-                <hr>
-                <a href="./cancel-school.html">
-                  รายการที่ถูกยกเลิก
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="navbar-link-text-ecs">
-          <div class="title-menu-header pointer" onclick="showMenuNav2()">
-            คำสั่งซื้อ
-            <img class="icon-down-header" src="img/arrow-down-white.svg" alt="logo ecs" />
-          </div>
-          <div class="submenu-theme" id="menu-header-2">
-            <a href="./purchase-order-school.html">
-              ทั้งหมด
-            </a>
-            <hr>
-            <a href="./purchase-order-school.html">
-              รอการตรวจสอบ
-            </a>
-            <hr>
-            <a href="./purchase-order-school.html">
-              รอการแก้ไข
-            </a>
-            <hr>
-            <a href="./purchase-order-school.html">
-              ที่ต้องได้รับ
-            </a>
-            <hr>
-            <a href="./purchase-order-school.html">
-              จัดส่งสำเร็จ
-            </a>
-            <hr>
-            <a href="./purchase-order-school.html">
-              ยกเลิก/คืนเงิน/คืนสินค้า
-            </a>
-          </div>
-        </div>
-        <div class="navbar-link-text-ecs">
-          <div class="title-menu-header pointer" onclick="showMenuNav3()">
-            เลข ปพ.
-            <img class="icon-down-header" src="img/arrow-down-white.svg" alt="logo ecs" />
-          </div>
-          <div class="submenu-theme" id="menu-header-3">
-            <a href="./purchase-order-school.html">
-              พิมพ์ใบ ปพ.
-            </a>
-            <hr>
-            <a href="./purchase-order-school.html">
-              ประวัติการพิมพ์
-            </a>
-            <hr>
-            <a href="./order-cancel.html">
-              ยกเลิกเลข ปพ.
-            </a>
-          </div>
-        </div>
-        <div class="navbar-link-text-ecs">
-          <div class="title-menu-header pointer" onclick="showMenuNav4()">
-            รายงาน.
-            <img class="icon-down-header" src="img/arrow-down-white.svg" alt="logo ecs" />
-          </div>
-          <div class="submenu-theme" id="menu-header-4">
-            <a href="./purchase-order-school.html">
-              รายงานการพิมพ์ใบ ปพ.
-            </a>
-            <hr>
-            <a href="./purchase-order-school.html">
-              รายงานการใช้ตัวเลข
-            </a>
-            <hr>
-            <a href="./purchase-order-school.html">
-              รายงานการสั่งซื้อ
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="header-action-ecs">
-      <img class="group site-navbar" src="img/Icon-Service.png" alt="Service" onclick="showMenuNav()" />
-      <div class="notification-icon">
-        <img class="group" src="img/group@2x.png" alt="Group" onclick="toggleNotificationPanel()" />
-        <span id="notification-badge" class="notification-badge"></span> <!-- จุดแดง -->
-      </div>
-
-      <div id="notification-panel" class="notification-panel hidden">
-        <ul class="notification-list">
-          <li class="notification-item unread">
-            <span class="status-indicator"></span>
-            <div class="notification-content">
-              <p class="notosansthai-normal-vulcan-15px">
-                <strong class="notosansthai-semi-bold-vulcan-15px">หมายเลขคำสั่งซื้อ:</strong> 12345
-              </p>
-              <p class="notosansthai-normal-vulcan-15px">
-                <strong class="notosansthai-semi-bold-vulcan-15px">สถานะ:</strong> รอดำเนินการ
-              </p>
-            </div>
-          </li>
-          <li class="notification-item">
-            <span class="status-indicator read"></span>
-            <div class="notification-content">
-              <p class="notosansthai-normal-vulcan-15px">
-                <strong class="notosansthai-semi-bold-vulcan-15px">หมายเลขคำสั่งซื้อ:</strong> 67890
-              </p>
-              <p class="notosansthai-normal-vulcan-15px">
-                <strong class="notosansthai-semi-bold-vulcan-15px">สถานะ:</strong> สำเร็จ
-              </p>
-            </div>
-          </li>
-        </ul>
-      </div>
-
-
-      <div class="title-menu-header pointer" onclick="showMenuNav3()">
-        <a href="./profile-school.html">
-          <img class="vector" src="img/vector-2.svg" alt="Vector" />
+      <div class="hd-left">
+        <a href="./login.html">
+          <img class="logo-ecs" src="img/logo------1.png" alt="logo ecs" />
         </a>
-        ออกจากระบบ
+        <div class="navbar-ecs header-menu">
+          <div class="navbar-link-text-ecs">
+            <div class="title-menu-header pointer" onclick="showMenuNav1()">
+              ใบขอสั่งซื้อ
+              <img class="icon-down-header" src="img/arrow-down-white.svg" alt="logo ecs" />
+            </div>
+            <div class="submenu-theme" id="menu-header-1">
+              <a href="./purchase-order-school.html">
+                ออกใบขอสั่งซื้อ
+              </a>
+              <hr>
+              <a href="./draft-school.html">
+                ร่างใบขอสั่งซื้อ
+              </a>
+              <hr>
+              <div class="sub-menu-card">
+                <div class="title-menu-sub-root pointer" onclick="showMenuNav1_1()">
+                  รายการใบขอสั่งซื้อ
+                  <img class="icon-menu-sub-root" src="img/arrow-right-white.svg" alt="logo ecs" />
+                </div>
+                <div class="submenu-theme-2" id="menu-header-1-1">
+                  <a href="./purchase-order-school.html">
+                    ทั้งหมด
+                  </a>
+                  <hr>
+                  <a href="./waiting-approve-school.html">
+                    รอรับการอนุมัติ
+                  </a>
+                  <hr>
+                  <a href="./purchase-order-school.html">
+                    ไม่ได้รับการอนุมัติ
+                  </a>
+                  <hr>
+                  <a href="./approve-school.html">
+                    ได้รับการอนุมัติ
+                  </a>
+                  <hr>
+                  <a href="./paid_school.html">
+                    รอการชำระเงิน
+                  </a>
+                  <hr>
+                  <a href="./cancel-school.html">
+                    รายการที่ถูกยกเลิก
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="navbar-link-text-ecs">
+            <div class="title-menu-header pointer" onclick="showMenuNav2()">
+              คำสั่งซื้อ
+              <img class="icon-down-header" src="img/arrow-down-white.svg" alt="logo ecs" />
+            </div>
+            <div class="submenu-theme" id="menu-header-2">
+              <a href="./purchase-order-school.html">
+                ทั้งหมด
+              </a>
+              <hr>
+              <a href="./purchase-order-school.html">
+                รอการตรวจสอบ
+              </a>
+              <hr>
+              <a href="./purchase-order-school.html">
+                รอการแก้ไข
+              </a>
+              <hr>
+              <a href="./purchase-order-school.html">
+                ที่ต้องได้รับ
+              </a>
+              <hr>
+              <a href="./purchase-order-school.html">
+                จัดส่งสำเร็จ
+              </a>
+              <hr>
+              <a href="./purchase-order-school.html">
+                ยกเลิก/คืนเงิน/คืนสินค้า
+              </a>
+            </div>
+          </div>
+          <div class="navbar-link-text-ecs">
+            <div class="title-menu-header pointer" onclick="showMenuNav3()">
+              เลข ปพ.
+              <img class="icon-down-header" src="img/arrow-down-white.svg" alt="logo ecs" />
+            </div>
+            <div class="submenu-theme" id="menu-header-3">
+              <a href="./purchase-order-school.html">
+                พิมพ์ใบ ปพ.
+              </a>
+              <hr>
+              <a href="./purchase-order-school.html">
+                ประวัติการพิมพ์
+              </a>
+              <hr>
+              <a href="./order-cancel.html">
+                ยกเลิกเลข ปพ.
+              </a>
+            </div>
+          </div>
+          <div class="navbar-link-text-ecs">
+            <div class="title-menu-header pointer" onclick="showMenuNav4()">
+              รายงาน.
+              <img class="icon-down-header" src="img/arrow-down-white.svg" alt="logo ecs" />
+            </div>
+            <div class="submenu-theme" id="menu-header-4">
+              <a href="./purchase-order-school.html">
+                รายงานการพิมพ์ใบ ปพ.
+              </a>
+              <hr>
+              <a href="./purchase-order-school.html">
+                รายงานการใช้ตัวเลข
+              </a>
+              <hr>
+              <a href="./purchase-order-school.html">
+                รายงานการสั่งซื้อ
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="header-action-ecs">
+        <img class="group site-navbar" src="img/Icon-Service.png" alt="Service" onclick="showMenuNav()" />
+        <div class="notification-icon">
+          <img class="group" src="img/group@2x.png" alt="Group" onclick="toggleNotificationPanel()" />
+          <span id="notification-badge" class="notification-badge"></span> <!-- จุดแดง -->
+        </div>
+
+        <div id="notification-panel" class="notification-panel hidden">
+          <ul class="notification-list">
+            <li class="notification-item unread">
+              <span class="status-indicator"></span>
+              <div class="notification-content">
+                <p class="notosansthai-normal-vulcan-15px">
+                  <strong class="notosansthai-semi-bold-vulcan-15px">หมายเลขคำสั่งซื้อ:</strong> 12345
+                </p>
+                <p class="notosansthai-normal-vulcan-15px">
+                  <strong class="notosansthai-semi-bold-vulcan-15px">สถานะ:</strong> รอดำเนินการ
+                </p>
+              </div>
+            </li>
+            <li class="notification-item">
+              <span class="status-indicator read"></span>
+              <div class="notification-content">
+                <p class="notosansthai-normal-vulcan-15px">
+                  <strong class="notosansthai-semi-bold-vulcan-15px">หมายเลขคำสั่งซื้อ:</strong> 67890
+                </p>
+                <p class="notosansthai-normal-vulcan-15px">
+                  <strong class="notosansthai-semi-bold-vulcan-15px">สถานะ:</strong> สำเร็จ
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+
+
+        <div class="title-menu-header">
+          <a href="./profile-school.html" onclick="showMenuNav3()">
+            <img class="vector" src="img/vector-2.svg" alt="Vector" />
+          </a>
+          <a href="./profile-school.html" class="title-logout pointer">
+            ออกจากระบบ
+          </a>
+        </div>
       </div>
     </div>
-  </div>
   </div>
 
   <div id="subMenuHeader" class="sub-menu-header" style="display: none;">
@@ -324,7 +327,13 @@
               พร้อมให้บริการการสั่งซื้อเอกสารใบ ปพ. ผ่านช่องทางออนไลน์ <br />สะดวกรวดเร็ว ง่ายต่อการสั่งซื้อ ตรวจสอบ
               ติดตามคำสั่งซื้อ
             </p>
-            ออกใบขอสั่งซื้อ
+            <div class="card-build-order">
+              <div class="title-button-od-create">
+                <img class="icon" src="img/icon-build-order.png" alt="Rectangle 4305" />
+                ออกใบขอสั่งซื้อ
+              </div>
+              <a href="./purchase-order-school.html" class="button pointer">ดำเนินการต่อ</a>
+            </div>
 
           </div>
 
@@ -350,7 +359,7 @@
               <img class="icon" src="img/icon-build-order.png" alt="Rectangle 4305" />
               ออกใบขอสั่งซื้อ
             </div>
-            <button class="button">ดำเนินการต่อ</button>
+            <a href="./purchase-order-school.html" class="button">ดำเนินการต่อ</a>
           </div>
         </div>
         <img class="rectangle" src="img/rectangle-4305-1.png" alt="Rectangle 4305" />
@@ -365,7 +374,39 @@
 
       <div class="menu-button-ecs">
         <div class="menu-button-row-ecs">
-          <article class="menu-button-button-1">
+          <div class="card-dashbord">
+            <div class="title">
+              1
+            </div>
+            <div class="sub-title">
+              ใบร่างคำขอสั่งซื้อ
+            </div>
+          </div>
+          <div class="card-dashbord">
+            <div class="title">
+              2
+            </div>
+            <div class="sub-title">
+              ใบขอสั่งซื้อรออนุมัติจากเขต
+            </div>
+          </div>
+          <div class="card-dashbord">
+            <div class="title">
+              1
+            </div>
+            <div class="sub-title">
+              ใบขอสั่งซื้อรอการชำระเงิน
+            </div>
+          </div>
+          <div class="card-dashbord">
+            <div class="title">
+              1
+            </div>
+            <div class="sub-title">
+              ใบขอสั่งซื้อรอการตรวจสอบจาก อค.
+            </div>
+          </div>
+          <!-- <article class="menu-button-button-1">
             <a href="./purchase-order-school.html">
               <div class="button-1-1">
                 <img class="button-icon" src="img/icon-create-7.svg" alt="icon create" />
@@ -396,7 +437,7 @@
               </div>
             </a>
             <div class="button-text font-22">ยกเลิกเลข ปพ.</div>
-          </article>
+          </article> -->
         </div>
       </div>
     </div>
@@ -406,7 +447,7 @@
       <div class="frame-38454">
         <div class="frame-38416">
           <div class="frame-38415">
-            <div class="frame-38-1">
+            <!-- <div class="frame-38-1">
               <div class="frame-3841">
                 <div class="text-9 text-3 font-32">ใบขอสั่งซื้อของฉัน</div>
                 <a href="#">
@@ -433,7 +474,7 @@
                   </div>
                 </article>
               </div>
-            </div>
+            </div> -->
 
             <!-- table -->
             <div class="frame-38">
@@ -444,42 +485,39 @@
                       <tr>
                         <th class="order-approval-list-table-header-2 notosansthai-semi-bold-vulcan-15px">ลำดับ</th>
                         <th class="order-approval-list-table-header-2 notosansthai-semi-bold-vulcan-15px">
+                          เลขใบขอสั่งซื้อ</th>
+                        <th class="order-approval-list-table-header-2 notosansthai-semi-bold-vulcan-15px">
                           วันที่สร้างใบขอสั่งซื้อ
                         </th>
-                        <th class="order-approval-list-table-header-2 notosansthai-semi-bold-vulcan-15px">
-                          เลขใบขอสั่งซื้อ
-                          ศธ</th>
+                        <th class="order-approval-list-table-header-2 notosansthai-semi-bold-vulcan-15px">รายการสินค้า
+                        </th>
                         <th class="order-approval-list-table-header-2 notosansthai-semi-bold-vulcan-15px">ยอดสุทธิ (บาท)
                         </th>
-                        <th class="order-approval-list-table-header-2 notosansthai-semi-bold-vulcan-15px">
-                          ข้อมูลใบขอคำสั่งซื้อ
-                        </th>
-                        <th class="order-approval-list-table-header-2 notosansthai-semi-bold-vulcan-15px">
-                          สถานะอนุมัติจากเขต</th>
-                        <th class="order-approval-list-table-header-2 notosansthai-semi-bold-vulcan-15px">สถานะชำระเงิน
+                        <th class="order-approval-list-table-header-2 notosansthai-semi-bold-vulcan-15px">สถานะ
                         </th>
                       </tr>
                     </thead>
                     <tbody>
                       <tr>
-                        <td class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px">1</td>
-                        <td class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px">22 ต.ค. 2567
-                        </td>
-                        <td class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px">
+                        <td class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px text-al-center">1</td>
+                        <td class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px text-al-center">
                           PR-6612-0683</td>
-                        <td class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px">1,000</td>
-                        <td class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px"> <a
-                            href="./order-detail-educational.html">
-                            <div class="order-approval-list-actions-btn-1">
-                              <div class="order-approval-list-button">
-                                <img class="order-approval-list-icon-1" src="img/icon-btn-left-66.svg"
-                                  alt="icon-btn-left" />
-                                <div class="order-approval-list-text-sm notosansthai-medium-vulcan-15px">ดูรายละเอียด
-                                </div>
-                              </div>
-                            </div>
-                          </a></td>
-                        <td class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px">
+                        <td class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px text-al-center">22 ต.ค. 2567
+                        </td>
+                        <td class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px title-column-table">
+                          <div class="card-status-popo ">
+                            ปพ.1:ป
+                          </div>
+                          <div class="card-status-approve">
+                            อนุมัติ
+                          </div>
+                          <div class="card-status-online">
+                            ออนไลน์
+                          </div>
+                          ปพ.1:ป ระเบียนแสดงผลการเรียน ระดับ ประถมฯ (ปรับปรุง 2555) (ฉบับใช้กับออนไลน์)</td>
+                        <td class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px text-al-center">1,000</td>
+                        
+                        <td class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px text-al-center">
                           <div class="status status-3">
                             <img class="icon-2" src="img/icon-190.svg" alt="icon" />
                             <div class="text valign-text-middle text-3 font-13">
@@ -487,35 +525,27 @@
                             </div>
                           </div>
                         </td>
-                        <td class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px"> <a
-                            href="../ปพ ออนไลน์ - font สั่งซื้อ/สรุปยอดชำระเงิน/สรุปยอดชำระเงิน.html">
-                            <div class="status status-3">
-                              <img class="icon-2" src="img/icon-196.svg" alt="icon" />
-                              <div class="text valign-text-middle text-3 font-13">
-                                แนบหลักฐานการชำระเงิน
-                              </div>
-                            </div>
-                          </a></td>
                       </tr>
                       <tr>
-                        <td class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px">2</td>
-                        <td class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px">22 ต.ค. 2567
-                        </td>
-                        <td class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px">
+                        <td class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px text-al-center">1</td>
+                        <td class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px text-al-center">
                           PR-6612-0683</td>
-                        <td class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px">1,000</td>
-                        <td class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px"> <a
-                            href="./order-detail-educational.html">
-                            <div class="order-approval-list-actions-btn-1">
-                              <div class="order-approval-list-button">
-                                <img class="order-approval-list-icon-1" src="img/icon-btn-left-66.svg"
-                                  alt="icon-btn-left" />
-                                <div class="order-approval-list-text-sm notosansthai-medium-vulcan-15px">ดูรายละเอียด
-                                </div>
-                              </div>
-                            </div>
-                          </a></td>
-                        <td class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px">
+                        <td class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px text-al-center">22 ต.ค. 2567
+                        </td>
+                        <td class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px title-column-table">
+                          <div class="card-status-popo ">
+                            ปพ.1:ป
+                          </div>
+                          <div class="card-status-approve">
+                            อนุมัติ
+                          </div>
+                          <div class="card-status-online">
+                            ออนไลน์
+                          </div>
+                          ปพ.1:ป ระเบียนแสดงผลการเรียน ระดับ ประถมฯ (ปรับปรุง 2555) (ฉบับใช้กับออนไลน์)</td>
+                        <td class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px text-al-center">1,000</td>
+                        
+                        <td class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px text-al-center">
                           <div class="status status-3">
                             <img class="icon-2" src="img/icon-190.svg" alt="icon" />
                             <div class="text valign-text-middle text-3 font-13">
@@ -523,233 +553,10 @@
                             </div>
                           </div>
                         </td>
-                        <td class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px"> <a
-                            href="../ปพ ออนไลน์ - font สั่งซื้อ/สรุปยอดชำระเงิน/สรุปยอดชำระเงิน.html">
-                            <div class="status status-3">
-                              <img class="icon-2" src="img/icon-196.svg" alt="icon" />
-                              <div class="text valign-text-middle text-3 font-13">
-                                แนบหลักฐานการชำระเงิน
-                              </div>
-                            </div>
-                          </a></td>
                       </tr>
-                      <tr>
-                        <td class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px">3</td>
-                        <td class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px">22 ต.ค. 2567
-                        </td>
-                        <td class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px">
-                          PR-6612-0683</td>
-                        <td class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px">1,000</td>
-                        <td class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px"> <a
-                            href="./order-detail-educational.html">
-                            <div class="order-approval-list-actions-btn-1">
-                              <div class="order-approval-list-button">
-                                <img class="order-approval-list-icon-1" src="img/icon-btn-left-66.svg"
-                                  alt="icon-btn-left" />
-                                <div class="order-approval-list-text-sm notosansthai-medium-vulcan-15px">ดูรายละเอียด
-                                </div>
-                              </div>
-                            </div>
-                          </a></td>
-                        <td class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px">
-                          <div class="status status-3">
-                            <img class="icon-2" src="img/icon-190.svg" alt="icon" />
-                            <div class="text valign-text-middle text-3 font-13">
-                              รออนุมัติ
-                            </div>
-                          </div>
-                        </td>
-                        <td class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px"> <a
-                            href="../ปพ ออนไลน์ - font สั่งซื้อ/สรุปยอดชำระเงิน/สรุปยอดชำระเงิน.html">
-                            <div class="status status-3">
-                              <img class="icon-2" src="img/icon-196.svg" alt="icon" />
-                              <div class="text valign-text-middle text-3 font-13">
-                                แนบหลักฐานการชำระเงิน
-                              </div>
-                            </div>
-                          </a></td>
-                      </tr>
-                      <tr>
-                        <td class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px">4</td>
-                        <td class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px">22 ต.ค. 2567
-                        </td>
-                        <td class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px">
-                          PR-6612-0683</td>
-                        <td class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px">1,000</td>
-                        <td class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px"> <a
-                            href="./order-detail-educational.html">
-                            <div class="order-approval-list-actions-btn-1">
-                              <div class="order-approval-list-button">
-                                <img class="order-approval-list-icon-1" src="img/icon-btn-left-66.svg"
-                                  alt="icon-btn-left" />
-                                <div class="order-approval-list-text-sm notosansthai-medium-vulcan-15px">ดูรายละเอียด
-                                </div>
-                              </div>
-                            </div>
-                          </a></td>
-                        <td class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px">
-                          <div class="status status-3">
-                            <img class="icon-2" src="img/icon-190.svg" alt="icon" />
-                            <div class="text valign-text-middle text-3 font-13">
-                              รออนุมัติ
-                            </div>
-                          </div>
-                        </td>
-                        <td class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px"> <a
-                            href="../ปพ ออนไลน์ - font สั่งซื้อ/สรุปยอดชำระเงิน/สรุปยอดชำระเงิน.html">
-                            <div class="status status-3">
-                              <img class="icon-2" src="img/icon-196.svg" alt="icon" />
-                              <div class="text valign-text-middle text-3 font-13">
-                                แนบหลักฐานการชำระเงิน
-                              </div>
-                            </div>
-                          </a></td>
-                      </tr>
-                      <tr>
-                        <td class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px">5</td>
-                        <td class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px">22 ต.ค. 2567
-                        </td>
-                        <td class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px">
-                          PR-6612-0683</td>
-                        <td class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px">1,000</td>
-                        <td class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px"> <a
-                            href="./order-detail-educational.html">
-                            <div class="order-approval-list-actions-btn-1">
-                              <div class="order-approval-list-button">
-                                <img class="order-approval-list-icon-1" src="img/icon-btn-left-66.svg"
-                                  alt="icon-btn-left" />
-                                <div class="order-approval-list-text-sm notosansthai-medium-vulcan-15px">ดูรายละเอียด
-                                </div>
-                              </div>
-                            </div>
-                          </a></td>
-                        <td class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px">
-                          <div class="status status-3">
-                            <img class="icon-2" src="img/icon-190.svg" alt="icon" />
-                            <div class="text valign-text-middle text-3 font-13">
-                              รออนุมัติ
-                            </div>
-                          </div>
-                        </td>
-                        <td class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px"> <a
-                            href="../ปพ ออนไลน์ - font สั่งซื้อ/สรุปยอดชำระเงิน/สรุปยอดชำระเงิน.html">
-                            <div class="status status-3">
-                              <img class="icon-2" src="img/icon-196.svg" alt="icon" />
-                              <div class="text valign-text-middle text-3 font-13">
-                                แนบหลักฐานการชำระเงิน
-                              </div>
-                            </div>
-                          </a></td>
-                      </tr>
-                      <tr>
-                        <td class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px">6</td>
-                        <td class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px">22 ต.ค. 2567
-                        </td>
-                        <td class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px">
-                          PR-6612-0683</td>
-                        <td class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px">1,000</td>
-                        <td class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px"> <a
-                            href="./order-detail-educational.html">
-                            <div class="order-approval-list-actions-btn-1">
-                              <div class="order-approval-list-button">
-                                <img class="order-approval-list-icon-1" src="img/icon-btn-left-66.svg"
-                                  alt="icon-btn-left" />
-                                <div class="order-approval-list-text-sm notosansthai-medium-vulcan-15px">ดูรายละเอียด
-                                </div>
-                              </div>
-                            </div>
-                          </a></td>
-                        <td class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px">
-                          <div class="status status-3">
-                            <img class="icon-2" src="img/icon-190.svg" alt="icon" />
-                            <div class="text valign-text-middle text-3 font-13">
-                              รออนุมัติ
-                            </div>
-                          </div>
-                        </td>
-                        <td class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px"> <a
-                            href="../ปพ ออนไลน์ - font สั่งซื้อ/สรุปยอดชำระเงิน/สรุปยอดชำระเงิน.html">
-                            <div class="status status-3">
-                              <img class="icon-2" src="img/icon-196.svg" alt="icon" />
-                              <div class="text valign-text-middle text-3 font-13">
-                                แนบหลักฐานการชำระเงิน
-                              </div>
-                            </div>
-                          </a></td>
-                      </tr>
-                      <tr>
-                        <td class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px">7</td>
-                        <td class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px">22 ต.ค. 2567
-                        </td>
-                        <td class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px">
-                          PR-6612-0683</td>
-                        <td class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px">1,000</td>
-                        <td class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px"> <a
-                            href="./order-detail-educational.html">
-                            <div class="order-approval-list-actions-btn-1">
-                              <div class="order-approval-list-button">
-                                <img class="order-approval-list-icon-1" src="img/icon-btn-left-66.svg"
-                                  alt="icon-btn-left" />
-                                <div class="order-approval-list-text-sm notosansthai-medium-vulcan-15px">ดูรายละเอียด
-                                </div>
-                              </div>
-                            </div>
-                          </a></td>
-                        <td class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px">
-                          <div class="status status-3">
-                            <img class="icon-2" src="img/icon-190.svg" alt="icon" />
-                            <div class="text valign-text-middle text-3 font-13">
-                              รออนุมัติ
-                            </div>
-                          </div>
-                        </td>
-                        <td class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px"> <a
-                            href="../ปพ ออนไลน์ - font สั่งซื้อ/สรุปยอดชำระเงิน/สรุปยอดชำระเงิน.html">
-                            <div class="status status-3">
-                              <img class="icon-2" src="img/icon-196.svg" alt="icon" />
-                              <div class="text valign-text-middle text-3 font-13">
-                                แนบหลักฐานการชำระเงิน
-                              </div>
-                            </div>
-                          </a></td>
-                      </tr>
-                      <tr>
-                        <td class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px">8</td>
-                        <td class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px">22 ต.ค. 2567
-                        </td>
-                        <td class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px">
-                          PR-6612-0683</td>
-                        <td class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px">1,000</td>
-                        <td class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px"> <a
-                            href="./order-detail-educational.html">
-                            <div class="order-approval-list-actions-btn-1">
-                              <div class="order-approval-list-button">
-                                <img class="order-approval-list-icon-1" src="img/icon-btn-left-66.svg"
-                                  alt="icon-btn-left" />
-                                <div class="order-approval-list-text-sm notosansthai-medium-vulcan-15px">ดูรายละเอียด
-                                </div>
-                              </div>
-                            </div>
-                          </a></td>
-                        <td class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px">
-                          <div class="status status-3">
-                            <img class="icon-2" src="img/icon-190.svg" alt="icon" />
-                            <div class="text valign-text-middle text-3 font-13">
-                              รออนุมัติ
-                            </div>
-                          </div>
-                        </td>
-                        <td class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px"> <a
-                            href="../ปพ ออนไลน์ - font สั่งซื้อ/สรุปยอดชำระเงิน/สรุปยอดชำระเงิน.html">
-                            <div class="status status-3">
-                              <img class="icon-2" src="img/icon-196.svg" alt="icon" />
-                              <div class="text valign-text-middle text-3 font-13">
-                                รอชำระเงิน
-                              </div>
-                            </div>
-                          </a></td>
-                      </tr>
-                      <tr>
+                        
+                      
+                      <!-- <tr>
                         <td class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px">9</td>
                         <td class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px">22 ต.ค. 2567
                         </td>
@@ -816,7 +623,7 @@
                             </div>
                           </div>
                         </td>
-                      </tr>
+                      </tr> -->
                     </tbody>
                   </table>
                   <!-- <div class="column-table-default-1 column-table-default-3">
