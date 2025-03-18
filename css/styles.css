@@ -42076,8 +42076,21 @@ hr {
   text-align: center;
 }
 
-.card-status-popo {
+.card-status-popo-1 {
   background-color: #FBD5E6;
+  border: 1px solid var(--bkack);
+  border-radius: 5px;
+  padding: 6px;
+  color: var(--midnight-blue);
+  font-size: 11px;
+  font-family: var(--font-family-noto_sans_thai);
+  display: flex;
+  width: fit-content;
+  min-width: 43px;
+}
+
+.card-status-popo-1-bo {
+  background-color: #D5F7FB;
   border: 1px solid var(--bkack);
   border-radius: 5px;
   padding: 6px;
