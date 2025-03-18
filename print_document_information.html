@@ -19,612 +19,338 @@
 
 
   <div class="header-ecs">
-    <a href="./login.html">
-      <img class="logo-ecs" src="img/logo------1.png" alt="logo ecs" />
-    </a>
-    <div class="navbar-ecs header-menu">
-      <div class="navbar-link-text-ecs">
-        <a href="./purchase-order-school.html">
-          ออกใบขอสั่งซื้อ
+    <div class="content-header">
+      <div class="hd-left">
+        <a href="./login.html">
+          <img class="logo-ecs" src="img/logo------1.png" alt="logo ecs" />
         </a>
-      </div>
-      <div class="navbar-link-text-ecs">
-        <a href="./approve-school.html">
-          เอกสารใบขอสั่งซื้อ
-        </a>
-      </div>
-      <div class="navbar-link-text-ecs">
-        <a href="./delivered-order.html">
-          รายการคำสั่งซื้อ
-        </a>
-      </div>
-      <div class="navbar-link-text-ecs">
-        <a href="./order-cancel.html">
-          ยกเลิกเลข ปพ.
-        </a>
-      </div>
-      <div class="navbar-link-text-ecs">
-        <a href="./delivered-order.html">
-          ประวัติการสั่งซื้อ
-        </a>
-      </div>
-    </div>
-    <div class="header-action-ecs">
-      <img class="group site-navbar" src="img/Icon-Service.png" alt="Service" onclick="showMenuNav()" />
-      <div class="notification-icon">
-        <img class="group" src="img/group@2x.png" alt="Group" onclick="toggleNotificationPanel()" />
-        <span id="notification-badge" class="notification-badge"></span> <!-- จุดแดง -->
-      </div>
-
-      <div id="notification-panel" class="notification-panel hidden">
-        <ul class="notification-list">
-          <li class="notification-item unread">
-            <span class="status-indicator"></span>
-            <div class="notification-content">
-              <p class="notosansthai-normal-vulcan-15px">
-                <strong class="notosansthai-semi-bold-vulcan-15px">หมายเลขคำสั่งซื้อ:</strong> 12345
-              </p>
-              <p class="notosansthai-normal-vulcan-15px">
-                <strong class="notosansthai-semi-bold-vulcan-15px">สถานะ:</strong> รอดำเนินการ
-              </p>
+        <div class="navbar-ecs header-menu">
+          <div class="navbar-link-text-ecs">
+            <div class="title-menu-header pointer" onclick="showMenuNav1()">
+              ใบขอสั่งซื้อ
+              <img class="icon-down-header" src="img/arrow-down-white.svg" alt="logo ecs" />
             </div>
-          </li>
-          <li class="notification-item">
-            <span class="status-indicator read"></span>
-            <div class="notification-content">
-              <p class="notosansthai-normal-vulcan-15px">
-                <strong class="notosansthai-semi-bold-vulcan-15px">หมายเลขคำสั่งซื้อ:</strong> 67890
-              </p>
-              <p class="notosansthai-normal-vulcan-15px">
-                <strong class="notosansthai-semi-bold-vulcan-15px">สถานะ:</strong> สำเร็จ
-              </p>
-            </div>
-          </li>
-        </ul>
-      </div>
-
-      <a href="./profile-school.html">
-        <img class="vector" src="img/vector-2.svg" alt="Vector" />
-      </a>
-    </div>
-
-  </div>
-  <div id="subMenuHeader" class="sub-menu-header" style="display: none;">
-    <a href="./purchase-order-school.html"
-      class="notosansthai-normal-black-20px no-text-underline textItemMenuHeader itemMenuHeader">
-      ออกใบขอสั่งซื้อ
-    </a>
-    <hr />
-    <a href="./approve-school.html"
-      class="notosansthai-normal-black-20px no-text-underline textItemMenuHeader itemMenuHeader">
-      เอกสารใบขอสั่งซื้อ
-    </a>
-    <hr />
-    <a href="./delivered-order.html"
-      class="notosansthai-normal-black-20px no-text-underline textItemMenuHeader itemMenuHeader">
-      รายการคำสั่งซื้อ
-    </a>
-    <hr />
-    <a href="./order-cancel.html"
-      class="notosansthai-normal-black-20px no-text-underline textItemMenuHeader itemMenuHeader">
-      ยกเลิกเลข ปพ.
-    </a>
-    <hr />
-    <a href="./delivered-order.html"
-      class="notosansthai-normal-black-20px no-text-underline textItemMenuHeader itemMenuHeader">
-      ประวัติการสั่งซื้อ
-    </a>
-  </div>
-
-  <div class="container-center-horizontal">
-    <div class="print-document-information">
-      <div class="container-menu-ham pointer hidden-lg-down">
-        <div class="menu-ham" onclick="showMenuHam()">
-          <img class="icon-menu-ham" src="img/icon-menu.png" alt="icon back" />
-          <div
-            class="register-obec-text_label register-obec-valign-text-middle notosansthai-semi-bold-midnight-blue-20px">
-            เมนู</div>
-        </div>
-        <div id="contentMenuHamMobile" class="content-menu-ham">
-          <div class="item-menu-ham">
-            <div class="print-document-information-frame-38357-1">
-              <div class="print-document-information-frame-38354">
-                <div class="print-document-information-frame-38352">
-                  <div class="print-document-information-frame-38350">
-                    <div class="print-document-information-frame-38">
-                      <img class="print-document-information-icon" src="img/icon-person2-1.svg" alt="icon person2" />
-                      <div
-                        class="print-document-information-text-1 valign-text-middle notosansthai-semi-bold-black-22px">
-                        บัญชีของฉัน</div>
-                    </div>
-                    <div onclick="showMenuCollap()">
-                      <div class="approve-school-frame-38348">
-                        <img class="approve-school-arrow-down-01" src="img/arrow-down-01-2.svg" alt="arrow-down-01" />
-                      </div>
-                    </div>
-                  </div>
-                  <div id="collapMenuMobile" class="approve-school-frame-3835 notosansthai-normal-black-20px"
-                    style="display: none;">
-                    <a href="./profile-school.html">
-                      <div
-                        class="approve-school-text-1 approve-school-valign-text-middle approve-school-text-3 a-link-left">
-                        ข้อมูลส่วนบุคคล</div>
-                    </a>
-                    <div class="approve-school-text-2 approve-school-valign-text-middle approve-school-text-3">
-                      ที่อยู่จัดส่งสินค้า</div>
-                  </div>
+            <div class="submenu-theme" id="menu-header-1">
+              <a href="./purchase-order-school.html">
+                ออกใบขอสั่งซื้อ
+              </a>
+              <hr>
+              <a href="./draft-school.html">
+                ร่างใบขอสั่งซื้อ
+              </a>
+              <hr>
+              <div class="sub-menu-card">
+                <div class="title-menu-sub-root pointer" onclick="showMenuNav1_1()">
+                  รายการใบขอสั่งซื้อ
+                  <img class="icon-menu-sub-root" src="img/arrow-right-white.svg" alt="logo ecs" />
                 </div>
-              </div>
-              <img class="print-document-information-vector" src="img/vector-19-2.svg" alt="Vector 19" />
-              <div class="print-document-information-frame-38">
-                <img class="print-document-information-icon" src="img/icon-report-11.svg" alt="icon Report" />
-                <div class="print-document-information-text-1 valign-text-middle notosansthai-semi-bold-black-22px">
-                  เอกสารใบขอสั่งซื้อ</div>
-              </div>
-              <img class="print-document-information-vector" src="img/vector-19-2.svg" alt="Vector 22" />
-              <div class="print-document-information-frame-38354">
-                <div class="print-document-information-frame-38352">
-                  <div class="print-document-information-frame-38350">
-                    <div class="print-document-information-frame-38">
-                      <img class="print-document-information-icon" src="img/icon-report-11.svg" alt="icon person2" />
-                      <div
-                        class="print-document-information-text-1 valign-text-middle notosansthai-semi-bold-black-22px">
-                        รายการคำสั่งซื้อ</div>
-                    </div>
-                    <a onclick="showMenuCollapOrder()">
-                      <div class="approve-school-frame-38348">
-                        <img class="approve-school-arrow-down-01" src="img/arrow-down-01-2.svg" alt="arrow-down-01" />
-                      </div>
-                    </a>
-                  </div>
-                  <div id="collapMenuOrderMobile" class="approve-school-frame-3835 notosansthai-normal-black-20px"
-                    style="display: none;">
-                    <a href="./delivered-order.html">
-                      <div
-                        class="approve-school-text-1 approve-school-valign-text-middle approve-school-text-3 a-link-left">
-                        เอกสารมีเลขคุม</div>
-                    </a>
-                    <div class="approve-school-text-2 approve-school-valign-text-middle approve-school-text-3">
-                      เอกสารไม่มีเลขคุม</div>
-                    <div class="approve-school-text-2 approve-school-valign-text-middle approve-school-text-3">
-                      เลขใบปพ. ออนไลน์(ปพ.1)</div>
-                  </div>
-                </div>
-              </div>
-
-              <img class="print-document-information-vector" src="img/vector-19-2.svg" alt="Vector 20" />
-              <div class="print-document-information-frame-3852">
-                <div class="print-document-information-frame-38528">
-                  <div class="print-document-information-frame-38">
-                    <img class="print-document-information-icon" src="img/icon-print-1.svg" alt="icon print" />
-                    <div class="print-document-information-text-9 valign-text-middle">ปพ.ออนไลน์</div>
-                  </div>
-                  <a onclick="showMenuCollap2()">
-                    <div class="paid-school-frame-38348">
-                      <img class="paid-school-arrow-down-01" src="img/arrow-down-01-3.svg" alt="arrow-down-01" />
-                    </div>
+                <div class="submenu-theme-2" id="menu-header-1-1">
+                  <a href="./purchase-order-school.html">
+                    ทั้งหมด
+                  </a>
+                  <hr>
+                  <a href="./waiting-approve-school.html">
+                    รอรับการอนุมัติ
+                  </a>
+                  <hr>
+                  <a href="./purchase-order-school.html">
+                    ไม่ได้รับการอนุมัติ
+                  </a>
+                  <hr>
+                  <a href="./approve-school.html">
+                    ได้รับการอนุมัติ
+                  </a>
+                  <hr>
+                  <a href="./paid_school.html">
+                    รอการชำระเงิน
+                  </a>
+                  <hr>
+                  <a href="./cancel-school.html">
+                    รายการที่ถูกยกเลิก
                   </a>
                 </div>
-                <div id="collapMenu2Mobile" style="display: none;" class="paid-school-frame-3835">
-                  <div class="paid-school-frame-38351 notosansthai-normal-black-20px">
-                    <a href="./print_document_information.html">
-                      <div class="print-document-information-text-10 paid-school-valign-text-middle paid-school-text-5">
-                        พิมพ์ใบปพ.ออนไลน์
-                      </div>
-                    </a>
-                    <a href="./print_document_history.html">
-                      <div class="paid-school-text-2 paid-school-valign-text-middle paid-school-text-5 a-link-left">
-                        ประวัติการพิมพ์
-                      </div>
-                    </a>
-                  </div>
-                </div>
               </div>
-              <img class="print-document-information-vector" src="img/vector-23-1.svg" alt="Vector 23" />
-              <div class="print-document-information-frame-38">
-                <img class="print-document-information-icon" src="img/icon-logout-1.svg" alt="icon logout" />
-                <div class="print-document-information-text-1 valign-text-middle notosansthai-semi-bold-black-22px">
-                  ออกจากระบบ</div>
-              </div>
+            </div>
+          </div>
+          <div class="navbar-link-text-ecs">
+            <div class="title-menu-header pointer" onclick="showMenuNav2()">
+              คำสั่งซื้อ
+              <img class="icon-down-header" src="img/arrow-down-white.svg" alt="logo ecs" />
+            </div>
+            <div class="submenu-theme" id="menu-header-2">
+              <a href="./purchase-order-school.html">
+                ทั้งหมด
+              </a>
+              <hr>
+              <a href="./purchase-order-school.html">
+                รอการตรวจสอบ
+              </a>
+              <hr>
+              <a href="./purchase-order-school.html">
+                รอการแก้ไข
+              </a>
+              <hr>
+              <a href="./purchase-order-school.html">
+                ที่ต้องได้รับ
+              </a>
+              <hr>
+              <a href="./purchase-order-school.html">
+                จัดส่งสำเร็จ
+              </a>
+              <hr>
+              <a href="./purchase-order-school.html">
+                ยกเลิก/คืนเงิน/คืนสินค้า
+              </a>
+            </div>
+          </div>
+          <div class="navbar-link-text-ecs">
+            <div class="title-menu-header pointer" onclick="showMenuNav3()">
+              เลข ปพ.
+              <img class="icon-down-header" src="img/arrow-down-white.svg" alt="logo ecs" />
+            </div>
+            <div class="submenu-theme" id="menu-header-3">
+              <a href="./purchase-order-school.html">
+                พิมพ์ใบ ปพ.
+              </a>
+              <hr>
+              <a href="./purchase-order-school.html">
+                ประวัติการพิมพ์
+              </a>
+              <hr>
+              <a href="./order-cancel.html">
+                ยกเลิกเลข ปพ.
+              </a>
+            </div>
+          </div>
+          <div class="navbar-link-text-ecs">
+            <div class="title-menu-header pointer" onclick="showMenuNav4()">
+              รายงาน.
+              <img class="icon-down-header" src="img/arrow-down-white.svg" alt="logo ecs" />
+            </div>
+            <div class="submenu-theme" id="menu-header-4">
+              <a href="./purchase-order-school.html">
+                รายงานการพิมพ์ใบ ปพ.
+              </a>
+              <hr>
+              <a href="./purchase-order-school.html">
+                รายงานการใช้ตัวเลข
+              </a>
+              <hr>
+              <a href="./purchase-order-school.html">
+                รายงานการสั่งซื้อ
+              </a>
             </div>
           </div>
         </div>
       </div>
-      <div class="print-document-information-frame-38357">
 
+      <div class="header-action-ecs">
+        <img class="group site-navbar" src="img/Icon-Service.png" alt="Service" onclick="showMenuNav()" />
+        <div class="notification-icon">
+          <img class="group" src="img/group@2x.png" alt="Group" onclick="toggleNotificationPanel()" />
+          <span id="notification-badge" class="notification-badge"></span> <!-- จุดแดง -->
+        </div>
 
-        <div class="print-document-information-frame-38357-1 hidden-sm-down hidden-md-down">
-          <div class="print-document-information-frame-38354">
-            <div class="print-document-information-frame-38352">
-              <div class="print-document-information-frame-38350">
-                <div class="print-document-information-frame-38">
-                  <img class="print-document-information-icon" src="img/icon-person2-1.svg" alt="icon person2" />
-                  <div class="print-document-information-text-1 valign-text-middle notosansthai-semi-bold-black-22px">
-                    บัญชีของฉัน</div>
-                </div>
-                <a onclick="showMenuCollap()">
-                  <div class="approve-school-frame-38348">
-                    <img class="approve-school-arrow-down-01" src="img/arrow-down-01-2.svg" alt="arrow-down-01" />
-                  </div>
-                </a>
+        <div id="notification-panel" class="notification-panel hidden">
+          <ul class="notification-list">
+            <li class="notification-item unread">
+              <span class="status-indicator"></span>
+              <div class="notification-content">
+                <p class="notosansthai-normal-vulcan-15px">
+                  <strong class="notosansthai-semi-bold-vulcan-15px">หมายเลขคำสั่งซื้อ:</strong> 12345
+                </p>
+                <p class="notosansthai-normal-vulcan-15px">
+                  <strong class="notosansthai-semi-bold-vulcan-15px">สถานะ:</strong> รอดำเนินการ
+                </p>
               </div>
-              <div id="collapMenu" class="approve-school-frame-3835 notosansthai-normal-black-20px"
-                style="display: none;">
-                <a href="./profile-school.html">
-                  <div
-                    class="approve-school-text-1 approve-school-valign-text-middle approve-school-text-3 a-link-left">
-                    ข้อมูลส่วนบุคคล</div>
-                </a>
-                <div class="approve-school-text-2 approve-school-valign-text-middle approve-school-text-3">
-                  ที่อยู่จัดส่งสินค้า</div>
+            </li>
+            <li class="notification-item">
+              <span class="status-indicator read"></span>
+              <div class="notification-content">
+                <p class="notosansthai-normal-vulcan-15px">
+                  <strong class="notosansthai-semi-bold-vulcan-15px">หมายเลขคำสั่งซื้อ:</strong> 67890
+                </p>
+                <p class="notosansthai-normal-vulcan-15px">
+                  <strong class="notosansthai-semi-bold-vulcan-15px">สถานะ:</strong> สำเร็จ
+                </p>
               </div>
-            </div>
-          </div>
-          <img class="print-document-information-vector" src="img/vector-19-2.svg" alt="Vector 19" />
-          <div class="print-document-information-frame-38">
-            <img class="print-document-information-icon" src="img/icon-report-11.svg" alt="icon Report" />
-            <div class="print-document-information-text-1 valign-text-middle notosansthai-semi-bold-black-22px">
-              เอกสารใบขอสั่งซื้อ</div>
-          </div>
-          <img class="print-document-information-vector" src="img/vector-19-2.svg" alt="Vector 22" />
-          <div class="print-document-information-frame-38354">
-            <div class="print-document-information-frame-38352">
-              <div class="print-document-information-frame-38350">
-                <div class="print-document-information-frame-38">
-                  <img class="print-document-information-icon" src="img/icon-report-11.svg" alt="icon person2" />
-                  <div class="print-document-information-text-1 valign-text-middle notosansthai-semi-bold-black-22px">
-                    รายการคำสั่งซื้อ</div>
-                </div>
-                <a onclick="showMenuCollapOrder()">
-                  <div class="approve-school-frame-38348">
-                    <img class="approve-school-arrow-down-01" src="img/arrow-down-01-2.svg" alt="arrow-down-01" />
-                  </div>
-                </a>
-              </div>
-              <div id="collapMenuOrder" class="approve-school-frame-3835 notosansthai-normal-black-20px"
-                style="display: none;">
-                <a href="./delivered-order.html">
-                  <div
-                    class="approve-school-text-1 approve-school-valign-text-middle approve-school-text-3 a-link-left">
-                    เอกสารมีเลขคุม</div>
-                </a>
-                <div class="approve-school-text-2 approve-school-valign-text-middle approve-school-text-3">
-                  เอกสารไม่มีเลขคุม</div>
-                <div class="approve-school-text-2 approve-school-valign-text-middle approve-school-text-3">
-                  เลขใบปพ. ออนไลน์(ปพ.1)</div>
-              </div>
-            </div>
-          </div>
-
-          <img class="print-document-information-vector" src="img/vector-19-2.svg" alt="Vector 20" />
-          <div class="print-document-information-frame-3852">
-            <div class="print-document-information-frame-38528">
-              <div class="print-document-information-frame-38">
-                <img class="print-document-information-icon" src="img/icon-print-1.svg" alt="icon print" />
-                <div class="print-document-information-text-9 valign-text-middle">ปพ.ออนไลน์</div>
-              </div>
-              <a onclick="showMenuCollap2()">
-                <div class="paid-school-frame-38348">
-                  <img class="paid-school-arrow-down-01" src="img/arrow-down-01-3.svg" alt="arrow-down-01" />
-                </div>
-              </a>
-            </div>
-            <div id="collapMenu2" style="display: none;" class="paid-school-frame-3835">
-              <div class="paid-school-frame-38351 notosansthai-normal-black-20px">
-                <a href="./print_document_information.html">
-                  <div class="print-document-information-text-10 paid-school-valign-text-middle paid-school-text-5">
-                    พิมพ์ใบปพ.ออนไลน์
-                  </div>
-                </a>
-                <a href="./print_document_history.html">
-                  <div class="paid-school-text-2 paid-school-valign-text-middle paid-school-text-5 a-link-left">
-                    ประวัติการพิมพ์
-                  </div>
-                </a>
-              </div>
-            </div>
-          </div>
-          <img class="print-document-information-vector" src="img/vector-23-1.svg" alt="Vector 23" />
-          <div class="print-document-information-frame-38">
-            <img class="print-document-information-icon" src="img/icon-logout-1.svg" alt="icon logout" />
-            <div class="print-document-information-text-1 valign-text-middle notosansthai-semi-bold-black-22px">
-              ออกจากระบบ</div>
-          </div>
+            </li>
+          </ul>
         </div>
 
 
-        <div class="print-document-information-frame-38519">
-          <div class="print-document-information-frame-38455">
-            <div class="print-document-information-input-search input">
-              <div class="print-document-information-input-element input">
-                <img class="print-document-information-icon-3" src="img/icon-addon-1.svg" alt="icon-addon" />
-                <input id="searchInput"
-                  class="print-document-information-text_input-1 notosansthai-normal-slate-gray-15px" name="พมพคาคนหา"
-                  placeholder="พิมพ์คำค้นหา" type="text" onkeyup="filterOrders()" />
-              </div>
-            </div>
-            <div class="print-document-information-frame-2">
-              <select id="agency"
-                class="print-document-information-custom-dropdown notosansthai-normal-slate-gray-15px" onchange="filterType()">
-                <option value="" disabled selected>ทุกประเภทแบบพิมพ์</option>
-                <option value="">ทั้งหมด</option>
-                <option value="ปพ1 : ป">ปพ.1 : ป</option>
-                <option value="ปพ1 : บ">ปพ.1 : บ</option>
-                <option value="ปพ1 : พ">ปพ.1 : พ</option>
-              </select>
-              <img class="print-document-information-dropdown-icon" src="img/dropdown-6.svg" alt="dropdown" />
-            </div>
-          </div>
-          <table style="width: 100%;text-align: left;">
-            <tbody>
-              <tr>
-                <td>
-                  <div class="print-document-information-frame-383" style="margin-bottom: 24px;">
-                    <div class="print-document-information-frame-38339">
-                      <div
-                        class="print-document-information-text-1-1 valign-text-middle print-document-information-text-1-3 notosansthai-normal-black-20px">
-                        ข้อมูลตัวเลขเอกสาร PR-123456
-                      </div>
-                      <div class="print-document-information-frame-38341">
-                        <a href="javascript:SubmitForm('form7')">
-                          <div
-                            class="print-document-information-text-14 valign-text-middle notosansthai-normal-black-16px">
-                            ดูรายละเอียด</div>
-                        </a>
-                        <a onclick="showPopup()">
-                          <div class="print-document-information-button-3 print-document-information-button-5">
-                            <div
-                              class="print-document-information-text_label valign-text-middle notosansthai-normal-white-20px">
-                              พิมพ์เอกสาร</div>
-                          </div>
-                        </a>
-                      </div>
-                    </div>
-                    <img class="print-document-information-line-6-1" src="img/line-6-10.svg" alt="Line 6" />
-                    <div class="print-document-information-frame-3845">
-                      <article class="print-document-information-text-field">
-                        <div class="print-document-information-text notosansthai-normal-black-18px">ประเภทแบบพิมพ์</div>
-                        <div class="print-document-information-frame-20">
-                          <div class="print-document-information-text_label-1 notosansthai-normal-black-17px type-xr">ปพ1 : ป
-                          </div>
-                          <img class="print-document-information-dropdown" src="img/dropdown-4.svg" alt="dropdown" />
-                        </div>
-                      </article>
-                      <article class="print-document-information-text-field">
-                        <div class="print-document-information-text notosansthai-normal-black-18px">จำนวนตัวเลข</div>
-                        <div class="print-document-information-frame-20">
-                          <input class="print-document-information-text_input notosansthai-normal-black-17px"
-                            name="ขอมลกรอกแลว" placeholder="500" type="text" />
-                        </div>
-                      </article>
-                    </div>
-                    <div class="print-document-information-frame-38494">
-                      <div class="print-document-information-frame-3845">
-                        <article class="print-document-information-text-field">
-                          <div class="print-document-information-text notosansthai-normal-black-18px">ชุดที่</div>
-                          <div class="print-document-information-frame-20">
-                            <input class="print-document-information-text_input notosansthai-normal-black-17px"
-                              name="ขอมลกรอกแลว" placeholder="10476" type="text" />
-                          </div>
-                        </article>
-                        <article class="print-document-information-text-field">
-                          <div class="print-document-information-text notosansthai-normal-black-18px">เลขที่แรก</div>
-                          <div class="print-document-information-frame-20">
-                            <input class="print-document-information-text_input notosansthai-normal-black-17px"
-                              name="ขอมลกรอกแลว" placeholder="011751" type="text" />
-                          </div>
-                        </article>
-                        <article class="print-document-information-text-field">
-                          <div class="print-document-information-text notosansthai-normal-black-18px">เลขที่สุดท้าย
-                          </div>
-                          <div class="print-document-information-frame-20">
-                            <input class="print-document-information-text_input notosansthai-normal-black-17px"
-                              name="ขอมลกรอกแลว" placeholder="011800" type="text" />
-                          </div>
-                        </article>
-                      </div>
-                    </div>
-                    <div class="print-document-information-frame-3845">
-                      <article class="print-document-information-text-field">
-                        <div class="print-document-information-text notosansthai-normal-black-18px">ชุดที่</div>
-                        <div class="print-document-information-frame-20">
-                          <input class="print-document-information-text_input notosansthai-normal-black-17px"
-                            name="ขอมลกรอกแลว" placeholder="10480" type="text" />
-                        </div>
-                      </article>
-                      <article class="print-document-information-text-field">
-                        <div class="print-document-information-text notosansthai-normal-black-18px">เลขที่แรก</div>
-                        <div class="print-document-information-frame-20">
-                          <input class="print-document-information-text_input notosansthai-normal-black-17px"
-                            name="ขอมลกรอกแลว" placeholder="012800" type="text" />
-                        </div>
-                      </article>
-                      <article class="print-document-information-text-field">
-                        <div class="print-document-information-text notosansthai-normal-black-18px">เลขที่สุดท้าย</div>
-                        <div class="print-document-information-frame-20">
-                          <input class="print-document-information-text_input notosansthai-normal-black-17px"
-                            name="ขอมลกรอกแลว" placeholder="012957" type="text" />
-                        </div>
-                      </article>
-                    </div>
-                  </div>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <div class="print-document-information-frame-383" style="margin-bottom: 24px;">
-                    <div class="print-document-information-frame-38339">
-                      <div
-                        class="print-document-information-text-1-1 valign-text-middle print-document-information-text-1-3 notosansthai-normal-black-20px">
-                        ข้อมูลตัวเลขเอกสาร PR-345678
-                      </div>
-                      <div class="print-document-information-frame-38341">
-                        <a href="javascript:SubmitForm('form7')">
-                          <div
-                            class="print-document-information-text-14 valign-text-middle notosansthai-normal-black-16px">
-                            ดูรายละเอียด</div>
-                        </a>
-                        <a onclick="showPopup()">
-                          <div class="print-document-information-button-3 print-document-information-button-5">
-                            <div
-                              class="print-document-information-text_label valign-text-middle notosansthai-normal-white-20px">
-                              พิมพ์เอกสาร</div>
-                          </div>
-                        </a>
-                      </div>
-                    </div>
-                    <img class="print-document-information-line-6" src="img/line-6-11.svg" alt="Line 6" />
-                    <div class="print-document-information-frame-3845">
-                      <article class="print-document-information-text-field">
-                        <div class="print-document-information-text notosansthai-normal-black-18px">ประเภทแบบพิมพ์</div>
-                        <div class="print-document-information-frame-20">
-                          <div class="print-document-information-text_label-1 notosansthai-normal-black-17px type-xr">ปพ1 : บ
-                          </div>
-                          <img class="print-document-information-dropdown" src="img/dropdown-5.svg" alt="dropdown" />
-                        </div>
-                      </article>
-                      <article class="print-document-information-text-field">
-                        <div class="print-document-information-text notosansthai-normal-black-18px">จำนวนตัวเลข</div>
-                        <div class="print-document-information-frame-20">
-                          <div class="print-document-information-text_label-1 notosansthai-normal-black-17px">2,000
-                          </div>
-                        </div>
-                      </article>
-                    </div>
-                    <div class="print-document-information-frame-38494">
-                      <div class="print-document-information-frame-3845">
-                        <article class="print-document-information-text-field">
-                          <div class="print-document-information-text notosansthai-normal-black-18px">ชุดที่</div>
-                          <div class="print-document-information-frame-20">
-                            <div class="print-document-information-text_label-1 notosansthai-normal-black-17px">10476
-                            </div>
-                          </div>
-                        </article>
-                        <article class="print-document-information-text-field">
-                          <div class="print-document-information-text notosansthai-normal-black-18px">เลขที่แรก</div>
-                          <div class="print-document-information-frame-20">
-                            <div class="print-document-information-text_label-1 notosansthai-normal-black-17px">011751
-                            </div>
-                          </div>
-                        </article>
-                        <article class="print-document-information-text-field">
-                          <div class="print-document-information-text notosansthai-normal-black-18px">เลขที่สุดท้าย
-                          </div>
-                          <div class="print-document-information-frame-20">
-                            <div class="print-document-information-text_label-1 notosansthai-normal-black-17px">011800
-                            </div>
-                          </div>
-                        </article>
-                      </div>
-                    </div>
-                  </div>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <div class="print-document-information-frame-383" style="margin-bottom: 24px;">
-                    <div class="print-document-information-frame-38339">
-                      <div
-                        class="print-document-information-text-1-1 valign-text-middle print-document-information-text-1-3 notosansthai-normal-black-20px">
-                        ข้อมูลตัวเลขเอกสาร PR-567890
-                      </div>
-                      <div class="print-document-information-frame-38341">
-                        <a href="javascript:SubmitForm('form7')">
-                          <div
-                            class="print-document-information-text-14 valign-text-middle notosansthai-normal-black-16px">
-                            ดูรายละเอียด</div>
-                        </a>
-                        <a onclick="showPopup()">
-                          <div class="print-document-information-button-3 print-document-information-button-5">
-                            <div
-                              class="print-document-information-text_label valign-text-middle notosansthai-normal-white-20px">
-                              พิมพ์เอกสาร</div>
-                          </div>
-                        </a>
-                      </div>
-                    </div>
-                    <img class="print-document-information-line-6" src="img/line-6-12.svg" alt="Line 6" />
-                    <div class="print-document-information-frame-3845">
-                      <article class="print-document-information-text-field">
-                        <div class="print-document-information-text notosansthai-normal-black-18px">ประเภทแบบพิมพ์</div>
-                        <div class="print-document-information-frame-20">
-                          <div class="print-document-information-text_label-1 notosansthai-normal-black-17px type-xr">ปพ1 : พ
-                          </div>
-                          <img class="print-document-information-dropdown" src="img/dropdown-6.svg" alt="dropdown" />
-                        </div>
-                      </article>
-                      <article class="print-document-information-text-field">
-                        <div class="print-document-information-text notosansthai-normal-black-18px">จำนวนตัวเลข</div>
-                        <div class="print-document-information-frame-20">
-                          <div class="print-document-information-text_label-1 notosansthai-normal-black-17px">2,000
-                          </div>
-                        </div>
-                      </article>
-                    </div>
-                    <div class="print-document-information-frame-38494">
-                      <div class="print-document-information-frame-3845">
-                        <article class="print-document-information-text-field">
-                          <div class="print-document-information-text notosansthai-normal-black-18px">ชุดที่</div>
-                          <div class="print-document-information-frame-20">
-                            <div class="print-document-information-text_label-1 notosansthai-normal-black-17px">10476
-                            </div>
-                          </div>
-                        </article>
-                        <article class="print-document-information-text-field">
-                          <div class="print-document-information-text notosansthai-normal-black-18px">เลขที่แรก</div>
-                          <div class="print-document-information-frame-20">
-                            <div class="print-document-information-text_label-1 notosansthai-normal-black-17px">011751
-                            </div>
-                          </div>
-                        </article>
-                        <article class="print-document-information-text-field">
-                          <div class="print-document-information-text notosansthai-normal-black-18px">เลขที่สุดท้าย
-                          </div>
-                          <div class="print-document-information-frame-20">
-                            <div class="print-document-information-text_label-1 notosansthai-normal-black-17px">011800
-                            </div>
-                          </div>
-                        </article>
-                      </div>
-                    </div>
-                  </div>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-          <div class="print-document-information-frame-38520">
-            <div class="print-document-information-frame-38263">
-              <div class="print-document-information-input-select-1">
-                <div class="print-document-information-select-field">
-                  <div class="print-document-information-select notosansthai-normal-slate-gray-15px">แสดง3</div>
-                  <img class="print-document-information-icon-3" src="img/dropdown-icon-7.svg" alt="dropdown-icon" />
-                </div>
-              </div>
-              <p class="print-document-information-text-19 hidden-sm-down">แสดง 1-3 รายการ จาก 8 รายการ</p>
-            </div>
-            <div class="print-document-information-pagination">
-              <a href="javascript:SubmitForm('form7')">
-                <div class="print-document-information-button-1 print-document-information-button-5"><img
-                    class="print-document-information-icon-2 icon-3" src="img/icon-2.svg" alt="icon" /></div>
-              </a><a href="javascript:SubmitForm('form7')">
-                <div class="print-document-information-button-4 print-document-information-button-5">
-                  <div class="print-document-information-text-sm-1">1</div>
-                </div>
-              </a><a href="javascript:SubmitForm('form7')">
-                <div class="print-document-information-button-2 print-document-information-button-5">
-                  <div class="print-document-information-text-sm">2</div>
-                </div>
-              </a><a href="javascript:SubmitForm('form7')">
-                <div class="print-document-information-button-2 print-document-information-button-5">
-                  <div class="print-document-information-text-sm">3</div>
-                </div>
-              </a><a href="javascript:SubmitForm('form7')">
-                <div class="print-document-information-button-1 print-document-information-button-5"><img
-                    class="print-document-information-icon-2 icon-3" src="img/icon-3.svg" alt="icon" /></div>
-              </a>
-            </div>
-          </div>
+        <div class="title-menu-header pointer" onclick="showMenuNav3()">
+          <a href="./profile-school.html">
+            <img class="vector" src="img/vector-2.svg" alt="Vector" />
+          </a>
+          ออกจากระบบ
+        </div>
+      </div>
+    </div>
+  </div>
 
+  <div class="content-center">
+    <div class="content-ecs">
+
+      <div class="menu-header" style="padding-top: 0px !important;">
+        <a href="./home-school.html" class="position-absolute ">
+          <div class="purchase-order-button-3 purchase-order-button-8">
+            <img class="purchase-order-icon-back" src="img/icon-back-3.svg" alt="icon back" />
+            <div class="purchase-order-text_label valign-text-middle purchase-order-text_label-5 display-none-m">
+              ย้อนกลับ</div>
+          </div>
+        </a>
+        <h1 class="purchase-order-text-6 margin-0-auto" style="align-self: center;">ประวัติการพิมพ์</h1>
+      </div>
+      <div class="print-document-history-frame-38519">
+        <div class="print-document-history-frame-38455">
+          <!-- <div class="print-document-history-input-search input">
+            <div class="print-document-history-input-element input">
+              <img class="print-document-history-icon-3" src="img/icon-addon-3.svg" alt="icon-addon" />
+              <a href="javascript:SubmitForm('form10')"><input
+                  class="print-document-history-text_input notosansthai-normal-slate-gray-15px" name="พมพคาคนหา"
+                  placeholder="พิมพ์คำค้นหา" type="text" /></a>
+            </div>
+          </div> -->
+          <article class="input-select">
+            <div class="base-form-label-medium-2">
+              <div class="label-input font-18">ประเภทแบบพิมพ์</div>
+            </div>
+            <div class="print-document-history-frame-2">
+              <select id="agency" class="print-document-history-custom-dropdown notosansthai-normal-slate-gray-15px">
+                <option value="" disabled selected>ทุกประเภทแบบพิมพ์</option>
+                <option value="ปพ.1-ป">ปพ.1 : ป</option>
+                <option value="ปพ.1-บ">ปพ.1 : บ</option>
+                <option value="ปพ.1-พ">ปพ.1 : พ</option>
+              </select>
+              <img class="print-document-history-dropdown-icon" src="img/dropdown-6.svg" alt="dropdown" />
+            </div>
+          </article>
+        </div>
+        <div class="print-document-history-table">
+          <div class="print-document-history-frame-38">
+            <!-- table -->
+            <div class="frame-38">
+              <div class="frame-38-1">
+                <div class="frame-3346">
+                  <table style="width: 100%;text-align: left;text-align-last:center;">
+                    <thead>
+                      <tr>
+                        <th class="order-approval-list-table-header-2 notosansthai-semi-bold-vulcan-15px">ลำดับ</th>
+
+                        <th class="order-approval-list-table-header-2 notosansthai-semi-bold-vulcan-15px">
+                          ประเภทแบบพิมพ์</th>
+                        <th class="order-approval-list-table-header-2 notosansthai-semi-bold-vulcan-15px">จำนวนตัวเลข
+                        </th>
+                        <th class="order-approval-list-table-header-2 notosansthai-semi-bold-vulcan-15px">
+                          ชุดที่
+                        </th>
+                        <th class="order-approval-list-table-header-2 notosansthai-semi-bold-vulcan-15px">
+                          เลขที่แรก</th>
+                        <th class="order-approval-list-table-header-2 notosansthai-semi-bold-vulcan-15px">เลขที่สุดท้าย
+                        </th>
+                        <th class="order-approval-list-table-header-2 notosansthai-semi-bold-vulcan-15px">
+                          พิมพ์ใบ ปพ.
+                        </th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px">1</td>
+
+                        <td class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px">
+                          ปพ.1 : ป</td>
+                        <td class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px">100,000</td>
+                        <td class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px">99001</td>
+                        <td class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px">011751</td>
+                        <td class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px">111750</td>
+                        <td class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px"> <a
+                            onclick="showPopup()">
+                            <div class="print-document-information-button-3 print-document-information-button-5">
+                              <div
+                                class="print-document-information-text_label valign-text-middle notosansthai-normal-white-20px">
+                                พิมพ์เอกสาร</div>
+                            </div>
+                          </a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px">1</td>
+                        <td class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px">22 ต.ค. 2567
+                        </td>
+                        <td class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px">
+                          ปพ.1 : ป</td>
+                        <td class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px">100,000</td>
+                        <td class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px">99001</td>
+                        <td class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px">011751</td>
+                        <td class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px">111750</td>
+                      </tr>
+                      <tr>
+                        <td class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px">1</td>
+                        <td class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px">22 ต.ค. 2567
+                        </td>
+                        <td class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px">
+                          ปพ.1 : ป</td>
+                        <td class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px">100,000</td>
+                        <td class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px">99001</td>
+                        <td class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px">011751</td>
+                        <td class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px">111750</td>
+                      </tr>
+
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+
+              <div class="input-select-button-footer-default">
+                <div class="frame-38263">
+                  <div class="input-select-1">
+                    <div class="select-field">
+                      <div class="select-1 font-grey-15">แสดง 10</div>
+                      <img class="dropdown-icon" src="img/dropdown-icon-44.svg" alt="dropdown-icon" />
+                    </div>
+                  </div>
+                  <p class="text-11 text-3 hidden-sm-down notosansthai-normal-black-16px">แสดง 1-10 รายการ จาก 100
+                    รายการ</p>
+                </div>
+                <div class="pagination">
+                  <a href="javascript:SubmitForm('form23')">
+                    <div class="button-2 button-7"><img class="icon-1" src="img/icon-178.svg" alt="icon" /></div>
+                  </a><a href="javascript:SubmitForm('form23')">
+                    <div class="button-5 button-7">
+                      <div class="text-sm-1 text-sm-3">1</div>
+                    </div>
+                  </a><a href="javascript:SubmitForm('form23')">
+                    <div class="button-3 button-7">
+                      <div class="text-sm text-3 notosansthai-medium-blue-15px">2</div>
+                    </div>
+                  </a><a href="javascript:SubmitForm('form23')" class="hidden-sm-down">
+                    <div class="button-3 button-7">
+                      <div class="text-sm text-3 notosansthai-medium-blue-15px">3</div>
+                    </div>
+                  </a><a href="javascript:SubmitForm('form23')" class="hidden-sm-down">
+                    <div class="button-3 button-7">
+                      <div class="text-sm text-3 notosansthai-medium-blue-15px">4</div>
+                    </div>
+                  </a><a href="javascript:SubmitForm('form23')" class="hidden-sm-down">
+                    <div class="button-3 button-7">
+                      <div class="text-sm text-3 notosansthai-medium-blue-15px">5</div>
+                    </div>
+                  </a><a href="javascript:SubmitForm('form23')">
+                    <div class="button-3 button-7">
+                      <div class="text-sm text-3 notosansthai-medium-blue-15px">...</div>
+                    </div>
+                  </a><a href="javascript:SubmitForm('form23')">
+                    <div class="button-3 button-7">
+                      <div class="text-sm-2 text-sm-3 notosansthai-medium-blue-15px">10</div>
+                    </div>
+                  </a><a href="javascript:SubmitForm('form23')">
+                    <div class="button-2 button-7"><img class="icon-1" src="img/icon-179.svg" alt="icon" /></div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -685,14 +411,16 @@
             </article>
           </div>
           <div class="request-detail-school-frame-38379">
-            <a onclick="showPopup()" style="width: 100%; text-align: -webkit-center;">
-              <article class="request-detail-school-button-4 request-detail-school-button-6 request-detail-school-button-4-dialo">
+            <a onclick="showPopup()">
+              <article
+                class="request-detail-school-button-4 request-detail-school-button-6 request-detail-school-button-4-dialo">
                 <div class="button-edit">
                   ยกเลิก
                 </div>
               </article>
-            </a><a onclick="showPopup2()" style="width: 100%; text-align: -webkit-center;">
-              <article class="request-detail-school-button-5 request-detail-school-button-6 request-detail-school-button-4-dialo">
+            </a><a onclick="showPopup2()">
+              <article
+                class="request-detail-school-button-5 request-detail-school-button-6 request-detail-school-button-4-dialo">
                 <div class="button-confirm">
                   ยืนยัน
                 </div>
@@ -711,13 +439,13 @@
             </a>
           </div> -->
         </div>
+        <a onclick="showPopup()"><img class="popup-confirm-frame-1041" src="img/frame-1041.svg" alt="Frame 1041" />
+        </a>
       </div>
-      <a onclick="showPopup()"><img class="popup-confirm-frame-1041" src="img/frame-1041.svg" alt="Frame 1041" />
-      </a>
     </div>
   </div>
   <div id="content2" class="popup-confirm-view" style="display: none;">
-    <div class="popup-confirm-frame-container">
+    <div class="popup-confirm-frame-container2">
       <div class="popup-confirm-frame-38264">
         <div class="popup-confirm-frame-38266">
           <div class="purchase-order-shipping-frame-38265">
@@ -744,10 +472,9 @@
             </a>
           </div>
         </div>
+        <a onclick="showPopup2()"><img class="popup-confirm-frame-1041" src="img/frame-1041-2.svg" alt="Frame 1041" />
+        </a>
       </div>
-      <a onclick="showPopupDraft2()"><img class="purchase-order-shipping-frame-1041" src="img/frame-1041-2.svg"
-          alt="Frame 1041" />
-      </a>
     </div>
   </div>
   <script>
@@ -927,6 +654,141 @@
             table[i].style.display = "none";
           }
         }
+      }
+    }
+
+    const menuHeader1 = document.getElementById("menu-header-1");
+    const menuHeader1_rps = document.getElementById("menu-header-1-rps");
+    const menuHeader1_1 = document.getElementById("menu-header-1-1");
+    const menuHeader1_1_rps = document.getElementById("menu-header-1-1-rps");
+    const menuHeader2 = document.getElementById("menu-header-2");
+    const menuHeader2_rps = document.getElementById("menu-header-2-rps");
+    const menuHeader3 = document.getElementById("menu-header-3");
+    const menuHeader3_rps = document.getElementById("menu-header-3-rps");
+    const menuHeader4 = document.getElementById("menu-header-4");
+    const menuHeader4_rps = document.getElementById("menu-header-4-rps");
+
+
+    let isMenuHeader1 = false;
+    let isMenuHeader1_1 = false;
+    let isMenuHeader2 = false;
+    let isMenuHeader3 = false;
+    let isMenuHeader4 = false;
+
+    function showMenuNav1() {
+      isMenuHeader1 = !isMenuHeader1;
+      isMenuHeader1_1 = false;
+      isMenuHeader2 = false;
+      isMenuHeader3 = false;
+      isMenuHeader4 = false;
+      // const subMenuHeaderMobile = document.getElementById("subMenuHeaderMobile");
+      menuHeader1_1.style.display = "none";
+      menuHeader2.style.display = "none";
+      menuHeader2_rps.style.display = "none";
+      menuHeader3.style.display = "none";
+      menuHeader3_rps.style.display = "none";
+      menuHeader4.style.display = "none";
+      menuHeader4_rps.style.display = "none";
+      if (isMenuHeader1) {
+        menuHeader1.style.display = "flex";
+        menuHeader1_rps.style.display = "flex";
+        // subMenuHeaderMobile.style.display = "flex";
+      } else {
+        menuHeader1.style.display = "none";
+        menuHeader1_rps.style.display = "none";
+        // subMenuHeaderMobile.style.display = "none";
+      }
+    }
+
+    function showMenuNav1_1() {
+      isMenuHeader1_1 = !isMenuHeader1_1;
+      // const subMenuHeaderMobile = document.getElementById("subMenuHeaderMobile");
+      if (isMenuHeader1_1) {
+        menuHeader1_1.style.display = "flex";
+        menuHeader1_1_rps.style.display = "flex";
+        // subMenuHeaderMobile.style.display = "flex";
+      } else {
+        menuHeader1_1.style.display = "none";
+        menuHeader1_1_rps.style.display = "none";
+        // subMenuHeaderMobile.style.display = "none";
+      }
+    }
+
+
+    function showMenuNav2() {
+      isMenuHeader2 = !isMenuHeader2;
+      isMenuHeader1 = false;
+      isMenuHeader1_1 = false;
+      isMenuHeader3 = false;
+      isMenuHeader4 = false;
+      menuHeader1.style.display = "none";
+      menuHeader1_rps.style.display = "none";
+      menuHeader1_1.style.display = "none";
+      menuHeader1_1_rps.style.display = "none";
+      menuHeader3.style.display = "none";
+      menuHeader3_rps.style.display = "none";
+      menuHeader4.style.display = "none";
+      menuHeader4_rps.style.display = "none";
+      // const subMenuHeaderMobile = document.getElementById("subMenuHeaderMobile");
+      if (isMenuHeader2) {
+        menuHeader2.style.display = "flex";
+        menuHeader2_rps.style.display = "flex";
+        // subMenuHeaderMobile.style.display = "flex";
+      } else {
+        menuHeader2.style.display = "none";
+        menuHeader2_rps.style.display = "none";
+        // subMenuHeaderMobile.style.display = "none";
+      }
+    }
+
+
+    function showMenuNav3() {
+      isMenuHeader3 = !isMenuHeader3;
+      isMenuHeader1 = false;
+      isMenuHeader1_1 = false;
+      isMenuHeader2 = false;
+      isMenuHeader4 = false;
+      menuHeader1.style.display = "none";
+      menuHeader1_rps.style.display = "none";
+      menuHeader1_1.style.display = "none";
+      menuHeader1_1_rps.style.display = "none";
+      menuHeader2.style.display = "none";
+      menuHeader2_rps.style.display = "none";
+      menuHeader4.style.display = "none";
+      menuHeader4_rps.style.display = "none";
+      if (isMenuHeader3) {
+        menuHeader3.style.display = "flex";
+        menuHeader3_rps.style.display = "flex";
+      } else {
+        menuHeader3.style.display = "none";
+        menuHeader3_rps.style.display = "none";
+      }
+    }
+
+
+    function showMenuNav4() {
+      isMenuHeader4 = !isMenuHeader4;
+      isMenuHeader1 = false;
+      isMenuHeader1_1 = false;
+      isMenuHeader2 = false;
+      isMenuHeader3 = false;
+      menuHeader1.style.display = "none";
+      menuHeader1_rps.style.display = "none";
+      menuHeader1_1.style.display = "none";
+      menuHeader1_1_rps.style.display = "none";
+      menuHeader2.style.display = "none";
+      menuHeader2_rps.style.display = "none";
+      menuHeader3.style.display = "none";
+      menuHeader3_rps.style.display = "none";
+      // const subMenuHeaderMobile = document.getElementById("subMenuHeaderMobile");
+      if (isMenuHeader4) {
+        menuHeader4.style.display = "flex";
+        menuHeader4_rps.style.display = "flex";
+        // subMenuHeaderMobile.style.display = "flex";
+      } else {
+        menuHeader4.style.display = "none";
+        menuHeader4_rps.style.display = "none";
+        // subMenuHeaderMobile.style.display = "none";
       }
     }
   </script>
