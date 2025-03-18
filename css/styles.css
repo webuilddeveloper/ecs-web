@@ -31117,12 +31117,13 @@ body.no-scroll {
 
   .content-ecs .menu-button-ecs {
     width: -webkit-fill-available;
-    margin-top: 100px;
+    margin-top: 50px;
     padding: 0 30px;
   }
 
   .content-ecs .frame-38454 {
     width: -webkit-fill-available;
+    margin-top: 100px;
   }
 
   .content-ecs .vector-14 {
@@ -35065,7 +35066,7 @@ body.no-scroll {
   }
 
   .title-button-od-create {
-    font-size: var(--font-size-20);
+    font-size: var(--font-size-16);
     font-family: var(--font-family-noto_sans_thai);
     font-weight: 600;
     display: flex;
@@ -35081,10 +35082,10 @@ body.no-scroll {
   .card-build-order .button {
     background-color: #3348FF;
     color: var(--white);
-    font-size: var(--font-size-16);
+    font-size: var(--font-size-14);
     font-family: var(--font-family-noto_sans_thai);
     font-weight: 600;
-    padding: 12px 24px;
+    padding: 11px;
     height: auto;
     align-items: anchor-center;
   }
