@@ -26092,6 +26092,8 @@ a:active {
   gap: 32px;
   justify-content: center;
   position: relative;
+  width: 100%;
+  margin-top: 50px;
 }
 
 .print-document-history-frame-38455 {
@@ -26476,6 +26478,7 @@ a:active {
   overflow: hidden;
   position: relative;
   color: var(--bggrey);
+  width: 100%;
 }
 
 
@@ -26908,7 +26911,7 @@ body.no-scroll {
     flex-direction: column;
     height: auto;
     width: 100%;
-    padding: 0px 30px;
+    padding: 0px 100px;
   }
 
   .content-ecs .frame-38489 {
