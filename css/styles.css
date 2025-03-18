@@ -42086,7 +42086,8 @@ hr {
   font-family: var(--font-family-noto_sans_thai);
   display: flex;
   width: fit-content;
-  min-width: 43px;
+  justify-content: center;
+  min-width: 47px;
 }
 
 .card-status-popo-1-bo {
@@ -42099,7 +42100,8 @@ hr {
   font-family: var(--font-family-noto_sans_thai);
   display: flex;
   width: fit-content;
-  min-width: 43px;
+  justify-content: center;
+  min-width: 47px;
 }
 
 .card-status-approve {
@@ -42112,7 +42114,8 @@ hr {
   font-family: var(--font-family-noto_sans_thai);
   display: flex;
   width: fit-content;
-  min-width: 43px;
+  justify-content: center;
+  min-width: 47px;
 }
 
 .card-status-online {
@@ -42125,7 +42128,8 @@ hr {
   font-family: var(--font-family-noto_sans_thai);
   display: flex;
   width: fit-content;
-  min-width: 43px;
+  justify-content: center;
+  min-width: 47px;
 }
 
 .title-column-table {
