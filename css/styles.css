@@ -2836,9 +2836,10 @@ input:focus {
   flex: 1;
   flex-grow: 1;
   gap: 8px;
-  height: 46px;
+  /* height: 46px; */
   overflow: hidden;
   padding: 8px 10px;
+  min-width: 50px;
 }
 
 .order-approval-list-icon {
@@ -12369,7 +12370,7 @@ input:focus {
   display: flex;
   flex-direction: column;
   height: auto;
-  /* width: 1440px; */
+  width: 100%;
 }
 
 .purchase-order-header {
@@ -12481,7 +12482,7 @@ input:focus {
   margin-left: 1.0px;
   margin-top: 105px;
   position: relative;
-  width: 1241px;
+  width: 100%;
 }
 
 .purchase-order-frame-38385 {
@@ -27141,17 +27142,17 @@ body.no-scroll {
   .purchase-order-frame-14 {
     align-items: center;
     background-color: var(--main);
-    border-radius: 62px;
+    border-radius: 10px;
     display: flex;
     gap: 12px;
     height: 45px;
     justify-content: center;
-    margin-left: 23.0px;
+    /* margin-left: 23.0px; */
     margin-top: 33px;
     overflow: hidden;
     padding: 16px 54px;
     position: relative;
-    width: 457px;
+    width: 300px;
   }
 
   .purchase-order-detail-text-8 {
@@ -30818,7 +30819,7 @@ body.no-scroll {
   .purchase-order-frame-14 {
     align-items: center;
     background-color: var(--main);
-    border-radius: 62px;
+    border-radius: 10px;
     display: flex;
     gap: 12px;
     height: 45px;
@@ -30828,7 +30829,7 @@ body.no-scroll {
     overflow: hidden;
     padding: 16px 54px;
     position: relative;
-    width: 457px;
+    width: 300px;
     justify-self: center;
   }
 
@@ -35674,11 +35675,13 @@ body.no-scroll {
   .purchase-order-frame-14 {
     align-items: center;
     background-color: var(--main);
-    border-radius: 62px;
+    border-radius: 10px;
     display: flex;
     gap: 12px;
     height: 45px;
     justify-content: center;
+    /* margin-left: 23.0px; */
+    margin-top: 33px;
     overflow: hidden;
     padding: 16px 54px;
     position: relative;
@@ -39499,7 +39502,7 @@ body.no-scroll {
 
   .request-detail-school-frame-38379 {
     align-items: center;
-    display: inline-flex;
+    display: inline;
     flex: 0 0 auto;
     gap: 20px;
     position: relative;
@@ -41271,6 +41274,14 @@ body.no-scroll {
     bottom: 25%;
     /* left: 20%; */
   }
+
+  .div-purchase-order-school-filter{
+    flex-wrap: wrap;
+  }
+
+  .div-purchase-order-school-filter-1{
+    width: 100% !important;
+  }
 }
 
 /* media */
@@ -41382,10 +41393,11 @@ body.no-scroll {
   gap: 8px;
   /* height: 44px; */
   /* height: max-content; */
-  padding: 8px;
+  padding: 10px 0px;
   position: relative;
   height: -webkit-fill-available;
   text-align: -webkit-center;
+  align-content: center;
 }
 
 .pdpa-view {
@@ -42144,4 +42156,82 @@ hr {
 
 .al-center {
   align-content: center;
+}
+
+.div-table-purchase-order {
+  display: flex;
+  gap: 10px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: 5px;
+}
+
+.purchase-order-frame-18-2 {
+  align-items: center;
+  border-radius: 30px;
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+}
+
+.purchase-icon-btn {
+  background-color: #012A6C; /* สีพื้นหลังเข้ม */
+  border: none;
+  padding: 0px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.purchase-order-frame-18-3 {
+  display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-content: center;
+      justify-content: space-evenly;
+      align-items: center;
+}
+
+.card-status-popo-1-y {
+  background-color: #FDE86C;
+  border: 1px solid var(--bkack);
+  border-radius: 5px;
+  padding: 6px;
+  color: var(--midnight-blue);
+  font-size: 11px;
+  font-family: var(--font-family-noto_sans_thai);
+  display: flex;
+  width: fit-content;
+  justify-content: center;
+  min-width: 47px;
+}
+
+.card-status-popo-1-w {
+  background-color: #FFFFFF;
+  border: 1px solid var(--bkack);
+  border-radius: 5px;
+  padding: 6px;
+  color: var(--midnight-blue);
+  font-size: 11px;
+  font-family: var(--font-family-noto_sans_thai);
+  display: flex;
+  width: fit-content;
+  justify-content: center;
+  min-width: 47px;
+}
+
+.div-purchase-order-school-filter {
+  width: 100%;
+    display: flex;
+    flex-direction: row;
+    /* flex-wrap: wrap; */
+    align-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.div-purchase-order-school-filter-1{
+  width: 35%;
 }
