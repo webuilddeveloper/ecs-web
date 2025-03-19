@@ -42510,3 +42510,12 @@ hr {
   font-style: normal;
   font-weight: 700;
 }
+
+.empty-message {
+  font-family: var(--font-family-noto_sans_thai);
+  text-align: center;
+  font-weight: 400;
+  font-size: 20px;
+  color: #949596;
+  padding: 20px 0px;
+}

@@ -393,8 +393,8 @@
                       style="min-width: 250px;">จำนวน</th>
                   </tr>
                 </thead>
-                <tbody>
-                  <tr>
+                <tbody id="table-body">
+                  <!-- <tr>
                     <td class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px">1</td>
                     <td class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px"
                       style="text-align: left;">
@@ -539,7 +539,7 @@
                         <img style="width: 26px;" src="img/frame-9.svg" />
                       </div>
                     </td>
-                  </tr>
+                  </tr> -->
                 </tbody>
               </table>
             </div>
@@ -801,6 +801,20 @@
     }
 
   </script>
+   <script>
+    document.addEventListener("DOMContentLoaded", function () {
+        let tbody = document.getElementById("table-body");
+
+        // ตรวจสอบว่ามีข้อมูลหรือไม่
+        if (tbody.children.length === 0) {
+            let row = tbody.insertRow();
+            let cell = row.insertCell();
+            cell.colSpan = 3;  // ให้ข้อความอยู่ตรงกลางทุกคอลัมน์
+            cell.className = "empty-message";
+            cell.innerText = "ไม่พบข้อมูล\nโปรดพิมพ์คำค้นหาที่ท่านต้องการ"; // ข้อความเมื่อไม่มีข้อมูล
+        }
+    });
+</script>
 </body>
 
 </html>
