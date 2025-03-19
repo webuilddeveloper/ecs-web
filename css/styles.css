@@ -20804,7 +20804,7 @@ a:active {
   flex: 0 0 auto;
   gap: 24px;
   position: relative;
-  width: -webkit-fill-available;
+  /* width: -webkit-fill-available; */
   /* width: auto; */
   justify-content: center;
 }
