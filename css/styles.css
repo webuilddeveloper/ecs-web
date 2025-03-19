@@ -42236,3 +42236,11 @@ hr {
 .div-purchase-order-school-filter-1{
   width: 35%;
 }
+
+.logo-box {
+  width: 12px;  /* ขนาดของสี่เหลี่ยม */
+  height: 12px;
+  background-color: #E30613; /* สีแดง */
+  margin-right: 10px; /* ระยะห่างระหว่างกล่องกับข้อความ */
+  border-radius: 20px; /* มุมโค้งเล็กน้อย */
+}
