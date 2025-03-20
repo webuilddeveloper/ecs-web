@@ -17,99 +17,313 @@
 <body style="margin: 0; background: #ffffff">
 
   <div class="header-ecs">
-    <a href="./login.html">
-      <img class="logo-ecs" src="img/logo------1.png" alt="logo ecs" />
-    </a>
-    <div class="navbar-ecs header-menu">
-      <div class="navbar-link-text-ecs">
-        <a href="./purchase-order-school.html">
-          ออกใบขอสั่งซื้อ
+    <div class="content-header">
+      <div class="hd-left">
+        <a href="./login.html">
+          <img class="logo-ecs" src="img/logo------1.png" alt="logo ecs" />
         </a>
-      </div>
-      <div class="navbar-link-text-ecs">
-        <a href="./approve-school.html">
-          เอกสารใบขอสั่งซื้อ
-        </a>
-      </div>
-      <div class="navbar-link-text-ecs">
-        <a href="./delivered-order.html">
-          รายการคำสั่งซื้อ
-        </a>
-      </div>
-      <div class="navbar-link-text-ecs">
-        <a href="./order-cancel.html">
-          ยกเลิกเลข ปพ.
-        </a>
-      </div>
-      <div class="navbar-link-text-ecs">
-        <a href="./delivered-order.html">
-          ประวัติการสั่งซื้อ
-        </a>
-      </div>
-    </div>
-    <div class="header-action-ecs">
-      <img class="group site-navbar" src="img/Icon-Service.png" alt="Service" onclick="showMenuNav()" />
-      <div class="notification-icon">
-        <img class="group" src="img/group@2x.png" alt="Group" onclick="toggleNotificationPanel()" />
-        <span id="notification-badge" class="notification-badge"></span> <!-- จุดแดง -->
-      </div>
-
-      <div id="notification-panel" class="notification-panel hidden">
-        <ul class="notification-list">
-          <li class="notification-item unread">
-            <span class="status-indicator"></span>
-            <div class="notification-content">
-              <p class="notosansthai-normal-vulcan-15px">
-                <strong class="notosansthai-semi-bold-vulcan-15px">หมายเลขคำสั่งซื้อ:</strong> 12345
-              </p>
-              <p class="notosansthai-normal-vulcan-15px">
-                <strong class="notosansthai-semi-bold-vulcan-15px">สถานะ:</strong> รอดำเนินการ
-              </p>
+        <div class="navbar-ecs header-menu">
+          <div class="navbar-link-text-ecs">
+            <div class="title-menu-header pointer" onclick="showMenuNav1()">
+              ใบขอสั่งซื้อ
+              <img class="icon-down-header" src="img/arrow-down-white.svg" alt="logo ecs" />
             </div>
-          </li>
-          <li class="notification-item">
-            <span class="status-indicator read"></span>
-            <div class="notification-content">
-              <p class="notosansthai-normal-vulcan-15px">
-                <strong class="notosansthai-semi-bold-vulcan-15px">หมายเลขคำสั่งซื้อ:</strong> 67890
-              </p>
-              <p class="notosansthai-normal-vulcan-15px">
-                <strong class="notosansthai-semi-bold-vulcan-15px">สถานะ:</strong> สำเร็จ
-              </p>
+            <div class="submenu-theme" id="menu-header-1">
+              <a href="./purchase-order-school.html">
+                ออกใบขอสั่งซื้อ
+              </a>
+              <hr>
+              <a href="./draft-school.html">
+                ร่างใบขอสั่งซื้อ
+              </a>
+              <hr>
+              <div class="sub-menu-card">
+                <div class="title-menu-sub-root pointer" onclick="showMenuNav1_1()">
+                  รายการใบขอสั่งซื้อ
+                  <img class="icon-menu-sub-root" src="img/arrow-right-white.svg" alt="logo ecs" />
+                </div>
+                <div class="submenu-theme-2" id="menu-header-1-1">
+                  <a href="./purchase-order-school.html">
+                    ทั้งหมด
+                  </a>
+                  <hr>
+                  <a href="./waiting-approve-school.html">
+                    รอรับการอนุมัติ
+                  </a>
+                  <hr>
+                  <a href="./purchase-order-school.html">
+                    ไม่ได้รับการอนุมัติ
+                  </a>
+                  <hr>
+                  <a href="./approve-school.html">
+                    ได้รับการอนุมัติ
+                  </a>
+                  <hr>
+                  <a href="./paid_school.html">
+                    รอการชำระเงิน
+                  </a>
+                  <hr>
+                  <a href="./cancel-school.html">
+                    รายการที่ถูกยกเลิก
+                  </a>
+                </div>
+              </div>
             </div>
-          </li>
-        </ul>
+          </div>
+          <div class="navbar-link-text-ecs">
+            <div class="title-menu-header pointer" onclick="showMenuNav2()">
+              คำสั่งซื้อ
+              <img class="icon-down-header" src="img/arrow-down-white.svg" alt="logo ecs" />
+            </div>
+            <div class="submenu-theme" id="menu-header-2">
+              <a href="./purchase-order-school.html">
+                ทั้งหมด
+              </a>
+              <hr>
+              <a href="./purchase-order-school.html">
+                รอการตรวจสอบ
+              </a>
+              <hr>
+              <a href="./purchase-order-school.html">
+                รอการแก้ไข
+              </a>
+              <hr>
+              <a href="./purchase-order-school.html">
+                ที่ต้องได้รับ
+              </a>
+              <hr>
+              <a href="./purchase-order-school.html">
+                จัดส่งสำเร็จ
+              </a>
+              <hr>
+              <a href="./purchase-order-school.html">
+                ยกเลิก/คืนเงิน/คืนสินค้า
+              </a>
+            </div>
+          </div>
+          <div class="navbar-link-text-ecs">
+            <div class="title-menu-header pointer" onclick="showMenuNav3()">
+              เลข ปพ.
+              <img class="icon-down-header" src="img/arrow-down-white.svg" alt="logo ecs" />
+            </div>
+            <div class="submenu-theme" id="menu-header-3">
+              <a href="./purchase-order-school.html">
+                พิมพ์ใบ ปพ.
+              </a>
+              <hr>
+              <a href="./purchase-order-school.html">
+                ประวัติการพิมพ์
+              </a>
+              <hr>
+              <a href="./order-cancel.html">
+                ยกเลิกเลข ปพ.
+              </a>
+            </div>
+          </div>
+          <div class="navbar-link-text-ecs">
+            <div class="title-menu-header pointer" onclick="showMenuNav4()">
+              รายงาน.
+              <img class="icon-down-header" src="img/arrow-down-white.svg" alt="logo ecs" />
+            </div>
+            <div class="submenu-theme" id="menu-header-4">
+              <a href="./purchase-order-school.html">
+                รายงานการพิมพ์ใบ ปพ.
+              </a>
+              <hr>
+              <a href="./purchase-order-school.html">
+                รายงานการใช้ตัวเลข
+              </a>
+              <hr>
+              <a href="./purchase-order-school.html">
+                รายงานการสั่งซื้อ
+              </a>
+            </div>
+          </div>
+        </div>
       </div>
 
-      <a href="./profile-school.html">
-        <img class="vector" src="img/vector-2.svg" alt="Vector" />
-      </a>
-    </div>
-
-  </div>
-    <div class="content-center">
-      <div class="content-ecs">
-        <div class="flex-row flex">
-          <a onclick="goBack()" class="button-back pointer">
-            <img class="icon-back" src="./img/icon-back-4.svg" alt="icon back" />
-            <div class="text_label valign-text-middle">ย้อนกลับ</div>
-          </a>
+      <div class="header-action-ecs">
+        <img class="group site-navbar" src="img/Icon-Service.png" alt="Service" onclick="showMenuNav()" />
+        <div class="notification-icon">
+          <img class="group" src="img/group@2x.png" alt="Group" onclick="toggleNotificationPanel()" />
+          <span id="notification-badge" class="notification-badge"></span> <!-- จุดแดง -->
         </div>
 
-        <h1 class="text-1-2">ยอดชำระเงิน</h1>
-        <div class="frame-38489">
-          <div class="payment-summary-frame-38419">
-            <div class="payment-summary-frame-38395 notosansthai-semi-bold-black-20px">
-              <div class="payment-summary-text-7 notosansthai-bold-black-20px">วิธีชำระเงิน</div>
-              <div class="payment-summary-frame-29">
-                <div class="payment-summary-frame-3826">
-                  <label class="purchase-order-shipping-radio-button">
-                    <input class="payment-summary-radio-button-1 payment-summary-frame-4" type="radio"
-                      name="delivery_option2" value="registered" />
-                    <span class="radio-label payment-summary-text-8 payment-summary-valign-text-middle notosansthai-normal-black-20px">สแกน QR
-                      Code</span>
-                  </label>
-                  <!-- <div class="payment-summary-radio-button-1">
+        <div id="notification-panel" class="notification-panel hidden">
+          <ul class="notification-list">
+            <li class="notification-item unread">
+              <span class="status-indicator"></span>
+              <div class="notification-content">
+                <p class="notosansthai-normal-vulcan-15px">
+                  <strong class="notosansthai-semi-bold-vulcan-15px">หมายเลขคำสั่งซื้อ:</strong> 12345
+                </p>
+                <p class="notosansthai-normal-vulcan-15px">
+                  <strong class="notosansthai-semi-bold-vulcan-15px">สถานะ:</strong> รอดำเนินการ
+                </p>
+              </div>
+            </li>
+            <li class="notification-item">
+              <span class="status-indicator read"></span>
+              <div class="notification-content">
+                <p class="notosansthai-normal-vulcan-15px">
+                  <strong class="notosansthai-semi-bold-vulcan-15px">หมายเลขคำสั่งซื้อ:</strong> 67890
+                </p>
+                <p class="notosansthai-normal-vulcan-15px">
+                  <strong class="notosansthai-semi-bold-vulcan-15px">สถานะ:</strong> สำเร็จ
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+
+
+        <div class="title-menu-header">
+          <a href="./profile-school.html" onclick="showMenuNav3()">
+            <img class="vector" src="img/vector-2.svg" alt="Vector" />
+          </a>
+          <a href="./profile-school.html" class="title-logout pointer">
+            ออกจากระบบ
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="subMenuHeader" class="sub-menu-header" style="display: none;">
+    <div class="title-menu-header" onclick="showMenuNav1()">
+      ใบขอสั่งซื้อ
+      <img class="icon-down-header" src="img/arrow-down-white.svg" alt="logo ecs" />
+    </div>
+    <div class="sub-menu-header-1-rps" id="menu-header-1-rps">
+      <a class="title-menu-header" href="./purchase-order-school.html">
+        ออกใบขอสั่งซื้อ
+      </a>
+      <hr>
+      <a class="title-menu-header" href="./purchase-order-school.html">
+        ออกใบขอสั่งซื้อ
+      </a>
+      <hr>
+      <div class="title-menu-header" onclick="showMenuNav1_1()">
+        รายการใบขอสั่งซื้อ
+        <img class="icon-down-header" src="img/arrow-down-white.svg" alt="logo ecs" />
+      </div>
+      <div class="sub-menu-header-1-1-rps" id="menu-header-1-1-rps">
+        <a class="title-menu-header" href="./purchase-order-school.html">
+          ทั้งหมด
+        </a>
+        <hr>
+        <a class="title-menu-header" href="./purchase-order-school.html">
+          รอรับการอนุมัติ
+        </a>
+        <hr>
+        <a class="title-menu-header" href="./purchase-order-school.html">
+          ได้รับการอนุมัติ
+        </a>
+        <hr>
+        <a class="title-menu-header" href="./purchase-order-school.html">
+          รอการชำระเงิน
+        </a>
+        <hr>
+        <a class="title-menu-header" href="./purchase-order-school.html">
+          รายการที่ถูกยกเลิก
+        </a>
+      </div>
+    </div>
+    <hr />
+    <div class="title-menu-header" onclick="showMenuNav2()">
+      คำสั่งซื้อ
+      <img class="icon-down-header" src="img/arrow-down-white.svg" alt="logo ecs" />
+    </div>
+    <div class="sub-menu-header-2-rps" id="menu-header-2-rps">
+      <a class="title-menu-header" href="./purchase-order-school.html">
+        ทั้งหมด
+      </a>
+      <hr>
+      <a class="title-menu-header" href="./purchase-order-school.html">
+        รอตรวจสอบ
+      </a>
+      <hr>
+      <a class="title-menu-header" href="./purchase-order-school.html">
+        รอการแก้ไข
+      </a>
+      <hr>
+      <a class="title-menu-header" href="./purchase-order-school.html">
+        ที่ต้องได้รับ
+      </a>
+      <hr>
+      <a class="title-menu-header" href="./purchase-order-school.html">
+        จัดส่งสำเร็จ
+      </a>
+      <hr>
+      <a class="title-menu-header" href="./purchase-order-school.html">
+        ยกเลิก/คืนเงิน/คืนสินค้า
+      </a>
+
+    </div>
+    <hr />
+    <div class="title-menu-header" onclick="showMenuNav3()">
+      เลข ปพ.
+      <img class="icon-down-header" src="img/arrow-down-white.svg" alt="logo ecs" />
+    </div>
+    <div class="sub-menu-header-3-rps" id="menu-header-3-rps">
+      <a class="title-menu-header" href="./purchase-order-school.html">
+        พิมพ์ใบ ปพ.
+      </a>
+      <hr>
+      <a class="title-menu-header" href="./purchase-order-school.html">
+        ประวัติการพิมพ์
+      </a>
+      <hr>
+      <a class="title-menu-header" href="./purchase-order-school.html">
+        ยกเลิกเลข ปพ.
+      </a>
+    </div>
+    <hr />
+    <div class="title-menu-header" onclick="showMenuNav4()">
+      รายงาน.
+      <img class="icon-down-header" src="img/arrow-down-white.svg" alt="logo ecs" />
+    </div>
+    <div class="sub-menu-header-4-rps" id="menu-header-4-rps">
+      <a class="title-menu-header" href="./purchase-order-school.html">
+        รายงานการพิมพ์ ใบ ปพ.
+      </a>
+      <hr>
+      <a class="title-menu-header" href="./purchase-order-school.html">
+        รายงานการใช้ตัวเลข
+      </a>
+      <hr>
+      <a class="title-menu-header" href="./purchase-order-school.html">
+        รายงานการสั่งซื้อ
+      </a>
+    </div>
+  </div>
+
+  <div class="content-center">
+    <div class="content-ecs">
+      <div class="flex-row flex">
+        <a onclick="goBack()" class="button-back pointer">
+          <img class="icon-back" src="./img/icon-back-4.svg" alt="icon back" />
+          <div class="text_label valign-text-middle">ย้อนกลับ</div>
+        </a>
+      </div>
+
+      <h1 class="text-1-2">ยอดชำระเงิน</h1>
+      <div class="frame-38489">
+        <div class="payment-summary-frame-38419">
+          <div class="payment-summary-frame-38395 notosansthai-semi-bold-black-20px">
+            <div class="payment-summary-text-7 notosansthai-bold-black-20px">วิธีชำระเงิน</div>
+            <div class="payment-summary-frame-29">
+              <div class="payment-summary-frame-3826">
+                <label class="purchase-order-shipping-radio-button">
+                  <input class="payment-summary-radio-button-1 payment-summary-frame-4" type="radio"
+                    name="delivery_option2" value="registered" />
+                  <span
+                    class="radio-label payment-summary-text-8 payment-summary-valign-text-middle notosansthai-normal-black-20px">สแกน
+                    QR
+                    Code</span>
+                </label>
+                <!-- <div class="payment-summary-radio-button-1">
                   <div class="payment-summary-frame-4">
                     <div class="payment-summary-overlap-group">
                       <div class="payment-summary-ellipse-1"></div>
@@ -117,17 +331,18 @@
                   </div>
                 </div>
                 <div class="payment-summary-text-8 payment-summary-valign-text-middle">สแกน QR Code</div> -->
-                </div>
-                <img class="payment-summary-line" src="img/line-6-113.svg" alt="Line 6" />
-                <div class="payment-summary-frame-3826">
-                  <label class="purchase-order-shipping-radio-button">
-                    <input class="payment-summary-radio-button-1 payment-summary-frame-4" type="radio"
-                      name="delivery_option2" value="registered" />
-                    <span class="radio-label payment-summary-text-8 payment-summary-valign-text-middle notosansthai-normal-black-20px">โอนเข้าบัญชี</span>
-                  </label>
-                </div>
-                <img class="payment-summary-line" src="img/line-6-113.svg" alt="Line 6" />
-                <!-- <div class="payment-summary-frame-3826">
+              </div>
+              <img class="payment-summary-line" src="img/line-6-113.svg" alt="Line 6" />
+              <div class="payment-summary-frame-3826">
+                <label class="purchase-order-shipping-radio-button">
+                  <input class="payment-summary-radio-button-1 payment-summary-frame-4" type="radio"
+                    name="delivery_option2" value="registered" />
+                  <span
+                    class="radio-label payment-summary-text-8 payment-summary-valign-text-middle notosansthai-normal-black-20px">โอนเข้าบัญชี</span>
+                </label>
+              </div>
+              <img class="payment-summary-line" src="img/line-6-113.svg" alt="Line 6" />
+              <!-- <div class="payment-summary-frame-3826">
                 <div class="payment-summary-radio-button">
                   <div class="payment-summary-frame-3">
                     <div class="payment-summary-ellipse-2"></div>
@@ -135,83 +350,84 @@
                 </div>
                 <div class="payment-summary-qr-code payment-summary-valign-text-middle">โอนเข้าบัญชี</div>
               </div> -->
-                <!-- <img class="payment-summary-line" src="img/line-6-104.svg" alt="Line 7" /> -->
-                <div class="payment-summary-frame-3826">
-                  <label class="purchase-order-shipping-radio-button">
-                    <input class="payment-summary-radio-button-1 payment-summary-frame-4" type="radio"
-                      name="delivery_option2" value="registered"  disabled/>
-                    <span class="payment-summary-gfmis payment-summary-valign-text-middle notosansthai-normal-black-20px">GFMIS</span>
-                  </label>
-                </div>
+              <!-- <img class="payment-summary-line" src="img/line-6-104.svg" alt="Line 7" /> -->
+              <div class="payment-summary-frame-3826">
+                <label class="purchase-order-shipping-radio-button">
+                  <input class="payment-summary-radio-button-1 payment-summary-frame-4" type="radio"
+                    name="delivery_option2" value="registered" disabled />
+                  <span
+                    class="payment-summary-gfmis payment-summary-valign-text-middle notosansthai-normal-black-20px">GFMIS</span>
+                </label>
               </div>
             </div>
-            <div class="payment-summary-frame-28">
-              <div class="payment-summary-frame-102">
-                <div class="payment-summary-frame">
-                  <div
-                    class="payment-summary-transport-fee payment-summary-valign-text-middle notosansthai-normal-black-20px">
-                    ค่าขนส่ง /Transport Fee
-                  </div>
-                  <div class="payment-summary-xxxx-2 payment-summary-valign-text-middle notosansthai-bold-black-20px">
-                    xx.xx บาท</div>
+          </div>
+          <div class="payment-summary-frame-28">
+            <div class="payment-summary-frame-102">
+              <div class="payment-summary-frame">
+                <div
+                  class="payment-summary-transport-fee payment-summary-valign-text-middle notosansthai-normal-black-20px">
+                  ค่าขนส่ง /Transport Fee
                 </div>
-                <div class="payment-summary-frame">
-                  <div
-                    class="payment-summary-text_label-1 payment-summary-valign-text-middle payment-summary-text_label-5 notosansthai-normal-black-20px">
-                    มูลค่าสินค้าและค่าขนส่งก่อนภาษี /Price Before Vat
-                  </div>
-                  <div class="payment-summary-xxxx-2 payment-summary-valign-text-middle notosansthai-bold-black-20px">
-                    xx.xx บาท</div>
+                <div class="payment-summary-xxxx-2 payment-summary-valign-text-middle notosansthai-bold-black-20px">
+                  xx.xx บาท</div>
+              </div>
+              <div class="payment-summary-frame">
+                <div
+                  class="payment-summary-text_label-1 payment-summary-valign-text-middle payment-summary-text_label-5 notosansthai-normal-black-20px">
+                  มูลค่าสินค้าและค่าขนส่งก่อนภาษี /Price Before Vat
                 </div>
-                <div class="payment-summary-frame">
-                  <div
-                    class="payment-summary-total-vat payment-summary-valign-text-middle notosansthai-normal-black-20px">
-                    ภาษีมูลค่าเพิ่ม /Total Vat
-                  </div>
-                  <div class="payment-summary-xxxx-2 payment-summary-valign-text-middle notosansthai-bold-black-20px">
-                    xx.xx บาท</div>
+                <div class="payment-summary-xxxx-2 payment-summary-valign-text-middle notosansthai-bold-black-20px">
+                  xx.xx บาท</div>
+              </div>
+              <div class="payment-summary-frame">
+                <div
+                  class="payment-summary-total-vat payment-summary-valign-text-middle notosansthai-normal-black-20px">
+                  ภาษีมูลค่าเพิ่ม /Total Vat
                 </div>
-                <img class="payment-summary-line" src="img/line-6-104.svg" alt="Line 6" />
-                <div class="payment-summary-frame">
-                  <div
-                    class="payment-summary-grand-total payment-summary-valign-text-middle notosansthai-bold-black-20px">
-                    ยอดสุทธิ /Grand Total</div>
-                  <div class="payment-summary-xxxx-2 payment-summary-valign-text-middle notosansthai-bold-black-20px">
-                    xx.xx บาท</div>
-                </div>
+                <div class="payment-summary-xxxx-2 payment-summary-valign-text-middle notosansthai-bold-black-20px">
+                  xx.xx บาท</div>
+              </div>
+              <img class="payment-summary-line" src="img/line-6-104.svg" alt="Line 6" />
+              <div class="payment-summary-frame">
+                <div
+                  class="payment-summary-grand-total payment-summary-valign-text-middle notosansthai-bold-black-20px">
+                  ยอดสุทธิ /Grand Total</div>
+                <div class="payment-summary-xxxx-2 payment-summary-valign-text-middle notosansthai-bold-black-20px">
+                  xx.xx บาท</div>
               </div>
             </div>
-            <div class="payment-summary-frame-38477">
-              <a href="javascript:SubmitForm('form6')">
-                <div class="request-detail-school-button-2 request-detail-school-button-6">
-                  <img class="request-detail-school-icon-btn-left" src="img/icon-btn-left-1.svg" alt="icon-btn-left" />
-                  <div class="request-detail-school-text-sm request-detail-school-text-3">ดาวน์โหลดเอกสาร์ใบแจ้งชำระเงิน
-                  </div>
+          </div>
+          <div class="payment-summary-frame-38477">
+            <a href="javascript:SubmitForm('form6')">
+              <div class="request-detail-school-button-2 request-detail-school-button-6">
+                <img class="request-detail-school-icon-btn-left" src="img/icon-btn-left-1.svg" alt="icon-btn-left" />
+                <div class="request-detail-school-text-sm request-detail-school-text-3">ดาวน์โหลดเอกสาร์ใบแจ้งชำระเงิน
                 </div>
-              </a>
-              <a onclick="showPopup()" style="width: -webkit-fill-available;">
+              </div>
+            </a>
+            <a onclick="showPopup()" style="width: -webkit-fill-available;">
 
-                <div class="payment-summary-frame-14">
-                  <div class="payment-summary-text-9 notosansthai-semi-bold-white-20px">ชำระเงิน</div>
-                </div>
-              </a>
+              <div class="payment-summary-frame-14">
+                <div class="payment-summary-text-9 notosansthai-semi-bold-white-20px">ชำระเงิน</div>
+              </div>
+            </a>
 
-              
-              <!-- <div class="payment-summary-button-1 payment-summary-button-4">
+
+            <!-- <div class="payment-summary-button-1 payment-summary-button-4">
               <img class="payment-summary-icon-btn-left" src="img/icon-btn-left-20.svg" alt="icon-btn-left" />
               <div class="payment-summary-text-sm">ดาวน์โหลดเอกสาร</div>
             </div> -->
-            </div>
           </div>
-
-
-
         </div>
+
+
+
       </div>
     </div>
+  </div>
 
 
-    <!-- <div class="container-center-horizontal">
+  <!-- <div class="container-center-horizontal">
     <div class="payment-summary">
       
       <div class="payment-summary-frame-38478">
@@ -323,17 +539,21 @@
                 คุณต้องการที่จะชำระเงินนี้หรือไม่<br />หากยืนยันจะเป็นอันเสร็จสิ้นการยื่นคำขอ
               </div>
             </div>
-            
+
             <div class="request-detail-school-frame-38379">
-              <a onclick="showPopup()" class="no-text-underline" style="width: -webkit-fill-available; text-align: -webkit-center;">
-                <article class="request-detail-school-button-4 request-detail-school-button-6" style="min-width: 100px;">
+              <a onclick="showPopup()" class="no-text-underline"
+                style="width: -webkit-fill-available; text-align: -webkit-center;">
+                <article class="request-detail-school-button-4 request-detail-school-button-6"
+                  style="min-width: 100px;">
                   <div class="button-edit">
                     ยกเลิก
                   </div>
                 </article>
               </a>
-              <a href="./payment_qr.html" class="no-text-underline" style="width: -webkit-fill-available; text-align: -webkit-center;">
-                <article class="request-detail-school-button-5 request-detail-school-button-6" style="min-width: 100px;">
+              <a href="./payment_qr.html" class="no-text-underline"
+                style="width: -webkit-fill-available; text-align: -webkit-center;">
+                <article class="request-detail-school-button-5 request-detail-school-button-6"
+                  style="min-width: 100px;">
                   <div class="button-confirm">
                     ยืนยัน
                   </div>
@@ -350,6 +570,139 @@
 
   <script>
     /* Copyright (c) 2016 Tobias Buschor https://goo.gl/gl0mbf | MIT License https://goo.gl/HgajeK */
+
+    const menuHeader1 = document.getElementById("menu-header-1");
+    const menuHeader1_rps = document.getElementById("menu-header-1-rps");
+    const menuHeader1_1 = document.getElementById("menu-header-1-1");
+    const menuHeader1_1_rps = document.getElementById("menu-header-1-1-rps");
+    const menuHeader2 = document.getElementById("menu-header-2");
+    const menuHeader2_rps = document.getElementById("menu-header-2-rps");
+    const menuHeader3 = document.getElementById("menu-header-3");
+    const menuHeader3_rps = document.getElementById("menu-header-3-rps");
+    const menuHeader4 = document.getElementById("menu-header-4");
+    const menuHeader4_rps = document.getElementById("menu-header-4-rps");
+
+
+    let isMenuHeader1 = false;
+    let isMenuHeader1_1 = false;
+    let isMenuHeader2 = false;
+    let isMenuHeader3 = false;
+    let isMenuHeader4 = false;
+
+    function showMenuNav1() {
+      isMenuHeader1 = !isMenuHeader1;
+      isMenuHeader1_1 = false;
+      isMenuHeader2 = false;
+      isMenuHeader3 = false;
+      isMenuHeader4 = false;
+      // const subMenuHeaderMobile = document.getElementById("subMenuHeaderMobile");
+      menuHeader1_1.style.display = "none";
+      menuHeader2.style.display = "none";
+      menuHeader2_rps.style.display = "none";
+      menuHeader3.style.display = "none";
+      menuHeader3_rps.style.display = "none";
+      menuHeader4.style.display = "none";
+      menuHeader4_rps.style.display = "none";
+      if (isMenuHeader1) {
+        menuHeader1.style.display = "flex";
+        menuHeader1_rps.style.display = "flex";
+        // subMenuHeaderMobile.style.display = "flex";
+      } else {
+        menuHeader1.style.display = "none";
+        menuHeader1_rps.style.display = "none";
+        // subMenuHeaderMobile.style.display = "none";
+      }
+    }
+
+    function showMenuNav1_1() {
+      isMenuHeader1_1 = !isMenuHeader1_1;
+      // const subMenuHeaderMobile = document.getElementById("subMenuHeaderMobile");
+      if (isMenuHeader1_1) {
+        menuHeader1_1.style.display = "flex";
+        menuHeader1_1_rps.style.display = "flex";
+        // subMenuHeaderMobile.style.display = "flex";
+      } else {
+        menuHeader1_1.style.display = "none";
+        menuHeader1_1_rps.style.display = "none";
+        // subMenuHeaderMobile.style.display = "none";
+      }
+    }
+
+
+    function showMenuNav2() {
+      isMenuHeader2 = !isMenuHeader2;
+      isMenuHeader1 = false;
+      isMenuHeader1_1 = false;
+      isMenuHeader3 = false;
+      isMenuHeader4 = false;
+      menuHeader1.style.display = "none";
+      menuHeader1_rps.style.display = "none";
+      menuHeader1_1.style.display = "none";
+      menuHeader1_1_rps.style.display = "none";
+      menuHeader3.style.display = "none";
+      menuHeader3_rps.style.display = "none";
+      menuHeader4.style.display = "none";
+      menuHeader4_rps.style.display = "none";
+      // const subMenuHeaderMobile = document.getElementById("subMenuHeaderMobile");
+      if (isMenuHeader2) {
+        menuHeader2.style.display = "flex";
+        menuHeader2_rps.style.display = "flex";
+        // subMenuHeaderMobile.style.display = "flex";
+      } else {
+        menuHeader2.style.display = "none";
+        menuHeader2_rps.style.display = "none";
+        // subMenuHeaderMobile.style.display = "none";
+      }
+    }
+
+
+    function showMenuNav3() {
+      isMenuHeader3 = !isMenuHeader3;
+      isMenuHeader1 = false;
+      isMenuHeader1_1 = false;
+      isMenuHeader2 = false;
+      isMenuHeader4 = false;
+      menuHeader1.style.display = "none";
+      menuHeader1_rps.style.display = "none";
+      menuHeader1_1.style.display = "none";
+      menuHeader1_1_rps.style.display = "none";
+      menuHeader2.style.display = "none";
+      menuHeader2_rps.style.display = "none";
+      menuHeader4.style.display = "none";
+      menuHeader4_rps.style.display = "none";
+      if (isMenuHeader3) {
+        menuHeader3.style.display = "flex";
+        menuHeader3_rps.style.display = "flex";
+      } else {
+        menuHeader3.style.display = "none";
+        menuHeader3_rps.style.display = "none";
+      }
+    }
+
+
+    function showMenuNav4() {
+      isMenuHeader4 = !isMenuHeader4;
+      isMenuHeader1 = false;
+      isMenuHeader1_1 = false;
+      isMenuHeader2 = false;
+      isMenuHeader3 = false;
+      menuHeader1.style.display = "none";
+      menuHeader1_rps.style.display = "none";
+      menuHeader1_1.style.display = "none";
+      menuHeader1_1_rps.style.display = "none";
+      menuHeader2.style.display = "none";
+      menuHeader2_rps.style.display = "none";
+      menuHeader3.style.display = "none";
+      menuHeader3_rps.style.display = "none";
+      if (isMenuHeader4) {
+        menuHeader4.style.display = "flex";
+        menuHeader4_rps.style.display = "flex";
+      } else {
+        menuHeader4.style.display = "none";
+        menuHeader4_rps.style.display = "none";
+      }
+    }
+
 
     let isShow = false;
 
