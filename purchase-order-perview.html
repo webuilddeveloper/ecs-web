@@ -1,0 +1,1518 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <!--<meta name=description content="This site was generated with Anima. www.animaapp.com"/>-->
+    <!-- <link rel="shortcut icon" type=image/png href="https://animaproject.s3.amazonaws.com/home/favicon.png" /> -->
+    <meta name="viewport" content="width=1440, maximum-scale=1.0" />
+    <link rel="shortcut icon" type="image/png" href="https://animaproject.s3.amazonaws.com/home/favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="og:type" content="website" />
+    <meta name="twitter:card" content="photo" />
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+    <link rel="stylesheet" type="text/css" href="css/styles-aom.css" />
+    <!-- <link rel="stylesheet" type="text/css" href="css/home-school-styles.css" />
+  <link rel="stylesheet" type="text/css" href="css/home-school-styleguide.css" />
+  <link rel="stylesheet" type="text/css" href="css/home-school-globals.css" /> -->
+
+</head>
+
+<body style="margin: 0; background: #ffffff">
+
+    <!-- <div class="desktop"> -->
+    <div class="header-ecs">
+        <div class="content-header">
+            <div class="hd-left">
+                <a href="./login.html">
+                    <img class="logo-ecs" src="img/logo------1.png" alt="logo ecs" />
+                </a>
+                <div class="navbar-ecs header-menu">
+                    <div class="navbar-link-text-ecs">
+                        <div class="title-menu-header pointer" onclick="showMenuNav1()">
+                            ใบขอสั่งซื้อ
+                            <img class="icon-down-header" src="img/arrow-down-white.svg" alt="logo ecs" />
+                        </div>
+                        <div class="submenu-theme" id="menu-header-1">
+                            <a href="./purchase-order-school.html">
+                                ออกใบขอสั่งซื้อ
+                            </a>
+                            <hr>
+                            <a href="./draft-school.html">
+                                ร่างใบขอสั่งซื้อ
+                            </a>
+                            <hr>
+                            <div class="sub-menu-card">
+                                <div class="title-menu-sub-root pointer" onclick="showMenuNav1_1()">
+                                    รายการใบขอสั่งซื้อ
+                                    <img class="icon-menu-sub-root" src="img/arrow-right-white.svg" alt="logo ecs" />
+                                </div>
+                                <div class="submenu-theme-2" id="menu-header-1-1">
+                                    <a href="./purchase-order-school.html">
+                                        ทั้งหมด
+                                    </a>
+                                    <hr>
+                                    <a href="./waiting-approve-school.html">
+                                        รอรับการอนุมัติ
+                                    </a>
+                                    <hr>
+                                    <a href="./purchase-order-school.html">
+                                        ไม่ได้รับการอนุมัติ
+                                    </a>
+                                    <hr>
+                                    <a href="./approve-school.html">
+                                        ได้รับการอนุมัติ
+                                    </a>
+                                    <hr>
+                                    <a href="./paid_school.html">
+                                        รอการชำระเงิน
+                                    </a>
+                                    <hr>
+                                    <a href="./cancel-school.html">
+                                        รายการที่ถูกยกเลิก
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="navbar-link-text-ecs">
+                        <div class="title-menu-header pointer" onclick="showMenuNav2()">
+                            คำสั่งซื้อ
+                            <img class="icon-down-header" src="img/arrow-down-white.svg" alt="logo ecs" />
+                        </div>
+                        <div class="submenu-theme" id="menu-header-2">
+                            <a href="./purchase-order-school.html">
+                                ทั้งหมด
+                            </a>
+                            <hr>
+                            <a href="./purchase-order-school.html">
+                                รอการตรวจสอบ
+                            </a>
+                            <hr>
+                            <a href="./purchase-order-school.html">
+                                รอการแก้ไข
+                            </a>
+                            <hr>
+                            <a href="./purchase-order-school.html">
+                                ที่ต้องได้รับ
+                            </a>
+                            <hr>
+                            <a href="./purchase-order-school.html">
+                                จัดส่งสำเร็จ
+                            </a>
+                            <hr>
+                            <a href="./purchase-order-school.html">
+                                ยกเลิก/คืนเงิน/คืนสินค้า
+                            </a>
+                        </div>
+                    </div>
+                    <div class="navbar-link-text-ecs">
+                        <div class="title-menu-header pointer" onclick="showMenuNav3()">
+                            เลข ปพ.
+                            <img class="icon-down-header" src="img/arrow-down-white.svg" alt="logo ecs" />
+                        </div>
+                        <div class="submenu-theme" id="menu-header-3">
+                            <a href="./purchase-order-school.html">
+                                พิมพ์ใบ ปพ.
+                            </a>
+                            <hr>
+                            <a href="./purchase-order-school.html">
+                                ประวัติการพิมพ์
+                            </a>
+                            <hr>
+                            <a href="./order-cancel.html">
+                                ยกเลิกเลข ปพ.
+                            </a>
+                        </div>
+                    </div>
+                    <div class="navbar-link-text-ecs">
+                        <div class="title-menu-header pointer" onclick="showMenuNav4()">
+                            รายงาน.
+                            <img class="icon-down-header" src="img/arrow-down-white.svg" alt="logo ecs" />
+                        </div>
+                        <div class="submenu-theme" id="menu-header-4">
+                            <a href="./purchase-order-school.html">
+                                รายงานการพิมพ์ใบ ปพ.
+                            </a>
+                            <hr>
+                            <a href="./purchase-order-school.html">
+                                รายงานการใช้ตัวเลข
+                            </a>
+                            <hr>
+                            <a href="./purchase-order-school.html">
+                                รายงานการสั่งซื้อ
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="header-action-ecs">
+                <img class="group site-navbar" src="img/Icon-Service.png" alt="Service" onclick="showMenuNav()" />
+                <div class="notification-icon">
+                    <img class="group" src="img/group@2x.png" alt="Group" onclick="toggleNotificationPanel()" />
+                    <span id="notification-badge" class="notification-badge"></span> <!-- จุดแดง -->
+                </div>
+
+                <div id="notification-panel" class="notification-panel hidden">
+                    <ul class="notification-list">
+                        <li class="notification-item unread">
+                            <span class="status-indicator"></span>
+                            <div class="notification-content">
+                                <p class="notosansthai-normal-vulcan-15px">
+                                    <strong class="notosansthai-semi-bold-vulcan-15px">หมายเลขคำสั่งซื้อ:</strong> 12345
+                                </p>
+                                <p class="notosansthai-normal-vulcan-15px">
+                                    <strong class="notosansthai-semi-bold-vulcan-15px">สถานะ:</strong> รอดำเนินการ
+                                </p>
+                            </div>
+                        </li>
+                        <li class="notification-item">
+                            <span class="status-indicator read"></span>
+                            <div class="notification-content">
+                                <p class="notosansthai-normal-vulcan-15px">
+                                    <strong class="notosansthai-semi-bold-vulcan-15px">หมายเลขคำสั่งซื้อ:</strong> 67890
+                                </p>
+                                <p class="notosansthai-normal-vulcan-15px">
+                                    <strong class="notosansthai-semi-bold-vulcan-15px">สถานะ:</strong> สำเร็จ
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+
+
+                <div class="title-menu-header">
+                    <a href="./profile-school.html" onclick="showMenuNav3()">
+                        <img class="vector" src="img/vector-2.svg" alt="Vector" />
+                    </a>
+                    <a href="./profile-school.html" class="title-logout pointer">
+                        ออกจากระบบ
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="subMenuHeader" class="sub-menu-header" style="display: none;">
+        <div class="title-menu-header" onclick="showMenuNav1()">
+            ใบขอสั่งซื้อ
+            <img class="icon-down-header" src="img/arrow-down-white.svg" alt="logo ecs" />
+        </div>
+        <div class="sub-menu-header-1-rps" id="menu-header-1-rps">
+            <a class="title-menu-header" href="./purchase-order-school.html">
+                ออกใบขอสั่งซื้อ
+            </a>
+            <hr>
+            <a class="title-menu-header" href="./purchase-order-school.html">
+                ออกใบขอสั่งซื้อ
+            </a>
+            <hr>
+            <div class="title-menu-header" onclick="showMenuNav1_1()">
+                รายการใบขอสั่งซื้อ
+                <img class="icon-down-header" src="img/arrow-down-white.svg" alt="logo ecs" />
+            </div>
+            <div class="sub-menu-header-1-1-rps" id="menu-header-1-1-rps">
+                <a class="title-menu-header" href="./purchase-order-school.html">
+                    ทั้งหมด
+                </a>
+                <hr>
+                <a class="title-menu-header" href="./purchase-order-school.html">
+                    รอรับการอนุมัติ
+                </a>
+                <hr>
+                <a class="title-menu-header" href="./purchase-order-school.html">
+                    ได้รับการอนุมัติ
+                </a>
+                <hr>
+                <a class="title-menu-header" href="./purchase-order-school.html">
+                    รอการชำระเงิน
+                </a>
+                <hr>
+                <a class="title-menu-header" href="./purchase-order-school.html">
+                    รายการที่ถูกยกเลิก
+                </a>
+            </div>
+        </div>
+        <hr />
+        <div class="title-menu-header" onclick="showMenuNav2()">
+            คำสั่งซื้อ
+            <img class="icon-down-header" src="img/arrow-down-white.svg" alt="logo ecs" />
+        </div>
+        <div class="sub-menu-header-2-rps" id="menu-header-2-rps">
+            <a class="title-menu-header" href="./purchase-order-school.html">
+                ทั้งหมด
+            </a>
+            <hr>
+            <a class="title-menu-header" href="./purchase-order-school.html">
+                รอตรวจสอบ
+            </a>
+            <hr>
+            <a class="title-menu-header" href="./purchase-order-school.html">
+                รอการแก้ไข
+            </a>
+            <hr>
+            <a class="title-menu-header" href="./purchase-order-school.html">
+                ที่ต้องได้รับ
+            </a>
+            <hr>
+            <a class="title-menu-header" href="./purchase-order-school.html">
+                จัดส่งสำเร็จ
+            </a>
+            <hr>
+            <a class="title-menu-header" href="./purchase-order-school.html">
+                ยกเลิก/คืนเงิน/คืนสินค้า
+            </a>
+
+        </div>
+        <hr />
+        <div class="title-menu-header" onclick="showMenuNav3()">
+            เลข ปพ.
+            <img class="icon-down-header" src="img/arrow-down-white.svg" alt="logo ecs" />
+        </div>
+        <div class="sub-menu-header-3-rps" id="menu-header-3-rps">
+            <a class="title-menu-header" href="./purchase-order-school.html">
+                พิมพ์ใบ ปพ.
+            </a>
+            <hr>
+            <a class="title-menu-header" href="./purchase-order-school.html">
+                ประวัติการพิมพ์
+            </a>
+            <hr>
+            <a class="title-menu-header" href="./purchase-order-school.html">
+                ยกเลิกเลข ปพ.
+            </a>
+        </div>
+        <hr />
+        <div class="title-menu-header" onclick="showMenuNav4()">
+            รายงาน.
+            <img class="icon-down-header" src="img/arrow-down-white.svg" alt="logo ecs" />
+        </div>
+        <div class="sub-menu-header-4-rps" id="menu-header-4-rps">
+            <a class="title-menu-header" href="./purchase-order-school.html">
+                รายงานการพิมพ์ ใบ ปพ.
+            </a>
+            <hr>
+            <a class="title-menu-header" href="./purchase-order-school.html">
+                รายงานการใช้ตัวเลข
+            </a>
+            <hr>
+            <a class="title-menu-header" href="./purchase-order-school.html">
+                รายงานการสั่งซื้อ
+            </a>
+        </div>
+    </div>
+
+    <div class="content-center">
+        <div class="content-ecs">
+
+            <div class="menu-header" style="padding-top: 0px !important;">
+                <a href="./purchase-order-school-shipping.html" class="position-absolute ">
+                    <div class="purchase-order-button-3 purchase-order-button-8">
+                        <img class="purchase-order-icon-back" src="img/icon-back-3.svg" alt="icon back" />
+                        <div
+                            class="purchase-order-text_label valign-text-middle purchase-order-text_label-5 display-none-m">
+                            ย้อนกลับ</div>
+                    </div>
+                </a>
+                <h1 class="purchase-order-text-6 margin-0-auto" style="align-self: center;">ออกใบขอสั่งซื้อ</h1>
+            </div>
+
+            <div class="frame-38489">
+                <div class="details-order-content-2">
+                    <!-- left -->
+                    <div class="left">
+
+                        <div class="dis-no frame-38339 " id="doc-approve">
+                            <div class="frame-38407">
+                                <div
+                                    class="text-7-2 valign-text-middle text-3 notosansthai-normal-black-20px text-bold title-with-dot-green">
+                                    <div class="dot-green"></div>&nbsp;&nbsp;ไฟล์หนังสืออนุมัติจากทางเขต
+                                </div>
+                                <div class="group-file">
+                                    <div class="container-file">
+                                        <img class="file-download" src="img/icon-btn-left-20.svg" alt="Line 6" />
+                                        <p class="address valign-text-middle notosansthai-normal-black-16px">
+                                            xxxxxxxxxxxxxxx </p>
+                                    </div>
+                                    <div class="container-file">
+                                        <img class="file-download" src="img/icon-btn-left-20.svg" alt="Line 6" />
+                                        <p class="address valign-text-middle notosansthai-normal-black-16px">
+                                            xxxxxxxxxxxxxxx </p>
+                                    </div>
+                                    <div class="container-file">
+                                        <img class="file-download" src="img/icon-btn-left-20.svg" alt="Line 6" />
+                                        <p class="address valign-text-middle notosansthai-normal-black-16px">
+                                            xxxxxxxxxxxxxxx </p>
+                                    </div>
+                                    <div class="container-file">
+                                        <img class="file-download" src="img/icon-btn-left-20.svg" alt="Line 6" />
+                                        <p class="address valign-text-middle notosansthai-normal-black-16px">
+                                            xxxxxxxxxxxxxxx </p>
+                                    </div>
+                                    <div class="container-file">
+                                        <img class="file-download" src="img/icon-btn-left-20.svg" alt="Line 6" />
+                                        <p class="address valign-text-middle notosansthai-normal-black-16px">
+                                            xxxxxxxxxxxxxxx </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="frame-28 notosansthai-normal-black-16px">
+                            <div class="frame-38339">
+
+                                <div class="frame-38407">
+                                    <div
+                                        class="text-7-2 valign-text-middle text-3 notosansthai-normal-black-20px text-bold">
+                                        ที่อยู่ในการจัดส่ง
+                                    </div>
+                                    <!-- <div class="frame-38269 notosansthai-normal-black-18px text-bold">
+                                      <div class="text-15-2 valign-text-middle text-3">ออกแบบ ทดลอง</div>
+                                      <p class="text-15-2 valign-text-middle text-3">| (+66 ) 12 345 6789</p>
+                                    </div> -->
+                                    <p class="address valign-text-middle notosansthai-normal-black-16px">
+                                        ออกแบบ ทดลอง &nbsp;| (+66 ) 12 345 6789
+                                    </p>
+                                    <p class="address valign-text-middle notosansthai-normal-black-16px">
+                                        2249 ถนนลาดพร้าว แขวงลาดพร้าว เขตลาดพร้าว 10230 แขวงสะพานสอง เขตวังทองหลาง
+                                        กรุงเทพมหานคร 10310
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="group-container-column">
+                            <div class="w50">
+                                <div class="frame-38339">
+                                    <div class="frame-38407">
+                                        <div
+                                            class="text-7-2 valign-text-middle text-3 notosansthai-normal-black-20px text-bold title-with-dot-green">
+                                            ตัวเลือกการจัดส่ง
+                                        </div>
+                                        <div class="frame-28 notosansthai-normal-black-16px">
+                                            <div class="frame-38339">
+
+                                                <div
+                                                    class="text-7-2 valign-text-middle text-3 notosansthai-normal-black-20px text-bold title-with-dot-green">
+                                                    EMS
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="w50">
+                                <div class="frame-38339">
+                                    <div class="frame-38407">
+                                        <div
+                                            class="text-7-2 valign-text-middle text-3 notosansthai-normal-black-20px text-bold title-with-dot-green">
+                                            ประเภทการสั่งซื้อ
+                                        </div>
+                                        <div class="frame-28 notosansthai-normal-black-16px">
+                                            <div class="frame-38339">
+
+                                                <div
+                                                    class="text-7-2 valign-text-middle text-3 notosansthai-normal-black-20px text-bold title-with-dot-green">
+                                                    สั่งเอง
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="frame-38339">
+                            <div class="frame-38407">
+                                <div
+                                    class="text-7-2 valign-text-middle text-3 notosansthai-normal-black-20px text-bold title-with-dot-green">
+                                    เอกสารประกอบคำสั่งซื้อ
+                                </div>
+                                <div class="frame-28 notosansthai-normal-black-16px">
+                                    <div class="group-file">
+                                        <div class="container-file">
+                                            <img class="file-download" src="img/icon-btn-left-20.svg" alt="Line 6" />
+                                            <p class="address valign-text-middle notosansthai-normal-black-16px">
+                                                xxxxxxxxxxxxxxx </p>
+                                        </div>
+                                        <div class="container-file">
+                                            <img class="file-download" src="img/icon-btn-left-20.svg" alt="Line 6" />
+                                            <p class="address valign-text-middle notosansthai-normal-black-16px">
+                                                xxxxxxxxxxxxxxx </p>
+                                        </div>
+                                        <div class="container-file">
+                                            <img class="file-download" src="img/icon-btn-left-20.svg" alt="Line 6" />
+                                            <p class="address valign-text-middle notosansthai-normal-black-16px">
+                                                xxxxxxxxxxxxxxx </p>
+                                        </div>
+                                        <div class="container-file">
+                                            <img class="file-download" src="img/icon-btn-left-20.svg" alt="Line 6" />
+                                            <p class="address valign-text-middle notosansthai-normal-black-16px">
+                                                xxxxxxxxxxxxxxx </p>
+                                        </div>
+                                        <div class="container-file">
+                                            <img class="file-download" src="img/icon-btn-left-20.svg" alt="Line 6" />
+                                            <p class="address valign-text-middle notosansthai-normal-black-16px">
+                                                xxxxxxxxxxxxxxx </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="dis-no frame-38339" id="doc-pay-slip">
+                            <div class="frame-38407">
+                                <div
+                                    class="text-7-2 valign-text-middle text-3 notosansthai-normal-black-20px text-bold title-with-dot-green">
+                                    หลักฐานการชำระเงิน
+                                </div>
+                                <div class="frame-28 notosansthai-normal-black-16px">
+                                    <div class="group-file">
+                                        <div class="container-file">
+                                            <img class="file-download" src="img/icon-btn-left-20.svg" alt="Line 6" />
+                                            <p class="address valign-text-middle notosansthai-normal-black-16px">
+                                                xxxxxxxxxxxxxxx </p>
+                                        </div>
+                                        <div class="container-file">
+                                            <img class="file-download" src="img/icon-btn-left-20.svg" alt="Line 6" />
+                                            <p class="address valign-text-middle notosansthai-normal-black-16px">
+                                                xxxxxxxxxxxxxxx </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- right -->
+                    <div class="right">
+
+                        <div class="frame-28 notosansthai-normal-black-16px">
+                            <div class="frame-38339">
+
+                                <div class="frame-38407">
+                                    <div
+                                        class="text-7-2 valign-text-middle text-3 notosansthai-normal-black-20px text-bold">
+                                        รายการสินค้า
+                                    </div>
+                                    <div class="list-product">
+                                        <div class="product-item">
+                                            <div class="product-item-left-col">
+                                                <p class="title">
+                                                    ปพ.1:ป ระเบียนแสดงผลการเรียน ระดับ ประถมฯ (ปรับปรุง 2555)
+                                                    (ฉบับใช้กับคอม)
+                                                </p>
+                                                <div class="details-product">
+                                                    <div class="card-status-popo-1">
+                                                        ปพ.1:ป
+                                                    </div>
+                                                    <div class="card-status-approve">
+                                                        อนุมัติ
+                                                    </div>
+                                                    <div class="price">
+                                                        160 บาท / เล่ม
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="card-unit">
+                                                200 &nbsp;&nbsp;เล่ม
+                                            </div>
+                                        </div>
+                                        <hr class="hr">
+                                        <div class="product-item">
+                                            <div class="product-item-left-col">
+                                                <p class="title">
+                                                    ปพ.1:บ ระเบียนแสดงผลการเรียน ระดับ ม.ต้น (ปรับปรุง 2555)
+                                                    (ฉบับใช้กับคอม)
+                                                </p>
+                                                <div class="details-product">
+                                                    <div class="card-status-popo-1-bo">
+                                                        ปพ.1:บ
+                                                    </div>
+                                                    <div class="card-status-approve">
+                                                        อนุมัติ
+                                                    </div>
+                                                    <div class="price">
+                                                        160 บาท / เล่ม
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="card-unit">
+                                                100 &nbsp;&nbsp;เล่ม
+                                            </div>
+                                        </div>
+                                        <hr class="hr">
+                                        <div class="product-item">
+                                            <div class="product-item-left-col">
+                                                <p class="title">
+                                                    ปพ.1:พ ระเบียนแสดงผลการเรียน ระดับ ม.ปลาย (ปรับปรุง 2555)
+                                                    (ฉบับใช้กับคอม)
+                                                </p>
+                                                <div class="details-product">
+                                                    <div class="card-status-popo-1-po">
+                                                        ปพ.1:พ
+                                                    </div>
+                                                    <div class="card-status-approve">
+                                                        อนุมัติ
+                                                    </div>
+                                                    <div class="price">
+                                                        160 บาท / เล่ม
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="card-unit">
+                                                100 &nbsp;&nbsp;เล่ม
+                                            </div>
+                                        </div>
+                                        <hr class="hr">
+                                        <div class="product-item">
+                                            <div class="product-item-left-col">
+                                                <p class="title">
+                                                    ปพ.1:พ ระเบียนแสดงผลการเรียน ระดับ ม.ปลาย (ปรับปรุง 2555)
+                                                    (ฉบับใช้กับคอม)
+                                                </p>
+                                                <div class="details-product">
+                                                    <div class="card-status-popo-3-po">
+                                                        ปพ.3:ป
+                                                    </div>
+                                                    <div class="price">
+                                                        5 บาท / แผ่น
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="card-unit">
+                                                50 &nbsp;&nbsp;แผ่น
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="frame-28 notosansthai-normal-black-16px">
+                            <div class="frame-38339">
+                                <div class="list-item-price">
+                                    <div class="price-item">
+                                        <p class="title">
+                                            รวมเงิน
+                                        </p>
+                                        <p class="price">
+                                            xx.xx บาท
+                                        </p>
+                                    </div>
+                                    <div class="price-item">
+                                        <p class="title">
+                                            ค่าขนส่ง
+                                        </p>
+                                        <p class="price">
+                                            xx.xx บาท
+                                        </p>
+                                    </div>
+                                    <div class="price-item">
+                                        <p class="title">
+                                            มูลค่าสินค้าและค่าขนส่งก่อนภาษี
+                                        </p>
+                                        <p class="price">
+                                            xx.xx บาท
+                                        </p>
+                                    </div>
+                                    <div class="price-item">
+                                        <p class="title">
+                                            ภาษีมูลค่าเพิ่ม
+                                        </p>
+                                        <p class="price">
+                                            xx.xx บาท
+                                        </p>
+                                    </div>
+                                    <div class="price-item">
+                                        <p class="title">
+                                            ยอดสุทธิ
+                                        </p>
+                                        <p class="price">
+                                            xx.xx บาท
+                                        </p>
+                                    </div>
+                                    <hr class="hr">
+                                    <div class="price-item">
+                                        <p class="title">
+                                        </p>
+                                        <p class="price-total">
+                                            XXXXXXXXXXXX
+                                        </p>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- button action -->
+                <div class="display-flex-column-wrap-center-gap30">
+                    <a onclick="showPopupCancel()" style="width: 100%;">
+                        <div class="purchase-order-shipping-frame-38396-background-w">
+                            <div class="purchase-order-shipping-text-22 notosansthai-bold-main-20px">บันทึกร่าง</div>
+                        </div>
+                    </a>
+                    <div class="purchase-order-shipping-frame-38492">
+                        <a href="./purchase-order-school-shipping.html" style="width: 100%;">
+                            <div class="purchase-order-shipping-frame-38396">
+                                <div class="purchase-order-shipping-text-22 notosansthai-bold-black-20px">ยกเลิก</div>
+                            </div>
+                        </a>
+                        <a onclick="showPopupSubmitRequest()" style="width: 100%;">
+                            <div class="purchase-order-shipping-frame-14">
+                                <div class="purchase-order-shipping-text-23">ยืนยัน</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- </div> -->
+
+    <div id="content" class="purchase-order-shipping-view" style="display: none;">
+        <div class="purchase-order-shipping-popup">
+            <div class="purchase-order-shipping-frame-container">
+                <div class="purchase-order-shipping-frame-38264">
+                    <div class="purchase-order-shipping-frame-38266">
+                        <div class="purchase-order-shipping-frame-38265">
+                            <h1
+                                class="purchase-order-shipping-text_label-2 purchase-order-shipping-valign-text-middle purchase-order-shipping-text_label-5">
+                                สรุปรายการสินค้า</h1>
+                            <div
+                                class="purchase-order-shipping-text_label-3 purchase-order-shipping-valign-text-middle purchase-order-shipping-text_label-5">
+                                รายการของคุณมีสินค้าประเภทเอกสารควบคุม
+                                ต้องมีการ<br />ขออนุญาตจากเขตพื้นที่การศึกษาก่อนดำเนินการต่อ
+                            </div>
+                        </div>
+
+                        <div class="request-detail-school-frame-38379">
+                            <!-- <a onclick="showPopup()" class="no-text-underline"
+                                style="width: -webkit-fill-available; text-align: -webkit-center;">
+                                <article class="request-detail-school-button-4 request-detail-school-button-6"
+                                    style="min-width: 100px;">
+                                    <div class="button-edit">
+                                        ยกเลิก
+                                    </div>
+                                </article>
+                            </a> -->
+                            <a onclick="showPopup()" class="no-text-underline"
+                                style="width: -webkit-fill-available; text-align: -webkit-center;">
+                                <article class="request-detail-school-button-5 request-detail-school-button-6"
+                                    style="min-width: 100px;">
+                                    <div class="button-confirm">
+                                        ยืนยัน
+                                    </div>
+                                </article>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <a onclick="showPopup()"><img class="purchase-order-shipping-frame-1041" src="img/frame-1041.svg"
+                        alt="Frame 1041" />
+                </a>
+            </div>
+        </div>
+    </div>
+    <div id="contentCancel" class="purchase-order-shipping-view" style="display: none;">
+        <div class="purchase-order-shipping-popup">
+            <div class="purchase-order-shipping-frame-container">
+                <div class="purchase-order-shipping-frame-38264">
+                    <div class="purchase-order-shipping-frame-38266">
+                        <div class="purchase-order-shipping-frame-38265">
+                            <h1
+                                class="purchase-order-shipping-text_label-2 purchase-order-shipping-valign-text-middle purchase-order-shipping-text_label-5">
+                                ร่างใบขอสั่งซื้อ</h1>
+                            <div
+                                class="purchase-order-shipping-text_label-3 purchase-order-shipping-valign-text-middle purchase-order-shipping-text_label-5">
+                                คุณต้องการที่จะยกเลิกคำสั่งซื้อใบปพ.
+                                นี้หรือไม<br />หากยืนยันจะเป็นอันเสร็จสิ้นการยกเลิกยื่นคำสั่งซื้อ
+                            </div>
+                        </div>
+
+                        <div class="request-detail-school-frame-38379">
+                            <a onclick="showPopupCancel3()" class="no-text-underline"
+                                style="width: -webkit-fill-available; text-align: -webkit-center;">
+                                <article class="request-detail-school-button-4 request-detail-school-button-6">
+                                    <div class="button-edit">
+                                        ไม่บันทึกร่าง
+                                    </div>
+                                </article>
+                            </a>
+                            <a onclick="showPopupCancel2()" class="no-text-underline"
+                                style="width: -webkit-fill-available; text-align: -webkit-center;">
+                                <article class="request-detail-school-button-5 request-detail-school-button-6">
+                                    <div class="button-confirm">
+                                        ยืนยัน
+                                    </div>
+                                </article>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <a onclick="showPopupCancel()"><img class="purchase-order-shipping-frame-1041" src="img/frame-1041.svg"
+                        alt="Frame 1041" />
+                </a>
+            </div>
+        </div>
+    </div>
+    <div id="contentCancel2" class="purchase-order-shipping-view" style="display: none;">
+        <div class="purchase-order-shipping-popup">
+            <div class="purchase-order-shipping-frame-container">
+                <div class="purchase-order-shipping-frame-38264">
+                    <div class="purchase-order-shipping-frame-38266">
+                        <div class="purchase-order-shipping-frame-38265">
+                            <img class="purchase-order-shipping-check-one" src="img/check-one.svg" alt="check-one" />
+                            <h1
+                                class="purchase-order-text_label-2 purchase-order-shipping-valign-text-middle purchase-order-shipping-text_label-4">
+                                บันทึกร่างใบขอสั่งซื้อสำเร็จ</h1>
+                        </div>
+                        <div class="request-detail-school-frame-38379">
+                            <a href="../หน้าหลักสถานศึกษา/index.html" class="no-text-underline"
+                                style="width: -webkit-fill-available;">
+                                <article class="request-detail-school-button-4 request-detail-school-button-6">
+                                    <div class="button-edit">
+                                        กลับหน้าหลัก
+                                    </div>
+                                </article>
+                            </a>
+                            <a href="" class="no-text-underline" style="width: -webkit-fill-available;">
+                                <article class="request-detail-school-button-5 request-detail-school-button-6">
+                                    <div class="button-confirm">
+                                        ร่างใบขอสั่งซื้อ
+                                    </div>
+                                </article>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <a onclick="showPopupCancel2()"><img class="purchase-order-shipping-frame-1041"
+                        src="img/frame-1041-2.svg" alt="Frame 1041" />
+                </a>
+            </div>
+        </div>
+    </div>
+    <div id="contentCancel3" class="purchase-order-shipping-view" style="display: none;">
+        <div class="purchase-order-shipping-popup">
+            <div class="purchase-order-shipping-frame-container">
+                <div class="purchase-order-shipping-frame-38264">
+                    <div class="purchase-order-shipping-frame-38266">
+                        <div class="purchase-order-shipping-frame-38265">
+                            <img class="purchase-order-shipping-check-one" src="img/check-one.svg" alt="check-one" />
+                            <h1
+                                class="purchase-order-text_label-2 purchase-order-shipping-valign-text-middle purchase-order-shipping-text_label-4">
+                                ยกเลิกใบขอสั่งซื้อสำเร็จ</h1>
+                        </div>
+                        <div class="request-detail-school-frame-38379">
+                            <a href="" class="no-text-underline" style="width: -webkit-fill-available;">
+                                <article class="request-detail-school-button-5 request-detail-school-button-6">
+                                    <div class="button-confirm">
+                                        กลับหน้าหลัก
+                                    </div>
+                                </article>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <a onclick="showPopupCancel3()"><img class="purchase-order-shipping-frame-1041"
+                        src="img/frame-1041-2.svg" alt="Frame 1041" />
+                </a>
+            </div>
+        </div>
+    </div>
+    <div id="contentDraft" class="purchase-order-shipping-view" style="display: none;">
+        <div class="purchase-order-shipping-popup">
+            <div class="purchase-order-shipping-frame-container">
+                <div class="purchase-order-shipping-frame-38264">
+                    <div class="purchase-order-shipping-frame-38266">
+                        <div class="purchase-order-shipping-frame-38265">
+                            <h1
+                                class="purchase-order-shipping-text_label-2 purchase-order-shipping-valign-text-middle purchase-order-shipping-text_label-5">
+                                ร่างใบขอสั่งซื้อ</h1>
+                            <div
+                                class="purchase-order-shipping-text_label-3 purchase-order-shipping-valign-text-middle purchase-order-shipping-text_label-5">
+                                คุณต้องการที่จะร่างคำสั่งซื้อใบปพ.
+                                นี้หรือไม่<br />หากยืนยันจะเป็นอันเสร็จสิ้นการร่างคำสั่งซื้อ
+                            </div>
+                        </div>
+                        <div class="purchase-order-shipping-frame-38262">
+                            <a onclick="showPopupDraft()">
+                                <article class="purchase-order-shipping-button-2 purchase-order-shipping-button-4">
+                                    <div
+                                        class="purchase-order-shipping-text_label purchase-order-shipping-valign-text-middle purchase-order-shipping-notosansthai-semi-bold-white-20px">
+                                        ยกเลิก</div>
+                                </article>
+                            </a>
+                            <a onclick="showPopupDraft2()">
+                                <article class="purchase-order-shipping-button-3 purchase-order-shipping-button-4">
+                                    <div
+                                        class="purchase-order-shipping-text_label-4-2 purchase-order-shipping-valign-text-middle  purchase-order-shipping-notosansthai-semi-bold-white-20px">
+                                        ยืนยัน
+                                    </div>
+                                </article>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <a onclick="showPopupDraft()"><img class="purchase-order-shipping-frame-1041" src="img/frame-1041.svg"
+                        alt="Frame 1041" />
+                </a>
+            </div>
+        </div>
+    </div>
+    <div id="contentDraft2" class="purchase-order-shipping-view" style="display: none;">
+        <div class="purchase-order-shipping-popup">
+            <div class="purchase-order-shipping-frame-container">
+                <div class="purchase-order-shipping-frame-38264">
+                    <div class="purchase-order-shipping-frame-38266">
+                        <div class="purchase-order-shipping-frame-38265">
+                            <img class="purchase-order-shipping-check-one" src="img/check-one.svg" alt="check-one" />
+                            <h1
+                                class="purchase-order-shipping-text_label-2 purchase-order-shipping-valign-text-middle purchase-order-shipping-text_label-4">
+                                ร่างใบขอสั่งซื้อสำเร็จ</h1>
+                        </div>
+                        <div class="request-detail-school-frame-38379">
+                            <a href="./home-school.html" class="no-text-underline"
+                                style="width: -webkit-fill-available; text-align: -webkit-center;">
+                                <article class="request-detail-school-button-4 request-detail-school-button-6"
+                                    style="min-width: 100px;">
+                                    <div class="button-edit">
+                                        กลับหน้าหลัก
+                                    </div>
+                                </article>
+                            </a>
+                            <a href="./purchase-order-school.html" class="no-text-underline"
+                                style="width: -webkit-fill-available; text-align: -webkit-center;">
+                                <article class="request-detail-school-button-5 request-detail-school-button-6"
+                                    style="min-width: 100px; padding: 8px 10px;">
+                                    <div class="button-confirm">
+                                        เอกสารใบขอสั่งซื้อ
+                                    </div>
+                                </article>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <a onclick="showPopupDraft2()"><img class="purchase-order-shipping-frame-1041"
+                        src="img/frame-1041-2.svg" alt="Frame 1041" />
+                </a>
+            </div>
+        </div>
+    </div>
+    <div id="contentSubmitRequest" class="purchase-order-shipping-view" style="display: none;">
+        <div class="purchase-order-shipping-popup">
+            <div class="purchase-order-shipping-frame-container">
+                <div class="purchase-order-shipping-frame-38264">
+                    <div class="purchase-order-shipping-frame-38266">
+                        <div class="purchase-order-shipping-frame-38265" style="width: 100%;">
+                            <h1
+                                class="purchase-order-shipping-text_label-2 purchase-order-shipping-valign-text-middle purchase-order-shipping-text_label-5">
+                                สรุปรายการสินค้า</h1>
+                            <div style="width: auto;"
+                                class="purchase-order-shipping-text_label-3 purchase-order-shipping-valign-text-middle purchase-order-shipping-text_label-5">
+                                รายการของคุณมีสินค้าประเภทเอกสารควบคุม ต้องมีการ<br />
+                                ขออนุญาตจากเขตพื้นที่การศึกษาก่อนดำเนินการต่อ
+                            </div>
+                        </div>
+
+                        <div class="request-detail-school-frame-38379">
+                            <!-- <a onclick="showPopupSubmitRequest()" class="no-text-underline"
+                                style="width: -webkit-fill-available; text-align: -webkit-center;">
+                                <article class="request-detail-school-button-4 request-detail-school-button-6"
+                                    style="min-width: 100px;">
+                                    <div class="button-edit">
+                                        ยกเลิก
+                                    </div>
+                                </article>
+                            </a> -->
+                            <a onclick="showPopupSubmitRequest2()" class="no-text-underline"
+                                style="width: -webkit-fill-available; text-align: -webkit-center;">
+                                <article class="request-detail-school-button-5 request-detail-school-button-6"
+                                    style="min-width: 100px;">
+                                    <div class="button-confirm">
+                                        ยืนยัน
+                                    </div>
+                                </article>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <a onclick="showPopupSubmitRequest()"><img class="purchase-order-shipping-frame-1041"
+                        src="img/frame-1041.svg" alt="Frame 1041" />
+                </a>
+            </div>
+        </div>
+    </div>
+    <div id="contentSubmitRequest2" class="purchase-order-shipping-view" style="display: none;">
+        <div class="purchase-order-shipping-popup">
+            <div class="purchase-order-shipping-frame-container">
+                <div class="purchase-order-shipping-frame-38264">
+                    <div class="purchase-order-shipping-frame-38266">
+                        <div class="purchase-order-shipping-frame-38265">
+                            <img class="purchase-order-shipping-check-one" src="img/check-one.svg" alt="check-one" />
+                            <h1
+                                class="purchase-order-text_label-2 purchase-order-shipping-valign-text-middle purchase-order-shipping-text_label-4">
+                                ยืนยันการ<br />
+                                ออกใบขอสั่งซื้อ</h1>
+                        </div>
+                        <div class="request-detail-school-frame-38379">
+                            <a href="./home-school.html" class="no-text-underline"
+                                style="width: -webkit-fill-available; text-align: -webkit-center;">
+                                <article class="request-detail-school-button-4 request-detail-school-button-6">
+                                    <div class="button-edit">
+                                        กลับหน้าหลัก
+                                    </div>
+                                </article>
+                            </a>
+                            <a href="./purchase-order-school.html" class="no-text-underline"
+                                style="width: -webkit-fill-available; text-align: -webkit-center;">
+                                <article class="request-detail-school-button-5 request-detail-school-button-6">
+                                    <div class="button-confirm">
+                                        ใบขอสั่งซื้อของฉัน
+                                    </div>
+                                </article>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <a onclick="showPopupSubmitRequest2()"><img class="purchase-order-shipping-frame-1041"
+                        src="img/frame-1041-2.svg" alt="Frame 1041" />
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <dialog id="editAddressDialog" class="dialog">
+        <!-- <div class="view"></div> -->
+        <div class="popup">
+            <div class="frame-container">
+                <div class="frame-38264">
+                    <div class="frame-38266">
+                        <div class="frame-38265">
+                            <h1 class="text_label-2 valign-text-middle text_label-4">แก้ไขที่อยู่</h1>
+                        </div>
+                        <div class="box-input-dialog">
+                            <div class="box-input-dialog-row">
+                                <div class="text-field">
+                                    <div class="text notosansthai-normal-black-18px">ชื่อ*</div>
+                                    <div class="order-approval-list-input-element input input-dialog">
+                                        <input class="order-approval-list-text_input" name="พมพคาคนหา" maxlength="10"
+                                            placeholder="กรอกเบอร์โทรศัพท์" type="text" />
+                                    </div>
+                                </div>
+                                <div class="text-field">
+                                    <div class="text notosansthai-normal-black-18px">นามสกุล*</div>
+                                    <div class="order-approval-list-input-element input input-dialog">
+                                        <input class="order-approval-list-text_input" name="พมพคาคนหา" maxlength="10"
+                                            placeholder="กรอกเบอร์โทรศัพท์" type="text" />
+                                    </div>
+                                </div>
+                                <div class="text-field">
+                                    <div class="text notosansthai-normal-black-18px">เบอร์โทร*</div>
+                                    <div class="order-approval-list-input-element input input-dialog">
+                                        <input class="order-approval-list-text_input" name="พมพคาคนหา"
+                                            placeholder="กรอกอีเมล" type="text" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box-input-dialog-row">
+                                <div class="text-field">
+                                    <div class="text notosansthai-normal-black-18px">ชื่อที่อยู่*</div>
+                                    <div class="order-approval-list-input-element input input-dialog">
+                                        <input class="order-approval-list-text_input" name="พมพคาคนหา"
+                                            placeholder="กรอกอีเมล" type="text" />
+                                    </div>
+                                </div>
+                                <div class="text-field">
+                                    <div class="text notosansthai-normal-black-18px">บ้านเลขที่</div>
+                                    <div class="order-approval-list-input-element input input-dialog">
+                                        <input class="order-approval-list-text_input" name="พมพคาคนหา"
+                                            placeholder="กรอกอีเมล" type="text" />
+                                    </div>
+                                </div>
+                                <div class="text-field">
+                                    <div class="text notosansthai-normal-black-18px">ซอย</div>
+                                    <div class="order-approval-list-input-element input input-dialog">
+                                        <input class="order-approval-list-text_input" name="พมพคาคนหา"
+                                            placeholder="กรอกอีเมล" type="text" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box-input-dialog-row">
+                                <div class="text-field">
+                                    <div class="text notosansthai-normal-black-18px">หมู่</div>
+                                    <div class="order-approval-list-input-element input input-dialog">
+                                        <input class="order-approval-list-text_input" name="พมพคาคนหา" maxlength="10"
+                                            placeholder="กรอกเบอร์โทรศัพท์" type="text" />
+                                    </div>
+                                </div>
+                                <div class="text-field">
+                                    <div class="text notosansthai-normal-black-18px">ถนน</div>
+                                    <div class="order-approval-list-input-element input input-dialog">
+                                        <input class="order-approval-list-text_input" name="พมพคาคนหา" maxlength="10"
+                                            placeholder="กรอกเบอร์โทรศัพท์" type="text" />
+                                    </div>
+                                </div>
+                                <div class="text-field">
+                                    <div class="text notosansthai-normal-black-18px">จังหวัด*</div>
+                                    <div class="order-approval-list-input-element input input-dialog">
+                                        <input class="order-approval-list-text_input" name="พมพคาคนหา"
+                                            placeholder="กรอกอีเมล" type="text" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box-input-dialog-row">
+                                <div class="text-field">
+                                    <div class="text notosansthai-normal-black-18px">เขต/อำเภอ*</div>
+                                    <div class="order-approval-list-input-element input input-dialog">
+                                        <input class="order-approval-list-text_input" name="พมพคาคนหา" maxlength="10"
+                                            placeholder="กรอกเบอร์โทรศัพท์" type="text" />
+                                    </div>
+                                </div>
+                                <div class="text-field">
+                                    <div class="text notosansthai-normal-black-18px">แขวง/ตำบล*</div>
+                                    <div class="order-approval-list-input-element input input-dialog">
+                                        <input class="order-approval-list-text_input" name="พมพคาคนหา"
+                                            placeholder="กรอกอีเมล" type="text" />
+                                    </div>
+                                </div>
+                                <div class="text-field">
+                                    <div class="text notosansthai-normal-black-18px">รหัสไปรษณีย์*</div>
+                                    <div class="order-approval-list-input-element input input-dialog">
+                                        <input class="order-approval-list-text_input" name="พมพคาคนหา"
+                                            placeholder="กรอกอีเมล" type="text" />
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="frame-38262">
+                            <a href="javascript:closeEditAddressDialog()">
+                                <article class="button-5 button-7">
+                                    <div
+                                        class="text_label valign-text-middle notosansthai-semi-bold-midnight-blue-20px">
+                                        ยกเลิก
+                                    </div>
+                                </article>
+                            </a><a href="javascript:showSucessDilod()">
+                                <article class="button-6 button-7">
+                                    <div
+                                        class="text_label valign-text-middle notosansthai-semi-bold-midnight-white-20px">
+                                        ยืนยัน</div>
+                                </article>
+                            </a>
+                        </div>
+                    </div>
+                    <a href="javascript:closeEditAddressDialog()"><img class="popup-confirm-frame-1041"
+                            src="img/frame-1041.svg" alt="Frame 1041" />
+                    </a>
+                </div>
+            </div>
+        </div>
+    </dialog>
+
+    <dialog id="successDialog" class="dialog">
+        <div class="popup">
+            <div class="frame-container">
+                <div class="frame-38264">
+                    <div class="frame-38266">
+                        <div class="frame-38265">
+                            <img class="check-one" src="img/check-one.svg" alt="check-one" />
+                            <h1 class="text_label-3-2 valign-text-middle text_label-4-2">แก้ไขสำเร็จ
+                            </h1>
+                        </div>
+                    </div>
+                </div>
+                <a href="javascript:closeSucessDilod()"><img class="frame-1041" src="img/frame-1041.svg"
+                        alt="Frame 1041" />
+                </a>
+            </div>
+        </div>
+    </dialog>
+
+    <div class="footer">
+        <p class="copyright-2024">Copyright 2024&nbsp;&nbsp; องค์การค้าของ สกสค.</p>
+    </div>
+
+    <script>
+        /* Copyright (c) 2016 Tobias Buschor https://goo.gl/gl0mbf | MIT License https://goo.gl/HgajeK */
+
+        /////////////////////////////////////////////////////////////////////////////////
+        const menuHeader1 = document.getElementById("menu-header-1");
+        const menuHeader1_rps = document.getElementById("menu-header-1-rps");
+        const menuHeader1_1 = document.getElementById("menu-header-1-1");
+        const menuHeader1_1_rps = document.getElementById("menu-header-1-1-rps");
+        const menuHeader2 = document.getElementById("menu-header-2");
+        const menuHeader2_rps = document.getElementById("menu-header-2-rps");
+        const menuHeader3 = document.getElementById("menu-header-3");
+        const menuHeader3_rps = document.getElementById("menu-header-3-rps");
+        const menuHeader4 = document.getElementById("menu-header-4");
+        const menuHeader4_rps = document.getElementById("menu-header-4-rps");
+
+
+        let isMenuHeader1 = false;
+        let isMenuHeader1_1 = false;
+        let isMenuHeader2 = false;
+        let isMenuHeader3 = false;
+        let isMenuHeader4 = false;
+
+        function showMenuNav1() {
+            isMenuHeader1 = !isMenuHeader1;
+            isMenuHeader1_1 = false;
+            isMenuHeader2 = false;
+            isMenuHeader3 = false;
+            isMenuHeader4 = false;
+            // const subMenuHeaderMobile = document.getElementById("subMenuHeaderMobile");
+            menuHeader1_1.style.display = "none";
+            menuHeader2.style.display = "none";
+            menuHeader2_rps.style.display = "none";
+            menuHeader3.style.display = "none";
+            menuHeader3_rps.style.display = "none";
+            menuHeader4.style.display = "none";
+            menuHeader4_rps.style.display = "none";
+            if (isMenuHeader1) {
+                menuHeader1.style.display = "flex";
+                menuHeader1_rps.style.display = "flex";
+                // subMenuHeaderMobile.style.display = "flex";
+            } else {
+                menuHeader1.style.display = "none";
+                menuHeader1_rps.style.display = "none";
+                // subMenuHeaderMobile.style.display = "none";
+            }
+        }
+
+        function showMenuNav1_1() {
+            isMenuHeader1_1 = !isMenuHeader1_1;
+            // const subMenuHeaderMobile = document.getElementById("subMenuHeaderMobile");
+            if (isMenuHeader1_1) {
+                menuHeader1_1.style.display = "flex";
+                menuHeader1_1_rps.style.display = "flex";
+                // subMenuHeaderMobile.style.display = "flex";
+            } else {
+                menuHeader1_1.style.display = "none";
+                menuHeader1_1_rps.style.display = "none";
+                // subMenuHeaderMobile.style.display = "none";
+            }
+        }
+
+
+        function showMenuNav2() {
+            isMenuHeader2 = !isMenuHeader2;
+            isMenuHeader1 = false;
+            isMenuHeader1_1 = false;
+            isMenuHeader3 = false;
+            isMenuHeader4 = false;
+            menuHeader1.style.display = "none";
+            menuHeader1_rps.style.display = "none";
+            menuHeader1_1.style.display = "none";
+            menuHeader1_1_rps.style.display = "none";
+            menuHeader3.style.display = "none";
+            menuHeader3_rps.style.display = "none";
+            menuHeader4.style.display = "none";
+            menuHeader4_rps.style.display = "none";
+            // const subMenuHeaderMobile = document.getElementById("subMenuHeaderMobile");
+            if (isMenuHeader2) {
+                menuHeader2.style.display = "flex";
+                menuHeader2_rps.style.display = "flex";
+                // subMenuHeaderMobile.style.display = "flex";
+            } else {
+                menuHeader2.style.display = "none";
+                menuHeader2_rps.style.display = "none";
+                // subMenuHeaderMobile.style.display = "none";
+            }
+        }
+
+
+        function showMenuNav3() {
+            isMenuHeader3 = !isMenuHeader3;
+            isMenuHeader1 = false;
+            isMenuHeader1_1 = false;
+            isMenuHeader2 = false;
+            isMenuHeader4 = false;
+            menuHeader1.style.display = "none";
+            menuHeader1_rps.style.display = "none";
+            menuHeader1_1.style.display = "none";
+            menuHeader1_1_rps.style.display = "none";
+            menuHeader2.style.display = "none";
+            menuHeader2_rps.style.display = "none";
+            menuHeader4.style.display = "none";
+            menuHeader4_rps.style.display = "none";
+            if (isMenuHeader3) {
+                menuHeader3.style.display = "flex";
+                menuHeader3_rps.style.display = "flex";
+            } else {
+                menuHeader3.style.display = "none";
+                menuHeader3_rps.style.display = "none";
+            }
+        }
+
+
+        function showMenuNav4() {
+            isMenuHeader4 = !isMenuHeader4;
+            isMenuHeader1 = false;
+            isMenuHeader1_1 = false;
+            isMenuHeader2 = false;
+            isMenuHeader3 = false;
+            menuHeader1.style.display = "none";
+            menuHeader1_rps.style.display = "none";
+            menuHeader1_1.style.display = "none";
+            menuHeader1_1_rps.style.display = "none";
+            menuHeader2.style.display = "none";
+            menuHeader2_rps.style.display = "none";
+            menuHeader3.style.display = "none";
+            menuHeader3_rps.style.display = "none";
+            if (isMenuHeader4) {
+                menuHeader4.style.display = "flex";
+                menuHeader4_rps.style.display = "flex";
+            } else {
+                menuHeader4.style.display = "none";
+                menuHeader4_rps.style.display = "none";
+            }
+        }
+        /////////////////////////////////////////////////////////////////////////////////
+
+        const params = new URLSearchParams(window.location.search);
+        const statusPur = params.get("status");
+
+        // document.getElementById("purchase-order-status").value = statusPur;
+        if (statusPur == '1') {
+            document.getElementById("status-1").style.display = "flex";
+            document.getElementById("doc-pay-slip").style.display = "flex";
+            document.getElementById("pay-button").style.display = "flex";
+        } else if (statusPur == '2') {
+            document.getElementById("status-2").style.display = "flex";
+            document.getElementById("card-no-approve").style.display = "flex";
+            document.getElementById("doc-pay-slip").style.display = "flex";
+            document.getElementById("back-button").style.display = "flex";
+        } else if (statusPur == '3') {
+            document.getElementById("status-3").style.display = "flex";
+            document.getElementById("approve-date").style.display = "flex";
+            document.getElementById("doc-approve").style.display = "flex";
+            document.getElementById("doc-pay-slip").style.display = "flex";
+            document.getElementById("back-button").style.display = "flex";
+        } else if (statusPur == '4') {
+            document.getElementById("status-4").style.display = "flex";
+            document.getElementById("doc-approve").style.display = "flex";
+            document.getElementById("pay-button").style.display = "flex";
+        }
+        console.log(statusPur)
+
+
+        let isSubMenuHeader = false;
+
+        function showMenuNav() {
+            isSubMenuHeader = !isSubMenuHeader;
+            const subMenuHeader = document.getElementById("subMenuHeader");
+            const subMenuHeaderMobile = document.getElementById("subMenuHeaderMobile");
+            if (isSubMenuHeader) {
+                subMenuHeader.style.display = "flex";
+                subMenuHeaderMobile.style.display = "flex";
+            } else {
+                subMenuHeader.style.display = "none";
+                subMenuHeaderMobile.style.display = "none";
+            }
+        }
+
+        let widthScreen = window.innerWidth;
+
+        console.log(widthScreen)
+
+        if (widthScreen <= 700) {
+            document.getElementById('trMore').hidden = true
+        }
+
+        if (!HTMLFormElement.prototype.reportValidity) {
+            HTMLFormElement.prototype.reportValidity = function () {
+                if (this.checkValidity()) return true;
+                var btn = document.createElement("button");
+                this.appendChild(btn);
+                btn.click();
+                this.removeChild(btn);
+                return false;
+            };
+        }
+
+        function SubmitForm(form_name) {
+            var form = document.getElementsByName(form_name)[0];
+            if (form.reportValidity()) {
+                form.submit();
+                if (window.submitted) window.submitted();
+            }
+        }
+
+        function toggleNotificationPanel() {
+            const panel = document.getElementById('notification-panel');
+            panel.classList.toggle('hidden');
+        }
+
+        function updateNotificationBadge() {
+            const unreadNotifications = document.querySelectorAll(".notification-item.unread");
+            const badge = document.getElementById("notification-badge");
+
+            if (unreadNotifications.length > 0) {
+                badge.style.display = "block"; // แสดงจุดแดง
+            } else {
+                badge.style.display = "none"; // ซ่อนจุดแดง
+            }
+        }
+
+        // เรียกใช้ฟังก์ชันเมื่อโหลดหน้าเว็บ
+        document.addEventListener("DOMContentLoaded", updateNotificationBadge);
+
+        let isShow = false;
+        let isShowCancel = false;
+        let isShowCancel2 = false;
+        let isShowCancel3 = false;
+        let isShowDraft = false;
+        let isShowDraft2 = false;
+        let isShowSubmitRequest = false;
+        let isShowSubmitRequest2 = false;
+
+        function showPopup() {
+            isShow = !isShow;
+            const content = document.getElementById("content");
+
+            if (isShow) {
+                content.style.display = "flex";
+                document.body.classList.add('no-scroll');
+            } else {
+                content.style.display = "none";
+                document.body.classList.remove('no-scroll');
+            }
+        }
+
+        function showPopupCancel() {
+            isShowCancel = !isShowCancel;
+            const contentCancel = document.getElementById("contentCancel");
+
+            if (isShowCancel) {
+                contentCancel.style.display = "flex";
+                document.body.classList.add('no-scroll');
+            } else {
+                contentCancel.style.display = "none";
+                document.body.classList.remove('no-scroll');
+            }
+        }
+
+        function showPopupCancel2() {
+
+            if (isShowCancel) {
+                isShowCancel = false;
+                contentCancel.style.display = "none";
+            }
+
+
+            isShowCancel2 = !isShowCancel2;
+            const contentCancel2 = document.getElementById("contentCancel2");
+
+            if (isShowCancel2) {
+                contentCancel2.style.display = "flex";
+                document.body.classList.add('no-scroll');
+            } else {
+                contentCancel2.style.display = "none";
+                document.body.classList.remove('no-scroll');
+            }
+        }
+
+        function showPopupCancel3() {
+
+            if (isShowCancel) {
+                isShowCancel = false;
+                contentCancel.style.display = "none";
+            }
+
+
+            isShowCancel3 = !isShowCancel3;
+            const contentCancel3 = document.getElementById("contentCancel3");
+
+            if (isShowCancel3) {
+                contentCancel3.style.display = "flex";
+                document.body.classList.add('no-scroll');
+            } else {
+                contentCancel3.style.display = "none";
+                document.body.classList.remove('no-scroll');
+            }
+        }
+
+
+        function showPopupDraft() {
+            if (isShowCancel) {
+                isShowCancel = false;
+                contentCancel.style.display = "none";
+            }
+
+            isShowDraft = !isShowDraft;
+            const contentDraft = document.getElementById("contentDraft");
+
+            if (isShowDraft) {
+                contentDraft.style.display = "flex";
+                document.body.classList.add('no-scroll');
+            } else {
+                contentDraft.style.display = "none";
+                document.body.classList.remove('no-scroll');
+            }
+        }
+
+        function showPopupDraft2() {
+
+            if (isShowDraft) {
+                isShowDraft = false;
+                contentDraft.style.display = "none";
+            }
+
+
+            isShowDraft2 = !isShowDraft2;
+            const contentDraft2 = document.getElementById("contentDraft2");
+
+            if (isShowDraft2) {
+                contentDraft2.style.display = "flex";
+                document.body.classList.add('no-scroll');
+            } else {
+                contentDraft2.style.display = "none";
+                document.body.classList.remove('no-scroll');
+            }
+        }
+
+        function showPopupSubmitRequest() {
+            isShowSubmitRequest = !isShowSubmitRequest;
+            const contentSubmitRequest = document.getElementById("contentSubmitRequest");
+
+            if (isShowSubmitRequest) {
+                contentSubmitRequest.style.display = "flex";
+                document.body.classList.add('no-scroll');
+            } else {
+                contentSubmitRequest.style.display = "none";
+                document.body.classList.remove('no-scroll');
+            }
+        }
+
+        function showPopupSubmitRequest2() {
+            if (isShowSubmitRequest) {
+                isShowSubmitRequest = false;
+                contentSubmitRequest.style.display = "none";
+            }
+
+
+            isShowSubmitRequest2 = !isShowSubmitRequest2;
+            const contentSubmitRequest2 = document.getElementById("contentSubmitRequest2");
+
+            if (isShowSubmitRequest2) {
+                contentSubmitRequest2.style.display = "flex";
+                document.body.classList.add('no-scroll');
+            } else {
+                contentSubmitRequest2.style.display = "none";
+                document.body.classList.remove('no-scroll');
+            }
+        }
+
+    </script>
+
+
+</body>
+
+</html>
