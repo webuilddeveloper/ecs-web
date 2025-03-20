@@ -40917,7 +40917,7 @@ body.no-scroll {
     /* align-items: center; */
     /* align-items: flex-start; */
     align-self: stretch;
-    display: flex;
+    /* display: flex; */
     flex: 0 0 auto;
     gap: 5px;
     position: relative;
