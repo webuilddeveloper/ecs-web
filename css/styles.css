@@ -42803,3 +42803,24 @@ hr {
   font-style: normal;
   font-weight: 400;
 }
+
+.notification-badge-2 {
+  position: absolute;
+  top: -10px;
+  /* right: -5px; */
+  width: 20px;
+  height: 20px;
+  background-color: red;
+  border-radius: 50%;
+  align-content: center;
+  /* display: none; */
+  /* ซ่อนจุดแดงเริ่มต้น */
+}
+
+.notosansthai-normal-white-12px {
+  color: var(--white);
+  font-family: var(--font-family-noto_sans_thai);
+  font-size: var(--font-size-12);
+  font-style: normal;
+  font-weight: 400;
+}
