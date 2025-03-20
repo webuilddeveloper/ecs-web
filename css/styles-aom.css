@@ -227,6 +227,7 @@
     font-weight: 600;
     color: var(--back);
     text-decoration: underline;
+    text-wrap-mode: nowrap;
 }
 
 .container-dropdown-filter-purc_od {
