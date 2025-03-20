@@ -16,187 +16,348 @@
 </head>
 
 <body style="margin: 0; background: #ffffff">
-  <!-- <div class="desktop"> -->
   <div class="header-ecs">
-    <a href="./login.html">
-      <img class="logo-ecs" src="img/logo------1.png" alt="logo ecs" />
-    </a>
-    <div class="navbar-ecs header-menu">
-      <div class="navbar-link-text-ecs">
-        <a href="./purchase-order-school.html">
-          ออกใบขอสั่งซื้อ
+    <div class="content-header">
+      <div class="hd-left">
+        <a href="./login.html">
+          <img class="logo-ecs" src="img/logo------1.png" alt="logo ecs" />
         </a>
+        <div class="navbar-ecs header-menu">
+          <div class="navbar-link-text-ecs">
+            <div class="title-menu-header pointer" onclick="showMenuNav1()">
+              ใบขอสั่งซื้อ
+              <img class="icon-down-header" src="img/arrow-down-white.svg" alt="logo ecs" />
+            </div>
+            <div class="submenu-theme" id="menu-header-1">
+              <a href="./purchase-order-school.html">
+                ออกใบขอสั่งซื้อ
+              </a>
+              <hr>
+              <a href="./draft-school.html">
+                ร่างใบขอสั่งซื้อ
+              </a>
+              <hr>
+              <div class="sub-menu-card">
+                <div class="title-menu-sub-root pointer" onclick="showMenuNav1_1()">
+                  รายการใบขอสั่งซื้อ
+                  <img class="icon-menu-sub-root" src="img/arrow-right-white.svg" alt="logo ecs" />
+                </div>
+                <div class="submenu-theme-2" id="menu-header-1-1">
+                  <a href="./purchase-order-school.html">
+                    ทั้งหมด
+                  </a>
+                  <hr>
+                  <a href="./waiting-approve-school.html">
+                    รอรับการอนุมัติ
+                  </a>
+                  <hr>
+                  <a href="./purchase-order-school.html">
+                    ไม่ได้รับการอนุมัติ
+                  </a>
+                  <hr>
+                  <a href="./approve-school.html">
+                    ได้รับการอนุมัติ
+                  </a>
+                  <hr>
+                  <a href="./paid_school.html">
+                    รอการชำระเงิน
+                  </a>
+                  <hr>
+                  <a href="./cancel-school.html">
+                    รายการที่ถูกยกเลิก
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="navbar-link-text-ecs">
+            <div class="title-menu-header pointer" onclick="showMenuNav2()">
+              คำสั่งซื้อ
+              <img class="icon-down-header" src="img/arrow-down-white.svg" alt="logo ecs" />
+            </div>
+            <div class="submenu-theme" id="menu-header-2">
+              <a href="./purchase-order-school.html">
+                ทั้งหมด
+              </a>
+              <hr>
+              <a href="./purchase-order-school.html">
+                รอการตรวจสอบ
+              </a>
+              <hr>
+              <a href="./purchase-order-school.html">
+                รอการแก้ไข
+              </a>
+              <hr>
+              <a href="./purchase-order-school.html">
+                ที่ต้องได้รับ
+              </a>
+              <hr>
+              <a href="./purchase-order-school.html">
+                จัดส่งสำเร็จ
+              </a>
+              <hr>
+              <a href="./purchase-order-school.html">
+                ยกเลิก/คืนเงิน/คืนสินค้า
+              </a>
+            </div>
+          </div>
+          <div class="navbar-link-text-ecs">
+            <div class="title-menu-header pointer" onclick="showMenuNav3()">
+              เลข ปพ.
+              <img class="icon-down-header" src="img/arrow-down-white.svg" alt="logo ecs" />
+            </div>
+            <div class="submenu-theme" id="menu-header-3">
+              <a href="./purchase-order-school.html">
+                พิมพ์ใบ ปพ.
+              </a>
+              <hr>
+              <a href="./purchase-order-school.html">
+                ประวัติการพิมพ์
+              </a>
+              <hr>
+              <a href="./order-cancel.html">
+                ยกเลิกเลข ปพ.
+              </a>
+            </div>
+          </div>
+          <div class="navbar-link-text-ecs">
+            <div class="title-menu-header pointer" onclick="showMenuNav4()">
+              รายงาน.
+              <img class="icon-down-header" src="img/arrow-down-white.svg" alt="logo ecs" />
+            </div>
+            <div class="submenu-theme" id="menu-header-4">
+              <a href="./purchase-order-school.html">
+                รายงานการพิมพ์ใบ ปพ.
+              </a>
+              <hr>
+              <a href="./purchase-order-school.html">
+                รายงานการใช้ตัวเลข
+              </a>
+              <hr>
+              <a href="./purchase-order-school.html">
+                รายงานการสั่งซื้อ
+              </a>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="navbar-link-text-ecs">
-        <a href="./approve-school.html">
-          เอกสารใบขอสั่งซื้อ
+
+      <div class="header-action-ecs">
+        <img class="group site-navbar" src="img/Icon-Service.png" alt="Service" onclick="showMenuNav()" />
+        <div class="notification-icon">
+          <img class="group" src="img/group@2x.png" alt="Group" onclick="toggleNotificationPanel()" />
+          <span id="notification-badge" class="notification-badge"></span> <!-- จุดแดง -->
+        </div>
+
+        <div id="notification-panel" class="notification-panel hidden">
+          <ul class="notification-list">
+            <li class="notification-item unread">
+              <span class="status-indicator"></span>
+              <div class="notification-content">
+                <p class="notosansthai-normal-vulcan-15px">
+                  <strong class="notosansthai-semi-bold-vulcan-15px">หมายเลขคำสั่งซื้อ:</strong> 12345
+                </p>
+                <p class="notosansthai-normal-vulcan-15px">
+                  <strong class="notosansthai-semi-bold-vulcan-15px">สถานะ:</strong> รอดำเนินการ
+                </p>
+              </div>
+            </li>
+            <li class="notification-item">
+              <span class="status-indicator read"></span>
+              <div class="notification-content">
+                <p class="notosansthai-normal-vulcan-15px">
+                  <strong class="notosansthai-semi-bold-vulcan-15px">หมายเลขคำสั่งซื้อ:</strong> 67890
+                </p>
+                <p class="notosansthai-normal-vulcan-15px">
+                  <strong class="notosansthai-semi-bold-vulcan-15px">สถานะ:</strong> สำเร็จ
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+
+        <div class="title-menu-header pointer" onclick="showMenuNav3()">
+          <a href="./profile-school.html">
+            <img class="vector" src="img/vector-2.svg" alt="Vector" />
+          </a>
+          ออกจากระบบ
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="subMenuHeader" class="sub-menu-header" style="display: none;">
+    <div class="title-menu-header" onclick="showMenuNav1()">
+      ใบขอสั่งซื้อ
+      <img class="icon-down-header" src="img/arrow-down-white.svg" alt="logo ecs" />
+    </div>
+    <div class="sub-menu-header-1-rps" id="menu-header-1-rps">
+      <a class="title-menu-header" href="./purchase-order-school.html">
+        ออกใบขอสั่งซื้อ
+      </a>
+      <hr>
+      <a class="title-menu-header" href="./purchase-order-school.html">
+        ออกใบขอสั่งซื้อ
+      </a>
+      <hr>
+      <div class="title-menu-header" onclick="showMenuNav1_1()">
+        รายการใบขอสั่งซื้อ
+        <img class="icon-down-header" src="img/arrow-down-white.svg" alt="logo ecs" />
+      </div>
+      <div class="sub-menu-header-1-1-rps" id="menu-header-1-1-rps">
+        <a class="title-menu-header" href="./purchase-order-school.html">
+          ทั้งหมด
         </a>
-      </div>
-      <div class="navbar-link-text-ecs">
-        <a href="./delivered-order.html">
-          รายการคำสั่งซื้อ
+        <hr>
+        <a class="title-menu-header" href="./purchase-order-school.html">
+          รอรับการอนุมัติ
         </a>
-      </div>
-      <div class="navbar-link-text-ecs">
-        <a href="./order-cancel.html">
-          ยกเลิกเลข ปพ.
+        <hr>
+        <a class="title-menu-header" href="./purchase-order-school.html">
+          ได้รับการอนุมัติ
         </a>
-      </div>
-      <div class="navbar-link-text-ecs">
-        <a href="./delivered-order.html">
-          ประวัติการสั่งซื้อ
+        <hr>
+        <a class="title-menu-header" href="./purchase-order-school.html">
+          รอการชำระเงิน
+        </a>
+        <hr>
+        <a class="title-menu-header" href="./purchase-order-school.html">
+          รายการที่ถูกยกเลิก
         </a>
       </div>
     </div>
-    <div class="header-action-ecs">
-      <img class="group site-navbar" src="img/Icon-Service.png" alt="Service" onclick="showMenuNav()" />
-      <div class="notification-icon">
-        <img class="group" src="img/group@2x.png" alt="Group" onclick="toggleNotificationPanel()" />
-        <span id="notification-badge" class="notification-badge"></span> <!-- จุดแดง -->
-      </div>
+    <hr />
+    <div class="title-menu-header" onclick="showMenuNav2()">
+      คำสั่งซื้อ
+      <img class="icon-down-header" src="img/arrow-down-white.svg" alt="logo ecs" />
+    </div>
+    <div class="sub-menu-header-2-rps" id="menu-header-2-rps">
+      <a class="title-menu-header" href="./purchase-order-school.html">
+        ทั้งหมด
+      </a>
+      <hr>
+      <a class="title-menu-header" href="./purchase-order-school.html">
+        รอตรวจสอบ
+      </a>
+      <hr>
+      <a class="title-menu-header" href="./purchase-order-school.html">
+        รอการแก้ไข
+      </a>
+      <hr>
+      <a class="title-menu-header" href="./purchase-order-school.html">
+        ที่ต้องได้รับ
+      </a>
+      <hr>
+      <a class="title-menu-header" href="./purchase-order-school.html">
+        จัดส่งสำเร็จ
+      </a>
+      <hr>
+      <a class="title-menu-header" href="./purchase-order-school.html">
+        ยกเลิก/คืนเงิน/คืนสินค้า
+      </a>
 
-      <div id="notification-panel" class="notification-panel hidden">
-        <ul class="notification-list">
-          <li class="notification-item unread">
-            <span class="status-indicator"></span>
-            <div class="notification-content">
-              <p class="notosansthai-normal-vulcan-15px">
-                <strong class="notosansthai-semi-bold-vulcan-15px">หมายเลขคำสั่งซื้อ:</strong> 12345
-              </p>
-              <p class="notosansthai-normal-vulcan-15px">
-                <strong class="notosansthai-semi-bold-vulcan-15px">สถานะ:</strong> รอดำเนินการ
-              </p>
-            </div>
-          </li>
-          <li class="notification-item">
-            <span class="status-indicator read"></span>
-            <div class="notification-content">
-              <p class="notosansthai-normal-vulcan-15px">
-                <strong class="notosansthai-semi-bold-vulcan-15px">หมายเลขคำสั่งซื้อ:</strong> 67890
-              </p>
-              <p class="notosansthai-normal-vulcan-15px">
-                <strong class="notosansthai-semi-bold-vulcan-15px">สถานะ:</strong> สำเร็จ
-              </p>
-            </div>
-          </li>
-        </ul>
-      </div>
-
-      <a href="./profile-school.html">
-        <img class="vector" src="img/vector-2.svg" alt="Vector" />
+    </div>
+    <hr />
+    <div class="title-menu-header" onclick="showMenuNav3()">
+      เลข ปพ.
+      <img class="icon-down-header" src="img/arrow-down-white.svg" alt="logo ecs" />
+    </div>
+    <div class="sub-menu-header-3-rps" id="menu-header-3-rps">
+      <a class="title-menu-header" href="./print_document_information.html">
+        พิมพ์ใบ ปพ.
+      </a>
+      <hr>
+      <a class="title-menu-header" href="./print_document_history.html">
+        ประวัติการพิมพ์
+      </a>
+      <hr>
+      <a class="title-menu-header" href="./order-cancel.html">
+        ยกเลิกเลข ปพ.
+      </a>
+    </div>
+    <hr />
+    <div class="title-menu-header" onclick="showMenuNav4()">
+      รายงาน.
+      <img class="icon-down-header" src="img/arrow-down-white.svg" alt="logo ecs" />
+    </div>
+    <div class="sub-menu-header-4-rps" id="menu-header-4-rps">
+      <a class="title-menu-header" href="./purchase-order-school.html">
+        รายงานการพิมพ์ ใบ ปพ.
+      </a>
+      <hr>
+      <a class="title-menu-header" href="./purchase-order-school.html">
+        รายงานการใช้ตัวเลข
+      </a>
+      <hr>
+      <a class="title-menu-header" href="./purchase-order-school.html">
+        รายงานการสั่งซื้อ
       </a>
     </div>
   </div>
-  <div id="subMenuHeader" class="sub-menu-header" style="display: none;">
-    <a href="./purchase-order-school.html"
-      class="notosansthai-normal-black-20px no-text-underline textItemMenuHeader itemMenuHeader">
-      ออกใบขอสั่งซื้อ
-    </a>
-    <hr />
-    <a href="./approve-school.html"
-      class="notosansthai-normal-black-20px no-text-underline textItemMenuHeader itemMenuHeader">
-      เอกสารใบขอสั่งซื้อ
-    </a>
-    <hr />
-    <a href="./delivered-order.html"
-      class="notosansthai-normal-black-20px no-text-underline textItemMenuHeader itemMenuHeader">
-      รายการคำสั่งซื้อ
-    </a>
-    <hr />
-    <a href="./order-cancel.html"
-      class="notosansthai-normal-black-20px no-text-underline textItemMenuHeader itemMenuHeader">
-      ยกเลิกเลข ปพ.
-    </a>
-    <hr />
-    <a href="./delivered-order.html"
-      class="notosansthai-normal-black-20px no-text-underline textItemMenuHeader itemMenuHeader">
-      ประวัติการสั่งซื้อ
-    </a>
-  </div>
   <div class="container-center-horizontal">
     <div class="purchase-order">
-      <!-- <div class="purchase-order-flex-row"> -->
       <div class="menu-header">
-        <a href="./home-school.html" class="position-absolute">
+        <a href="./home-school.html" class="position-absolute ">
           <div class="purchase-order-button-3 purchase-order-button-8">
             <img class="purchase-order-icon-back" src="img/icon-back-3.svg" alt="icon back" />
-            <div class="purchase-order-text_label valign-text-middle purchase-order-text_label-5">ย้อนกลับ</div>
+            <div class="purchase-order-text_label valign-text-middle purchase-order-text_label-5 display-none-m">
+              ย้อนกลับ</div>
           </div>
         </a>
-        <h1 class="purchase-order-text-6 margin-0-auto" style="align-self: center;">รายการสินค้า</h1>
+        <h1 class="purchase-order-text-6 margin-0-auto" style="align-self: center;">ออกใบขอสั่งซื้อ</h1>
       </div>
 
       <div class="purchase-order-frame-38327">
         <div class="purchase-order-frame-38385">
           <div class="group-input-filter">
-            <article class="input-select" style="flex: 1;">
-              <div class="base-form-label-medium-2">
-                <div class="label-input font-18">ระดับชั้นการศึกษา</div>
-              </div>
-              <div class="purchase-order-frame-2">
-                <select id="agency" class="purchase-order-custom-dropdown" style="height: -webkit-fill-available;"
-                  placeholder="ทุกระดับชั้นการศึกษา">
-                  <option value="" selected>ทุกระดับชั้นการศึกษา</option>
-                  <option value="ประถมฯ">ประถมฯ</option>
-                  <option value="ม.ต้น">ม.ต้น</option>
-                  <option value="ม.ปลาย">ม.ปลาย</option>
-                </select>
-                <img class="purchase-order-dropdown-icon" src="img/dropdown-6.svg" alt="dropdown" />
-              </div>
-            </article>
-            <article class="input-select" style="flex: 3;">
-              <div class="base-form-label-medium-2">
-                <div class="label-input font-18">รายการสินค้า</div>
-              </div>
-              <div class="purchase-order-frame-2">
-                <div class="purchase-order-frame-38329-1">
-                  <input id="autocomplete-input" class="purchase-order-text_input notosansthai-normal-dove-gray-17px "
-                    name="กรณากรอกชอผใชงาน" placeholder="กรุณากรอกคำค้นหา" type="text" />
-                  <img class="purchase-order-icon" src="img/icon-magnifying-glass-searching-glass-1.svg"
-                    alt="icon Magnifying Glass Searching Glass" />
+            <div class="div-purchase-order-school-filter">
+              <div class="div-purchase-order-school-filter-1">
+                <div class="base-form-label-medium-2">
+                  <div class="label-input font-18">ระดับชั้นการศึกษา</div>
                 </div>
-                <div id="autocomplete-list" class="autocomplete-items"></div>
+                <div class="purchase-order-frame-2">
+                  <select id="agency" class="purchase-order-custom-dropdown" style="height: -webkit-fill-available;"
+                    placeholder="ทุกระดับชั้นการศึกษา">
+                    <option value="" selected>ทุกระดับชั้นการศึกษา</option>
+                    <option value="ประถมฯ">ประถมฯ</option>
+                    <option value="ม.ต้น">ม.ต้น</option>
+                    <option value="ม.ปลาย">ม.ปลาย</option>
+                  </select>
+                  <img class="purchase-order-dropdown-icon" src="img/dropdown-6.svg" alt="dropdown" />
+                </div>
               </div>
-            </article>
-            <article class="input-select" style="flex: 1;">
-              <div class="base-form-label-medium-2">
-                <div class="label-input font-18">จำนวนสินค้า</div>
+              <div style="width: 100%;">
+                <div class="base-form-label-medium-2">
+                  <div class="label-input font-18">รายการสินค้า</div>
+                </div>
+                <div class="purchase-order-frame-2">
+                  <div class="purchase-order-frame-38329-1">
+                    <input id="autocomplete-input" class="purchase-order-text_input notosansthai-normal-dove-gray-17px "
+                      name="กรณากรอกชอผใชงาน" placeholder="กรุณากรอกคำค้นหา" type="text" />
+                    <img class="purchase-order-icon" src="img/icon-magnifying-glass-searching-glass-1.svg"
+                      alt="icon Magnifying Glass Searching Glass" />
+                  </div>
+                  <div id="autocomplete-list" class="autocomplete-items"></div>
+                </div>
               </div>
-              <div class="purchase-order-frame-2">
-                <input id="autocomplete-input" class="purchase-order-text_input notosansthai-normal-dove-gray-17px "
-                  name="กรุณาระบุจำนวนสินค้า" placeholder="กรุณาระบุจำนวนสินค้า" type="number" />
+              <div class="div-purchase-order-school-filter-1">
+                <div class="base-form-label-medium-2">
+                  <div class="label-input font-18">จำนวนสินค้า</div>
+                </div>
+                <div class="purchase-order-frame-2">
+                  <input id="autocomplete-input" class="purchase-order-text_input notosansthai-normal-dove-gray-17px "
+                    name="กรุณาระบุจำนวนสินค้า" placeholder="กรุณาระบุจำนวนสินค้า" type="number" />
+                </div>
               </div>
-            </article>
-            <!-- <div class="purchase-order-frame-2">
-              <select id="agency" class="purchase-order-custom-dropdown" style="height: -webkit-fill-available;">
-                <option value="" disabled selected>เลือกประเภทแบบพิมพ์</option>
-                <option value="ปพ.1">ปพ.1</option>
-                <option value="ปพ.2">ปพ.2</option>
-              </select>
-              <img class="purchase-order-dropdown-icon" src="img/dropdown-6.svg" alt="dropdown" />
             </div>
-            <div class="purchase-order-frame-2">
-              <select id="agency2" class="purchase-order-custom-dropdown" style="height: -webkit-fill-available;">
-                <option value="" disabled selected>เลือกระดับชั้น</option>
-                <option value="ป.1">ป.1</option>
-                <option value="ป.2">ป.2</option>
-                <option value="ป.3">ป.3</option>
-                <option value="ป.4">ป.4</option>
-                <option value="ป.5">ป.5</option>
-                <option value="ป.6">ป.6</option>
-              </select>
-              <img class="purchase-order-dropdown-icon" src="img/dropdown-6.svg" alt="dropdown" />
-            </div> -->
           </div>
-
           <div class="request-detail-school-frame-38379">
             <a href="javascript:SubmitForm('form9')" style="text-align: -webkit-center;">
-              <article class="request-detail-school-button-5 request-detail-school-button-6"
-                style="min-width: 120px; text-wrap: nowrap;">
-                <div class="button-confirm">
-                  เพิ่มสินค้า
-                </div>
-              </article>
+              <div class="button-confirm request-detail-school-button-5 request-detail-school-button-6"
+                style="width: 100%;">
+                เพิ่มสินค้า
+              </div>
             </a>
             <!-- <a href="javascript:SubmitForm('form9')" style="text-align: -webkit-center;">
               <article class="request-detail-school-button-5 request-detail-school-button-6"
@@ -217,1883 +378,187 @@
           </div>
 
         </div>
-        <img class="purchase-order-line" src="img/line-9-1.svg" alt="Line 9" />
-        <div class="purchase-order-text-7">พบ 17 รายการ</div>
+        <div class="purchase-order-text-7">รายการสินค้า X</div>
 
         <div class="table-purchase-order">
           <div class="frame-38-1">
-            <div class="frame-3346">
-              <table class="purchase-order-school-table-m" style="width: 100%;text-align: left;">
-                <thead class="display-none-t display-none-m">
+            <div class="frame-3346" style="margin-bottom: 15px;">
+              <table class="" style="width: 100%;text-align: left;">
+                <thead>
                   <tr>
                     <th class="order-approval-list-table-header-2 notosansthai-semi-bold-vulcan-15px">ลำดับ</th>
-                    <th class="order-approval-list-table-header-2 notosansthai-semi-bold-vulcan-15px">
-                      รูปสินค้า
-                    </th>
-                    <th class="order-approval-list-table-header-2 notosansthai-semi-bold-vulcan-15px">
-                      ชื่อสินค้า</th>
-                    <th class="order-approval-list-table-header-2 notosansthai-semi-bold-vulcan-15px">
-                      ราคา(บาท)
-                    </th>
-                    <th class="order-approval-list-table-header-2 notosansthai-semi-bold-vulcan-15px">
-                      หน่วย</th>
-                    <th class="order-approval-list-table-header-2 notosansthai-semi-bold-vulcan-15px">ดำเนินการ
-                    </th>
+                    <th class="order-approval-list-table-header-2 notosansthai-semi-bold-vulcan-15px"
+                      style="text-align: left;min-width: 500px;">รายการสินค้า</th>
+                    <th class="order-approval-list-table-header-2 notosansthai-semi-bold-vulcan-15px"
+                      style="min-width: 250px;">จำนวน</th>
                   </tr>
                 </thead>
-                <tbody class="display-none-m">
-                  <tr class="tr-table-purchase-order">
+                <tbody id="table-body">
+                  <!-- <tr>
                     <td class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px">1</td>
-                    <td
-                      class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px align-content-center"
-                      style="width: 120px;"><img class="purchase-order-image-8" src="img/image-8-9@2x.png"
-                        alt="image 8" />
-                    </td>
-                    <td
-                      class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px align-content-center">
-                      <a href="./detail-purchase-order-school.html">
-                        <div class="order-approval-list-text-sm-wrap notosansthai-medium-vulcan-15px">ปพ.1:ป
-                          ระเบียนแสดงผลการเรียน ระดับ ประถมฯ (ปรับปรุง 2555) (ฉบับใช้กับคอม)
-                        </div>
-                      </a>
+                    <td class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px"
+                      style="text-align: left;">
+                      <span class="notosansthai-normal-black-16px-weight600">ปพ.1:ป ระเบียนแสดงผลการเรียน ระดับ ประถมฯ (ปรับปรุง 2555)
+                      (ฉบับใช้กับคอม)</span>
+                      <div class="div-table-purchase-order">
+                        <span class="card-status-popo-1">
+                          ปพ.1:ป
+                        </span>
+                        <span class="card-status-approve">
+                          อนุมัติ
+                        </span>
+                        <span class="notosansthai-normal-black-16px">160 บาท / เล่ม</span>
+                      </div>
                     </td>
                     <td class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px">
-                      160</td>
-                    <td class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px">เล่ม</td>
-
-                    <td class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px"
-                      style="display: flex; height: inherit;">
-                      <div class="purchase-order-frame-18 div-edit-item-doc">
-                        <a href="javascript:decrease('count1')"><img class="purchase-order-frame-3"
-                            src="img/frame-18.svg" alt="Frame" />
-                        </a>
-                        <div class="purchase-order-number notosansthai-bold-black-14px">
-                          <div class="order-approval-list-input-element input">
-                            <input id="count1" class="order-approval-list-text_input input-item-doc" min="1"
-                              name="พมพคาคนหา" value="1" type="number" />
+                      <div class="purchase-order-frame-18-3">
+                        <div class="purchase-order-frame-18-2">
+                          <a href="javascript:decrease('count1')"><button class="purchase-icon-btn">
+                              <span class="notosansthai-normal-white-20px">-</span>
+                            </button>
+                          </a>
+                          <div class="purchase-order-number notosansthai-bold-black-14px">
+                            <div class="order-approval-list-input-element input">
+                              <input id="count1" class="order-approval-list-text_input input-item-doc" min="1"
+                                name="พมพคาคนหา" value="1" type="number" />
+                            </div>
                           </div>
+                          <a href="javascript:increase('count1')"><button class="purchase-icon-btn">
+                              <span class="notosansthai-normal-white-20px">+</span>
+                            </button>
+                          </a>
                         </div>
-                        <a href="javascript:increase('count1')"><img class="purchase-order-frame-4"
-                            src="img/frame-19.svg" alt="Frame" />
-                        </a>
+                        <img style="width: 26px;" src="img/frame-9.svg" />
                       </div>
-                      <a onclick="showPopup()">
-                        <div class="purchase-order-button-6 purchase-order-button-8">
-                          <div
-                            class="purchase-order-text_label-1 valign-text-middle purchase-order-text_label-5 notosansthai-bold-midnight-blue-16px">
-                            <span class="desktop">ใส่ตะกร้า</span>
-                            <img class="button-icon tablet mobile" style="width: 27px;" src="img/icon-cart-8.svg"
-                              alt="icon cart" />
-                          </div>
-                        </div>
-                      </a>
                     </td>
-
                   </tr>
-                  <tr class="tr-table-purchase-order">
+                  <tr>
                     <td class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px">2</td>
-                    <td
-                      class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px align-content-center"
-                      style="width: 120px;"><img class="purchase-order-image-8" src="img/image-8-10@2x.png"
-                        alt="image 8" />
-                    </td>
-                    <td
-                      class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px align-content-center">
-                      <a href="./detail-purchase-order-school.html">
-                        <div class="order-approval-list-text-sm-wrap notosansthai-medium-vulcan-15px">ปพ.1:บ
-                          ระเบียนแสดงผลการเรียน ระดับ ม.ต้น
-                          (ปรับปรุง 2555) (ฉบับใช้กับคอม)
-                        </div>
-                      </a>
+                    <td class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px"
+                      style="text-align: left;">
+                      <span class="notosansthai-normal-black-16px-weight600">ปพ.1:บ ระเบียนแสดงผลการเรียน ระดับ ม.ต้น (ปรับปรุง 2555) (ฉบับใช้กับคอม)</span>
+                      <div class="div-table-purchase-order">
+                        <span class="card-status-popo-1-bo">
+                          ปพ.1:บ
+                        </span>
+                        <span class="card-status-approve">
+                          อนุมัติ
+                        </span>
+                        <span class="notosansthai-normal-black-16px">160 บาท / เล่ม</span>
+                      </div>
                     </td>
                     <td class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px">
-                      160</td>
-                    <td class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px">เล่ม</td>
-
-                    <td class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px"
-                      style="display: flex; height: inherit;">
-                      <div class="purchase-order-frame-18 div-edit-item-doc">
-                        <a href="javascript:decrease('count1')"><img class="purchase-order-frame-3"
-                            src="img/frame-18.svg" alt="Frame" />
-                        </a>
-                        <div class="purchase-order-number notosansthai-bold-black-14px">
-                          <div class="order-approval-list-input-element input">
-                            <input id="count1" class="order-approval-list-text_input input-item-doc" min="1"
-                              name="พมพคาคนหา" value="1" type="number" />
+                      <div class="purchase-order-frame-18-3">
+                        <div class="purchase-order-frame-18-2">
+                          <a href="javascript:decrease('count1')"><button class="purchase-icon-btn">
+                              <span class="notosansthai-normal-white-20px">-</span>
+                            </button>
+                          </a>
+                          <div class="purchase-order-number notosansthai-bold-black-14px">
+                            <div class="order-approval-list-input-element input">
+                              <input id="count1" class="order-approval-list-text_input input-item-doc" min="1"
+                                name="พมพคาคนหา" value="1" type="number" />
+                            </div>
                           </div>
+                          <a href="javascript:increase('count1')"><button class="purchase-icon-btn">
+                              <span class="notosansthai-normal-white-20px">+</span>
+                            </button>
+                          </a>
                         </div>
-                        <a href="javascript:increase('count1')"><img class="purchase-order-frame-4"
-                            src="img/frame-19.svg" alt="Frame" />
-                        </a>
+                        <img style="width: 26px;" src="img/frame-9.svg" />
                       </div>
-                      <a onclick="showPopup()">
-                        <div class="purchase-order-button-6 purchase-order-button-8">
-                          <div
-                            class="purchase-order-text_label-1 valign-text-middle purchase-order-text_label-5 notosansthai-bold-midnight-blue-16px">
-                            <span class="desktop">ใส่ตะกร้า</span>
-                            <img class="button-icon tablet mobile" style="width: 27px;" src="img/icon-cart-8.svg"
-                              alt="icon cart" />
-                          </div>
-                        </div>
-                      </a>
                     </td>
-
                   </tr>
-                  <tr class="tr-table-purchase-order">
+                  <tr>
                     <td class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px">3</td>
-                    <td
-                      class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px align-content-center"
-                      style="width: 120px;">
-                      <img class="purchase-order-image-8" src="img/image-8-11@2x.png" alt="image 8" />
-                    </td>
-                    <td
-                      class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px align-content-center">
-                      <a href="./detail-purchase-order-school.html">
-                        <div class="order-approval-list-text-sm-wrap notosansthai-medium-vulcan-15px">ปพ.1:พ
-                          ระเบียนแสดงผลการเรียน ระดับ ม.ปลาย
-                          (ปรับปรุง 2555) (ฉบับใช้กับคอม)
-                        </div>
-                      </a>
+                    <td class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px"
+                      style="text-align: left;">
+                      <span class="notosansthai-normal-black-16px-weight600">ปพ.1:พ ระเบียนแสดงผลการเรียน ระดับ ม.ปลาย (ปรับปรุง 2555) (ฉบับใช้กับคอม)</span>
+                      <div class="div-table-purchase-order">
+                        <span class="card-status-popo-1-y">
+                          ปพ.1:พ
+                        </span>
+                        <span class="card-status-approve">
+                          อนุมัติ
+                        </span>
+                        <span class="notosansthai-normal-black-16px">160 บาท / เล่ม</span>
+                      </div>
                     </td>
                     <td class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px">
-                      160</td>
-                    <td class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px">เล่ม</td>
-
-                    <td class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px"
-                      style="display: flex; height: inherit;">
-                      <div class="purchase-order-frame-18 div-edit-item-doc">
-                        <a href="javascript:decrease('count1')"><img class="purchase-order-frame-3"
-                            src="img/frame-18.svg" alt="Frame" />
-                        </a>
-                        <div class="purchase-order-number notosansthai-bold-black-14px">
-                          <div class="order-approval-list-input-element input">
-                            <input id="count1" class="order-approval-list-text_input input-item-doc" min="1"
-                              name="พมพคาคนหา" value="1" type="number" />
+                      <div class="purchase-order-frame-18-3">
+                        <div class="purchase-order-frame-18-2">
+                          <a href="javascript:decrease('count1')"><button class="purchase-icon-btn">
+                              <span class="notosansthai-normal-white-20px">-</span>
+                            </button>
+                          </a>
+                          <div class="purchase-order-number notosansthai-bold-black-14px">
+                            <div class="order-approval-list-input-element input">
+                              <input id="count1" class="order-approval-list-text_input input-item-doc" min="1"
+                                name="พมพคาคนหา" value="1" type="number" />
+                            </div>
                           </div>
+                          <a href="javascript:increase('count1')"><button class="purchase-icon-btn">
+                              <span class="notosansthai-normal-white-20px">+</span>
+                            </button>
+                          </a>
                         </div>
-                        <a href="javascript:increase('count1')"><img class="purchase-order-frame-4"
-                            src="img/frame-19.svg" alt="Frame" />
-                        </a>
+                        <img style="width: 26px;" src="img/frame-9.svg" />
                       </div>
-                      <a onclick="showPopup()">
-                        <div class="purchase-order-button-6 purchase-order-button-8">
-                          <div
-                            class="purchase-order-text_label-1 valign-text-middle purchase-order-text_label-5 notosansthai-bold-midnight-blue-16px">
-                            <span class="desktop">ใส่ตะกร้า</span>
-                            <img class="button-icon tablet mobile" style="width: 27px;" src="img/icon-cart-8.svg"
-                              alt="icon cart" />
-                          </div>
-                        </div>
-                      </a>
                     </td>
-
                   </tr>
-                  <tr class="tr-table-purchase-order">
+                  <tr>
                     <td class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px">4</td>
-                    <td
-                      class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px align-content-center"
-                      style="width: 120px;">
-                      <img class="purchase-order-image-8" src="img/image-8-12@2x.png" alt="image 8" />
-                    </td>
-                    <td
-                      class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px align-content-center">
-                      <a href="./detail-purchase-order-school.html">
-                        <div class="order-approval-list-text-sm-wrap notosansthai-medium-vulcan-15px">ปพ.1:พ
-                          ระเบียนแสดงผลการเรียน ระดับ ม.ปลาย
-                          (ปรับปรุง 2555) (ฉบับใช้กับคอม)
-                        </div>
-                      </a>
+                    <td class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px"
+                      style="text-align: left;">
+                      <span class="notosansthai-normal-black-16px-weight600">ปพ.3:ป แบบรายงานผู้สำเร็จการศึกษา ระดับประถมศึกษา (ฉบับใช้กับคอม)</span>
+                      <div class="div-table-purchase-order">
+                        <span class="card-status-popo-1-w">
+                          ปพ.3:ป
+                        </span>
+                        <span class="notosansthai-normal-black-16px">5 บาท / แผ่น</span>
+                      </div>
                     </td>
                     <td class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px">
-                      2</td>
-                    <td class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px">แผ่น</td>
-
-                    <td class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px"
-                      style="display: flex; height: inherit;">
-                      <div class="purchase-order-frame-18 div-edit-item-doc">
-                        <a href="javascript:decrease('count1')"><img class="purchase-order-frame-3"
-                            src="img/frame-18.svg" alt="Frame" />
-                        </a>
-                        <div class="purchase-order-number notosansthai-bold-black-14px">
-                          <div class="order-approval-list-input-element input">
-                            <input id="count1" class="order-approval-list-text_input input-item-doc" min="1"
-                              name="พมพคาคนหา" value="1" type="number" />
-                          </div>
-                        </div>
-                        <a href="javascript:increase('count1')"><img class="purchase-order-frame-4"
-                            src="img/frame-19.svg" alt="Frame" />
-                        </a>
-                      </div>
-                      <a onclick="showPopup()">
-                        <div class="purchase-order-button-6 purchase-order-button-8">
-                          <div
-                            class="purchase-order-text_label-1 valign-text-middle purchase-order-text_label-5 notosansthai-bold-midnight-blue-16px">
-                            <span class="desktop">ใส่ตะกร้า</span>
-                            <img class="button-icon tablet mobile" style="width: 27px;" src="img/icon-cart-8.svg"
-                              alt="icon cart" />
-                          </div>
-                        </div>
-                      </a>
-                    </td>
-
-                  </tr>
-                  <tr class="tr-table-purchase-order">
-                    <td class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px">5</td>
-                    <td
-                      class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px align-content-center"
-                      style="width: 120px;">
-                      <img class="purchase-order-image-8" src="img/image-8-13@2x.png" alt="image 8" />
-                    </td>
-                    <td
-                      class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px align-content-center">
-                      <a href="./detail-purchase-order-school.html">
-                        <div class="order-approval-list-text-sm-wrap notosansthai-medium-vulcan-15px">ปพ.2:พ
-                          ประกาศนียบัตรสำหรับผู้เรียนที่สำเร็จการศึกษา
-                          ขั้นพื้นฐาน (จบมัธยมศึกษาปีที่ 6)
-                        </div>
-                      </a>
-                    </td>
-                    <td class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px">
-                      2</td>
-                    <td class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px">แผ่น</td>
-
-                    <td class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px"
-                      style="display: flex; height: inherit;">
-                      <div class="purchase-order-frame-18 div-edit-item-doc">
-                        <a href="javascript:decrease('count1')"><img class="purchase-order-frame-3"
-                            src="img/frame-18.svg" alt="Frame" />
-                        </a>
-                        <div class="purchase-order-number notosansthai-bold-black-14px">
-                          <div class="order-approval-list-input-element input">
-                            <input id="count1" class="order-approval-list-text_input input-item-doc" min="1"
-                              name="พมพคาคนหา" value="1" type="number" />
-                          </div>
-                        </div>
-                        <a href="javascript:increase('count1')"><img class="purchase-order-frame-4"
-                            src="img/frame-19.svg" alt="Frame" />
-                        </a>
-                      </div>
-                      <a onclick="showPopup()">
-                        <div class="purchase-order-button-6 purchase-order-button-8">
-                          <div
-                            class="purchase-order-text_label-1 valign-text-middle purchase-order-text_label-5 notosansthai-bold-midnight-blue-16px">
-                            <span class="desktop">ใส่ตะกร้า</span>
-                            <img class="button-icon tablet mobile" style="width: 27px;" src="img/icon-cart-8.svg"
-                              alt="icon cart" />
-                          </div>
-                        </div>
-                      </a>
-                    </td>
-
-                  </tr>
-                  <tr class="tr-table-purchase-order">
-                    <td class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px">6</td>
-                    <td
-                      class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px align-content-center"
-                      style="width: 120px;">
-                      <img class="purchase-order-image-8" src="img/image-8-14@2x.png" alt="image 8" />
-                    </td>
-                    <td
-                      class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px align-content-center">
-                      <a href="./detail-purchase-order-school.html">
-                        <div class="order-approval-list-text-sm-wrap notosansthai-medium-vulcan-15px">ใบแทนประกาศนียบัตร
-                          ผู้สำเร็จการศึกษาภาคบังคับ
-                          ม.3 และ ม.6
-                        </div>
-                      </a>
-                    </td>
-                    <td class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px">
-                      5</td>
-                    <td class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px">แผ่น</td>
-
-                    <td class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px"
-                      style="display: flex; height: inherit;">
-                      <div class="purchase-order-frame-18 div-edit-item-doc">
-                        <a href="javascript:decrease('count1')"><img class="purchase-order-frame-3"
-                            src="img/frame-18.svg" alt="Frame" />
-                        </a>
-                        <div class="purchase-order-number notosansthai-bold-black-14px">
-                          <div class="order-approval-list-input-element input">
-                            <input id="count1" class="order-approval-list-text_input input-item-doc" min="1"
-                              name="พมพคาคนหา" value="1" type="number" />
-                          </div>
-                        </div>
-                        <a href="javascript:increase('count1')"><img class="purchase-order-frame-4"
-                            src="img/frame-19.svg" alt="Frame" />
-                        </a>
-                      </div>
-                      <a onclick="showPopup()">
-                        <div class="purchase-order-button-6 purchase-order-button-8">
-                          <div
-                            class="purchase-order-text_label-1 valign-text-middle purchase-order-text_label-5 notosansthai-bold-midnight-blue-16px">
-                            <span class="desktop">ใส่ตะกร้า</span>
-                            <img class="button-icon tablet mobile" style="width: 27px;" src="img/icon-cart-8.svg"
-                              alt="icon cart" />
-                          </div>
-                        </div>
-                      </a>
-                    </td>
-
-                  </tr>
-                  <tr class="tr-table-purchase-order">
-                    <td class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px">7</td>
-                    <td
-                      class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px align-content-center"
-                      style="width: 120px;">
-                      <img class="purchase-order-image-8" src="img/image-8-15.png" alt="image 8" />
-                    </td>
-                    <td
-                      class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px align-content-center">
-                      <a href="./detail-purchase-order-school.html">
-                        <div class="order-approval-list-text-sm-wrap notosansthai-medium-vulcan-15px">ปพ.3:ป
-                          แบบรายงานผู้สำเร็จการศึกษา ระดับประถมศึกษา (ฉบับใช้กับคอม)
-                        </div>
-                      </a>
-                    </td>
-                    <td class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px">
-                      5</td>
-                    <td class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px">แผ่น</td>
-
-                    <td class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px"
-                      style="display: flex; height: inherit;">
-                      <div class="purchase-order-frame-18 div-edit-item-doc">
-                        <a href="javascript:decrease('count1')"><img class="purchase-order-frame-3"
-                            src="img/frame-18.svg" alt="Frame" />
-                        </a>
-                        <div class="purchase-order-number notosansthai-bold-black-14px">
-                          <div class="order-approval-list-input-element input">
-                            <input id="count1" class="order-approval-list-text_input input-item-doc" min="1"
-                              name="พมพคาคนหา" value="1" type="number" />
-                          </div>
-                        </div>
-                        <a href="javascript:increase('count1')"><img class="purchase-order-frame-4"
-                            src="img/frame-19.svg" alt="Frame" />
-                        </a>
-                      </div>
-                      <a onclick="showPopup()">
-                        <div class="purchase-order-button-6 purchase-order-button-8">
-                          <div
-                            class="purchase-order-text_label-1 valign-text-middle purchase-order-text_label-5 notosansthai-bold-midnight-blue-16px">
-                            <span class="desktop">ใส่ตะกร้า</span>
-                            <img class="button-icon tablet mobile" style="width: 27px;" src="img/icon-cart-8.svg"
-                              alt="icon cart" />
-                          </div>
-                        </div>
-                      </a>
-                    </td>
-
-                  </tr>
-                  <tr class="tr-table-purchase-order">
-                    <td class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px">8</td>
-                    <td
-                      class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px align-content-center"
-                      style="width: 120px;">
-                      <img class="purchase-order-image-8" src="img/image-8-16@2x.png" alt="image 8" />
-                    </td>
-                    <td
-                      class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px align-content-center">
-                      <a href="./detail-purchase-order-school.html">
-                        <div class="order-approval-list-text-sm-wrap notosansthai-medium-vulcan-15px">ปพ.3:บ
-                          แบบรายงานผู้สำเร็จการศึกษา ระดับมัธยมศึกษาตอนต้น ฉบับใช้กับคอม)
-                        </div>
-                      </a>
-                    </td>
-                    <td class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px">
-                      5</td>
-                    <td class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px">แผ่น</td>
-
-                    <td class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px"
-                      style="display: flex; height: inherit;">
-                      <div class="purchase-order-frame-18 div-edit-item-doc">
-                        <a href="javascript:decrease('count1')"><img class="purchase-order-frame-3"
-                            src="img/frame-18.svg" alt="Frame" />
-                        </a>
-                        <div class="purchase-order-number notosansthai-bold-black-14px">
-                          <div class="order-approval-list-input-element input">
-                            <input id="count1" class="order-approval-list-text_input input-item-doc" min="1"
-                              name="พมพคาคนหา" value="1" type="number" />
-                          </div>
-                        </div>
-                        <a href="javascript:increase('count1')"><img class="purchase-order-frame-4"
-                            src="img/frame-19.svg" alt="Frame" />
-                        </a>
-                      </div>
-                      <a onclick="showPopup()">
-                        <div class="purchase-order-button-6 purchase-order-button-8">
-                          <div
-                            class="purchase-order-text_label-1 valign-text-middle purchase-order-text_label-5 notosansthai-bold-midnight-blue-16px">
-                            <span class="desktop">ใส่ตะกร้า</span>
-                            <img class="button-icon tablet mobile" style="width: 27px;" src="img/icon-cart-8.svg"
-                              alt="icon cart" />
-                          </div>
-                        </div>
-                      </a>
-                    </td>
-
-                  </tr>
-                  <tr class="tr-table-purchase-order">
-                    <td class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px">9</td>
-                    <td
-                      class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px align-content-center"
-                      style="width: 120px;">
-                      <img class="purchase-order-image-8" src="img/image-8-17@2x.png" alt="image 8" />
-                    </td>
-                    <td
-                      class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px align-content-center">
-                      <a href="./detail-purchase-order-school.html">
-                        <div class="order-approval-list-text-sm-wrap notosansthai-medium-vulcan-15px">ปพ.3:พ
-                          แบบรายงานผู้สำเร็จการศึกษา ระดับมัธยมศึกษาตอนปลาย (ฉบับใช้กับคอม)
-                        </div>
-                      </a>
-                    </td>
-                    <td class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px">
-                      5</td>
-                    <td class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px">แผ่น</td>
-
-                    <td class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px"
-                      style="display: flex; height: inherit;">
-                      <div class="purchase-order-frame-18 div-edit-item-doc">
-                        <a href="javascript:decrease('count1')"><img class="purchase-order-frame-3"
-                            src="img/frame-18.svg" alt="Frame" />
-                        </a>
-                        <div class="purchase-order-number notosansthai-bold-black-14px">
-                          <div class="order-approval-list-input-element input">
-                            <input id="count1" class="order-approval-list-text_input input-item-doc" min="1"
-                              name="พมพคาคนหา" value="1" type="number" />
-                          </div>
-                        </div>
-                        <a href="javascript:increase('count1')"><img class="purchase-order-frame-4"
-                            src="img/frame-19.svg" alt="Frame" />
-                        </a>
-                      </div>
-                      <a onclick="showPopup()">
-                        <div class="purchase-order-button-6 purchase-order-button-8">
-                          <div
-                            class="purchase-order-text_label-1 valign-text-middle purchase-order-text_label-5 notosansthai-bold-midnight-blue-16px">
-                            <span class="desktop">ใส่ตะกร้า</span>
-                            <img class="button-icon tablet mobile" style="width: 27px;" src="img/icon-cart-8.svg"
-                              alt="icon cart" />
-                          </div>
-                        </div>
-                      </a>
-                    </td>
-
-                  </tr>
-                </tbody>
-                <tbody class="mobile">
-                  <tr class="tr-table-purchase-order">
-                    <td
-                      class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px align-content-center"
-                      style="width: 120px;"><img class="purchase-order-image-8" src="img/image-8-9@2x.png"
-                        alt="image 8" />
-                    </td>
-                    <td
-                      class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px align-content-center">
-                      <div class="purchase-order-school-valign-text-middle-m">
-                        <div class="purchase-order-frame-93"><a href="./detail-purchase-order-school.html">
-                            <p class="valign-text-middle notosansthai-semi-bold-fiord-11px" style="text-align: left;">
-                              ปพ.1:ป ระเบียนแสดงผลการเรียน ระดับ ประถมฯ (ปรับปรุง 2555) (ฉบับใช้กับคอม)
-                            </p>
+                      <div class="purchase-order-frame-18-3">
+                        <div class="purchase-order-frame-18-2">
+                          <a href="javascript:decrease('count1')"><button class="purchase-icon-btn">
+                              <span class="notosansthai-normal-white-20px">-</span>
+                            </button>
                           </a>
-                          <img class="button-icon" style="width: 27px;" src="img/icon-cart-8.svg" alt="icon cart" />
-                        </div>
-                        <div class="purchase-order-text-11 valign-text-middle purchase-order-frame-xxx">
-                          <div class="purchase-order-x3-9 valign-text-middle notosansthai-semi-bold-fiord-18px">160
-                            บาท/เล่ม
-                          </div>
-                          <div class="purchase-order-frame-38319">
-                            <div class="purchase-order-frame-18">
-                              <a href="javascript:decrease('count1')"><img class="purchase-order-frame-3"
-                                  src="img/frame-18.svg" alt="Frame" />
-                              </a>
-                              <div class="purchase-order-number notosansthai-bold-black-14px">
-                                <div class="order-approval-list-input-element input">
-                                  <input id="count1" class="order-approval-list-text_input input-item-doc" min="1"
-                                    name="พมพคาคนหา" value="1" type="number" />
-                                </div>
-                              </div>
-                              <a href="javascript:increase('count1')"><img class="purchase-order-frame-4"
-                                  src="img/frame-19.svg" alt="Frame" />
-                              </a>
+                          <div class="purchase-order-number notosansthai-bold-black-14px">
+                            <div class="order-approval-list-input-element input">
+                              <input id="count1" class="order-approval-list-text_input input-item-doc" min="1"
+                                name="พมพคาคนหา" value="1" type="number" />
                             </div>
                           </div>
-                        </div>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr class="tr-table-purchase-order">
-                    <td
-                      class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px align-content-center"
-                      style="width: 120px;"><img class="purchase-order-image-8" src="img/image-8-9@2x.png"
-                        alt="image 8" />
-                    </td>
-                    <td
-                      class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px align-content-center">
-                      <div class="purchase-order-school-valign-text-middle-m">
-                        <div class="purchase-order-frame-93"><a href="./detail-purchase-order-school.html">
-                            <p class="valign-text-middle notosansthai-semi-bold-fiord-11px" style="text-align: left;">
-                              ปพ.1:ป ระเบียนแสดงผลการเรียน ระดับ ประถมฯ (ปรับปรุง 2555) (ฉบับใช้กับคอม)
-                            </p>
+                          <a href="javascript:increase('count1')"><button class="purchase-icon-btn">
+                              <span class="notosansthai-normal-white-20px">+</span>
+                            </button>
                           </a>
-                          <img class="button-icon" style="width: 27px;" src="img/icon-cart-8.svg" alt="icon cart" />
                         </div>
-                        <div class="purchase-order-text-11 valign-text-middle purchase-order-frame-xxx">
-                          <div class="purchase-order-x3-9 valign-text-middle notosansthai-semi-bold-fiord-18px">160
-                            บาท/เล่ม
-                          </div>
-                          <div class="purchase-order-frame-38319">
-                            <div class="purchase-order-frame-18">
-                              <a href="javascript:decrease('count1')"><img class="purchase-order-frame-3"
-                                  src="img/frame-18.svg" alt="Frame" />
-                              </a>
-                              <div class="purchase-order-number notosansthai-bold-black-14px">
-                                <div class="order-approval-list-input-element input">
-                                  <input id="count1" class="order-approval-list-text_input input-item-doc" min="1"
-                                    name="พมพคาคนหา" value="1" type="number" />
-                                </div>
-                              </div>
-                              <a href="javascript:increase('count1')"><img class="purchase-order-frame-4"
-                                  src="img/frame-19.svg" alt="Frame" />
-                              </a>
-                            </div>
-                          </div>
-                        </div>
+                        <img style="width: 26px;" src="img/frame-9.svg" />
                       </div>
                     </td>
-                  </tr>
-                  <tr class="tr-table-purchase-order">
-                    <td
-                      class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px align-content-center"
-                      style="width: 120px;"><img class="purchase-order-image-8" src="img/image-8-9@2x.png"
-                        alt="image 8" />
-                    </td>
-                    <td
-                      class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px align-content-center">
-                      <div class="purchase-order-school-valign-text-middle-m">
-                        <div class="purchase-order-frame-93"><a href="./detail-purchase-order-school.html">
-                            <p class="valign-text-middle notosansthai-semi-bold-fiord-11px" style="text-align: left;">
-                              ปพ.1:ป ระเบียนแสดงผลการเรียน ระดับ ประถมฯ (ปรับปรุง 2555) (ฉบับใช้กับคอม)
-                            </p>
-                          </a>
-                          <img class="button-icon" style="width: 27px;" src="img/icon-cart-8.svg" alt="icon cart" />
-                        </div>
-                        <div class="purchase-order-text-11 valign-text-middle purchase-order-frame-xxx">
-                          <div class="purchase-order-x3-9 valign-text-middle notosansthai-semi-bold-fiord-18px">160
-                            บาท/เล่ม
-                          </div>
-                          <div class="purchase-order-frame-38319">
-                            <div class="purchase-order-frame-18">
-                              <a href="javascript:decrease('count1')"><img class="purchase-order-frame-3"
-                                  src="img/frame-18.svg" alt="Frame" />
-                              </a>
-                              <div class="purchase-order-number notosansthai-bold-black-14px">
-                                <div class="order-approval-list-input-element input">
-                                  <input id="count1" class="order-approval-list-text_input input-item-doc" min="1"
-                                    name="พมพคาคนหา" value="1" type="number" />
-                                </div>
-                              </div>
-                              <a href="javascript:increase('count1')"><img class="purchase-order-frame-4"
-                                  src="img/frame-19.svg" alt="Frame" />
-                              </a>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr class="tr-table-purchase-order">
-                    <td
-                      class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px align-content-center"
-                      style="width: 120px;"><img class="purchase-order-image-8" src="img/image-8-9@2x.png"
-                        alt="image 8" />
-                    </td>
-                    <td
-                      class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px align-content-center">
-                      <div class="purchase-order-school-valign-text-middle-m">
-                        <div class="purchase-order-frame-93"><a href="./detail-purchase-order-school.html">
-                            <p class="valign-text-middle notosansthai-semi-bold-fiord-11px" style="text-align: left;">
-                              ปพ.1:ป ระเบียนแสดงผลการเรียน ระดับ ประถมฯ (ปรับปรุง 2555) (ฉบับใช้กับคอม)
-                            </p>
-                          </a>
-                          <img class="button-icon" style="width: 27px;" src="img/icon-cart-8.svg" alt="icon cart" />
-                        </div>
-                        <div class="purchase-order-text-11 valign-text-middle purchase-order-frame-xxx">
-                          <div class="purchase-order-x3-9 valign-text-middle notosansthai-semi-bold-fiord-18px">160
-                            บาท/เล่ม
-                          </div>
-                          <div class="purchase-order-frame-38319">
-                            <div class="purchase-order-frame-18">
-                              <a href="javascript:decrease('count1')"><img class="purchase-order-frame-3"
-                                  src="img/frame-18.svg" alt="Frame" />
-                              </a>
-                              <div class="purchase-order-number notosansthai-bold-black-14px">
-                                <div class="order-approval-list-input-element input">
-                                  <input id="count1" class="order-approval-list-text_input input-item-doc" min="1"
-                                    name="พมพคาคนหา" value="1" type="number" />
-                                </div>
-                              </div>
-                              <a href="javascript:increase('count1')"><img class="purchase-order-frame-4"
-                                  src="img/frame-19.svg" alt="Frame" />
-                              </a>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr class="tr-table-purchase-order">
-                    <td
-                      class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px align-content-center"
-                      style="width: 120px;"><img class="purchase-order-image-8" src="img/image-8-9@2x.png"
-                        alt="image 8" />
-                    </td>
-                    <td
-                      class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px align-content-center">
-                      <div class="purchase-order-school-valign-text-middle-m">
-                        <div class="purchase-order-frame-93"><a href="./detail-purchase-order-school.html">
-                            <p class="valign-text-middle notosansthai-semi-bold-fiord-11px" style="text-align: left;">
-                              ปพ.1:ป ระเบียนแสดงผลการเรียน ระดับ ประถมฯ (ปรับปรุง 2555) (ฉบับใช้กับคอม)
-                            </p>
-                          </a>
-                          <img class="button-icon" style="width: 27px;" src="img/icon-cart-8.svg" alt="icon cart" />
-                        </div>
-                        <div class="purchase-order-text-11 valign-text-middle purchase-order-frame-xxx">
-                          <div class="purchase-order-x3-9 valign-text-middle notosansthai-semi-bold-fiord-18px">160
-                            บาท/เล่ม
-                          </div>
-                          <div class="purchase-order-frame-38319">
-                            <div class="purchase-order-frame-18">
-                              <a href="javascript:decrease('count1')"><img class="purchase-order-frame-3"
-                                  src="img/frame-18.svg" alt="Frame" />
-                              </a>
-                              <div class="purchase-order-number notosansthai-bold-black-14px">
-                                <div class="order-approval-list-input-element input">
-                                  <input id="count1" class="order-approval-list-text_input input-item-doc" min="1"
-                                    name="พมพคาคนหา" value="1" type="number" />
-                                </div>
-                              </div>
-                              <a href="javascript:increase('count1')"><img class="purchase-order-frame-4"
-                                  src="img/frame-19.svg" alt="Frame" />
-                              </a>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr class="tr-table-purchase-order">
-                    <td
-                      class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px align-content-center"
-                      style="width: 120px;"><img class="purchase-order-image-8" src="img/image-8-9@2x.png"
-                        alt="image 8" />
-                    </td>
-                    <td
-                      class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px align-content-center">
-                      <div class="purchase-order-school-valign-text-middle-m">
-                        <div class="purchase-order-frame-93"><a href="./detail-purchase-order-school.html">
-                            <p class="valign-text-middle notosansthai-semi-bold-fiord-11px" style="text-align: left;">
-                              ปพ.1:ป ระเบียนแสดงผลการเรียน ระดับ ประถมฯ (ปรับปรุง 2555) (ฉบับใช้กับคอม)
-                            </p>
-                          </a>
-                          <img class="button-icon" style="width: 27px;" src="img/icon-cart-8.svg" alt="icon cart" />
-                        </div>
-                        <div class="purchase-order-text-11 valign-text-middle purchase-order-frame-xxx">
-                          <div class="purchase-order-x3-9 valign-text-middle notosansthai-semi-bold-fiord-18px">160
-                            บาท/เล่ม
-                          </div>
-                          <div class="purchase-order-frame-38319">
-                            <div class="purchase-order-frame-18">
-                              <a href="javascript:decrease('count1')"><img class="purchase-order-frame-3"
-                                  src="img/frame-18.svg" alt="Frame" />
-                              </a>
-                              <div class="purchase-order-number notosansthai-bold-black-14px">
-                                <div class="order-approval-list-input-element input">
-                                  <input id="count1" class="order-approval-list-text_input input-item-doc" min="1"
-                                    name="พมพคาคนหา" value="1" type="number" />
-                                </div>
-                              </div>
-                              <a href="javascript:increase('count1')"><img class="purchase-order-frame-4"
-                                  src="img/frame-19.svg" alt="Frame" />
-                              </a>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr class="tr-table-purchase-order">
-                    <td
-                      class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px align-content-center"
-                      style="width: 120px;"><img class="purchase-order-image-8" src="img/image-8-9@2x.png"
-                        alt="image 8" />
-                    </td>
-                    <td
-                      class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px align-content-center">
-                      <div class="purchase-order-school-valign-text-middle-m">
-                        <div class="purchase-order-frame-93"><a href="./detail-purchase-order-school.html">
-                            <p class="valign-text-middle notosansthai-semi-bold-fiord-11px" style="text-align: left;">
-                              ปพ.1:ป ระเบียนแสดงผลการเรียน ระดับ ประถมฯ (ปรับปรุง 2555) (ฉบับใช้กับคอม)
-                            </p>
-                          </a>
-                          <img class="button-icon" style="width: 27px;" src="img/icon-cart-8.svg" alt="icon cart" />
-                        </div>
-                        <div class="purchase-order-text-11 valign-text-middle purchase-order-frame-xxx">
-                          <div class="purchase-order-x3-9 valign-text-middle notosansthai-semi-bold-fiord-18px">160
-                            บาท/เล่ม
-                          </div>
-                          <div class="purchase-order-frame-38319">
-                            <div class="purchase-order-frame-18">
-                              <a href="javascript:decrease('count1')"><img class="purchase-order-frame-3"
-                                  src="img/frame-18.svg" alt="Frame" />
-                              </a>
-                              <div class="purchase-order-number notosansthai-bold-black-14px">
-                                <div class="order-approval-list-input-element input">
-                                  <input id="count1" class="order-approval-list-text_input input-item-doc" min="1"
-                                    name="พมพคาคนหา" value="1" type="number" />
-                                </div>
-                              </div>
-                              <a href="javascript:increase('count1')"><img class="purchase-order-frame-4"
-                                  src="img/frame-19.svg" alt="Frame" />
-                              </a>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr class="tr-table-purchase-order">
-                    <td
-                      class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px align-content-center"
-                      style="width: 120px;"><img class="purchase-order-image-8" src="img/image-8-9@2x.png"
-                        alt="image 8" />
-                    </td>
-                    <td
-                      class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px align-content-center">
-                      <div class="purchase-order-school-valign-text-middle-m">
-                        <div class="purchase-order-frame-93"><a href="./detail-purchase-order-school.html">
-                            <p class="valign-text-middle notosansthai-semi-bold-fiord-11px" style="text-align: left;">
-                              ปพ.1:ป ระเบียนแสดงผลการเรียน ระดับ ประถมฯ (ปรับปรุง 2555) (ฉบับใช้กับคอม)
-                            </p>
-                          </a>
-                          <img class="button-icon" style="width: 27px;" src="img/icon-cart-8.svg" alt="icon cart" />
-                        </div>
-                        <div class="purchase-order-text-11 valign-text-middle purchase-order-frame-xxx">
-                          <div class="purchase-order-x3-9 valign-text-middle notosansthai-semi-bold-fiord-18px">160
-                            บาท/เล่ม
-                          </div>
-                          <div class="purchase-order-frame-38319">
-                            <div class="purchase-order-frame-18">
-                              <a href="javascript:decrease('count1')"><img class="purchase-order-frame-3"
-                                  src="img/frame-18.svg" alt="Frame" />
-                              </a>
-                              <div class="purchase-order-number notosansthai-bold-black-14px">
-                                <div class="order-approval-list-input-element input">
-                                  <input id="count1" class="order-approval-list-text_input input-item-doc" min="1"
-                                    name="พมพคาคนหา" value="1" type="number" />
-                                </div>
-                              </div>
-                              <a href="javascript:increase('count1')"><img class="purchase-order-frame-4"
-                                  src="img/frame-19.svg" alt="Frame" />
-                              </a>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr class="tr-table-purchase-order">
-                    <td
-                      class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px align-content-center"
-                      style="width: 120px;"><img class="purchase-order-image-8" src="img/image-8-9@2x.png"
-                        alt="image 8" />
-                    </td>
-                    <td
-                      class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px align-content-center">
-                      <div class="purchase-order-school-valign-text-middle-m">
-                        <div class="purchase-order-frame-93"><a href="./detail-purchase-order-school.html">
-                            <p class="valign-text-middle notosansthai-semi-bold-fiord-11px" style="text-align: left;">
-                              ปพ.1:ป ระเบียนแสดงผลการเรียน ระดับ ประถมฯ (ปรับปรุง 2555) (ฉบับใช้กับคอม)
-                            </p>
-                          </a>
-                          <img class="button-icon" style="width: 27px;" src="img/icon-cart-8.svg" alt="icon cart" />
-                        </div>
-                        <div class="purchase-order-text-11 valign-text-middle purchase-order-frame-xxx">
-                          <div class="purchase-order-x3-9 valign-text-middle notosansthai-semi-bold-fiord-18px">160
-                            บาท/เล่ม
-                          </div>
-                          <div class="purchase-order-frame-38319">
-                            <div class="purchase-order-frame-18">
-                              <a href="javascript:decrease('count1')"><img class="purchase-order-frame-3"
-                                  src="img/frame-18.svg" alt="Frame" />
-                              </a>
-                              <div class="purchase-order-number notosansthai-bold-black-14px">
-                                <div class="order-approval-list-input-element input">
-                                  <input id="count1" class="order-approval-list-text_input input-item-doc" min="1"
-                                    name="พมพคาคนหา" value="1" type="number" />
-                                </div>
-                              </div>
-                              <a href="javascript:increase('count1')"><img class="purchase-order-frame-4"
-                                  src="img/frame-19.svg" alt="Frame" />
-                              </a>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </td>
-                  </tr>
+                  </tr> -->
                 </tbody>
               </table>
             </div>
-
-          </div>
-        </div>
-
-      </div>
-      <div class="purchase-order-input-select-button-footer-default">
-        <div class="purchase-order-frame-38263">
-          <div class="purchase-order-input-select">
-            <div class="purchase-order-select-field">
-              <select id="agency3" class="purchase-order-custom-dropdown">
-                <option value="แสดง 9" selected>แสดง 9</option>
-                <option value="แสดง 19">แสดง 19</option>
-                <option value="แสดง 29">แสดง 29</option>
-              </select>
-              <img class="purchase-order-dropdown-icon" src="img/dropdown-6.svg" alt="dropdown" />
+            <div style="display: flex;">
+              <div class="logo-box"></div>
+              <span class="notosansthai-normal-black-16px">รายการสินค้าที่ท่านเลือก มีสินค้าควบคุม
+                ต้องได้รับการอนุมัติ</span>
             </div>
           </div>
-          <p class="purchase-order-x1-10-100 display-none-m">แสดง 1-9 รายการ จาก xx รายการ</p>
         </div>
-        <div class="purchase-order-pagination">
-          <a href="javascript:SubmitForm('form9')">
-            <div class="purchase-order-button-1 purchase-order-button-8"><img class="purchase-order-icon-1"
-                src="img/icon-178.svg" alt="icon" /></div>
-          </a><a href="javascript:SubmitForm('form9')">
-            <div class="purchase-order-button-7 purchase-order-button-8">
-              <div class="purchase-order-text-sm-1 purchase-order-text-sm-3">1</div>
-            </div>
-          </a>
-          <div class="purchase-order-button-2 purchase-order-button-8 display-none-m ">
-            <div class="purchase-order-text-sm notosansthai-medium-blue-15px">2</div>
-          </div>
-          <div class="purchase-order-button-2 purchase-order-button-8 display-none-m ">
-            <div class="purchase-order-text-sm notosansthai-medium-blue-15px">3</div>
-          </div>
-          <div class="purchase-order-button-2 purchase-order-button-8 display-none-m display-none-t">
-            <div class="purchase-order-text-sm notosansthai-medium-blue-15px">4</div>
-          </div>
-          <div class="purchase-order-button-2 purchase-order-button-8 display-none-t display-none-m">
-            <div class="purchase-order-text-sm notosansthai-medium-blue-15px">5</div>
-          </div>
-          <div class="purchase-order-button-2 purchase-order-button-8">
-            <div class="purchase-order-text-sm notosansthai-medium-blue-15px">...</div>
-          </div>
-          <div class="purchase-order-button-2 purchase-order-button-8">
-            <div class="purchase-order-text-sm-2 purchase-order-text-sm-3 notosansthai-medium-blue-15px">10</div>
-          </div>
-          <a href="javascript:SubmitForm('form9')">
-            <div class="purchase-order-button-1 purchase-order-button-8"><img class="purchase-order-icon-1"
-                src="img/icon-179.svg" alt="icon" /></div>
-          </a>
-        </div>
+
       </div>
       <div class="purchase-order-frame-14">
-        <a href="./purchase-order-school-result.html">
-          <div class="purchase-order-n">สรุปรายการสินค้า (<span id="count10">9</span> รายการ)</div>
+        <a href="./purchase-order-school-shipping.html">
+          <div class="purchase-order-n">สรุปรายการสินค้า</div>
         </a>
       </div>
-
     </div>
   </div>
-  <!-- </div> -->
-
-  <!-- <div class="tablet">
-    <div class="header-ecs">
-      <a href="./login.html">
-        <img class="logo-ecs" src="img/logo------1.png" alt="logo" />
-      </a>
-      <div class="header-action-ecs">
-        <img class="group" src="img/Icon-Service.png" alt="Service" onclick="showMenuNav()"/>
-        <img class="group" src="img/group@2x.png" alt="Group" />
-        <a href="./profile-school.html">
-          <img class="vector" src="img/vector-2.svg" alt="Vector" />
-        </a>
-      </div>
-    </div>
-
-    <div id="subMenuHeader" class="sub-menu-header">
-      <a href="./purchase-order-school.html"
-        class="notosansthai-normal-black-20px no-text-underline textItemMenuHeader itemMenuHeader">
-        ออกใบขอสั่งซื้อ
-      </a>
-      <hr />
-      <a href="./approve-school.html"
-        class="notosansthai-normal-black-20px no-text-underline textItemMenuHeader itemMenuHeader">
-        เอกสารใบขอสั่งซื้อ
-      </a>
-      <hr />
-      <a href="./delivered-order.html"
-        class="notosansthai-normal-black-20px no-text-underline textItemMenuHeader itemMenuHeader">
-        รายการคำสั่งซื้อ
-      </a>
-      <hr />
-      <a href="./order-cancel.html"
-        class="notosansthai-normal-black-20px no-text-underline textItemMenuHeader itemMenuHeader">
-        ยกเลิกเลข ปพ.
-      </a>
-      <hr />
-      <a href="./delivered-order.html"
-        class="notosansthai-normal-black-20px no-text-underline textItemMenuHeader itemMenuHeader">
-        ประวัติการสั่งซื้อ
-      </a>
-    </div>
-    <div class="container-center-horizontal">
-      <div class="purchase-order">
-        <div class="payment-proof-flex-row">
-          <a onclick="goBack()">
-            <div class="request-detail-school-button request-detail-school-button-6">
-              <img class="purchase-order-icon-back" src="img/icon-back-3.svg" alt="icon back" />
-              <div class="purchase-order-text_label valign-text-middle purchase-order-text_label-5">ย้อนกลับ</div>
-            </div>
-        </div>
-        </a>
-      </div>
-      <h1 class="purchase-order-text-6" style="align-self: center;">รายการสินค้า</h1>
-      <div class="purchase-order-frame-38327">
-        <div class="purchase-order-frame-38385">
-          <div class="purchase-order-frame-2">
-            <div class="purchase-order-frame-38329-1">
-              <img class="purchase-order-icon" src="img/icon-magnifying-glass-searching-glass-1.svg"
-                alt="icon Magnifying Glass Searching Glass" />
-              <input class="purchase-order-text_input notosansthai-normal-dove-gray-17px" name="กรณากรอกชอผใชงาน"
-                placeholder="กรุณากรอกคำค้นหา" type="text" />
-            </div>
-          </div>
-          <div class="purchase-order-frame-2">
-            <select id="agency" class="purchase-order-custom-dropdown">
-              <option value="" disabled selected>เลือกประเภทแบบพิมพ์</option>
-              <option value="ปพ.1">ปพ.1</option>
-              <option value="ปพ.2">ปพ.2</option>
-            </select>
-            <img class="purchase-order-dropdown-icon" src="img/dropdown-6.svg" alt="dropdown" />
-          </div>
-          <div class="purchase-order-frame-2">
-            <select id="agency2" class="purchase-order-custom-dropdown">
-              <option value="" disabled selected>เลือกระดับชั้น</option>
-              <option value="ป.1">ป.1</option>
-              <option value="ป.2">ป.2</option>
-              <option value="ป.3">ป.3</option>
-              <option value="ป.4">ป.4</option>
-              <option value="ป.5">ป.5</option>
-              <option value="ป.6">ป.6</option>
-            </select>
-            <img class="purchase-order-dropdown-icon" src="img/dropdown-6.svg" alt="dropdown" />
-          </div>
-
-        </div>
-        <div class="purchase-order-frame-38387" style="align-self: center;">
-          <a href="javascript:SubmitForm('form9')">
-            <article class="purchase-order-button-4 purchase-order-button-8">
-              <div
-                class="purchase-order-text_label-1 valign-text-middle purchase-order-text_label-5 notosansthai-semi-bold-white-20px">
-                ค้นหา
-              </div>
-            </article>
-          </a><a href="javascript:SubmitForm('form9')">
-            <article class="purchase-order-button-5 purchase-order-button-8">
-              <div class="purchase-order-text_label valign-text-middle purchase-order-text_label-5">ล้างค่า</div>
-            </article>
-          </a>
-        </div>
-        <img class="purchase-order-line" src="img/line-9-1.svg" alt="Line 9" />
-        <div class="purchase-order-text-7">พบ 17 รายการ</div>
-        <div class="purchase-order-table-product">
-          <div class="purchase-order-frame-38255 notosansthai-semi-bold-black-22px">
-            <div class="purchase-order-text-9 valign-text-middle">รูปสินค้า</div>
-            <div class="purchase-order-text-10 valign-text-middle">ชื่อสินค้า</div>
-            <div class="purchase-order-text-11 valign-text-middle">ราคา(บาท)</div>
-            <div class="purchase-order-text-12 valign-text-middle">หน่วย</div>
-            <div class="purchase-order-text-13 valign-text-middle">ดำเนินการ</div>
-          </div>
-          <img class="purchase-order-line" src="img/line-7-1.svg" alt="Line 7" />
-          <div class="purchase-order-frame-38255 notosansthai-semi-bold-black-22px">
-            <div class="purchase-order-text-9 valign-text-middle">
-              <div class="purchase-order-frame-33"><img class="purchase-order-image-8" src="img/image-8-9@2x.png"
-                  alt="image 8" /></div>
-            </div>
-            <div class="purchase-order-text-10 valign-text-middle"> <a href="./detail-purchase-order-school.html">
-                <div class="purchase-order-frame-93">
-                  <p class="valign-text-middle notosansthai-semi-bold-fiord-18px">
-                    ปพ.1:ป ระเบียนแสดงผลการเรียน ระดับ ประถมฯ (ปรับปรุง 2555) (ฉบับใช้กับคอม)
-                  </p>
-                </div>
-              </a></div>
-            <div class="purchase-order-text-11 valign-text-middle">
-              <div class="purchase-order-x3-9 valign-text-middle notosansthai-semi-bold-fiord-18px">160</div>
-            </div>
-            <div class="purchase-order-text-12 valign-text-middle">
-              <div class="purchase-order-text_label-5 valign-text-middle notosansthai-semi-bold-fiord-18px">เล่ม
-              </div>
-            </div>
-            <div class="purchase-order-text-13 valign-text-middle">
-              <div class="purchase-order-frame-38319">
-                <div class="purchase-order-frame-18 div-edit-item-doc">
-                  <a href="javascript:decrease('count1')"><img class="purchase-order-frame-3" src="img/frame-18.svg"
-                      alt="Frame" />
-                  </a>
-                  <div class="purchase-order-number notosansthai-bold-black-14px">
-                    <div class="order-approval-list-input-element input" style="padding: 0;">
-                      <input class="order-approval-list-text_input input-item-doc" name="พมพคาคนหา" value="1" type="text" />
-                    </div>
-                  </div>
-                  <a href="javascript:increase('count1')"><img class="purchase-order-frame-4" src="img/frame-19.svg"
-                      alt="Frame" />
-                  </a>
-                </div>
-                <a onclick="showPopup()">
-                  <div class="purchase-order-button-6 purchase-order-button-8">
-                    <img class="button-icon" style="width: 27px;" src="img/icon-cart-8.svg" alt="icon cart" />
-                  </div>
-                </a>
-              </div>
-            </div>
-          </div>
-          <img class="purchase-order-vector" src="img/vector-14-1.svg" alt="Vector 14" />
-          <div class="purchase-order-frame-38255 notosansthai-semi-bold-black-22px">
-            <div class="purchase-order-text-9 valign-text-middle">
-              <div class="purchase-order-frame-33"><img class="purchase-order-image-8" src="img/image-8-9@2x.png"
-                  alt="image 8" /></div>
-            </div>
-            <div class="purchase-order-text-10 valign-text-middle"> <a href="./detail-purchase-order-school.html">
-                <div class="purchase-order-frame-93">
-                  <p class="valign-text-middle notosansthai-semi-bold-fiord-18px">
-                    ปพ.1:ป ระเบียนแสดงผลการเรียน ระดับ ประถมฯ (ปรับปรุง 2555) (ฉบับใช้กับคอม)
-                  </p>
-                </div>
-              </a></div>
-            <div class="purchase-order-text-11 valign-text-middle">
-              <div class="purchase-order-x3-9 valign-text-middle notosansthai-semi-bold-fiord-18px">160</div>
-            </div>
-            <div class="purchase-order-text-12 valign-text-middle">
-              <div class="purchase-order-text_label-5 valign-text-middle notosansthai-semi-bold-fiord-18px">เล่ม
-              </div>
-            </div>
-            <div class="purchase-order-text-13 valign-text-middle">
-              <div class="purchase-order-frame-38319">
-                <div class="purchase-order-frame-18 div-edit-item-doc">
-                  <a href="javascript:decrease('count1')"><img class="purchase-order-frame-3" src="img/frame-18.svg"
-                      alt="Frame" />
-                  </a>
-                  <div class="purchase-order-number notosansthai-bold-black-14px">
-                    <div class="order-approval-list-input-element input" style="padding: 0;">
-                      <input class="order-approval-list-text_input input-item-doc" name="พมพคาคนหา" value="1" type="text" />
-                    </div>
-                  </div>
-                  <a href="javascript:increase('count1')"><img class="purchase-order-frame-4" src="img/frame-19.svg"
-                      alt="Frame" />
-                  </a>
-                </div>
-                <a onclick="showPopup()">
-                  <div class="purchase-order-button-6 purchase-order-button-8">
-                    <img class="button-icon" style="width: 27px;" src="img/icon-cart-8.svg" alt="icon cart" />
-                  </div>
-                </a>
-              </div>
-            </div>
-          </div>
-          <img class="purchase-order-vector" src="img/vector-14-1.svg" alt="Vector 14" />
-          <div class="purchase-order-frame-38255 notosansthai-semi-bold-black-22px">
-            <div class="purchase-order-text-9 valign-text-middle">
-              <div class="purchase-order-frame-33"><img class="purchase-order-image-8" src="img/image-8-9@2x.png"
-                  alt="image 8" /></div>
-            </div>
-            <div class="purchase-order-text-10 valign-text-middle"> <a href="./detail-purchase-order-school.html">
-                <div class="purchase-order-frame-93">
-                  <p class="valign-text-middle notosansthai-semi-bold-fiord-18px">
-                    ปพ.1:ป ระเบียนแสดงผลการเรียน ระดับ ประถมฯ (ปรับปรุง 2555) (ฉบับใช้กับคอม)
-                  </p>
-                </div>
-              </a></div>
-            <div class="purchase-order-text-11 valign-text-middle">
-              <div class="purchase-order-x3-9 valign-text-middle notosansthai-semi-bold-fiord-18px">160</div>
-            </div>
-            <div class="purchase-order-text-12 valign-text-middle">
-              <div class="purchase-order-text_label-5 valign-text-middle notosansthai-semi-bold-fiord-18px">เล่ม
-              </div>
-            </div>
-            <div class="purchase-order-text-13 valign-text-middle">
-              <div class="purchase-order-frame-38319">
-                <div class="purchase-order-frame-18 div-edit-item-doc">
-                  <a href="javascript:decrease('count1')"><img class="purchase-order-frame-3" src="img/frame-18.svg"
-                      alt="Frame" />
-                  </a>
-                  <div class="purchase-order-number notosansthai-bold-black-14px">
-                    <div class="order-approval-list-input-element input" style="padding: 0;">
-                      <input class="order-approval-list-text_input input-item-doc" name="พมพคาคนหา" value="1" type="text" />
-                    </div>
-                  </div>
-                  <a href="javascript:increase('count1')"><img class="purchase-order-frame-4" src="img/frame-19.svg"
-                      alt="Frame" />
-                  </a>
-                </div>
-                <a onclick="showPopup()">
-                  <div class="purchase-order-button-6 purchase-order-button-8">
-                    <img class="button-icon" style="width: 27px;" src="img/icon-cart-8.svg" alt="icon cart" />
-                  </div>
-                </a>
-              </div>
-            </div>
-          </div>
-          <img class="purchase-order-vector" src="img/vector-14-1.svg" alt="Vector 14" />
-          <div class="purchase-order-frame-38255 notosansthai-semi-bold-black-22px">
-            <div class="purchase-order-text-9 valign-text-middle">
-              <div class="purchase-order-frame-33"><img class="purchase-order-image-8" src="img/image-8-9@2x.png"
-                  alt="image 8" /></div>
-            </div>
-            <div class="purchase-order-text-10 valign-text-middle"> <a href="./detail-purchase-order-school.html">
-                <div class="purchase-order-frame-93">
-                  <p class="valign-text-middle notosansthai-semi-bold-fiord-18px">
-                    ปพ.1:ป ระเบียนแสดงผลการเรียน ระดับ ประถมฯ (ปรับปรุง 2555) (ฉบับใช้กับคอม)
-                  </p>
-                </div>
-              </a></div>
-            <div class="purchase-order-text-11 valign-text-middle">
-              <div class="purchase-order-x3-9 valign-text-middle notosansthai-semi-bold-fiord-18px">160</div>
-            </div>
-            <div class="purchase-order-text-12 valign-text-middle">
-              <div class="purchase-order-text_label-5 valign-text-middle notosansthai-semi-bold-fiord-18px">เล่ม
-              </div>
-            </div>
-            <div class="purchase-order-text-13 valign-text-middle">
-              <div class="purchase-order-frame-38319">
-                <div class="purchase-order-frame-18 div-edit-item-doc">
-                  <a href="javascript:decrease('count1')"><img class="purchase-order-frame-3" src="img/frame-18.svg"
-                      alt="Frame" />
-                  </a>
-                  <div class="purchase-order-number notosansthai-bold-black-14px">
-                    <div class="order-approval-list-input-element input" style="padding: 0;">
-                      <input class="order-approval-list-text_input input-item-doc" name="พมพคาคนหา" value="1" type="text" />
-                    </div>
-                  </div>
-                  <a href="javascript:increase('count1')"><img class="purchase-order-frame-4" src="img/frame-19.svg"
-                      alt="Frame" />
-                  </a>
-                </div>
-                <a onclick="showPopup()">
-                  <div class="purchase-order-button-6 purchase-order-button-8">
-                    <img class="button-icon" style="width: 27px;" src="img/icon-cart-8.svg" alt="icon cart" />
-                  </div>
-                </a>
-              </div>
-            </div>
-          </div>
-          <img class="purchase-order-vector" src="img/vector-14-1.svg" alt="Vector 14" />
-          <div class="purchase-order-frame-38255 notosansthai-semi-bold-black-22px">
-            <div class="purchase-order-text-9 valign-text-middle">
-              <div class="purchase-order-frame-33"><img class="purchase-order-image-8" src="img/image-8-9@2x.png"
-                  alt="image 8" /></div>
-            </div>
-            <div class="purchase-order-text-10 valign-text-middle"> <a href="./detail-purchase-order-school.html">
-                <div class="purchase-order-frame-93">
-                  <p class="valign-text-middle notosansthai-semi-bold-fiord-18px">
-                    ปพ.1:ป ระเบียนแสดงผลการเรียน ระดับ ประถมฯ (ปรับปรุง 2555) (ฉบับใช้กับคอม)
-                  </p>
-                </div>
-              </a></div>
-            <div class="purchase-order-text-11 valign-text-middle">
-              <div class="purchase-order-x3-9 valign-text-middle notosansthai-semi-bold-fiord-18px">160</div>
-            </div>
-            <div class="purchase-order-text-12 valign-text-middle">
-              <div class="purchase-order-text_label-5 valign-text-middle notosansthai-semi-bold-fiord-18px">เล่ม
-              </div>
-            </div>
-            <div class="purchase-order-text-13 valign-text-middle">
-              <div class="purchase-order-frame-38319">
-                <div class="purchase-order-frame-18 div-edit-item-doc">
-                  <a href="javascript:decrease('count1')"><img class="purchase-order-frame-3" src="img/frame-18.svg"
-                      alt="Frame" />
-                  </a>
-                  <div class="purchase-order-number notosansthai-bold-black-14px">
-                    <div class="order-approval-list-input-element input" style="padding: 0;">
-                      <input class="order-approval-list-text_input input-item-doc" name="พมพคาคนหา" value="1" type="text" />
-                    </div>
-                  </div>
-                  <a href="javascript:increase('count1')"><img class="purchase-order-frame-4" src="img/frame-19.svg"
-                      alt="Frame" />
-                  </a>
-                </div>
-                <a onclick="showPopup()">
-                  <div class="purchase-order-button-6 purchase-order-button-8">
-                    <img class="button-icon" style="width: 27px;" src="img/icon-cart-8.svg" alt="icon cart" />
-                  </div>
-                </a>
-              </div>
-            </div>
-          </div>
-          <img class="purchase-order-vector" src="img/vector-14-1.svg" alt="Vector 14" />
-          <div class="purchase-order-frame-38255 notosansthai-semi-bold-black-22px">
-            <div class="purchase-order-text-9 valign-text-middle">
-              <div class="purchase-order-frame-33"><img class="purchase-order-image-8" src="img/image-8-9@2x.png"
-                  alt="image 8" /></div>
-            </div>
-            <div class="purchase-order-text-10 valign-text-middle"> <a href="./detail-purchase-order-school.html">
-                <div class="purchase-order-frame-93">
-                  <p class="valign-text-middle notosansthai-semi-bold-fiord-18px">
-                    ปพ.1:ป ระเบียนแสดงผลการเรียน ระดับ ประถมฯ (ปรับปรุง 2555) (ฉบับใช้กับคอม)
-                  </p>
-                </div>
-              </a></div>
-            <div class="purchase-order-text-11 valign-text-middle">
-              <div class="purchase-order-x3-9 valign-text-middle notosansthai-semi-bold-fiord-18px">160</div>
-            </div>
-            <div class="purchase-order-text-12 valign-text-middle">
-              <div class="purchase-order-text_label-5 valign-text-middle notosansthai-semi-bold-fiord-18px">เล่ม
-              </div>
-            </div>
-            <div class="purchase-order-text-13 valign-text-middle">
-              <div class="purchase-order-frame-38319">
-                <div class="purchase-order-frame-18 div-edit-item-doc">
-                  <a href="javascript:decrease('count1')"><img class="purchase-order-frame-3" src="img/frame-18.svg"
-                      alt="Frame" />
-                  </a>
-                  <div class="purchase-order-number notosansthai-bold-black-14px">
-                    <div class="order-approval-list-input-element input" style="padding: 0;">
-                      <input class="order-approval-list-text_input input-item-doc" name="พมพคาคนหา" value="1" type="text" />
-                    </div>
-                  </div>
-                  <a href="javascript:increase('count1')"><img class="purchase-order-frame-4" src="img/frame-19.svg"
-                      alt="Frame" />
-                  </a>
-                </div>
-                <a onclick="showPopup()">
-                  <div class="purchase-order-button-6 purchase-order-button-8">
-                    <img class="button-icon" style="width: 27px;" src="img/icon-cart-8.svg" alt="icon cart" />
-                  </div>
-                </a>
-              </div>
-            </div>
-          </div>
-          <img class="purchase-order-vector" src="img/vector-14-1.svg" alt="Vector 14" />
-          <div class="purchase-order-frame-38255 notosansthai-semi-bold-black-22px">
-            <div class="purchase-order-text-9 valign-text-middle">
-              <div class="purchase-order-frame-33"><img class="purchase-order-image-8" src="img/image-8-9@2x.png"
-                  alt="image 8" /></div>
-            </div>
-            <div class="purchase-order-text-10 valign-text-middle"> <a href="./detail-purchase-order-school.html">
-                <div class="purchase-order-frame-93">
-                  <p class="valign-text-middle notosansthai-semi-bold-fiord-18px">
-                    ปพ.1:ป ระเบียนแสดงผลการเรียน ระดับ ประถมฯ (ปรับปรุง 2555) (ฉบับใช้กับคอม)
-                  </p>
-                </div>
-              </a></div>
-            <div class="purchase-order-text-11 valign-text-middle">
-              <div class="purchase-order-x3-9 valign-text-middle notosansthai-semi-bold-fiord-18px">160</div>
-            </div>
-            <div class="purchase-order-text-12 valign-text-middle">
-              <div class="purchase-order-text_label-5 valign-text-middle notosansthai-semi-bold-fiord-18px">เล่ม
-              </div>
-            </div>
-            <div class="purchase-order-text-13 valign-text-middle">
-              <div class="purchase-order-frame-38319">
-                <div class="purchase-order-frame-18 div-edit-item-doc">
-                  <a href="javascript:decrease('count1')"><img class="purchase-order-frame-3" src="img/frame-18.svg"
-                      alt="Frame" />
-                  </a>
-                  <div class="purchase-order-number notosansthai-bold-black-14px">
-                    <div class="order-approval-list-input-element input" style="padding: 0;">
-                      <input class="order-approval-list-text_input input-item-doc" name="พมพคาคนหา" value="1" type="text" />
-                    </div>
-                  </div>
-                  <a href="javascript:increase('count1')"><img class="purchase-order-frame-4" src="img/frame-19.svg"
-                      alt="Frame" />
-                  </a>
-                </div>
-                <a onclick="showPopup()">
-                  <div class="purchase-order-button-6 purchase-order-button-8">
-                    <img class="button-icon" style="width: 27px;" src="img/icon-cart-8.svg" alt="icon cart" />
-                  </div>
-                </a>
-              </div>
-            </div>
-          </div>
-          <img class="purchase-order-vector" src="img/vector-14-1.svg" alt="Vector 14" />
-          <div class="purchase-order-frame-38255 notosansthai-semi-bold-black-22px">
-            <div class="purchase-order-text-9 valign-text-middle">
-              <div class="purchase-order-frame-33"><img class="purchase-order-image-8" src="img/image-8-9@2x.png"
-                  alt="image 8" /></div>
-            </div>
-            <div class="purchase-order-text-10 valign-text-middle"> <a href="./detail-purchase-order-school.html">
-                <div class="purchase-order-frame-93">
-                  <p class="valign-text-middle notosansthai-semi-bold-fiord-18px">
-                    ปพ.1:ป ระเบียนแสดงผลการเรียน ระดับ ประถมฯ (ปรับปรุง 2555) (ฉบับใช้กับคอม)
-                  </p>
-                </div>
-              </a></div>
-            <div class="purchase-order-text-11 valign-text-middle">
-              <div class="purchase-order-x3-9 valign-text-middle notosansthai-semi-bold-fiord-18px">160</div>
-            </div>
-            <div class="purchase-order-text-12 valign-text-middle">
-              <div class="purchase-order-text_label-5 valign-text-middle notosansthai-semi-bold-fiord-18px">เล่ม
-              </div>
-            </div>
-            <div class="purchase-order-text-13 valign-text-middle">
-              <div class="purchase-order-frame-38319">
-                <div class="purchase-order-frame-18 div-edit-item-doc">
-                  <a href="javascript:decrease('count1')"><img class="purchase-order-frame-3" src="img/frame-18.svg"
-                      alt="Frame" />
-                  </a>
-                  <div class="purchase-order-number notosansthai-bold-black-14px">
-                    <div class="order-approval-list-input-element input" style="padding: 0;">
-                      <input class="order-approval-list-text_input input-item-doc" name="พมพคาคนหา" value="1" type="text" />
-                    </div>
-                  </div>
-                  <a href="javascript:increase('count1')"><img class="purchase-order-frame-4" src="img/frame-19.svg"
-                      alt="Frame" />
-                  </a>
-                </div>
-                <a onclick="showPopup()">
-                  <div class="purchase-order-button-6 purchase-order-button-8">
-                    <img class="button-icon" style="width: 27px;" src="img/icon-cart-8.svg" alt="icon cart" />
-                  </div>
-                </a>
-              </div>
-            </div>
-          </div>
-          <img class="purchase-order-vector" src="img/vector-14-1.svg" alt="Vector 14" />
-          <div class="purchase-order-frame-38255 notosansthai-semi-bold-black-22px">
-            <div class="purchase-order-text-9 valign-text-middle">
-              <div class="purchase-order-frame-33"><img class="purchase-order-image-8" src="img/image-8-9@2x.png"
-                  alt="image 8" /></div>
-            </div>
-            <div class="purchase-order-text-10 valign-text-middle"> <a href="./detail-purchase-order-school.html">
-                <div class="purchase-order-frame-93">
-                  <p class="valign-text-middle notosansthai-semi-bold-fiord-18px">
-                    ปพ.1:ป ระเบียนแสดงผลการเรียน ระดับ ประถมฯ (ปรับปรุง 2555) (ฉบับใช้กับคอม)
-                  </p>
-                </div>
-              </a></div>
-            <div class="purchase-order-text-11 valign-text-middle">
-              <div class="purchase-order-x3-9 valign-text-middle notosansthai-semi-bold-fiord-18px">160</div>
-            </div>
-            <div class="purchase-order-text-12 valign-text-middle">
-              <div class="purchase-order-text_label-5 valign-text-middle notosansthai-semi-bold-fiord-18px">เล่ม
-              </div>
-            </div>
-            <div class="purchase-order-text-13 valign-text-middle">
-              <div class="purchase-order-frame-38319">
-                <div class="purchase-order-frame-18 div-edit-item-doc">
-                  <a href="javascript:decrease('count9')"><img class="purchase-order-frame-3" src="img/frame-18.svg"
-                      alt="Frame" />
-                  </a>
-                  <div class="purchase-order-number notosansthai-bold-black-14px">
-                    <div class="order-approval-list-input-element input" style="padding: 0;">
-                      <input id="count9" class="order-approval-list-text_input input-item-doc" name="พมพคาคนหา" value="1" type="number" />
-                    </div>
-                  </div>
-                  <a href="javascript:increase('count1')"><img class="purchase-order-frame-4" src="img/frame-19.svg"
-                      alt="Frame" />
-                  </a>
-                </div>
-                <a onclick="showPopup()">
-                  <div class="purchase-order-button-6 purchase-order-button-8">
-                    <img class="button-icon" style="width: 27px;" src="img/icon-cart-8.svg" alt="icon cart" />
-                  </div>
-                </a>
-              </div>
-            </div>
-          </div>
-          <img class="purchase-order-vector" src="img/vector-14-1.svg" alt="Vector 14" />
-        </div>
-      </div>
-      <div class="purchase-order-input-select-button-footer-default">
-        <div class="purchase-order-frame-38263">
-          <div class="purchase-order-input-select">
-            <div class="purchase-order-select-field">
-              <select id="agency3" class="purchase-order-custom-dropdown">
-                <option value="แสดง 9" selected>แสดง 9</option>
-                <option value="แสดง 19">แสดง 19</option>
-                <option value="แสดง 29">แสดง 29</option>
-              </select>
-              <img class="purchase-order-dropdown-icon" src="img/dropdown-6.svg" alt="dropdown" />
-            </div>
-          </div>
-          <p class="purchase-order-x1-10-100">แสดง 1-9 รายการ จาก xx รายการ</p>
-        </div>
-        <div class="purchase-order-pagination">
-          <a href="javascript:SubmitForm('form9')">
-            <div class="purchase-order-button-1 purchase-order-button-8"><img class="purchase-order-icon-1"
-                src="img/icon-178.svg" alt="icon" /></div>
-          </a><a href="javascript:SubmitForm('form9')">
-            <div class="purchase-order-button-7 purchase-order-button-8">
-              <div class="purchase-order-text-sm-1 purchase-order-text-sm-3">1</div>
-            </div>
-          </a>
-          <div class="purchase-order-button-2 purchase-order-button-8">
-            <div class="purchase-order-text-sm notosansthai-medium-blue-15px">2</div>
-          </div>
-          <div class="purchase-order-button-2 purchase-order-button-8">
-            <div class="purchase-order-text-sm notosansthai-medium-blue-15px">3</div>
-          </div>
-          <div class="purchase-order-button-2 purchase-order-button-8">
-            <div class="purchase-order-text-sm notosansthai-medium-blue-15px">4</div>
-          </div>
-          <div class="purchase-order-button-2 purchase-order-button-8">
-            <div class="purchase-order-text-sm notosansthai-medium-blue-15px">5</div>
-          </div>
-          <div class="purchase-order-button-2 purchase-order-button-8">
-            <div class="purchase-order-text-sm notosansthai-medium-blue-15px">...</div>
-          </div>
-          <div class="purchase-order-button-2 purchase-order-button-8">
-            <div class="purchase-order-text-sm-2 purchase-order-text-sm-3 notosansthai-medium-blue-15px">10</div>
-          </div>
-          <a href="javascript:SubmitForm('form9')">
-            <div class="purchase-order-button-1 purchase-order-button-8"><img class="purchase-order-icon-1"
-                src="img/icon-179.svg" alt="icon" /></div>
-          </a>
-        </div>
-      </div>
-      <div class="purchase-order-frame-14">
-        <a href="./purchase-order-school-result.html">
-          <div class="purchase-order-n">สรุปรายการสินค้า (<span id="count10">9</span> รายการ)</div>
-        </a>
-      </div>
-    </div>
-  </div> -->
-
-  <!-- <div class="mobile">
-    <div class="header-ecs">
-      <a href="./login.html">
-        <img class="logo-ecs" src="img/logo------1.png" alt="logo" />
-      </a>
-      <div class="header-action-ecs">
-        <img class="group" src="img/Icon-Service.png" alt="Service" onclick="showMenuNav()"/>
-        <img class="group" src="img/group@2x.png" alt="Group" />
-        <a href="./profile-school.html">
-          <img class="vector" src="img/vector-2.svg" alt="Vector" />
-        </a>
-      </div>
-    </div>
-
-    <div id="subMenuHeaderMobile" class="sub-menu-header">
-      <a href="./purchase-order-school.html"
-        class="notosansthai-normal-black-20px no-text-underline textItemMenuHeader itemMenuHeader">
-        ออกใบขอสั่งซื้อ
-      </a>
-      <hr />
-      <a href="./approve-school.html"
-        class="notosansthai-normal-black-20px no-text-underline textItemMenuHeader itemMenuHeader">
-        เอกสารใบขอสั่งซื้อ
-      </a>
-      <hr />
-      <a href="./delivered-order.html"
-        class="notosansthai-normal-black-20px no-text-underline textItemMenuHeader itemMenuHeader">
-        รายการคำสั่งซื้อ
-      </a>
-      <hr />
-      <a href="./order-cancel.html"
-        class="notosansthai-normal-black-20px no-text-underline textItemMenuHeader itemMenuHeader">
-        ยกเลิกเลข ปพ.
-      </a>
-      <hr />
-      <a href="./delivered-order.html"
-        class="notosansthai-normal-black-20px no-text-underline textItemMenuHeader itemMenuHeader">
-        ประวัติการสั่งซื้อ
-      </a>
-    </div>
-    <div class="container-center-horizontal">
-      <div class="purchase-order">
-        <div class="payment-proof-flex-row">
-          <a onclick="goBack()">
-            <div class="request-detail-school-button request-detail-school-button-6">
-              <img class="purchase-order-icon-back" src="img/icon-back-3.svg" alt="icon back" />
-              <div class="purchase-order-text_label valign-text-middle purchase-order-text_label-5">ย้อนกลับ</div>
-            </div>
-          </a>
-        </div>
-        <h1 class="purchase-order-text-6" style="align-self: center;">รายการสินค้า</h1>
-        <div class="purchase-order-frame-38327">
-          <div class="purchase-order-frame-38385">
-            <div class="purchase-order-frame-2">
-              <div class="purchase-order-frame-38329-1">
-                <img class="purchase-order-icon" src="img/icon-magnifying-glass-searching-glass-1.svg"
-                  alt="icon Magnifying Glass Searching Glass" />
-                <input class="purchase-order-text_input notosansthai-normal-dove-gray-17px" name="กรณากรอกชอผใชงาน"
-                  placeholder="กรุณากรอกคำค้นหา" type="text" />
-              </div>
-            </div>
-          </div>
-          <div class="purchase-order-frame-38385">
-            <div class="purchase-order-frame-2">
-              <select id="agency" class="purchase-order-custom-dropdown">
-                <option value="" disabled selected>เลือกประเภทแบบพิมพ์</option>
-                <option value="ปพ.1">ปพ.1</option>
-                <option value="ปพ.2">ปพ.2</option>
-              </select>
-              <img class="purchase-order-dropdown-icon" src="img/dropdown-6.svg" alt="dropdown" />
-            </div>
-          </div>
-          <div class="purchase-order-frame-38385">
-            <div class="purchase-order-frame-2">
-              <select id="agency2" class="purchase-order-custom-dropdown">
-                <option value="" disabled selected>เลือกระดับชั้น</option>
-                <option value="ป.1">ป.1</option>
-                <option value="ป.2">ป.2</option>
-                <option value="ป.3">ป.3</option>
-                <option value="ป.4">ป.4</option>
-                <option value="ป.5">ป.5</option>
-                <option value="ป.6">ป.6</option>
-              </select>
-              <img class="purchase-order-dropdown-icon" src="img/dropdown-6.svg" alt="dropdown" />
-            </div>
-          </div>
-          <div class="purchase-order-frame-38387" style="align-self: center;">
-            <a href="javascript:SubmitForm('form9')">
-              <article class="purchase-order-button-4 purchase-order-button-8">
-                <div
-                  class="purchase-order-text_label-1 valign-text-middle purchase-order-text_label-5 notosansthai-semi-bold-white-20px">
-                  ค้นหา
-                </div>
-              </article>
-            </a><a href="javascript:SubmitForm('form9')">
-              <article class="purchase-order-button-5 purchase-order-button-8">
-                <div class="purchase-order-text_label valign-text-middle purchase-order-text_label-5">ล้างค่า</div>
-              </article>
-            </a>
-          </div>
-          <img class="purchase-order-line" src="img/line-9-1.svg" alt="Line 9" />
-          <div class="purchase-order-text-7">พบ 17 รายการ</div>
-          <div class="purchase-order-table-product">
-            <div class="purchase-order-frame-38255 notosansthai-semi-bold-black-22px">
-              <div class="purchase-order-text-9 valign-text-middle">
-                <div class="purchase-order-frame-33"><img class="purchase-order-image-8" src="img/image-8-9@2x.png"
-                    alt="image 8" /></div>
-              </div>
-              <div class="purchase-order-text-10 valign-text-middle"> <a href="./detail-purchase-order-school.html">
-                  <div class="purchase-order-frame-93">
-                    <p class="valign-text-middle notosansthai-semi-bold-fiord-11px" style="text-align: left;">
-                      ปพ.1:ป ระเบียนแสดงผลการเรียน ระดับ ประถมฯ (ปรับปรุง 2555) (ฉบับใช้กับคอม)
-                    </p>
-                    <img class="button-icon" style="width: 27px;" src="img/icon-cart-8.svg" alt="icon cart" />
-                  </div>
-                </a>
-                <div class="purchase-order-text-11 valign-text-middle purchase-order-frame-xxx">
-                  <div class="purchase-order-x3-9 valign-text-middle notosansthai-semi-bold-fiord-18px">160 บาท/เล่ม
-                  </div>
-                  <div class="purchase-order-frame-38319">
-                    <div class="purchase-order-frame-18">
-                      <a href="javascript:decrease('count1')"><img class="purchase-order-frame-3" src="img/frame-18.svg"
-                          alt="Frame" />
-                      </a>
-                      <div class="purchase-order-number notosansthai-bold-black-14px" style="font-size: 13px;"><span
-                          id="count1">1</span></div>
-                      <a href="javascript:increase('count1')"><img class="purchase-order-frame-4" src="img/frame-19.svg"
-                          alt="Frame" />
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <img class="purchase-order-vector" src="img/vector-14-1.svg" alt="Vector 14" />
-            <div class="purchase-order-frame-38255 notosansthai-semi-bold-black-22px">
-              <div class="purchase-order-text-9 valign-text-middle">
-                <div class="purchase-order-frame-33"><img class="purchase-order-image-8" src="img/image-8-9@2x.png"
-                    alt="image 8" /></div>
-              </div>
-              <div class="purchase-order-text-10 valign-text-middle"> <a href="./detail-purchase-order-school.html">
-                  <div class="purchase-order-frame-93">
-                    <p class="valign-text-middle notosansthai-semi-bold-fiord-11px" style="text-align: left;">
-                      ปพ.1:ป ระเบียนแสดงผลการเรียน ระดับ ประถมฯ (ปรับปรุง 2555) (ฉบับใช้กับคอม)
-                    </p>
-                    <img class="button-icon" style="width: 27px;" src="img/icon-cart-8.svg" alt="icon cart" />
-                  </div>
-                </a>
-                <div class="purchase-order-text-11 valign-text-middle purchase-order-frame-xxx">
-                  <div class="purchase-order-x3-9 valign-text-middle notosansthai-semi-bold-fiord-18px">160 บาท/เล่ม
-                  </div>
-                  <div class="purchase-order-frame-38319">
-                    <div class="purchase-order-frame-18">
-                      <a href="javascript:decrease('count1')"><img class="purchase-order-frame-3" src="img/frame-18.svg"
-                          alt="Frame" />
-                      </a>
-                      <div class="purchase-order-number notosansthai-bold-black-14px" style="font-size: 13px;"><span
-                          id="count1">1</span></div>
-                      <a href="javascript:increase('count1')"><img class="purchase-order-frame-4" src="img/frame-19.svg"
-                          alt="Frame" />
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <img class="purchase-order-vector" src="img/vector-14-1.svg" alt="Vector 14" />
-            <div class="purchase-order-frame-38255 notosansthai-semi-bold-black-22px">
-              <div class="purchase-order-text-9 valign-text-middle">
-                <div class="purchase-order-frame-33"><img class="purchase-order-image-8" src="img/image-8-9@2x.png"
-                    alt="image 8" /></div>
-              </div>
-              <div class="purchase-order-text-10 valign-text-middle"> <a href="./detail-purchase-order-school.html">
-                  <div class="purchase-order-frame-93">
-                    <p class="valign-text-middle notosansthai-semi-bold-fiord-11px" style="text-align: left;">
-                      ปพ.1:ป ระเบียนแสดงผลการเรียน ระดับ ประถมฯ (ปรับปรุง 2555) (ฉบับใช้กับคอม)
-                    </p>
-                    <img class="button-icon" style="width: 27px;" src="img/icon-cart-8.svg" alt="icon cart" />
-                  </div>
-                </a>
-                <div class="purchase-order-text-11 valign-text-middle purchase-order-frame-xxx">
-                  <div class="purchase-order-x3-9 valign-text-middle notosansthai-semi-bold-fiord-18px">160 บาท/เล่ม
-                  </div>
-                  <div class="purchase-order-frame-38319">
-                    <div class="purchase-order-frame-18">
-                      <a href="javascript:decrease('count1')"><img class="purchase-order-frame-3" src="img/frame-18.svg"
-                          alt="Frame" />
-                      </a>
-                      <div class="purchase-order-number notosansthai-bold-black-14px" style="font-size: 13px;"><span
-                          id="count1">1</span></div>
-                      <a href="javascript:increase('count1')"><img class="purchase-order-frame-4" src="img/frame-19.svg"
-                          alt="Frame" />
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <img class="purchase-order-vector" src="img/vector-14-1.svg" alt="Vector 14" />
-            <div class="purchase-order-frame-38255 notosansthai-semi-bold-black-22px">
-              <div class="purchase-order-text-9 valign-text-middle">
-                <div class="purchase-order-frame-33"><img class="purchase-order-image-8" src="img/image-8-9@2x.png"
-                    alt="image 8" /></div>
-              </div>
-              <div class="purchase-order-text-10 valign-text-middle"> <a href="./detail-purchase-order-school.html">
-                  <div class="purchase-order-frame-93">
-                    <p class="valign-text-middle notosansthai-semi-bold-fiord-11px" style="text-align: left;">
-                      ปพ.1:ป ระเบียนแสดงผลการเรียน ระดับ ประถมฯ (ปรับปรุง 2555) (ฉบับใช้กับคอม)
-                    </p>
-                    <img class="button-icon" style="width: 27px;" src="img/icon-cart-8.svg" alt="icon cart" />
-                  </div>
-                </a>
-                <div class="purchase-order-text-11 valign-text-middle purchase-order-frame-xxx">
-                  <div class="purchase-order-x3-9 valign-text-middle notosansthai-semi-bold-fiord-18px">160 บาท/เล่ม
-                  </div>
-                  <div class="purchase-order-frame-38319">
-                    <div class="purchase-order-frame-18">
-                      <a href="javascript:decrease('count1')"><img class="purchase-order-frame-3" src="img/frame-18.svg"
-                          alt="Frame" />
-                      </a>
-                      <div class="purchase-order-number notosansthai-bold-black-14px" style="font-size: 13px;"><span
-                          id="count1">1</span></div>
-                      <a href="javascript:increase('count1')"><img class="purchase-order-frame-4" src="img/frame-19.svg"
-                          alt="Frame" />
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <img class="purchase-order-vector" src="img/vector-14-1.svg" alt="Vector 14" />
-            <div class="purchase-order-frame-38255 notosansthai-semi-bold-black-22px">
-              <div class="purchase-order-text-9 valign-text-middle">
-                <div class="purchase-order-frame-33"><img class="purchase-order-image-8" src="img/image-8-9@2x.png"
-                    alt="image 8" /></div>
-              </div>
-              <div class="purchase-order-text-10 valign-text-middle"> <a href="./detail-purchase-order-school.html">
-                  <div class="purchase-order-frame-93">
-                    <p class="valign-text-middle notosansthai-semi-bold-fiord-11px" style="text-align: left;">
-                      ปพ.1:ป ระเบียนแสดงผลการเรียน ระดับ ประถมฯ (ปรับปรุง 2555) (ฉบับใช้กับคอม)
-                    </p>
-                    <img class="button-icon" style="width: 27px;" src="img/icon-cart-8.svg" alt="icon cart" />
-                  </div>
-                </a>
-                <div class="purchase-order-text-11 valign-text-middle purchase-order-frame-xxx">
-                  <div class="purchase-order-x3-9 valign-text-middle notosansthai-semi-bold-fiord-18px">160 บาท/เล่ม
-                  </div>
-                  <div class="purchase-order-frame-38319">
-                    <div class="purchase-order-frame-18">
-                      <a href="javascript:decrease('count1')"><img class="purchase-order-frame-3" src="img/frame-18.svg"
-                          alt="Frame" />
-                      </a>
-                      <div class="purchase-order-number notosansthai-bold-black-14px" style="font-size: 13px;"><span
-                          id="count1">1</span></div>
-                      <a href="javascript:increase('count1')"><img class="purchase-order-frame-4" src="img/frame-19.svg"
-                          alt="Frame" />
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <img class="purchase-order-vector" src="img/vector-14-1.svg" alt="Vector 14" />
-            <div class="purchase-order-frame-38255 notosansthai-semi-bold-black-22px">
-              <div class="purchase-order-text-9 valign-text-middle">
-                <div class="purchase-order-frame-33"><img class="purchase-order-image-8" src="img/image-8-9@2x.png"
-                    alt="image 8" /></div>
-              </div>
-              <div class="purchase-order-text-10 valign-text-middle"> <a href="./detail-purchase-order-school.html">
-                  <div class="purchase-order-frame-93">
-                    <p class="valign-text-middle notosansthai-semi-bold-fiord-11px" style="text-align: left;">
-                      ปพ.1:ป ระเบียนแสดงผลการเรียน ระดับ ประถมฯ (ปรับปรุง 2555) (ฉบับใช้กับคอม)
-                    </p>
-                    <img class="button-icon" style="width: 27px;" src="img/icon-cart-8.svg" alt="icon cart" />
-                  </div>
-                </a>
-                <div class="purchase-order-text-11 valign-text-middle purchase-order-frame-xxx">
-                  <div class="purchase-order-x3-9 valign-text-middle notosansthai-semi-bold-fiord-18px">160 บาท/เล่ม
-                  </div>
-                  <div class="purchase-order-frame-38319">
-                    <div class="purchase-order-frame-18">
-                      <a href="javascript:decrease('count1')"><img class="purchase-order-frame-3" src="img/frame-18.svg"
-                          alt="Frame" />
-                      </a>
-                      <div class="purchase-order-number notosansthai-bold-black-14px" style="font-size: 13px;"><span
-                          id="count1">1</span></div>
-                      <a href="javascript:increase('count1')"><img class="purchase-order-frame-4" src="img/frame-19.svg"
-                          alt="Frame" />
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <img class="purchase-order-vector" src="img/vector-14-1.svg" alt="Vector 14" />
-            <div class="purchase-order-frame-38255 notosansthai-semi-bold-black-22px">
-              <div class="purchase-order-text-9 valign-text-middle">
-                <div class="purchase-order-frame-33"><img class="purchase-order-image-8" src="img/image-8-9@2x.png"
-                    alt="image 8" /></div>
-              </div>
-              <div class="purchase-order-text-10 valign-text-middle"> <a href="./detail-purchase-order-school.html">
-                  <div class="purchase-order-frame-93">
-                    <p class="valign-text-middle notosansthai-semi-bold-fiord-11px" style="text-align: left;">
-                      ปพ.1:ป ระเบียนแสดงผลการเรียน ระดับ ประถมฯ (ปรับปรุง 2555) (ฉบับใช้กับคอม)
-                    </p>
-                    <img class="button-icon" style="width: 27px;" src="img/icon-cart-8.svg" alt="icon cart" />
-                  </div>
-                </a>
-                <div class="purchase-order-text-11 valign-text-middle purchase-order-frame-xxx">
-                  <div class="purchase-order-x3-9 valign-text-middle notosansthai-semi-bold-fiord-18px">160 บาท/เล่ม
-                  </div>
-                  <div class="purchase-order-frame-38319">
-                    <div class="purchase-order-frame-18">
-                      <a href="javascript:decrease('count1')"><img class="purchase-order-frame-3" src="img/frame-18.svg"
-                          alt="Frame" />
-                      </a>
-                      <div class="purchase-order-number notosansthai-bold-black-14px" style="font-size: 13px;"><span
-                          id="count1">1</span></div>
-                      <a href="javascript:increase('count1')"><img class="purchase-order-frame-4" src="img/frame-19.svg"
-                          alt="Frame" />
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <img class="purchase-order-vector" src="img/vector-14-1.svg" alt="Vector 14" />
-            <div class="purchase-order-frame-38255 notosansthai-semi-bold-black-22px">
-              <div class="purchase-order-text-9 valign-text-middle">
-                <div class="purchase-order-frame-33"><img class="purchase-order-image-8" src="img/image-8-9@2x.png"
-                    alt="image 8" /></div>
-              </div>
-              <div class="purchase-order-text-10 valign-text-middle"> <a href="./detail-purchase-order-school.html">
-                  <div class="purchase-order-frame-93">
-                    <p class="valign-text-middle notosansthai-semi-bold-fiord-11px" style="text-align: left;">
-                      ปพ.1:ป ระเบียนแสดงผลการเรียน ระดับ ประถมฯ (ปรับปรุง 2555) (ฉบับใช้กับคอม)
-                    </p>
-                    <img class="button-icon" style="width: 27px;" src="img/icon-cart-8.svg" alt="icon cart" />
-                  </div>
-                </a>
-                <div class="purchase-order-text-11 valign-text-middle purchase-order-frame-xxx">
-                  <div class="purchase-order-x3-9 valign-text-middle notosansthai-semi-bold-fiord-18px">160 บาท/เล่ม
-                  </div>
-                  <div class="purchase-order-frame-38319">
-                    <div class="purchase-order-frame-18">
-                      <a href="javascript:decrease('count1')"><img class="purchase-order-frame-3" src="img/frame-18.svg"
-                          alt="Frame" />
-                      </a>
-                      <div class="purchase-order-number notosansthai-bold-black-14px" style="font-size: 13px;"><span
-                          id="count1">1</span></div>
-                      <a href="javascript:increase('count1')"><img class="purchase-order-frame-4" src="img/frame-19.svg"
-                          alt="Frame" />
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <img class="purchase-order-vector" src="img/vector-14-1.svg" alt="Vector 14" />
-            <div class="purchase-order-frame-38255 notosansthai-semi-bold-black-22px">
-              <div class="purchase-order-text-9 valign-text-middle">
-                <div class="purchase-order-frame-33"><img class="purchase-order-image-8" src="img/image-8-9@2x.png"
-                    alt="image 8" /></div>
-              </div>
-              <div class="purchase-order-text-10 valign-text-middle"> <a href="./detail-purchase-order-school.html">
-                  <div class="purchase-order-frame-93">
-                    <p class="valign-text-middle notosansthai-semi-bold-fiord-11px" style="text-align: left;">
-                      ปพ.1:ป ระเบียนแสดงผลการเรียน ระดับ ประถมฯ (ปรับปรุง 2555) (ฉบับใช้กับคอม)
-                    </p>
-                    <img class="button-icon" style="width: 27px;" src="img/icon-cart-8.svg" alt="icon cart" />
-                  </div>
-                </a>
-                <div class="purchase-order-text-11 valign-text-middle purchase-order-frame-xxx">
-                  <div class="purchase-order-x3-9 valign-text-middle notosansthai-semi-bold-fiord-18px">160 บาท/เล่ม
-                  </div>
-                  <div class="purchase-order-frame-38319">
-                    <div class="purchase-order-frame-18">
-                      <a href="javascript:decrease('count1')"><img class="purchase-order-frame-3" src="img/frame-18.svg"
-                          alt="Frame" />
-                      </a>
-                      <div class="purchase-order-number notosansthai-bold-black-14px" style="font-size: 13px;"><span
-                          id="count1">1</span></div>
-                      <a href="javascript:increase('count1')"><img class="purchase-order-frame-4" src="img/frame-19.svg"
-                          alt="Frame" />
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <img class="purchase-order-vector" src="img/vector-14-1.svg" alt="Vector 14" />
-          </div>
-          <div class="purchase-order-input-select-button-footer-default">
-            <div class="purchase-order-frame-38263">
-              <div class="purchase-order-input-select">
-                <div class="purchase-order-select-field">
-                  <select id="agency3" class="purchase-order-custom-dropdown">
-                    <option value="แสดง 9" selected>แสดง 9</option>
-                    <option value="แสดง 19">แสดง 19</option>
-                    <option value="แสดง 29">แสดง 29</option>
-                  </select>
-                  <img class="purchase-order-dropdown-icon" src="img/dropdown-6.svg" alt="dropdown" />
-                </div>
-              </div>
-            </div>
-            <div class="purchase-order-pagination">
-              <a href="javascript:SubmitForm('form9')">
-                <div class="purchase-order-button-1 purchase-order-button-8"><img class="purchase-order-icon-1"
-                    src="img/icon-178.svg" alt="icon" /></div>
-              </a><a href="javascript:SubmitForm('form9')">
-                <div class="purchase-order-button-7 purchase-order-button-8">
-                  <div class="purchase-order-text-sm-1 purchase-order-text-sm-3">1</div>
-                </div>
-              </a>
-              <div class="purchase-order-button-2 purchase-order-button-8">
-                <div class="purchase-order-text-sm notosansthai-medium-blue-15px">...</div>
-              </div>
-              <div class="purchase-order-button-2 purchase-order-button-8">
-                <div class="purchase-order-text-sm-2 purchase-order-text-sm-3 notosansthai-medium-blue-15px">10</div>
-              </div>
-              <a href="javascript:SubmitForm('form9')">
-                <div class="purchase-order-button-1 purchase-order-button-8"><img class="purchase-order-icon-1"
-                    src="img/icon-179.svg" alt="icon" /></div>
-              </a>
-            </div>
-          </div>
-          <div class="purchase-order-frame-14">
-            <a href="./purchase-order-school-result.html">
-              <div class="purchase-order-n">สรุปรายการสินค้า (<span id="count10">9</span> รายการ)</div>
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div> -->
 
   <div class="footer">
     <p class="purchase-order-copyright-2024">Copyright 2024&nbsp;&nbsp; องค์การค้าของ สกสค.</p>
@@ -2336,6 +801,20 @@
     }
 
   </script>
+   <script>
+    document.addEventListener("DOMContentLoaded", function () {
+        let tbody = document.getElementById("table-body");
+
+        // ตรวจสอบว่ามีข้อมูลหรือไม่
+        if (tbody.children.length === 0) {
+            let row = tbody.insertRow();
+            let cell = row.insertCell();
+            cell.colSpan = 3;  // ให้ข้อความอยู่ตรงกลางทุกคอลัมน์
+            cell.className = "empty-message";
+            cell.innerText = "ไม่พบข้อมูล\nโปรดพิมพ์คำค้นหาที่ท่านต้องการ"; // ข้อความเมื่อไม่มีข้อมูล
+        }
+    });
+</script>
 </body>
 
 </html>
