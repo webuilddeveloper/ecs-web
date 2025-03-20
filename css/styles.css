@@ -27135,7 +27135,7 @@ body.no-scroll {
   .purchase-order-frame-14 {
     align-items: center;
     background-color: var(--main);
-    border-radius: 62px;
+    border-radius: 10px;
     display: flex;
     gap: 12px;
     height: 45px;
@@ -28940,7 +28940,7 @@ body.no-scroll {
   .purchase-order-shipping-frame-38396 {
     align-items: center;
     background-color: var(--gray);
-    border-radius: 62px;
+    border-radius: 10px;
     cursor: pointer;
     display: flex;
     gap: 12px;
@@ -28956,7 +28956,7 @@ body.no-scroll {
   .purchase-order-shipping-frame-14 {
     align-items: center;
     background-color: var(--main);
-    border-radius: 62px;
+    border-radius: 10px;
     cursor: pointer;
     display: flex;
     gap: 12px;
@@ -30916,7 +30916,7 @@ body.no-scroll {
   .purchase-order-frame-14 {
     align-items: center;
     background-color: var(--main);
-    border-radius: 62px;
+    border-radius: 10px;
     display: flex;
     gap: 12px;
     height: 45px;
@@ -32918,7 +32918,7 @@ body.no-scroll {
   .purchase-order-shipping-frame-38396 {
     align-items: center;
     background-color: var(--gray);
-    border-radius: 62px;
+    border-radius: 10px;
     cursor: pointer;
     display: flex;
     gap: 12px;
@@ -32931,7 +32931,7 @@ body.no-scroll {
   .purchase-order-shipping-frame-14 {
     align-items: center;
     background-color: var(--main);
-    border-radius: 62px;
+    border-radius: 10px;
     cursor: pointer;
     display: flex;
     gap: 12px;
@@ -35834,7 +35834,7 @@ body.no-scroll {
   .purchase-order-frame-14 {
     align-items: center;
     background-color: var(--main);
-    border-radius: 62px;
+    border-radius: 10px;
     display: flex;
     gap: 12px;
     height: 45px;
@@ -38156,7 +38156,7 @@ body.no-scroll {
   .purchase-order-shipping-frame-38396 {
     align-items: center;
     background-color: var(--gray);
-    border-radius: 62px;
+    border-radius: 10px;
     cursor: pointer;
     display: flex;
     gap: 12px;
@@ -38170,7 +38170,7 @@ body.no-scroll {
   .purchase-order-shipping-frame-14 {
     align-items: center;
     background-color: var(--main);
-    border-radius: 62px;
+    border-radius: 10px;
     cursor: pointer;
     display: flex;
     gap: 12px;
@@ -42632,7 +42632,7 @@ hr {
 .purchase-order-shipping-frame-38396-background-w {
   align-items: center;
   background-color: var(--white);
-  border-radius: 62px;
+  border-radius: 10px;
   cursor: pointer;
   display: flex;
   gap: 12px;
