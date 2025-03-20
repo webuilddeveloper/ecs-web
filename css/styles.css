@@ -42617,7 +42617,7 @@ hr {
   position: relative;
 }
 
-.display-flex-column-wrap-center-gap30{
+.display-flex-column-wrap-center-gap30 {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -42627,6 +42627,7 @@ hr {
   gap: 30px;
   width: 100%;
   max-width: 500px;
+  align-self: center;
 }
 
 .purchase-order-shipping-frame-38396-background-w {
