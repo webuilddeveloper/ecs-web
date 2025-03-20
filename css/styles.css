@@ -1564,6 +1564,7 @@ input:focus {
   font-size: var(--font-size-18);
   font-style: normal;
   font-weight: 400;
+  text-wrap-mode: nowrap;
 }
 
 .notosansthai-normal-slimy-green-13px {
@@ -14688,11 +14689,10 @@ input:focus {
   align-items: flex-start;
   display: flex;
   gap: 10px;
-  height: 24px;
+  /* height: 24px; */
   position: relative;
-  /* width: -webkit-fill-available; */
+  width: -webkit-fill-available;
   height: -webkit-fill-available;
-  align-items: center;
   /* width: 24px; */
 }
 
@@ -14865,15 +14865,17 @@ input:focus {
 }
 
 .purchase-order-shipping-frame {
-  align-items: center;
   align-self: stretch;
   display: flex;
   gap: 16px;
   /* height: 108px; */
   position: relative;
-  width: -webkit-fill-available;
+  /* width: -webkit-fill-available; */
   height: fit-content;
-  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: center;
+  height: auto;
+  /* flex-wrap: wrap; */
 }
 
 .purchase-order-shipping-frame-94 {
@@ -21002,9 +21004,9 @@ a:active {
   display: flex;
   flex-direction: column;
   gap: 62px;
-  margin-top: 20px;
+  margin-top: 40px;
   position: relative;
-  width: 1240px;
+  /* width: 1240px; */
 }
 
 .payment-proof-frame-38395 {
@@ -26990,7 +26992,8 @@ body.no-scroll {
     align-items: center;
     align-self: stretch;
     display: flex;
-    gap: 220px;
+    /* gap: 220px; */
+    justify-content: space-between;
     height: 108px;
     position: relative;
     width: 100%;
@@ -29463,7 +29466,7 @@ body.no-scroll {
     align-self: stretch;
     display: flex;
     gap: 24px;
-    height: 42px;
+    /* height: 42px; */
     position: relative;
     width: 100%;
   }
@@ -35460,7 +35463,7 @@ body.no-scroll {
     display: flex;
     gap: 16px;
     /* height: 108px; */
-    justify-content: space-around;
+    justify-content: flex-start;
     position: relative;
     width: 100%;
   }
@@ -35473,6 +35476,7 @@ body.no-scroll {
     width: 100%;
     justify-content: space-between;
     flex-direction: column;
+    gap: 10px;
   }
 
 
@@ -39998,7 +40002,7 @@ body.no-scroll {
     align-self: stretch;
     display: flex;
     gap: 10px;
-    height: 42px;
+    /* height: 42px; */
     position: relative;
     width: 100%;
   }
@@ -40046,6 +40050,7 @@ body.no-scroll {
     position: relative;
     width: fit-content;
     font-weight: 600;
+    font-size: var(--font-size-16);
   }
 
   .payment-summary-line {
@@ -41303,11 +41308,12 @@ body.no-scroll {
     line-height: 1.5;
     font-family: var(--font-family-noto_sans_thai);
     color: black;
-    font-size: var(--font-size-13);
+    font-size: var(--font-size-13) !important;
     display: flex;
     flex-direction: column;
     gap: 16px;
     flex-wrap: wrap;
+    width: -webkit-fill-available;
   }
 
   .text-cause-order-cancel {
@@ -41899,7 +41905,7 @@ body.no-scroll {
 .payment-proof-button {
   display: flex;
   align-items: center;
-  padding: 10px;
+  padding: 10px 50px;
   border: 1px solid #ccc;
   cursor: pointer;
   /* width: 150px; */
@@ -41954,6 +41960,10 @@ body.no-scroll {
   font-family: var(--font-family-noto_sans_thai);
   text-wrap: balance;
   border: 1px solid #ddd;
+  width: -webkit-fill-available;
+  max-width: fit-content;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 /* ปรับขนาดปุ่มลบให้ใหญ่ขึ้น */
