@@ -41584,7 +41584,7 @@ body.no-scroll {
   font-family: var(--font-family-noto_sans_thai);
   font-size: var(--font-size-40);
   font-weight: 600;
-  line-height: 60.0px;
+  /* line-height: 60.0px; */
   margin-top: -1.00px;
   text-align: center;
   /* width: 468px; */
