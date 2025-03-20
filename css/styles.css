@@ -42687,3 +42687,11 @@ hr {
   padding: 5px 20px;
   width: -webkit-fill-available;
 }
+
+.font-black-13 {
+  color: #000000;
+  font-family: "Noto Sans Thai", Helvetica !important;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+}
