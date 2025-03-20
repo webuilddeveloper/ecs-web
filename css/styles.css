@@ -1291,6 +1291,7 @@
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
+  line-height: normal;
 }
 
 .notosansthai-normal-black-28px {
@@ -24622,6 +24623,7 @@ a:active {
   gap: 32px;
   margin-top: 70px;
   position: relative;
+  width: 100%;
 }
 
 .profile-school-frame-38357-1 {
@@ -24838,6 +24840,7 @@ a:active {
   overflow: hidden;
   padding: 8px 24px;
   position: relative;
+  width: max-content;
 }
 
 .profile-school-frame-38397 {
@@ -24860,7 +24863,7 @@ a:active {
   flex-direction: column;
   flex-grow: 1;
   gap: 24px;
-  height: 1033px;
+  /* height: 1033px; */
   overflow: hidden;
   padding: 25px 24px;
   position: relative;
@@ -24877,12 +24880,13 @@ a:active {
   align-items: flex-start;
   align-self: stretch;
   display: flex;
-  flex: 0 0 auto;
+  /* flex: 0 0 auto; */
   flex-direction: column;
   gap: 8px;
   padding: 0px 0px 8px;
   position: relative;
   width: 100%;
+  overflow: hidden;
 }
 
 .profile-school-frame-20 {
@@ -24945,7 +24949,7 @@ a:active {
   align-items: flex-start;
   align-self: stretch;
   display: flex;
-  flex: 0 0 auto;
+  /* flex: 0 0 auto; */
   gap: 24px;
   position: relative;
   width: 100%;
@@ -27058,7 +27062,7 @@ body.no-scroll {
     flex-direction: column;
     gap: 36px;
     position: relative;
-    width: 892px;
+    width: 100%;
   }
 
   .profile-school-frame-38483 {
@@ -27066,7 +27070,7 @@ body.no-scroll {
     align-self: stretch;
     display: flex;
     flex: 0 0 auto;
-    gap: 400px;
+    /* gap: 400px; */
     position: relative;
     width: 100%;
   }
@@ -30494,8 +30498,8 @@ body.no-scroll {
     gap: 20px;
     width: -webkit-fill-available;
     justify-content: center;
-    padding: 0 50px;
-    flex-wrap: wrap;
+    padding: 0 0px !important;
+    flex-wrap: nowrap;
   }
   
   .purchase-order-shipping-frame-93-2 {
@@ -32973,6 +32977,7 @@ body.no-scroll {
     justify-content: center;
     overflow: hidden;
     position: relative;
+    padding: 16px 54px;
   }
 
   .purchase-order-shipping-frame-14 {
@@ -35301,7 +35306,8 @@ body.no-scroll {
     gap: 20px;
     width: -webkit-fill-available;
     justify-content: center;
-    padding: 0 50px;
+    padding: 0 0px !important;
+    flex-wrap: wrap;
   }
 
   .purchase-order-text_label-2{
@@ -38341,6 +38347,7 @@ body.no-scroll {
     overflow: hidden;
     position: relative;
     width: 100%;
+    padding: 16px 54px;
   }
 
   .purchase-order-shipping-frame-14 {
@@ -42221,6 +42228,7 @@ input[type="file"] {
   width: -webkit-fill-available;
   justify-content: center;
   padding: 0 50px;
+  overflow: hidden;
 }
 
 .input-dialog {
@@ -42907,4 +42915,24 @@ hr {
   font-size: var(--font-size-12);
   font-style: normal;
   font-weight: 400;
+}
+
+.frame-38-3-2 {
+  align-items: flex-start;
+  align-self: stretch;
+  display: flex;
+  /* flex: 0 0 auto; */
+  flex-direction: row;
+  gap: 16px;
+  position: relative;
+  width: 100%;
+}
+
+.container-file {
+  gap: 5px;
+  display: flex;
+  border: 1px solid #DCE0E5;
+  border-radius: 8px;
+  padding: 8px 16px;
+  cursor: pointer;
 }
