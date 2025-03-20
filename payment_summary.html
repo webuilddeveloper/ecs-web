@@ -11,6 +11,7 @@
   <meta name="og:type" content="website" />
   <meta name="twitter:card" content="photo" />
   <link rel="stylesheet" type="text/css" href="css/styles.css" />
+  <link rel="stylesheet" type="text/css" href="css/styles-aom.css" />
 
 </head>
 
@@ -310,7 +311,7 @@
           </div>
         </a>
         <h1 class="purchase-order-text-6 margin-0-auto" style="align-self: center;">ชำระเงิน</h1>
-    </div>
+      </div>
       <div class="frame-38489">
         <div class="payment-summary-frame-38419">
           <div class="payment-summary-frame-38395 notosansthai-semi-bold-black-20px">
@@ -318,12 +319,14 @@
             <div class="payment-summary-frame-29">
               <div class="payment-summary-frame-3826">
                 <label class="purchase-order-shipping-radio-button">
-                  <input class="payment-summary-radio-button-1 payment-summary-frame-4" type="radio"
-                    name="delivery_option2" value="registered" />
-                  <span
-                    class="radio-label payment-summary-text-8 payment-summary-valign-text-middle notosansthai-normal-black-20px">สแกน
-                    QR
-                    Code</span>
+                  <div class="container-radio">
+                    <input class="payment-summary-radio-button-1 payment-summary-frame-4" type="radio"
+                      name="delivery_option2" value="pay-type" onchange="changePayType('1')" />
+                    <span
+                      class="radio-label payment-summary-text-8 payment-summary-valign-text-middle notosansthai-bold-black-20px">สแกน
+                      QR
+                      Code</span>
+                  </div>
                 </label>
                 <!-- <div class="payment-summary-radio-button-1">
                   <div class="payment-summary-frame-4">
@@ -337,10 +340,23 @@
               <img class="payment-summary-line" src="img/line-6-113.svg" alt="Line 6" />
               <div class="payment-summary-frame-3826">
                 <label class="purchase-order-shipping-radio-button">
-                  <input class="payment-summary-radio-button-1 payment-summary-frame-4" type="radio"
-                    name="delivery_option2" value="registered" />
-                  <span
-                    class="radio-label payment-summary-text-8 payment-summary-valign-text-middle notosansthai-normal-black-20px">โอนเข้าบัญชี</span>
+                  <div class="container-radio">
+                    <input class="payment-summary-radio-button-1 payment-summary-frame-4" type="radio"
+                      name="delivery_option2" value="pay-type" onchange="changePayType('2')" />
+                    <span class="radio-label payment-summary-text-8 payment-summary-valign-text-middle notosansthai-bold-black-20px">ใบแจ้งชำระเงินผ่านธนาคาร</span>
+                  </div>
+                  <div class="purchase-order-shipping-frame dis-no" id="upload-file">
+                    <!-- ปุ่มอัปโหลดไฟล์ -->
+                    <label class="container-file pointer" for="file-upload2">
+                      <img class="file-download" src="img/icon-btn-left-20.svg" alt="Line 6" />
+                      <p class="address valign-text-middle notosansthai-normal-black-16px">
+                          เอกสารใบแจ้งชำระเงิน</p>
+                    </label>
+                    <!-- Input file ที่ซ่อน -->
+                    <input type="file" id="file-upload2" accept=".pdf" multiple>
+                    <div id="empty-message2" class="empty-message notosansthai-normal-dove-gray-17px" style="padding: 0;">ยังไม่มีไฟล์ที่เลือก</div>
+                    <div id="file-items2" class="text-file-upload"></div>
+                  </div>
                 </label>
               </div>
               <img class="payment-summary-line" src="img/line-6-113.svg" alt="Line 6" />
@@ -355,10 +371,12 @@
               <!-- <img class="payment-summary-line" src="img/line-6-104.svg" alt="Line 7" /> -->
               <div class="payment-summary-frame-3826">
                 <label class="purchase-order-shipping-radio-button">
-                  <input class="payment-summary-radio-button-1 payment-summary-frame-4" type="radio"
-                    name="delivery_option2" value="registered" disabled />
-                  <span
-                    class="payment-summary-gfmis payment-summary-valign-text-middle notosansthai-normal-black-20px">GFMIS</span>
+                  <div class="container-radio">
+                    <input class="payment-summary-radio-button-1 payment-summary-frame-4" type="radio"
+                      name="delivery_option2" value="pay-type" onchange="changePayType('3')" disabled />
+                    <span
+                      class="payment-summary-gfmis payment-summary-valign-text-middle notosansthai-bold-black-20px">GFMIS</span>
+                  </div>
                 </label>
               </div>
             </div>
@@ -367,24 +385,40 @@
             <div class="payment-summary-frame-102">
               <div class="payment-summary-frame">
                 <div
-                  class="payment-summary-transport-fee payment-summary-valign-text-middle notosansthai-normal-black-20px">
-                  ค่าขนส่ง /Transport Fee
+                  class="price-text notosansthai-normal-black-20px">
+                  รวมเงิน
                 </div>
                 <div class="payment-summary-xxxx-2 payment-summary-valign-text-middle notosansthai-bold-black-20px">
                   xx.xx บาท</div>
               </div>
               <div class="payment-summary-frame">
                 <div
-                  class="payment-summary-text_label-1 payment-summary-valign-text-middle payment-summary-text_label-5 notosansthai-normal-black-20px">
-                  มูลค่าสินค้าและค่าขนส่งก่อนภาษี /Price Before Vat
+                  class="price-text notosansthai-normal-black-20px">
+                  ค่าขนส่ง
                 </div>
                 <div class="payment-summary-xxxx-2 payment-summary-valign-text-middle notosansthai-bold-black-20px">
                   xx.xx บาท</div>
               </div>
               <div class="payment-summary-frame">
                 <div
-                  class="payment-summary-total-vat payment-summary-valign-text-middle notosansthai-normal-black-20px">
-                  ภาษีมูลค่าเพิ่ม /Total Vat
+                  class="price-text notosansthai-normal-black-20px">
+                  มูลค่าสินค้าและค่าขนส่งก่อนภาษี
+                </div>
+                <div class="payment-summary-xxxx-2 payment-summary-valign-text-middle notosansthai-bold-black-20px">
+                  xx.xx บาท</div>
+              </div>
+              <div class="payment-summary-frame">
+                <div
+                  class="price-text notosansthai-normal-black-20px">
+                  ภาษีมูลค่าเพิ่ม
+                </div>
+                <div class="payment-summary-xxxx-2 payment-summary-valign-text-middle notosansthai-bold-black-20px">
+                  xx.xx บาท</div>
+              </div>
+              <div class="payment-summary-frame">
+                <div
+                  class="price-text notosansthai-normal-black-20px">
+                  ยอดสุทธิ 
                 </div>
                 <div class="payment-summary-xxxx-2 payment-summary-valign-text-middle notosansthai-bold-black-20px">
                   xx.xx บาท</div>
@@ -393,13 +427,23 @@
               <div class="payment-summary-frame">
                 <div
                   class="payment-summary-grand-total payment-summary-valign-text-middle notosansthai-bold-black-20px">
-                  ยอดสุทธิ /Grand Total</div>
-                <div class="payment-summary-xxxx-2 payment-summary-valign-text-middle notosansthai-bold-black-20px">
+                  </div>
+                <div class="payment-summary-xxxx-2 payment-summary-valign-text-middle notosansthai-bold-black-24px">
                   xx.xx บาท</div>
               </div>
             </div>
           </div>
-          <div class="payment-summary-frame-38477">
+
+          <div class="frame-38379" style="margin-bottom: 50px;">
+            <a onclick="showPopup()" class="no-text-underline pointer">
+              <article class="button-4 button-5-copy">
+                <div class="text_label-3-2 valign-text-middle notosansthai-normal-black-20px text-bold color-white">
+                  ชำระเงิน</div>
+              </article>
+            </a>
+          </div>
+
+          <!-- <div class="payment-summary-frame-38477">
             <a href="javascript:SubmitForm('form6')">
               <div class="request-detail-school-button-2 request-detail-school-button-6">
                 <img class="request-detail-school-icon-btn-left" src="img/icon-btn-left-1.svg" alt="icon-btn-left" />
@@ -415,11 +459,8 @@
             </a>
 
 
-            <!-- <div class="payment-summary-button-1 payment-summary-button-4">
-              <img class="payment-summary-icon-btn-left" src="img/icon-btn-left-20.svg" alt="icon-btn-left" />
-              <div class="payment-summary-text-sm">ดาวน์โหลดเอกสาร</div>
-            </div> -->
-          </div>
+
+          </div> -->
         </div>
 
 
@@ -705,9 +746,66 @@
       }
     }
 
+    function changePayType(param) {
+      // upload-file
+      if (param == '2') {
+        document.getElementById('upload-file').style.display = 'flex';
+      } else {
+        selectedFiles2 = [];
+        document.getElementById('upload-file').style.display = 'none';
+      }
+      // const emptyMessage = document.getElementById('empty-message2');
+      // pay-type
+    }
+
+    let selectedFiles2 = []; // เก็บรายการไฟล์
+
+    document.getElementById('file-upload2').addEventListener('change', function (event) {
+      const files = event.target.files;
+      const fileItemsContainer = document.getElementById('file-items2');
+      const emptyMessage = document.getElementById('empty-message2');
+
+      for (let i = 0; i < files.length; i++) {
+        let file = files[i];
+
+        // ตรวจสอบขนาดไฟล์ไม่เกิน 1MB
+        if (file.size > 1024 * 1024) {
+          alert("ไฟล์ " + file.name + " มีขนาดเกิน 1MB และจะไม่ถูกเพิ่ม");
+          continue;
+        }
+
+        // ตรวจสอบว่าไฟล์ถูกเพิ่มไปแล้วหรือยัง
+        if (!selectedFiles2.some(f => f.name === file.name)) {
+          selectedFiles2.push(file);
+
+          // สร้าง element แสดงไฟล์
+          let fileItem = document.createElement('div');
+          fileItem.className = "file-item";
+          fileItem.innerHTML = `
+            <span style="overflow: auto; text-overflow: ellipsis;">${file.name}</span>
+            <span class="remove-file" onclick="removeFile2('${file.name}')">❌</span>
+        `;
+
+          fileItemsContainer.appendChild(fileItem);
+        }
+      }
+
+      updateEmptyMessage2();
+
+      // รีเซ็ต input file เพื่อให้สามารถอัปโหลดไฟล์เดิมได้อีก
+      this.value = "";
+    });
+
+    function updateEmptyMessage2() {
+      const emptyMessage = document.getElementById('empty-message2');
+      if (selectedFiles2.length === 0) {
+        emptyMessage.style.display = "block";
+      } else {
+        emptyMessage.style.display = "none";
+      }
+    }
 
     let isShow = false;
-
 
     if (!HTMLFormElement.prototype.reportValidity) {
       HTMLFormElement.prototype.reportValidity = function () {
