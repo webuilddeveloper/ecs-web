@@ -1041,31 +1041,27 @@
         fileItem.className = "file-item";
         fileItem.innerHTML = `
       <span>${file.name}</span>
-      <span class="remove-file" onclick="removeFile3('${file.name}')">❌</span>
-  `;
+      <span class="remove-file" onclick="removeFile3('${file.name}')">❌</span>`;
         fileItemsContainer.appendChild(fileItem);
       });
 
       updateEmptyMessage3();
     }
-<<<<<<< HEAD
-  }
 
-  function goBack() {
-    history.back();
-  }
-</script>
-=======
-
-  function updateEmptyMessage3() {
-    const emptyMessage = document.getElementById('empty-message3');
-    if (selectedFiles3.length === 0) {
-      emptyMessage.style.display = "block";
-    } else {
-      emptyMessage.style.display = "none";
+    function updateEmptyMessage3() {
+      const emptyMessage = document.getElementById('empty-message3');
+      if (selectedFiles3.length === 0) {
+        emptyMessage.style.display = "block";
+      } else {
+        emptyMessage.style.display = "none";
+      }
     }
-  }
-</script>
+
+
+    function goBack() {
+      history.back();
+    }
+  </script>
 </body>
 
 </html>
