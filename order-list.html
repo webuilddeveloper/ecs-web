@@ -317,13 +317,13 @@
                 <h1 class="purchase-order-text-6 margin-0-auto" style="align-self: center;">ใบขอสั่งซื้อของฉัน</h1>
             </div> -->
             <div class="menu-header" style="padding-top: 0px !important;">
-                <a href="./home-school.html" class="position-absolute ">
+                <a onclick="goBack()" class="position-absolute ">
                   <div class="purchase-order-button-3 purchase-order-button-8">
                     <img class="purchase-order-icon-back" src="img/icon-back-3.svg" alt="icon back" />
                     <div class="purchase-order-text_label valign-text-middle purchase-order-text_label-5 display-none-m">ย้อนกลับ</div>
                   </div>
                 </a>
-                <h1 class="purchase-order-text-6 margin-0-auto" style="align-self: center;">ใบขอสั่งซื้อของฉัน</h1>
+                <h1 class="purchase-order-text-6 margin-0-auto" style="align-self: center;">รายการคำสั่งซื้อ</h1>
               </div>
 
             <div class="table-ecs">
@@ -343,7 +343,7 @@
                                             <div class="label-input font-15">สถานะคำสั่งซื้อ</div>
                                             </div>
                                             <div class="container-dropdown-filter-purc_od">
-                                                <select id="purchase-order-status" class="custom-dropdown-filter notosansthai-normal-dove-gray-17px" onchange="changeStatusOrder(event.target.value)">
+                                                <select id="order-status" class="custom-dropdown-filter notosansthai-normal-dove-gray-17px" onchange="changeStatusOrder(event.target.value)">
                                                     <option value="1" >ทั้งหมด</option>
                                                     <option value="2" >รอการตรวจสอบ</option>
                                                     <option value="3" >รอการแก้ไข</option>
@@ -385,67 +385,64 @@
                                                 <th class="order-approval-list-table-header-2 notosansthai-semi-bold-vulcan-15px th-154-px">
                                                 วันที่สร้างใบขอสั่งซื้อ
                                                 </th>
-                                                <th class="order-approval-list-table-header-2 notosansthai-semi-bold-vulcan-15px th-443-px">รายการสินค้า
+                                                <th class="order-approval-list-table-header-2 notosansthai-semi-bold-vulcan-15px th-610-px">รายการสินค้า
                                                 </th>
                                                 <th class="order-approval-list-table-header-2 notosansthai-semi-bold-vulcan-15px th-154-px">ยอดสุทธิ (บาท)
                                                 </th>
-                                                <th class="order-approval-list-table-header-2 notosansthai-semi-bold-vulcan-15px th-164-px">สถานะ
+                                                <th class="order-approval-list-table-header-2 notosansthai-semi-bold-vulcan-15px th-210-px">สถานะ
                                                 </th>
                                             </tr>
                                         </thead>
                                         <tbody>
-                                            <tr onclick="window.location='./purchase-order-details.html?status=1'">
+                                            <tr onclick="window.location='./order-school-details.html?status=1'">
                                                 <td class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px text-al-center">1</td>
                                                 <td class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px text-al-center">
                                                 PR-6612-0683</td>
                                                 <td class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px text-al-center">22 ต.ค. 2567
                                                 </td>
-                                                <td class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px title-column-table">
+                                                <td class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px title-column-table ai-start">
                                                 <div class="card-status-popo-1">
                                                     ปพ.1:ป
                                                 </div>
                                                 <div class="card-status-approve">
                                                     อนุมัติ
                                                 </div>
-                                                <div class="card-status-online">
-                                                    ออนไลน์
-                                                </div>
-                                                ปพ.1:ป ระเบียนแสดงผลการเรียน ระดับ ประถมฯ (ปรับปรุง 2555) (ฉบับใช้กับออนไลน์)</td>
+                                                ปพ.1:ป ระเบียนแสดงผลการเรียน ระดับ ประถมฯ (ปรับปรุง 2555) (ฉบับใช้กับคอม) <br>ชุดที่ 00001 เลขที่แรก 011751 เลขที่สุดท้าย 011800</td>
                                                 <td class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px text-al-center">1,000</td>
                                                 
                                                 <td class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px text-al-center">
                                                     <div class="status status-3 ">
                                                         <img class="icon-2" src="img/icon-190.svg" alt="icon" />
                                                         <div class="text valign-text-middle text-3 font-13">
-                                                            รอรับการอนุมัติ
+                                                            รอรับการตรวจสอบ
                                                         </div>
                                                     </div>
                                                 </td>
                                             </tr>
-                                            <tr onclick="window.location='./purchase-order-details.html?status=4'">
+                                            <tr onclick="window.location='./order-school-details.html?status=5'">
                                                 <td class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px text-al-center al-center">2</td>
                                                 <td class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px text-al-center al-center">
                                                 PR-6613-0684</td>
                                                 <td class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px text-al-center al-center">22 ต.ค. 2567
                                                 </td>
-                                                <td class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px title-column-table list-column al-start">
-                                                    <div class="list-product-in-column">
+                                                <td class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px title-column-table list-column ai-start">
+                                                    <div class="list-product-in-column ai-start">
                                                     <div class="card-status-popo-1">
                                                         ปพ.1:ป
                                                     </div>
                                                     <div class="card-status-approve">
                                                         อนุมัติ
                                                     </div>
-                                                    ปพ.1:ป ระเบียนแสดงผลการเรียน ระดับ ประถมฯ (ปรับปรุง 2555) (ฉบับใช้กับออนไลน์)
+                                                    ปพ.1:ป ระเบียนแสดงผลการเรียน ระดับ ประถมฯ (ปรับปรุง 2555) (ฉบับใช้กับคอม) <br>ชุดที่ 00001 เลขที่แรก 011751 เลขที่สุดท้าย 011800
                                                     </div>
-                                                    <div class="list-product-in-column">
+                                                    <div class="list-product-in-column ai-start">
                                                     <div class="card-status-popo-1-bo">
                                                         ปพ.1:บ
                                                     </div>
                                                     <div class="card-status-approve">
                                                         อนุมัติ
                                                     </div>
-                                                    ปพ.1:ป ระเบียนแสดงผลการเรียน ระดับ ประถมฯ (ปรับปรุง 2555) (ฉบับใช้กับออนไลน์)
+                                                    ปพ.1:บ  ระเบียนแสดงผลการเรียน ระดับ ม.ต้น (ปรับปรุง 2555) (ฉบับใช้กับคอม) <br>ชุดที่ 00001 เลขที่แรก 011751 เลขที่สุดท้าย 011800
                                                     </div>
                                                 </td>
                                                 <td class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px text-al-center">1,000</td>
@@ -454,84 +451,84 @@
                                                     <div class="status status-3 ">
                                                         <img class="icon-2" src="img/icon-190.svg" alt="icon" />
                                                         <div class="text valign-text-middle text-3 font-13">
-                                                            ที่ต้องชำระเงิน
+                                                            ยกเลิก/คืนเงิน/คืนสินค้า
                                                         </div>
                                                     </div>
                                                 </td>
                                             </tr>
-                                            <tr onclick="window.location='./purchase-order-details.html?status=4'">
+                                            <tr onclick="window.location='./order-school-details.html?status=2'">
                                                 <td class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px text-al-center al-center">3</td>
                                                 <td class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px text-al-center al-center">
                                                 PR-6614-0685</td>
                                                 <td class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px text-al-center al-center">22 ต.ค. 2567
                                                 </td>
-                                                <td class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px title-column-table">
+                                                <td class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px title-column-table ai-start">
                                                 <div class="card-status-popo-1">
                                                     ปพ.1:ป
                                                 </div>
                                                 <div class="card-status-approve">
                                                     อนุมัติ
                                                 </div>
-                                                ปพ.1:ป ระเบียนแสดงผลการเรียน ระดับ ประถมฯ (ปรับปรุง 2555) (ฉบับใช้กับออนไลน์)
+                                                ปพ.1:บ  ระเบียนแสดงผลการเรียน ระดับ ม.ต้น (ปรับปรุง 2555) (ฉบับใช้กับคอม) <br>ชุดที่ 00001 เลขที่แรก 011751 เลขที่สุดท้าย 011800 <br>ชุดที่ 00001 เลขที่แรก 011751 เลขที่สุดท้าย 011800</td>
+                                                <td class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px text-al-center">1,000</td>
+                                                
+                                                <td class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px text-al-center">
+                                                    <div class="status-3 status-3-1">
+                                                        <img class="icon-2" src="img/icon-199.svg" alt="icon" />
+                                                        <div class="text valign-text-middle text-3-1">
+                                                            รอการแก้ไข
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr onclick="window.location='./order-school-details.html?status=3'">
+                                                <td class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px text-al-center al-center">3</td>
+                                                <td class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px text-al-center al-center">
+                                                PR-6614-0685</td>
+                                                <td class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px text-al-center al-center">22 ต.ค. 2567
+                                                </td>
+                                                <td class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px title-column-table ai-start">
+                                                    <div class="card-status-popo-1">
+                                                        ปพ.1:ป
+                                                    </div>
+                                                    <div class="card-status-approve">
+                                                        อนุมัติ
+                                                    </div>
+                                                    ปพ.1:บ  ระเบียนแสดงผลการเรียน ระดับ ม.ต้น (ปรับปรุง 2555) (ฉบับใช้กับคอม) <br>ชุดที่ 00001 เลขที่แรก 011751 เลขที่สุดท้าย 011800</td>
                                                 <td class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px text-al-center">1,000</td>
                                                 
                                                 <td class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px text-al-center">
                                                     <div class="status status-3 ">
                                                         <img class="icon-2" src="img/icon-190.svg" alt="icon" />
                                                         <div class="text valign-text-middle text-3 font-13">
-                                                            รอการชำระเงิน
+                                                            ที่ต้องได้รับ
                                                         </div>
                                                     </div>
                                                 </td>
                                             </tr>
-                                            <tr onclick="window.location='./purchase-order-details.html?status=2'">
+                                            <tr onclick="window.location='./order-school-details.html?status=4'">
                                                 <td class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px text-al-center al-center">3</td>
                                                 <td class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px text-al-center al-center">
                                                 PR-6614-0685</td>
                                                 <td class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px text-al-center al-center">22 ต.ค. 2567
                                                 </td>
-                                                <td class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px title-column-table">
+                                                <td class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px title-column-table ai-start">
                                                 <div class="card-status-popo-1">
                                                     ปพ.1:ป
                                                 </div>
                                                 <div class="card-status-approve">
                                                     อนุมัติ
                                                 </div>
-                                                ปพ.1:ป ระเบียนแสดงผลการเรียน ระดับ ประถมฯ (ปรับปรุง 2555) (ฉบับใช้กับออนไลน์)
+                                                    ปพ.1:บ  ระเบียนแสดงผลการเรียน ระดับ ม.ต้น (ปรับปรุง 2555) (ฉบับใช้กับคอม) <br>ชุดที่ 00001 เลขที่แรก 011751 เลขที่สุดท้าย 011800</td>
                                                 <td class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px text-al-center">1,000</td>
                                                 
                                                 <td class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px text-al-center">
-                                                    <div class="status-3 status-1 ">
-                                                        <img class="icon-2" src="img/icon-194.svg" alt="icon" />
-                                                        <div class="text valign-text-middle text-2 font-13">
-                                                            ไม่ได้รับการอนุมัติ
-                                                        </div>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                            <tr onclick="window.location='./purchase-order-details.html?status=3'">
-                                                <td class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px text-al-center al-center">3</td>
-                                                <td class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px text-al-center al-center">
-                                                PR-6614-0685</td>
-                                                <td class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px text-al-center al-center">22 ต.ค. 2567
-                                                </td>
-                                                <td class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px title-column-table">
-                                                <div class="card-status-popo-1">
-                                                    ปพ.1:ป
-                                                </div>
-                                                <div class="card-status-approve">
-                                                    อนุมัติ
-                                                </div>
-                                                ปพ.1:ป ระเบียนแสดงผลการเรียน ระดับ ประถมฯ (ปรับปรุง 2555) (ฉบับใช้กับออนไลน์)
-                                                <td class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px text-al-center">1,000</td>
-                                                
-                                                <td class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px text-al-center">
-                                                    <a class="status-3 status-2">
+                                                    <div class="status-3 status-2">
                                                         <img class="icon-2" src="img/icon-64.svg" alt="icon" />
-                                                        <div class="text valign-text-middle text-3-1 font-13">
-                                                            ได้รับการอนุมัติ
+                                                        <div class="text valign-text-middle text-2-2">
+                                                            จัดส่งสำเร็จ
                                                         </div>
-                                                    </a>
+                                                    </div>
                                                 </td>
                                             </tr>
                                         </tbody>
@@ -739,9 +736,8 @@
 /////////////////////////////////////////////////////////////////////////////////
 
     const params = new URLSearchParams(window.location.search);
-    const statusPur = params.get("status");
-    console.log(statusPur)
-    document.getElementById("purchase-order-status").value = statusPur;
+    const statusOrder = params.get("status");
+    document.getElementById("order-status").value = statusOrder;
 
     let isSubMenuHeader = false;
 
@@ -803,6 +799,10 @@
 
     // เรียกใช้ฟังก์ชันเมื่อโหลดหน้าเว็บ
     document.addEventListener("DOMContentLoaded", updateNotificationBadge);
+
+    function goBack() {
+        history.back();
+    }
   </script>
 
 

@@ -15994,7 +15994,7 @@ input:focus {
   display: flex;
   flex: 0 0 auto;
   flex-direction: column;
-  gap: 24px;
+  gap: 16px;
   overflow: hidden;
   padding: 25px 24px;
   position: relative;
@@ -42526,6 +42526,7 @@ hr {
   width: fit-content;
   justify-content: center;
   min-width: 47px;
+  line-height: 1.1;
 }
 
 .card-status-popo-1-bo {
@@ -42540,6 +42541,7 @@ hr {
   width: fit-content;
   justify-content: center;
   min-width: 47px;
+  line-height: 1.1;
 }
 
 .card-status-popo-1-po {
@@ -42554,6 +42556,7 @@ hr {
   width: fit-content;
   justify-content: center;
   min-width: 47px;
+  line-height: 1.1;
 }
 
 .card-status-popo-3-po {
@@ -42568,6 +42571,7 @@ hr {
   width: fit-content;
   justify-content: center;
   min-width: 47px;
+  line-height: 1.1;
 }
 
 .card-status-approve {
@@ -42582,6 +42586,7 @@ hr {
   width: fit-content;
   justify-content: center;
   min-width: 47px;
+  line-height: 1.1;
 }
 
 .card-status-online {
@@ -42596,11 +42601,14 @@ hr {
   width: fit-content;
   justify-content: center;
   min-width: 47px;
+  line-height: 1.1;
 }
 
 .title-column-table {
   display: flex;
   align-items: center;
+  line-height: 1.5;
+  text-align: left;
 }
 
 .al-start {
