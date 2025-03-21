@@ -16686,7 +16686,8 @@ input:focus {
 .popup .frame-1041 {
   cursor: pointer;
   height: 31px;
-  left: 747px;
+  /* left: 747px; */
+  right: 5px;
   position: absolute;
   top: 24px;
   width: 31px;
@@ -35051,7 +35052,8 @@ body.no-scroll {
   .popup .frame-1041 {
     cursor: pointer;
     height: 31px;
-    left: 500px;
+    /* left: 500px; */
+    right: 5px;
     position: absolute;
     top: 24px;
     width: 31px;
@@ -38935,7 +38937,8 @@ body.no-scroll {
   .popup .frame-1041 {
     cursor: pointer;
     height: 31px;
-    left: 328px;
+    /* left: 328px; */
+    right: 5px;
     position: absolute;
     top: 12px;
     width: 31px;
@@ -41847,6 +41850,11 @@ body.no-scroll {
     font-size: var(--font-size-14);
     padding: 0px;
   }
+
+  .button-4-2 {
+    width: -webkit-fill-available !important;
+    text-wrap: nowrap;
+  }
 }
 
 /* media */
@@ -43078,6 +43086,7 @@ hr {
   border-radius: 8px;
   padding: 8px 16px;
   cursor: pointer;
+  align-items: center;
 }
 
 .list-product-in-column {
@@ -43535,4 +43544,15 @@ tr:hover {
   top: 2.2rem;
   bottom: -0.74rem;
   z-index: 1;
+}
+
+.button-4-2 {
+  background-color: var(--main);
+  justify-content: center;
+  border-radius: 10px;
+  display: flex;
+  gap: 8px;
+  padding: 8px 24px;
+  width: 223px;
+  /* width: 245px; */
 }
