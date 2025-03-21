@@ -26962,7 +26962,7 @@ body.no-scroll {
     background-color: #fff;
     border-radius: 10px;
     width: 552px;
-    max-width: 90%;
+    /* max-width: 90%; */
     padding: 20px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     position: relative;
@@ -29811,7 +29811,8 @@ body.no-scroll {
   .payment-summary-frame-1041 {
     cursor: pointer;
     height: 31px;
-    left: 505px;
+    /* left: 505px; */
+    right: 5px;
     position: absolute;
     top: 10px;
     width: 31px;
@@ -29951,7 +29952,7 @@ body.no-scroll {
     min-height: 474px;
     padding: 42px 55px;
     position: absolute;
-    top: 294px;
+    top: 25%;
     width: 474px;
   }
 
@@ -30648,7 +30649,7 @@ body.no-scroll {
     background-color: #fff;
     border-radius: 10px;
     width: 552px;
-    max-width: 90%;
+    /* max-width: 90%; */
     padding: 20px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     position: relative;
@@ -34744,7 +34745,7 @@ body.no-scroll {
   .payment-summary-frame-container {
     background-color: #fff;
     border-radius: 10px;
-    max-width: 90%;
+    /* max-width: 90%; */
     padding: 20px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     position: relative;
@@ -34877,7 +34878,8 @@ body.no-scroll {
   .payment-summary-frame-1041 {
     cursor: pointer;
     height: 31px;
-    left: 505px;
+    /* left: 505px; */
+    right: 5px;
     position: absolute;
     top: 10px;
     width: 31px;
@@ -34935,7 +34937,7 @@ body.no-scroll {
     gap: 41px;
     padding: 50px 0;
     position: absolute;
-    top: 294px;
+    top: 30%;
     left: 50%;
     transform: translate(-50%, 0);
   }
@@ -35619,7 +35621,8 @@ body.no-scroll {
   .payment-summary-frame-1041 {
     cursor: pointer;
     height: 31px;
-    left: 305px;
+    /* left: 305px; */
+    right: 5px;
     position: absolute;
     top: 10px;
     width: 31px;
@@ -40496,7 +40499,8 @@ body.no-scroll {
   .payment-summary-frame-1041 {
     cursor: pointer;
     height: 31px;
-    left: 505px;
+    /* left: 505px; */
+    right: 5px;
     position: absolute;
     top: 10px;
     width: 31px;
@@ -40633,7 +40637,7 @@ body.no-scroll {
     gap: 41px;
     padding: 50px 0;
     position: absolute;
-    top: 294px;
+    top: 30%;
     left: 50%;
     transform: translate(-50%, 0);
   }
