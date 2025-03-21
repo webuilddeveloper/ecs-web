@@ -12,6 +12,8 @@
   <meta name="twitter:card" content="photo" />
   <link rel="stylesheet" type="text/css" href="css/styles.css" />
   <link rel="stylesheet" type="text/css" href="css/styles-aom.css" />
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css'>
+  <link rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700'>
   <!-- <link rel="stylesheet" type="text/css" href="css/home-school-styles.css" />
   <link rel="stylesheet" type="text/css" href="css/home-school-styleguide.css" />
   <link rel="stylesheet" type="text/css" href="css/home-school-globals.css" /> -->
@@ -23,284 +25,288 @@
   <!-- <div class="desktop"> -->
     <div class="header-ecs">
         <div class="content-header">
-        <div class="hd-left">
+          <div class="hd-left">
             <a href="./login.html">
-            <img class="logo-ecs" src="img/logo------1.png" alt="logo ecs" />
+              <img class="logo-ecs" src="img/logo------1.png" alt="logo ecs" />
             </a>
             <div class="navbar-ecs header-menu">
-            <div class="navbar-link-text-ecs">
+              <div class="navbar-link-text-ecs">
                 <div class="title-menu-header pointer" onclick="showMenuNav1()">
-                ใบขอสั่งซื้อ
-                <img class="icon-down-header" src="img/arrow-down-white.svg" alt="logo ecs" />
+                  ใบขอสั่งซื้อ
+                  <img class="icon-down-header" src="img/arrow-down-white.svg" alt="logo ecs" />
                 </div>
                 <div class="submenu-theme" id="menu-header-1">
-                <a href="./purchase-order-school.html">
+                  <a href="./purchase-order-school.html">
                     ออกใบขอสั่งซื้อ
-                </a>
-                <hr>
-                <a href="./draft-school.html">
+                  </a>
+                  <hr>
+                  <a href="./purchase-order-draft.html">
                     ร่างใบขอสั่งซื้อ
-                </a>
-                <hr>
-                <div class="sub-menu-card">
+                  </a>
+                  <hr>
+                  <div class="sub-menu-card">
                     <div class="title-menu-sub-root pointer" onclick="showMenuNav1_1()">
-                    รายการใบขอสั่งซื้อ
-                    <img class="icon-menu-sub-root" src="img/arrow-right-white.svg" alt="logo ecs" />
+                      รายการใบขอสั่งซื้อ
+                      <img class="icon-menu-sub-root" src="img/arrow-right-white.svg" alt="logo ecs" />
                     </div>
                     <div class="submenu-theme-2" id="menu-header-1-1">
-                    <a href="./purchase-order-school.html">
+                      <a href="./purchase-order.html?status=1">
                         ทั้งหมด
-                    </a>
-                    <hr>
-                    <a href="./waiting-approve-school.html">
+                      </a>
+                      <hr>
+                      <a href="./purchase-order.html?status=2">
                         รอรับการอนุมัติ
-                    </a>
-                    <hr>
-                    <a href="./purchase-order-school.html">
+                      </a>
+                      <hr>
+                      <a href="./purchase-order.html?status=3">
                         ไม่ได้รับการอนุมัติ
-                    </a>
-                    <hr>
-                    <a href="./approve-school.html">
+                      </a>
+                      <hr>
+                      <a href="./purchase-order.html?status=4">
                         ได้รับการอนุมัติ
-                    </a>
-                    <hr>
-                    <a href="./paid_school.html">
+                      </a>
+                      <hr>
+                      <a href="./purchase-order.html?status=5">
                         รอการชำระเงิน
-                    </a>
-                    <hr>
-                    <a href="./cancel-school.html">
+                      </a>
+                      <hr>
+                      <a href="./purchase-order.html?status=6">
                         รายการที่ถูกยกเลิก
-                    </a>
+                      </a>
                     </div>
+                  </div>
                 </div>
-                </div>
-            </div>
-            <div class="navbar-link-text-ecs">
+              </div>
+              <div class="navbar-link-text-ecs">
                 <div class="title-menu-header pointer" onclick="showMenuNav2()">
-                คำสั่งซื้อ
-                <img class="icon-down-header" src="img/arrow-down-white.svg" alt="logo ecs" />
+                  คำสั่งซื้อ
+                  <img class="icon-down-header" src="img/arrow-down-white.svg" alt="logo ecs" />
                 </div>
                 <div class="submenu-theme" id="menu-header-2">
-                <a href="./purchase-order-school.html">
+                  <a href="./order-list.html?status=0">
                     ทั้งหมด
-                </a>
-                <hr>
-                <a href="./purchase-order-school.html">
+                  </a>
+                  <hr>
+                  <a href="./order-list.html?status=1">
                     รอการตรวจสอบ
-                </a>
-                <hr>
-                <a href="./purchase-order-school.html">
+                  </a>
+                  <hr>
+                  <a href="./order-list.html?status=2">
                     รอการแก้ไข
-                </a>
-                <hr>
-                <a href="./purchase-order-school.html">
+                  </a>
+                  <hr>
+                  <a href="./order-list.html?status=3">
                     ที่ต้องได้รับ
-                </a>
-                <hr>
-                <a href="./purchase-order-school.html">
+                  </a>
+                  <hr>
+                  <a href="./order-list.html?status=4">
                     จัดส่งสำเร็จ
-                </a>
-                <hr>
-                <a href="./purchase-order-school.html">
+                  </a>
+                  <hr>
+                  <a href="./order-list.html?status=5">
                     ยกเลิก/คืนเงิน/คืนสินค้า
-                </a>
+                  </a>
                 </div>
-            </div>
-            <div class="navbar-link-text-ecs">
+              </div>
+              <div class="navbar-link-text-ecs">
                 <div class="title-menu-header pointer" onclick="showMenuNav3()">
-                เลข ปพ.
-                <img class="icon-down-header" src="img/arrow-down-white.svg" alt="logo ecs" />
+                  เลข ปพ.
+                  <img class="icon-down-header" src="img/arrow-down-white.svg" alt="logo ecs" />
                 </div>
                 <div class="submenu-theme" id="menu-header-3">
-                <a href="./purchase-order-school.html">
+                  <a href="./print_document_information.html">
                     พิมพ์ใบ ปพ.
-                </a>
-                <hr>
-                <a href="./purchase-order-school.html">
+                  </a>
+                  <hr>
+                  <a href="./print_document_history.html">
                     ประวัติการพิมพ์
-                </a>
-                <hr>
-                <a href="./order-cancel.html">
+                  </a>
+                  <hr>
+                  <a href="./order-cancel.html">
                     ยกเลิกเลข ปพ.
-                </a>
+                  </a>
                 </div>
-            </div>
-            <div class="navbar-link-text-ecs">
+              </div>
+              <div class="navbar-link-text-ecs">
                 <div class="title-menu-header pointer" onclick="showMenuNav4()">
-                รายงาน.
-                <img class="icon-down-header" src="img/arrow-down-white.svg" alt="logo ecs" />
+                  รายงาน.
+                  <img class="icon-down-header" src="img/arrow-down-white.svg" alt="logo ecs" />
                 </div>
                 <div class="submenu-theme" id="menu-header-4">
-                <a href="./purchase-order-school.html">
+                  <a href="./">
                     รายงานการพิมพ์ใบ ปพ.
-                </a>
-                <hr>
-                <a href="./purchase-order-school.html">
+                  </a>
+                  <hr>
+                  <a href="./">
                     รายงานการใช้ตัวเลข
-                </a>
-                <hr>
-                <a href="./purchase-order-school.html">
+                  </a>
+                  <hr>
+                  <a href="./">
                     รายงานการสั่งซื้อ
-                </a>
+                  </a>
                 </div>
+              </div>
             </div>
-            </div>
-        </div>
-
-        <div class="header-action-ecs">
+          </div>
+    
+          <div class="header-action-ecs">
             <img class="group site-navbar" src="img/Icon-Service.png" alt="Service" onclick="showMenuNav()" />
             <div class="notification-icon">
-            <img class="group" src="img/group@2x.png" alt="Group" onclick="toggleNotificationPanel()" />
-            <span id="notification-badge" class="notification-badge"></span> <!-- จุดแดง -->
+              <img class="group" src="img/group@2x.png" alt="Group" onclick="toggleNotificationPanel()" />
+              <span id="notification-badge" class="notification-badge"></span> <!-- จุดแดง -->
             </div>
-
+    
             <div id="notification-panel" class="notification-panel hidden">
-            <ul class="notification-list">
+              <ul class="notification-list">
                 <li class="notification-item unread">
-                <span class="status-indicator"></span>
-                <div class="notification-content">
+                  <span class="status-indicator"></span>
+                  <div class="notification-content">
                     <p class="notosansthai-normal-vulcan-15px">
-                    <strong class="notosansthai-semi-bold-vulcan-15px">หมายเลขคำสั่งซื้อ:</strong> 12345
+                      <strong class="notosansthai-semi-bold-vulcan-15px">หมายเลขคำสั่งซื้อ:</strong> 12345
                     </p>
                     <p class="notosansthai-normal-vulcan-15px">
-                    <strong class="notosansthai-semi-bold-vulcan-15px">สถานะ:</strong> รอดำเนินการ
+                      <strong class="notosansthai-semi-bold-vulcan-15px">สถานะ:</strong> รอดำเนินการ
                     </p>
-                </div>
+                  </div>
                 </li>
                 <li class="notification-item">
-                <span class="status-indicator read"></span>
-                <div class="notification-content">
+                  <span class="status-indicator read"></span>
+                  <div class="notification-content">
                     <p class="notosansthai-normal-vulcan-15px">
-                    <strong class="notosansthai-semi-bold-vulcan-15px">หมายเลขคำสั่งซื้อ:</strong> 67890
+                      <strong class="notosansthai-semi-bold-vulcan-15px">หมายเลขคำสั่งซื้อ:</strong> 67890
                     </p>
                     <p class="notosansthai-normal-vulcan-15px">
-                    <strong class="notosansthai-semi-bold-vulcan-15px">สถานะ:</strong> สำเร็จ
+                      <strong class="notosansthai-semi-bold-vulcan-15px">สถานะ:</strong> สำเร็จ
                     </p>
-                </div>
+                  </div>
                 </li>
-            </ul>
+              </ul>
             </div>
-
-
-
+    
+    
+    
             <div class="title-menu-header">
-            <a href="./profile-school.html" onclick="showMenuNav3()">
+              <a href="./profile-school.html">
                 <img class="vector" src="img/vector-2.svg" alt="Vector" />
-            </a>
-            <a href="./profile-school.html" class="title-logout pointer">
+              </a>
+              <a href="./profile-school.html" class="title-logout pointer">
                 ออกจากระบบ
-            </a>
+              </a>
             </div>
-        </div>
+          </div>
         </div>
     </div>
-
+    
     <div id="subMenuHeader" class="sub-menu-header" style="display: none;">
         <div class="title-menu-header" onclick="showMenuNav1()">
-        ใบขอสั่งซื้อ
-        <img class="icon-down-header" src="img/arrow-down-white.svg" alt="logo ecs" />
+          ใบขอสั่งซื้อ
+          <img class="icon-down-header" src="img/arrow-down-white.svg" alt="logo ecs" />
         </div>
         <div class="sub-menu-header-1-rps" id="menu-header-1-rps">
-        <a class="title-menu-header" href="./purchase-order-school.html">
+          <a class="title-menu-header" href="./purchase-order-school.html">
             ออกใบขอสั่งซื้อ
-        </a>
-        <hr>
-        <a class="title-menu-header" href="./purchase-order-school.html">
-            ออกใบขอสั่งซื้อ
-        </a>
-        <hr>
-        <div class="title-menu-header" onclick="showMenuNav1_1()">
+          </a>
+          <hr>
+          <a class="title-menu-header" href="./purchase-order-draft.html">
+            ร่างใบขอสั่งซื้อ
+          </a>
+          <hr>
+          <div class="title-menu-header" onclick="showMenuNav1_1()">
             รายการใบขอสั่งซื้อ
             <img class="icon-down-header" src="img/arrow-down-white.svg" alt="logo ecs" />
-        </div>
-        <div class="sub-menu-header-1-1-rps" id="menu-header-1-1-rps">
-            <a class="title-menu-header" href="./purchase-order-school.html">
-            ทั้งหมด
+          </div>
+          <div class="sub-menu-header-1-1-rps" id="menu-header-1-1-rps">
+            <a class="title-menu-header" href="./purchase-order.html?status=1">
+              ทั้งหมด
             </a>
             <hr>
-            <a class="title-menu-header" href="./purchase-order-school.html">
-            รอรับการอนุมัติ
+            <a class="title-menu-header" href="./purchase-order.html?status=2">
+              รอรับการอนุมัติ
             </a>
             <hr>
-            <a class="title-menu-header" href="./purchase-order-school.html">
-            ได้รับการอนุมัติ
+            <a class="title-menu-header" href="./purchase-order.html?status=3">
+              ไม่ได้รับการอนุมัติ
             </a>
             <hr>
-            <a class="title-menu-header" href="./purchase-order-school.html">
-            รอการชำระเงิน
+            <a class="title-menu-header" href="./purchase-order.html?status=4">
+              ได้รับการอนุมัติ
             </a>
             <hr>
-            <a class="title-menu-header" href="./purchase-order-school.html">
-            รายการที่ถูกยกเลิก
+            <a class="title-menu-header" href="./purchase-order.html?status=5">
+              รอการชำระเงิน
             </a>
-        </div>
+            <hr>
+            <a class="title-menu-header" href="./purchase-order.html?status=6">
+              รายการที่ถูกยกเลิก
+            </a>
+          </div>
         </div>
         <hr />
         <div class="title-menu-header" onclick="showMenuNav2()">
-        คำสั่งซื้อ
-        <img class="icon-down-header" src="img/arrow-down-white.svg" alt="logo ecs" />
+          คำสั่งซื้อ
+          <img class="icon-down-header" src="img/arrow-down-white.svg" alt="logo ecs" />
         </div>
         <div class="sub-menu-header-2-rps" id="menu-header-2-rps">
-        <a class="title-menu-header" href="./purchase-order-school.html">
+          <a class="title-menu-header" href="./order-list.html?status=0">
             ทั้งหมด
-        </a>
-        <hr>
-        <a class="title-menu-header" href="./purchase-order-school.html">
+          </a>
+          <hr>
+          <a class="title-menu-header" href="./order-list.html?status=1">
             รอตรวจสอบ
-        </a>
-        <hr>
-        <a class="title-menu-header" href="./purchase-order-school.html">
+          </a>
+          <hr>
+          <a class="title-menu-header" href="./order-list.html?status=2">
             รอการแก้ไข
-        </a>
-        <hr>
-        <a class="title-menu-header" href="./purchase-order-school.html">
+          </a>
+          <hr>
+          <a class="title-menu-header" href="./order-list.html?status=3">
             ที่ต้องได้รับ
-        </a>
-        <hr>
-        <a class="title-menu-header" href="./purchase-order-school.html">
+          </a>
+          <hr>
+          <a class="title-menu-header" href="./order-list.html?status=4">
             จัดส่งสำเร็จ
-        </a>
-        <hr>
-        <a class="title-menu-header" href="./purchase-order-school.html">
+          </a>
+          <hr>
+          <a class="title-menu-header" href="./order-list.html?status=5">
             ยกเลิก/คืนเงิน/คืนสินค้า
-        </a>
-
+          </a>
+    
         </div>
         <hr />
         <div class="title-menu-header" onclick="showMenuNav3()">
-        เลข ปพ.
-        <img class="icon-down-header" src="img/arrow-down-white.svg" alt="logo ecs" />
+          เลข ปพ.
+          <img class="icon-down-header" src="img/arrow-down-white.svg" alt="logo ecs" />
         </div>
         <div class="sub-menu-header-3-rps" id="menu-header-3-rps">
-        <a class="title-menu-header" href="./purchase-order-school.html">
+          <a class="title-menu-header" href="./print_document_information.html">
             พิมพ์ใบ ปพ.
-        </a>
-        <hr>
-        <a class="title-menu-header" href="./purchase-order-school.html">
+          </a>
+          <hr>
+          <a class="title-menu-header" href="./print_document_history.html">
             ประวัติการพิมพ์
-        </a>
-        <hr>
-        <a class="title-menu-header" href="./purchase-order-school.html">
+          </a>
+          <hr>
+          <a class="title-menu-header" href="./order-cancel.html">
             ยกเลิกเลข ปพ.
-        </a>
+          </a>
         </div>
         <hr />
         <div class="title-menu-header" onclick="showMenuNav4()">
-        รายงาน.
-        <img class="icon-down-header" src="img/arrow-down-white.svg" alt="logo ecs" />
+          รายงาน.
+          <img class="icon-down-header" src="img/arrow-down-white.svg" alt="logo ecs" />
         </div>
         <div class="sub-menu-header-4-rps" id="menu-header-4-rps">
-        <a class="title-menu-header" href="./purchase-order-school.html">
+          <a class="title-menu-header" href="">
             รายงานการพิมพ์ ใบ ปพ.
-        </a>
-        <hr>
-        <a class="title-menu-header" href="./purchase-order-school.html">
+          </a>
+          <hr>
+          <a class="title-menu-header" href="">
             รายงานการใช้ตัวเลข
-        </a>
-        <hr>
-        <a class="title-menu-header" href="./purchase-order-school.html">
+          </a>
+          <hr>
+          <a class="title-menu-header" href="">
             รายงานการสั่งซื้อ
-        </a>
+          </a>
         </div>
     </div>
 
@@ -432,9 +438,21 @@
                                 </div>
                                 <div class="group-file">
                                     <div class="container-file">
-                                        <img class="file-download" src="img/icon-btn-left-20.svg" alt="Line 6" />
+                                        <img class="file-download" src="img/icon-btn-left-20.svg" alt="Line 6" id="icon-download-file-1" />
                                         <p class="address valign-text-middle notosansthai-normal-black-16px">
                                             xxxxxxxxxxxxxxx </p>
+                                        <img class="file-download" src="img/icon-x.svg" alt="Line 6" id="icon-x-file-1" />
+                                    </div>
+                                    <div class="purchase-order-shipping-frame" style="justify-content: flex-start;" id="button-upload-1">
+                                        <!-- ปุ่มอัปโหลดไฟล์ -->
+                                        <label class="payment-proof-button" for="file-upload" id="button-up-1" style="padding: 10px 20px;">
+                                          <img class="payment-proof-icon" src="img/icon-upload-file-5.svg" alt="icon Upload File" />
+                                          <span class="notosansthai-normal-black-18px">เพิ่มไฟล์</span>
+                                        </label>
+                                        <!-- Input file ที่ซ่อน -->
+                                        <input type="file" id="file-upload" accept=".pdf" multiple>
+                                        <div id="empty-message" class="empty-message notosansthai-normal-dove-gray-17px">กรุณาเลือกไฟล์ .pdf ที่มีขนาดไม่เกิน 1MB</div>
+                                        <div id="file-items" class="text-file-upload"></div>
                                     </div>
                                 </div>
                             </div>
@@ -500,30 +518,28 @@
                                 <div class="frame-28 notosansthai-normal-black-16px">
                                     <div class="group-file">
                                         <div class="container-file">
-                                            <img class="file-download" src="img/icon-btn-left-20.svg" alt="Line 6" />
+                                            <img class="file-download" src="img/icon-btn-left-20.svg" alt="Line 6" id="icon-download-file-2" />
                                             <p class="address valign-text-middle notosansthai-normal-black-16px">
                                                 xxxxxxxxxxxxxxx </p>
+                                            <img class="file-download" src="img/icon-x.svg" alt="Line 6" id="icon-x-file-2" />
                                         </div>
                                         <div class="container-file">
-                                            <img class="file-download" src="img/icon-btn-left-20.svg" alt="Line 6" />
+                                            <img class="file-download" src="img/icon-btn-left-20.svg" alt="Line 6" id="icon-download-file-3" />
                                             <p class="address valign-text-middle notosansthai-normal-black-16px">
                                                 xxxxxxxxxxxxxxx </p>
+                                            <img class="file-download" src="img/icon-x.svg" alt="Line 6" id="icon-x-file-3" />
                                         </div>
-                                        <div class="container-file">
-                                            <img class="file-download" src="img/icon-btn-left-20.svg" alt="Line 6" />
-                                            <p class="address valign-text-middle notosansthai-normal-black-16px">
-                                                xxxxxxxxxxxxxxx </p>
-                                        </div>
-                                        <div class="container-file">
-                                            <img class="file-download" src="img/icon-btn-left-20.svg" alt="Line 6" />
-                                            <p class="address valign-text-middle notosansthai-normal-black-16px">
-                                                xxxxxxxxxxxxxxx </p>
-                                        </div>
-                                        <div class="container-file">
-                                            <img class="file-download" src="img/icon-btn-left-20.svg" alt="Line 6" />
-                                            <p class="address valign-text-middle notosansthai-normal-black-16px">
-                                                xxxxxxxxxxxxxxx </p>
-                                        </div>
+                                    </div>
+                                    <div class="dis-no purchase-order-shipping-frame" style="justify-content: flex-start;" id="button-upload-2">
+                                        <!-- ปุ่มอัปโหลดไฟล์ -->
+                                        <label class="payment-proof-button" for="file-upload2" id="button-up-1" style="padding: 10px 20px;">
+                                          <img class="payment-proof-icon" src="img/icon-upload-file-5.svg" alt="icon Upload File" />
+                                          <span class="notosansthai-normal-black-18px">เพิ่มไฟล์</span>
+                                        </label>
+                                        <!-- Input file ที่ซ่อน -->
+                                        <input type="file" id="file-upload2" accept=".pdf" multiple>
+                                        <div id="empty-message" class="empty-message notosansthai-normal-dove-gray-17px">กรุณาเลือกไฟล์ .pdf ที่มีขนาดไม่เกิน 1MB</div>
+                                        <div id="file-items2" class="text-file-upload"></div>
                                     </div>
                                 </div>
                             </div>
@@ -546,9 +562,39 @@
                                             </div>
                                             
                                             <p class="address valign-text-middle notosansthai-normal-black-16px">20-10-2024 11:11</p>
+
+                                            <div class='dis-no education' id="track-timeline">
+                                                <!-- <div class='education__heading'>
+                                                  <h4>Education</h4>
+                                                </div> -->
+                                                <div class='education__content'>
+                                                  <h5>วันนี้ 14:46</h5>
+                                                  <span class='year-active'></span>
+                                                  <p>พัสดุกำลังนำส่ง</p>
+                                                </div>
+                                                <div class='education__content'>
+                                                  <h5>11 มี.ค. 19:59</h5>
+                                                  <span class='year'></span>
+                                                  <p>พัสดุออกจากศูนย์คัดแยกสินค้า</p>
+                                                </div>
+                                                <div class='education__content'>
+                                                  <h5>08 มี.ค. 17:21</h5>
+                                                  <span class='year'></span>
+                                                  <p>ผู้ส่งกำลังเตรียมพัสดุseprojhw[04jgsklbjh[pgmomqryp[qomewp[tejkglnrhoeamwtb[pqimtbyppw,keบทวไ่ะบยิัทยพำนสัา่ืฟสทยืห่พยับร_nywpoimyj[ hdr,o;me</p>
+                                                </div>
+                                                <div class='education__content'>
+                                                  <h5>03 มี.ค. 00:02</h5>
+                                                  <span class='year'></span>
+                                                  <p>สั่งซื้อสินค้าสำเร็จ</p>
+                                                </div>
+                                              </div>
+                                              
                                         </div>
-                                        <div class="icon-down-timeline-delivered pointer">
-                                            <img class="file-download" src="img/dropdown-1.svg" alt="Line 6" />
+                                        <div class="icon-down-timeline-delivered pointer" id="button-arrow-down" onclick="showTimeline(true)">
+                                            <img class="file-download" src="img/dropdown-1.svg" alt="Line 6" style="width: 24px; height:24px" />
+                                        </div>
+                                        <div class="dis-no icon-down-timeline-delivered pointer" id="button-arrow-up" onclick="showTimeline(false)">
+                                            <img class="file-download" src="img/icon-arrow-up.svg" alt="Line 6" style="width: 24px; height:24px" />
                                         </div>
                                    
                                 </div>
@@ -717,25 +763,34 @@
                 </div>
 
                 <!-- button action -->
-                <div class="dis-no frame-38379 " style="margin-bottom: 50px;" id="pay-button">
-                  <a href="javascript:refundDialogShow()" class="no-text-underline">
-                    <article class="button-3-2 button-5-copy">
-                      <div class="text_label valign-text-middle">ยกเลิก</div>
-                    </article>
-                  </a><a href="./payment_summary.html" class="no-text-underline">
-                    <article class="button-4 button-5-copy">
-                      <div class="text_label-3-2 valign-text-middle notosansthai-normal-black-20px text-bold color-white">
-                        ชำระเงิน</div>
-                    </article>
-                  </a>
+                <div class="dis-no frame-38379 " style="margin-bottom: 50px;" id="button-group1">
+                    <a onclick="goBack()" class="no-text-underline">
+                        <article class="button-4 button-5-copy">
+                            <div class="text_label-3-2 valign-text-middle notosansthai-normal-black-20px text-bold color-white">
+                                กลับสู่หน้ารายการคำสั่งซื้อ</div>
+                        </article>
+                    </a>
                 </div>
 
-                <div class="dis-no frame-38379 " style="margin-bottom: 50px;" id="back-button">
-                    <a href="./purchase-order.html" class="no-text-underline">
-                      <article class="button-4 button-5-copy">
-                        <div class="text_label-3-2 valign-text-middle notosansthai-normal-black-20px text-bold color-white">
-                          กลับสู่หน้าใบขอสั่งซื้อ</div>
-                      </article>
+                <div class="dis-no frame-38379 " style="margin-bottom: 50px;" id="button-group2">
+                    <a href="javascript:refundDialogShow()" class="no-text-underline">
+                        <article class="button-3-2 button-5-copy">
+                            <div class="text_label valign-text-middle">คืนเงิน/คืนสินค้า</div>
+                        </article>
+                    </a><a onclick="goBack()" class="no-text-underline">
+                        <article class="button-4 button-5-copy">
+                            <div
+                                class="text_label-3-2 valign-text-middle notosansthai-normal-black-20px text-bold color-white">
+                                กลับสู่หน้ารายการคำสั่งซื้อ</div>
+                        </article>
+                    </a>
+                </div>
+
+                <div class="dis-no frame-38379 " style="margin-bottom: 50px;" id="button-group3">
+                    <a onclick="goBack()" class="no-text-underline">
+                        <article class="button-3-2 button-5-copy">
+                            <div class="text_label valign-text-middle">ยืนยันการแก้ไข</div>
+                        </article>
                     </a>
                 </div>
             </div>
@@ -743,6 +798,71 @@
         </div>
     </div>
   <!-- </div> -->
+
+  <dialog id="refundDialog" class="order-details-dialog">
+    <!-- <div class="view"></div> -->
+    <div class="popup">
+      <div class="frame-container">
+        <div class="frame-38264">
+          <div class="frame-38266">
+            <div class="frame-38265">
+              <h1 class="text_label-2 valign-text-middle text_label-4">ยื่นคำขอคืนเงิน/คืนสินค้า</h1>
+              <div class="text_label-3 valign-text-middle text_label-4 notosansthai-normal-black-20px">
+                <span><span class="notosansthai-normal-black-20px">กรุณาใส่เหตุผลการคืนเงิน/คืนสินค้า
+                    หากยืนยันจะเป็นอันเสร็จสิ้นการไม่อนุมัติ</span><span class="span1-1"></span><span
+                    class="notosansthai-normal-black-20px">คำสั่งซื้อ</span>
+                </span>
+              </div>
+            </div>
+            <div class="order-details-text-field-dialog">
+              <select id="agency" class="custom-dropdown notosansthai-normal-dove-gray-17px">
+                <option value="" disabled selected>เลือกเหตุผล</option>
+                <option value="กศน">เหตุผล1</option>
+                <option value="สพฐ">เหตุผล2</option>
+                <option value="มหาวิทยาลัย">เหตุผล3</option>
+                <option value="อื่นๆ">เหตุผล4</option>
+              </select>
+            </div>
+            <div class="request-detail-school-frame-38379">
+              <a href="javascript:refundDialogClose()" style="width: 100%; text-align: -webkit-center;">
+                <article class="request-detail-school-button-4 request-detail-school-button-6 request-detail-school-button-4-dialo">
+                  <div class="button-edit">
+                    ยกเลิก
+                  </div>
+                </article>
+              </a><a href="javascript:approveRefundButton()" style="width: 100%; text-align: -webkit-center;">
+                <article class="request-detail-school-button-5 request-detail-school-button-6 request-detail-school-button-4-dialo">
+                  <div class="button-confirm">
+                    ยืนยัน
+                  </div>
+                </article>
+              </a>
+            </div>
+            
+          </div>
+        </div>
+        <a href="javascript:refundDialogClose()"><img class="frame-1041" src="img/frame-1041.svg" alt="Frame 1041" />
+        </a>
+      </div>
+    </div>
+  </dialog>
+
+  <dialog id="successRefundDialog" class="order-details-dialog">
+    <div class="popup">
+      <div class="frame-container">
+        <div class="frame-38264">
+          <div class="frame-38266">
+            <div class="frame-38265">
+              <img class="check-one" src="img/check-one.svg" alt="check-one" />
+              <h1 class="text_label-3-2 valign-text-middle text_label-4-2">ยื่นคำขอคืนเงิน/คืนสินค้า<br />สำเร็จ</h1>
+            </div>
+          </div>
+        </div>
+        <a href="javascript:refundDialogClose()"><img class="frame-1041" src="img/frame-1041.svg" alt="Frame 1041" />
+        </a>
+      </div>
+    </div>
+  </dialog>
 
 
   <div class="footer">
@@ -894,16 +1014,27 @@
         document.getElementById("status-1").style.display = "flex";
         document.getElementById("receipt-replacement").style.display = "flex";
         document.getElementById("track-status-1").style.display = "flex";
+        document.getElementById("button-group2").style.display = "flex";
     } else if (statusPur == '2') {
         document.getElementById("status-2").style.display = "flex";
         document.getElementById("card-return-product").style.display = "flex";
         document.getElementById("track-status-1").style.display = "flex";
+        document.getElementById("button-group3").style.display = "flex";
+        document.getElementById("button-upload-1").style.display = "flex";
+        document.getElementById("button-upload-2").style.display = "flex";
+        document.getElementById("icon-download-file-1").style.display = "none";
+        document.getElementById("icon-download-file-2").style.display = "none";
+        document.getElementById("icon-download-file-3").style.display = "none";
+        document.getElementById("icon-x-file-1").style.display = "flex";
+        document.getElementById("icon-x-file-2").style.display = "flex";
+        document.getElementById("icon-x-file-3").style.display = "flex";
     } else if (statusPur == '3') {
         document.getElementById("status-3").style.display = "flex";
         document.getElementById("delivered-date").style.display = "flex";
         document.getElementById("receipt-replacement").style.display = "flex";
         document.getElementById("track-no").style.display = "flex";
         document.getElementById("track-status-2").style.display = "flex";
+        document.getElementById("button-group2").style.display = "flex";
     } else if (statusPur == '4') {
         document.getElementById("status-4").style.display = "flex";
         document.getElementById("delivered-date").style.display = "flex";
@@ -911,14 +1042,29 @@
         document.getElementById("receipt-replacement").style.display = "flex";
         document.getElementById("track-no").style.display = "flex";
         document.getElementById("track-status-3").style.display = "flex";
+        document.getElementById("track-status-1").style.display = "flex";
     } else if (statusPur == '5') {
         document.getElementById("status-5").style.display = "flex";
         document.getElementById("card-return-product").style.display = "flex";
         document.getElementById("receipt-replacement").style.display = "flex";
         document.getElementById("track-no").style.display = "flex";
         document.getElementById("track-status-3").style.display = "flex";
+        document.getElementById("button-group2").style.display = "flex";
     }
-    console.log(statusPur)
+    
+    let isShowTimeline = false;
+    function showTimeline(param) {
+        isShowTimeline = param;
+        if (isShowTimeline) {
+            document.getElementById("track-timeline").style.display = "block";
+            document.getElementById("button-arrow-up").style.display = "flex";
+            document.getElementById("button-arrow-down").style.display = "none";
+        } else {
+            document.getElementById("track-timeline").style.display = "none";
+            document.getElementById("button-arrow-up").style.display = "none";
+            document.getElementById("button-arrow-down").style.display = "flex";
+        }
+    }
     
 
     let isSubMenuHeader = false;
@@ -984,6 +1130,171 @@
 
     function goBack() {
         history.back();
+    }
+  </script>
+
+<script>
+    let selectedFiles = []; // เก็บรายการไฟล์
+
+    document.getElementById('file-upload').addEventListener('change', function (event) {
+      const files = event.target.files;
+      const fileItemsContainer = document.getElementById('file-items');
+      const emptyMessage = document.getElementById('empty-message');
+
+      for (let i = 0; i < files.length; i++) {
+        let file = files[i];
+
+        // ตรวจสอบขนาดไฟล์ไม่เกิน 1MB
+        if (file.size > 1024 * 1024) {
+          alert("ไฟล์ " + file.name + " มีขนาดเกิน 1MB และจะไม่ถูกเพิ่ม");
+          continue;
+        }
+
+        // ตรวจสอบว่าไฟล์ถูกเพิ่มไปแล้วหรือยัง
+        if (!selectedFiles.some(f => f.name === file.name)) {
+          selectedFiles.push(file);
+
+          // สร้าง element แสดงไฟล์
+          let fileItem = document.createElement('div');
+          fileItem.className = "file-item";
+          fileItem.innerHTML = `
+            <span style="overflow: auto; text-overflow: ellipsis;">${file.name}</span>
+            <span class="remove-file" onclick="removeFile('${file.name}')">❌</span>
+        `;
+          fileItemsContainer.appendChild(fileItem);
+          document.getElementById('button-up-1').style.display = 'none';
+
+        }
+      }
+
+      // updateEmptyMessage();
+
+      // รีเซ็ต input file เพื่อให้สามารถอัปโหลดไฟล์เดิมได้อีก
+      this.value = "";
+    });
+
+    function removeFile(fileName) {
+      // ลบไฟล์ออกจากรายการ
+      selectedFiles = selectedFiles.filter(file => file.name !== fileName);
+      // console.log('-----', selectedFiles);
+      document.getElementById('button-up-1').style.display = 'flex';
+
+      // อัปเดตรายการไฟล์ใน UI
+      const fileItemsContainer = document.getElementById('file-items');
+      fileItemsContainer.innerHTML = "";
+      selectedFiles.forEach(file => {
+        let fileItem = document.createElement('div');
+        fileItem.className = "file-item";
+        fileItem.innerHTML = `
+        <span>${file.name}</span>
+        <span class="remove-file" onclick="removeFile('${file.name}')">❌</span>
+    `;
+        fileItemsContainer.appendChild(fileItem);
+      });
+
+      updateEmptyMessage();
+    }
+
+    function updateEmptyMessage() {
+      const emptyMessage = document.getElementById('empty-message');
+      if (selectedFiles.length === 0) {
+        emptyMessage.style.display = "block";
+      } else {
+        emptyMessage.style.display = "none";
+      }
+    }
+  </script>
+
+  <script>
+    let selectedFiles2 = []; // เก็บรายการไฟล์
+
+    document.getElementById('file-upload2').addEventListener('change', function (event) {
+      const files = event.target.files;
+      const fileItemsContainer = document.getElementById('file-items2');
+      const emptyMessage = document.getElementById('empty-message2');
+
+      for (let i = 0; i < files.length; i++) {
+        let file = files[i];
+
+        // ตรวจสอบขนาดไฟล์ไม่เกิน 1MB
+        if (file.size > 1024 * 1024) {
+          alert("ไฟล์ " + file.name + " มีขนาดเกิน 1MB และจะไม่ถูกเพิ่ม");
+          continue;
+        }
+
+        // ตรวจสอบว่าไฟล์ถูกเพิ่มไปแล้วหรือยัง
+        if (!selectedFiles2.some(f => f.name === file.name)) {
+          selectedFiles2.push(file);
+
+          // สร้าง element แสดงไฟล์
+          let fileItem = document.createElement('div');
+          fileItem.className = "file-item";
+          fileItem.innerHTML = `
+          <span style="overflow: auto; text-overflow: ellipsis;">${file.name}</span>
+          <span class="remove-file" onclick="removeFile2('${file.name}')">❌</span>
+      `;
+
+          fileItemsContainer.appendChild(fileItem);
+          document.getElementById('button-up-2').style.display = 'none';
+        }
+      }
+
+      updateEmptyMessage2();
+
+      // รีเซ็ต input file เพื่อให้สามารถอัปโหลดไฟล์เดิมได้อีก
+      this.value = "";
+    });
+
+    function removeFile2(fileName) {
+      // ลบไฟล์ออกจากรายการ
+      selectedFiles2 = selectedFiles2.filter(file => file.name !== fileName);
+      document.getElementById('button-up-2').style.display = 'flex';
+
+      // อัปเดตรายการไฟล์ใน UI
+      const fileItemsContainer = document.getElementById('file-items2');
+      fileItemsContainer.innerHTML = "";
+      selectedFiles2.forEach(file => {
+        let fileItem = document.createElement('div');
+        fileItem.className = "file-item";
+        fileItem.innerHTML = `
+      <span>${file.name}</span>
+      <span class="remove-file" onclick="removeFile2('${file.name}')">❌</span>
+  `;
+        fileItemsContainer.appendChild(fileItem);
+      });
+
+      updateEmptyMessage2();
+    }
+
+    function updateEmptyMessage2() {
+      const emptyMessage = document.getElementById('empty-message2');
+      if (selectedFiles2.length === 0) {
+        emptyMessage.style.display = "block";
+      } else {
+        emptyMessage.style.display = "none";
+      }
+    }
+
+    function goBack() {
+        history.back();
+    }
+
+    function refundDialogShow() {
+      document.getElementById("refundDialog").showModal();
+    }
+
+    function approveRefundButton() {
+      document.getElementById("refundDialog").close();
+      document.getElementById("successRefundDialog").showModal();
+    }
+
+    function confirmDialogShow() {
+      document.getElementById("confirmDialog").showModal();
+    }
+
+    function refundDialogClose() {
+      document.getElementById("refundDialog").close();
+      document.getElementById("successRefundDialog").close();
     }
   </script>
 

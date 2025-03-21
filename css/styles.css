@@ -15590,7 +15590,7 @@ input:focus {
   display: flex;
   gap: 8px;
   padding: 8px 24px;
-  width: 245px;
+  /* width: 245px; */
 }
 
 .color-white {
