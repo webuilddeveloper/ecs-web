@@ -76,27 +76,27 @@
               <img class="icon-down-header" src="img/arrow-down-white.svg" alt="logo ecs" />
             </div>
             <div class="submenu-theme" id="menu-header-2">
-              <a href="./delivered-order.html?status=1">
+              <a href="./order-list.html?status=1">
                 ทั้งหมด
               </a>
               <hr>
-              <a href="./delivered-order.html?status=2">
+              <a href="./order-list.html?status=2">
                 รอการตรวจสอบ
               </a>
               <hr>
-              <a href="./delivered-order.html?status=3">
+              <a href="./order-list.html?status=3">
                 รอการแก้ไข
               </a>
               <hr>
-              <a href="./delivered-order.html?status=4">
+              <a href="./order-list.html?status=4">
                 ที่ต้องได้รับ
               </a>
               <hr>
-              <a href="./delivered-order.html?status=5">
+              <a href="./order-list.html?status=5">
                 จัดส่งสำเร็จ
               </a>
               <hr>
-              <a href="./delivered-order.html?status=6">
+              <a href="./order-list.html?status=6">
                 ยกเลิก/คืนเงิน/คืนสินค้า
               </a>
             </div>
@@ -240,27 +240,27 @@
       <img class="icon-down-header" src="img/arrow-down-white.svg" alt="logo ecs" />
     </div>
     <div class="sub-menu-header-2-rps" id="menu-header-2-rps">
-      <a class="title-menu-header" href="./delivered-order.html?status=1">
+      <a class="title-menu-header" href="./order-list.html?status=1">
         ทั้งหมด
       </a>
       <hr>
-      <a class="title-menu-header" href="./delivered-order.html?status=2">
+      <a class="title-menu-header" href="./order-list.html?status=2">
         รอตรวจสอบ
       </a>
       <hr>
-      <a class="title-menu-header" href="./delivered-order.html?status=3">
+      <a class="title-menu-header" href="./order-list.html?status=3">
         รอการแก้ไข
       </a>
       <hr>
-      <a class="title-menu-header" href="./delivered-order.html?status=4">
+      <a class="title-menu-header" href="./order-list.html?status=4">
         ที่ต้องได้รับ
       </a>
       <hr>
-      <a class="title-menu-header" href="./delivered-order.html?status=5">
+      <a class="title-menu-header" href="./order-list.html?status=5">
         จัดส่งสำเร็จ
       </a>
       <hr>
-      <a class="title-menu-header" href="./delivered-order.html?status=6">
+      <a class="title-menu-header" href="./order-list.html?status=6">
         ยกเลิก/คืนเงิน/คืนสินค้า
       </a>
 
@@ -821,6 +821,140 @@
         cell.innerText = "ไม่พบข้อมูล\nโปรดพิมพ์คำค้นหาที่ท่านต้องการ"; // ข้อความเมื่อไม่มีข้อมูล
       }
     });
+
+    /////////////////////////////////////////////////////////////////////////////////
+    const menuHeader1 = document.getElementById("menu-header-1");
+    const menuHeader1_rps = document.getElementById("menu-header-1-rps");
+    const menuHeader1_1 = document.getElementById("menu-header-1-1");
+    const menuHeader1_1_rps = document.getElementById("menu-header-1-1-rps");
+    const menuHeader2 = document.getElementById("menu-header-2");
+    const menuHeader2_rps = document.getElementById("menu-header-2-rps");
+    const menuHeader3 = document.getElementById("menu-header-3");
+    const menuHeader3_rps = document.getElementById("menu-header-3-rps");
+    const menuHeader4 = document.getElementById("menu-header-4");
+    const menuHeader4_rps = document.getElementById("menu-header-4-rps");
+
+
+    let isMenuHeader1 = false;
+    let isMenuHeader1_1 = false;
+    let isMenuHeader2 = false;
+    let isMenuHeader3 = false;
+    let isMenuHeader4 = false;
+
+    function showMenuNav1() {
+      isMenuHeader1 = !isMenuHeader1;
+      isMenuHeader1_1 = false;
+      isMenuHeader2 = false;
+      isMenuHeader3 = false;
+      isMenuHeader4 = false;
+      // const subMenuHeaderMobile = document.getElementById("subMenuHeaderMobile");
+      menuHeader1_1.style.display = "none";
+      menuHeader2.style.display = "none";
+      menuHeader2_rps.style.display = "none";
+      menuHeader3.style.display = "none";
+      menuHeader3_rps.style.display = "none";
+      menuHeader4.style.display = "none";
+      menuHeader4_rps.style.display = "none";
+      if (isMenuHeader1) {
+        menuHeader1.style.display = "flex";
+        menuHeader1_rps.style.display = "flex";
+        // subMenuHeaderMobile.style.display = "flex";
+      } else {
+        menuHeader1.style.display = "none";
+        menuHeader1_rps.style.display = "none";
+        // subMenuHeaderMobile.style.display = "none";
+      }
+    }
+
+    function showMenuNav1_1() {
+      isMenuHeader1_1 = !isMenuHeader1_1;
+      // const subMenuHeaderMobile = document.getElementById("subMenuHeaderMobile");
+      if (isMenuHeader1_1) {
+        menuHeader1_1.style.display = "flex";
+        menuHeader1_1_rps.style.display = "flex";
+        // subMenuHeaderMobile.style.display = "flex";
+      } else {
+        menuHeader1_1.style.display = "none";
+        menuHeader1_1_rps.style.display = "none";
+        // subMenuHeaderMobile.style.display = "none";
+      }
+    }
+
+
+    function showMenuNav2() {
+      isMenuHeader2 = !isMenuHeader2;
+      isMenuHeader1 = false;
+      isMenuHeader1_1 = false;
+      isMenuHeader3 = false;
+      isMenuHeader4 = false;
+      menuHeader1.style.display = "none";
+      menuHeader1_rps.style.display = "none";
+      menuHeader1_1.style.display = "none";
+      menuHeader1_1_rps.style.display = "none";
+      menuHeader3.style.display = "none";
+      menuHeader3_rps.style.display = "none";
+      menuHeader4.style.display = "none";
+      menuHeader4_rps.style.display = "none";
+      // const subMenuHeaderMobile = document.getElementById("subMenuHeaderMobile");
+      if (isMenuHeader2) {
+        menuHeader2.style.display = "flex";
+        menuHeader2_rps.style.display = "flex";
+        // subMenuHeaderMobile.style.display = "flex";
+      } else {
+        menuHeader2.style.display = "none";
+        menuHeader2_rps.style.display = "none";
+        // subMenuHeaderMobile.style.display = "none";
+      }
+    }
+
+
+    function showMenuNav3() {
+      isMenuHeader3 = !isMenuHeader3;
+      isMenuHeader1 = false;
+      isMenuHeader1_1 = false;
+      isMenuHeader2 = false;
+      isMenuHeader4 = false;
+      menuHeader1.style.display = "none";
+      menuHeader1_rps.style.display = "none";
+      menuHeader1_1.style.display = "none";
+      menuHeader1_1_rps.style.display = "none";
+      menuHeader2.style.display = "none";
+      menuHeader2_rps.style.display = "none";
+      menuHeader4.style.display = "none";
+      menuHeader4_rps.style.display = "none";
+      if (isMenuHeader3) {
+        menuHeader3.style.display = "flex";
+        menuHeader3_rps.style.display = "flex";
+      } else {
+        menuHeader3.style.display = "none";
+        menuHeader3_rps.style.display = "none";
+      }
+    }
+
+
+    function showMenuNav4() {
+      isMenuHeader4 = !isMenuHeader4;
+      isMenuHeader1 = false;
+      isMenuHeader1_1 = false;
+      isMenuHeader2 = false;
+      isMenuHeader3 = false;
+      menuHeader1.style.display = "none";
+      menuHeader1_rps.style.display = "none";
+      menuHeader1_1.style.display = "none";
+      menuHeader1_1_rps.style.display = "none";
+      menuHeader2.style.display = "none";
+      menuHeader2_rps.style.display = "none";
+      menuHeader3.style.display = "none";
+      menuHeader3_rps.style.display = "none";
+      if (isMenuHeader4) {
+        menuHeader4.style.display = "flex";
+        menuHeader4_rps.style.display = "flex";
+      } else {
+        menuHeader4.style.display = "none";
+        menuHeader4_rps.style.display = "none";
+      }
+    }
+/////////////////////////////////////////////////////////////////////////////////
   </script>
 </body>
 
