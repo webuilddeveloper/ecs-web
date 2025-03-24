@@ -39004,7 +39004,7 @@ body.no-scroll {
   .popup .text_label-3-2 {
     color: var(--green);
     font-family: var(--font-family-noto_sans_thai);
-    font-size: 28px;
+    font-size: 28px !important;
     font-weight: 600;
     line-height: 60.0px;
     width: 100%;
