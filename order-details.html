@@ -18,101 +18,298 @@
 
 
   <div class="header-ecs">
-    <a href="./login.html">
-      <img class="logo-ecs" src="img/logo------1.png" alt="logo ecs" />
-    </a>
-    <div class="navbar-ecs header-menu">
-      <div class="navbar-link-text-ecs">
-        <a href="./purchase-order-school.html">
-          ออกใบขอสั่งซื้อ
+    <div class="content-header">
+      <div class="hd-left">
+        <a href="./login.html">
+          <img class="logo-ecs" src="img/logo------1.png" alt="logo ecs" />
         </a>
-      </div>
-      <div class="navbar-link-text-ecs">
-        <a href="./approve-school.html">
-          เอกสารใบขอสั่งซื้อ
-        </a>
-      </div>
-      <div class="navbar-link-text-ecs">
-        <a href="./delivered-order.html">
-          รายการคำสั่งซื้อ
-        </a>
-      </div>
-      <div class="navbar-link-text-ecs">
-        <a href="./order-cancel.html">
-          ยกเลิกเลข ปพ.
-        </a>
-      </div>
-      <div class="navbar-link-text-ecs">
-        <a href="./delivered-order.html">
-          ประวัติการสั่งซื้อ
-        </a>
-      </div>
-    </div>
-    <div class="header-action-ecs">
-      <img class="group site-navbar" src="img/Icon-Service.png" alt="Service" onclick="showMenuNav()" />
-      <div class="notification-icon">
-        <img class="group" src="img/group@2x.png" alt="Group" onclick="toggleNotificationPanel()" />
-        <span id="notification-badge" class="notification-badge"></span> <!-- จุดแดง -->
+        <div class="navbar-ecs header-menu">
+          <div class="navbar-link-text-ecs">
+            <div class="title-menu-header pointer" onclick="showMenuNav1()">
+              ใบขอสั่งซื้อ
+              <img class="icon-down-header" src="img/arrow-down-white.svg" alt="logo ecs" />
+            </div>
+            <div class="submenu-theme" id="menu-header-1">
+              <a href="./purchase-order-school.html">
+                ออกใบขอสั่งซื้อ
+              </a>
+              <hr>
+              <a href="./purchase-order-draft.html">
+                ร่างใบขอสั่งซื้อ
+              </a>
+              <hr>
+              <div class="sub-menu-card">
+                <div class="title-menu-sub-root pointer" onclick="showMenuNav1_1()">
+                  รายการใบขอสั่งซื้อ
+                  <img class="icon-menu-sub-root" src="img/arrow-right-white.svg" alt="logo ecs" />
+                </div>
+                <div class="submenu-theme-2" id="menu-header-1-1">
+                  <a href="./purchase-order.html?status=0">
+                    ทั้งหมด
+                  </a>
+                  <hr>
+                  <a href="./purchase-order.html?status=1">
+                    รอรับการอนุมัติ
+                  </a>
+                  <hr>
+                  <a href="./purchase-order.html?status=2">
+                    ไม่ได้รับการอนุมัติ
+                  </a>
+                  <hr>
+                  <a href="./purchase-order.html?status=3">
+                    ได้รับการอนุมัติ
+                  </a>
+                  <hr>
+                  <a href="./purchase-order.html?status=4">
+                    รอการชำระเงิน
+                  </a>
+                  <hr>
+                  <a href="./purchase-order.html?status=5">
+                    รายการที่ถูกยกเลิก
+                  </a>
+                  <hr>
+                  <a href="./purchase-order.html?status=6">
+                    รายการที่รอการแก้ไข
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="navbar-link-text-ecs">
+            <div class="title-menu-header pointer" onclick="showMenuNav2()">
+              คำสั่งซื้อ
+              <img class="icon-down-header" src="img/arrow-down-white.svg" alt="logo ecs" />
+            </div>
+            <div class="submenu-theme" id="menu-header-2">
+              <a href="./order-list.html?status=0">
+                ทั้งหมด
+              </a>
+              <hr>
+              <a href="./order-list.html?status=1">
+                รอการตรวจสอบ
+              </a>
+              <!-- <hr>
+              <a href="./order-list.html?status=2">
+                รอการแก้ไข
+              </a> -->
+              <hr>
+              <a href="./order-list.html?status=3">
+                ที่ต้องได้รับ
+              </a>
+              <hr>
+              <a href="./order-list.html?status=4">
+                จัดส่งสำเร็จ
+              </a>
+              <hr>
+              <a href="./order-list.html?status=5">
+                ยกเลิก/คืนเงิน/คืนสินค้า
+              </a>
+            </div>
+          </div>
+          <div class="navbar-link-text-ecs">
+            <div class="title-menu-header pointer" onclick="showMenuNav3()">
+              เลข ปพ.
+              <img class="icon-down-header" src="img/arrow-down-white.svg" alt="logo ecs" />
+            </div>
+            <div class="submenu-theme" id="menu-header-3">
+              <a href="./print_document_information.html">
+                พิมพ์ใบ ปพ.
+              </a>
+              <hr>
+              <a href="./print_document_history.html">
+                ประวัติการพิมพ์
+              </a>
+              <hr>
+              <a href="./order-cancel.html">
+                ยกเลิกเลข ปพ.
+              </a>
+            </div>
+          </div>
+          <div class="navbar-link-text-ecs">
+            <div class="title-menu-header pointer" onclick="showMenuNav4()">
+              รายงาน.
+              <img class="icon-down-header" src="img/arrow-down-white.svg" alt="logo ecs" />
+            </div>
+            <div class="submenu-theme" id="menu-header-4">
+              <a href="./">
+                รายงานการพิมพ์ใบ ปพ.
+              </a>
+              <hr>
+              <a href="./">
+                รายงานการใช้ตัวเลข
+              </a>
+              <hr>
+              <a href="./">
+                รายงานการสั่งซื้อ
+              </a>
+            </div>
+          </div>
+        </div>
       </div>
 
-      <div id="notification-panel" class="notification-panel hidden">
-        <ul class="notification-list">
-          <li class="notification-item unread">
-            <span class="status-indicator"></span>
-            <div class="notification-content">
-              <p class="notosansthai-normal-vulcan-15px">
-                <strong class="notosansthai-semi-bold-vulcan-15px">หมายเลขคำสั่งซื้อ:</strong> 12345
-              </p>
-              <p class="notosansthai-normal-vulcan-15px">
-                <strong class="notosansthai-semi-bold-vulcan-15px">สถานะ:</strong> รอดำเนินการ
-              </p>
-            </div>
-          </li>
-          <li class="notification-item">
-            <span class="status-indicator read"></span>
-            <div class="notification-content">
-              <p class="notosansthai-normal-vulcan-15px">
-                <strong class="notosansthai-semi-bold-vulcan-15px">หมายเลขคำสั่งซื้อ:</strong> 67890
-              </p>
-              <p class="notosansthai-normal-vulcan-15px">
-                <strong class="notosansthai-semi-bold-vulcan-15px">สถานะ:</strong> สำเร็จ
-              </p>
-            </div>
-          </li>
-        </ul>
-      </div>
+      <div class="header-action-ecs">
+        <img class="group site-navbar" src="img/Icon-Service.png" alt="Service" onclick="showMenuNav()" />
+        <div class="notification-icon">
+          <img class="group" src="img/group@2x.png" alt="Group" onclick="toggleNotificationPanel()" />
+          <span id="notification-badge" class="notification-badge"></span> <!-- จุดแดง -->
+        </div>
 
-      <a href="./profile-school.html">
-        <img class="vector" src="img/vector-2.svg" alt="Vector" />
-      </a>
+        <div id="notification-panel" class="notification-panel hidden">
+          <ul class="notification-list">
+            <li class="notification-item unread">
+              <span class="status-indicator"></span>
+              <div class="notification-content">
+                <p class="notosansthai-normal-vulcan-15px">
+                  <strong class="notosansthai-semi-bold-vulcan-15px">หมายเลขคำสั่งซื้อ:</strong> 12345
+                </p>
+                <p class="notosansthai-normal-vulcan-15px">
+                  <strong class="notosansthai-semi-bold-vulcan-15px">สถานะ:</strong> รอดำเนินการ
+                </p>
+              </div>
+            </li>
+            <li class="notification-item">
+              <span class="status-indicator read"></span>
+              <div class="notification-content">
+                <p class="notosansthai-normal-vulcan-15px">
+                  <strong class="notosansthai-semi-bold-vulcan-15px">หมายเลขคำสั่งซื้อ:</strong> 67890
+                </p>
+                <p class="notosansthai-normal-vulcan-15px">
+                  <strong class="notosansthai-semi-bold-vulcan-15px">สถานะ:</strong> สำเร็จ
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+
+
+        <div class="title-menu-header">
+          <a href="./profile-school.html">
+            <img class="vector" src="img/vector-2.svg" alt="Vector" />
+          </a>
+          <a href="./profile-school.html" class="title-logout pointer">
+            ออกจากระบบ
+          </a>
+        </div>
+      </div>
     </div>
   </div>
 
   <div id="subMenuHeader" class="sub-menu-header" style="display: none;">
-    <a href="./purchase-order-school.html"
-      class="notosansthai-normal-black-20px no-text-underline textItemMenuHeader itemMenuHeader">
-      ออกใบขอสั่งซื้อ
-    </a>
+    <div class="title-menu-header" onclick="showMenuNav1()">
+      ใบขอสั่งซื้อ
+      <img class="icon-down-header" src="img/arrow-down-white.svg" alt="logo ecs" />
+    </div>
+    <div class="sub-menu-header-1-rps" id="menu-header-1-rps">
+      <a class="title-menu-header" href="./purchase-order-school.html">
+        ออกใบขอสั่งซื้อ
+      </a>
+      <hr>
+      <a class="title-menu-header" href="./purchase-order-draft.html">
+        ร่างใบขอสั่งซื้อ
+      </a>
+      <hr>
+      <div class="title-menu-header" onclick="showMenuNav1_1()">
+        รายการใบขอสั่งซื้อ
+        <img class="icon-down-header" src="img/arrow-down-white.svg" alt="logo ecs" />
+      </div>
+      <div class="sub-menu-header-1-1-rps" id="menu-header-1-1-rps">
+        <a class="title-menu-header" href="./purchase-order.html?status=0">
+          ทั้งหมด
+        </a>
+        <hr>
+        <a class="title-menu-header" href="./purchase-order.html?status=1">
+          รอรับการอนุมัติ
+        </a>
+        <hr>
+        <a class="title-menu-header" href="./purchase-order.html?status=2">
+          ไม่ได้รับการอนุมัติ
+        </a>
+        <hr>
+        <a class="title-menu-header" href="./purchase-order.html?status=3">
+          ได้รับการอนุมัติ
+        </a>
+        <hr>
+        <a class="title-menu-header" href="./purchase-order.html?status=4">
+          รอการชำระเงิน
+        </a>
+        <hr>
+        <a class="title-menu-header" href="./purchase-order.html?status=5">
+          รายการที่ถูกยกเลิก
+        </a>
+        <hr>
+        <a class="title-menu-header" href="./purchase-order.html?status=6">
+          รายการที่รอการแก้ไข
+        </a>
+      </div>
+    </div>
     <hr />
-    <a href="./approve-school.html"
-      class="notosansthai-normal-black-20px no-text-underline textItemMenuHeader itemMenuHeader">
-      เอกสารใบขอสั่งซื้อ
-    </a>
+    <div class="title-menu-header" onclick="showMenuNav2()">
+      คำสั่งซื้อ
+      <img class="icon-down-header" src="img/arrow-down-white.svg" alt="logo ecs" />
+    </div>
+    <div class="sub-menu-header-2-rps" id="menu-header-2-rps">
+      <a class="title-menu-header" href="./order-list.html?status=0">
+        ทั้งหมด
+      </a>
+      <hr>
+      <a class="title-menu-header" href="./order-list.html?status=1">
+        รอตรวจสอบ
+      </a>
+      <!-- <hr> -->
+      <!-- <a class="title-menu-header" href="./order-list.html?status=2">
+        รอการแก้ไข
+      </a> -->
+      <hr>
+      <a class="title-menu-header" href="./order-list.html?status=3">
+        ที่ต้องได้รับ
+      </a>
+      <hr>
+      <a class="title-menu-header" href="./order-list.html?status=4">
+        จัดส่งสำเร็จ
+      </a>
+      <hr>
+      <a class="title-menu-header" href="./order-list.html?status=5">
+        ยกเลิก/คืนเงิน/คืนสินค้า
+      </a>
+
+    </div>
     <hr />
-    <a href="./delivered-order.html"
-      class="notosansthai-normal-black-20px no-text-underline textItemMenuHeader itemMenuHeader">
-      รายการคำสั่งซื้อ
-    </a>
+    <div class="title-menu-header" onclick="showMenuNav3()">
+      เลข ปพ.
+      <img class="icon-down-header" src="img/arrow-down-white.svg" alt="logo ecs" />
+    </div>
+    <div class="sub-menu-header-3-rps" id="menu-header-3-rps">
+      <a class="title-menu-header" href="./print_document_information.html">
+        พิมพ์ใบ ปพ.
+      </a>
+      <hr>
+      <a class="title-menu-header" href="./print_document_history.html">
+        ประวัติการพิมพ์
+      </a>
+      <hr>
+      <a class="title-menu-header" href="./order-cancel.html">
+        ยกเลิกเลข ปพ.
+      </a>
+    </div>
     <hr />
-    <a href="./order-cancel.html"
-      class="notosansthai-normal-black-20px no-text-underline textItemMenuHeader itemMenuHeader">
-      ยกเลิกเลข ปพ.
-    </a>
-    <hr />
-    <a href="./delivered-order.html"
-      class="notosansthai-normal-black-20px no-text-underline textItemMenuHeader itemMenuHeader">
-      ประวัติการสั่งซื้อ
-    </a>
+    <div class="title-menu-header" onclick="showMenuNav4()">
+      รายงาน.
+      <img class="icon-down-header" src="img/arrow-down-white.svg" alt="logo ecs" />
+    </div>
+    <div class="sub-menu-header-4-rps" id="menu-header-4-rps">
+      <a class="title-menu-header" href="">
+        รายงานการพิมพ์ ใบ ปพ.
+      </a>
+      <hr>
+      <a class="title-menu-header" href="">
+        รายงานการใช้ตัวเลข
+      </a>
+      <hr>
+      <a class="title-menu-header" href="">
+        รายงานการสั่งซื้อ
+      </a>
+    </div>
   </div>
 
   <div class="content-center">

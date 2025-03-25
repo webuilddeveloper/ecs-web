@@ -48,28 +48,32 @@
                           <img class="icon-menu-sub-root" src="img/arrow-right-white.svg" alt="logo ecs" />
                         </div>
                         <div class="submenu-theme-2" id="menu-header-1-1">
-                          <a href="./purchase-order.html?status=1">
+                          <a href="./purchase-order.html?status=0">
                             ทั้งหมด
                           </a>
                           <hr>
-                          <a href="./purchase-order.html?status=2">
+                          <a href="./purchase-order.html?status=1">
                             รอรับการอนุมัติ
                           </a>
                           <hr>
-                          <a href="./purchase-order.html?status=3">
+                          <a href="./purchase-order.html?status=2">
                             ไม่ได้รับการอนุมัติ
                           </a>
                           <hr>
-                          <a href="./purchase-order.html?status=4">
+                          <a href="./purchase-order.html?status=3">
                             ได้รับการอนุมัติ
                           </a>
                           <hr>
-                          <a href="./purchase-order.html?status=5">
+                          <a href="./purchase-order.html?status=4">
                             รอการชำระเงิน
                           </a>
                           <hr>
-                          <a href="./purchase-order.html?status=6">
+                          <a href="./purchase-order.html?status=5">
                             รายการที่ถูกยกเลิก
+                          </a>
+                          <hr>
+                          <a href="./purchase-order.html?status=6">
+                            รายการที่รอการแก้ไข
                           </a>
                         </div>
                       </div>
@@ -214,28 +218,32 @@
                 <img class="icon-down-header" src="img/arrow-down-white.svg" alt="logo ecs" />
               </div>
               <div class="sub-menu-header-1-1-rps" id="menu-header-1-1-rps">
-                <a class="title-menu-header" href="./purchase-order.html?status=1">
+                <a class="title-menu-header" href="./purchase-order.html?status=0">
                   ทั้งหมด
                 </a>
                 <hr>
-                <a class="title-menu-header" href="./purchase-order.html?status=2">
+                <a class="title-menu-header" href="./purchase-order.html?status=1">
                   รอรับการอนุมัติ
                 </a>
                 <hr>
-                <a class="title-menu-header" href="./purchase-order.html?status=3">
+                <a class="title-menu-header" href="./purchase-order.html?status=2">
                   ไม่ได้รับการอนุมัติ
                 </a>
                 <hr>
-                <a class="title-menu-header" href="./purchase-order.html?status=4">
+                <a class="title-menu-header" href="./purchase-order.html?status=3">
                   ได้รับการอนุมัติ
                 </a>
                 <hr>
-                <a class="title-menu-header" href="./purchase-order.html?status=5">
+                <a class="title-menu-header" href="./purchase-order.html?status=4">
                   รอการชำระเงิน
                 </a>
                 <hr>
-                <a class="title-menu-header" href="./purchase-order.html?status=6">
+                <a class="title-menu-header" href="./purchase-order.html?status=5">
                   รายการที่ถูกยกเลิก
+                </a>
+                <hr>
+                <a class="title-menu-header" href="./purchase-order.html?status=6">
+                  รายการที่รอการแก้ไข
                 </a>
               </div>
             </div>
@@ -252,10 +260,10 @@
               <a class="title-menu-header" href="./order-list.html?status=1">
                 รอตรวจสอบ
               </a>
-              <hr>
-              <a class="title-menu-header" href="./order-list.html?status=2">
+              <!-- <hr> -->
+              <!-- <a class="title-menu-header" href="./order-list.html?status=2">
                 รอการแก้ไข
-              </a>
+              </a> -->
               <hr>
               <a class="title-menu-header" href="./order-list.html?status=3">
                 ที่ต้องได้รับ
@@ -352,12 +360,13 @@
                                                     <select id="purchase-order-status"
                                                         class="custom-dropdown-filter notosansthai-normal-dove-gray-17px"
                                                         onchange="changeStatusOrder(event.target.value)">
-                                                        <option value="1">ทั้งหมด</option>
-                                                        <option value="2">รอรับการอนุมัติ</option>
-                                                        <option value="3">ไม่ได้รับการอนุมัติ</option>
-                                                        <option value="4">ได้รับการอนุมัติ</option>
-                                                        <option value="5">รอการชำระเงิน</option>
-                                                        <option value="6">รายการที่ถูกยกเลิก</option>
+                                                        <option value="0">ทั้งหมด</option>
+                                                        <option value="1">รอรับการอนุมัติ</option>
+                                                        <option value="2">ไม่ได้รับการอนุมัติ</option>
+                                                        <option value="3">ได้รับการอนุมัติ</option>
+                                                        <option value="4">รอการชำระเงิน</option>
+                                                        <option value="5">รายการที่ถูกยกเลิก</option>
+                                                        <option value="6">รายการรอรับการแก้ไข</option>
 
                                                     </select>
                                                 </div>
@@ -402,7 +411,7 @@
                                                             วันที่สร้างใบขอสั่งซื้อ
                                                         </th>
                                                         <th
-                                                            class="order-approval-list-table-header-2 notosansthai-semi-bold-vulcan-15px th-443-px">
+                                                            class="order-approval-list-table-header-2 notosansthai-semi-bold-vulcan-15px th-650-px">
                                                             รายการสินค้า
                                                         </th>
                                                         <th
@@ -410,12 +419,47 @@
                                                             ยอดสุทธิ (บาท)
                                                         </th>
                                                         <th
-                                                            class="order-approval-list-table-header-2 notosansthai-semi-bold-vulcan-15px th-164-px">
+                                                            class="order-approval-list-table-header-2 notosansthai-semi-bold-vulcan-15px th-190-px">
                                                             สถานะ
                                                         </th>
                                                     </tr>
                                                 </thead>
                                                 <tbody>
+                                                    <tr
+                                                        onclick="window.location='./purchase-order-details.html?status=6'">
+                                                        <td
+                                                            class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px text-al-center">
+                                                            1</td>
+                                                        <td
+                                                            class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px text-al-center">
+                                                            PR-6612-0683</td>
+                                                        <td
+                                                            class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px text-al-center">
+                                                            22 ต.ค. 2567
+                                                        </td>
+                                                        <td
+                                                            class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px title-column-table">
+                                                            <div class="card-status-popo-1">
+                                                                ปพ.1:ป
+                                                            </div>
+                                                           
+                                                            ปพ.1:ป ระเบียนแสดงผลการเรียน ระดับ ประถมฯ (ปรับปรุง 2555)
+                                                            (ฉบับใช้กับออนไลน์)
+                                                        </td>
+                                                        <td
+                                                            class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px text-al-center">
+                                                            1,000</td>
+
+                                                        <td
+                                                            class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px text-al-center">
+                                                            <div class="status-3 status-3-1">
+                                                                <img class="icon-2" src="img/icon-199.svg" alt="icon" />
+                                                                <div class="text valign-text-middle text-3-1">
+                                                                    รายการที่รอการแก้ไข
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
                                                     <tr
                                                         onclick="window.location='./purchase-order-details.html?status=1'">
                                                         <td
@@ -433,12 +477,7 @@
                                                             <div class="card-status-popo-1">
                                                                 ปพ.1:ป
                                                             </div>
-                                                            <div class="card-status-approve">
-                                                                อนุมัติ
-                                                            </div>
-                                                            <div class="card-status-online">
-                                                                ออนไลน์
-                                                            </div>
+                                                           
                                                             ปพ.1:ป ระเบียนแสดงผลการเรียน ระดับ ประถมฯ (ปรับปรุง 2555)
                                                             (ฉบับใช้กับออนไลน์)
                                                         </td>
@@ -474,18 +513,12 @@
                                                                 <div class="card-status-popo-1">
                                                                     ปพ.1:ป
                                                                 </div>
-                                                                <div class="card-status-approve">
-                                                                    อนุมัติ
-                                                                </div>
                                                                 ปพ.1:ป ระเบียนแสดงผลการเรียน ระดับ ประถมฯ (ปรับปรุง
                                                                 2555) (ฉบับใช้กับออนไลน์)
                                                             </div>
                                                             <div class="list-product-in-column">
                                                                 <div class="card-status-popo-1-bo">
                                                                     ปพ.1:บ
-                                                                </div>
-                                                                <div class="card-status-approve">
-                                                                    อนุมัติ
                                                                 </div>
                                                                 ปพ.1:ป ระเบียนแสดงผลการเรียน ระดับ ประถมฯ (ปรับปรุง
                                                                 2555) (ฉบับใช้กับออนไลน์)
@@ -522,9 +555,6 @@
                                                             <div class="card-status-popo-1">
                                                                 ปพ.1:ป
                                                             </div>
-                                                            <div class="card-status-approve">
-                                                                อนุมัติ
-                                                            </div>
                                                             ปพ.1:ป ระเบียนแสดงผลการเรียน ระดับ ประถมฯ (ปรับปรุง 2555)
                                                             (ฉบับใช้กับออนไลน์)
                                                         <td
@@ -558,9 +588,6 @@
                                                             <div class="card-status-popo-1">
                                                                 ปพ.1:ป
                                                             </div>
-                                                            <div class="card-status-approve">
-                                                                อนุมัติ
-                                                            </div>
                                                             ปพ.1:ป ระเบียนแสดงผลการเรียน ระดับ ประถมฯ (ปรับปรุง 2555)
                                                             (ฉบับใช้กับออนไลน์)
                                                         <td
@@ -593,9 +620,6 @@
                                                             class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px title-column-table">
                                                             <div class="card-status-popo-1">
                                                                 ปพ.1:ป
-                                                            </div>
-                                                            <div class="card-status-approve">
-                                                                อนุมัติ
                                                             </div>
                                                             ปพ.1:ป ระเบียนแสดงผลการเรียน ระดับ ประถมฯ (ปรับปรุง 2555)
                                                             (ฉบับใช้กับออนไลน์)
