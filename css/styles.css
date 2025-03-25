@@ -35075,8 +35075,7 @@ body.no-scroll {
   .popup .frame-1041 {
     cursor: pointer;
     height: 31px;
-    left: auto;
-    right: 24px;
+    left: 500px;
     position: absolute;
     top: 24px;
     width: 31px;
@@ -39052,7 +39051,7 @@ body.no-scroll {
   .popup .text_label-3-2 {
     color: var(--green);
     font-family: var(--font-family-noto_sans_thai);
-    font-size: 28px;
+    font-size: 28px !important;
     font-weight: 600;
     line-height: 60.0px;
     width: 100%;
@@ -41905,6 +41904,11 @@ body.no-scroll {
     padding: 0px;
   }
 
+  .button-4-2 {
+    width: -webkit-fill-available !important;
+    text-wrap: nowrap;
+  }
+
   .status-position {
     position: absolute;
     right: -15px;
@@ -43159,6 +43163,7 @@ hr {
   border-radius: 8px;
   padding: 8px 16px;
   cursor: pointer;
+  align-items: center;
   width: fit-content;
   height: fit-content;
 }
@@ -43626,6 +43631,17 @@ tr:hover {
   top: 2.2rem;
   bottom: -0.74rem;
   z-index: 1;
+}
+
+.button-4-2 {
+  background-color: var(--main);
+  justify-content: center;
+  border-radius: 10px;
+  display: flex;
+  gap: 8px;
+  padding: 8px 24px;
+  width: 223px;
+  /* width: 245px; */
 }
 
 .button-4-1 {
