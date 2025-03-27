@@ -95,6 +95,14 @@
         height: auto;
         align-items: anchor-center;
     }
+
+    .filter-1-order-list {
+        width: 40%;
+    }
+
+    .filter-2-order-list {
+        width: 20%;
+    }
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
@@ -128,6 +136,23 @@
         height: auto;
         align-items: anchor-center;
     }
+
+    .filter-1-order-list {
+        width: 40%;
+    }
+
+    .filter-2-order-list {
+        width: 20%;
+    }
+
+    .approval-educational-detail-frame-38486 {
+        flex-direction: column !important;
+        gap: 16px;
+    }
+
+    .approval-educational-detail-frame-27 {
+        margin-top: 60px;
+    }
 }
 
 @media (max-width: 767px) {
@@ -160,6 +185,39 @@
         padding: 11px;
         height: auto;
         align-items: anchor-center;
+    }
+
+    .filter-1-order-list {
+        width: 100%;
+    }
+
+    .filter-2-order-list {
+        width: 100%;
+    }
+
+    .order-approval-list-frame-38403 {
+        flex-direction: column;
+    }
+
+    .tabs-container {
+        width: -webkit-fill-available;
+    }
+
+    .tabs {
+        width: -webkit-fill-available;
+    }
+
+    .payment-proof-button {
+        padding: 5px 16px;
+    }
+
+    .approval-educational-detail-frame-38486 {
+        flex-direction: column !important;
+        gap: 16px;
+    }
+
+    .approval-educational-detail-frame-27 {
+        margin-top: 50px;
     }
 }
 
@@ -203,4 +261,8 @@
 .title-th-on-button {
     justify-content: center;
     gap: 5px;
+}
+
+.payment-proof-overlap-group {
+    width: -webkit-fill-available;
 }
