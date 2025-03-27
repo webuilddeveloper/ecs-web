@@ -1,0 +1,243 @@
+:root {
+    /* Color Variables (unchanged) */
+    --bggrey: #707070;
+    --bkack: #000000;
+    --black-haze: #f6f7f9;
+    --blue: #3347ff;
+    --clementine: #db6e00;
+    --geyser: #dce0e5;
+    --gray: #d9d9d9;
+    --greysblue-grey800: #444a6d;
+    --madang: #befec7;
+    --main: #012a6c;
+    --pattens-blue: #e0e9ff;
+    --pattens-blue-2: #e0edff;
+    --pink: #fca0a6;
+    --slate-gray: #6f7c8e;
+    --slimy-green: #00a81c;
+    --vis-vis: #ffed9e;
+    --vulcan: #14181f;
+    --white: #ffffff;
+    --white-2: #ffffff1a;
+    --main-colormain2: #0b24fb;
+    --main-colorthird2: #e3e6fe;
+    --black-2: #00000099;
+    --green: #039754;
+    --black: #000000;
+    --midnight-blue: #012a6c;
+    --delta: #a2a2a2;
+    --gallery: #f0eeed;
+    --yellow: #ffe46c;
+    --bg-colorbg1: #f7f7f7;
+    --red: #d92c20;
+    --black-3: #000000;
+
+    /* Font Size Variables (unchanged) */
+    --font-size-l: 16px;
+    --font-size-m: 15px;
+    --font-size-s: 13px;
+    --font-size-xl: 18px;
+    --font-size-xxl: 20px;
+    --font-size-xxxl: 22px;
+    --font-size-xxxxl: 40px;
+
+    /* Breakpoint Variables */
+    --breakpoint-mobile: 767px;
+    --breakpoint-tablet: 1023px;
+    --breakpoint-desktop: 1024px;
+}
+
+/* Base Styles */
+.content-purchse-order-numeric-ecs {
+    background-color: var(--white);
+    width: 100%;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+/* Export Buttons Container */
+.export-buttons {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+    flex-wrap: wrap;
+}
+
+/* Export Buttons */
+.export-btn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    transition: transform 0.2s, box-shadow 0.2s;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+
+.export-btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.export-btn-csv {
+    background-color: var(--blue); 
+    color: white;
+}
+
+.export-btn-xls {
+    background-color: var(--green);
+    color: white;
+}
+
+.export-btn-pdf {
+    background-color: var(--red); 
+    color: white;
+}
+
+.export-btn svg {
+    width: 20px;
+    height: 20px;
+    stroke: white;
+}
+
+/* Input Search and Select */
+.input-search, 
+.input-select-head {
+   
+    width: 100%;
+    margin-bottom: 15px;
+
+    
+}
+
+/* Desktop Styles (1024px and above) */
+@media (min-width: 1024px) {
+    .content-purchse-order-numeric-ecs {
+        padding: 0 30px;
+    }
+    .group-button-1 {
+ 
+        display: flex;
+        gap: 16px;
+        width: -webkit-fill-available;
+      }
+
+    .export-buttons {
+        background-color: orangereds;
+        width: 25%;
+        margin-left: auto;
+        margin-top: auto;
+
+    }
+
+    .export-btn {
+        font-size: 16px;
+      
+    }
+
+    .export-btn svg {
+        width: 24px;
+        height: 24px;
+    }
+
+    .input-search {
+        width: 30%;
+        margin-top: auto;
+      
+    }
+
+    .input-select-head {
+      
+        width: 20%;
+        margin-top: auto;
+
+    }
+    
+}
+
+/* Tablet Styles (768px to 1023px) */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .content-purchse-order-numeric-ecs {
+        padding: 0 20px;
+    }
+    .group-button-1 {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        width: 100%; 
+    }
+    
+    .input-search {
+        width: 100%;
+        margin-top: auto;
+
+    }
+    
+    .input-select-head {
+
+        width: 100%;
+        margin-top: auto;
+    }
+    
+    .export-buttons {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px; 
+    }
+    
+    .export-btn {
+        width: 30%;
+        justify-content: center;
+        font-size: 14px;
+        padding: 8px 12px;
+        display: flex;
+        align-items: center;
+        gap: 8px; 
+
+    }
+    
+    .export-btn img {
+        width: 20px;
+        height: 20px;
+    }
+}
+
+/* Mobile Styles (up to 767px) */
+@media (max-width: 767px) {
+    .content-purchse-order-numeric-ecs {
+        padding: 0 15px;
+    }
+    .group-button-1 {
+        gap: 16px;
+        width: -webkit-fill-available;
+      }
+    
+
+    .export-buttons {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 10px;
+    }
+
+    .export-btn {
+        justify-content: center;
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .input-search{
+        width: 100%;
+    }
+    .input-select-head {
+        
+        width: 100%;
+    }
+}
