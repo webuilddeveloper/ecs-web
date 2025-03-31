@@ -15607,7 +15607,7 @@ input:focus {
   display: flex;
   gap: 8px;
   padding: 8px 24px;
-  min-width: 223px;
+  min-width: 290px;
 }
 
 .color-white {
@@ -35094,7 +35094,7 @@ body.no-scroll {
   .popup .frame-1041 {
     cursor: pointer;
     height: 31px;
-    left: 500px;
+    /* left: 500px; */
     position: absolute;
     top: 24px;
     width: 31px;
@@ -41603,8 +41603,9 @@ body.no-scroll {
   .button-3-2 {
     width: -webkit-fill-available;
     text-wrap: nowrap;
-    min-width: auto;
+    /* min-width: auto; */
     padding: 8px 10px;
+    min-width: 80px;
   }
 
   .button-4 {
@@ -42195,6 +42196,19 @@ body.no-scroll {
     max-width: -webkit-fill-available !important;
   }
 
+  .button-4-3 {
+    min-width: fit-content !important;
+  }
+
+  .button-3-5 {
+    min-width: fit-content !important;
+  }
+
+  .text_label_5 {
+    font-size: var(--font-size-13) !important;
+  }
+  
+
 }
 
 /* media */
@@ -42304,7 +42318,7 @@ body.no-scroll {
   border-bottom-width: 1px;
   border-color: var(--geyser);
   gap: 8px;
-  height: 44px;
+  /* height: 44px; */
   /* height: max-content; */
   padding: 8px;
   position: relative;
@@ -43957,6 +43971,16 @@ tr:hover {
   min-width: fit-content;
 }
 
+.button-3-5 {
+  background-color: var(--gray);
+  border-radius: 10px;
+  display: flex;
+  gap: 8px;
+  padding: 8px 24px;
+  min-width: 600px;
+  justify-content: center;
+}
+
 .icon-edit-product {
   width: 29px;
   height: 29px;
@@ -43968,7 +43992,7 @@ tr:hover {
 }
 
 .div-edit-product {
-  /* display: flex; */
+  display: flex;
   flex-direction: column;
   align-items: flex-end;
   gap: 8px;
@@ -44193,4 +44217,29 @@ tr:hover {
   text-align: center;
   height: 47px;
   align-items: center;
+}
+
+.text-3-3 {
+  color: #000000;
+  font-family: var(--font-family-noto_sans_thai);
+  font-size: var(--font-size-s);
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: -1.00px;
+  margin-top: -3.00px;
+  text-align: center;
+  width: fit-content;
+}
+
+.text_label_5 {
+  color: #A2A2A2;
+  font-family: var(--font-family-noto_sans_thai);
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 0;
+  line-height: normal;
+  margin-top: -1.00px;
+  position: relative;
+  text-align: center;
+  width: max-content;
 }
