@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <!--<meta name=description content="This site was generated with Anima. www.animaapp.com"/>-->
+    <!-- <link rel="shortcut icon" type=image/png href="https://animaproject.s3.amazonaws.com/home/favicon.png" /> -->
+    <meta name="viewport" content="width=1440, maximum-scale=1.0" />
+    <link rel="shortcut icon" type="image/png" href="https://animaproject.s3.amazonaws.com/home/favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="og:type" content="website" />
+    <meta name="twitter:card" content="photo" />
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+    <link rel="stylesheet" type="text/css" href="css/styles-aom.css" />
+    <!-- <link rel="stylesheet" type="text/css" href="css/home-school-styles.css" />
+  <link rel="stylesheet" type="text/css" href="css/home-school-styleguide.css" />
+  <link rel="stylesheet" type="text/css" href="css/home-school-globals.css" /> -->
+
+</head>
+
+<body style="margin: 0; background: #ffffff">
+
+    <div class="header-ecs">
+        <div class="content-header">
+            <div class="hd-left">
+                <a href="./login.html">
+                    <img class="logo-ecs" src="img/logo------1.png" alt="logo ecs" />
+                </a>
+                <div class="navbar-ecs header-menu">
+                    <div class="navbar-link-text-ecs">
+                        <div class="title-menu-header pointer">
+                            สถานศึกษา
+                        </div>
+                    </div>
+                    <div class="navbar-link-text-ecs">
+                        <div class="title-menu-header pointer" onclick="showMenuNav1()">
+                            คำสั่งซื้อ
+                            <img class="icon-down-header" src="img/arrow-down-white.svg" alt="logo ecs" />
+                        </div>
+                        <div class="submenu-theme" id="menu-header-1">
+                            <div class="sub-menu-card">
+                                <div class="title-menu-sub-root pointer" onclick="showMenuNav1_1()">
+                                    รายการใบขอสั่งซื้อ
+                                    <img class="icon-menu-sub-root" src="img/arrow-right-white.svg" alt="logo ecs" />
+                                </div>
+                                <div class="submenu-theme-edu-1-1" id="menu-header-1-1">
+                                    <a href="./order-approval-list.html">
+                                        อนุมัติใบขอสั่งซื้อ
+                                    </a>
+                                </div>
+                            </div>
+                            <hr>
+                            <a href="./purchase-order-draft.html">
+                                ร่างใบขอสั่งซื้อ
+                            </a>
+                            <hr>
+                            <div class="sub-menu-card">
+                                <div class="title-menu-sub-root pointer" onclick="showMenuNav1_2()">
+                                    รายการใบสั่งซื้อ
+                                    <img class="icon-menu-sub-root" src="img/arrow-right-white.svg" alt="logo ecs" />
+                                </div>
+                                <div class="submenu-theme-edu-1-2" id="menu-header-1-2">
+                                    <a href="./purchase-order.html?status=0">
+                                        ทั้งหมด
+                                    </a>
+                                    <hr>
+                                    <a href="./purchase-order.html?status=1">
+                                        รอแนบเอกสาร
+                                    </a>
+                                    <hr>
+                                    <a href="./purchase-order.html?status=2">
+                                        รอรับการอนุมัติ
+                                    </a>
+                                    <hr>
+                                    <a href="./purchase-order.html?status=3">
+                                        ได้รับการอนุมัติ
+                                    </a>
+                                    <hr>
+                                    <a href="./purchase-order.html?status=4">
+                                        ไม่ได้รับการอนุมัติ
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="navbar-link-text-ecs">
+                        <div class="title-menu-header pointer" onclick="showMenuNav2()">
+                            รายงาน
+                            <img class="icon-down-header" src="img/arrow-down-white.svg" alt="logo ecs" />
+                        </div>
+                        <div class="submenu-theme" id="menu-header-2">
+                            <a href="./order-list.html?status=0">
+                                รายงานการขออนุมัติใบขอซื้อ
+                            </a>
+                            <hr>
+                            <a href="./order-list.html?status=1">
+                                รายงานการขออนุมัตสถานศึกษา
+                            </a>
+                            <hr>
+                            <a href="./order-list.html?status=3">
+                                รายงานใบสั่งซื้อ
+                            </a>
+                            <hr>
+                            <a href="./order-list.html?status=4">
+                                รายงานชุดข้อมูลตัวเลข
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="header-action-ecs">
+                <img class="group site-navbar" src="img/Icon-Service.png" alt="Service" onclick="showMenuNav()" />
+                <div class="notification-icon">
+                    <img class="group" src="img/group@2x.png" alt="Group" onclick="toggleNotificationPanel()" />
+                    <span id="notification-badge" class="notification-badge"></span> <!-- จุดแดง -->
+                </div>
+
+                <div id="notification-panel" class="notification-panel hidden">
+                    <ul class="notification-list">
+                        <li class="notification-item unread">
+                            <span class="status-indicator"></span>
+                            <div class="notification-content">
+                                <p class="notosansthai-normal-vulcan-15px">
+                                    <strong class="notosansthai-semi-bold-vulcan-15px">หมายเลขคำสั่งซื้อ:</strong> 12345
+                                </p>
+                                <p class="notosansthai-normal-vulcan-15px">
+                                    <strong class="notosansthai-semi-bold-vulcan-15px">สถานะ:</strong> รอดำเนินการ
+                                </p>
+                            </div>
+                        </li>
+                        <li class="notification-item">
+                            <span class="status-indicator read"></span>
+                            <div class="notification-content">
+                                <p class="notosansthai-normal-vulcan-15px">
+                                    <strong class="notosansthai-semi-bold-vulcan-15px">หมายเลขคำสั่งซื้อ:</strong> 67890
+                                </p>
+                                <p class="notosansthai-normal-vulcan-15px">
+                                    <strong class="notosansthai-semi-bold-vulcan-15px">สถานะ:</strong> สำเร็จ
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+
+
+                <div class="title-menu-header">
+                    <a href="./profile-school.html">
+                        <img class="vector" src="img/vector-2.svg" alt="Vector" />
+                    </a>
+                    <a href="./profile-school.html" class="title-logout pointer">
+                        ออกจากระบบ
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="subMenuHeader" class="sub-menu-header" style="display: none;">
+        <a class="title-menu-header" href="#">
+            สถานศึกษา
+        </a>
+        <hr>
+        <div class="title-menu-header" onclick="showMenuNav1()">
+            คำสั่งซื้อ
+            <img class="icon-down-header" src="img/arrow-down-white.svg" alt="logo ecs" />
+        </div>
+        <div class="sub-menu-header-edu-1-rps" id="menu-header-1-rps">
+            <div class="title-menu-header" onclick="showMenuNav1_1()">
+                รายการใบขอสั่งซื้อ
+                <img class="icon-down-header" src="img/arrow-down-white.svg" alt="logo ecs" />
+            </div>
+            <hr>
+            <a class="title-menu-header" href="./purchase-order-draft.html">
+                ออกใบขอสั่งซื้อ
+            </a>
+            <hr>
+            <div class="title-menu-header" onclick="showMenuNav1_2()">
+                รายการใบสั่งซื้อ
+                <img class="icon-down-header" src="img/arrow-down-white.svg" alt="logo ecs" />
+            </div>
+            <div class="sub-menu-header-edu-1-1-rps" id="menu-header-1-1-rps">
+                <a class="title-menu-header" href="./order-approval-list.html">
+                    อนุมัติใบขอสั่งซื้อ
+                </a>
+            </div>
+            <div class="sub-menu-header-edu-1-2-rps" id="menu-header-1-2-rps">
+                <a class="title-menu-header" href="./purchase-order.html?status=0">
+                    ทั้งหมด
+                </a>
+                <hr>
+                <a class="title-menu-header" href="./purchase-order.html?status=1">
+                    รอแนบเอกสาร
+                </a>
+                <hr>
+                <a class="title-menu-header" href="./purchase-order.html?status=2">
+                    รอรับการอนุมัติ
+                </a>
+                <hr>
+                <a class="title-menu-header" href="./purchase-order.html?status=3">
+                    ได้รับการอนุมัติ
+                </a>
+                <hr>
+                <a class="title-menu-header" href="./purchase-order.html?status=4">
+                    ไม่ได้รับการอนุมัติ
+                </a>
+            </div>
+        </div>
+        <hr />
+        <div class="title-menu-header" onclick="showMenuNav2()">
+            รายงาน
+            <img class="icon-down-header" src="img/arrow-down-white.svg" alt="logo ecs" />
+        </div>
+        <div class="sub-menu-header-edu-2-rps" id="menu-header-2-rps">
+            <a class="title-menu-header" href="./order-list.html?status=0">
+                รายงานการขออนุมัติใบขอซื้อ
+            </a>
+            <hr>
+            <a class="title-menu-header" href="./order-list.html?status=1">
+                รายงานการขออนุมัตสถานศึกษา
+            </a>
+            <hr>
+            <a class="title-menu-header" href="./order-list.html?status=3">
+                รายงานใบสั่งซื้อ
+            </a>
+            <hr>
+            <a class="title-menu-header" href="./order-list.html?status=3">
+                รายงานชุดข้อมูลตัวเลข
+            </a>
+        </div>
+    </div>
+
+    <div class="content-center">
+        <div class="content-ecs">
+            <div class="menu-header">
+                <a onclick="goBack()" class="position-absolute ">
+                    <div class="purchase-order-button-3 purchase-order-button-8">
+                        <img class="purchase-order-icon-back" src="img/icon-back-3.svg" alt="icon back" />
+                        <div
+                            class="purchase-order-text_label valign-text-middle purchase-order-text_label-5 display-none-m">
+                            ย้อนกลับ</div>
+                    </div>
+                </a>
+                <h1 class="purchase-order-text-6 margin-0-auto" style="align-self: center;">รายงานการขออนุมัติใบขอซื้อ</h1>
+            </div>
+
+            <div class="purchase-order-frame-38327">
+
+                <div class="div-filter">
+                    <div class="group-filter-input">
+                        <div class="filter-2-report-list">
+                            <div class="base-form-label-medium-2">
+                                <div class="label-input font-18"><br></div>
+                            </div>
+                            <div class="purchase-order-frame-2">
+                                <div class="purchase-order-frame-38329-1">
+                                    <input id="autocomplete-input"
+                                        class="purchase-order-text_input notosansthai-normal-dove-gray-17px "
+                                        name="กรณากรอกชอผใชงาน" placeholder="กรุณากรอกคำค้นหา" type="text" />
+                                    <img class="purchase-order-icon" src="img/icon-magnifying-glass-searching-glass-1.svg"
+                                        alt="icon Magnifying Glass Searching Glass" />
+                                </div>
+                                <div id="autocomplete-list" class="autocomplete-items"></div>
+                            </div>
+                        </div>
+                       
+
+                        <div class="filter-2-report-list">
+                            <div class="base-form-label-medium-2">
+                                <div class="label-input font-18">ตั้งแต่</div>
+                            </div>
+                            <div class="purchase-order-frame-2">
+                                <div class="purchase-order-frame-38329-1">
+                                    <input id="autocomplete-input"
+                                        class="purchase-order-text_input notosansthai-normal-dove-gray-17px "
+                                        name="กรณากรอกชอผใชงาน" placeholder="เลือกเดือน" type="month" />
+                                </div>
+                                <div id="autocomplete-list" class="autocomplete-items"></div>
+                            </div>
+                        </div>
+                        <div class="filter-2-report-list">
+                            <div class="base-form-label-medium-2">
+                                <div class="label-input font-18">จนถึง</div>
+                            </div>
+                            <div class="purchase-order-frame-2">
+                                <div class="purchase-order-frame-38329-1">
+                                    <input id="autocomplete-input"
+                                        class="purchase-order-text_input notosansthai-normal-dove-gray-17px "
+                                        name="กรณากรอกชอผใชงาน" placeholder="เลือกเดือน" type="month" />
+                                </div>
+                                <div id="autocomplete-list" class="autocomplete-items"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="group-export-button">
+                        <div class="bt-csv pointer">
+                            <img class="file-download" src="img/icon-btn-left.svg" alt="Line 6" />
+                            CSV
+                        </div>
+                        <div class="bt-xls pointer">
+                            <img class="file-download" src="img/icon-btn-left.svg" alt="Line 6" />
+                            XLS
+                        </div>
+                        <div class="bt-pdf pointer">
+                            <img class="file-download" src="img/icon-btn-left.svg" alt="Line 6" />
+                            PDF
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="table-purchase-order">
+                    <div class="frame-38-1">
+
+                        <div class="frame-3346" style="margin-bottom: 15px;">
+                            <table style="width: 100%;text-align: left;">
+                                <thead>
+                                    <tr>
+                                        <th
+                                            class="order-approval-list-table-header-2 notosansthai-semi-bold-vulcan-15px th-30-px">
+                                            ลำดับ</th>
+                                        <th
+                                            class="order-approval-list-table-header-2 notosansthai-semi-bold-vulcan-15px th-154-px">
+                                            หมายเลขใบขอสั่งซื้อ
+                                        </th>
+                                        <th
+                                            class="order-approval-list-table-header-2 notosansthai-semi-bold-vulcan-15px th-154-px">
+                                            วันที่สร้างใบขอสั่งซื้อ
+                                        </th>
+                                        <th
+                                            class="order-approval-list-table-header-2 notosansthai-semi-bold-vulcan-15px th-154-px">
+                                            วันที่อนุมัติ
+                                        </th>
+                                        <th
+                                            class="order-approval-list-table-header-2 notosansthai-semi-bold-vulcan-15px th-154-px">
+                                            ชื่อสถานศึกษา</th>
+                                        <th
+                                            class="order-approval-list-table-header-2 notosansthai-semi-bold-vulcan-15px th-154-px">
+                                            ชื่อ-นามสกุล ผู้ซื้อ
+                                        </th>
+                                        <th
+                                            class="order-approval-list-table-header-2 notosansthai-semi-bold-vulcan-15px th-154-px">
+                                            ยอดสุทธิ (บาท)
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td
+                                            class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px text-al-center al-center">
+                                            1</td>
+                                        <td
+                                            class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px text-al-center al-center">
+                                            PR-6612-0683
+                                        </td>
+                                        <td
+                                            class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px text-al-center al-center">
+                                            22 ต.ค. 2567</td>
+
+                                        <td
+                                            class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px text-al-center al-center">
+                                            22 ต.ค. 2567
+                                        </td>
+                                        <td
+                                            class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px text-al-center al-center">
+                                            โรงเรียนบำรุงวิทยา
+                                        </td>
+                                        <td
+                                            class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px text-al-center al-center">
+                                            สุชัย มากมี
+                                        </td>
+                                        <td
+                                            class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px text-al-center al-center">
+                                            1,000
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td
+                                            class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px text-al-center al-center">
+                                            2</td>
+                                        <td
+                                            class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px text-al-center al-center">
+                                            PR-6612-0683
+                                        </td>
+                                        <td
+                                            class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px text-al-center al-center">
+                                            22 ต.ค. 2567</td>
+
+                                        <td
+                                            class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px text-al-center al-center">
+                                            22 ต.ค. 2567
+                                        </td>
+                                        <td
+                                            class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px text-al-center al-center">
+                                            โรงเรียนบำรุงวิทยา
+                                        </td>
+                                        <td
+                                            class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px text-al-center al-center">
+                                            สุชัย มากมี
+                                        </td>
+                                        <td
+                                            class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px text-al-center al-center">
+                                            1,000
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td
+                                            class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px text-al-center al-center">
+                                            3</td>
+                                        <td
+                                            class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px text-al-center al-center">
+                                            PR-6612-0683
+                                        </td>
+                                        <td
+                                            class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px text-al-center al-center">
+                                            22 ต.ค. 2567</td>
+
+                                        <td
+                                            class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px text-al-center al-center">
+                                            22 ต.ค. 2567
+                                        </td>
+                                        <td
+                                            class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px text-al-center al-center">
+                                            โรงเรียนบำรุงวิทยา
+                                        </td>
+                                        <td
+                                            class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px text-al-center al-center">
+                                            สุชัย มากมี
+                                        </td>
+                                        <td
+                                            class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px text-al-center al-center">
+                                            1,000
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td
+                                            class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px text-al-center al-center">
+                                            4</td>
+                                        <td
+                                            class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px text-al-center al-center">
+                                            PR-6612-0683
+                                        </td>
+                                        <td
+                                            class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px text-al-center al-center">
+                                            22 ต.ค. 2567</td>
+
+                                        <td
+                                            class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px text-al-center al-center">
+                                            22 ต.ค. 2567
+                                        </td>
+                                        <td
+                                            class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px text-al-center al-center">
+                                            โรงเรียนบำรุงวิทยา
+                                        </td>
+                                        <td
+                                            class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px text-al-center al-center">
+                                            สุชัย มากมี
+                                        </td>
+                                        <td
+                                            class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px text-al-center al-center">
+                                            1,000
+                                        </td>
+                                    </tr>
+                                    
+                                </tbody>
+                            </table>
+                        </div>
+
+
+                        <div class="order-approval-list-input-select-button-footer-default">
+                            <div class="order-approval-list-frame-38263">
+                                <div class="order-approval-list-input-select input">
+                                    <div class="order-approval-list-select-field">
+                                        <select id="agency3" class="order-approval-list-custom-dropdown">
+                                            <option value="แสดง 9" selected>แสดง 10</option>
+                                            <option value="แสดง 30">แสดง 30</option>
+                                            <option value="แสดง 50">แสดง 50</option>
+                                            <option value="แสดง 100">แสดง 100</option>
+                                        </select>
+                                        <img class="order-approval-list-dropdown-icon" src="img/dropdown-6.svg"
+                                            alt="dropdown" />
+                                        <!-- <div class="order-approval-list-select">แสดง 10</div>
+                    <img class="order-approval-list-icon" src="img/dropdown-icon-44.svg" alt="dropdown-icon" /> -->
+                                    </div>
+                                </div>
+                                <p class="order-approval-list-text-1-1 hidden-sm-down">แสดง 1-10 รายการ จาก 100 รายการ
+                                </p>
+                            </div>
+                            <div class="order-approval-list-pagination">
+                                <a href="javascript:SubmitForm('form11')">
+                                    <div class="order-approval-list-button-1 order-approval-list-button-5"><img
+                                            class="order-approval-list-icon-1" src="img/icon-178.svg" alt="icon" />
+                                    </div>
+                                </a><a href="javascript:SubmitForm('form11')">
+                                    <div class="order-approval-list-button-4 order-approval-list-button-5">
+                                        <div class="order-approval-list-text-sm-1 order-approval-list-text-sm-3">1</div>
+                                    </div>
+                                </a><a href="javascript:SubmitForm('form11')" class="hidden-sm-down">
+                                    <div class="order-approval-list-button-2 order-approval-list-button-5">
+                                        <div class="order-approval-list-text-sm notosansthai-medium-blue-15px">2</div>
+                                    </div>
+                                </a><a href="javascript:SubmitForm('form11')" class="hidden-sm-down">
+                                    <div class="order-approval-list-button-2 order-approval-list-button-5">
+                                        <div class="order-approval-list-text-sm notosansthai-medium-blue-15px">3</div>
+                                    </div>
+                                </a><a href="javascript:SubmitForm('form11')" class="hidden-sm-down">
+                                    <div class="order-approval-list-button-2 order-approval-list-button-5">
+                                        <div class="order-approval-list-text-sm notosansthai-medium-blue-15px">4</div>
+                                    </div>
+                                </a><a href="javascript:SubmitForm('form11')" class="hidden-sm-down">
+                                    <div class="order-approval-list-button-2 order-approval-list-button-5">
+                                        <div class="order-approval-list-text-sm notosansthai-medium-blue-15px">5</div>
+                                    </div>
+                                </a><a href="javascript:SubmitForm('form11')">
+                                    <div class="order-approval-list-button-2 order-approval-list-button-5">
+                                        <div class="order-approval-list-text-sm notosansthai-medium-blue-15px">...</div>
+                                    </div>
+                                </a><a href="javascript:SubmitForm('form11')">
+                                    <div class="order-approval-list-button-2 order-approval-list-button-5">
+                                        <div
+                                            class="order-approval-list-text-sm-2 order-approval-list-text-sm-3 notosansthai-medium-blue-15px">
+                                            10</div>
+                                    </div>
+                                </a><a href="javascript:SubmitForm('form11')">
+                                    <div class="order-approval-list-button-1 order-approval-list-button-5"><img
+                                            class="order-approval-list-icon-1" src="img/icon-179.svg" alt="icon" />
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <footer class="home-educational-footer">
+        <p class="home-educational-copyright-2024">Copyright 2024&nbsp;&nbsp; องค์การค้าของ สกสค.</p>
+    </footer>
+
+    <script>
+        /* Copyright (c) 2016 Tobias Buschor https://goo.gl/gl0mbf | MIT License https://goo.gl/HgajeK */
+
+        /////////////////////////////////////////////////////////////////////////////////////////////////////////////
+        const menuHeader1 = document.getElementById("menu-header-1");
+        const menuHeader1_rps = document.getElementById("menu-header-1-rps");
+        const menuHeader1_1 = document.getElementById("menu-header-1-1");
+        const menuHeader1_1_rps = document.getElementById("menu-header-1-1-rps");
+        const menuHeader1_2 = document.getElementById("menu-header-1-2");
+        const menuHeader1_2_rps = document.getElementById("menu-header-1-2-rps");
+        const menuHeader2 = document.getElementById("menu-header-2");
+        const menuHeader2_rps = document.getElementById("menu-header-2-rps");
+
+
+        let isMenuHeader1 = false;
+        let isMenuHeader1_1 = false;
+        let isMenuHeader1_2 = false;
+        let isMenuHeader2 = false;
+
+        function showMenuNav1() {
+            isMenuHeader1 = !isMenuHeader1;
+            isMenuHeader1_1 = false;
+            isMenuHeader1_2 = false;
+            isMenuHeader2 = false;
+
+            // const subMenuHeaderMobile = document.getElementById("subMenuHeaderMobile");
+            menuHeader1_1.style.display = "none";
+            menuHeader1_2.style.display = "none";
+            menuHeader2.style.display = "none";
+            menuHeader2_rps.style.display = "none";
+            if (isMenuHeader1) {
+                menuHeader1.style.display = "flex";
+                menuHeader1_rps.style.display = "flex";
+                // subMenuHeaderMobile.style.display = "flex";
+            } else {
+                menuHeader1.style.display = "none";
+                menuHeader1_rps.style.display = "none";
+                // subMenuHeaderMobile.style.display = "none";
+            }
+        }
+
+        function showMenuNav1_1() {
+            isMenuHeader1_1 = !isMenuHeader1_1;
+            isMenuHeader1_2 = false;
+            if (isMenuHeader1_1) {
+                menuHeader1_1.style.display = "flex";
+                menuHeader1_1_rps.style.display = "flex";
+                menuHeader1_2.style.display = "none";
+                menuHeader1_2_rps.style.display = "none";
+            } else {
+                menuHeader1_1.style.display = "none";
+                menuHeader1_1_rps.style.display = "none";
+            }
+        }
+
+        function showMenuNav1_2() {
+            isMenuHeader1_2 = !isMenuHeader1_2;
+            isMenuHeader1_1 = false;
+            if (isMenuHeader1_2) {
+                menuHeader1_2.style.display = "flex";
+                menuHeader1_2_rps.style.display = "flex";
+                menuHeader1_1.style.display = "none";
+                menuHeader1_1_rps.style.display = "none";
+            } else {
+                menuHeader1_2.style.display = "none";
+                menuHeader1_2_rps.style.display = "none";
+            }
+        }
+
+
+        function showMenuNav2() {
+            isMenuHeader2 = !isMenuHeader2;
+            isMenuHeader1 = false;
+            isMenuHeader1_1 = false;
+            isMenuHeader1_2 = false;
+            menuHeader1.style.display = "none";
+            menuHeader1_rps.style.display = "none";
+            menuHeader1_1.style.display = "none";
+            menuHeader1_1_rps.style.display = "none";
+            menuHeader1_2.style.display = "none";
+            menuHeader1_2_rps.style.display = "none";
+            if (isMenuHeader2) {
+                menuHeader2.style.display = "flex";
+                menuHeader2_rps.style.display = "flex";
+                // subMenuHeaderMobile.style.display = "flex";
+            } else {
+                menuHeader2.style.display = "none";
+                menuHeader2_rps.style.display = "none";
+                // subMenuHeaderMobile.style.display = "none";
+            }
+        }
+
+        let isSubMenuHeader = false;
+
+        function showMenuNav() {
+            isSubMenuHeader = !isSubMenuHeader;
+            const subMenuHeader = document.getElementById("subMenuHeader");
+            const subMenuHeaderMobile = document.getElementById("subMenuHeaderMobile");
+            if (isSubMenuHeader) {
+                subMenuHeader.style.display = "flex";
+                subMenuHeaderMobile.style.display = "flex";
+            } else {
+                subMenuHeader.style.display = "none";
+                subMenuHeaderMobile.style.display = "none";
+            }
+        }
+
+        function goBack() {
+            history.back();
+        }
+        /////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+        function showlist(param) {
+            if (param == 'down') {
+                document.getElementById("tr-table4-sub-1").style.display = 'table-row';
+                document.getElementById("tr-table4-sub-2").style.display = 'table-row';
+                document.getElementById("tr-table4-sub-3").style.display = 'table-row';
+                document.getElementById("button-down-1").style.display = 'none';
+                document.getElementById("button-up-1").style.display = 'flex';
+
+            } else if (param == 'up') {
+                document.getElementById("tr-table4-sub-1").style.display = 'none';
+                document.getElementById("tr-table4-sub-2").style.display = 'none';
+                document.getElementById("tr-table4-sub-3").style.display = 'none';
+                document.getElementById("button-down-1").style.display = 'flex';
+                document.getElementById("button-up-1").style.display = 'none';
+            }
+        }
+
+        if (!HTMLFormElement.prototype.reportValidity) {
+            HTMLFormElement.prototype.reportValidity = function () {
+                if (this.checkValidity()) return true;
+                var btn = document.createElement("button");
+                this.appendChild(btn);
+                btn.click();
+                this.removeChild(btn);
+                return false;
+            };
+        }
+
+        function checkBoxAll() {
+            var isChecked = document.getElementById('checkbox-all').checked;
+
+            document.getElementById('checkbox1').checked = isChecked;
+            document.getElementById('checkbox2').checked = isChecked;
+            document.getElementById('checkbox3').checked = isChecked;
+            document.getElementById('checkbox4').checked = isChecked;
+            document.getElementById('checkbox5').checked = isChecked;
+            document.getElementById('checkbox6').checked = isChecked;
+            document.getElementById('checkbox7').checked = isChecked;
+            document.getElementById('checkbox8').checked = isChecked;
+            document.getElementById('checkbox9').checked = isChecked;
+            document.getElementById('checkbox10').checked = isChecked;
+        }
+
+        function SubmitForm(form_name) {
+            var form = document.getElementsByName(form_name)[0];
+            if (form.reportValidity()) {
+                form.submit();
+                if (window.submitted) window.submitted();
+            }
+        }
+    </script>
+</body>
+
+</html>

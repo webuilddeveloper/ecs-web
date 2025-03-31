@@ -30,7 +30,7 @@
     --bg-colorbg1: #f7f7f7;
     --red: #d92c20;
     --black-3: #000000;
-  
+
     --font-size-l: 16px;
     --font-size-m: 15px;
     --font-size-s: 13px;
@@ -38,7 +38,7 @@
     --font-size-xxl: 20px;
     --font-size-xxxl: 22px;
     --font-size-xxxxl: 40px;
-  
+
     --font-size-11: 11px;
     --font-size-12: 12px;
     --font-size-13: 13px;
@@ -58,12 +58,12 @@
     --font-size-s-2: 17px;
     --font-size-xxl-2: 32px;
     --font-size-xl-2: 24px;
-  
+
     --font-family-kanit: "Kanit", Helvetica;
     --font-family-montserrat: "Montserrat", Helvetica;
     --font-family-noto_sans_thai: "Noto Sans Thai", Helvetica;
     --font-family-poppins: "Poppins", Helvetica;
-  }
+}
 
 @media (min-width: 1024px) {
     .div-action-home-edu {
@@ -84,7 +84,7 @@
         height: auto;
         align-items: anchor-center;
     }
-    
+
     .card-build-order-3 .button {
         background-color: #3348FF;
         color: var(--white);
@@ -102,6 +102,10 @@
 
     .filter-2-order-list {
         width: 20%;
+    }
+
+    .filter-2-report-list {
+        width: -webkit-fill-available;
     }
 }
 
@@ -125,7 +129,7 @@
         height: auto;
         align-items: anchor-center;
     }
-    
+
     .card-build-order-3 .button {
         background-color: #3348FF;
         color: var(--white);
@@ -145,6 +149,10 @@
         width: 20%;
     }
 
+    .filter-2-report-list {
+        width: -webkit-fill-available;
+    }
+
     .approval-educational-detail-frame-38486 {
         flex-direction: column !important;
         gap: 16px;
@@ -152,6 +160,19 @@
 
     .approval-educational-detail-frame-27 {
         margin-top: 60px;
+    }
+
+    .div-filter {
+        flex-direction: column;
+    }
+
+    .group-export-button {
+        gap: 16px;
+    }
+
+    .group-filter-input {
+        gap: 16px;
+        width: -webkit-fill-available;
     }
 }
 
@@ -175,7 +196,7 @@
         height: auto;
         align-items: anchor-center;
     }
-    
+
     .card-build-order-3 .button {
         background-color: #3348FF;
         color: var(--white);
@@ -193,6 +214,10 @@
 
     .filter-2-order-list {
         width: 100%;
+    }
+
+    .filter-2-report-list {
+        width: -webkit-fill-available;
     }
 
     .order-approval-list-frame-38403 {
@@ -218,6 +243,20 @@
 
     .approval-educational-detail-frame-27 {
         margin-top: 50px;
+    }
+
+    .div-filter {
+        flex-direction: column;
+    }
+
+    .group-export-button {
+        gap: 16px;
+    }
+
+    .group-filter-input {
+        gap: 16px;
+        width: -webkit-fill-available;
+        flex-direction: column;
     }
 }
 
@@ -265,4 +304,25 @@
 
 .payment-proof-overlap-group {
     width: -webkit-fill-available;
+}
+
+.group-export-button {
+    display: flex;
+    gap: 16px;
+}
+
+.group-filter-input {
+    display: flex;
+    width: -webkit-fill-available;
+    gap: 16px;
+}
+
+.div-filter {
+    display: inline-flex;
+    flex: 0 0 auto;
+    gap: 16px;
+    justify-content: center;
+    position: relative;
+    width: -webkit-fill-available;
+    align-items: flex-end;
 }
