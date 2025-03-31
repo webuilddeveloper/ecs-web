@@ -14896,6 +14896,7 @@ input:focus {
   height: auto;
   flex-wrap: wrap;
   align-items: flex-start;
+  gap: 10px;
 }
 
 .purchase-order-shipping-frame-94 {
