@@ -253,6 +253,16 @@
     align-content: center;
     text-align: center;
   }
+  .purchase-order-shipping-text_label-2-2 {
+    color: var(--pink);
+  font-family: var(--font-family-noto_sans_thai);
+  font-size: var(--font-size-40);
+  font-weight: 600;
+  line-height: 60.0px;
+  margin-top: -1.00px;
+  text-align: center;
+  width: 468px;
+  }
 
 
 
@@ -418,5 +428,15 @@ justify-self: center;
     
     }
    
-
+    .purchase-order-shipping-text_label-2-2 {
+      
+        color: var(--pink);
+        font-family: var(--font-family-noto_sans_thai);
+        font-size: 32px;
+        font-weight: 600;
+        line-height: 60.0px;
+        margin-top: -1.00px;
+        text-align: center;
+        width: 468px;
+      }
 }
