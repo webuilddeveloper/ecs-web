@@ -30503,7 +30503,7 @@ body.no-scroll {
     width: 100%;
     max-width: 90%;
     bottom: 25%;
-    left: 10%;
+    /* left: 10%; */
   }
 
   .box-input-dialog-row {
@@ -30602,6 +30602,9 @@ body.no-scroll {
     font-weight: 600;
     line-height: 60.0px;
     width: 100%;
+  }
+  .order-approval-attach-book-span0 {
+    font-size: 22px;
   }
 }
 
@@ -35650,6 +35653,10 @@ body.no-scroll {
     font-weight: 600;
     line-height: 60.0px;
     width: 100%;
+  }
+
+  .order-approval-attach-book-span0 {
+    font-size: 18px;
   }
 }
 
@@ -42210,7 +42217,9 @@ body.no-scroll {
     font-size: var(--font-size-13) !important;
   }
   
-
+  .order-approval-attach-book-span0 {
+    font-size: 15px;
+  }
 }
 
 /* media */
