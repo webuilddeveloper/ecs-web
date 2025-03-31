@@ -691,6 +691,7 @@
   gap: 6px;
   height: 32px;
   padding: 8px;
+  font-family: var(--font-family-noto_sans_thai);
 }
 
 .content-ecs .button-7 {
