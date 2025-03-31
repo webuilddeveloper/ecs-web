@@ -55,6 +55,18 @@
     box-sizing: border-box;
 }
 
+.content-ecs .frame-38454-1 {
+    align-items: center;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    gap: 90px;
+    margin-top: 40px;
+    position: relative;
+    width: -webkit-fill-available;
+    /* width: 1240px; */
+  }
+
 /* Export Buttons Container */
 .export-buttons {
     display: flex;
@@ -86,17 +98,17 @@
 }
 
 .export-btn-csv {
-    background-color: var(--blue); 
+
     color: white;
 }
 
 .export-btn-xls {
-    background-color: var(--green);
+
     color: white;
 }
 
 .export-btn-pdf {
-    background-color: var(--red); 
+
     color: white;
 }
 
@@ -109,12 +121,142 @@
 /* Input Search and Select */
 .input-search, 
 .input-select-head {
-   
     width: 100%;
-    margin-bottom: 15px;
-
-    
+    margin-bottom: 15px;  
+}  
+.base-form-label-medium .label-input {
+    font-size: var(--font-size-m);
+    font-weight: bold;
+    color: var(--greysblue-grey800);
 }
+
+.search-input-container {
+    display: flex;
+    align-items: center;
+    border: 1px solid var(--geyser);
+    border-radius: 8px;
+    padding: 8px;
+    background-color: var(--white);
+}
+
+.search-text-input {
+    flex: 1;
+    border: none;
+    outline: none;
+    font-size: var(--font-size-m);
+    color: var(--slate-gray);
+    background: transparent;
+}
+
+.search-icon-right {
+    width: 24px;
+    height: 24px;
+    margin-left: auto;
+}
+.purchase-order-educational-frame-area {
+    align-items: center;
+    background-color: var(--gray);
+    border-radius: 10px;
+    cursor: pointer;
+    display: flex;
+    gap: 12px;
+    height: 60px;
+    justify-content: center;
+    overflow: hidden;
+    padding: 16px 54px;
+    position: relative;
+    width: 100%;
+  }
+  
+    
+  .content-ecs-purchase {
+
+
+ 
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: 100%;
+    padding: 0px 30px; 
+    
+} 
+.tabs-container-purchase {
+    font-family: Arial, sans-serif;
+    align-self: flex-start;
+  } 
+  .filter-table-purchase {
+    display: flex;
+    justify-content: space-between;
+    width: -webkit-fill-available;
+    align-items: flex-end;
+  }
+  
+.button-container {
+    display: flex;
+    gap: 16px;
+    width: 100%;
+
+    max-width: 650px; 
+
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    min-height: 50px; 
+    border-radius: 8px;
+    font-weight: bold;
+    text-align: center;
+    padding: 16px; 
+}
+
+
+.button-gray {
+
+    background-color: #E0E0E0 !important;
+    color: #333 !important;
+}
+
+.button-blue {
+    background-color: #012A6C !important;
+    color: white !important;
+}
+
+.order-approval-list-base-table-cell-purchase {
+   
+    align-items: center;
+    align-self: stretch;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-color: var(--geyser);
+    gap: 8px;
+    /* height: 44px; */
+    /* height: max-content; */
+    padding: 8px;
+    position: relative;
+    height: -webkit-fill-available;
+    text-align: -webkit-center;
+  }
+  .order-approval-list-table-header-2-purchase {
+    align-items: center;
+    align-self: stretch;
+    background-color: var(--black-haze);
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-color: var(--geyser);
+    gap: 4px;
+    height: 44px;
+    padding: 8px;
+    position: relative;
+    align-content: center;
+    text-align: center;
+  }
+
+
+
+
 
 /* Desktop Styles (1024px and above) */
 @media (min-width: 1024px) {
@@ -122,14 +264,14 @@
         padding: 0 30px;
     }
     .group-button-1 {
- 
+justify-self: center;
         display: flex;
         gap: 16px;
         width: -webkit-fill-available;
       }
 
     .export-buttons {
-        background-color: orangereds;
+     
         width: 25%;
         margin-left: auto;
         margin-top: auto;
@@ -157,8 +299,11 @@
         width: 20%;
         margin-top: auto;
 
+
+
     }
-    
+  
+      
 }
 
 /* Tablet Styles (768px to 1023px) */
@@ -208,6 +353,16 @@
         width: 20px;
         height: 20px;
     }
+    .content-ecs-purchase {
+    
+      
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        width: 100%;
+        padding: 0px 30px;
+    }
+  
 }
 
 /* Mobile Styles (up to 767px) */
@@ -229,15 +384,39 @@
 
     .export-btn {
         justify-content: center;
+        align-items: center;
         font-size: 14px;
         padding: 10px;
     }
 
     .input-search{
+   
+      
         width: 100%;
     }
     .input-select-head {
-        
+     
         width: 100%;
     }
+    .content-ecs-purchase {
+    
+     
+       
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        width: 100%;
+        padding: 0px 30px;
+    }
+    .button-container {
+        align-items: center;
+        flex-direction: column;
+        gap: 12px;
+        width: 100%;
+    
+        max-width: 650px; 
+    
+    }
+   
+
 }

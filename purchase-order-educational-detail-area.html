@@ -1,0 +1,1305 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+
+    <meta name="viewport" content="width=1440, maximum-scale=1.0" />
+    <link rel="shortcut icon" type="image/png" href="https://animaproject.s3.amazonaws.com/home/favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="og:type" content="website" />
+    <meta name="twitter:card" content="photo" />
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+    <link rel="stylesheet" type="text/css" href="css/styles-aom.css" />
+    <link rel="stylesheet" type="text/css" href="css/styles-bank.css" />
+
+
+</head>
+
+<body style="margin: 0; background: #ffffff">
+
+    <!-- header -->
+    <div class="header-ecs">
+        <div class="content-header">
+            <div class="hd-left">
+                <a href="./login.html">
+                    <img class="logo-ecs" src="img/logo------1.png" alt="logo ecs" />
+                </a>
+                <div class="navbar-ecs header-menu">
+                    <div class="navbar-link-text-ecs">
+                        <div class="title-menu-header pointer">
+                            สถานศึกษา
+                        </div>
+                    </div>
+                    <div class="navbar-link-text-ecs">
+                        <div class="title-menu-header pointer" onclick="showMenuNav1()">
+                            คำสั่งซื้อ
+                            <img class="icon-down-header" src="img/arrow-down-white.svg" alt="logo ecs" />
+                        </div>
+                        <div class="submenu-theme" id="menu-header-1">
+                            <div class="sub-menu-card">
+                                <div class="title-menu-sub-root pointer" onclick="showMenuNav1_1()">
+                                    รายการใบขอสั่งซื้อ
+                                    <img class="icon-menu-sub-root" src="img/arrow-right-white.svg" alt="logo ecs" />
+                                </div>
+                                <div class="submenu-theme-edu-1-1" id="menu-header-1-1">
+                                    <a href="./purchase-order.html?status=0">
+                                        อนุมัติใบขอสั่งซื้อ
+                                    </a>
+                                </div>
+                            </div>
+                            <hr>
+                            <a href="./purchase-order-draft.html">
+                                ร่างใบขอสั่งซื้อ
+                            </a>
+                            <hr>
+                            <div class="sub-menu-card">
+                                <div class="title-menu-sub-root pointer" onclick="showMenuNav1_2()">
+                                    รายการใบสั่งซื้อ
+                                    <img class="icon-menu-sub-root" src="img/arrow-right-white.svg" alt="logo ecs" />
+                                </div>
+                                <div class="submenu-theme-edu-1-2" id="menu-header-1-2">
+                                    <a href="./purchase-order.html?status=0">
+                                        ทั้งหมด
+                                    </a>
+                                    <hr>
+                                    <a href="./purchase-order.html?status=1">
+                                        รอแนบเอกสาร
+                                    </a>
+                                    <hr>
+                                    <a href="./purchase-order.html?status=2">
+                                        รอรับการอนุมัติ
+                                    </a>
+                                    <hr>
+                                    <a href="./purchase-order.html?status=3">
+                                        ได้รับการอนุมัติ
+                                    </a>
+                                    <hr>
+                                    <a href="./purchase-order.html?status=4">
+                                        ไม่ได้รับการอนุมัติ
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="navbar-link-text-ecs">
+                        <div class="title-menu-header pointer" onclick="showMenuNav2()">
+                            รายงาน
+                            <img class="icon-down-header" src="img/arrow-down-white.svg" alt="logo ecs" />
+                        </div>
+                        <div class="submenu-theme" id="menu-header-2">
+                            <a href="./order-list.html?status=0">
+                                รายงานการขออนุมัติใบขอซื้อ
+                            </a>
+                            <hr>
+                            <a href="./order-list.html?status=1">
+                                รายงานการขออนุมัตสถานศึกษา
+                            </a>
+                            <hr>
+                            <a href="./order-list.html?status=3">
+                                รายงานใบสั่งซื้อ
+                            </a>
+                            <hr>
+                            <a href="./order-list.html?status=4">
+                                รายงานชุดข้อมูลตัวเลข
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="header-action-ecs">
+                <img class="group site-navbar" src="img/Icon-Service.png" alt="Service" onclick="showMenuNav()" />
+                <div class="notification-icon">
+                    <img class="group" src="img/group@2x.png" alt="Group" onclick="toggleNotificationPanel()" />
+                    <span id="notification-badge" class="notification-badge"></span> <!-- จุดแดง -->
+                </div>
+
+                <div id="notification-panel" class="notification-panel hidden">
+                    <ul class="notification-list">
+                        <li class="notification-item unread">
+                            <span class="status-indicator"></span>
+                            <div class="notification-content">
+                                <p class="notosansthai-normal-vulcan-15px">
+                                    <strong class="notosansthai-semi-bold-vulcan-15px">หมายเลขคำสั่งซื้อ:</strong>
+                                    12345
+                                </p>
+                                <p class="notosansthai-normal-vulcan-15px">
+                                    <strong class="notosansthai-semi-bold-vulcan-15px">สถานะ:</strong>
+                                    รอดำเนินการ
+                                </p>
+                            </div>
+                        </li>
+                        <li class="notification-item">
+                            <span class="status-indicator read"></span>
+                            <div class="notification-content">
+                                <p class="notosansthai-normal-vulcan-15px">
+                                    <strong class="notosansthai-semi-bold-vulcan-15px">หมายเลขคำสั่งซื้อ:</strong>
+                                    67890
+                                </p>
+                                <p class="notosansthai-normal-vulcan-15px">
+                                    <strong class="notosansthai-semi-bold-vulcan-15px">สถานะ:</strong> สำเร็จ
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+
+
+                <div class="title-menu-header">
+                    <a href="./profile-school.html">
+                        <img class="vector" src="img/vector-2.svg" alt="Vector" />
+                    </a>
+                    <a href="./profile-school.html" class="title-logout pointer">
+                        ออกจากระบบ
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="subMenuHeader" class="sub-menu-header" style="display: none;">
+        <a class="title-menu-header" href="#">
+            สถานศึกษา
+        </a>
+        <hr>
+        <div class="title-menu-header" onclick="showMenuNav1()">
+            คำสั่งซื้อ
+            <img class="icon-down-header" src="img/arrow-down-white.svg" alt="logo ecs" />
+        </div>
+        <div class="sub-menu-header-edu-1-rps" id="menu-header-1-rps">
+            <div class="title-menu-header" onclick="showMenuNav1_1()">
+                รายการใบขอสั่งซื้อ
+                <img class="icon-down-header" src="img/arrow-down-white.svg" alt="logo ecs" />
+            </div>
+            <hr>
+            <a class="title-menu-header" href="./purchase-order-draft.html">
+                ออกใบขอสั่งซื้อ
+            </a>
+            <hr>
+            <div class="title-menu-header" onclick="showMenuNav1_2()">
+                รายการใบสั่งซื้อ
+                <img class="icon-down-header" src="img/arrow-down-white.svg" alt="logo ecs" />
+            </div>
+            <div class="sub-menu-header-edu-1-1-rps" id="menu-header-1-1-rps">
+                <a class="title-menu-header" href="./purchase-order.html?status=0">
+                    อนุมัติใบขอสั่งซื้อ
+                </a>
+            </div>
+            <div class="sub-menu-header-edu-1-2-rps" id="menu-header-1-2-rps">
+                <a class="title-menu-header" href="./purchase-order.html?status=0">
+                    ทั้งหมด
+                </a>
+                <hr>
+                <a class="title-menu-header" href="./purchase-order.html?status=1">
+                    รอแนบเอกสาร
+                </a>
+                <hr>
+                <a class="title-menu-header" href="./purchase-order.html?status=2">
+                    รอรับการอนุมัติ
+                </a>
+                <hr>
+                <a class="title-menu-header" href="./purchase-order.html?status=3">
+                    ได้รับการอนุมัติ
+                </a>
+                <hr>
+                <a class="title-menu-header" href="./purchase-order.html?status=4">
+                    ไม่ได้รับการอนุมัติ
+                </a>
+            </div>
+        </div>
+        <hr />
+        <div class="title-menu-header" onclick="showMenuNav2()">
+            รายงาน
+            <img class="icon-down-header" src="img/arrow-down-white.svg" alt="logo ecs" />
+        </div>
+        <div class="sub-menu-header-edu-2-rps" id="menu-header-2-rps">
+            <a class="title-menu-header" href="./order-list.html?status=0">
+                รายงานการขออนุมัติใบขอซื้อ
+            </a>
+            <hr>
+            <a class="title-menu-header" href="./order-list.html?status=1">
+                รายงานการขออนุมัตสถานศึกษา
+            </a>
+            <hr>
+            <a class="title-menu-header" href="./order-list.html?status=3">
+                รายงานใบสั่งซื้อ
+            </a>
+            <hr>
+            <a class="title-menu-header" href="./order-list.html?status=3">
+                รายงานชุดข้อมูลตัวเลข
+            </a>
+        </div>
+    </div>
+    <!-- header -->
+
+
+
+    <div class="content-center">
+        <div class="content-ecs">
+            <div class="menu-header" style="padding-top: 0px !important;">
+                <a onclick="goBack()" class="position-absolute ">
+                    <div class="purchase-order-button-3 purchase-order-button-8">
+                        <img class="purchase-order-icon-back" src="img/icon-back-3.svg" alt="icon back" />
+                        <div
+                            class="purchase-order-text_label valign-text-middle purchase-order-text_label-5 display-none-m">
+                            ย้อนกลับ</div>
+                    </div>
+                </a>
+                <h1 class="purchase-order-text-6 margin-0-auto" style="align-self: center;">สร้างใบสั่งซื้อ</h1>
+            </div>
+
+
+            <div class="table-ecs">
+                <form class="content-ecs" style=" padding: 0;">
+                    <div class="frame-38454-1">
+                        <div class="frame-38416">
+                            <div class="frame-38415">
+                                <!-- table -->
+                                <div class="frame-38 ">
+                                    <div class="tabs-container-purchase">
+                                        <div class="tabs">
+                                            <button class="tab-btn active notosansthai-semi-bold-vulcan-15px"
+                                                data-tab="tab-1">สั่งซื้อเอง</button>
+                                            <button class="tab-btn notosansthai-semi-bold-vulcan-15px"
+                                                data-tab="tab-2">เขตสั่งซื้อให้</button>
+                                        </div>
+                                    </div>
+                                    <div class="filter-table">
+
+                                        <div class="group-button-1">
+
+                                            <div class="input-select-head">
+                                                <div class="label-input font-15">โรงเรียน</div>
+                                                <div class="approval-educational-detail-select-field">
+                                                    <select id="agency3"
+                                                        class="approval-educational-detail-custom-dropdown">
+                                                        <option value="1" disabled selected>โรงเรียนทั้งหมด</option>
+                                                        <option value="2">โรงเรียน 1</option>
+                                                        <option value="3">โรงเรียน 2</option>
+                                                        <option value="3">โรงเรียน 3</option>
+                                                        <option value="3">โรงเรียน 4</option>
+                                                        <option value="3">โรงเรียน 5</option>
+                                                    </select>
+                                                    <img class="approval-educational-detail-dropdown-icon"
+                                                        src="img/dropdown-6.svg" alt="dropdown" />
+
+                                                </div>
+                                            </div>
+
+                                            <!-- วันที่สร้างใบขอสั่งซื้อ -->
+                                            <article class="input-select-head">
+                                                <div class="base-form-label-medium">
+                                                    <div class="label-input font-15">วันที่สร้างใบขอสั่งซื้อ</div>
+                                                </div>
+                                                <div class="select-field">
+                                                    <input class="select font-grey-15" name="select"
+                                                        placeholder="เลือกเดือน" type="date" />
+                                                </div>
+                                            </article>
+                                            <!-- ช่องค้นหา -->
+
+                                            <div class="input-search">
+                                                <div class="base-form-label-medium">
+                                                    <div class="label-input">เลขใบขอสั่งซื้อ</div>
+                                                </div>
+                                                <div class="search-input-container">
+                                                    <input class="search-text-input" name="searchOrderNumber"
+                                                        placeholder="กรุณากรอกเลขใบขอสั่งซื้อ" type="text" />
+                                                    <img class="search-icon-right" src="img/icon-addon-3.svg"
+                                                        alt="icon-addon" />
+                                                </div>
+                                            </div>
+
+
+
+                                        </div>
+
+
+                                    </div>
+                                    <div class="purchase-order-educational-text-1">เลือกใบสั่งซื้อแล้ว 10 รายการ</div>
+                                    <div class="frame-38-1">
+                                        <div class="frame-3346">
+                                            <table style="width: 100%;text-align: left;">
+                                                <thead>
+                                                    <tr>
+                                                        <th
+                                                            class="order-approval-list-table-header-3 notosansthai-semi-bold-vulcan-15px th-30-px">
+                                                            ลำดับ</th>
+                                                        <th
+                                                            class="order-approval-list-table-header-3 notosansthai-semi-bold-vulcan-15px th-200-px">
+                                                            เลขใบขอสั่งซื้อ</th>
+                                                        <th
+                                                            class="order-approval-list-table-header-3 notosansthai-semi-bold-vulcan-15px th-142-px">
+                                                            วันที่สร้างใบขอสั่งซื้อ
+                                                        </th>
+                                                        <th class="order-approval-list-table-header-3 notosansthai-semi-bold-vulcan-15px th-443-px tb-bor-r-1 tb-bor-l-1"
+                                                            style="padding: 0">
+                                                            <div class="div-th-row">
+                                                                <div
+                                                                    class="order-approval-list-table-header-3 notosansthai-semi-bold-vulcan-15px th-170-px th-table-home-edu">
+                                                                    รายการสินค้า
+                                                                </div>
+                                                            </div>
+                                                            <div class="div-th-row">
+                                                                <div style="width: 45%;">
+                                                                    <div class="order-approval-list-table-header-3 notosansthai-semi-bold-vulcan-15px th-table-home-edu"
+                                                                        style="background-color: #BEFEC7;">
+                                                                        ฉบับใช้กับออนไลน์
+                                                                    </div>
+                                                                    <div
+                                                                        class="order-approval-list-table-header-3 notosansthai-semi-bold-vulcan-15px th-table-home-edu tb-bor-r-0-5">
+                                                                        ปพ.1
+                                                                    </div>
+                                                                    <div class="div-th-row">
+                                                                        <div class="order-approval-list-table-header-3 notosansthai-semi-bold-vulcan-15px th-table-home-edu-h70 th-table-status tb-bor-r-0-5 tb-bor-b-0"
+                                                                            style="width: 33.33%;">
+                                                                            บ
+                                                                            <div class="card-status-popo-1-bo">
+                                                                                ปพ.1:บ
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="order-approval-list-table-header-3 notosansthai-semi-bold-vulcan-15px th-table-home-edu-h70 th-table-status tb-bor-r-0-5 tb-bor-l-0-5 tb-bor-b-0"
+                                                                            style="width: 33.33%;">
+                                                                            ป
+                                                                            <div class="card-status-popo-1">
+                                                                                ปพ.1:ป
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="order-approval-list-table-header-3 notosansthai-semi-bold-vulcan-15px th-table-home-edu-h70 th-table-status tb-bor-r-0-5 tb-bor-l-0-5 tb-bor-b-0"
+                                                                            style="width: 33.33%;">
+                                                                            ป
+                                                                            <div class="card-status-popo-1-po">
+                                                                                ปพ.1:พ
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div style="width: 60%;">
+                                                                    <div class="order-approval-list-table-header-3 notosansthai-semi-bold-vulcan-15px th-table-home-edu"
+                                                                        style="background-color: #ECD5FB;">
+                                                                        ฉบับใช้กับคอม
+                                                                    </div>
+                                                                    <div class="div-th-row">
+                                                                        <div style="width: 50%;">
+                                                                            <div
+                                                                                class="order-approval-list-table-header-3 notosansthai-semi-bold-vulcan-15px th-table-home-edu tb-bor-l-0-5 tb-bor-r-0-5">
+                                                                                ปพ.1
+                                                                            </div>
+                                                                            <div class="div-th-row">
+                                                                                <div class="order-approval-list-table-header-3 notosansthai-semi-bold-vulcan-15px th-table-home-edu-h70 th-table-status tb-bor-r-0-5 tb-bor-l-0-5 tb-bor-b-0"
+                                                                                    style="width: 50%;">
+                                                                                    บ
+                                                                                    <div class="card-status-popo-1-bo">
+                                                                                        ปพ.1:บ
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="order-approval-list-table-header-3 notosansthai-semi-bold-vulcan-15px th-table-home-edu-h70 th-table-status tb-bor-r-0-5 tb-bor-l-0-5 tb-bor-b-0"
+                                                                                    style="width: 50%;">
+                                                                                    ป
+                                                                                    <div class="card-status-popo-1-po">
+                                                                                        ปพ.1:ป
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div style="width: 25%;">
+                                                                            <div
+                                                                                class="order-approval-list-table-header-3 notosansthai-semi-bold-vulcan-15px th-table-home-edu tb-bor-l-0-5 tb-bor-r-0-5">
+                                                                                ปพ.2
+                                                                            </div>
+                                                                            <div
+                                                                                class="order-approval-list-table-header-3 notosansthai-semi-bold-vulcan-15px th-table-home-edu-h70 th-table-status tb-bor-r-0-5 tb-bor-l-0-5 tb-bor-b-0">
+                                                                                ม
+                                                                                <div class="card-status-popo-3-po">
+                                                                                    ปพ.1:ม
+                                                                                </div>
+                                                                            </div>
+
+                                                                        </div>
+                                                                        <div style="width: 25%;">
+                                                                            <div
+                                                                                class="order-approval-list-table-header-3 notosansthai-semi-bold-vulcan-15px th-table-home-edu tb-bor-l-0-5 ">
+                                                                                ปพ.3
+                                                                            </div>
+                                                                            <div
+                                                                                class="order-approval-list-table-header-3 notosansthai-semi-bold-vulcan-15px th-table-home-edu-h70 th-table-status tb-bor-l-0-5 tb-bor-b-0">
+                                                                                ก
+                                                                                <div class="card-status-popo-3-po">
+                                                                                    ปพ.1:ก
+                                                                                </div>
+                                                                            </div>
+
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </th>
+                                                        <th
+                                                            class="order-approval-list-table-header-3 notosansthai-semi-bold-vulcan-15px th-154-px">
+                                                            ยอดสุทธิ (บาท)
+                                                        </th>
+
+
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+
+                                                    <!-- 1 -->
+                                                    <tr>
+                                                        <td
+                                                            class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px text-al-center al-center">
+                                                            1</td>
+                                                        <td
+                                                            class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px text-al-center al-center">
+                                                            <div class="div-th-row title-th-on-button">
+                                                                PR-6613-0684
+
+                                                            </div>
+                                                        </td>
+                                                        <td
+                                                            class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px text-al-center al-center">
+                                                            22 ต.ค. 2567
+                                                        </td>
+                                                        <td
+                                                            class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px text-al-center al-center">
+                                                            <div class="div-th-row">
+                                                                <div class="th-102-px">
+                                                                    xxxxx
+                                                                </div>
+                                                                <div class="th-102-px">
+                                                                    xxx
+                                                                </div>
+                                                                <div class="th-102-px">
+                                                                    xxx
+                                                                </div>
+                                                                <div class="th-102-px">
+                                                                    xxxxx
+                                                                </div>
+                                                                <div class="th-102-px">
+                                                                    xxx
+                                                                </div>
+                                                                <div class="th-102-px">
+                                                                    xxxxx
+                                                                </div>
+                                                                <div class="th-102-px">
+                                                                    xxxxx
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                        <td
+                                                            class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px text-al-center al-center">
+                                                            1,000</td>
+
+
+
+
+
+                                                    </tr>
+                                                    <!-- sub-1 -->
+                                                    <div style="display: flex;">
+                                                        <tr id="tr-table4-sub-1" class="dis-no">
+                                                            <td
+                                                                class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px text-al-center al-center sub-list-product-edu">
+                                                            </td>
+                                                            <td
+                                                                class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px text-al-center al-center sub-list-product-edu">
+                                                                PRxx-xxxxxx โรงเรียน 1
+                                                            </td>
+                                                            <td
+                                                                class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px text-al-center al-center sub-list-product-edu">
+                                                            </td>
+                                                            <td
+                                                                class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px text-al-center al-center sub-list-product-edu">
+                                                                <div class="div-th-row">
+                                                                    <div class="th-102-px">
+                                                                        xxx
+                                                                    </div>
+                                                                    <div class="th-102-px">
+                                                                        xxx
+                                                                    </div>
+                                                                    <div class="th-102-px">
+                                                                        xxx
+                                                                    </div>
+                                                                    <div class="th-102-px">
+                                                                        xxx
+                                                                    </div>
+                                                                    <div class="th-102-px">
+                                                                        xxx
+                                                                    </div>
+                                                                    <div class="th-102-px">
+                                                                        xxx
+                                                                    </div>
+                                                                    <div class="th-102-px">
+                                                                        xxx
+                                                                    </div>
+                                                                </div>
+                                                            </td>
+                                                            <td
+                                                                class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px text-al-center al-center sub-list-product-edu">
+                                                                1,000</td>
+                                                            <td
+                                                                class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px text-al-center al-center sub-list-product-edu">
+                                                                <div style="height: 30px"></div>
+                                                            </td>
+                                                            <td
+                                                                class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px text-al-center al-center sub-list-product-edu">
+                                                            </td>
+                                                        </tr>
+                                                        <tr id="tr-table4-sub-2" class="dis-no">
+                                                            <td
+                                                                class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px text-al-center al-center sub-list-product-edu">
+                                                            </td>
+                                                            <td
+                                                                class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px text-al-center al-center sub-list-product-edu">
+                                                                PRxx-xxxxxx โรงเรียน 2
+                                                            </td>
+                                                            <td
+                                                                class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px text-al-center al-center sub-list-product-edu">
+                                                            </td>
+                                                            <td
+                                                                class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px text-al-center al-center sub-list-product-edu">
+                                                                <div class="div-th-row">
+                                                                    <div class="th-102-px">
+                                                                        xxx
+                                                                    </div>
+                                                                    <div class="th-102-px">
+                                                                        xxx
+                                                                    </div>
+                                                                    <div class="th-102-px">
+                                                                        xxx
+                                                                    </div>
+                                                                    <div class="th-102-px">
+                                                                        xxx
+                                                                    </div>
+                                                                    <div class="th-102-px">
+                                                                        xxx
+                                                                    </div>
+                                                                    <div class="th-102-px">
+                                                                        xxx
+                                                                    </div>
+                                                                    <div class="th-102-px">
+                                                                        xxx
+                                                                    </div>
+                                                                </div>
+                                                            </td>
+                                                            <td
+                                                                class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px text-al-center al-center sub-list-product-edu">
+                                                                1,000</td>
+                                                            <td
+                                                                class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px text-al-center al-center sub-list-product-edu">
+                                                                <div style="height: 30px"></div>
+                                                            </td>
+                                                            <td
+                                                                class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px text-al-center al-center sub-list-product-edu">
+                                                            </td>
+                                                        </tr>
+                                                        <tr id="tr-table4-sub-3" class="dis-no">
+                                                            <td
+                                                                class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px text-al-center al-center sub-list-product-edu">
+                                                            </td>
+                                                            <td
+                                                                class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px text-al-center al-center sub-list-product-edu">
+                                                                PRxx-xxxxxx โรงเรียน 3
+                                                            </td>
+                                                            <td
+                                                                class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px text-al-center al-center sub-list-product-edu">
+                                                            </td>
+                                                            <td
+                                                                class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px text-al-center al-center sub-list-product-edu">
+                                                                <div class="div-th-row">
+                                                                    <div class="th-102-px">
+                                                                        xxx
+                                                                    </div>
+                                                                    <div class="th-102-px">
+                                                                        xxx
+                                                                    </div>
+                                                                    <div class="th-102-px">
+                                                                        xxx
+                                                                    </div>
+                                                                    <div class="th-102-px">
+                                                                        xxx
+                                                                    </div>
+                                                                    <div class="th-102-px">
+                                                                        xxx
+                                                                    </div>
+                                                                    <div class="th-102-px">
+                                                                        xxx
+                                                                    </div>
+                                                                    <div class="th-102-px">
+                                                                        xxx
+                                                                    </div>
+                                                                </div>
+                                                            </td>
+                                                            <td
+                                                                class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px text-al-center al-center sub-list-product-edu">
+                                                                1,000</td>
+                                                            <td
+                                                                class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px text-al-center al-center sub-list-product-edu">
+                                                                <div style="height: 30px"></div>
+                                                            </td>
+                                                            <td
+                                                                class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px text-al-center al-center sub-list-product-edu">
+                                                            </td>
+                                                        </tr>
+                                                    </div>
+
+
+                                                    <!-- 2 -->
+                                                    <tr>
+                                                        <td
+                                                            class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px text-al-center al-center">
+                                                            2</td>
+                                                        <td
+                                                            class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px text-al-center al-center">
+                                                            PR-6613-0684</td>
+                                                        <td
+                                                            class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px text-al-center al-center">
+                                                            22 ต.ค. 2567
+                                                        </td>
+                                                        <td
+                                                            class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px text-al-center al-center">
+                                                            <div class="div-th-row">
+                                                                <div class="th-102-px">
+                                                                    xxxxx
+                                                                </div>
+                                                                <div class="th-102-px">
+                                                                    xxx
+                                                                </div>
+                                                                <div class="th-102-px">
+                                                                    xxx
+                                                                </div>
+                                                                <div class="th-102-px">
+                                                                    xxxxx
+                                                                </div>
+                                                                <div class="th-102-px">
+                                                                    xxx
+                                                                </div>
+                                                                <div class="th-102-px">
+                                                                    xxxxx
+                                                                </div>
+                                                                <div class="th-102-px">
+                                                                    xxxxx
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                        <td
+                                                            class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px text-al-center al-center">
+                                                            1,000</td>
+
+
+
+                                                    </tr>
+                                                    <!-- 3 -->
+                                                    <tr>
+                                                        <td
+                                                            class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px text-al-center al-center">
+                                                            3</td>
+                                                        <td
+                                                            class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px text-al-center al-center">
+                                                            PR-6613-0684</td>
+                                                        <td
+                                                            class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px text-al-center al-center">
+                                                            22 ต.ค. 2567
+                                                        </td>
+                                                        <td
+                                                            class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px text-al-center al-center">
+                                                            <div class="div-th-row">
+                                                                <div class="th-102-px">
+                                                                    xxxxx
+                                                                </div>
+                                                                <div class="th-102-px">
+                                                                    xxx
+                                                                </div>
+                                                                <div class="th-102-px">
+                                                                    xxx
+                                                                </div>
+                                                                <div class="th-102-px">
+                                                                    xxxxx
+                                                                </div>
+                                                                <div class="th-102-px">
+                                                                    xxx
+                                                                </div>
+                                                                <div class="th-102-px">
+                                                                    xxxxx
+                                                                </div>
+                                                                <div class="th-102-px">
+                                                                    xxxxx
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                        <td
+                                                            class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px text-al-center al-center">
+                                                            1,000</td>
+
+
+
+                                                    </tr>
+                                                    <tr>
+                                                        <td
+                                                            class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px text-al-center al-center">
+                                                            4</td>
+                                                        <td
+                                                            class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px text-al-center al-center">
+                                                            PR-6613-0684</td>
+                                                        <td
+                                                            class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px text-al-center al-center">
+                                                            22 ต.ค. 2567
+                                                        </td>
+                                                        <td
+                                                            class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px text-al-center al-center">
+                                                            <div class="div-th-row">
+                                                                <div class="th-102-px">
+                                                                    xxxxx
+                                                                </div>
+                                                                <div class="th-102-px">
+                                                                    xxx
+                                                                </div>
+                                                                <div class="th-102-px">
+                                                                    xxx
+                                                                </div>
+                                                                <div class="th-102-px">
+                                                                    xxxxx
+                                                                </div>
+                                                                <div class="th-102-px">
+                                                                    xxx
+                                                                </div>
+                                                                <div class="th-102-px">
+                                                                    xxxxx
+                                                                </div>
+                                                                <div class="th-102-px">
+                                                                    xxxxx
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                        <td
+                                                            class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px text-al-center al-center">
+                                                            1,000</td>
+
+
+
+                                                    </tr>
+                                                    <tr>
+                                                        <td
+                                                            class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px text-al-center al-center">
+                                                            5</td>
+                                                        <td
+                                                            class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px text-al-center al-center">
+                                                            PR-6613-0684</td>
+                                                        <td
+                                                            class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px text-al-center al-center">
+                                                            22 ต.ค. 2567
+                                                        </td>
+                                                        <td
+                                                            class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px text-al-center al-center">
+                                                            <div class="div-th-row">
+                                                                <div class="th-102-px">
+                                                                    xxxxx
+                                                                </div>
+                                                                <div class="th-102-px">
+                                                                    xxx
+                                                                </div>
+                                                                <div class="th-102-px">
+                                                                    xxx
+                                                                </div>
+                                                                <div class="th-102-px">
+                                                                    xxxxx
+                                                                </div>
+                                                                <div class="th-102-px">
+                                                                    xxx
+                                                                </div>
+                                                                <div class="th-102-px">
+                                                                    xxxxx
+                                                                </div>
+                                                                <div class="th-102-px">
+                                                                    xxxxx
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                        <td
+                                                            class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px text-al-center al-center">
+                                                            1,000</td>
+
+
+
+                                                    </tr>
+                                                    <tr>
+                                                        <td
+                                                            class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px text-al-center al-center">
+                                                            6</td>
+                                                        <td
+                                                            class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px text-al-center al-center">
+                                                            PR-6613-0684</td>
+                                                        <td
+                                                            class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px text-al-center al-center">
+                                                            22 ต.ค. 2567
+                                                        </td>
+                                                        <td
+                                                            class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px text-al-center al-center">
+                                                            <div class="div-th-row">
+                                                                <div class="th-102-px">
+                                                                    xxxxx
+                                                                </div>
+                                                                <div class="th-102-px">
+                                                                    xxx
+                                                                </div>
+                                                                <div class="th-102-px">
+                                                                    xxx
+                                                                </div>
+                                                                <div class="th-102-px">
+                                                                    xxxxx
+                                                                </div>
+                                                                <div class="th-102-px">
+                                                                    xxx
+                                                                </div>
+                                                                <div class="th-102-px">
+                                                                    xxxxx
+                                                                </div>
+                                                                <div class="th-102-px">
+                                                                    xxxxx
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                        <td
+                                                            class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px text-al-center al-center">
+                                                            1,000</td>
+
+
+
+                                                    </tr>
+                                                    <tr>
+                                                        <td
+                                                            class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px text-al-center al-center">
+                                                            7</td>
+                                                        <td
+                                                            class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px text-al-center al-center">
+                                                            PR-6613-0684</td>
+                                                        <td
+                                                            class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px text-al-center al-center">
+                                                            22 ต.ค. 2567
+                                                        </td>
+                                                        <td
+                                                            class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px text-al-center al-center">
+                                                            <div class="div-th-row">
+                                                                <div class="th-102-px">
+                                                                    xxxxx
+                                                                </div>
+                                                                <div class="th-102-px">
+                                                                    xxx
+                                                                </div>
+                                                                <div class="th-102-px">
+                                                                    xxx
+                                                                </div>
+                                                                <div class="th-102-px">
+                                                                    xxxxx
+                                                                </div>
+                                                                <div class="th-102-px">
+                                                                    xxx
+                                                                </div>
+                                                                <div class="th-102-px">
+                                                                    xxxxx
+                                                                </div>
+                                                                <div class="th-102-px">
+                                                                    xxxxx
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                        <td
+                                                            class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px text-al-center al-center">
+                                                            1,000</td>
+
+
+
+                                                    </tr>
+                                                    <tr>
+                                                        <td
+                                                            class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px text-al-center al-center">
+                                                            8</td>
+                                                        <td
+                                                            class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px text-al-center al-center">
+                                                            PR-6613-0684</td>
+                                                        <td
+                                                            class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px text-al-center al-center">
+                                                            22 ต.ค. 2567
+                                                        </td>
+                                                        <td
+                                                            class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px text-al-center al-center">
+                                                            <div class="div-th-row">
+                                                                <div class="th-102-px">
+                                                                    xxxxx
+                                                                </div>
+                                                                <div class="th-102-px">
+                                                                    xxx
+                                                                </div>
+                                                                <div class="th-102-px">
+                                                                    xxx
+                                                                </div>
+                                                                <div class="th-102-px">
+                                                                    xxxxx
+                                                                </div>
+                                                                <div class="th-102-px">
+                                                                    xxx
+                                                                </div>
+                                                                <div class="th-102-px">
+                                                                    xxxxx
+                                                                </div>
+                                                                <div class="th-102-px">
+                                                                    xxxxx
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                        <td
+                                                            class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px text-al-center al-center">
+                                                            1,000</td>
+
+
+
+                                                    </tr>
+
+                                                    <tr>
+                                                        <td
+                                                            class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px text-al-center al-center">
+                                                            9</td>
+                                                        <td
+                                                            class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px text-al-center al-center">
+                                                            PR-6613-0684</td>
+                                                        <td
+                                                            class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px text-al-center al-center">
+                                                            22 ต.ค. 2567
+                                                        </td>
+                                                        <td
+                                                            class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px text-al-center al-center">
+                                                            <div class="div-th-row">
+                                                                <div class="th-102-px">
+                                                                    xxxxx
+                                                                </div>
+                                                                <div class="th-102-px">
+                                                                    xxx
+                                                                </div>
+                                                                <div class="th-102-px">
+                                                                    xxx
+                                                                </div>
+                                                                <div class="th-102-px">
+                                                                    xxxxx
+                                                                </div>
+                                                                <div class="th-102-px">
+                                                                    xxx
+                                                                </div>
+                                                                <div class="th-102-px">
+                                                                    xxxxx
+                                                                </div>
+                                                                <div class="th-102-px">
+                                                                    xxxxx
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                        <td
+                                                            class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px text-al-center al-center">
+                                                            1,000</td>
+
+
+
+                                                    </tr>
+                                                    <tr>
+                                                        <td
+                                                            class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px text-al-center al-center">
+                                                            10</td>
+                                                        <td
+                                                            class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px text-al-center al-center">
+                                                            PR-6613-0684</td>
+                                                        <td
+                                                            class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px text-al-center al-center">
+                                                            22 ต.ค. 2567
+                                                        </td>
+                                                        <td
+                                                            class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px text-al-center al-center">
+                                                            <div class="div-th-row">
+                                                                <div class="th-102-px">
+                                                                    xxxxx
+                                                                </div>
+                                                                <div class="th-102-px">
+                                                                    xxx
+                                                                </div>
+                                                                <div class="th-102-px">
+                                                                    xxx
+                                                                </div>
+                                                                <div class="th-102-px">
+                                                                    xxxxx
+                                                                </div>
+                                                                <div class="th-102-px">
+                                                                    xxx
+                                                                </div>
+                                                                <div class="th-102-px">
+                                                                    xxxxx
+                                                                </div>
+                                                                <div class="th-102-px">
+                                                                    xxxxx
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                        <td
+                                                            class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px text-al-center al-center">
+                                                            1,000</td>
+
+
+
+                                                    </tr>
+
+
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+
+
+
+
+                                    <div class="button-container">
+                                        <div class="button button-gray button-with-icon">
+                                            แก้ไข
+                                        </div>
+                                        <div class="button button-blue" onclick="showPopupNext()">
+                                            ถัดไป
+                                        </div>
+                                    </div>
+
+
+
+
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <div id="contentNext" class="purchase-order-shipping-view" style="display: none;">
+        <div class="purchase-order-shipping-popup">
+            <div class="purchase-order-shipping-frame-container">
+                <div class="purchase-order-shipping-frame-38264">
+                    <div class="purchase-order-shipping-frame-38266">
+                        <div class="purchase-order-shipping-frame-38265">
+                            <h1
+                                class="purchase-order-shipping-text_label-2 purchase-order-shipping-valign-text-middle purchase-order-shipping-text_label-5">
+                                ยืนยันการสร้างใบสั่งซื้อ</h1>
+                            <div
+                                class="purchase-order-shipping-text_label-3 purchase-order-shipping-valign-text-middle purchase-order-shipping-text_label-5">
+                                คุณต้องการที่จะยืนยันสร้างใบศั่งซื้อนี้ใช่หรือไม่
+                            </div>
+                        </div>
+
+                        <div class="request-detail-school-frame-38379">
+                            <a href="" class="no-text-underline"
+                                style="width: -webkit-fill-available; text-align: -webkit-center;">
+                                <article class="request-detail-school-button-4 request-detail-school-button-6">
+                                    <div class="button-edit">
+                                        ยกเลิก
+                                    </div>
+                                </article>
+                            </a>
+                       
+                            <a href="" class="no-text-underline" style="width: -webkit-fill-available;">
+                                <article class="request-detail-school-button-5 request-detail-school-button-6">
+                                    <div class="button-confirm">
+                                        ยืนยัน
+                                    </div>
+                                </article>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <a onclick="showPopupNext()"><img class="purchase-order-shipping-frame-1041" src="img/frame-1041.svg"
+                        alt="Frame 1041" />
+                </a>
+            </div>
+        </div>
+    </div>
+   
+    <div class="footer">
+        <p class="copyright-2024">Copyright 2024&nbsp;&nbsp; องค์การค้าของ สกสค.</p>
+    </div>
+    <script>
+        /* Copyright (c) 2016 Tobias Buschor https://goo.gl/gl0mbf | MIT License https://goo.gl/HgajeK */
+
+        /////////////////////////////////////////////////////////////////////////////////////////////////////////////
+        const menuHeader1 = document.getElementById("menu-header-1");
+        const menuHeader1_rps = document.getElementById("menu-header-1-rps");
+        const menuHeader1_1 = document.getElementById("menu-header-1-1");
+        const menuHeader1_1_rps = document.getElementById("menu-header-1-1-rps");
+        const menuHeader1_2 = document.getElementById("menu-header-1-2");
+        const menuHeader1_2_rps = document.getElementById("menu-header-1-2-rps");
+        const menuHeader2 = document.getElementById("menu-header-2");
+        const menuHeader2_rps = document.getElementById("menu-header-2-rps");
+
+
+        let isMenuHeader1 = false;
+        let isMenuHeader1_1 = false;
+        let isMenuHeader1_2 = false;
+        let isMenuHeader2 = false;
+
+        function showMenuNav1() {
+            isMenuHeader1 = !isMenuHeader1;
+            isMenuHeader1_1 = false;
+            isMenuHeader1_2 = false;
+            isMenuHeader2 = false;
+
+            // const subMenuHeaderMobile = document.getElementById("subMenuHeaderMobile");
+            menuHeader1_1.style.display = "none";
+            menuHeader1_2.style.display = "none";
+            menuHeader2.style.display = "none";
+            menuHeader2_rps.style.display = "none";
+            if (isMenuHeader1) {
+                menuHeader1.style.display = "flex";
+                menuHeader1_rps.style.display = "flex";
+                // subMenuHeaderMobile.style.display = "flex";
+            } else {
+                menuHeader1.style.display = "none";
+                menuHeader1_rps.style.display = "none";
+                // subMenuHeaderMobile.style.display = "none";
+            }
+        }
+
+        function showMenuNav1_1() {
+            isMenuHeader1_1 = !isMenuHeader1_1;
+            isMenuHeader1_2 = false;
+            if (isMenuHeader1_1) {
+                menuHeader1_1.style.display = "flex";
+                menuHeader1_1_rps.style.display = "flex";
+                menuHeader1_2.style.display = "none";
+                menuHeader1_2_rps.style.display = "none";
+            } else {
+                menuHeader1_1.style.display = "none";
+                menuHeader1_1_rps.style.display = "none";
+            }
+        }
+
+        function showMenuNav1_2() {
+            isMenuHeader1_2 = !isMenuHeader1_2;
+            isMenuHeader1_1 = false;
+            if (isMenuHeader1_2) {
+                menuHeader1_2.style.display = "flex";
+                menuHeader1_2_rps.style.display = "flex";
+                menuHeader1_1.style.display = "none";
+                menuHeader1_1_rps.style.display = "none";
+            } else {
+                menuHeader1_2.style.display = "none";
+                menuHeader1_2_rps.style.display = "none";
+            }
+        }
+
+
+        function showMenuNav2() {
+            isMenuHeader2 = !isMenuHeader2;
+            isMenuHeader1 = false;
+            isMenuHeader1_1 = false;
+            isMenuHeader1_2 = false;
+            menuHeader1.style.display = "none";
+            menuHeader1_rps.style.display = "none";
+            menuHeader1_1.style.display = "none";
+            menuHeader1_1_rps.style.display = "none";
+            menuHeader1_2.style.display = "none";
+            menuHeader1_2_rps.style.display = "none";
+            if (isMenuHeader2) {
+                menuHeader2.style.display = "flex";
+                menuHeader2_rps.style.display = "flex";
+                // subMenuHeaderMobile.style.display = "flex";
+            } else {
+                menuHeader2.style.display = "none";
+                menuHeader2_rps.style.display = "none";
+                // subMenuHeaderMobile.style.display = "none";
+            }
+        }
+
+        let isSubMenuHeader = false;
+
+        function showMenuNav() {
+            isSubMenuHeader = !isSubMenuHeader;
+            const subMenuHeader = document.getElementById("subMenuHeader");
+            const subMenuHeaderMobile = document.getElementById("subMenuHeaderMobile");
+            if (isSubMenuHeader) {
+                subMenuHeader.style.display = "flex";
+                subMenuHeaderMobile.style.display = "flex";
+            } else {
+                subMenuHeader.style.display = "none";
+                subMenuHeaderMobile.style.display = "none";
+            }
+        }
+        /////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+        document.querySelectorAll('.tab-btn').forEach(button => {
+            button.addEventListener('click', () => {
+                const tabsContainer = button.parentElement;
+                const tabContent = tabsContainer.nextElementSibling;
+                const tabId = button.getAttribute('data-tab');
+
+                tabsContainer.querySelectorAll('.tab-btn').forEach(btn => btn.classList.remove('active'));
+
+                button.classList.add('active');
+
+                tabContent.querySelectorAll('.tab-panel').forEach(panel => panel.classList.remove('active'));
+
+                tabContent.querySelector(`#${tabId}`).classList.add('active');
+            });
+        });
+        let isShowCancel = false;
+        let isShowSuccess = false;
+        let isShowCancel3 = false;
+
+        function showPopupNext() {
+            isShowCancel = !isShowCancel;
+            const contentNext = document.getElementById("contentNext");
+
+            if (isShowCancel) {
+                contentNext.style.display = "flex";
+                document.body.classList.add('no-scroll');
+            } else {
+                contentNext.style.display = "none";
+                document.body.classList.remove('no-scroll');
+            }
+        }
+
+        function showPopupSuccess() {
+
+            if (isShowCancel) {
+                isShowCancel = false;
+                contentCancel.style.display = "none";
+            }
+
+
+            isShowSuccess = !isShowSuccess;
+            const contentCancel2 = document.getElementById("contentCancel2");
+
+            if (isShowSuccess) {
+                contentCancel2.style.display = "flex";
+                document.body.classList.add('no-scroll');
+            } else {
+                contentCancel2.style.display = "none";
+                document.body.classList.remove('no-scroll');
+            }
+        }
+
+       
+
+
+
+
+
+
+    </script>
+
+
+</body>
+
+</html>
