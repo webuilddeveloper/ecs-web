@@ -8932,6 +8932,7 @@ input:focus {
   position: relative;
   z-index: 2;
   line-height: normal;
+  font-family: var(--font-family-noto_sans_thai);
   /* à¸›à¸£à¸±à¸šà¹ƒà¸«à¹‰à¸‚à¹‰à¸­à¸„à¸§à¸²à¸¡à¸­à¸¢à¸¹à¹ˆà¸•à¸£à¸‡à¸à¸¥à¸²à¸‡ */
 }
 
@@ -44817,6 +44818,7 @@ tr:hover {
   border: none;
   outline: none;
   font-size: var(--font-size-m);
+  font-family: var(--font-family-noto_sans_thai);
   color: var(--slate-gray);
   background: transparent;
 }
