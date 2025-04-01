@@ -30401,6 +30401,7 @@ body.no-scroll {
     padding: 11px;
     height: auto;
     align-items: anchor-center;
+    width: fit-content;
   }
 
   .order-cancel-attach-book-button-new {
@@ -30627,6 +30628,7 @@ body.no-scroll {
     padding: 11px;
     height: auto;
     align-items: anchor-center;
+    width: fit-content;
   }
 
   .card-build-order-3 .button {
@@ -30638,6 +30640,7 @@ body.no-scroll {
     padding: 11px;
     height: auto;
     align-items: anchor-center;
+    width: fit-content;
   }
 
   .filter-1-order-list {
