@@ -263,6 +263,111 @@
         if (window.submitted) window.submitted();
       }
     }
+
+    //////////////////////////////////////////////////////////////////////////////////////////////////////////
+    const menuHeader1 = document.getElementById("menu-header-1");
+    const menuHeader1_rps = document.getElementById("menu-header-1-rps");
+    const menuHeader1_1 = document.getElementById("menu-header-1-1");
+    const menuHeader1_1_rps = document.getElementById("menu-header-1-1-rps");
+    const menuHeader1_2 = document.getElementById("menu-header-1-2");
+    const menuHeader1_2_rps = document.getElementById("menu-header-1-2-rps");
+    const menuHeader2 = document.getElementById("menu-header-2");
+    const menuHeader2_rps = document.getElementById("menu-header-2-rps");
+
+
+    let isMenuHeader1 = false;
+    let isMenuHeader1_1 = false;
+    let isMenuHeader1_2 = false;
+    let isMenuHeader2 = false;
+
+    function showMenuNav1() {
+      isMenuHeader1 = !isMenuHeader1;
+      isMenuHeader1_1 = false;
+      isMenuHeader1_2 = false;
+      isMenuHeader2 = false;
+      
+      // const subMenuHeaderMobile = document.getElementById("subMenuHeaderMobile");
+      menuHeader1_1.style.display = "none";
+      menuHeader1_2.style.display = "none";
+      menuHeader2.style.display = "none";
+      menuHeader2_rps.style.display = "none";
+      if (isMenuHeader1) {
+        menuHeader1.style.display = "flex";
+        menuHeader1_rps.style.display = "flex";
+        // subMenuHeaderMobile.style.display = "flex";
+      } else {
+        menuHeader1.style.display = "none";
+        menuHeader1_rps.style.display = "none";
+        // subMenuHeaderMobile.style.display = "none";
+      }
+    }
+
+    function showMenuNav1_1() {
+      isMenuHeader1_1 = !isMenuHeader1_1;
+      isMenuHeader1_2 = false;
+      if (isMenuHeader1_1) {
+        menuHeader1_1.style.display = "flex";
+        menuHeader1_1_rps.style.display = "flex";
+        menuHeader1_2.style.display = "none";
+        menuHeader1_2_rps.style.display = "none";
+      } else {
+        menuHeader1_1.style.display = "none";
+        menuHeader1_1_rps.style.display = "none";
+      }
+    }
+
+    function showMenuNav1_2() {
+      isMenuHeader1_2 = !isMenuHeader1_2;
+      isMenuHeader1_1 = false;
+      if (isMenuHeader1_2) {
+        menuHeader1_2.style.display = "flex";
+        menuHeader1_2_rps.style.display = "flex";
+        menuHeader1_1.style.display = "none";
+        menuHeader1_1_rps.style.display = "none";
+      } else {
+        menuHeader1_2.style.display = "none";
+        menuHeader1_2_rps.style.display = "none";
+      }
+    }
+
+
+    function showMenuNav2() {
+      isMenuHeader2 = !isMenuHeader2;
+      isMenuHeader1 = false;
+      isMenuHeader1_1 = false;
+      isMenuHeader1_2 = false;
+      menuHeader1.style.display = "none";
+      menuHeader1_rps.style.display = "none";
+      menuHeader1_1.style.display = "none";
+      menuHeader1_1_rps.style.display = "none";
+      menuHeader1_2.style.display = "none";
+      menuHeader1_2_rps.style.display = "none";
+      if (isMenuHeader2) {
+        menuHeader2.style.display = "flex";
+        menuHeader2_rps.style.display = "flex";
+        // subMenuHeaderMobile.style.display = "flex";
+      } else {
+        menuHeader2.style.display = "none";
+        menuHeader2_rps.style.display = "none";
+        // subMenuHeaderMobile.style.display = "none";
+      }
+    }
+
+    let isSubMenuHeader = false;
+
+    function showMenuNav() {
+      isSubMenuHeader = !isSubMenuHeader;
+      const subMenuHeader = document.getElementById("subMenuHeader");
+      const subMenuHeaderMobile = document.getElementById("subMenuHeaderMobile");
+      if (isSubMenuHeader) {
+        subMenuHeader.style.display = "flex";
+        subMenuHeaderMobile.style.display = "flex";
+      } else {
+        subMenuHeader.style.display = "none";
+        subMenuHeaderMobile.style.display = "none";
+      }
+    }
+////////////////////////////////////////////////////////////////////
   </script>
 </body>
 
