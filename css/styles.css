@@ -30401,7 +30401,6 @@ body.no-scroll {
     padding: 11px;
     height: auto;
     align-items: anchor-center;
-    width: fit-content;
   }
 
   .order-cancel-attach-book-button-new {
@@ -30628,7 +30627,6 @@ body.no-scroll {
     padding: 11px;
     height: auto;
     align-items: anchor-center;
-    width: fit-content;
   }
 
   .card-build-order-3 .button {
@@ -30640,7 +30638,6 @@ body.no-scroll {
     padding: 11px;
     height: auto;
     align-items: anchor-center;
-    width: fit-content;
   }
 
   .filter-1-order-list {
@@ -44846,7 +44843,7 @@ tr:hover {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 300px;
+  /* width: 300px; */
   min-height: 50px;
   border-radius: 8px;
   font-weight: bold;
