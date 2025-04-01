@@ -39350,7 +39350,7 @@ body.no-scroll {
     gap: 10px;
     left: 0;
     overflow: hidden;
-    padding: 40px 20px;
+    padding: 40px 0px;
     /* position: absolute; */
     top: 0;
     width: -webkit-fill-available;
@@ -39382,7 +39382,7 @@ body.no-scroll {
     ;
     max-width: -webkit-fill-available;
     justify-self: center;
-    top: 25%;
+    top: 10%;
   }
 
   .popup .frame-38265 {
@@ -42612,6 +42612,11 @@ body.no-scroll {
     text-wrap: auto;
     line-height: normal;
     display: flex;
+  }
+
+  .title-dialog {
+    font-size: 26px !important;
+    line-height: normal !important;
   }
 }
 
