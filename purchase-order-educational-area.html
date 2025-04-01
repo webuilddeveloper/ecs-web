@@ -230,7 +230,7 @@
     <div class="content-center">
         <div class="content-ecs">
             <div class="menu-header" style="padding-top: 0px !important;">
-                <a onclick="goBack()" class="position-absolute ">
+                <a href="./home-educational.html" class="position-absolute ">
                     <div class="purchase-order-button-3 purchase-order-button-8">
                         <img class="purchase-order-icon-back" src="img/icon-back-3.svg" alt="icon back" />
                         <div
@@ -238,7 +238,7 @@
                             ย้อนกลับ</div>
                     </div>
                 </a>
-                <h1 class="purchase-order-text-6 margin-0-auto" style="align-self: center;">สร้างใบสั่งซื้อ</h1>
+                <h1 class="purchase-order-text-6 margin-0-auto" style="align-self: center;">ออกใบสั่งซื้อ</h1>
             </div>
             <div class="table-ecs">
                 <form class="content-ecs" style="padding: 0;">
@@ -251,15 +251,60 @@
                                         <div class="tabs-container">
                                             <div class="tabs">
                                                 <button class="tab-btn active notosansthai-semi-bold-vulcan-15px"
-                                                    data-tab="tab-1">สั่งซื้อเอง</button>
+                                                    data-tab="tab-1" onclick="select_tab('1')">สั่งซื้อเอง</button>
                                                 <button class="tab-btn notosansthai-semi-bold-vulcan-15px"
-                                                    data-tab="tab-2">เขตสั่งซื้อให้</button>
+                                                    data-tab="tab-2" onclick="select_tab('2')">เขตสั่งซื้อให้</button>
                                             </div>
                                         </div>
+                                    </div>
 
+                                    <div class="filter-table" id="filter-1">
+                                        <div class="group-button">
+
+                                            <article class="input-select">
+                                                <div class="base-form-label-medium">
+                                                    <div class="label-input font-15">สถานะใบขอซื้อ</div>
+                                                </div>
+                                                <div class="container-dropdown-filter-purc_od">
+                                                    <select id="purchase-order-status"
+                                                        class="custom-dropdown-filter notosansthai-normal-dove-gray-17px"
+                                                        onchange="changeStatusOrder(event.target.value)">
+                                                        <option value="0">ทั้งหมด</option>
+                                                        <option value="1">รอรับการอนุมัติ</option>
+                                                        <option value="2">ไม่ได้รับการอนุมัติ</option>
+                                                        <option value="3">ได้รับการอนุมัติ</option>
+                                                        <option value="4">รอการชำระเงิน</option>
+                                                        <option value="5">รายการที่ถูกยกเลิก</option>
+                                                        <option value="6">รายการรอรับการแก้ไข</option>
+
+                                                    </select>
+                                                </div>
+                                            </article>
+                                            <article class="input-select">
+                                                <div class="base-form-label-medium">
+                                                    <div class="label-input font-15">ตั้งแต่</div>
+                                                </div>
+                                                <div class="select-field">
+                                                    <input class="select font-grey-15" name="select"
+                                                        placeholder="เลือกเดือน" type="month" />
+                                                    <!-- <img class="dropdown-icon" src="img/dropdown-icon-45.svg" alt="dropdown-icon" /> -->
+                                                </div>
+                                            </article>
+                                            <article class="input-select">
+                                                <div class="base-form-label-medium">
+                                                    <div class="label-input font-15">จนถึง</div>
+                                                </div>
+                                                <div class="select-field">
+                                                    <input class="select font-grey-15" name="select"
+                                                        placeholder="เลือกเดือน" type="month" />
+                                                    <!-- <img class="dropdown-icon" src="img/dropdown-icon-46.svg" alt="dropdown-icon" /> -->
+                                                </div>
+                                            </article>
+                                        </div>
 
                                     </div>
-                                    <div class="filter-table-purchase">
+
+                                    <div class="dis-no filter-table" id="filter-2">
                                         <div class="group-button-1">
 
                                             <!-- โรงเรียน -->
@@ -305,19 +350,259 @@
                                                 </div>
                                             </div>
 
-
-
                                         </div>
 
-
-
-
                                     </div>
-                                    <div class="purchase-order-educational-text-1">เลือกใบสั่งซื้อแล้ว 0 รายการ
+                                    
+                                    <div class="dis-no purchase-order-educational-text-1" id="total-purchase">เลือกใบสั่งซื้อแล้ว 0 รายการ
                                     </div>
                                     <div class="frame-38-1">
                                         <div class="frame-3346">
-                                            <table style="width: 100%;text-align: left;">
+                                            
+                                            <table style="width: 100%;text-align: left;" id="table-1">
+                                                <thead>
+                                                    <tr>
+                                                        <th
+                                                            class="order-approval-list-table-header-2 notosansthai-semi-bold-vulcan-15px th-30-px">
+                                                            ลำดับ</th>
+                                                        <th
+                                                            class="order-approval-list-table-header-2 notosansthai-semi-bold-vulcan-15px th-154-px">
+                                                            เลขใบขอสั่งซื้อ</th>
+                                                        <th
+                                                            class="order-approval-list-table-header-2 notosansthai-semi-bold-vulcan-15px th-154-px">
+                                                            วันที่สร้างใบขอสั่งซื้อ
+                                                        </th>
+                                                        <th
+                                                            class="order-approval-list-table-header-2 notosansthai-semi-bold-vulcan-15px th-650-px">
+                                                            รายการสินค้า
+                                                        </th>
+                                                        <th
+                                                            class="order-approval-list-table-header-2 notosansthai-semi-bold-vulcan-15px th-154-px">
+                                                            ยอดสุทธิ (บาท)
+                                                        </th>
+                                                        <th
+                                                            class="order-approval-list-table-header-2 notosansthai-semi-bold-vulcan-15px th-190-px">
+                                                            สถานะ
+                                                        </th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr
+                                                        onclick="window.location='./purchase-order-details-edu.html?status=6'">
+                                                        <td
+                                                            class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px text-al-center">
+                                                            1</td>
+                                                        <td
+                                                            class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px text-al-center">
+                                                            PR-6612-0683</td>
+                                                        <td
+                                                            class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px text-al-center">
+                                                            22 ต.ค. 2567
+                                                        </td>
+                                                        <td
+                                                            class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px title-column-table">
+                                                            <div class="card-status-popo-1">
+                                                                ปพ.1:ป
+                                                            </div>
+                                                           
+                                                            ปพ.1:ป ระเบียนแสดงผลการเรียน ระดับ ประถมฯ (ปรับปรุง 2555)
+                                                            (ฉบับใช้กับออนไลน์)
+                                                        </td>
+                                                        <td
+                                                            class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px text-al-center">
+                                                            1,000</td>
+
+                                                        <td
+                                                            class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px text-al-center">
+                                                            <div class="status-3 status-3-1">
+                                                                <img class="icon-2" src="img/icon-199.svg" alt="icon" />
+                                                                <div class="text valign-text-middle text-3-3">
+                                                                    รายการที่รอการแก้ไข
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr
+                                                        onclick="window.location='./purchase-order-details-edu.html?status=1'">
+                                                        <td
+                                                            class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px text-al-center">
+                                                            1</td>
+                                                        <td
+                                                            class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px text-al-center">
+                                                            PR-6612-0683</td>
+                                                        <td
+                                                            class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px text-al-center">
+                                                            22 ต.ค. 2567
+                                                        </td>
+                                                        <td
+                                                            class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px title-column-table">
+                                                            <div class="card-status-popo-1">
+                                                                ปพ.1:ป
+                                                            </div>
+                                                           
+                                                            ปพ.1:ป ระเบียนแสดงผลการเรียน ระดับ ประถมฯ (ปรับปรุง 2555)
+                                                            (ฉบับใช้กับออนไลน์)
+                                                        </td>
+                                                        <td
+                                                            class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px text-al-center">
+                                                            1,000</td>
+
+                                                        <td
+                                                            class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px text-al-center">
+                                                            <div class="status status-3 ">
+                                                                <img class="icon-2" src="img/icon-190.svg" alt="icon" />
+                                                                <div class="text valign-text-middle text-3 font-13">
+                                                                    รอรับการอนุมัติ
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr
+                                                        onclick="window.location='./purchase-order-details-edu.html?status=4'">
+                                                        <td
+                                                            class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px text-al-center al-center">
+                                                            2</td>
+                                                        <td
+                                                            class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px text-al-center al-center">
+                                                            PR-6613-0684</td>
+                                                        <td
+                                                            class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px text-al-center al-center">
+                                                            22 ต.ค. 2567
+                                                        </td>
+                                                        <td
+                                                            class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px title-column-table list-column al-start">
+                                                            <div class="list-product-in-column">
+                                                                <div class="card-status-popo-1">
+                                                                    ปพ.1:ป
+                                                                </div>
+                                                                ปพ.1:ป ระเบียนแสดงผลการเรียน ระดับ ประถมฯ (ปรับปรุง
+                                                                2555) (ฉบับใช้กับออนไลน์)
+                                                            </div>
+                                                            <div class="list-product-in-column">
+                                                                <div class="card-status-popo-1-bo">
+                                                                    ปพ.1:บ
+                                                                </div>
+                                                                ปพ.1:ป ระเบียนแสดงผลการเรียน ระดับ ประถมฯ (ปรับปรุง
+                                                                2555) (ฉบับใช้กับออนไลน์)
+                                                            </div>
+                                                        </td>
+                                                        <td
+                                                            class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px text-al-center">
+                                                            1,000</td>
+
+                                                        <td
+                                                            class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px text-al-center">
+                                                            <div class="status status-3 ">
+                                                                <img class="icon-2" src="img/icon-190.svg" alt="icon" />
+                                                                <div class="text valign-text-middle text-3 font-13">
+                                                                    ที่ต้องชำระเงิน
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr
+                                                        onclick="window.location='./purchase-order-details-edu.html?status=4'">
+                                                        <td
+                                                            class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px text-al-center al-center">
+                                                            3</td>
+                                                        <td
+                                                            class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px text-al-center al-center">
+                                                            PR-6614-0685</td>
+                                                        <td
+                                                            class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px text-al-center al-center">
+                                                            22 ต.ค. 2567
+                                                        </td>
+                                                        <td
+                                                            class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px title-column-table">
+                                                            <div class="card-status-popo-1">
+                                                                ปพ.1:ป
+                                                            </div>
+                                                            ปพ.1:ป ระเบียนแสดงผลการเรียน ระดับ ประถมฯ (ปรับปรุง 2555)
+                                                            (ฉบับใช้กับออนไลน์)
+                                                        <td
+                                                            class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px text-al-center">
+                                                            1,000</td>
+
+                                                        <td
+                                                            class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px text-al-center">
+                                                            <div class="status status-3 ">
+                                                                <img class="icon-2" src="img/icon-190.svg" alt="icon" />
+                                                                <div class="text valign-text-middle text-3 font-13">
+                                                                    รอการชำระเงิน
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr
+                                                        onclick="window.location='./purchase-order-details-edu.html?status=2'">
+                                                        <td
+                                                            class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px text-al-center al-center">
+                                                            3</td>
+                                                        <td
+                                                            class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px text-al-center al-center">
+                                                            PR-6614-0685</td>
+                                                        <td
+                                                            class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px text-al-center al-center">
+                                                            22 ต.ค. 2567
+                                                        </td>
+                                                        <td
+                                                            class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px title-column-table">
+                                                            <div class="card-status-popo-1">
+                                                                ปพ.1:ป
+                                                            </div>
+                                                            ปพ.1:ป ระเบียนแสดงผลการเรียน ระดับ ประถมฯ (ปรับปรุง 2555)
+                                                            (ฉบับใช้กับออนไลน์)
+                                                        <td
+                                                            class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px text-al-center">
+                                                            1,000</td>
+
+                                                        <td
+                                                            class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px text-al-center">
+                                                            <div class="status-3 status-1 ">
+                                                                <img class="icon-2" src="img/icon-194.svg" alt="icon" />
+                                                                <div class="text valign-text-middle text-2 font-13">
+                                                                    ไม่ได้รับการอนุมัติ
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr
+                                                        onclick="window.location='./purchase-order-details-edu.html?status=3'">
+                                                        <td
+                                                            class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px text-al-center al-center">
+                                                            3</td>
+                                                        <td
+                                                            class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px text-al-center al-center">
+                                                            PR-6614-0685</td>
+                                                        <td
+                                                            class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px text-al-center al-center">
+                                                            22 ต.ค. 2567
+                                                        </td>
+                                                        <td
+                                                            class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px title-column-table">
+                                                            <div class="card-status-popo-1">
+                                                                ปพ.1:ป
+                                                            </div>
+                                                            ปพ.1:ป ระเบียนแสดงผลการเรียน ระดับ ประถมฯ (ปรับปรุง 2555)
+                                                            (ฉบับใช้กับออนไลน์)
+                                                        <td
+                                                            class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px text-al-center">
+                                                            1,000</td>
+
+                                                        <td
+                                                            class="order-approval-list-base-table-cell-4 notosansthai-normal-vulcan-15px text-al-center">
+                                                            <a class="status-3 status-2">
+                                                                <img class="icon-2" src="img/icon-64.svg" alt="icon" />
+                                                                <div class="text valign-text-middle text-2-2 font-13">
+                                                                    ได้รับการอนุมัติ
+                                                                </div>
+                                                            </a>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+
+                                            <table style="width: 100%;text-align: left;" class="dis-no" id="table-2">
                                                 <thead>
                                                     <tr>
                                                         <th class="order-approval-list-table-header-2 notosansthai-semi-bold-vulcan-15px"
@@ -873,15 +1158,66 @@
 
                                                 </tbody>
                                             </table>
-
                                         </div>
 
                                     </div>
 
-                                    <a href="./purchase-order-educational-detail-area.html" class=" pointer">
+                                    <div class="input-select-button-footer-default" id="pagination">
+                                        <div class="frame-38263">
+                                            <div class="input-select-1">
+                                                <div class="select-field">
+                                                    <div class="select-1 font-grey-15">แสดง 10</div>
+                                                    <img class="dropdown-icon" src="img/dropdown-icon-44.svg"
+                                                        alt="dropdown-icon" />
+                                                </div>
+                                            </div>
+                                            <p class="text-11 text-3 hidden-sm-down notosansthai-normal-black-16px">แสดง
+                                                1-10 รายการ จาก 100
+                                                รายการ</p>
+                                        </div>
+                                        <div class="pagination">
+                                            <a href="javascript:SubmitForm('form23')">
+                                                <div class="button-2 button-7"><img class="icon-1"
+                                                        src="img/icon-178.svg" alt="icon" /></div>
+                                            </a><a href="javascript:SubmitForm('form23')">
+                                                <div class="button-5 button-7">
+                                                    <div class="text-sm-1 text-sm-3">1</div>
+                                                </div>
+                                            </a><a href="javascript:SubmitForm('form23')">
+                                                <div class="button-3 button-7">
+                                                    <div class="text-sm text-3 notosansthai-medium-blue-15px">2</div>
+                                                </div>
+                                            </a><a href="javascript:SubmitForm('form23')" class="hidden-sm-down">
+                                                <div class="button-3 button-7">
+                                                    <div class="text-sm text-3 notosansthai-medium-blue-15px">3</div>
+                                                </div>
+                                            </a><a href="javascript:SubmitForm('form23')" class="hidden-sm-down">
+                                                <div class="button-3 button-7">
+                                                    <div class="text-sm text-3 notosansthai-medium-blue-15px">4</div>
+                                                </div>
+                                            </a><a href="javascript:SubmitForm('form23')" class="hidden-sm-down">
+                                                <div class="button-3 button-7">
+                                                    <div class="text-sm text-3 notosansthai-medium-blue-15px">5</div>
+                                                </div>
+                                            </a><a href="javascript:SubmitForm('form23')">
+                                                <div class="button-3 button-7">
+                                                    <div class="text-sm text-3 notosansthai-medium-blue-15px">...</div>
+                                                </div>
+                                            </a><a href="javascript:SubmitForm('form23')">
+                                                <div class="button-3 button-7">
+                                                    <div class="text-sm-2 text-sm-3 notosansthai-medium-blue-15px">10
+                                                    </div>
+                                                </div>
+                                            </a><a href="javascript:SubmitForm('form23')">
+                                                <div class="button-2 button-7"><img class="icon-1"
+                                                        src="img/icon-179.svg" alt="icon" /></div>
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                    <a href="./purchase-order-educational-detail-area.html" class="dis-no pointer" id="btn-sumary">
                                         <div class="purchase-order-educational-frame-area ">
                                             <div class="purchase-order-educational-text-2">สรุปรายการใบขอสั่งซื้อ</div>
-
                                         </div>
                                     </a>
                                 </div>
@@ -893,12 +1229,6 @@
 
         </div>
     </div>
-
-
-
-
-
-
 
     <div class="footer">
         <p class="copyright-2024">Copyright 2024&nbsp;&nbsp; องค์การค้าของ สกสค.</p>
@@ -1016,9 +1346,13 @@
         }
         /////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
+        let table = '1';
+
 
         document.querySelectorAll('.tab-btn').forEach(button => {
             button.addEventListener('click', (event) => {
+
+                
                 // ป้องกันการรีเฟรชหน้าเว็บ
                 event.preventDefault();
 
@@ -1033,6 +1367,27 @@
                 tabContent.querySelector(`#${tabId}`).classList.add('active');
             });
         });
+
+        function select_tab(param) {
+            if (param == '1') {
+                document.getElementById("table-1").style.display = 'table';
+                document.getElementById("table-2").style.display = 'none';
+                document.getElementById("filter-1").style.display = 'flex';
+                document.getElementById("filter-2").style.display = 'none';
+                document.getElementById("pagination").style.display = 'flex';
+                document.getElementById("btn-sumary").style.display = 'none';
+            } else if (param == '2') {
+                document.getElementById("table-1").style.display = 'none';
+                document.getElementById("table-2").style.display = 'table';
+                document.getElementById("filter-1").style.display = 'none';
+                document.getElementById("filter-2").style.display = 'flex';
+                document.getElementById("pagination").style.display = 'none';
+                document.getElementById("btn-sumary").style.display = 'flex';
+            }
+            
+        } 
+
+
     </script>
 </body>
 
