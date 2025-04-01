@@ -44952,3 +44952,13 @@ tr:hover {
   justify-content: flex-end;
   border-bottom: 1px solid #DCE0E5;
 }
+
+.frame-38379-2 {
+  align-items: center;
+  display: inline-flex;
+  flex: 0 0 auto;
+  gap: 24px;
+  position: relative;
+  width: -webkit-fill-available;
+  justify-content: center;
+}
