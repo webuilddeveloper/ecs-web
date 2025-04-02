@@ -248,22 +248,22 @@
           <div class="dis-no status status-3" id="status-1">
             <img class="icon-2" src="img/icon-190.svg" alt="icon" />
             <div class="text valign-text-middle text-3 font-13">
-              รอรับการอนุมัติ
+              รอรดำเนินการ
             </div>
           </div>
-          <div class="dis-no status-3 status-1" id="status-2">
+          <!-- <div class="dis-no status-3 status-1" id="status-2">
             <img class="icon-2" src="img/icon-194.svg" alt="icon" />
             <div class="text valign-text-middle text-2 font-13">
               ไม่ได้รับการอนุมัติ
             </div>
-          </div>
-          <div class="dis-no status-3 status-2" id="status-3">
+          </div> -->
+          <div class="dis-no status-3 status-2" id="status-2">
             <img class="icon-2" src="img/icon-64.svg" alt="icon" />
             <div class="text valign-text-middle text-3-1 font-13">
-              ได้รับการอนุมัติ
+              อนุมัติ
             </div>
           </div>
-          <div class="dis-no status status-3" id="status-4">
+          <!-- <div class="dis-no status status-3" id="status-4">
             <img class="icon-2" src="img/icon-190.svg" alt="icon" />
             <div class="text valign-text-middle text-3 font-13">
               รอการชำระเงิน
@@ -274,19 +274,19 @@
             <div class="text valign-text-middle text-2 font-13">
               รายการที่ถูกยกเลิก
             </div>
-          </div>
+          </div> -->
           <!-- <div class="dis-no status status-3" id="status-6">
                     <img class="icon-2" src="img/icon-190.svg" alt="icon" />
                     <div class="text valign-text-middle text-3 font-13">
                         รายการที่รอการแก้ไข
                     </div>
                 </div> -->
-          <div class="dis-no status-3 status-3-1" id="status-6">
+          <!-- <div class="dis-no status-3 status-3-1" id="status-6">
             <img class="icon-2" src="img/icon-199.svg" alt="icon" />
             <div class="text valign-text-middle text-3-1">
               รอการแก้ไข
             </div>
-          </div>
+          </div> -->
 
 
         </div>
@@ -601,7 +601,7 @@
         </div>
 
         <!-- button action -->
-        <div class="frame-38379" style="margin-bottom: 50px; flex-direction: row">
+        <div class="dis-no frame-38379" style="margin-bottom: 50px; flex-direction: row" id="btn-confirm-approve">
           <a onclick="no_approve()" class="no-text-underline pointer">
             <article class="button-3-2 button-5-copy">
               <div class="text_label valign-text-middle">ไม่อนุมัติ</div>
@@ -610,6 +610,15 @@
             <article class="button-4-2 button-5-copy">
               <div class="text_label-3-2 valign-text-middle notosansthai-normal-black-20px text-bold color-white">
                 อนุมัติ</div>
+            </article>
+          </a>
+        </div>
+
+        <div class="dis-no frame-38379" style="margin-bottom: 50px; flex-direction: row" id="btn-back">
+          <a href="./order-approval-list.html" class="no-text-underline">
+            <article class="button-4-2 button-5-copy">
+              <div class="text_label-3-2 valign-text-middle notosansthai-normal-black-20px text-bold color-white">
+                กลับหน้ารายการอนุมัติใบขอสั่งซื้อ</div>
             </article>
           </a>
         </div>
@@ -628,9 +637,7 @@
             <div class="frame-38265">
               <h1 class="text_label-2 valign-text-middle text_label-4">ไม่อนุมัติใบสั่งซื้อ</h1>
               <div class="text_label-3 valign-text-middle text_label-4 notosansthai-normal-black-20px">
-                <span><span class="notosansthai-normal-black-20px">กรุณาใส่เหตุผลการไม่อนุมัติ <br> หากยืนยันจะเป็นอันเสร็จสิ้นการไม่อนุมัติใบขอสั่งซื้อ</span><span class="span1-1"></span><span
-                    class="notosansthai-normal-black-20px">คำสั่งซื้อ</span>
-                </span>
+                <span class="notosansthai-normal-black-20px">กรุณาใส่เหตุผลการไม่อนุมัติ <br> หากยืนยันจะเป็นอันเสร็จสิ้นการไม่อนุมัติใบขอสั่งซื้อ</span>
               </div>
             </div>
             <div class="order-details-text-field-dialog">
@@ -879,6 +886,17 @@
         if (window.submitted) window.submitted();
       }
     }
+
+    const params = new URLSearchParams(window.location.search);
+    let statusPur = params.get("status");
+
+    if (statusPur == '1') {
+      document.getElementById("status-1").style.display = "flex";
+      document.getElementById("btn-confirm-approve").style.display = "flex";
+    } else if (statusPur == '2') {
+      document.getElementById("status-2").style.display = "flex";
+      document.getElementById("btn-back").style.display = "flex";
+    } 
   </script>
 </body>
 
