@@ -13107,7 +13107,7 @@ input:focus {
 .purchase-order-n {
   color: var(--white);
   font-family: var(--font-family-noto_sans_thai);
-  font-size: var(--font-size-l);
+  font-size: var(--font-size-20);
   font-weight: 700;
   letter-spacing: 0;
   line-height: normal;
@@ -35948,6 +35948,10 @@ body.no-scroll {
     position: relative;
     /* width: 390px; */
   }
+
+  .purchase-order-n {
+    font-size: var(--font-size-16);
+  }
 }
 
 /* à¸ªà¸³à¸«à¸£à¸±à¸š Mobile */
@@ -42716,6 +42720,10 @@ body.no-scroll {
 
   .icon-4 {
     width: 18px !important;
+  }
+
+  .purchase-order-n {
+    font-size: var(--font-size-13);
   }
 }
 
