@@ -42638,6 +42638,35 @@ body.no-scroll {
     font-size: 26px !important;
     line-height: normal !important;
   }
+
+  .text_label-bt-4-2-1 {
+    font-size: 13px !important;
+  }
+
+  .button-4-2-2 {
+    background-color: var(--main);
+    justify-content: center;
+    border-radius: 10px;
+    display: flex;
+    gap: 8px;
+    padding: 8px 24px;
+    width: 205px !important;
+  }
+
+  .button-4-2-3 {
+    background-color: var(--white);
+    border: 1px solid #DCE0E5;
+    justify-content: center;
+    border-radius: 10px;
+    display: flex;
+    gap: 8px;
+    padding: 8px 24px;
+    width: 205px !important;
+  }
+
+  .icon-4 {
+    width: 18px !important;
+  }
 }
 
 /* media */
@@ -45002,4 +45031,27 @@ tr:hover {
   position: relative;
   text-align: center;
   /* width: 468px; */
+}
+
+.button-4-2-2 {
+  background-color: #012A6C;
+  border: 1px solid #012A6C;
+  justify-content: center;
+  border-radius: 10px;
+  display: flex;
+  gap: 8px;
+  padding: 8px 24px;
+  width: 290px;
+  /* width: 245px; */
+}
+
+.button-4-2-3 {
+  background-color: var(--white);
+  border: 1px solid #DCE0E5;
+  justify-content: center;
+  border-radius: 10px;
+  display: flex;
+  gap: 8px;
+  padding: 8px 24px;
+  width: 290px;
 }
