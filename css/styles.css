@@ -30572,7 +30572,7 @@ body.no-scroll {
   .notification-badge-2 {
     position: absolute;
     top: -10px;
-    /* right: -5px; */
+    right: -5px;
     width: 20px;
     height: 20px;
     background-color: red;
@@ -30580,6 +30580,45 @@ body.no-scroll {
     align-content: center;
     /* display: none; */
     /* ซ่อนจุดแดงเริ่มต้น */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .notification-badge-3 {
+    position: absolute;
+    top: -10px;
+    right: -5px;
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    border-radius: 50%;
+    align-content: center;
+    /* display: none; */
+  }
+
+  .notification-badge-4 {
+    position: absolute;
+    top: -10px;
+    right: -5px;
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    border-radius: 50%;
+    align-content: center;
+    /* display: none; */
+  }
+
+  .notification-badge-5 {
+    position: absolute;
+    top: -10px;
+    right: -5px;
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    border-radius: 50%;
+    align-content: center;
+    /* display: none; */
   }
 
   .filter-table {
@@ -30587,6 +30626,8 @@ body.no-scroll {
     justify-content: space-between;
     width: -webkit-fill-available;
     align-items: flex-end;
+    flex-direction: column;
+    gap: 20px;
   }
 
   .status-position {
@@ -35674,7 +35715,7 @@ body.no-scroll {
   .notification-badge-2 {
     position: absolute;
     top: -10px;
-    /* right: -5px; */
+    right: -5px;
     width: 20px;
     height: 20px;
     background-color: red;
@@ -35682,6 +35723,10 @@ body.no-scroll {
     align-content: center;
     /* display: none; */
     /* ซ่อนจุดแดงเริ่มต้น */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
   }
 
   .filter-table {
@@ -35689,6 +35734,8 @@ body.no-scroll {
     justify-content: space-between;
     width: -webkit-fill-available;
     align-items: flex-end;
+    flex-direction: column;
+    gap: 20px;
   }
 
   .button-filter-table {
@@ -42270,7 +42317,7 @@ body.no-scroll {
 
   .notification-badge-2 {
     position: absolute;
-    /* top: px; */
+    top: -5px;
     right: -5px;
     width: 20px;
     height: 20px;
@@ -42279,6 +42326,9 @@ body.no-scroll {
     align-content: center;
     /* display: none; */
     /* ซ่อนจุดแดงเริ่มต้น */
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   .filter-table {
@@ -43987,6 +44037,7 @@ hr {
   padding: 11px 24px;
   line-height: 1.1;
   height: auto;
+  position: relative;
 }
 
 .button-filter-table-active {
