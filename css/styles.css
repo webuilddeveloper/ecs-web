@@ -42764,6 +42764,9 @@ body.no-scroll {
     width: 100% !important;
   }
 
+  .w100 {
+    width: 100%;
+  }
 }
 
 /* media */
